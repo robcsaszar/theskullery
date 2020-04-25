@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  
+  <!--
+{theSkullery.net is built at NHG.design}
+   __  __        _____ __         ____                             __ 
+  / /_/ /_  ___ / ___// /____  __/ / /__  _______  __  ____  ___  / /_
+ / __/ __ \/ _ \\__ \/ //_/ / / / / / _ \/ ___/ / / / / __ \/ _ \/ __/
+/ /_/ / / /  __/__/ / ,< / /_/ / / /  __/ /  / /_/ / / / / /  __/ /_  
+\__/_/ /_/\___/____/_/|_|\__,_/_/_/\___/_/   \__, (_)_/ /_/\___/\__/  
+                                            /____/                    
+Hello there, fellow developer! Please bear in mind that I am still learning (aren't we all?) so please don't judge the mess that is my code. I'd love to hear your feedback at robert@nhg.design, should you have any. Have an awesome day! 
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Refried Beans (Frijoles Refritos) - theSkullery</title>
+  <meta name="title" content="theSkullery">
+  <meta name="description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164173851-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164173851-1');
+  </script>
+
+  <link rel="preload" as="font" href="/assets/fonts/inter.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bass.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#E83151">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#E83151">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#E83151">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theskullery.net/">
+  <meta property="og:title" content="theSkullery">
+  <meta property="og:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="og:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theskullery.net/">
+  <meta property="twitter:title" content="theSkullery">
+  <meta property="twitter:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="twitter:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Global site verification - Google Tag Manager -->
+  <meta name="google-site-verification" content="Q8OSXL2dBLDbRpxyslhwPcgnRbPsAttWdYTJ1jVbZfk" />
+
+</head>
+  <body>
+
+  	<a class="recipe--logo absolute no-line-height top-2 left-2 z4" href="/">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:#E83151;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:#E83151;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+    <div class="page-content">
+      <div class="main-container">
+        <div class="container" itemscope itemtype="http://schema.org/Recipe">
+
+  <!-- call up the image and image credit link -->
+  
+  <div class="xs-p2">
+    <img itemprop="image" src="/recipes/frijoles-refritos/frijoles-refritos.jpg" />
+    
+    
+    <span class="right" tooltip="https://www.seriouseats.com/recipes/2014/04/perfect-refried-beans.html" flow="down">
+      <svg fill="#ddd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+        <path
+          d="M25,2C12.318,2,2,12.318,2,25c0,12.683,10.318,23,23,23c12.683,0,23-10.317,23-23C48,12.318,37.683,2,25,2z M17.127,30.481c1.958,0,3.445-1.056,3.855-2.728h2.287c-0.41,2.922-2.84,4.871-6.142,4.871c-4.111,0.001-6.674-2.963-6.674-7.751c0-4.799,2.553-7.763,6.665-7.763c3.261,0,5.783,2.112,6.152,5.127h-2.287c-0.431-1.815-1.917-2.983-3.866-2.983c-2.656,0-4.317,2.163-4.317,5.619C12.8,28.318,14.461,30.481,17.127,30.481z M33.404,30.481c1.958,0,3.445-1.056,3.855-2.728h2.287c-0.41,2.922-2.84,4.871-6.142,4.871c-4.111,0.001-6.674-2.963-6.674-7.751c0-4.799,2.553-7.763,6.665-7.763c3.261,0,5.783,2.112,6.152,5.127H37.26c-0.431-1.815-1.917-2.983-3.866-2.983c-2.656,0-4.317,2.163-4.317,5.619C29.077,28.318,30.738,30.481,33.404,30.481z" />
+      </svg></span>
+    
+    
+  </div>
+  
+
+  <article class="post-content px2">
+
+    <!-- call up the main recipe title and content -->
+    <header class="post-header">
+      <h1 class="post-title center m1 sm-mt3" itemprop="name">Refried Beans (Frijoles Refritos)</h1>
+    </header>
+
+    <div class="px2 mt3 clearfix">
+      <div class="sm-col-8 center mx-auto description" itemprop="description"><p><em>Epazote, a Mexican herb, can be found at Mexican grocers. To add other flavors to the refried beans, try sautéing a pinch of ground cumin or fresh chilis with the minced onion, or puréeing toasted dried chilis into the mixture. Different cooking fats give different flavors to the beans: lard is one of the most traditional, and it adds a porky, funky depth to the beans that’s hard to beat; bacon ups the ante even more by layering in a smoky flavor; vegetable oil keeps things neutral so you can really enjoy the flavor of the beans and the aromatics; and butter is decadent and rich without being overpowering.</em> 🔪</p>
+</div>
+    </div>
+
+    <div class="recipe--categories">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M735 250L623 100a75 75 0 00-60-30H100c-28 0-50 23-50 50v351c0 27 22 50 50 50h463c23 0 46-12 60-30l112-150c20-27 20-64 0-91zm-110 83a38 38 0 110-75 38 38 0 010 75z"
+          fill-rule="nonzero" />
+        </g>
+      </svg>
+      
+      <a class="recipe--category" href="/category/still">still</a>
+      
+      <a class="recipe--category" href="/category/working">working</a>
+      
+      <a class="recipe--category" href="/category/on">on</a>
+      
+      <a class="recipe--category" href="/category/it">it</a>
+      
+    </div>
+    <div class="recipe--tags">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M622 313c-45-12-77-56-77-104V91a20 20 0 0141 0v102a20 20 0 1041 0V91a20 20 0 0141 0v102a20 20 0 1041 0V91a20 20 0 0141 0v123c0 47-33 87-77 99l15 162a41 41 0 11-81 1l15-163zM173 376c-87-8-123-68-123-142 0-82 41-164 41-164h204s41 82 41 164c0 74-35 134-122 142v88l66 16a20 20 0 01-5 41H111a20 20 0 01-5-41l67-16v-88zM385 89c0-10 8-19 18-19h1c51 1 93 43 93 94v132c0 20-17 37-37 37-21 0-22 14-15 52 6 36 15 73 15 98a38 38 0 11-75 0V89z" />
+      </svg>
+      
+      <a class="recipe--tag" href="/tag/mexican">mexican</a>
+      
+    </div>
+    <div class="recipe--tags">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M490 481l49-195c21-78 36-189 36-189a32 32 0 0142-25c59 15 119 28 125 29a8 8 0 017 7v1c9 156-57 260-57 260a8 8 0 01-12 4c-24-13-103-33-106-1-7 66-5 61-22 125a32 32 0 01-62-16zm148-340a16 16 0 11-16-28 16 16 0 0116 28zM108 510l-2-8v-11l2-8c3-6 9-11 17-11h300c8 0 14 5 17 11l2 8v11l-2 8c-3 6-9 11-17 11H125c-8 0-14-5-17-11zM106 321a103 103 0 0147-194l23 2 1-1 2-3a112 112 0 01195 4l23-2a103 103 0 0147 195v105c0 10-9 19-19 19H125c-10 0-19-9-19-19V321z" />
+      </svg>
+
+      
+      <a class="recipe--chef" href="/chef/robert">robert</a>
+      
+    </div>
+    <div class="divider"></div>
+    <!-- call up recipe and directions -->
+    <div class="clearfix mt3">
+
+      <div class="sm-col sm-col-6 lg-col-6 ingredientlist">
+        <!-- check if it's a component-based recipe -->
+        
+        <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients</h4>
+        <ul itemprop="ingredients">
+          <!-- list ingredients that make up recipe -->
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1/2 pound dried pinto or black beans</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>Water</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>2 sprigs fresh epazote or oregano (see note)</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1 medium white onion, 1/2 minced (about 1/2 cup), 1/2 left whole</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>2 medium cloves garlic</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>Kosher salt</p>
+</li>
+          
+          
+          
+          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>6 tablespoons lard, bacon drippings, vegetable oil, or butter (see note)</p>
+</li>
+          
+          
+        </ul>
+        
+      </div>
+
+      <div class="sm-col sm-col-6 lg-col-6 instructionlist">
+        <h4 class="skullery mt0 mb2 xs-center">Directions</h4>
+        <ul itemprop="recipeInstructions" class="instructions">
+          
+          
+          <li itemprop="instruction"><p>In a large pot, cover the beans with cold water by at least 2 inches. Add herb sprigs, the whole onion half, and garlic cloves and bring to a boil over high heat. Reduce heat to simmer and cook until beans are very tender, about 1 to 2 hours. Season with salt. Drain beans, reserving bean-cooking liquid. You should have about 3 cups of cooked beans; if you have more, measure out 3 cups of beans and reserve the rest for another use. Discard herb sprigs, onion, and garlic.</p>
+</li>
+          
+          
+          
+          <li itemprop="instruction"><p>In a large skillet, heat lard, bacon drippings, or oil until shimmering, or butter until foaming, over medium-high heat. Add minced onion and cook, stirring occasionally, until translucent and lightly golden, about 7 minutes. Stir in beans and cook for 2 minutes. Add 1 cup of reserved bean-cooking liquid. Using bean masher, potato masher, or back of a wooden spoon, smash the beans to form a chunky purée; alternatively, use a stick blender to make a smoother purée. Reduce heat to medium and cook, stirring, until desired consistency is reached; if refried beans are too dry, add more bean-cooking liquid, 1 tablespoon at a time, as needed. Season with salt and serve.</p>
+</li>
+          
+          
+        </ul>
+      </div>
+      
+    </div>
+
+    <!-- end recipe and directions -->
+    <div class="flex-container mt2">
+      <div class="applause" onclick="sendMessage()">
+        <applause-button multiclap="true" style="width: 58px; height: 58px;" />
+      </div>
+    </div>
+    <!-- end components -->
+  </article>
+
+</div>
+<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    jQuery.fn.clickToggle = function (a, b) {
+      var ab = [b, a];
+
+      function cb() {
+        ab[this._tog ^= 1].call(this);
+      }
+      return this.on("click", cb);
+    };
+
+    $("ul li").append('<input type="checkbox" class="checkbox">');
+    $("ul li").clickToggle(function () {
+      $(this).children("input").prop('checked', true);
+      $(this).addClass("checked");
+      var height = $(this).height();
+      var y = $(window).scrollTop();
+      $('html, body').animate({
+        scrollTop: y + height + 16
+      }, 200);
+    }, function () {
+      $(this).children("input").prop('checked', false);
+      $(this).removeClass("checked");
+      var height = $(this).height();
+      var y = $(window).scrollTop();
+      $('html, body').animate({
+        scrollTop: y - height - 16
+      }, 200);
+    });
+
+  });
+</script>
+<script>
+  function sendMessage() {
+    var request = new XMLHttpRequest();
+    var title = document.getElementsByTagName("title")[0].innerHTML;
+    var page = title.split(" - ").slice(0,1)
+    request.open("POST", "https://discordapp.com/api/webhooks/699980118013116426/L2jqPh9nx1q1cRxiGOQfSJFTDms4pdFJBfAu7f-kGkavwvLTrDtOI63uMv60MMkdTa6Z");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    var params = {
+      username: "",
+      avatar_url: "",
+      content: "Someone clapped to your '" + page + "' recipe! 👏"
+    }
+
+    request.send(JSON.stringify(params));
+  }
+</script>
+      </div>
+    </div>
+
+  <footer class="footer clearfix py4">
+  <div class="container px3 sm-px4">
+    <div class="sm-col sm-col-6">
+      <div class="left-align flex-center">
+        <div class="icon icon--left grey">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+            <path
+              d="M16.189 16.521L27.463 6H2.537l11.273 10.521C14.477 17.145 15.523 17.145 16.189 16.521zM8.906 14.68L1 7.301 1 22.586zM21.094 14.68L29 22.586 29 7.301z" />
+            <path
+              d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
+            </svg>
+        </div>
+        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-6">
+      <p class="right-align">made with <svg class="js-geomicon geomicon" height="0.8em" data-icon="heart"
+          viewBox="0 0 32 32" style="fill:#E83151">
+          <path
+            d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
+          </path>
+        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

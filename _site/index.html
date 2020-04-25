@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  
+  <!--
+{theSkullery.net is built at NHG.design}
+   __  __        _____ __         ____                             __ 
+  / /_/ /_  ___ / ___// /____  __/ / /__  _______  __  ____  ___  / /_
+ / __/ __ \/ _ \\__ \/ //_/ / / / / / _ \/ ___/ / / / / __ \/ _ \/ __/
+/ /_/ / / /  __/__/ / ,< / /_/ / / /  __/ /  / /_/ / / / / /  __/ /_  
+\__/_/ /_/\___/____/_/|_|\__,_/_/_/\___/_/   \__, (_)_/ /_/\___/\__/  
+                                            /____/                    
+Hello there, fellow developer! Please bear in mind that I am still learning (aren't we all?) so please don't judge the mess that is my code. I'd love to hear your feedback at robert@nhg.design, should you have any. Have an awesome day! 
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>theSkullery</title>
+  <meta name="title" content="theSkullery">
+  <meta name="description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164173851-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164173851-1');
+  </script>
+
+  <link rel="preload" as="font" href="/assets/fonts/inter.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bass.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#E83151">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#E83151">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#E83151">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theskullery.net/">
+  <meta property="og:title" content="theSkullery">
+  <meta property="og:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="og:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theskullery.net/">
+  <meta property="twitter:title" content="theSkullery">
+  <meta property="twitter:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="twitter:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Global site verification - Google Tag Manager -->
+  <meta name="google-site-verification" content="Q8OSXL2dBLDbRpxyslhwPcgnRbPsAttWdYTJ1jVbZfk" />
+
+</head>
+  <body>
+
+  	<a class="home--logo absolute no-line-height top-2 left-2 z4" href="/">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:white;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+    <div class="page-content">
+      <div class="main-container">
+        <div class="home">
+  <div class="skullery--hero">
+    <div class="bg-back"></div>
+    <div class="bg" id="hero"></div>
+    <div class="ui">
+      <div class="header">
+        <p class="logo">the<strong><i>Skullery</i></strong></p>
+        <ul>
+          <li>Feed</li>
+          <li>Search</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="main--hero">
+        <p class="title">the<strong><i>Skullery</i></strong></p>
+        <p class="desc">
+          A scullery is a historical noun for a small kitchen, much like mine.</br>
+          I hope you find inspiration from my collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
+          </br>
+          Yours,</br>
+          <strong>Robert</strong></br>
+        </p>
+
+        <a href="/submit" class="cta--main">Submit recipe</a>
+        <a href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="search" class="clearfix">
+  <div class="search xs-px1 xs-mt2">
+    <input type="text" id="search-input" placeholder="Search titles, ingredients, or categories...">
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="recipes xs-px1 xs-mt2" id="results-container"></div>
+  <div class="recipes xs-px1 xs-mt2" id="recipes">
+    
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/burger-buns">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/burger-buns/thumbnails/burger-buns.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Burger Buns</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">lunch</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/frijoles-refritos">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/frijoles-refritos/thumbnails/frijoles-refritos.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Refried Beans (Frijoles Refritos)</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">lunch</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/momofuku-steamed-buns">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/momofuku-steamed-buns/thumbnails/momofuku-steamed-buns.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Momofuku Steamed Buns</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">lunch</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/pavlova">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/pavlova/thumbnails/pavlova.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Pavlova</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">dessert</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/spinach-scones">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/spinach-scones/thumbnails/spinach-scones.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Savoury Spinach Scones</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">lunch</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/sticky-pork-belly">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/sticky-pork-belly/thumbnails/sticky-pork-belly.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Twice-Cooked Sticky Pork Belly</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">dinner</p>
+          
+      </a>
+    </div>
+    
+
+    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+      <a class="block relative" href="/recipes/veggie-curry-soup">
+        <div class="image ratio bg-cover image--overlay" 
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url(/recipes/veggie-curry-soup/thumbnails/veggie-curry-soup.jpg);"
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Veggie Curry Cream Soup</h1>
+        
+        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">lunch</p>
+          
+      </a>
+    </div>
+    
+  </div>
+</div>
+<script src="/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script>
+  var images = ['../assets/headers/header1.jpg',
+    '../assets/headers/header2.jpg',
+    '../assets/headers/header3.jpg',
+    '../assets/headers/header4.jpg',
+    '../assets/headers/header5.jpg',
+    '../assets/headers/header6.jpg',
+    '../assets/headers/header7.jpg',
+    '../assets/headers/header8.jpg',
+    '../assets/headers/header9.jpg',
+    '../assets/headers/header10.jpg'
+  ];
+
+  var randomImage = Math.floor(Math.random() * 2)
+
+  $(document).ready(function () {
+    $("#hero").css("background-image", "url('" + images[randomImage] + "')");
+  })
+</script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover image--overlay" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
+  })
+</script>
+<script>
+  $(document).ready(function () {
+    $('#search-input').keyup('input', function () {
+      if ($(this).val().length > 0) {
+        $('#recipes').hide();
+        $('#search-container').show();
+        currentHeight = $('#search-container').outerHeight();
+        $('.search').addClass('used').css('height', currentHeight);
+        $(window).scrollTop($('#search').offset().top), 4000;
+      } else {
+        $('#recipes').show();
+        $('#search-container').hide();
+      }
+    });
+  });
+</script>
+<script>
+  $('#search-input').focusin(function(e) {
+        var container = $('#search-input'),
+        scrollTo = $(e.target);
+
+        container.animate({
+            scrollTop: scrollTo.offset().top
+        }, 300);    
+});
+</script>
+<script>
+if( /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase()) ) {
+var $htmlOrBody = $('html, body'),
+    scrollTopPadding = 8;
+$('#search-input').focus(function() {
+    $htmlOrBody.scrollTop($('#search').offset().top), 4000;
+  });
+}
+</script>
+<script src="js/random.json"></script>
+      </div>
+    </div>
+
+  <footer class="footer clearfix py4">
+  <div class="container px3 sm-px4">
+    <div class="sm-col sm-col-6">
+      <div class="left-align flex-center">
+        <div class="icon icon--left grey">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+            <path
+              d="M16.189 16.521L27.463 6H2.537l11.273 10.521C14.477 17.145 15.523 17.145 16.189 16.521zM8.906 14.68L1 7.301 1 22.586zM21.094 14.68L29 22.586 29 7.301z" />
+            <path
+              d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
+            </svg>
+        </div>
+        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-6">
+      <p class="right-align">made with <svg class="js-geomicon geomicon" height="0.8em" data-icon="heart"
+          viewBox="0 0 32 32" style="fill:#E83151">
+          <path
+            d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
+          </path>
+        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

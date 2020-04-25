@@ -1,0 +1,11 @@
+---
+layout: null
+---
+function runme() {
+    var random = [{% assign count = 0 %}{% assign total = site.recipes | size %}{% for post in site.recipes %}
+        "https://theskullery.net{{post.url}}"{% if counter == total %}{% else %},{% endif %}{% assign counter = counter | plus: 1 %}{% endfor %}
+];
+var value = random[Math.floor(Math.random() * random.length)];
+// alert("Would navigate to : " + value);
+window.location = value;
+    }

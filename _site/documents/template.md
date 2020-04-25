@@ -1,0 +1,46 @@
+
+---
+
+layout: recipe # (this is the layout Jekyll uses to render the file in)
+permalink: recipes/pavlova # (this will be your final, pretty URL)
+title:  "Pavlova" # (making sure we have a good title)
+image: pavlova.jpg # (a nice, high-quality image I will carefully select for you)
+imagecredit: "unsplash.com" # (where I'm getting the image above)
+categories: oven dessert # (these will be selected for you, later on you can select your own)
+tags: fruit # (these will be selected for you, later on you can select your own)
+meal: dessert # (is this lunch, dinner, or breakfast?)
+chef: diana # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+
+notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)
+- Separate the egg whites when they’re cold, it’s much easier.
+- In order to make a stable meringue after you separated the egg whites, bring them to room temperature.
+- Make sure your bowl is very clean and there is no any water or grease, otherwise you’ll not be able to rich stiff peaks.
+- The meringue without the cream can be stored up to 3 days in room temperature.
+- For a video guide click [here](https://youtu.be/ZSW3BJi-1jI). # (this is how a URL looks before it's rendered on the page)
+
+ingredients:
+- for the meringue: # (we also have component subtitles, just add a ':'!) 
+- 4 egg whites (~140g) *room temperature* # (all text between asterisks will automatically be slightly gray, monospaced, and put between brackets like magic; use for note-like comments)
+- 1 cup (200g) caster sugar
+- 1 pinch of salt
+- 2 teaspoon cornstarch
+- 2 teaspoons white wine vinegar
+- 1 teaspoon vanilla extract
+- for the cream:
+- 1½ cups (360ml) heavy cream *cold*
+- 3 tablespoons (23g) powdered sugar
+- 1 teaspoon vanilla extract
+- strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly*
+
+directions:
+- Preheat your oven to 160°C (320°F).
+- Lay a sheet of parchment paper on a baking tray and mark, a 20cm (8-inch) circle. Turn it upside down. Set aside.
+- In a large bowl whisk egg whites until soft peaks form, gradually add sugar, until stiff peaks form and the meringue looks glossy. Add white wine vinegar, cornstarch, vanilla extract and beat on low speed until incorporated.
+- Spread the meringue inside the circle, creating a crater by making the sides a little higher than the middle.
+- Place the pavlova in the oven, reduce the heat to 120C (250F). Bake for 75 minutes, then turn off the heat and let the Pavlova cool completely (at least 4 hours) inside the oven.
+- To make the cream, place heavy cream, sugar and vanilla extract in a large bowl. Beat to stiff peaks.
+- Spread whipped cream on top of the pavlova and decorate with fresh strawberries.
+
+--- 
+<!-- Below is the description, just write what you want or leave it empty 😁 -->
+Sweet AF. 🔪 

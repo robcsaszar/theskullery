@@ -1,0 +1,116 @@
+[
+  
+    {
+    
+	    "title"          : "Burger Buns",
+      
+      "ingredients"    : "3 tablespoons warm whole milk 128g warm water 7g (1 packet) instant yeast *good results with fresh yeast; 1:1 ratio* 2.5 tablespoons granulated sugar 1 large egg 420g all-purpose, 00-flour *allegedly better results with bread flour because of the higher protein count* 1.5 teaspoons fine salt 50g unsalted butter, at room temperature 1 large egg beaten with 1 tablespoon water *egg wash, for topping* sesame or poppy seeds *optional, for topping* ",
+      
+		  "image"	         : "/recipes/burger-buns/thumbnails/burger-buns.jpg",
+      "url"            : "/recipes/burger-buns",
+      
+      "categories"     : "oven baking ",
+      
+      "tags"           : "burger bread ",
+      "meal"           : "lunch ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Refried Beans (Frijoles Refritos)",
+      
+      "ingredients"    : "1/2 pound dried pinto or black beans Water 2 sprigs fresh epazote or oregano (see note) 1 medium white onion, 1/2 minced (about 1/2 cup), 1/2 left whole 2 medium cloves garlic Kosher salt 6 tablespoons lard, bacon drippings, vegetable oil, or butter (see note) ",
+      
+		  "image"	         : "/recipes/frijoles-refritos/thumbnails/frijoles-refritos.jpg",
+      "url"            : "/recipes/frijoles-refritos",
+      
+      "categories"     : "still working on it ",
+      
+      "tags"           : "mexican ",
+      "meal"           : "lunch ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Momofuku Steamed Buns",
+      
+      "ingredients"    : "{&quot;for the pork belly and quick-pickled cucumbers&quot;=&gt;nil} 3kg skinless pork belly 110g &amp; 1 tsp kosher salt 110g &amp; 1 tbsp sugar 2 thick Kirby cucumbers, cut into slices {&quot;for the pork buns&quot;=&gt;nil} 1 tbsp plus 1 tsp active dry yeast 580g bread flour 6 tbsp sugar 3 tbsp nonfat dry milk powder 1 tbsp kosher salt 1/2 tsp baking powder, rounded 1/2 tsp baking soda 80g rendered pork fat, bacon fat or vegetable shortening, at room temperature vegetable oil 340g hoisin sauce thinly sliced scallions *green and white parts* Sriracha, for serving ",
+      
+		  "image"	         : "/recipes/momofuku-steamed-buns/thumbnails/momofuku-steamed-buns.jpg",
+      "url"            : "/recipes/momofuku-steamed-buns",
+      
+      "categories"     : "oven baking ",
+      
+      "tags"           : "burger bread ",
+      "meal"           : "lunch ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Pavlova",
+      
+      "ingredients"    : "{&quot;for the meringue&quot;=&gt;nil} 4 egg whites (~140g) *room temperature* 1 cup (200g) caster sugar 1 pinch of salt 2 teaspoon cornstarch 2 teaspoons white wine vinegar 1 teaspoon vanilla extract {&quot;for the cream&quot;=&gt;nil} 1½ cups (360ml) heavy cream *cold* 3 tablespoons (23g) powdered sugar 1 teaspoon vanilla extract strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly* ",
+      
+		  "image"	         : "/recipes/pavlova/thumbnails/pavlova.jpg",
+      "url"            : "/recipes/pavlova",
+      
+      "categories"     : "oven dessert ",
+      
+      "tags"           : "fruit ",
+      "meal"           : "dessert ",
+      "chef"           : "diana "
+    } ,
+  
+    {
+    
+	    "title"          : "Savoury Spinach Scones",
+      
+      "ingredients"    : "{&quot;for the mix&quot;=&gt;nil} 2 1/2 cup of self raising flour 1 cup mixed grated cheese *we used cheddar and mozarella* 1 cup baby spinach chopped 1 tbsp onion powder 1 cup almond milk 1/2 tsp salt 1/2 tsp pepper 30g unsalted butter, melted {&quot;for the coat&quot;=&gt;nil} 1 tbsp butter, melted 1/4 cup almond milk 1/2 tsp ground coriander 1/2 tsp rosemary pinch of salt and pepper ",
+      
+		  "image"	         : "/recipes/spinach-scones/thumbnails/spinach-scones.jpg",
+      "url"            : "/recipes/spinach-scones",
+      
+      "categories"     : "oven ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "lunch ",
+      "chef"           : "razvan "
+    } ,
+  
+    {
+    
+	    "title"          : "Twice-Cooked Sticky Pork Belly",
+      
+      "ingredients"    : "4 tablespoons + 3 tablespoons soy sauce 4 tablespoons granulated sugar 8 tablespoons cold water 1 tablespoon rice vinegar 1 tablespoon cooking wine *substitute with dry vermouth* 2 tablespoons + 1 tablespoon fish sauce 2 whole scallions, roughly chopped 1 teaspoon chili pepper flakes 1 star anise 1/2 teaspoon Szechuan peppercorns 200g chicken soup *substitute with water + bouillon cube* 4 cloves garlic, 3 whole, 1 finely chopped 4 pieces ginger, 3 whole, 1 finely chopped 1kg pork belly *best with skin still on* cilantro, scallions, sesame seeds some [quick-pickled cucumbers in rice vinegar](https://www.seriouseats.com/recipes/2013/10/quick-pickled-cucumbers-rice-vinegar-recipe.html) a bowl of [pickled carrot &amp; Daikon radish](https://www.seriouseats.com/recipes/2013/02/pickled-daikon-and-carrot-do-chua.html) *(I use kohlrabi as a Daikon substitute)* some [Sriracha mayonnaise](https://www.seriouseats.com/recipes/2012/12/spicy-mayo-for-sushi-recipe.html) ",
+      
+		  "image"	         : "/recipes/sticky-pork-belly/thumbnails/sticky-pork-belly.jpg",
+      "url"            : "/recipes/sticky-pork-belly",
+      
+      "categories"     : "oven ",
+      
+      "tags"           : "still working on it ",
+      "meal"           : "dinner ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Veggie Curry Cream Soup",
+      
+      "ingredients"    : "2 tbsp butter *alternatively use ghee or coconut oil* 2 onions *finely chopped* 2 celery spears *finely chopped* 2 carrots peeled and *finely chopped* 2 large leeks *finely chopped* 1 butternut squash 4 garlic cloves *crushed* 2 tsp ginger *crushed* 2 tsp ground turmeric 2 tsp curry powder 1 tsp ground cinnamon 1 tsp chili powder 1 tsp paprika 2 bay leaves 2 large potatoes *peeled and cubed* 6 cups chicken stock 1.5 liters 1 cup cream/coconut milk salt *to taste* pepper *to taste* lemon juice *to taste* plain yoghurt *for serving* fresh coriander/cilantro *for serving* ",
+      
+		  "image"	         : "/recipes/veggie-curry-soup/thumbnails/veggie-curry-soup.jpg",
+      "url"            : "/recipes/veggie-curry-soup",
+      
+      "categories"     : "soup ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "lunch ",
+      "chef"           : "razvan "
+    } 
+  
+]
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  
+  <!--
+{theSkullery.net is built at NHG.design}
+   __  __        _____ __         ____                             __ 
+  / /_/ /_  ___ / ___// /____  __/ / /__  _______  __  ____  ___  / /_
+ / __/ __ \/ _ \\__ \/ //_/ / / / / / _ \/ ___/ / / / / __ \/ _ \/ __/
+/ /_/ / / /  __/__/ / ,< / /_/ / / /  __/ /  / /_/ / / / / /  __/ /_  
+\__/_/ /_/\___/____/_/|_|\__,_/_/_/\___/_/   \__, (_)_/ /_/\___/\__/  
+                                            /____/                    
+Hello there, fellow developer! Please bear in mind that I am still learning (aren't we all?) so please don't judge the mess that is my code. I'd love to hear your feedback at robert@nhg.design, should you have any. Have an awesome day! 
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>theSkullery</title>
+  <meta name="title" content="theSkullery">
+  <meta name="description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164173851-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164173851-1');
+  </script>
+
+  <link rel="preload" as="font" href="/assets/fonts/inter.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bass.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#E83151">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#E83151">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#E83151">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theskullery.net/">
+  <meta property="og:title" content="theSkullery">
+  <meta property="og:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="og:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theskullery.net/">
+  <meta property="twitter:title" content="theSkullery">
+  <meta property="twitter:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="twitter:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Global site verification - Google Tag Manager -->
+  <meta name="google-site-verification" content="Q8OSXL2dBLDbRpxyslhwPcgnRbPsAttWdYTJ1jVbZfk" />
+
+</head>
+  <body>
+
+  	<a class="home--logo absolute no-line-height top-2 left-2 z4" href="/">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:white;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+    <div class="page-content">
+      <div class="main-container">
+        <a class="recipe--logo absolute no-line-height top-2 left-2 z4" href="/">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:#E83151;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:#E83151;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+<div class="xs-p2">
+  <img itemprop="image" src="/images/submit.jpg" />
+  
+</div>
+
+<div class="tagpage--header">
+  <div class="tagpage--suptitle ml3 sm-mt3">Your recipes</div>
+  <div class="tagpage--title ml3">Submit</div>
+  <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to cook better and get more organized. <br> 
+    This website is my attempt at getting recipes organized and categorized by moving them from closed services and random handwritten pages to a more open, beautiful, and shareable place while having the convenience of plain-text. <br> 
+    <br>
+    For example, here's <a class='squiggly--url' target="_blank" href="/documents/template.md">a recipe in plain text</a> that I've implemented on this website.<br>
+    <a class='squiggly--url' href="/recipes/pavlova">Here's that recipe processed in <strong>theSkullery.net</strong>.</a>
+    The magic comes behind-the-scenes, with <a class='squiggly--url' href="http://schema.org/Recipe">recipe microdata via schema.org</a>. This process adds special tags around each bit of content, which is what lets the infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
+    <br>
+    This is <strong>definitely</strong> a work in progress. This project helped me learn and consolidate my knowledge with a lot of languages and apps (Jekyll, SCSS, JavaScript, Google Firebase). The website might go down from time to time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
+    <br>
+    If you would like to submit your own, please download a template, fill it in and upload it below. Also, please make sure not to upload files with the same name as they will be overwritten.
+  </div>
+  <div class="downloads ml3 mr3">
+    <a class="txt" href="/documents/template.txt" download></a>
+    <a class="md" href="/documents/template.md" download></a>
+  </div>
+  <div class="m3" id="filesubmit">
+    <div class="messages"></div>
+    <label for="file-upload" class="custom-file-upload mt1">
+      Upload recipe
+    </label>
+    <span class="file-selected mt1" id="file-selected">*.txt and *.md only</span>
+    <input type="file" id="file-upload" class="file-select" accept=".txt,.md" />
+    <button class="file-submit mt1">Submit</button>
+  </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAg1mUVs87yOQ-VJi_o5PYq3gLWl_6Lh1Q",
+    authDomain: "the-skullery.firebaseapp.com",
+    databaseURL: "https://the-skullery.firebaseio.com",
+    projectId: "the-skullery",
+    storageBucket: "the-skullery.appspot.com",
+    messagingSenderId: "849862452241",
+    appId: "1:849862452241:web:d3dcad30f48eaf13437db0",
+    measurementId: "G-MZLE1B6FKQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const storageService = firebase.storage();
+  const storageRef = storageService.ref();
+
+  document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
+  document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
+  let selectedFile;
+
+  function handleFileUploadChange(e) {
+    selectedFile = e.target.files[0];
+  };
+
+  function handleFileUploadSubmit(e) {
+    const uploadTask = storageRef.child(`recipes/${selectedFile.name}`).put(
+      selectedFile); //create a child directory called images, and place the file inside this directory
+    uploadTask.on('state_changed', (snapshot) => {
+      // Observe state change events such as progress, pause, and resume
+    }, (error) => {
+      // Handle unsuccessful uploads
+      var uploadFailed =
+        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Upload failed.</strong> Your file was not uploaded, please make sure you are uploading only template files. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
+      $('#filesubmit').find('.messages').html(uploadFailed);
+    }, () => {
+      // Do something once upload is complete
+      var uploadSuccess =
+        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Your file was uploaded, which means you\'re one step away from having your recipe displayed.</div>";
+      $('#filesubmit').find('.messages').html(uploadSuccess);
+    });
+  };
+</script>
+<script>
+  $('#file-upload').bind('change', function () {
+    var fileName = '';
+    fileName = $(this).val().replace("C:\\fakepath\\", "");
+    $('#file-selected').html(fileName);
+  })
+</script>
+      </div>
+    </div>
+
+  <footer class="footer clearfix py4">
+  <div class="container px3 sm-px4">
+    <div class="sm-col sm-col-6">
+      <div class="left-align flex-center">
+        <div class="icon icon--left grey">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+            <path
+              d="M16.189 16.521L27.463 6H2.537l11.273 10.521C14.477 17.145 15.523 17.145 16.189 16.521zM8.906 14.68L1 7.301 1 22.586zM21.094 14.68L29 22.586 29 7.301z" />
+            <path
+              d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
+            </svg>
+        </div>
+        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-6">
+      <p class="right-align">made with <svg class="js-geomicon geomicon" height="0.8em" data-icon="heart"
+          viewBox="0 0 32 32" style="fill:#E83151">
+          <path
+            d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
+          </path>
+        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

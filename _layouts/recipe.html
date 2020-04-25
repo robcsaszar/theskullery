@@ -1,0 +1,189 @@
+---
+layout: default-recipe
+title: theSkullery
+---
+<div class="container" itemscope itemtype="http://schema.org/Recipe">
+
+  <!-- call up the image and image credit link -->
+  {% for image in page.image %}
+  <div class="xs-p2">
+    <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}" />
+    {% if page.imagecredit %}
+    {% for imagecredit in page.imagecredit %}
+    <span class="right" tooltip="{{ imagecredit }}" flow="down">
+      <svg fill="#ddd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+        <path
+          d="M25,2C12.318,2,2,12.318,2,25c0,12.683,10.318,23,23,23c12.683,0,23-10.317,23-23C48,12.318,37.683,2,25,2z M17.127,30.481c1.958,0,3.445-1.056,3.855-2.728h2.287c-0.41,2.922-2.84,4.871-6.142,4.871c-4.111,0.001-6.674-2.963-6.674-7.751c0-4.799,2.553-7.763,6.665-7.763c3.261,0,5.783,2.112,6.152,5.127h-2.287c-0.431-1.815-1.917-2.983-3.866-2.983c-2.656,0-4.317,2.163-4.317,5.619C12.8,28.318,14.461,30.481,17.127,30.481z M33.404,30.481c1.958,0,3.445-1.056,3.855-2.728h2.287c-0.41,2.922-2.84,4.871-6.142,4.871c-4.111,0.001-6.674-2.963-6.674-7.751c0-4.799,2.553-7.763,6.665-7.763c3.261,0,5.783,2.112,6.152,5.127H37.26c-0.431-1.815-1.917-2.983-3.866-2.983c-2.656,0-4.317,2.163-4.317,5.619C29.077,28.318,30.738,30.481,33.404,30.481z" />
+      </svg></span>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <article class="post-content px2">
+
+    <!-- call up the main recipe title and content -->
+    <header class="post-header">
+      <h1 class="post-title center m1 sm-mt3" itemprop="name">{{ page.title }}</h1>
+    </header>
+
+    <div class="px2 mt3 clearfix">
+      <div class="sm-col-8 center mx-auto description" itemprop="description">{{page.content}}</div>
+    </div>
+
+    <div class="recipe--categories">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M735 250L623 100a75 75 0 00-60-30H100c-28 0-50 23-50 50v351c0 27 22 50 50 50h463c23 0 46-12 60-30l112-150c20-27 20-64 0-91zm-110 83a38 38 0 110-75 38 38 0 010 75z"
+          fill-rule="nonzero" />
+        </g>
+      </svg>
+      {% for category in page.categories %}
+      <a class="recipe--category" href="/category/{{ category }}">{{ category }}</a>
+      {% endfor %}
+    </div>
+    <div class="recipe--tags">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M622 313c-45-12-77-56-77-104V91a20 20 0 0141 0v102a20 20 0 1041 0V91a20 20 0 0141 0v102a20 20 0 1041 0V91a20 20 0 0141 0v123c0 47-33 87-77 99l15 162a41 41 0 11-81 1l15-163zM173 376c-87-8-123-68-123-142 0-82 41-164 41-164h204s41 82 41 164c0 74-35 134-122 142v88l66 16a20 20 0 01-5 41H111a20 20 0 01-5-41l67-16v-88zM385 89c0-10 8-19 18-19h1c51 1 93 43 93 94v132c0 20-17 37-37 37-21 0-22 14-15 52 6 36 15 73 15 98a38 38 0 11-75 0V89z" />
+      </svg>
+      {% for tag in page.tags %}
+      <a class="recipe--tag" href="/tag/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    <div class="recipe--tags">
+      <svg class="icon--recipe" width="24px" height="100%" viewBox="0 0 800 600" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path
+          d="M490 481l49-195c21-78 36-189 36-189a32 32 0 0142-25c59 15 119 28 125 29a8 8 0 017 7v1c9 156-57 260-57 260a8 8 0 01-12 4c-24-13-103-33-106-1-7 66-5 61-22 125a32 32 0 01-62-16zm148-340a16 16 0 11-16-28 16 16 0 0116 28zM108 510l-2-8v-11l2-8c3-6 9-11 17-11h300c8 0 14 5 17 11l2 8v11l-2 8c-3 6-9 11-17 11H125c-8 0-14-5-17-11zM106 321a103 103 0 0147-194l23 2 1-1 2-3a112 112 0 01195 4l23-2a103 103 0 0147 195v105c0 10-9 19-19 19H125c-10 0-19-9-19-19V321z" />
+      </svg>
+
+      {% for chef in page.chef %}
+      <a class="recipe--chef" href="/chef/{{ chef }}">{{ chef }}</a>
+      {% endfor %}
+    </div>
+    <div class="divider"></div>
+    <!-- call up recipe and directions -->
+    <div class="clearfix mt3">
+
+      <div class="sm-col sm-col-6 lg-col-6 ingredientlist">
+        <!-- check if it's a component-based recipe -->
+        {% if page.ingredients %}
+        <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients</h4>
+        <ul itemprop="ingredients">
+          <!-- list ingredients that make up recipe -->
+          {% for ingredient in page.ingredients %}
+          {% if ingredient.first %}
+          <h4 class="xs-center stickynote--title">{{ ingredient.first[0] }}</h4>
+          <ul itemprop="recipeIngredientGroup">
+            {% for i in ingredient.first[1] %}
+            <li itemprop="recipeIngredient" class="check ingredient multiply">{{ i | markdownify }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <li itemprop="recipeIngredient" class="check ingredient multiply">{{ ingredient | markdownify }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+      <div class="sm-col sm-col-6 lg-col-6 instructionlist">
+        <h4 class="skullery mt0 mb2 xs-center">Directions</h4>
+        <ul itemprop="recipeInstructions" class="instructions">
+          {% for direction in page.directions %}
+          {% if direction.first %}
+          <h4>{{ direction.first[0] }}</h4>
+          <ul itemprop="instructionGroup">
+            {% for d in direction.first[1] %}
+            <li itemprop="instruction">{{ d | markdownify }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <li itemprop="instruction">{{ direction | markdownify }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% if page.notes %}
+      <div class="notes sm-col sm-col-6 lg-col-6">
+        <h4 class="skullery mt0 mb2 xs-center">Notes</h4>
+        <dl>
+        {% for notes in page.notes %}
+        <dt class="note">{{ notes | markdownify }}</li>
+        {% endfor %}
+        </dl>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- end recipe and directions -->
+    <div class="flex-container mt2">
+      <div class="applause" onclick="sendMessage()">
+        <applause-button multiclap="true" style="width: 58px; height: 58px;" />
+      </div>
+    </div>
+    <!-- end components -->
+  </article>
+
+</div>
+<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    jQuery.fn.clickToggle = function (a, b) {
+      var ab = [b, a];
+
+      function cb() {
+        ab[this._tog ^= 1].call(this);
+      }
+      return this.on("click", cb);
+    };
+
+    $("ul li").append('<input type="checkbox" class="checkbox">');
+    $("ul li").clickToggle(function () {
+      $(this).children("input").prop('checked', true);
+      $(this).addClass("checked");
+      var height = $(this).height();
+      var y = $(window).scrollTop();
+      $('html, body').animate({
+        scrollTop: y + height + 16
+      }, 200);
+    }, function () {
+      $(this).children("input").prop('checked', false);
+      $(this).removeClass("checked");
+      var height = $(this).height();
+      var y = $(window).scrollTop();
+      $('html, body').animate({
+        scrollTop: y - height - 16
+      }, 200);
+    });
+
+  });
+</script>
+<script>
+  function sendMessage() {
+    var request = new XMLHttpRequest();
+    var title = document.getElementsByTagName("title")[0].innerHTML;
+    var page = title.split(" - ").slice(0,1)
+    request.open("POST", "https://discordapp.com/api/webhooks/699980118013116426/L2jqPh9nx1q1cRxiGOQfSJFTDms4pdFJBfAu7f-kGkavwvLTrDtOI63uMv60MMkdTa6Z");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    var params = {
+      username: "",
+      avatar_url: "",
+      content: "Someone clapped to your '" + page + "' recipe! 👏"
+    }
+
+    request.send(JSON.stringify(params));
+  }
+</script>

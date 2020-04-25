@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  
+  <!--
+{theSkullery.net is built at NHG.design}
+   __  __        _____ __         ____                             __ 
+  / /_/ /_  ___ / ___// /____  __/ / /__  _______  __  ____  ___  / /_
+ / __/ __ \/ _ \\__ \/ //_/ / / / / / _ \/ ___/ / / / / __ \/ _ \/ __/
+/ /_/ / / /  __/__/ / ,< / /_/ / / /  __/ /  / /_/ / / / / /  __/ /_  
+\__/_/ /_/\___/____/_/|_|\__,_/_/_/\___/_/   \__, (_)_/ /_/\___/\__/  
+                                            /____/                    
+Hello there, fellow developer! Please bear in mind that I am still learning (aren't we all?) so please don't judge the mess that is my code. I'd love to hear your feedback at robert@nhg.design, should you have any. Have an awesome day! 
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Burger - theSkullery</title>
+  <meta name="title" content="theSkullery">
+  <meta name="description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164173851-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164173851-1');
+  </script>
+
+  <link rel="preload" as="font" href="/assets/fonts/inter.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bass.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#E83151">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#E83151">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#E83151">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theskullery.net/">
+  <meta property="og:title" content="theSkullery">
+  <meta property="og:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="og:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theskullery.net/">
+  <meta property="twitter:title" content="theSkullery">
+  <meta property="twitter:description" content="A scullery is a historical noun for a small kitchen, much like mine.
+  I hope you find inspiration from my collection and cook something for your loved ones.">
+  <meta property="twitter:image" content="/assets/theSkullery_tile.png">
+
+  <!-- Global site verification - Google Tag Manager -->
+  <meta name="google-site-verification" content="Q8OSXL2dBLDbRpxyslhwPcgnRbPsAttWdYTJ1jVbZfk" />
+
+</head>
+  <body>
+
+  	<a class="home--logo absolute no-line-height top-2 left-2 z4" href="/">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:white;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+    <div class="page-content">
+      <div class="main-container">
+        <a class="recipe--logo absolute no-line-height top-2 left-2 z4" href="/">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.954507,0,0,0.954507,1.79555,85.7438)">
+        <path d="M365.649,434L183,434L204,366L182.825,366C81.86,366 0,283.797 0,182.828C0,81.856 81.86,0 182.825,0C269.178,0 341.508,59.898 360.64,140.394C335.632,142.372 315.934,163.269 315.934,188.796C315.934,215.635 337.687,237.391 364.541,237.391C364.91,237.391 365.28,237.34 365.649,237.333L365.649,434ZM214.472,237.812C187.622,237.812 165.869,216.055 165.869,189.22C165.869,162.377 187.626,140.617 214.472,140.617C241.319,140.617 263.075,162.377 263.075,189.22C263.075,216.055 241.319,237.812 214.472,237.812Z" style="fill:#E83151;"/>
+    </g>
+    <g transform="matrix(6.472e-17,-1.05696,1.05696,6.472e-17,123.172,697.575)">
+        <path d="M186.956,276.112L186.928,231.01L659.984,231.01L652.233,245.518C624.708,297.09 554.752,324.516 481.717,338.924C410.172,353.034 351.547,354.823 312.196,354.823L302.259,354.823L302.359,276.024C260.665,276.024 186.956,276.112 186.956,276.112Z" style="fill:#E83151;"/>
+    </g>
+</svg>
+
+  <h1 class="hide">theSkullery</h1>
+</a>
+
+<div class="xs-p2">
+  <img itemprop="image" src="/images/recipe-tags/burger.jpg" />
+  
+  
+  <a href="https://unsplash.com" class="right">
+    <svg fill="#cfcfcf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
+      <path
+        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M12,17c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S14.8,17,12,17z" />
+      <path d="M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 1 0 12 8.5zM18 5L15 2 9 2 6 5z" />
+    </svg> </a>
+  
+  
+</div>
+
+<div class="tagpage--header">
+  <div class="tagpage--suptitle ml3 sm-mt3">Recipe type</div>
+  <div class="tagpage--title ml3">burger</div>
+  <div class="tagpage--subtitle ml3">Get your burger on.</div>
+</div>
+<div class="mt3 clearfix">
+  <ul>
+    
+    
+    <div id="tags">
+      
+      
+      <ul class="ml3 tagpage--list">
+        
+        
+        
+        <li><a class="tagpage--listitem" href="/recipes/burger-buns"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>Burger Buns</a>
+          
+          <a class="recipe--category" href="/category/oven">oven</a>
+          
+          <a class="recipe--category" href="/category/baking">baking</a>
+          </li>
+        
+        
+        
+        
+        <li><a class="tagpage--listitem" href="/recipes/momofuku-steamed-buns"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>Momofuku Steamed Buns</a>
+          
+          <a class="recipe--category" href="/category/oven">oven</a>
+          
+          <a class="recipe--category" href="/category/baking">baking</a>
+          </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+      
+  </ul>
+</div>
+      </div>
+    </div>
+
+  <footer class="footer clearfix py4">
+  <div class="container px3 sm-px4">
+    <div class="sm-col sm-col-6">
+      <div class="left-align flex-center">
+        <div class="icon icon--left grey">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+            <path
+              d="M16.189 16.521L27.463 6H2.537l11.273 10.521C14.477 17.145 15.523 17.145 16.189 16.521zM8.906 14.68L1 7.301 1 22.586zM21.094 14.68L29 22.586 29 7.301z" />
+            <path
+              d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
+            </svg>
+        </div>
+        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+      </div>
+    </div>
+    <div class="sm-col sm-col-6">
+      <p class="right-align">made with <svg class="js-geomicon geomicon" height="0.8em" data-icon="heart"
+          viewBox="0 0 32 32" style="fill:#E83151">
+          <path
+            d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
+          </path>
+        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

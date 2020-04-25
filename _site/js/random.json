@@ -1,0 +1,14 @@
+function runme() {
+    var random = [
+        "https://theskullery.net/recipes/burger-buns",
+        "https://theskullery.net/recipes/frijoles-refritos",
+        "https://theskullery.net/recipes/momofuku-steamed-buns",
+        "https://theskullery.net/recipes/pavlova",
+        "https://theskullery.net/recipes/spinach-scones",
+        "https://theskullery.net/recipes/sticky-pork-belly",
+        "https://theskullery.net/recipes/veggie-curry-soup",
+];
+var value = random[Math.floor(Math.random() * random.length)];
+// alert("Would navigate to : " + value);
+window.location = value;
+    }

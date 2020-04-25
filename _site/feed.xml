@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theSkullery</title>
+    <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
+    <link>https://theskullery.net/</link>
+    <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 25 Apr 2020 07:32:58 +0000</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2020 07:32:58 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Burger Buns</title>
+        <description>&lt;p&gt;Easy, fluffy, and rich. Just like me. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/burger-buns</link>
+          <image>
+          
+          <url>/images/burger-buns.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/burger-buns</guid>
+        
+        <category>burger</category>
+        
+        <category>bread</category>
+        
+        
+        <category>oven</category>
+        
+        <category>baking</category>
+        
+      </item>
+    
+      <item>
+        <title>Refried Beans (Frijoles Refritos)</title>
+        <description>&lt;p&gt;&lt;em&gt;Epazote, a Mexican herb, can be found at Mexican grocers. To add other flavors to the refried beans, try sautéing a pinch of ground cumin or fresh chilis with the minced onion, or puréeing toasted dried chilis into the mixture. Different cooking fats give different flavors to the beans: lard is one of the most traditional, and it adds a porky, funky depth to the beans that’s hard to beat; bacon ups the ante even more by layering in a smoky flavor; vegetable oil keeps things neutral so you can really enjoy the flavor of the beans and the aromatics; and butter is decadent and rich without being overpowering.&lt;/em&gt; 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/frijoles-refritos</link>
+          <image>
+          
+          <url>/images/frijoles-refritos.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/frijoles-refritos</guid>
+        
+        <category>mexican</category>
+        
+        
+        <category>still</category>
+        
+        <category>working</category>
+        
+        <category>on</category>
+        
+        <category>it</category>
+        
+      </item>
+    
+      <item>
+        <title>Momofuku Steamed Buns</title>
+        <description>&lt;p&gt;A-MA-ZING! 🔪 &lt;br /&gt;
+&lt;em&gt;yields &lt;strong&gt;50&lt;/strong&gt; buns&lt;/em&gt;&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/momofuku-steamed-buns</link>
+          <image>
+          
+          <url>/images/momofuku-steamed-buns.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/momofuku-steamed-buns</guid>
+        
+        <category>burger</category>
+        
+        <category>bread</category>
+        
+        
+        <category>oven</category>
+        
+        <category>baking</category>
+        
+      </item>
+    
+      <item>
+        <title>Pavlova</title>
+        <description>&lt;p&gt;Sweet AF. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/pavlova</link>
+          <image>
+          
+          <url>/images/pavlova.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/pavlova</guid>
+        
+        <category>fruit</category>
+        
+        
+        <category>oven</category>
+        
+        <category>dessert</category>
+        
+      </item>
+    
+      <item>
+        <title>Savoury Spinach Scones</title>
+        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
+&lt;p&gt;Carbs don’t kill. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/spinach-scones</link>
+          <image>
+          
+          <url>/images/spinach-scones.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/spinach-scones</guid>
+        
+        <category>vegetarian</category>
+        
+        
+        <category>oven</category>
+        
+      </item>
+    
+      <item>
+        <title>Twice-Cooked Sticky Pork Belly</title>
+        <description>&lt;p&gt;&lt;em&gt;I have no idea what to write here. Just enjoy making this!&lt;/em&gt; 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/sticky-pork-belly</link>
+          <image>
+          
+          <url>/images/sticky-pork-belly.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/sticky-pork-belly</guid>
+        
+        <category>still</category>
+        
+        <category>working</category>
+        
+        <category>on</category>
+        
+        <category>it</category>
+        
+        
+        <category>oven</category>
+        
+      </item>
+    
+      <item>
+        <title>Veggie Curry Cream Soup</title>
+        <description>&lt;p&gt;Spice up your day. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/veggie-curry-soup</link>
+          <image>
+          
+          <url>/images/veggie-curry-soup.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/veggie-curry-soup</guid>
+        
+        <category>vegetarian</category>
+        
+        
+        <category>soup</category>
+        
+      </item>
+    
+  </channel>
+</rss>
