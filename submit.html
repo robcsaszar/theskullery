@@ -137,8 +137,31 @@ image: submit.jpg
     e.preventDefault();
 
     var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function () {
-      alert("Thank you!");
-    });
+    var data = new FormData($form);
+    data.append("CustomField", "This is some extra data, testing");
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+
+                $(".messages").text(data);
+                alert("SUCCESS : ", data);
+                $(".file-submit").prop("disabled", false);
+
+            },
+            error: function (e) {
+
+                $(".messages").text(e.responseText);
+                alert("ERROR : ", e);
+                $(".file-submit").prop("disabled", false);
+
+            }
+        });
   });
 </script>
