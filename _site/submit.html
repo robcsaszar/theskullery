@@ -115,20 +115,44 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 <div class="tagpage--header">
   <div class="tagpage--suptitle ml3 sm-mt3">Your recipes</div>
   <div class="tagpage--title ml3">Submit</div>
-  <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to cook better and get more organized. <br> 
-    This website is my attempt at getting recipes organized and categorized by moving them from closed services and random handwritten pages to a more open, beautiful, and shareable place while having the convenience of plain-text. <br> 
+  <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to
+    cook better and get more organized. <br>
+    This website is my attempt at getting recipes organized and categorized by moving them from closed services and
+    random handwritten pages to a more open, beautiful, and shareable place while having the convenience of plain-text.
     <br>
-    For example, here's <a class='squiggly--url' target="_blank" href="/documents/template.md">a recipe in plain text</a> that I've implemented on this website.<br>
-    <a class='squiggly--url' href="/recipes/pavlova">Here's that recipe processed in <strong>theSkullery.net</strong>.</a>
-    The magic comes behind-the-scenes, with <a class='squiggly--url' href="http://schema.org/Recipe">recipe microdata via schema.org</a>. This process adds special tags around each bit of content, which is what lets the infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
     <br>
-    This is <strong>definitely</strong> a work in progress. This project helped me learn and consolidate my knowledge with a lot of languages and apps (Jekyll, SCSS, JavaScript, Google Firebase). The website might go down from time to time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
+    For example, here's <a class='squiggly--url' target="_blank" href="/documents/template.md">a recipe
+      in plain text</a> that I've implemented on this website.<br>
+    <a class='squiggly--url' href="/recipes/pavlova">Here's that recipe processed in
+      <strong>theSkullery.net</strong>.</a>
+    The magic comes behind-the-scenes, with <a class='squiggly--url' href="http://schema.org/Recipe">recipe microdata
+      via schema.org</a>. This process adds special tags around each bit of content, which is what lets the
+    infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
     <br>
-    If you would like to submit your own, please download a template, fill it in and upload it below. Also, please make sure not to upload files with the same name as they will be overwritten.
+    This is <strong>definitely</strong> a work in progress. This project helped me learn and consolidate my knowledge
+    with a lot of languages and apps (Jekyll, SCSS, JavaScript, Google Firebase). The website might go down from time to
+    time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
+    <br>
+    If you would like to submit your own, please download a template, fill it in and upload it below. Also, please make
+    sure not to upload files with the same name as they will be overwritten.
   </div>
   <div class="downloads ml3 mr3">
     <a class="txt" href="/documents/template.txt" download></a>
     <a class="md" href="/documents/template.md" download></a>
+  </div>
+  <div class="form ml3 mr3">
+    <form id="submitform" name="contact" method="POST" data-netlify="true">
+        <label>Your Name: <input type="text" name="name" /></label>
+        <label>Your Email: <input type="email" name="email" /></label>
+        <label>Message: <textarea name="message"></textarea></label>
+        <div class="messages"></div>
+        <label for="file-upload" class="custom-file-upload mt1">
+          Upload recipe
+        </label>
+        <span class="file-selected mt1" id="file-selected">*.txt and *.md only</span>
+        <input type="file" id="file-upload" class="file-select" accept=".txt,.md" />
+        <button type="submit" class="file-submit mt1">Submit</button>
+    </form>
   </div>
   <div class="m3" id="filesubmit">
     <div class="messages"></div>
@@ -197,6 +221,16 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     fileName = $(this).val().replace("C:\\fakepath\\", "");
     $('#file-selected').html(fileName);
   })
+</script>
+<script>
+  $("#submitform").submit(function (e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function () {
+      alert("Thank you!");
+    });
+  });
 </script>
       </div>
     </div>

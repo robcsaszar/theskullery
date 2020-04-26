@@ -5,9 +5,9 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Apr 2020 07:32:58 +0000</pubDate>
-    <lastBuildDate>Sat, 25 Apr 2020 07:32:58 +0000</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Sun, 26 Apr 2020 16:39:32 +0300</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2020 16:39:32 +0300</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
     
       <item>
         <title>Burger Buns</title>
@@ -99,6 +99,27 @@
         <category>oven</category>
         
         <category>dessert</category>
+        
+      </item>
+    
+      <item>
+        <title>Pico de Gallo Salsa</title>
+        <description>&lt;p&gt;“Pico de gallo” translates to “rooster beak,” but what it refers to is the classic Mexican condiment made from fresh tomatoes, raw onion, chopped chilies, herbal cilantro, and vibrant lime juice. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/pico-de-gallo</link>
+          <image>
+          
+          <url>/images/pico-de-gallo.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/pico-de-gallo</guid>
+        
+        <category>vegetarian</category>
+        
+        
+        <category>fresh</category>
+        
+        <category>salad</category>
         
       </item>
     

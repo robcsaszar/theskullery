@@ -26,6 +26,12 @@
     },
 
     {
+        "title": "Pico de Gallo Salsa",
+        "image": "images/large/pico-de-gallo.jpg",
+        "url": "/recipes/pico-de-gallo",
+    },
+
+    {
         "title": "Savoury Spinach Scones",
         "image": "images/large/spinach-scones.jpg",
         "url": "/recipes/spinach-scones",

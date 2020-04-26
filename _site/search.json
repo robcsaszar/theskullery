@@ -66,6 +66,22 @@
   
     {
     
+	    "title"          : "Pico de Gallo Salsa",
+      
+      "ingredients"    : "1 1/2 pounds (680g) ripe tomatoes, cut into 1/4- to 1/2-inch dice (about 3 cups) *see note* Kosher salt 1/2 large white onion, finely diced (about 3/4 cup) 1 to 2 serrano or jalapeño chilies, finely diced *seeds and membranes removed for a milder salsa* 1/2 cup finely chopped fresh cilantro leaves 1 tablespoon (15ml) lime juice from 1 lime ",
+      
+		  "image"	         : "/recipes/pico-de-gallo/thumbnails/pico-de-gallo.jpg",
+      "url"            : "/recipes/pico-de-gallo",
+      
+      "categories"     : "fresh salad ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "sides ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
 	    "title"          : "Savoury Spinach Scones",
       
       "ingredients"    : "{&quot;for the mix&quot;=&gt;nil} 2 1/2 cup of self raising flour 1 cup mixed grated cheese *we used cheddar and mozarella* 1 cup baby spinach chopped 1 tbsp onion powder 1 cup almond milk 1/2 tsp salt 1/2 tsp pepper 30g unsalted butter, melted {&quot;for the coat&quot;=&gt;nil} 1 tbsp butter, melted 1/4 cup almond milk 1/2 tsp ground coriander 1/2 tsp rosemary pinch of salt and pepper ",
