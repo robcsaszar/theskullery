@@ -226,22 +226,26 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 <script>
   var submitform = $('#submitform');
 
-  submitform.on('submit', function (evt) {
-    // stop page from refreshing on submit
-    evt.preventDefault();
-    $.ajax({
-      type: "POST",
-      data: new FormData(this),
-      processData: false,
-      contentType: false,
-      success: function (data) {
-        alert("success!");
-      },
-      error: function (err) {
-        alert("you suck.");
-      }
-    });
+  submitform.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const formData = new FormData(submitform);
+  fetch(submitform.getAttribute('action'), {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(res => {
+    if (res) {
+        alert('worked');
+    } else {
+      alert('you suck.');
+    }
   });
+});
 </script>
       </div>
     </div>
