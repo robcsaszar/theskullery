@@ -141,7 +141,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <a class="md" href="/documents/template.md" download></a>
   </div>
   <div class="form ml3 mr3">
-    <form id="submitform" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
         <label>Your Name: <input type="text" name="name" /></label>
         <label>Your Email: <input type="email" name="email" /></label>
         <label>Message: <textarea name="message"></textarea></label>
