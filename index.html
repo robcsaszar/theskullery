@@ -59,19 +59,19 @@ layout: default
 </div>
 <script src="{{site.baseurl}}/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
 <script>
-  var images = ['../assets/headers/header1.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header2.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header3.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header4.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header5.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header6.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header7.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header8.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header9.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header10.jpg?nf_resize=fit&w=1920'
+  var images = ['../assets/headers/header1.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header2.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header3.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header4.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header5.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header6.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header7.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header8.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header9.jpg?nf_resize=smartcrop&w=1920',
+    '../assets/headers/header10.jpg?nf_resize=smartcrop&w=1920'
   ];
 
-  var randomImage = Math.floor(Math.random() * 2)
+  var randomImage = Math.floor(Math.random() * 10)
 
   $(document).ready(function () {
     $("#hero").css("background-image", "url('" + images[randomImage] + "')");
