@@ -40,6 +40,26 @@ image: submit.jpg
     <a class="txt" href="{{site.baseurl}}/documents/template.txt" download></a>
     <a class="md" href="{{site.baseurl}}/documents/template.md" download></a>
   </div>
+  <form name="contact" method="" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
   <div class="m3" id="filesubmit">
     <div class="messages"></div>
     <label for="file-upload" class="custom-file-upload mt1">
@@ -107,4 +127,14 @@ image: submit.jpg
     fileName = $(this).val().replace("C:\\fakepath\\", "");
     $('#file-selected').html(fileName);
   })
+</script>
+<script>
+  $("#my-form").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
 </script>
