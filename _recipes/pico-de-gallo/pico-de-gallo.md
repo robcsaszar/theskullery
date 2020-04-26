@@ -6,7 +6,7 @@ title:  "Pico de Gallo Salsa"
 image: pico-de-gallo.jpg
 imagecredit: "flickr.com"
 categories: fresh salad
-tags: vegetarian
+tags: vegetarian mexican
 meal: sides
 chef: robert
 
