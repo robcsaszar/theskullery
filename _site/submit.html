@@ -92,7 +92,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 
     <div class="page-content">
       <div class="main-container">
-        <a class="recipe--logo absolute no-line-height top-2 left-2 z4" href="/">
+        <a class="recipe--logo absolute no-line-height top-2 z4" href="/">
   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="64px" height="64px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -130,7 +130,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
     <br>
     This is <strong>definitely</strong> a work in progress. This project helped me learn and consolidate my knowledge
-    with a lot of languages and apps (Jekyll, SCSS, JavaScript, Google Firebase). The website might go down from time to
+    with a lot of languages and apps (Jekyll, Ruby, SCSS, JavaScript, Netlify, Cloudflare, Google Firebase). The website might go down from time to
     time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
     <br>
     If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
@@ -147,6 +147,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <button type="submit" class="send-message mt1">Send message</button>
     </form>
   </div>
+  <hr>
+  <div>
   <div class="tagpage--subtitle ml3 mr3">
     If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
     sure not to upload files with the same name as they will be overwritten.
@@ -164,6 +166,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <input type="file" id="file-upload" class="file-select" accept=".txt,.md" name="file" multiple>
     <button class="file-submit mt1">Submit</button>
   </div>
+</div>
 </div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
@@ -213,6 +216,19 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       var uploadSuccess =
         "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Your file was uploaded, which means you\'re one step away from having your recipe displayed.</div>";
       $('#filesubmit').find('.messages').html(uploadSuccess);
+      var request = new XMLHttpRequest();
+    request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    var params = {
+      username: "",
+      avatar_url: "",
+      content: "Someone submitted a recipe! 🔥 Check it out here: https://console.firebase.google.com/u/2/project/the-skullery/storage/the-skullery.appspot.com/files"
+    }
+
+    request.send(JSON.stringify(params));
+
     });
   };
 </script>
@@ -246,6 +262,22 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       }
     });
   });
+</script>
+<script>
+    function sendMessageon() {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    var params = {
+      username: "",
+      avatar_url: "",
+      content: "Someone clapped to your '" + page + "' recipe! 👏"
+    }
+
+    request.send(JSON.stringify(params));
+  }
 </script>
       </div>
     </div>

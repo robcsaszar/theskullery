@@ -163,7 +163,7 @@ a:hover .image { opacity: 0.9; }
 
 .instructions em:after { content: ")"; }
 
-.recipe--logo { background: #EFEEEE; border-radius: 0px 5px 5px 0px; padding: 0.5rem 0.5rem 0.5rem 2rem; left: 0; }
+.recipe--logo { background: #EFEEEE; border-radius: 0px 5px 5px 0px; padding: 0.5rem 0.5rem 0.5rem 2rem; }
 
 .recipe--logo > svg:hover { opacity: 0.8; }
 
@@ -308,5 +308,7 @@ input[type="file"] { display: none; }
 .form input:focus { color: rgba(0, 0, 0, 0.8); }
 
 .form textarea { outline: none; display: block; background: rgba(0, 0, 0, 0.1); min-width: 30rem; min-height: 8rem; border: 0; border-radius: 4px; box-sizing: border-box; padding: 12px 20px; color: rgba(0, 0, 0, 0.6); font-family: inherit; font-size: inherit; font-weight: 500; line-height: inherit; -webkit-transition: 0.3s ease; transition: 0.3s ease; }
+
+.hero--small { width: 50%; margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

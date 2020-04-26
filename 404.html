@@ -1,25 +1,19 @@
 ---
-permalink: /404.html
-layout: default
+permalink: /404
+layout: default-recipe
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="hero--small xs-p2">
+  <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
+    {% include theSkullery-red.svg %}
+    <h1 class="hide">theSkullery</h1>
+  </a>
+  <img src="/assets/404.gif" alt="404 Pantry"/>
+</div>
+<div class="categorypage--header">
+  <div class="categorypage--suptitle ml3 sm-mt3">Page not found</div>
+  <div class="categorypage--title ml3">404</div>
+  <div class="categorypage--subtitle ml3">Oops, the page you're looking for does not exist.<br>
+    You may want to head  <a href="/" class='squiggly--url'>back to the homepage</a>. <br>
+If you think something is broken, <a href="/submit" class='squiggly--url'>report a problem</a>.
+</div>
 </div>

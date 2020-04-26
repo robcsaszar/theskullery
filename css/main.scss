@@ -618,7 +618,6 @@ a:hover .image {
     background: #EFEEEE;
     border-radius: 0px 5px 5px 0px;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
-    left: 0;
 }
 
 .recipe--logo>svg:hover {
@@ -1173,4 +1172,9 @@ input[type="file"] {
     line-height: inherit;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
+}
+
+.hero--small {
+width: 50%;
+margin: 0 auto;
 }
