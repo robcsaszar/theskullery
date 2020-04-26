@@ -226,26 +226,26 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 <script>
   var submitform = $('#submitform');
 
-  submitform.addEventListener('submit', e => {
-  e.preventDefault();
-
-  const formData = new FormData(submitform);
-  fetch(submitform.getAttribute('action'), {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-    },
-    body: new URLSearchParams(formData).toString()
-  })
-  .then(res => {
-    if (res) {
-        alert('worked');
-    } else {
-      alert('you suck.');
-    }
+  submitform.on('submit', function (evt) {
+    // stop page from refreshing on submit
+    evt.preventDefault();
+    $.ajax({
+      type: "POST",
+      data: new FormData(this),
+      processData: false,
+      contentType: false,
+      success: function (data) {
+        var uploadSuccess =
+        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Thank you for your message, I\'ll upload your recipe as soon as possible.</div>";
+      $('#submitform').find('.messages').html(uploadSuccess);
+      },
+      error: function (err) {
+        var uploadFailed =
+        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Upload failed.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
+      $('#submitform').find('.messages').html(uploadFailed);
+      }
+    });
   });
-});
 </script>
       </div>
     </div>
