@@ -155,7 +155,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <button type="submit" class="file-submit mt1">Submit</button>
     </form>
   </div>
-  <!-- <div class="m3" id="filesubmit">
+  <div class="m3" id="filesubmit">
     <div class="messages"></div>
     <label for="file-upload" class="custom-file-upload mt1">
       Upload recipe
@@ -163,16 +163,16 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <span class="file-selected mt1" id="file-selected">*.txt and *.md only</span>
     <input type="file" id="file-upload" class="file-select" accept=".txt,.md" name="file" multiple>
     <button class="file-submit mt1">Submit</button>
-  </div> -->
+  </div>
 </div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<!-- <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<!-- <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
 
-<!-- <script>
+<script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAg1mUVs87yOQ-VJi_o5PYq3gLWl_6Lh1Q",
@@ -215,7 +215,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       $('#filesubmit').find('.messages').html(uploadSuccess);
     });
   };
-</script> -->
+</script>
 <script>
   $('#file-upload').bind('change', function () {
     var fileName = '';
@@ -224,35 +224,21 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   })
 </script>
 <script>
-  $("#submitform").submit(function (e) {
-    e.preventDefault();
+  var submitform = $('#submitform');
 
-    var $form = $('#submitform')[0];
-    var $data = new FormData($form);
-
-    $data.append("CustomField", "This is some extra data, testing");
-
+  submitform.on('submit', function (evt) {
+    // stop page from refreshing on submit
+    evt.preventDefault();
     $.ajax({
       type: "POST",
-      enctype: 'multipart/form-data',
-      data: $data,
+      data: new FormData(this),
       processData: false,
       contentType: false,
-      cache: false,
-      timeout: 600000,
-      success: function ($data) {
-
-        var uploadSuccess = "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Your file was uploaded, which means you\'re one step away from having your recipe displayed.</div>";
-        $('#filesubmit').find('.messages').html(uploadSuccess);
-        $(".file-submit").prop("disabled", false);
-
+      success: function (data) {
+        alert("success!");
       },
-      error: function (e) {
-
-        var uploadFailed = "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Upload failed.</strong> Your file was not uploaded, please make sure you are uploading only template files. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
-        $('#filesubmit').find('.messages').html(uploadFailed);
-        $(".file-submit").prop("disabled", false);
-
+      error: function (err) {
+        alert("you suck.");
       }
     });
   });
