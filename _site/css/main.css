@@ -297,4 +297,16 @@ input[type="file"] { display: none; }
 
 .main-container { min-height: 100vh; overflow: hidden; display: block; position: relative; padding-bottom: 2.5rem; }
 
+.send-message { border: none; padding: .875rem 2rem; border-radius: 5px; font-size: 1rem; font-weight: 500; cursor: pointer; background: var(--mainColor); border: 2px solid var(--mainColor); color: #fff; display: inline-block; vertical-align: middle; text-transform: uppercase; letter-spacing: 1.5px; }
+
+.send-message:hover { background: var(--mainColor700); border: 2px solid var(--mainColor700); }
+
+.form label { display: block; margin: 0 0 10px; color: rgba(0, 0, 0, 0.6); font-size: 12px; font-weight: 500; line-height: 1; text-transform: uppercase; letter-spacing: .2em; }
+
+.form input { outline: none; display: block; background: rgba(0, 0, 0, 0.1); min-width: 25rem; border: 0; border-radius: 4px; box-sizing: border-box; padding: 12px 20px; color: rgba(0, 0, 0, 0.6); font-family: inherit; font-size: inherit; font-weight: 500; line-height: inherit; -webkit-transition: 0.3s ease; transition: 0.3s ease; }
+
+.form input:focus { color: rgba(0, 0, 0, 0.8); }
+
+.form textarea { outline: none; display: block; background: rgba(0, 0, 0, 0.1); min-width: 30rem; min-height: 8rem; border: 0; border-radius: 4px; box-sizing: border-box; padding: 12px 20px; color: rgba(0, 0, 0, 0.6); font-family: inherit; font-size: inherit; font-weight: 500; line-height: inherit; -webkit-transition: 0.3s ease; transition: 0.3s ease; }
+
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@ layout: default
 </a>
 {% for image in page.image %}
 <div class="xs-p2">
-  <img itemprop="image" src="{{site.baseurl}}/images/recipe-meal/{{ image }}" />
+  <img itemprop="image" src="{{site.baseurl}}/images/recipe-meal/{{ image }}?nf_resize=fit&w=1920" />
   {% if page.imagecredit %}
   {% for imagecredit in page.imagecredit %}
   <a href="{{ imagecredit }}" class="right">

@@ -46,7 +46,7 @@ layout: default
     <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover image--overlay" {% for image in post.image %}
-          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/thumbnails/{{image}});"
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/thumbnails/{{image}}?nf_resize=fit&w=600);"
           {% endfor %}></div>
         <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h1>
         {% for meal in post.meal %}
@@ -82,7 +82,7 @@ layout: default
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover image--overlay" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover image--overlay" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image}?nf_resize=fit&w=600);"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
   })
 </script>
 <script>

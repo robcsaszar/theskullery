@@ -7,7 +7,7 @@ title: theSkullery
   <!-- call up the image and image credit link -->
   {% for image in page.image %}
   <div class="xs-p2">
-    <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}" />
+    <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}?nf_resize=fit&w=1024" />
     {% if page.imagecredit %}
     {% for imagecredit in page.imagecredit %}
     <span class="right" tooltip="{{ imagecredit }}" flow="down">

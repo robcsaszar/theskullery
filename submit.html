@@ -9,7 +9,7 @@ image: submit.jpg
 </a>
 {% for image in page.image %}
 <div class="xs-p2">
-  <img itemprop="image" src="{{site.baseurl}}/images/{{ image }}" />
+  <img itemprop="image" src="{{site.baseurl}}/images/{{ image }}?nf_resize=fit&w=1920" />
   {% if page.imagecredit %}
   {% for imagecredit in page.imagecredit %}
   <a href="{{ imagecredit }}" class="right">
@@ -23,7 +23,7 @@ image: submit.jpg
 </div>
 {% endfor %}
 <div class="tagpage--header">
-  <div class="tagpage--suptitle ml3 sm-mt3">Your recipes</div>
+  <div class="tagpage--suptitle ml3 sm-mt3">Your contribution</div>
   <div class="tagpage--title ml3">Submit</div>
   <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to
     cook better and get more organized. <br>
@@ -43,27 +43,27 @@ image: submit.jpg
     with a lot of languages and apps (Jekyll, SCSS, JavaScript, Google Firebase). The website might go down from time to
     time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
     <br>
-    If you would like to submit your own, please download a template, fill it in and upload it below. Also, please make
+    If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
+    sure not to upload files with the same name as they will be overwritten.
+    In case you'd like to leave some feedback or want to submit recipes by URL, please use the form below.
+  </div>
+  <div class="form m3">
+    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field"
+      data-netlify="true">
+      <label>Name<input type="text" name="name" required /></label>
+      <label>E-Mail<input type="email" name="email" required/></label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <div class="messages"></div>
+      <button type="submit" class="send-message mt1">Send message</button>
+    </form>
+  </div>
+  <div class="tagpage--subtitle ml3 mr3">
+    If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
     sure not to upload files with the same name as they will be overwritten.
   </div>
   <div class="downloads ml3 mr3">
     <a class="txt" href="{{site.baseurl}}/documents/template.txt" download></a>
     <a class="md" href="{{site.baseurl}}/documents/template.md" download></a>
-  </div>
-  <div class="form ml3 mr3">
-    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field"
-      data-netlify="true">
-      <label>Your Name: <input type="text" name="name" /></label>
-      <label>Your Email: <input type="email" name="email" /></label>
-      <label>Message: <textarea name="message"></textarea></label>
-      <div class="messages"></div>
-      <label for="file-upload" class="custom-file-upload mt1">
-        Upload recipe
-      </label>
-      <span class="file-selected mt1" id="file-selected">*.txt and *.md only</span>
-      <input type="file" id="file-upload" class="file-select" accept=".txt,.md">
-      <button type="submit" class="file-submit mt1">Submit</button>
-    </form>
   </div>
   <div class="m3" id="filesubmit">
     <div class="messages"></div>
@@ -151,7 +151,7 @@ image: submit.jpg
       },
       error: function (err) {
         var uploadFailed =
-        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Upload failed.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
+        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Error.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
       $('#submitform').find('.messages').html(uploadFailed);
       }
     });
