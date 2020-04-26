@@ -368,6 +368,9 @@ ul li input {
 
     .bg {
         // background: url(../assets/headers/header1.jpg) no-repeat center center;
+        background-repeat: no-repeat;
+        background-attachment: center;
+        background-position: center;
         background-size: cover;
         top: 0;
         left: 0;
