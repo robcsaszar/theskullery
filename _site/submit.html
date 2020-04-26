@@ -226,33 +226,11 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   $("#submitform").submit(function (e) {
     e.preventDefault();
 
-    var $form = $(this);
-    var data = new FormData($form);
-    data.append("CustomField", "This is some extra data, testing");
-
-        $.ajax({
-            type: "POST",
-            enctype: 'multipart/form-data',
-            data: data,
-            processData: false,
-            contentType: false,
-            cache: false,
-            timeout: 600000,
-            success: function (data) {
-
-                $(".messages").text(data);
-                alert("SUCCESS : ", data);
-                $(".file-submit").prop("disabled", false);
-
-            },
-            error: function (e) {
-
-                $(".messages").text(e.responseText);
-                alert("ERROR : ", e);
-                $(".file-submit").prop("disabled", false);
-
-            }
-        });
+    var $form = $('#submitform');
+    
+    $.post($form.attr("action"), $form.serialize()).then(function () {
+      alert("Thank you!");
+    });
   });
 </script>
       </div>
