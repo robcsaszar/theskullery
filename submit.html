@@ -79,7 +79,6 @@ image: submit.jpg
     <input type="file" id="file-upload" class="file-select" accept=".txt,.md" name="file" multiple>
     <button class="file-submit mt1">Submit</button>
   </div>
-  <div id='favorites'></div>
 </div>
 </div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -193,11 +192,3 @@ image: submit.jpg
     request.send(JSON.stringify(params));
   }
 </script>
-<script>   
-var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {return localStorage.key( i );});
-function makeUL(){
-var LIs = '';
-
-for (i = 0; i < options.length; i +=1){ LIs +='<li>' + options[i] + '</li>' ; } return '<ul>' + LIs + '</ul>' ; }
-  document.getElementById('favorites').innerHTML=makeUL();
-  </script>
