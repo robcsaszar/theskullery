@@ -216,7 +216,7 @@ a:hover .image { opacity: 0.9; }
 
 .listitem--icon { fill: var(--greyAccent300); position: relative; top: 0.2rem; }
 
-.divider { background-color: var(--greyAccent300); padding: 0.05rem; margin-top: 2rem; margin-bottom: 2rem; opacity: .250; -webkit-box-shadow: 0 0px 5px var(--greyAccent300); -moz-box-shadow: 0 0px 5px var(--greyAccent300); box-shadow: 0 0px 5px var(--greyAccent300); }
+.divider { background-color: var(--greyAccent300); padding: 0.05rem; margin-top: 1rem; margin-bottom: 1rem; opacity: .250; -webkit-box-shadow: 0 0px 5px var(--greyAccent300); -moz-box-shadow: 0 0px 5px var(--greyAccent300); box-shadow: 0 0px 5px var(--greyAccent300); }
 
 .ingredientlist { border: 1px solid var(--greyAccent100); border-radius: 5px; padding: 1rem; position: relative; border-bottom-right-radius: 60px 5px; box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.075); background: -moz-linear-gradient(-45deg, #F3F1D6 81%, #F3F1D6 82%, #f3f1d6 82%, #EFECC7 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #F3F1D6), color-stop(82%, #F3F1D6), color-stop(82%, #F3F1D6), color-stop(100%, #EFECC7)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg, #F3F1D6 81%, #F3F1D6 82%, #F3F1D6 82%, #EFECC7 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg, #F3F1D6 81%, #F3F1D6 82%, #F3F1D6 82%, #EFECC7 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg, #F3F1D6 81%, #F3F1D6 82%, #F3F1D6 82%, #EFECC7 100%); /* IE10+ */ background: linear-gradient(135deg, #F3F1D6 81%, #F3F1D6 82%, #F3F1D6 82%, #EFECC7 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F1D6', endColorstr='#EFECC7', GradientType=1); /* IE6-9 fallback on horizontal gradient */ cursor: default; }
 
@@ -338,9 +338,9 @@ input[type="file"] { display: none; }
 
 .progress-wrap svg.progress-circle path { stroke: var(--greyAccent300); stroke-width: 4; box-sizing: border-box; -webkit-transition: all 200ms linear; transition: all 200ms linear; }
 
-.favorites input.favorite { mask: url(/assets/unfavorite.svg); -webkit-mask: url(/assets/unfavorite.svg); background-position: center; background-repeat: no-repeat; background-color: var(--greyAccent700); width: 3rem; height: 3rem; border: none; text-decoration: none; cursor: pointer; }
+.favorites input.favorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-position: center; background-repeat: no-repeat; background-color: var(--greyAccent300); width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
 
-.favorites input.unfavorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: var(--mainColor); background-position: center; background-repeat: no-repeat; width: 3rem; height: 3rem; border: none; text-decoration: none; cursor: pointer; }
+.favorites input.unfavorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: var(--mainColor); background-position: center; background-repeat: no-repeat; width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
 
 .split { width: 50%; }
 
