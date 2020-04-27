@@ -149,7 +149,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 <em>yields <strong>50</strong> buns</em></p>
 </div>
     </div>
-    <div>
+    <div class="clearfix">
+    <div class="split left">
       <div class="recipe--categories">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" class="icon--recipe" clip-rule="evenodd" viewBox="0 0 800 600"><path fill-rule="nonzero" d="M735 250L623 100a75 75 0 00-60-30H100c-28 0-50 23-50 50v351c0 27 22 50 50 50h463c23 0 46-12 60-30l112-150c20-27 20-64 0-91zm-110 83a38 38 0 110-75 38 38 0 010 75z"/></svg>
         
@@ -173,7 +174,14 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
         
       </div>
     </div>
-    <div></div>
+    <div class="split right">
+      <div class='favorites right'>
+        <span id="favTooltip" tooltip="🍪 Your favorites are saved as cookies." flow="left">
+        <input type="button">
+      </span>
+      </div>
+    </div>
+    </div>
     <div class="divider"></div>
     <!-- call up recipe and directions -->
     <div class="clearfix mt3">
@@ -452,6 +460,38 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   });
   }
 </script>
+<script>
+var path = window.location.href;
+var page = document.getElementsByClassName('post-title')[0].innerHTML;
+var href = '<a href="'+path+'">'+page+'</a>'
+/* Check for each a tag if already added to localStorage
+* .contents[0].nodevalue returns value of tag a
+*/
+$('.favorites input').each(function(e){
+		if(localStorage.getItem(href)){
+      $(this).removeClass("favorite");
+    	$(this).addClass("unfavorite");
+    } else {
+      $(this).removeClass("unfavorite");
+    	$(this).addClass("favorite");
+    }
+	}
+);
+//create click event and check if nodeValue is already added or not and set text accordingly
+$('.favorites input').click(function(e){
+	if(localStorage.getItem(href)){
+  	localStorage.removeItem(href);
+    $(this).removeClass("unfavorite");
+    $(this).addClass("favorite");
+  } else {
+    localStorage.setItem(href,'favorite');
+    $(this).removeClass("favorite");
+    $(this).addClass("unfavorite");
+  }
+});
+</script>
+
+
       </div>
     </div>
 
