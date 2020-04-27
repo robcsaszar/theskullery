@@ -340,14 +340,18 @@ input[type="file"] { display: none; }
 
 .progress-wrap svg.progress-circle path { stroke: var(--greyAccent300); stroke-width: 4; box-sizing: border-box; -webkit-transition: all 200ms linear; transition: all 200ms linear; }
 
-.favorites input.favorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-position: center; background-repeat: no-repeat; background-color: var(--greyAccent300); width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
+.favorites input.favorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); mask-position: center; -webkit-mask-position: center; mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat; background-color: var(--greyAccent300); width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
 
-.favorites input.unfavorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: var(--mainColor); background-position: center; background-repeat: no-repeat; width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
+.favorites input.unfavorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: var(--mainColor); mask-position: center; -webkit-mask-position: center; mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat; width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
 
 .split { width: 50%; }
 
 .split.right { vertical-align: 50%; }
 
 #favTooltip { display: inline-block; }
+
+.favorite-page { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: white; opacity: 0.3; mask-position: center; -webkit-mask-position: center; mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat; width: 3rem; height: 3rem; cursor: pointer; }
+
+.favorite-page:hover { opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */

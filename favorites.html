@@ -29,23 +29,24 @@ image: favorites.jpg
   </div>
 </div>
 <script>
-  var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {
+var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {
     return localStorage.key(i);
-  });
+});
 
-  function makeUL() {
+function makeUL() {
     var LIs = '';
-    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squiggly--url" >this one</a>.';
+    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squiggly--url">this one</a>.';
     var len = options.length;
-if (len === 0) {
-  document.getElementById('favorites').innerHTML = noFavs; 
-} else {
-    for (i = 0; i < len; i += 1) {
-      LIs += '<li>' + options[i] + '</li>';
+    if (len === 0) {
+        document.getElementById('favorites').innerHTML = noFavs; 
+    } else {
+        for (var i = 0; i < len; i += 1) {
+            LIs += '<li>' + options[i] + '</li>';
+        }
+        document.getElementById('favorites').innerHTML = '<ul>' + LIs + '</ul>'; 
     }
-    return '<ul>' + LIs + '</ul>';
-  }
 }
-  document.getElementById('favorites').innerHTML = makeUL();
+
+makeUL();
 </script>
 <script src="js/random.json"></script>

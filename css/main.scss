@@ -1296,8 +1296,10 @@ margin: 0 auto;
 .favorites input.favorite {
 mask: url(/assets/favorite.svg);
 -webkit-mask: url(/assets/favorite.svg);
-background-position: center;
-background-repeat: no-repeat;
+mask-position: center;
+-webkit-mask-position: center;
+mask-repeat: no-repeat;
+-webkit-mask-repeat: no-repeat;
 background-color: var(--greyAccent300);
 width: 2rem;
 height: 2rem;
@@ -1310,8 +1312,10 @@ cursor: pointer;
 mask: url(/assets/favorite.svg);
 -webkit-mask: url(/assets/favorite.svg);
 background-color: var(--mainColor);
-background-position: center;
-background-repeat: no-repeat;
+mask-position: center;
+-webkit-mask-position: center;
+mask-repeat: no-repeat;
+-webkit-mask-repeat: no-repeat;
 width: 2rem;
 height: 2rem;
 border: none;
@@ -1329,4 +1333,22 @@ cursor: pointer;
 
 #favTooltip {
     display: inline-block;
+}
+
+.favorite-page {
+    mask: url(/assets/favorite.svg);
+    -webkit-mask: url(/assets/favorite.svg);
+    background-color: white;
+    opacity: 0.3;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.favorite-page:hover {
+    opacity: 0.8;
 }
