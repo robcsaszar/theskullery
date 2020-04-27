@@ -48,10 +48,13 @@ image: submit.jpg
     In case you'd like to leave some feedback or want to submit recipes by URL, please use the form below.
   </div>
   <div class="form m3">
-    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field"
-      data-netlify="true">
-      <label>Name<input type="text" name="name" required /></label>
-      <label>E-Mail<input type="email" name="email" required/></label>
+    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" autocomplete="on">
+      <label for="given-name">First Name<input type="text" name="given-name" id="given-name" required /></label>
+      <label for="family-name">Last Name<input type="text" name="family-name" id="family-name" required /></label>
+      <label for="email">E-Mail<input type="email" name="email" id="email" required/></label>
+      <div class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+      </div>
       <label>Message<textarea name="message" required></textarea></label>
       <div class="messages"></div>
       <button type="submit" class="send-message mt1">Send message</button>
@@ -163,7 +166,7 @@ image: submit.jpg
       contentType: false,
       success: function (data) {
         var uploadSuccess =
-        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Thank you for your message, I\'ll upload your recipe as soon as possible.</div>";
+        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Thank you for your message, I\'ll get back to you as soon as possible.</div>";
       $('#submitform').find('.messages').html(uploadSuccess);
       },
       error: function (err) {

@@ -354,4 +354,6 @@ input[type="file"] { display: none; }
 
 .favorite-page:hover { opacity: 0.8; }
 
+.hidden { display: none; }
+
 /*# sourceMappingURL=main.css.map */
