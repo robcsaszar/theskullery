@@ -27,7 +27,7 @@ ingredients:
 - 1kg pork belly *best with skin still on*
 - cilantro, scallions, sesame seeds
 - some [quick-pickled cucumbers in rice vinegar](https://www.seriouseats.com/recipes/2013/10/quick-pickled-cucumbers-rice-vinegar-recipe.html)
-- a bowl of [pickled carrot & Daikon radish](https://www.seriouseats.com/recipes/2013/02/pickled-daikon-and-carrot-do-chua.html) *(I use kohlrabi as a Daikon substitute)*
+- a bowl of [pickled carrot & Daikon radish](https://www.seriouseats.com/recipes/2013/02/pickled-daikon-and-carrot-do-chua.html) *I use kohlrabi as a Daikon substitute*
 - some [Sriracha mayonnaise](https://www.seriouseats.com/recipes/2012/12/spicy-mayo-for-sushi-recipe.html)
 
 directions:
