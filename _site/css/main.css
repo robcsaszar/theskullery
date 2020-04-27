@@ -314,6 +314,8 @@ input[type="file"] { display: none; }
 
 .share svg { fill: var(--greyAccent300); }
 
+.share { display: inline-block; }
+
 .facebook:hover svg { fill: var(--facebook); }
 
 .twitter:hover svg { fill: var(--twitter); }
@@ -343,6 +345,8 @@ input[type="file"] { display: none; }
 .favorites input.unfavorite { mask: url(/assets/favorite.svg); -webkit-mask: url(/assets/favorite.svg); background-color: var(--mainColor); background-position: center; background-repeat: no-repeat; width: 2rem; height: 2rem; border: none; text-decoration: none; cursor: pointer; }
 
 .split { width: 50%; }
+
+.split.right { vertical-align: 50%; }
 
 #favTooltip { display: inline-block; }
 

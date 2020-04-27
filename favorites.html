@@ -23,178 +23,29 @@ image: favorites.jpg
 </div>
 {% endfor %}
 <div class="tagpage--header">
-  <div class="tagpage--suptitle ml3 sm-mt3">Your contribution</div>
-  <div class="tagpage--title ml3">Submit</div>
-  <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to
-    cook better and get more organized. <br>
-    This website is my attempt at getting recipes organized and categorized by moving them from closed services and
-    random handwritten pages to a more open, beautiful, and shareable place while having the convenience of plain-text.
-    <br>
-    <br>
-    For example, here's <a class='squiggly--url' target="_blank" href="{{site.baseurl}}/documents/template.md">a recipe
-      in plain text</a> that I've implemented on this website.<br>
-    <a class='squiggly--url' href="{{site.baseurl}}/recipes/pavlova">Here's that recipe processed in
-      <strong>theSkullery.net</strong>.</a>
-    The magic comes behind-the-scenes, with <a class='squiggly--url' href="http://schema.org/Recipe">recipe microdata
-      via schema.org</a>. This process adds special tags around each bit of content, which is what lets the
-    infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
-    <br>
-    This is <strong>definitely</strong> a work in progress. This project helped me learn and consolidate my knowledge
-    with a lot of languages and apps (Jekyll, Ruby, SCSS, JavaScript, Netlify, Cloudflare, Google Firebase). The website might go down from time to
-    time, or break, the recipes are here to stay, though, and nothing will get lost.<br>
-    <br>
-    If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
-    sure not to upload files with the same name as they will be overwritten.
-    In case you'd like to leave some feedback or want to submit recipes by URL, please use the form below.
-  </div>
-  <div class="form m3">
-    <form id="submitform" enctype='multipart/form-data' name="contact" method="POST" netlify-honeypot="bot-field"
-      data-netlify="true">
-      <label>Name<input type="text" name="name" required /></label>
-      <label>E-Mail<input type="email" name="email" required/></label>
-      <label>Message<textarea name="message" required></textarea></label>
-      <div class="messages"></div>
-      <button type="submit" class="send-message mt1">Send message</button>
-    </form>
-  </div>
-  <hr>
-  <div>
+  <div class="tagpage--suptitle ml3 sm-mt3">Your favorites</div>
   <div class="tagpage--subtitle ml3 mr3">
-    If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
-    sure not to upload files with the same name as they will be overwritten.
+    <div id='favorites'></div>
   </div>
-  <div class="downloads ml3 mr3">
-    <a class="txt" href="{{site.baseurl}}/documents/template.txt" download></a>
-    <a class="md" href="{{site.baseurl}}/documents/template.md" download></a>
-  </div>
-  <div class="m3" id="filesubmit">
-    <div class="messages"></div>
-    <label for="file-upload" class="custom-file-upload mt1">
-      Upload recipe
-    </label>
-    <span class="file-selected mt1" id="file-selected">*.txt and *.md only</span>
-    <input type="file" id="file-upload" class="file-select" accept=".txt,.md" name="file" multiple>
-    <button class="file-submit mt1">Submit</button>
-  </div>
-  <div id='favorites'></div>
 </div>
-</div>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
-
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAg1mUVs87yOQ-VJi_o5PYq3gLWl_6Lh1Q",
-    authDomain: "the-skullery.firebaseapp.com",
-    databaseURL: "https://the-skullery.firebaseio.com",
-    projectId: "the-skullery",
-    storageBucket: "the-skullery.appspot.com",
-    messagingSenderId: "849862452241",
-    appId: "1:849862452241:web:d3dcad30f48eaf13437db0",
-    measurementId: "G-MZLE1B6FKQ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  const storageService = firebase.storage();
-  const storageRef = storageService.ref();
-
-  document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
-  document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
-  let selectedFile;
-
-  function handleFileUploadChange(e) {
-    selectedFile = e.target.files[0];
-  };
-
-  function handleFileUploadSubmit(e) {
-    const uploadTask = storageRef.child(`recipes/${selectedFile.name}`).put(
-      selectedFile); //create a child directory called images, and place the file inside this directory
-    uploadTask.on('state_changed', (snapshot) => {
-      // Observe state change events such as progress, pause, and resume
-    }, (error) => {
-      // Handle unsuccessful uploads
-      var uploadFailed =
-        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Upload failed.</strong> Your file was not uploaded, please make sure you are uploading only template files. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
-      $('#filesubmit').find('.messages').html(uploadFailed);
-    }, () => {
-      // Do something once upload is complete
-      var uploadSuccess =
-        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Your file was uploaded, which means you\'re one step away from having your recipe displayed.</div>";
-      $('#filesubmit').find('.messages').html(uploadSuccess);
-      var request = new XMLHttpRequest();
-    request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
-
-    request.setRequestHeader('Content-type', 'application/json');
-
-    var params = {
-      username: "",
-      avatar_url: "",
-      content: "Someone submitted a recipe! 🔥 Check it out here: https://console.firebase.google.com/u/2/project/the-skullery/storage/the-skullery.appspot.com/files"
-    }
-
-    request.send(JSON.stringify(params));
-
-    });
-  };
-</script>
-<script>
-  $('#file-upload').bind('change', function () {
-    var fileName = '';
-    fileName = $(this).val().replace("C:\\fakepath\\", "");
-    $('#file-selected').html(fileName);
-  })
-</script>
-<script>
-  var submitform = $('#submitform');
-
-  submitform.on('submit', function (evt) {
-    // stop page from refreshing on submit
-    evt.preventDefault();
-    $.ajax({
-      type: "POST",
-      data: new FormData(this),
-      processData: false,
-      contentType: false,
-      success: function (data) {
-        var uploadSuccess =
-        "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Thank you for your message, I\'ll upload your recipe as soon as possible.</div>";
-      $('#submitform').find('.messages').html(uploadSuccess);
-      },
-      error: function (err) {
-        var uploadFailed =
-        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Error.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
-      $('#submitform').find('.messages').html(uploadFailed);
-      }
-    });
+  var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {
+    return localStorage.key(i);
   });
-</script>
-<script>
-    function sendMessageon() {
-    var request = new XMLHttpRequest();
-    request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
 
-    request.setRequestHeader('Content-type', 'application/json');
-
-    var params = {
-      username: "",
-      avatar_url: "",
-      content: "Someone clapped to your '" + page + "' recipe! 👏"
+  function makeUL() {
+    var LIs = '';
+    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squiggly--url" >this one</a>.';
+    var len = options.length;
+if (len === 0) {
+  document.getElementById('favorites').innerHTML = noFavs; 
+} else {
+    for (i = 0; i < len; i += 1) {
+      LIs += '<li>' + options[i] + '</li>';
     }
-
-    request.send(JSON.stringify(params));
+    return '<ul>' + LIs + '</ul>';
   }
+}
+  document.getElementById('favorites').innerHTML = makeUL();
 </script>
-<script>   
-var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {return localStorage.key( i );});
-function makeUL(){
-var LIs = '';
-
-for (i = 0; i < options.length; i +=1){ LIs +='<li>' + options[i] + '</li>' ; } return '<ul>' + LIs + '</ul>' ; }
-  document.getElementById('favorites').innerHTML=makeUL();
-  </script>
+<script src="js/random.json"></script>

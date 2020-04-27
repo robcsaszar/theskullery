@@ -1188,6 +1188,10 @@ margin: 0 auto;
     fill: var(--greyAccent300);
 }
 
+.share {
+    display: inline-block;
+}
+
 .facebook:hover svg {
         fill: var(--facebook);
     }
@@ -1317,6 +1321,10 @@ cursor: pointer;
 
 .split {
     width: 50%;
+}
+
+.split.right {
+    vertical-align: 50%;
 }
 
 #favTooltip {
