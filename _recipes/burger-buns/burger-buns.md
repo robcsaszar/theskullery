@@ -7,7 +7,7 @@ image: burger-buns.jpg
 imagecredit: "unsplash.com"
 categories: oven baking
 tags: burger bread
-meal: lunch
+meal: mains
 chef: robert
 
 ingredients:

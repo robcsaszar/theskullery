@@ -8,7 +8,7 @@ imagecredit: "https://www.seriouseats.com/recipes/2014/04/perfect-refried-beans.
 categories: still working on it
 tags: mexican
 chef: robert
-meal: lunch
+meal: mains
 
 ingredients:
 - 1/2 pound dried pinto or black beans

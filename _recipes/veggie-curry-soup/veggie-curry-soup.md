@@ -7,7 +7,7 @@ image: veggie-curry-soup.jpg
 imagecredit: "unsplash.com" 
 categories: soup 
 tags: vegetarian 
-meal: lunch 
+meal: soups 
 chef: razvan 
 
 notes: 

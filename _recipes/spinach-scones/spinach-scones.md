@@ -7,7 +7,7 @@ image: spinach-scones.jpg # (a nice, high-quality image I will carefully select 
 imagecredit: "bestrecipes.com.au" # (where I'm getting the image above)
 categories: oven # (these will be selected for you, later on you can select your own)
 tags: vegetarian # (these will be selected for you, later on you can select your own)
-meal: lunch # (is this lunch, dinner, or breakfast?)
+meal: sides # (is this lunch, dinner, or breakfast?)
 chef: razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
 
 notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)

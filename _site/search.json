@@ -12,7 +12,7 @@
       "categories"     : "oven baking ",
       
       "tags"           : "burger bread ",
-      "meal"           : "lunch ",
+      "meal"           : "mains ",
       "chef"           : "robert "
     } ,
   
@@ -28,7 +28,7 @@
       "categories"     : "still working on it ",
       
       "tags"           : "mexican ",
-      "meal"           : "lunch ",
+      "meal"           : "mains ",
       "chef"           : "robert "
     } ,
   
@@ -44,7 +44,7 @@
       "categories"     : "oven baking ",
       
       "tags"           : "burger bread ",
-      "meal"           : "lunch ",
+      "meal"           : "mains ",
       "chef"           : "robert "
     } ,
   
@@ -92,7 +92,7 @@
       "categories"     : "oven ",
       
       "tags"           : "vegetarian ",
-      "meal"           : "lunch ",
+      "meal"           : "sides ",
       "chef"           : "razvan "
     } ,
   
@@ -108,7 +108,7 @@
       "categories"     : "oven ",
       
       "tags"           : "still working on it ",
-      "meal"           : "dinner ",
+      "meal"           : "mains ",
       "chef"           : "robert "
     } ,
   
@@ -124,7 +124,7 @@
       "categories"     : "soup ",
       
       "tags"           : "vegetarian ",
-      "meal"           : "lunch ",
+      "meal"           : "soups ",
       "chef"           : "razvan "
     } 
   

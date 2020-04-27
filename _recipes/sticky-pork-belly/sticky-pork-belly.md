@@ -8,7 +8,7 @@ imagecredit: "https://www.amazon.co.uk/dp/1579655270"
 categories: oven
 tags: still working on it
 chef: robert
-meal: dinner
+meal: mains
 
 ingredients:
 - 4 tablespoons + 3 tablespoons soy sauce
