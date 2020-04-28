@@ -296,42 +296,46 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       </div>
       
     </div>
-    <div class="flex-container mt2">
+    <div class="flex-container mt3">
       <div class="applause" onclick="sendMessage()">
         <applause-button multiclap="true" style="width: 58px; height: 58px;" />
       </div>
     </div>
-    <span class="share facebook left" tooltip="share on Facebook" flow="right">
-      <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://theskullery.net/recipes/pavlova">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32">
-          <path d="M15 3a12 12 0 100 24 12 12 0 000-24zm4 8h-2l-1 2v1h3v3h-3v8a10 10 0 01-3 0v-8h-3v-3h3v-2c0-3 1-4 4-4h2v3z"/>
-        </svg>
-      </a>
-    </span>
-    <span class="share twitter left" tooltip="share on Twitter" flow="right">
-      <a target="_blank" href="https://twitter.com/intent/tweet?url=https://theskullery.net/recipes/pavlova">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32">
-          <path d="M15 3a12 12 0 100 24 12 12 0 000-24zm6 10a9 9 0 01-8 9l-5-2a6 6 0 005-1c-2 0-3-1-3-2a3 3 0 001 0l-2-3h1a3 3 0 01-1-4l6 3a3 3 0 016-3h2l-2 1h2l-2 2z"/>
-        </svg>
-      </a>
-    </span>
-    <span class="share reddit left" tooltip="share on Reddit" flow="right">
-      <a target="_blank" href="http://www.reddit.com/submit?url=https://theskullery.net/recipes/pavlova&title=Pavlova">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125" width="32">
-          <path d="M63 13a50 50 0 100 100 50 50 0 000-100zm22 19c1-2 3-3 6-3s6 3 6 7a7 7 0 01-13 2l-10-3-4-1c-3 0-5 2-5 5v9c8 0 14 2 20 5 2-2 5-3 7-3 3 0 6 2 8 4 4 4 4 13-3 17v1c0 13-15 24-34 24-20 0-35-11-35-24v-1c-7-4-7-13-3-17 2-2 5-4 8-4 2 0 5 1 7 3 6-3 12-5 20-5v-9c0-6 4-10 10-10l6 1 9 2zM63 85c-7 0-13-4-15-9 3 3 9 5 15 5 5 0 11-2 14-5-2 5-8 9-14 9zM44 67a5 5 0 1110 0 5 5 0 01-10 0zm32 5a5 5 0 110-11 5 5 0 010 11zm20-7c2-2 2-6 0-8l-4-1h-3c3 3 6 6 7 9zm-60-9h-3l-4 1c-2 2-2 6 0 8 1-3 4-6 7-9z"/>
-        </svg>
-      </a>
-    </span>
-    <span class="share copy left" tooltip="copy URL to clipboard" flow="right">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125" width="32" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-          <path d="M50 50h38v38H50z"/><path d="M63 13a50 50 0 100 100 50 50 0 000-100zm25 31H50c-3 0-6 3-6 6v38c0 3 3 6 6 6h38c3 0 6-3 6-6V50c0-3-3-6-6-6zm-50-6h43v-7H38c-4 0-7 3-7 7v43h7V38z"/>
-        </svg>
-      <input type="hidden" id="input-url" value="Copied!">
-    </span>
+    <div class="center mt1">
+      <span id="clapText">Clap if you liked this recipe!</span>
+    </div>
   </article>
 </div>
 </div>
-<br>
+<div class="center mt3">
+  <span class="share facebook" tooltip="share on Facebook" flow="down">
+    <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://theskullery.net/recipes/pavlova">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32">
+        <path d="M15 3a12 12 0 100 24 12 12 0 000-24zm4 8h-2l-1 2v1h3v3h-3v8a10 10 0 01-3 0v-8h-3v-3h3v-2c0-3 1-4 4-4h2v3z"/>
+      </svg>
+    </a>
+  </span>
+  <span class="share twitter" tooltip="share on Twitter" flow="down">
+    <a target="_blank" href="https://twitter.com/intent/tweet?url=https://theskullery.net/recipes/pavlova">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32">
+        <path d="M15 3a12 12 0 100 24 12 12 0 000-24zm6 10a9 9 0 01-8 9l-5-2a6 6 0 005-1c-2 0-3-1-3-2a3 3 0 001 0l-2-3h1a3 3 0 01-1-4l6 3a3 3 0 016-3h2l-2 1h2l-2 2z"/>
+      </svg>
+    </a>
+  </span>
+  <span class="share reddit" tooltip="share on Reddit" flow="down">
+    <a target="_blank" href="http://www.reddit.com/submit?url=https://theskullery.net/recipes/pavlova&title=Pavlova">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125" width="32">
+        <path d="M63 13a50 50 0 100 100 50 50 0 000-100zm22 19c1-2 3-3 6-3s6 3 6 7a7 7 0 01-13 2l-10-3-4-1c-3 0-5 2-5 5v9c8 0 14 2 20 5 2-2 5-3 7-3 3 0 6 2 8 4 4 4 4 13-3 17v1c0 13-15 24-34 24-20 0-35-11-35-24v-1c-7-4-7-13-3-17 2-2 5-4 8-4 2 0 5 1 7 3 6-3 12-5 20-5v-9c0-6 4-10 10-10l6 1 9 2zM63 85c-7 0-13-4-15-9 3 3 9 5 15 5 5 0 11-2 14-5-2 5-8 9-14 9zM44 67a5 5 0 1110 0 5 5 0 01-10 0zm32 5a5 5 0 110-11 5 5 0 010 11zm20-7c2-2 2-6 0-8l-4-1h-3c3 3 6 6 7 9zm-60-9h-3l-4 1c-2 2-2 6 0 8 1-3 4-6 7-9z"/>
+      </svg>
+    </a>
+  </span>
+  <span class="share copy" tooltip="copy URL to clipboard" flow="down">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125" width="32" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+        <path d="M50 50h38v38H50z"/><path d="M63 13a50 50 0 100 100 50 50 0 000-100zm25 31H50c-3 0-6 3-6 6v38c0 3 3 6 6 6h38c3 0 6-3 6-6V50c0-3-3-6-6-6zm-50-6h43v-7H38c-4 0-7 3-7 7v43h7V38z"/>
+      </svg>
+    <input type="hidden" id="input-url" value="Copied!">
+  </span>
+</div>
 <div id="output"></div>
 <script>
 function copyText(){
@@ -416,6 +420,7 @@ function copyText(){
     var request = new XMLHttpRequest();
     var title = document.getElementsByTagName("title")[0].innerHTML;
     var page = title.split(" - ").slice(0, 1)
+    document.getElementById("clapText").innerHTML = 'Thank you!'
     request.open("POST",
       "https://discordapp.com/api/webhooks/699980118013116426/L2jqPh9nx1q1cRxiGOQfSJFTDms4pdFJBfAu7f-kGkavwvLTrDtOI63uMv60MMkdTa6Z"
     );
@@ -456,7 +461,7 @@ function copyText(){
 <script>
 var path = window.location.href;
 var page = document.getElementsByClassName('post-title')[0].innerHTML;
-var href = '<a class="categorypage--listitem" href="'+path+'"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>'+page+'</a>'
+var href = '<a class="page--listitem" href="'+path+'"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>'+page+'</a>'
 /* Check for each a tag if already added to localStorage
 * .contents[0].nodevalue returns value of tag a
 */
@@ -500,7 +505,7 @@ $('.favorites input').click(function(e){
               d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
             </svg>
         </div>
-        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+        <a class="squigglyURL--black" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
       </div>
     </div>
     <div class="sm-col sm-col-6">
@@ -509,7 +514,7 @@ $('.favorites input').click(function(e){
           <path
             d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
           </path>
-        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+        </svg> by <a class="squigglyURL--black" href="https://nhg.design">Rob Csaszar</a>
       </p>
     </div>
   </div>

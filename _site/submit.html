@@ -93,20 +93,20 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   
 </div>
 
-<div class="tagpage--header">
-  <div class="tagpage--suptitle ml3 sm-mt3">Your contribution</div>
-  <div class="tagpage--title ml3">Submit</div>
-  <div class="tagpage--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to
+<div class="page--header">
+  <div class="page--suptitle ml3 sm-mt3">Your contribution</div>
+  <div class="page--title ml3">Submit</div>
+  <div class="page--subtitle ml3 mr3">Over the years, I've tried dozens of recipe apps and services in an attempt to
     cook better and get more organized. <br>
     This website is my attempt at getting recipes organized and categorized by moving them from closed services and
     random handwritten pages to a more open, beautiful, and shareable place while having the convenience of plain-text.
     <br>
     <br>
-    For example, here's <a class='squiggly--url' target="_blank" href="/documents/template.md">a recipe
+    For example, here's <a class='squigglyURL--main' target="_blank" href="/documents/template.md">a recipe
       in plain text</a> that I've implemented on this website.<br>
-    <a class='squiggly--url' href="/recipes/pavlova">Here's that recipe processed in
+    <a class='squigglyURL--main' href="/recipes/pavlova">Here's that recipe processed in
       <strong>theSkullery.net</strong>.</a>
-    The magic comes behind-the-scenes, with <a class='squiggly--url' href="http://schema.org/Recipe">recipe microdata
+    The magic comes behind-the-scenes, with <a class='squigglyURL--main' href="http://schema.org/Recipe">recipe microdata
       via schema.org</a>. This process adds special tags around each bit of content, which is what lets the
     infrastructure behind (like Jekyll) read your recipes and render them in mere seconds in the browser.<br>
     <br>
@@ -128,10 +128,10 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       </div>
       <label>Message<textarea name="message" required></textarea></label>
       <div class="messages"></div>
-      <button type="submit" class="send-message mt1">Send message</button>
+      <button type="submit" class="send-message mt1"><span class='icon mr1'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M26 3a1 1 0 100 2 1 1 0 100-2zM4 10a1 1 0 100 2 1 1 0 100-2zm15 15a1 1 0 100 2 1 1 0 100-2z"/><path d="M26 4V3L4 10l-1 2 7 5L23 7 13 20l5 7 2-1 7-22z"/></svg></span><span class='text'>Send message</span></button>
     </form>
   </div>
-  <hr>
+  <div class='divider'></div>
   <div>
   <div class="tagpage--subtitle ml3 mr3">
     If you would like to submit your own recipe, please download a template, fill it in and upload it below. Also, please make
@@ -243,7 +243,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       },
       error: function (err) {
         var uploadFailed =
-        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Error.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squiggly--url' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
+        "<div class='failed'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Error.</strong> Your message was not sent, please make sure all fields are correct. For other issues please <a class='squigglyURL--main' href='mailto:robert@nhg.design'>send me an e-mail</a>.</div>";
       $('#submitform').find('.messages').html(uploadFailed);
       }
     });
@@ -280,7 +280,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
               d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
             </svg>
         </div>
-        <a class="squiggly--url" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+        <a class="squigglyURL--black" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
       </div>
     </div>
     <div class="sm-col sm-col-6">
@@ -289,7 +289,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           <path
             d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
           </path>
-        </svg> by <a class="footer--squigglyUrl" href="https://nhg.design">Robert Csaszar</a>
+        </svg> by <a class="squigglyURL--black" href="https://nhg.design">Rob Csaszar</a>
       </p>
     </div>
   </div>

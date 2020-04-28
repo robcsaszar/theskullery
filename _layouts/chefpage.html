@@ -20,10 +20,10 @@ layout: default
   {% endif %}
 </div>
 {% endfor %}
-<div class="categorypage--header">
-  <div class="categorypage--suptitle ml3">Chef</div>
-  <div class="categorypage--title ml3">{{ page.chef }}</div>
-  <div class="categorypage--subtitle ml3">{{page.content}}</div>
+<div class="page--header">
+  <div class="page--suptitle ml3">Chef</div>
+  <div class="page--title ml3">{{ page.chef }}</div>
+  <div class="page--subtitle ml3">{{page.content}}</div>
 </div>
 <div class="mt3 clearfix">
   <ul>
@@ -34,11 +34,11 @@ layout: default
       {% if chef == '' %}
       {% continue %}
       {% endif %}
-      <ul class="ml3 categorypage--list">
+      <ul class="ml3 page--list">
         {% for recipe in sorted_recipes %}
         {% assign chef_array = recipe.chef | join: ',' %}
         {% if chef_array contains page.chef %}
-        <li><a class="categorypage--listitem" href="{{ recipe.url }}"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>{{ recipe.title }}</a>
+        <li><a class="page--listitem" href="{{ recipe.url }}"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>{{ recipe.title }}</a>
           {% for meal in recipe.meal %}
           <a class="recipe--meal" href="/meal/{{ meal }}">{{ meal }}</a>
           {% endfor %}</li>

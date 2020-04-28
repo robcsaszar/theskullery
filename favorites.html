@@ -22,10 +22,10 @@ image: favorites.jpg
   {% endif %}
 </div>
 {% endfor %}
-<div class="tagpage--header">
-  <div class="tagpage--suptitle ml3">Your recipes</div>
-  <div class="tagpage--title ml3 mr3">Favorites</div>
-  <div class="tagpage--subtitle ml3 mr3">
+<div class="page--header">
+  <div class="page--suptitle ml3">Your recipes</div>
+  <div class="page--title ml3 mr3">Favorites</div>
+  <div class="page--subtitle ml3 mr3">
     <div id='favorites'></div>
   </div>
 </div>
@@ -36,7 +36,7 @@ var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i)
 
 function makeUL() {
     var LIs = '';
-    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squiggly--url">this one</a>.';
+    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squigglyURL--main">this one</a>.';
     var len = options.length;
     if (len === 0) {
         document.getElementById('favorites').innerHTML = noFavs; 
