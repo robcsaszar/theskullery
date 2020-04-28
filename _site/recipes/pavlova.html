@@ -160,32 +160,32 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>4 egg whites (~140g) <em>room temperature</em></p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>4 egg whites (~140g) <em>room temperature</em></p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1 cup (200g) caster sugar</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 cup (200g) caster sugar</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1 pinch of salt</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 pinch of salt</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>2 teaspoon cornstarch</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>2 teaspoon cornstarch</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>2 teaspoons white wine vinegar</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>2 teaspoons white wine vinegar</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1 teaspoon vanilla extract</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 teaspoon vanilla extract</p>
 </li>
           
           
@@ -197,25 +197,37 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1½ cups (360ml) heavy cream <em>cold</em></p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1½ cups (360ml) heavy cream <em>cold</em></p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>3 tablespoons (23g) powdered sugar</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>3 tablespoons (23g) powdered sugar</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>1 teaspoon vanilla extract</p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 teaspoon vanilla extract</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="check ingredient multiply"><p>strawberries, raspberries, blueberries <em>any kind of semi-tart fruit fits perfectly</em></p>
+          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>strawberries, raspberries, blueberries <em>any kind of semi-tart fruit fits perfectly</em></p>
 </li>
           
           
+          <button class='copyButton' onclick="copyText()">
+            <span class='copyIcon'>
+              <svg id='shoppingcart' width='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 13h8l1-1 4-7-1-1H4l4 9z"/>
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 3h2l4 9-2 2 1 2h11"/>
+                <path d="M17 18a2 2 0 100 4 2 2 0 100-4zM7 18a2 2 0 100 4 2 2 0 100-4z"/>
+              </svg>
+            </span>
+            <span class='copyIngredients'>
+              Copy ingredients
+            </span>
+          </button>
         </ul>
         
       </div>
@@ -319,6 +331,50 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   </article>
 </div>
 </div>
+<br>
+<div id="output"></div>
+<script>
+function copyText(){
+    var outputText = "";
+    var items= document.getElementsByClassName('unchecked');
+  
+    // BEGIN - supplement to the original code
+    Array.from(items).forEach ( pnode => {
+        // Complement this selector to remove whatever is unwanted.
+        // '*' removes all child elements.
+        let nodelist_toBlank = pnode.querySelectorAll('em')
+          ;
+        
+        // Blank the unwanted content, saving the original Css property value
+        Array.from(nodelist_toBlank).forEach ( pnode_toBlank => {
+            pnode_toBlank.setAttribute ( 'data-style-display', pnode_toBlank.style.display );
+            pnode_toBlank.style.display = 'none';
+        });
+        
+        // Add data from node to the string buffer. Elements with Css 'display' property set to 'none' are skipped
+        outputText += pnode.innerText+"\n";
+        
+        // Unblank. Restore the original Css property value
+        Array.from(nodelist_toBlank).forEach ( pnode_toRestore => {
+            pnode_toRestore.style.display = pnode_toRestore.getAttribute ( 'data-style-display' );
+            pnode_toRestore.removeAttribute ( 'data-style-display' );
+        });
+    });
+    // END - supplement to the original code
+    //
+    // Original loop deleted!
+    
+    var output = document.getElementById('output');
+    output.innerText = outputText;
+    var range = document.createRange();
+    range.selectNodeContents(output);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    output.style.display = 'none';
+}
+</script>
 <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
@@ -332,10 +388,11 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       return this.on("click", cb);
     };
 
-    $("ul li").append('<input type="checkbox" class="checkbox">');
+    $("ul li").append('<input type="checkbox">');
     $("ul li").clickToggle(function () {
       $(this).children("input").prop('checked', true);
       $(this).addClass("checked");
+      $(this).removeClass("unchecked");
       var height = $(this).height();
       var y = $(window).scrollTop();
       $('html, body').animate({
@@ -344,6 +401,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     }, function () {
       $(this).children("input").prop('checked', false);
       $(this).removeClass("checked");
+      $(this).addClass("unchecked");
       var height = $(this).height();
       var y = $(window).scrollTop();
       $('html, body').animate({

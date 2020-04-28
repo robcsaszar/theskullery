@@ -73,13 +73,25 @@ title: theSkullery
           <h4 class="xs-center stickynote--title">{{ ingredient.first[0] }}</h4>
           <ul itemprop="recipeIngredientGroup">
             {% for i in ingredient.first[1] %}
-            <li itemprop="recipeIngredient" class="check ingredient multiply">{{ i | markdownify }}</li>
+            <li itemprop="recipeIngredient" class="ingredient unchecked">{{ i | markdownify }}</li>
             {% endfor %}
           </ul>
           {% else %}
-          <li itemprop="recipeIngredient" class="check ingredient multiply">{{ ingredient | markdownify }}</li>
+          <li itemprop="recipeIngredient" class="ingredient unchecked">{{ ingredient | markdownify }}</li>
           {% endif %}
           {% endfor %}
+          <button class='copyButton' onclick="copyText()">
+            <span class='copyIcon'>
+              <svg id='shoppingcart' width='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 13h8l1-1 4-7-1-1H4l4 9z"/>
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 3h2l4 9-2 2 1 2h11"/>
+                <path d="M17 18a2 2 0 100 4 2 2 0 100-4zM7 18a2 2 0 100 4 2 2 0 100-4z"/>
+              </svg>
+            </span>
+            <span class='copyIngredients'>
+              Copy ingredients
+            </span>
+          </button>
         </ul>
         {% endif %}
       </div>
@@ -146,6 +158,50 @@ title: theSkullery
   </article>
 </div>
 </div>
+<br>
+<div id="output"></div>
+<script>
+function copyText(){
+    var outputText = "";
+    var items= document.getElementsByClassName('unchecked');
+  
+    // BEGIN - supplement to the original code
+    Array.from(items).forEach ( pnode => {
+        // Complement this selector to remove whatever is unwanted.
+        // '*' removes all child elements.
+        let nodelist_toBlank = pnode.querySelectorAll('em')
+          ;
+        
+        // Blank the unwanted content, saving the original Css property value
+        Array.from(nodelist_toBlank).forEach ( pnode_toBlank => {
+            pnode_toBlank.setAttribute ( 'data-style-display', pnode_toBlank.style.display );
+            pnode_toBlank.style.display = 'none';
+        });
+        
+        // Add data from node to the string buffer. Elements with Css 'display' property set to 'none' are skipped
+        outputText += pnode.innerText+"\n";
+        
+        // Unblank. Restore the original Css property value
+        Array.from(nodelist_toBlank).forEach ( pnode_toRestore => {
+            pnode_toRestore.style.display = pnode_toRestore.getAttribute ( 'data-style-display' );
+            pnode_toRestore.removeAttribute ( 'data-style-display' );
+        });
+    });
+    // END - supplement to the original code
+    //
+    // Original loop deleted!
+    
+    var output = document.getElementById('output');
+    output.innerText = outputText;
+    var range = document.createRange();
+    range.selectNodeContents(output);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    output.style.display = 'none';
+}
+</script>
 <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
@@ -159,10 +215,11 @@ title: theSkullery
       return this.on("click", cb);
     };
 
-    $("ul li").append('<input type="checkbox" class="checkbox">');
+    $("ul li").append('<input type="checkbox">');
     $("ul li").clickToggle(function () {
       $(this).children("input").prop('checked', true);
       $(this).addClass("checked");
+      $(this).removeClass("unchecked");
       var height = $(this).height();
       var y = $(window).scrollTop();
       $('html, body').animate({
@@ -171,6 +228,7 @@ title: theSkullery
     }, function () {
       $(this).children("input").prop('checked', false);
       $(this).removeClass("checked");
+      $(this).addClass("unchecked");
       var height = $(this).height();
       var y = $(window).scrollTop();
       $('html, body').animate({
