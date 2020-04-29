@@ -355,6 +355,8 @@ input[type="file"] { display: none; }
 
 .copyIcon svg { height: 100%; width: 100%; }
 
+.ingredient > .customCheckBox[type="checkbox"]:after { position: relative; display: block; left: 2px; top: -11px; width: 7px; height: 7px; border-width: 1px; border-style: solid; border-color: var(--yellowAccent-dark); background-color: var(--yellowAccent-lightest); content: ""; border-radius: 50px; background-repeat: no-repeat; background-position: center; }
+
 .customCheckBox[type="checkbox"]:after { position: relative; display: block; left: 2px; top: -11px; width: 7px; height: 7px; border-width: 1px; border-style: solid; border-color: var(--grey-lighter); background-color: var(--grey-lightest); content: ""; border-radius: 50px; background-repeat: no-repeat; background-position: center; }
 
 .customCheckBox[type="checkbox"]:before { content: ""; position: relative; display: block; }
