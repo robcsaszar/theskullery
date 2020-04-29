@@ -1501,12 +1501,12 @@ cursor: pointer;
 
 .servings-input {
     border-radius: 5px;
-    border: 2px solid #eee;
-    box-shadow: 0 0 14px rgba(#007FFF, 0.1);
+    border: 0px;
+    background-color: var(--yellowAccent-light);
     width: 20%
 }
 
 .servings-input:focus {
     outline: none;
-    border: 2px solid #007FFF;
+    background-color: var(--yellowAccent-light);
 }

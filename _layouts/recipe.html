@@ -80,11 +80,11 @@ title: theSkullery
           {% assign parts = ingredient | split:"|" %}
           {% assign parts_count = parts | size %}
           {% if parts_count == 1 %}
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="{{ parts[0] }}">{{ parts[0] | markdownify }}</li>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="{{ parts[0] | markdownify | remove: '<p>' | remove: '</p>' }}">{{ parts[0] | markdownify }}</li>
           {% elsif parts_count == 2 %}
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="{{ parts[0] }}" data-unit="" data-text="{{ parts[1] }}">{{ parts[0] | append: " " | append: parts[1] | markdownify }}</li>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="{{ parts[0] }}" data-unit="" data-text="{{ parts[1] | markdownify | remove: '<p>' | remove: '</p>' }}">{{ parts[0] | append: " " | append: parts[1] | markdownify }}</li>
           {% else %}
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="{{ parts[0] }}" data-unit="{{ parts[1] }}" data-text="{{ parts[2] }}">{{ parts[0] | append: " " | append: parts[1] | append: " " | append: parts[2] | markdownify }}</li>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="{{ parts[0] }}" data-unit="{{ parts[1] }}" data-text="{{ parts[2] | markdownify | remove: '<p>' | remove: '</p>' }}">{{ parts[0] | append: " " | append: parts[1] | append: " " | append: parts[2] | markdownify }}</li>
           {% endif %}
           {% endif %}
           {% endfor %}
