@@ -130,10 +130,10 @@ td { vertical-align: top }
 
 body {
   font-family: 'Inter', Helvetica, sans-serif;
-  -ms-font-feature-settings: 'frac';
-  -moz-font-feature-settings: 'frac';
-  -webkit-font-feature-settings: 'frac';
-  font-feature-settings: 'frac' on;
+  -ms-font-feature-settings: 'frac' 1, 'tnum' 1;
+  -moz-font-feature-settings: 'frac' 1, 'tnum' 1;
+  -webkit-font-feature-settings: 'frac' 1, 'tnum' 1;
+  font-feature-settings: 'frac' 1, 'tnum' 1;
   line-height: 1.5;
   font-size: 100%;
   position: relative;
@@ -142,10 +142,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', Helvetica, sans-serif;
-  /* -ms-font-feature-settings: 'frac';
-  -moz-font-feature-settings: 'frac';
-  -webkit-font-feature-settings: 'frac';
-  font-feature-settings: 'frac' on; */
   font-weight: bold;
   line-height: 1.1;
   margin-top: 1em;
