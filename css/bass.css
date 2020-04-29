@@ -130,10 +130,10 @@ td { vertical-align: top }
 
 body {
   font-family: 'Inter', Helvetica, sans-serif;
-  font-variant-numeric: diagonal-fractions; /* high-level property          */
-  -moz-font-feature-settings: 'frac';       /* low-level (old Firefox)      */
-  -webkit-font-feature-settings: 'frac';    /* low-level (old Webkit)       */
-  font-feature-settings: 'frac' on;         /* low-level (all new browsers) */
+  -ms-font-feature-settings: 'frac';
+  -moz-font-feature-settings: 'frac';
+  -webkit-font-feature-settings: 'frac';
+  font-feature-settings: 'frac' on;
   line-height: 1.5;
   font-size: 100%;
   position: relative;
@@ -142,10 +142,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', Helvetica, sans-serif;
-  font-variant-numeric: diagonal-fractions; /* high-level property          */
-  -moz-font-feature-settings: 'frac';       /* low-level (old Firefox)      */
-  -webkit-font-feature-settings: 'frac';    /* low-level (old Webkit)       */
-  font-feature-settings: 'frac' on;         /* low-level (all new browsers) */
+  /* -ms-font-feature-settings: 'frac';
+  -moz-font-feature-settings: 'frac';
+  -webkit-font-feature-settings: 'frac';
+  font-feature-settings: 'frac' on; */
   font-weight: bold;
   line-height: 1.1;
   margin-top: 1em;
