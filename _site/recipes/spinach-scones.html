@@ -146,7 +146,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <div class="clearfix mt3">
       <div class="sm-col sm-col-6 lg-col-6 ingredientlist">
         
-        <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients</h4>
+        
+        <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients for <input id="servings-count" class="servings-input" data-base-servings="1" type="number" step="0.5" min="0.5" max="1000" autocomplete="off" value="1" /> servings</h4>  
         <ul itemprop="ingredients">
           <!-- list ingredients that make up recipe -->
           
@@ -158,43 +159,75 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>2 1/2 cup of self raising flour</p>
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="2 1/2 cup of self raising flour"><p>2 1/2 cup of self raising flour</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 cup mixed grated cheese <em>we used cheddar and mozarella</em></p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 cup mixed grated cheese *we used cheddar and mozarella*"><p>1 cup mixed grated cheese <em>we used cheddar and mozarella</em></p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 cup baby spinach chopped</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 cup baby spinach chopped"><p>1 cup baby spinach chopped</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 tbsp onion powder</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 tbsp onion powder"><p>1 tbsp onion powder</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 cup almond milk</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 cup almond milk"><p>1 cup almond milk</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1/2 tsp salt</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/2 tsp salt"><p>1/2 tsp salt</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1/2 tsp pepper</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/2 tsp pepper"><p>1/2 tsp pepper</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>30g unsalted butter, melted</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="30g unsalted butter, melted"><p>30g unsalted butter, melted</p>
 </li>
+          
           
           
           
@@ -205,28 +238,48 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1 tbsp butter, melted</p>
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 tbsp butter, melted"><p>1 tbsp butter, melted</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1/4 cup almond milk</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/4 cup almond milk"><p>1/4 cup almond milk</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1/2 tsp ground coriander</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/2 tsp ground coriander"><p>1/2 tsp ground coriander</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>1/2 tsp rosemary</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/2 tsp rosemary"><p>1/2 tsp rosemary</p>
 </li>
           
           
           
-          <li itemprop="recipeIngredient" class="ingredient unchecked"><p>pinch of salt and pepper</p>
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="pinch of salt and pepper"><p>pinch of salt and pepper</p>
 </li>
+          
           
           
           <button class='copyButton' onclick="copyText()">
@@ -427,8 +480,89 @@ function copyText(){
         scrollTop: y - height - 16
       }, 200);
     });
+    function numberToPretty(inNum) {
+    let wholeNumber = Math.trunc(inNum);
+    if (wholeNumber == 0) {
+        wholeNumber = "";
+    }
 
+    let fraction = inNum % 1;
+
+    let fracRep;
+    if (Math.abs(fraction) < 0.0001) {
+        fracRep = ''
+    } else if (Math.abs(fraction - 1 / 2) < 0.0001) {
+        fracRep = " &frac12;";
+    } else if (Math.abs(fraction - 1 / 4) < 0.0001) {
+        fracRep = " &frac14;";
+    } else if (Math.abs(fraction - 3 / 4) < 0.0001) {
+        fracRep = " &frac34;";
+    } else if (Math.abs(fraction - 1 / 3) < 0.0001) {
+        fracRep = " &frac13;";
+    } else if (Math.abs(fraction - 2 / 3) < 0.0001) {
+        fracRep = " &frac23;";
+    } else if (Math.abs(fraction - 1 / 8) < 0.0001) {
+        fracRep = " &frac18;";
+    } else if (Math.abs(fraction - 3 / 8) < 0.0001) {
+        fracRep = " &frac38;";
+    } else if (Math.abs(fraction - 5 / 8) < 0.0001) {
+        fracRep = " &frac58;";
+    } else if (Math.abs(fraction - 7 / 8) < 0.0001) {
+        fracRep = " &frac78;";
+    } else if (Math.abs(fraction - 1 / 6) < 0.0001) {
+        fracRep = " &frac16;";
+    } else if (Math.abs(fraction - 5 / 6) < 0.0001) {
+        fracRep = " &frac56;";
+    } else if (Math.abs(fraction - 1 / 9) < 0.0001) {
+        fracRep = " <sup>1</sup>&frasl;<sub>9</sub>";
+    } else if (Math.abs(fraction - 2 / 9) < 0.0001) {
+        fracRep = " <sup>2</sup>&frasl;<sub>9</sub>";
+    } else if (Math.abs(fraction - 4 / 9) < 0.0001) {
+        fracRep = " <sup>4</sup>&frasl;<sub>9</sub>";
+    } else if (Math.abs(fraction - 5 / 9) < 0.0001) {
+        fracRep = " <sup>5</sup>&frasl;<sub>9</sub>";
+    } else if (Math.abs(fraction - 7 / 9) < 0.0001) {
+        fracRep = " <sup>7</sup>&frasl;<sub>9</sub>";
+    } else if (Math.abs(fraction - 8 / 9) < 0.0001) {
+        fracRep = " <sup>8</sup>&frasl;<sub>9</sub>";
+    } else {
+        fracRep = '' + fraction.toFixed(3);
+    }
+
+    return wholeNumber + fracRep;
+  }
+
+  function calculateIngredients(scale) {
+    $('li[itemprop=recipeIngredient]').each(function(index, elem) {
+      let quantity = $(elem).data('quantity');
+      if (quantity == '') {
+        return;
+      }
+
+      let unit = $(elem).data('unit');
+      let text = $(elem).data('text');
+
+      let info = '' + numberToPretty(scale * quantity) + ' ';
+      if (unit != '') {
+        info += unit + ' ';
+      }
+      info += text;
+
+      $(elem).children('p').html(info);
+    });
+  }
+
+  $('#servings-count').change(function() {
+    let servings = $(this).val();
+    let baseServings = $(this).data('base-servings');
+    let scale = servings / baseServings;
+
+    calculateIngredients(scale);
   });
+  calculateIngredients(1);
+
+});
+
 </script>
 <script>
   function sendMessage() {

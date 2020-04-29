@@ -9,17 +9,18 @@ categories: oven baking
 tags: burger bread
 meal: mains
 chef: robert
+servings: 1
 
 ingredients:
-- 3 tablespoons warm whole milk
-- 128g warm water
-- 7g (1 packet) instant yeast *good results with fresh yeast; 1:1 ratio* 
+- 3| tablespoons warm whole milk
+- 128|g warm water
+- 7|g (1|x packet) instant yeast *good results with fresh yeast; 1:1 ratio* 
 - 2.5 tablespoons granulated sugar
-- 1 large egg
-- 420g all-purpose, 00-flour *allegedly better results with bread flour because of the higher protein count*
-- 1.5 teaspoons fine salt
-- 50g unsalted butter, at room temperature
-- 1 large egg beaten with 1 tablespoon water *egg wash, for topping*
+- 1| large egg(s)
+- 420|g all-purpose, 00-flour *allegedly better results with bread flour because of the higher protein count*
+- 1.5| teaspoons fine salt
+- 50|g unsalted butter, at room temperature
+- 1| large egg(s) beaten with 1 tablespoon water *egg wash, for topping*
 - sesame or poppy seeds *optional, for topping*
 
 directions:
