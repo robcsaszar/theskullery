@@ -1502,11 +1502,26 @@ cursor: pointer;
 .servings-input {
     border-radius: 5px;
     border: 0px;
-    background-color: var(--yellowAccent-light);
-    width: 20%
+    background-color: var(--yellowAccent-lighter);
+    border: 1px solid var(--yellowAccent-light);
+    color: var(--yellowAccent-darker);
+    font-weight: 700;
+    font-feature-settings: "ss01";
+    max-width: 15%;
 }
 
 .servings-input:focus {
     outline: none;
-    background-color: var(--yellowAccent-light);
+    background-color: var(--yellowAccent-lighter);
 }
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
