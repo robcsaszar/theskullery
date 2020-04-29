@@ -130,10 +130,6 @@ td { vertical-align: top }
 
 body {
   font-family: 'Inter', Helvetica, sans-serif;
-  -ms-font-feature-settings: 'frac' 1, 'tnum' 1;
-  -moz-font-feature-settings: 'frac' 1, 'tnum' 1;
-  -webkit-font-feature-settings: 'frac' 1, 'tnum' 1;
-  font-feature-settings: 'frac' 1, 'tnum' 1;
   line-height: 1.5;
   font-size: 100%;
   position: relative;
