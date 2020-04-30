@@ -1,12 +1,12 @@
 ---
 layout: default-recipe
-title: theSkullery
+title: {{ page.title }}
 ---
 <div class="container" itemscope itemtype="http://schema.org/Recipe">
   {% include header-recipe.html %}
   <!-- call up the image and image credit link -->
   {% for image in page.image %}
-  <div class="xs-p2">
+  <div class="xs-p1">
     <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}?nf_resize=fit&w=1024" />
     {% if page.imagecredit %}
     {% for imagecredit in page.imagecredit %}
@@ -170,6 +170,49 @@ title: theSkullery
       </svg>
     <input type="hidden" id="input-url" value="Copied!">
   </span>
+</div>
+<div class="relatedPosts px1">
+<h4 class="related--title"><svg class="icon mr1" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30"><path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M16,21h-2v-7h2V21z M15,11.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S15.828,11.5,15,11.5z"/></svg>Related</h4>
+
+{% assign maxRelated = 4 %}
+{% assign minCommonTags =  2 %}
+{% assign maxRelatedCounter = 0 %}
+
+{% for post in site.recipes %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for category in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.categories contains category %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="relatedRecipe--category">{{ category }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+      <div class="sm-col xs-col-6 sm-col-6 md-col-3 lg-col-3 xs-px1 xs-mb2">
+      <!-- <a class="page--listitem" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ commonTags }} -->
+      <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
+        <div class="image ratio bg-cover" {% for image in post.image %}
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/thumbnails/{{image}}?nf_resize=fit&w=600);"
+          {% endfor %}></div>
+        <h3 class="title p1 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h3>
+        <p class="m0 p1 absolute top-0 right-0 lh0">{{ commonTags }}</p>
+      </a>
+      </div>
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
+
+</div>
 </div>
 <div id="output"></div>
 <script>

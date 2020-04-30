@@ -1,8 +1,20 @@
 ---
-layout: page
-title: Recipes Listed By Category
+layout: default-recipe
 permalink: /categories
+title: Categories
 ---
+<div class="hero--small xs-p2">
+    <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
+      {% include theSkullery-red.svg %}
+      <h1 class="hide">theSkullery</h1>
+    </a>
+    <img src="https://media.giphy.com/media/ToMjGpQirN8FU0BZibC/giphy.gif" alt="nothing to see here"/>
+  </div>
+  <div class="page--header">
+    <div class="page--suptitle ml3 sm-mt3">Recipes listed by</div>
+    <div class="page--title ml3">Categories</div>
+    <div class="page--subtitle ml3"></div>
+  </div>
 
 {% assign recipes_categories = site.recipes | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
 {% assign sorted_recipes = site.recipes | sort: 'title' %}
@@ -12,12 +24,12 @@ permalink: /categories
         {% if category == '' %}
             {% continue %}
         {% endif %}
-        <h4 class="ml4">{{ category }}</h4>
-        <ul class="ml4">
+        <h3 class="ml3 collection--title">{{ category }}
+        <ul>
                 {% for recipe in sorted_recipes %}
                     {% assign categories_array = recipe.categories | join: ',' | split: ',' %}
                     {% if categories_array contains category %}
-                <li><a href="{{ recipe.url }}">{{ recipe.title }}</a></li>
+                    <li><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg><a class="page--listitem" href="{{ recipe.url }}">{{ recipe.title }}</a></li>
                     {% endif %}
                 {% endfor %}
         </ul>

@@ -1,8 +1,9 @@
 ---
 layout: categorypage
-title: Oven
+title: Roasting
 category: oven
 image: oven.jpg
 imagecredit: "https://unsplash.com"
 ---
-All the recipes that will reacquaint you with your oven.
+What do you call a small gesture of acknowledgement directed towards an oven?
+A micro wave.

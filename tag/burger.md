@@ -5,4 +5,5 @@ tag: burger
 image: burger.jpg
 imagecredit: "https://unsplash.com"
 ---
-Get your burger on.
+A cheeseburger walks into a bar.
+The bartender shouts "Sorry, we don't serve food here!"

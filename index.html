@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Your recipes, your time.
 ---
 <div class="home">
   <div class="skullery--hero">
@@ -22,7 +23,15 @@ layout: default
           I hope you find inspiration from my collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
           </br>
           Yours,</br>
-          <strong>Robert</strong></br>
+          <div class="signature">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M249.101,105.798c-84.69,77.215 -141.835,168.806 -174.996,270.801"/>
+            <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M35.366,209.742c-46.501,-5.471 24.619,-76.59 95.738,-114.886c71.119,-38.295 158.651,-35.559 172.328,-5.47c13.677,30.089 -24.618,79.517 -71.12,120.356c-46.501,40.839 -126.227,88.322 -155.472,78.469c-22.746,-7.663 42.977,-31.242 67.941,-4.614c39.847,42.503 81.775,161.322 139.503,172.327"/>
+            <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M222.562,290.052c-12.652,-3.251 -19.652,40.902 -1.191,20.898c18.75,-20.317 4.296,-34.831 10.941,-32.6c6.287,2.11 19.448,2.589 30.089,-4.258c24.75,-15.923 55.349,-52.689 87.532,-78.027c47.453,-37.36 186.415,-191.936 68.384,-142.239c-103.944,43.766 -155.916,213.358 -155.916,251.653c0,36.018 17.467,49.919 30.089,0c10.058,-39.778 -30.089,-26.497 -2.735,-21.882c27.354,4.614 46.231,1.998 51.702,-5.247c5.471,-7.245 -36.71,0.948 -8.133,17.806c28.577,16.858 35.757,-8.871 38.492,-18.921c2.735,-10.051 -5.471,15.504 -2.735,28.244c2.735,12.741 2.68,-36.991 21.882,-27.129"/>
+            <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M440.2,145.627c-46.501,114.623 -46.501,162.198 -33.342,192.287"/>
+            <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M345.731,226.154c-48.567,-6.091 68.12,-36.304 133.769,-32.424"/>
+            </svg>
+              </div>
         </p>
         <a href="/submit" class="cta--main">Submit recipe</a>
         <a href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
@@ -45,7 +54,7 @@ layout: default
 
     <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
-        <div class="image ratio bg-cover image--overlay" {% for image in post.image %}
+        <div class="image ratio bg-cover" {% for image in post.image %}
           style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/thumbnails/{{image}}?nf_resize=fit&w=600);"
           {% endfor %}></div>
         <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h1>
@@ -87,7 +96,7 @@ layout: default
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover image--overlay" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image}?nf_resize=fit&w=600);"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image}?nf_resize=fit&w=600);"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
   })
 </script>
 <script>
@@ -166,4 +175,57 @@ $('#search-input').focus(function() {
     $('#favoritesBtn').removeClass('hidden');
     }
     });
+</script>
+<script>
+window.signature = {
+  initialize: function() {
+    return $('.signature svg').each(function() {
+      var delay, i, len, length, path, paths, previousStrokeLength, results, speed;
+      paths = $('path, circle, rect', this);
+      delay = 0;
+      results = [];
+      for (i = 0, len = paths.length; i < len; i++) {
+        path = paths[i];
+        length = path.getTotalLength();
+        previousStrokeLength = speed || 0;
+        speed = length < 100 ? 20 : Math.floor(length);
+        delay += previousStrokeLength + 100;
+        results.push($(path).css('transition', 'none').attr('data-length', length).attr('data-speed', speed).attr('data-delay', delay).attr('stroke-dashoffset', length).attr('stroke-dasharray', length + ',' + length));
+      }
+      return results;
+    });
+  },
+  animate: function() {
+    return $('.signature svg').each(function() {
+      var delay, i, len, length, path, paths, results, speed;
+      paths = $('path, circle, rect', this);
+      results = [];
+      for (i = 0, len = paths.length; i < len; i++) {
+        path = paths[i];
+        length = $(path).attr('data-length');
+        speed = $(path).attr('data-speed');
+        delay = $(path).attr('data-delay');
+        results.push($(path).css('transition', 'stroke-dashoffset ' + speed + 'ms ' + delay + 'ms linear').attr('stroke-dashoffset', '0'));
+      }
+      return results;
+    });
+  }
+};
+
+$(document).ready(function() {
+  window.signature.initialize();
+  return $('button').on('click', function() {
+    window.signature.initialize();
+    return setTimeout(function() {
+      return window.signature.animate();
+    }, 500);
+  });
+});
+
+$(window).load(function() {
+  return window.signature.animate();
+});
+
+// ---
+// generated by coffee-script 1.9.2
 </script>
