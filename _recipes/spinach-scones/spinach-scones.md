@@ -9,6 +9,7 @@ categories: oven # (these will be selected for you, later on you can select your
 tags: vegetarian # (these will be selected for you, later on you can select your own)
 meal: sides # (is this lunch, dinner, or breakfast?)
 chef: razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+servings: 1
 
 notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)
 - Check if the scones are thoroughly cooked by using a toothpick or a fork. 
@@ -16,19 +17,19 @@ notes: # (you can add recipe notes here, if you don't have any just delete this 
 
 ingredients:
 - for the mix:
-- 2 1/2 cup of self raising flour
-- 1 cup mixed grated cheese *we used cheddar and mozarella* 
-- 1 cup baby spinach chopped
-- 1 tbsp onion powder
-- 1 cup almond milk
-- 1/2 tsp salt
-- 1/2 tsp pepper
-- 30g unsalted butter, melted
+- 2.5| cup(s) of self raising flour
+- 1| cup(s) mixed grated cheese *we used cheddar and mozarella* 
+- 1| cup(s) baby spinach chopped
+- 1| tbsp onion powder
+- 1| cup(s) almond milk
+- 0.5| tsp salt
+- 0.5| tsp pepper
+- 30|g unsalted butter, melted
 - for the coat:
-- 1 tbsp butter, melted
-- 1/4 cup almond milk 
-- 1/2 tsp ground coriander
-- 1/2 tsp rosemary
+- 1| tbsp butter, melted
+- 0.25| cup almond milk 
+- 0.5| tsp ground coriander
+- 0.5| tsp rosemary
 - pinch of salt and pepper  
 
 

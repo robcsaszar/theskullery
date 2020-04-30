@@ -162,8 +162,8 @@ pre {
 }
 
 hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 blockquote {
@@ -643,6 +643,69 @@ h6, .h6 { font-size: .75rem }
 .col-12 {
   width: 100%;
 }
+
+@media (min-width: 300px) {
+
+  .xs-col {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .xs-col-right {
+    float: right;
+    box-sizing: border-box;
+  }
+
+  .xs-col-1 {
+    width: 8.33333%;
+  }
+
+  .xs-col-2 {
+    width: 16.66667%;
+  }
+
+  .xs-col-3 {
+    width: 25%;
+  }
+
+  .xs-col-4 {
+    width: 33.33333%;
+  }
+
+  .xs-col-5 {
+    width: 41.66667%;
+  }
+
+  .xs-col-6 {
+    width: 50%;
+  }
+
+  .xs-col-7 {
+    width: 58.33333%;
+  }
+
+  .xs-col-8 {
+    width: 66.66667%;
+  }
+
+  .xs-col-9 {
+    width: 75%;
+  }
+
+  .xs-col-10 {
+    width: 83.33333%;
+  }
+
+  .xs-col-11 {
+    width: 91.66667%;
+  }
+
+  .xs-col-12 {
+    width: 100%;
+  }
+
+}
+
 @media (min-width: 40em) {
 
   .sm-col {
@@ -884,7 +947,7 @@ pre, code {
 hr {
   border: 0;
   border-bottom-style: solid;
-  border-bottom-width: 4px;
+  border-bottom-width: 1px;
   border-bottom-color: rgba(0,0,0,.125);
 }
 

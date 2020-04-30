@@ -115,7 +115,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <div class="sm-col-8 center mx-auto description" itemprop="description"><p><em>I have no idea what to write here. Just enjoy making this!</em> 🔪</p>
 </div>
     </div>
-    <div class="divider"></div>
+    <hr>
     <div class="clearfix">
     <div class="split left">
       <div class="recipe--categories">
@@ -146,22 +146,29 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <div class="split right">
     </div>
     </div>
-    <div class="divider"></div>
+    <hr>
     <!-- call up recipe and directions -->
-    <div class="clearfix mt3">
+    <div class="clearfix mt3 list">
       <div class="sm-col sm-col-6 lg-col-6 ingredientlist">
         
         
         <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients for <input id="servings-count" class="servings-input" data-base-servings="1" type="number" step="0.5" min="0.5" max="1000" autocomplete="off" value="1" /> servings</h4>  
-        <ul itemprop="ingredients">
+        <ul itemprop="recipeIngredients">
           <!-- list ingredients that make up recipe -->
           
           
+          <h4 class="xs-center stickynote--title">for the pork</h4>
+          <ul itemprop="recipeIngredientGroup">
+            
+          </ul>
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="4 tablespoons + 3 tablespoons soy sauce
-"><p>4 tablespoons + 3 tablespoons soy sauce</p>
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="4" data-unit="" data-text="tbsp soy sauce
+"><p>4  tbsp soy sauce</p>
 </li>
           
           
@@ -170,8 +177,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="4 tablespoons granulated sugar
-"><p>4 tablespoons granulated sugar</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="2" data-unit="" data-text="tbsp fish sauce
+"><p>2  tbsp fish sauce</p>
 </li>
           
           
@@ -180,8 +187,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="8 tablespoons cold water
-"><p>8 tablespoons cold water</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="2" data-unit="" data-text="whole scallions, roughly chopped
+"><p>2  whole scallions, roughly chopped</p>
 </li>
           
           
@@ -190,8 +197,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 tablespoon rice vinegar
-"><p>1 tablespoon rice vinegar</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="tsp chili pepper flakes
+"><p>1  tsp chili pepper flakes</p>
 </li>
           
           
@@ -200,8 +207,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 tablespoon cooking wine <em>substitute with dry vermouth</em>
-"><p>1 tablespoon cooking wine <em>substitute with dry vermouth</em></p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="star anise
+"><p>1  star anise</p>
 </li>
           
           
@@ -210,8 +217,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="2 tablespoons + 1 tablespoon fish sauce
-"><p>2 tablespoons + 1 tablespoon fish sauce</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="0.5" data-unit="" data-text="tsp Szechuan peppercorns
+"><p>0.5  tsp Szechuan peppercorns</p>
 </li>
           
           
@@ -220,8 +227,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="2 whole scallions, roughly chopped
-"><p>2 whole scallions, roughly chopped</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="200" data-unit="" data-text="g chicken soup <em>substitute with water + bouillon cube</em>
+"><p>200 g chicken soup <em>substitute with water + bouillon cube</em></p>
 </li>
           
           
@@ -230,8 +237,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 teaspoon chili pepper flakes
-"><p>1 teaspoon chili pepper flakes</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="3" data-unit="" data-text="cloves garlic, crushed
+"><p>3  cloves garlic, crushed</p>
 </li>
           
           
@@ -240,8 +247,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1 star anise
-"><p>1 star anise</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="3" data-unit="" data-text="pieces ginger, crushed
+"><p>3  pieces ginger, crushed</p>
 </li>
           
           
@@ -250,8 +257,25 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1/2 teaspoon Szechuan peppercorns
-"><p>1/2 teaspoon Szechuan peppercorns</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="kg pork belly <em>best with skin still on</em>
+"><p>1 kg pork belly <em>best with skin still on</em></p>
+</li>
+          
+          
+          
+          
+          <h4 class="xs-center stickynote--title">for the sauce</h4>
+          <ul itemprop="recipeIngredientGroup">
+            
+          </ul>
+          
+          
+          
+          
+          
+          
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="3" data-unit="" data-text="tbsp soy sauce
+"><p>3  tbsp soy sauce</p>
 </li>
           
           
@@ -260,8 +284,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="200g chicken soup <em>substitute with water + bouillon cube</em>
-"><p>200g chicken soup <em>substitute with water + bouillon cube</em></p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="3" data-unit="" data-text="tbsp mirin <em>see note</em>
+"><p>3  tbsp mirin <em>see note</em></p>
 </li>
           
           
@@ -270,8 +294,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="4 cloves garlic, 3 whole, 1 finely chopped
-"><p>4 cloves garlic, 3 whole, 1 finely chopped</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="8" data-unit="" data-text="tbsp cold water
+"><p>8  tbsp cold water</p>
 </li>
           
           
@@ -280,8 +304,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="4 pieces ginger, 3 whole, 1 finely chopped
-"><p>4 pieces ginger, 3 whole, 1 finely chopped</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="tbsp rice vinegar
+"><p>1  tbsp rice vinegar</p>
 </li>
           
           
@@ -290,8 +314,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="1kg pork belly <em>best with skin still on</em>
-"><p>1kg pork belly <em>best with skin still on</em></p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="tbsp fish sauce
+"><p>1  tbsp fish sauce</p>
 </li>
           
           
@@ -300,8 +324,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="cilantro, scallions, sesame seeds
-"><p>cilantro, scallions, sesame seeds</p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="clove(s) garlic, finely chopped
+"><p>1  clove(s) garlic, finely chopped</p>
 </li>
           
           
@@ -310,28 +334,8 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="some <a href="https://www.seriouseats.com/recipes/2013/10/quick-pickled-cucumbers-rice-vinegar-recipe.html">quick-pickled cucumbers in rice vinegar</a>
-"><p>some <a href="https://www.seriouseats.com/recipes/2013/10/quick-pickled-cucumbers-rice-vinegar-recipe.html">quick-pickled cucumbers in rice vinegar</a></p>
-</li>
-          
-          
-          
-          
-          
-          
-          
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="a bowl of <a href="https://www.seriouseats.com/recipes/2013/02/pickled-daikon-and-carrot-do-chua.html">pickled carrot &amp; Daikon radish</a> <em>I use kohlrabi as a Daikon substitute</em>
-"><p>a bowl of <a href="https://www.seriouseats.com/recipes/2013/02/pickled-daikon-and-carrot-do-chua.html">pickled carrot &amp; Daikon radish</a> <em>I use kohlrabi as a Daikon substitute</em></p>
-</li>
-          
-          
-          
-          
-          
-          
-          
-        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="" data-unit="" data-text="some <a href="https://www.seriouseats.com/recipes/2012/12/spicy-mayo-for-sushi-recipe.html">Sriracha mayonnaise</a>
-"><p>some <a href="https://www.seriouseats.com/recipes/2012/12/spicy-mayo-for-sushi-recipe.html">Sriracha mayonnaise</a></p>
+        <li itemprop="recipeIngredient" class="ingredient unchecked" data-quantity="1" data-unit="" data-text="piece(s) ginger; finely chopped
+"><p>1  piece(s) ginger; finely chopped</p>
 </li>
           
           
@@ -376,7 +380,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="instruction"><p>Combine the soup, three tablespoons soy sauce, one tablespoon fish sauce, crushed ginger, chili flakes, Szechuan peppercorns, star anise, and whole garlic directly in the pot/pan you’re going to use.</p>
+          <li itemprop="instruction"><p>Combine the soup, soy sauce, fish sauce, crushed ginger, chili flakes, Szechuan peppercorns, star anise, scallions, and crushed garlic directly in the pot/pan you’re going to use.</p>
 </li>
           
           
@@ -386,17 +390,17 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="instruction"><p>For the oven – cover with aluminum foil and place in the oven to cook for 2 hours.</p>
+          <li itemprop="instruction"><p><strong>Oven:</strong> cover with aluminum foil and place in the oven to cook for 2 hours.</p>
 </li>
           
           
           
-          <li itemprop="instruction"><p>For the slow cooker – Cook on high for 4 hours.</p>
+          <li itemprop="instruction"><p><strong>Slow cooker:</strong> cook on high for 4 hours.</p>
 </li>
           
           
           
-          <li itemprop="instruction"><p>For the instant pot – Cover and lock the lid. Make sure the steam release handle points at ‘sealing’ and not ‘venting’. Press the ‘Keep Warm/Cancel’ button on the Instant Pot to stop cooking. Press the “Manual” button to switch to the pressure cooking mode. Change the cooking time to 35 minutes. If you’re using a stove-top pressure cooker like I do, cook on high heat until high pressure is reached. Then reduce the heat to low to maintain high pressure for about 30 minutes.</p>
+          <li itemprop="instruction"><p><strong>Instant pot:</strong> cover and lock the lid. Make sure the steam release handle points at ‘sealing’ and not ‘venting’. Press the ‘Keep Warm/Cancel’ button on the Instant Pot to stop cooking. Press the “Manual” button to switch to the pressure cooking mode. Change the cooking time to 35 minutes. If you’re using a stove-top pressure cooker like I do, cook on high heat until high pressure is reached. Then reduce the heat to low to maintain high pressure for about 30 minutes.</p>
 </li>
           
           
@@ -406,7 +410,14 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
           
-          <li itemprop="instruction"><p>Combine the water, four tablespoons soy sauce, mirin, sugar, vinegar, wine, fish sauce, finely chopped ginger, and finely chopped garlic in a different bowl and whisk until the sugar is dissolved. Add to broth.</p>
+          <h4>Pork Sauce</h4>
+          <ul itemprop="instructionGroup">
+            
+          </ul>
+          
+          
+          
+          <li itemprop="instruction"><p>Combine the water, soy sauce, mirin, sugar, vinegar, fish sauce, finely chopped ginger, and finely chopped garlic in a different bowl and whisk until the sugar is dissolved. Add to the aforementioned broth.</p>
 </li>
           
           
@@ -421,6 +432,16 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           
           
         </ul>
+      </div>
+      
+      <div class="notes sm-col sm-col-6 lg-col-6">
+        <h4 class="skullery mt0 mb2 xs-center">Notes</h4>
+        <dl>
+          
+          <dt class="note"><p>To replace mirin, the Japanese sweet rice wine, you need a combination of acidic and sweet flavors. Add between 1 and 2 tablespoons of sugar to 1/2 cup of white wine, vermouth, or dry sherry for an equivalent of 1/2 cup of mirin.</p>
+</li>
+            
+        </dl>
       </div>
       
     </div>
@@ -521,8 +542,8 @@ function copyText(){
       return this.on("click", cb);
     };
 
-    $("ul li").append('<input type="checkbox" class="customCheckBox large">');
-    $("ul li").clickToggle(function () {
+    $(".list ul li").append('<input type="checkbox" class="customCheckBox large">');
+    $(".list ul li").clickToggle(function () {
       $(this).children("input").prop('checked', true);
       $(this).addClass("checked");
       $(this).removeClass("unchecked");
@@ -701,29 +722,56 @@ $('.favorites input').click(function(e){
       </div>
     </div>
 
-  <footer class="footer clearfix py4">
-  <div class="container px3 sm-px4">
-    <div class="sm-col sm-col-6">
-      <div class="left-align flex-center">
-        <div class="icon icon--left grey">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
-            <path
-              d="M16.189 16.521L27.463 6H2.537l11.273 10.521C14.477 17.145 15.523 17.145 16.189 16.521zM8.906 14.68L1 7.301 1 22.586zM21.094 14.68L29 22.586 29 7.301z" />
-            <path
-              d="M19.631,16.045l-2.077,1.938c-0.717,0.669-1.636,1.003-2.555,1.003s-1.838-0.334-2.555-1.003l-2.077-1.938L2.414,24h25.172L19.631,16.045z" />
-            </svg>
-        </div>
-        <a class="squigglyURL--black" href='mailto:recipes@theskullery.net'>recipes@theskullery.net</a>
+  <footer class="footer clearfix">
+  <div class="px3 sm-px4">
+    <div class="container">
+      <div class="col lg-col-6 md-col-12 sm-col-12 xs-col-12 p1 footer--about">
+        <h4>About</h4>
+        <span class="sitename">the<strong>Skullery</strong></span> is all about simplicity, you do not have to log in to
+        see the recipes, your
+        browser is keeping tabs on your favorites, you can dynamically scale your recipes up or down, you can tick off
+        where you are with your instructions, and you can copy all unchecked ingredients to your clipboard for when
+        you go shopping. <br>
+        I hope you find your inspiration here and cook something as amazing as <strong>you</strong>.<br>
+        <br>
+        <span class="quote">"Cooking is a craft, I like to think, and a good cook is a craftsman -- not an artist.
+          There's nothing
+          wrong with that: The great cathedrals of Europe were built by craftsmen -- though not designed by them.
+          Practicing your craft in expert fashion is noble, honorable, and satisfying."</span> --<strong>AB</strong>
       </div>
-    </div>
-    <div class="sm-col sm-col-6">
-      <p class="right-align">made with <svg class="js-geomicon geomicon" height="0.8em" data-icon="heart"
-          viewBox="0 0 32 32" style="fill:#E83151">
-          <path
-            d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10">
-          </path>
-        </svg> by <a class="squigglyURL--black" href="https://nhg.design">Rob Csaszar</a>
-      </p>
+      <div class="lg-col xs-col sm-col md-col lg-col-3 md-col-6 sm-col-6 xs-col-6 p1 footer--links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href='https://stats.theskullery.net'>Stats</a></li>
+          <li><a href='/submit'>Contact</a></li>
+          <li><a href='/privacy'>Privacy</a></li>
+        </ul>
+      </div>
+      <div
+        class="lg-col-right xs-col-right sm-col-right md-col-right lg-col-3 md-col-6 sm-col-6 xs-col-6 p1 footer--links">
+        <h4>Site</h4>
+        <ul>
+          <li><a href='/categories'>Categories</a></li>
+          <li><a href='/tags'>Cuisines</a></li>
+          <li><a href='/chefs'>Chefs</a></li>
+          <li><a href='/meals'>Meals</a></li>
+        </ul>
+      </div>
+      <div class="mx-auto center col lg-col-12 md-col-12 sm-col-12 xs-col-12 p1 footer--copyright">
+        <hr>
+        <a class="squigglyURL--main" href='mailto:recipes@theskullery.net'>recipes@<span
+            class="sitename">the<strong>skullery</strong></span>.net</a><br>
+        <span class="footer--love">
+          made with
+          <svg height=".8em" fill="#e83151" viewBox="0 0 32 32">
+            <path d="M0 10c0-4 3-8 8-8 4 0 7 3 8 4 1-1 4-4 8-4 6 0 8 4 8 8 0 8-14 19-16 20-2-1-16-12-16-20" />
+          </svg>
+          by
+          <a class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
+          <span>All rights reserved &copy; <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script> theSkullery</span>
+      </div>
     </div>
   </div>
 </footer>

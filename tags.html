@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: Recipes Listed By Tag
-permalink: /tags/
+permalink: /tags
 ---
 
 {% assign recipes_tags = site.recipes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}

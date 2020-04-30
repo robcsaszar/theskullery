@@ -1,0 +1,42 @@
+---
+layout: default-recipe
+title: Recipes Listed By Chefs
+permalink: /chefs
+---
+
+<div class="hero--small xs-p2">
+    <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
+      {% include theSkullery-red.svg %}
+      <h1 class="hide">theSkullery</h1>
+    </a>
+    <img src="https://media.giphy.com/media/LVBH3rg1BUROw/giphy.gif" alt="nothing to see here"/>
+  </div>
+  <div class="page--header">
+    <div class="page--suptitle ml3 sm-mt3">Page not found</div>
+    <div class="page--title ml3">404</div>
+    <div class="page--subtitle ml3">Oops, the page you're looking for does not exist.<br>
+    <div class="divider"></div>
+      You may want to head  <a href="/" class='squigglyURL--main'>back to the homepage</a>. <br>
+  If you think something is broken, <a href="/submit" class='squigglyURL--main'>report a problem</a>.
+  </div>
+  </div>
+
+{% assign recipes_chefs = site.recipes | map: 'chef' | join: ',' | split: ',' | uniq | sort %}
+{% assign sorted_recipes = site.recipes | sort: 'title' %}
+
+<div id="tags">
+        {% for chef in recipes_chefs %}
+        {% if chef == '' %}
+            {% continue %}
+        {% endif %}
+        <h4 class="ml4">{{ chef }}</h4>
+        <ul class="ml4">
+                {% for recipe in sorted_recipes %}
+                    {% assign chefs_array = recipe.chef | join: ',' | split: ',' %}
+                    {% if chefs_array contains chef %}
+                <li><a href="{{ recipe.url }}">{{ recipe.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+        </ul>
+        {% endfor %}
+</div>

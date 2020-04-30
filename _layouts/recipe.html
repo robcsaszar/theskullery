@@ -34,7 +34,7 @@ title: theSkullery
     <div class="px2 mt3 clearfix">
       <div class="sm-col-8 center mx-auto description" itemprop="description">{{page.content}}</div>
     </div>
-    <div class="divider"></div>
+    <hr>
     <div class="clearfix">
     <div class="split left">
       <div class="recipe--categories">
@@ -59,14 +59,14 @@ title: theSkullery
     <div class="split right">
     </div>
     </div>
-    <div class="divider"></div>
+    <hr>
     <!-- call up recipe and directions -->
-    <div class="clearfix mt3">
+    <div class="clearfix mt3 list">
       <div class="sm-col sm-col-6 lg-col-6 ingredientlist">
         {% if page.ingredients %}
         {% assign servings = page.servings | default: 1 %}
         <h4 class="mt0 mb2 xs-center stickynote--title">Ingredients for <input id="servings-count" class="servings-input" data-base-servings="{{ servings }}" type="number" step="0.5" min="0.5" max="1000" autocomplete="off" value="{{ servings }}" /> servings</h4>  
-        <ul itemprop="ingredients">
+        <ul itemprop="recipeIngredients">
           <!-- list ingredients that make up recipe -->
           {% for ingredient in page.ingredients %}
           {% if ingredient.first %}
@@ -228,8 +228,8 @@ function copyText(){
       return this.on("click", cb);
     };
 
-    $("ul li").append('<input type="checkbox" class="customCheckBox large">');
-    $("ul li").clickToggle(function () {
+    $(".list ul li").append('<input type="checkbox" class="customCheckBox large">');
+    $(".list ul li").clickToggle(function () {
       $(this).children("input").prop('checked', true);
       $(this).addClass("checked");
       $(this).removeClass("unchecked");

@@ -9,6 +9,7 @@ categories: oven dessert
 tags: fruit
 meal: dessert
 chef: diana
+servings: 1
 
 notes: 
 - Separate the egg whites when they’re cold, it’s much easier.
@@ -19,21 +20,21 @@ notes:
 
 ingredients:
 - for the meringue:
-- 4 egg whites (~140g) *room temperature*
-- 1 cup (200g) caster sugar
-- 1 pinch of salt
-- 2 teaspoon cornstarch
-- 2 teaspoons white wine vinegar
-- 1 teaspoon vanilla extract
+- 140|g egg whites *aprox. 40g/egg*
+- 200|g caster sugar
+- pinch of salt
+- 2| tsp cornstarch
+- 2| tsp white wine vinegar
+- 1| tsp vanilla extract
 - for the cream:
-- 1½ cups (360ml) heavy cream *cold*
-- 3 tablespoons (23g) powdered sugar
-- 1 teaspoon vanilla extract
+- 360|ml heavy cream *cold*
+- 3| tbsps powdered sugar
+- 1| tsp vanilla extract
 - strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly*
 
 directions:
 - Preheat your oven to 160°C (320°F).
-- Lay a sheet of parchment paper on a baking tray and mark, a 20cm (8-inch) circle. Turn it upside down. Set aside.
+- Lay a sheet of parchment paper on a baking tray and mark, a 20cm (8-inch) circle. Turn it upside down and set it aside.
 - In a large bowl whisk egg whites until soft peaks form, gradually add sugar, until stiff peaks form and the meringue looks glossy. Add white wine vinegar, cornstarch, vanilla extract and beat on low speed until incorporated.
 - Spread the meringue inside the circle, creating a crater by making the sides a little higher than the middle.
 - Place the pavlova in the oven, reduce the heat to 120C (250F). Bake for 75 minutes, then turn off the heat and let the Pavlova cool completely (at least 4 hours) inside the oven.

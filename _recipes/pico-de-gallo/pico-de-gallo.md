@@ -9,18 +9,21 @@ categories: fresh salad
 tags: vegetarian mexican
 meal: sides
 chef: robert
+servings: 1
 
 ingredients:
-- 1 1/2 pounds (680g) ripe tomatoes, cut into 1/4- to 1/2-inch dice (about 3 cups) *see note*
-- Kosher salt
-- 1/2 large white onion, finely diced (about 3/4 cup)
-- 1 to 2 serrano or jalapeño chilies, finely diced *seeds and membranes removed for a milder salsa*
-- 1/2 cup finely chopped fresh cilantro leaves
-- 1 tablespoon (15ml) lime juice from 1 lime
+- 680|g ripe tomatoes, diced *see note*
+- kosher salt
+- 0.5| large white onion, finely diced
+- 1 serrano or jalapeño chili(es), finely diced *seeds and membranes removed for a milder salsa*
+- 0.5| cup(s) finely chopped fresh cilantro leaves
+- 15|ml tablespoon lime juice from one lime
 
 directions:
-- Season tomatoes with 1 teaspoon (4g) salt and toss to combine. Transfer to a fine-mesh strainer or colander set in a bowl and allow to drain for 20 to 30 minutes. Discard liquid.
-- Combine drained tomatoes with onion, chilies, cilantro, and lime juice. Toss to combine and season to taste with salt. Pico de gallo can be stored for up to 3 days in a sealed container in the refrigerator.
+- Season tomatoes with 1 teaspoon (4g) salt and toss to combine. 
+- Transfer to a fine-mesh strainer or colander set in a bowl and allow to drain for 20 to 30 minutes. Discard liquid.
+- Combine drained tomatoes with onion, chilies, cilantro, and lime juice. 
+- Toss to combine and season to taste with salt. Pico de gallo can be stored for up to 3 days in a sealed container in the refrigerator.
 notes: 
 - Use the ripest tomatoes you can find. In the off season, this generally means smaller plum, Roma, or cherry tomatoes.
 ---
