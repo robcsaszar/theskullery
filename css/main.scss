@@ -1865,9 +1865,9 @@ input[type="number"] {
     line-height: 0;
 }
 
-.relatedRecipe--category {
-    color: var(--mainColor-darker);
-    background-color: var(--mainColor-lightest);
+.relatedRecipe--tag {
+    color: var(--warning-darkest);
+    background-color: var(--warning-lightest);
     display: inline-block;
     padding: .25em .4em;
     font-size: 60%;
