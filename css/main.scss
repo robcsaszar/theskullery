@@ -1884,9 +1884,11 @@ input[type="number"] {
     margin: 100px auto 0;
     width: 70px;
     text-align: center;
-    display: none;
     position: absolute;
-    right: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
   
   .spinner > div {
