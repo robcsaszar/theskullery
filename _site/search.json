@@ -126,6 +126,22 @@
       "tags"           : "vegetarian indian ",
       "meal"           : "main ",
       "chef"           : "razvan "
+    } ,
+  
+    {
+    
+	    "title"          : "Yucatán-Style Pickled Red Onions",
+      
+      "ingredients"    : "1| red onion(s), finely diced 15| whole black peppercorns 15| whole allspice berries 4| bay leaves 80|ml juice from 1 grapefruit *see note* 80|ml juice from 1 to 2 oranges *see note* 80|ml juice from 4 to 5 limes plus a little extra just in case *see note* salt ",
+      
+		  "image"	         : "/recipes/yucatan-pickled-onions/thumbnails/yucatan-pickled-onions.jpg",
+      "url"            : "/recipes/yucatan-pickled-onions",
+      
+      "categories"     : "appetizer healthyish pickling ",
+      
+      "tags"           : "mexican vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "diana "
     } 
   
 ]

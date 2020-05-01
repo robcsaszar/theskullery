@@ -8,6 +8,7 @@ function runme() {
         "https://theskullery.net/recipes/spinach-scones",
         "https://theskullery.net/recipes/sticky-pork-belly",
         "https://theskullery.net/recipes/veggie-curry-soup",
+        "https://theskullery.net/recipes/yucatan-pickled-onions",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);

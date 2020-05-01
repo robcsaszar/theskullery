@@ -47,5 +47,11 @@
         "title": "Veggie Curry Cream Soup",
         "image": "images/large/veggie-curry-soup.jpg",
         "url": "/recipes/veggie-curry-soup",
+    },
+
+    {
+        "title": "Yucatán-Style Pickled Red Onions",
+        "image": "images/large/yucatan-pickled-onions.jpg",
+        "url": "/recipes/yucatan-pickled-onions",
     }
 ]

@@ -5,8 +5,8 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 May 2020 03:15:44 +0300</pubDate>
-    <lastBuildDate>Fri, 01 May 2020 03:15:44 +0300</lastBuildDate>
+    <pubDate>Fri, 01 May 2020 03:31:05 +0300</pubDate>
+    <lastBuildDate>Fri, 01 May 2020 03:31:05 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -199,6 +199,32 @@
         <category>healthyish</category>
         
         <category>quick</category>
+        
+      </item>
+    
+      <item>
+        <title>Yucatán-Style Pickled Red Onions</title>
+        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
+&lt;p&gt;Put it on yo sandwich, put it on yo burger, put it on yo steak. 🔪&lt;/p&gt;
+</description>
+        <link>https://theskullery.net/recipes/yucatan-pickled-onions</link>
+          <image>
+          
+          <url>/images/yucatan-pickled-onions.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/yucatan-pickled-onions</guid>
+        
+        <category>mexican</category>
+        
+        <category>vegetarian</category>
+        
+        
+        <category>appetizer</category>
+        
+        <category>healthyish</category>
+        
+        <category>pickling</category>
         
       </item>
     
