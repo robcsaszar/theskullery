@@ -2,7 +2,7 @@
 layout: tagpage
 title: Mexican
 tag: mexican
-image: mexican.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 Let's taco bout how awesome you are.

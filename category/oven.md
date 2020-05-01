@@ -2,7 +2,7 @@
 layout: categorypage
 title: Roasting
 category: oven
-image: oven.jpg
+image: category.jpg
 imagecredit: "https://unsplash.com"
 ---
 What do you call a small gesture of acknowledgement directed towards an oven?

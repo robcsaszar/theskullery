@@ -2,7 +2,7 @@
 layout: tagpage
 title: Beef
 tag: beef
-image: beef.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 Do not use "beef_stew" as a password!

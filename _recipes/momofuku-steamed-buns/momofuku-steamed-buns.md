@@ -5,11 +5,12 @@ permalink: recipes/momofuku-steamed-buns
 title:  "Momofuku Steamed Buns"
 image: momofuku-steamed-buns.jpg
 imagecredit: "unsplash.com"
-categories: oven baking
-tags: burger bread
-meal: mains
+categories: oven sandwich
+tags: asian bread pork
+meal: main
 chef: robert
-servings: 50
+time: over 120mins
+servings: 25
 
 ingredients:
 - for the pork belly:

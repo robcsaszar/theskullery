@@ -2,7 +2,7 @@
 layout: tagpage
 title: Pasta
 tag: pasta
-image: pasta.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 What do you call a fake noodle?

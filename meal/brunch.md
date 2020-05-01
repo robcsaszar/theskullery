@@ -2,7 +2,7 @@
 layout: mealpage
 title: Brunch
 meal: brunch
-image: brunch.jpg
+image: meal.jpg
 imagecredit: "https://unsplash.com"
 ---
 What's the best place to get Italian food in the ocean?

@@ -5,10 +5,11 @@ title:  "Refried Beans (Frijoles Refritos)"
 permalink: recipes/frijoles-refritos
 image: frijoles-refritos.jpg
 imagecredit: "https://www.seriouseats.com/recipes/2014/04/perfect-refried-beans.html"
-categories: still working on it
+categories: appetizer
 tags: mexican
 chef: robert
-meal: mains
+meal: side
+time: over 120mins
 servings: 1
 
 ingredients:

@@ -2,7 +2,7 @@
 layout: tagpage
 title: Duck
 tag: duck
-image: duck.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 Why did the duck know what he was getting for Christmas?

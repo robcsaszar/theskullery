@@ -5,10 +5,11 @@ permalink: recipes/pico-de-gallo
 title:  "Pico de Gallo Salsa"
 image: pico-de-gallo.jpg
 imagecredit: "flickr.com"
-categories: fresh salad
+categories: salad appetizer raw healthyish
 tags: vegetarian mexican
-meal: sides
+meal: side
 chef: robert
+time: under 60mins
 servings: 1
 
 ingredients:

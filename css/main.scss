@@ -129,8 +129,8 @@ ul li input {
 }
 
 .recipe--category {
-    color: var(--mainColor-darker);
-    background-color: var(--mainColor-lightest);
+    color: var(--danger-darkest);
+    background-color: var(--danger-lightest);
     display: inline-block;
     padding: .25em .4em;
     font-size: 75%;
@@ -144,8 +144,8 @@ ul li input {
 }
 
 .recipe--tag {
-    color: var(--yellowAccent-darkest);
-    background-color: var(--yellowAccent-lighter);
+    color: var(--warning-darkest);
+    background-color: var(--warning-lightest);
     display: inline-block;
     padding: .25em .4em;
     font-size: 75%;
@@ -174,7 +174,7 @@ ul li input {
 }
 
 .recipe--meal {
-    color: var(--grey-darker);
+    color: var(--grey-darkest);
     background-color: var(--grey-lightest);
     display: inline-block;
     padding: .25em .4em;
@@ -185,6 +185,38 @@ ul li input {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.recipepage--meal {
+    color: var(--white);
+    background-color: var(--grey-lighter);
+    opacity: 1;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.recipe--time {
+    color: var(--white);
+    background-color: var(--grey-lighter);
+    opacity: 1;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -1022,6 +1054,7 @@ a:hover .image {
 .note > p:before {
     content: '• ';
     color: var(--mainColor-lighter);
+    padding-right: 0.5rem;
 }
 
 .note > p > a {
@@ -1434,7 +1467,11 @@ cursor: pointer;
 }
 
 .split.right {
-    vertical-align: 50%;
+    vertical-align: 100%;
+}
+
+.right--align {
+    text-align: right;
 }
 
 #favTooltip {
@@ -1821,7 +1858,7 @@ input[type="number"] {
 }
 
 .related--title svg {
-    fill: var(--mainColor-lightest);
+    fill: var(--mainColor-lighter);
 }
 
 .lh0 {

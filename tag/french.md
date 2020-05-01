@@ -2,7 +2,7 @@
 layout: tagpage
 title: French
 tag: french
-image: french.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 France is always a beret good time!

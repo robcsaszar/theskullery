@@ -2,7 +2,7 @@
 layout: tagpage
 title: Burger
 tag: burger
-image: burger.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 A cheeseburger walks into a bar.

@@ -5,10 +5,11 @@ permalink: recipes/veggie-curry-soup
 title:  "Veggie Curry Cream Soup"
 image: veggie-curry-soup.jpg 
 imagecredit: "unsplash.com" 
-categories: soup 
-tags: vegetarian 
-meal: soups 
+categories: soup healthyish quick
+tags: vegetarian indian 
+meal: main
 chef: razvan
+time: under 60mins
 servings: 1 
 
 notes: 

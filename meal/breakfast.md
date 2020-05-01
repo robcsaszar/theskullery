@@ -2,7 +2,7 @@
 layout: mealpage
 title: Breakfast
 meal: breakfast
-image: breakfast.jpg
+image: meal.jpg
 imagecredit: "https://unsplash.com"
 ---
 Everyday at breakfast, I announce that I'm going for a jog, and then I don't.

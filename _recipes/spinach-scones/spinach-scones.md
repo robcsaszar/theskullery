@@ -5,10 +5,11 @@ permalink: recipes/spinach-scones # (this will be your final, pretty URL)
 title:  "Savoury Spinach Scones" # (making sure we have a good title)
 image: spinach-scones.jpg # (a nice, high-quality image I will carefully select for you)
 imagecredit: "bestrecipes.com.au" # (where I'm getting the image above)
-categories: oven # (these will be selected for you, later on you can select your own)
-tags: vegetarian # (these will be selected for you, later on you can select your own)
-meal: sides # (is this lunch, dinner, or breakfast?)
+categories: oven appetizer baking healthyish quick # (these will be selected for you, later on you can select your own)
+tags: vegetarian bread # (these will be selected for you, later on you can select your own)
+meal: brunch # (is this lunch, dinner, or breakfast?)
 chef: razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+time: under 60mins
 servings: 1
 
 notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)

@@ -2,7 +2,7 @@
 layout: categorypage
 title: Pickling
 category: pickling
-image: pickling.jpg
+image: category.jpg
 imagecredit: "https://unsplash.com"
 ---
 I watched a documentary about how pickles are made.

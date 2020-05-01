@@ -6,10 +6,9 @@ title:  "Burger Buns"
 image: burger-buns.jpg
 imagecredit: "unsplash.com"
 categories: oven baking
-tags: burger bread 
-meal: main
+tags: burger bread
+meal: mains
 chef: robert
-time: over 120mins
 servings: 1
 
 ingredients:

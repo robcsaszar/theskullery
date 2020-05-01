@@ -2,7 +2,7 @@
 layout: tagpage
 title: Asian
 tag: asian
-image: asian.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 You dim sum, you lose sum.

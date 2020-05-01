@@ -2,7 +2,7 @@
 layout: tagpage
 title: Nuts
 tag: nuts
-image: nuts.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 Which nut is most expensive?

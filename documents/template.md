@@ -6,10 +6,11 @@ permalink: recipes/pavlova # (this will be your final, pretty URL)
 title:  "Pavlova" # (making sure we have a good title)
 image: pavlova.jpg # (a nice, high-quality image I will carefully select for you)
 imagecredit: "unsplash.com" # (where I'm getting the image above)
-categories: oven dessert # (these will be selected for you, later on you can select your own)
-tags: fruit # (these will be selected for you, later on you can select your own)
-meal: dessert # (is this lunch, dinner, or breakfast?)
+categories: # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+tags: # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
+meal: # breakfast brunch dessert main side (choose one that applies)
 chef: diana # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+time: # under 60mins under 120mins over 120mins (choose one that applies)
 servings: 1 # (this will be served as a baseline for the dynamic scaling)
 
 notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)
@@ -21,14 +22,14 @@ notes: # (you can add recipe notes here, if you don't have any just delete this 
 
 ingredients:
 - for the meringue: # (we also have component subtitles, just add a ':') 
-- 140|g egg whites *aprox. 40g/egg*  # (all text between asterisks will automatically be slightly gray, monospaced, and put between brackets like magic; use for note-like comments)
-- 200|g caster sugar
+- 4| medium eggs, whites only
 - pinch of salt
 - 2| tsp cornstarch
 - 2| tsp white wine vinegar
 - 1| tsp vanilla extract
 - for the cream:
-- 360|ml heavy cream *cold*
+- 360|ml heavy cream *cold*  # (all text between asterisks will automatically be slightly gray, monospaced, and put between brackets like magic; use for note-like comments)
+- 200|g caster sugar
 - 3| tbsps powdered sugar
 - 1| tsp vanilla extract
 - strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly*

@@ -2,7 +2,7 @@
 layout: tagpage
 title: Thanksgiving
 tag: thanksgiving
-image: thanksgiving.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 Why don’t turkeys eat on Thanksgiving?

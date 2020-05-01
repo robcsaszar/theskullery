@@ -2,7 +2,7 @@
 layout: mealpage
 title: Desserts
 meal: dessert
-image: dessert.jpg
+image: meal.jpg
 imagecredit: "https://unsplash.com"
 ---
 What do cats have for dessert?

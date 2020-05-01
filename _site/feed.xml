@@ -5,8 +5,8 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2020 19:12:32 +0300</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2020 19:12:32 +0300</lastBuildDate>
+    <pubDate>Fri, 01 May 2020 03:15:44 +0300</pubDate>
+    <lastBuildDate>Fri, 01 May 2020 03:15:44 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -47,13 +47,7 @@
         <category>mexican</category>
         
         
-        <category>still</category>
-        
-        <category>working</category>
-        
-        <category>on</category>
-        
-        <category>it</category>
+        <category>appetizer</category>
         
       </item>
     
@@ -69,14 +63,16 @@
           </image>
         <guid isPermaLink="true">https://theskullery.net/recipes/momofuku-steamed-buns</guid>
         
-        <category>burger</category>
+        <category>asian</category>
         
         <category>bread</category>
+        
+        <category>pork</category>
         
         
         <category>oven</category>
         
-        <category>baking</category>
+        <category>sandwich</category>
         
       </item>
     
@@ -94,10 +90,10 @@
         
         <category>fruit</category>
         
+        <category>christmas</category>
+        
         
         <category>oven</category>
-        
-        <category>dessert</category>
         
       </item>
     
@@ -118,9 +114,13 @@
         <category>mexican</category>
         
         
-        <category>fresh</category>
-        
         <category>salad</category>
+        
+        <category>appetizer</category>
+        
+        <category>raw</category>
+        
+        <category>healthyish</category>
         
       </item>
     
@@ -139,8 +139,18 @@
         
         <category>vegetarian</category>
         
+        <category>bread</category>
+        
         
         <category>oven</category>
+        
+        <category>appetizer</category>
+        
+        <category>baking</category>
+        
+        <category>healthyish</category>
+        
+        <category>quick</category>
         
       </item>
     
@@ -156,16 +166,14 @@
           </image>
         <guid isPermaLink="true">https://theskullery.net/recipes/sticky-pork-belly</guid>
         
-        <category>still</category>
+        <category>asian</category>
         
-        <category>working</category>
-        
-        <category>on</category>
-        
-        <category>it</category>
+        <category>pork</category>
         
         
         <category>oven</category>
+        
+        <category>marinade</category>
         
       </item>
     
@@ -183,8 +191,14 @@
         
         <category>vegetarian</category>
         
+        <category>indian</category>
+        
         
         <category>soup</category>
+        
+        <category>healthyish</category>
+        
+        <category>quick</category>
         
       </item>
     

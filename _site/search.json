@@ -12,7 +12,7 @@
       "categories"     : "oven baking ",
       
       "tags"           : "burger bread ",
-      "meal"           : "mains ",
+      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -25,10 +25,10 @@
 		  "image"	         : "/recipes/frijoles-refritos/thumbnails/frijoles-refritos.jpg",
       "url"            : "/recipes/frijoles-refritos",
       
-      "categories"     : "still working on it ",
+      "categories"     : "appetizer ",
       
       "tags"           : "mexican ",
-      "meal"           : "mains ",
+      "meal"           : "side ",
       "chef"           : "robert "
     } ,
   
@@ -41,10 +41,10 @@
 		  "image"	         : "/recipes/momofuku-steamed-buns/thumbnails/momofuku-steamed-buns.jpg",
       "url"            : "/recipes/momofuku-steamed-buns",
       
-      "categories"     : "oven baking ",
+      "categories"     : "oven sandwich ",
       
-      "tags"           : "burger bread ",
-      "meal"           : "mains ",
+      "tags"           : "asian bread pork ",
+      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -52,14 +52,14 @@
     
 	    "title"          : "Pavlova",
       
-      "ingredients"    : "{&quot;for the meringue&quot;=&gt;nil} 140|g egg whites *aprox. 40g/egg* 200|g caster sugar pinch of salt 2| tsp cornstarch 2| tsp white wine vinegar 1| tsp vanilla extract {&quot;for the cream&quot;=&gt;nil} 360|ml heavy cream *cold* 3| tbsps powdered sugar 1| tsp vanilla extract strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly* ",
+      "ingredients"    : "{&quot;for the meringue&quot;=&gt;nil} 4| medium eggs, whites only 200|g caster sugar pinch of salt 2| tsp cornstarch 2| tsp white wine vinegar 1| tsp vanilla extract {&quot;for the cream&quot;=&gt;nil} 360|ml heavy cream *cold* 3| tbsps powdered sugar 1| tsp vanilla extract strawberries, raspberries, blueberries *any kind of semi-tart fruit fits perfectly* ",
       
 		  "image"	         : "/recipes/pavlova/thumbnails/pavlova.jpg",
       "url"            : "/recipes/pavlova",
       
-      "categories"     : "oven dessert ",
+      "categories"     : "oven ",
       
-      "tags"           : "fruit ",
+      "tags"           : "fruit christmas ",
       "meal"           : "dessert ",
       "chef"           : "diana "
     } ,
@@ -73,10 +73,10 @@
 		  "image"	         : "/recipes/pico-de-gallo/thumbnails/pico-de-gallo.jpg",
       "url"            : "/recipes/pico-de-gallo",
       
-      "categories"     : "fresh salad ",
+      "categories"     : "salad appetizer raw healthyish ",
       
       "tags"           : "vegetarian mexican ",
-      "meal"           : "sides ",
+      "meal"           : "side ",
       "chef"           : "robert "
     } ,
   
@@ -89,10 +89,10 @@
 		  "image"	         : "/recipes/spinach-scones/thumbnails/spinach-scones.jpg",
       "url"            : "/recipes/spinach-scones",
       
-      "categories"     : "oven ",
+      "categories"     : "oven appetizer baking healthyish quick ",
       
-      "tags"           : "vegetarian ",
-      "meal"           : "sides ",
+      "tags"           : "vegetarian bread ",
+      "meal"           : "brunch ",
       "chef"           : "razvan "
     } ,
   
@@ -105,10 +105,10 @@
 		  "image"	         : "/recipes/sticky-pork-belly/thumbnails/sticky-pork-belly.jpg",
       "url"            : "/recipes/sticky-pork-belly",
       
-      "categories"     : "oven ",
+      "categories"     : "oven marinade ",
       
-      "tags"           : "still working on it ",
-      "meal"           : "mains ",
+      "tags"           : "asian pork ",
+      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -121,10 +121,10 @@
 		  "image"	         : "/recipes/veggie-curry-soup/thumbnails/veggie-curry-soup.jpg",
       "url"            : "/recipes/veggie-curry-soup",
       
-      "categories"     : "soup ",
+      "categories"     : "soup healthyish quick ",
       
-      "tags"           : "vegetarian ",
-      "meal"           : "soups ",
+      "tags"           : "vegetarian indian ",
+      "meal"           : "main ",
       "chef"           : "razvan "
     } 
   

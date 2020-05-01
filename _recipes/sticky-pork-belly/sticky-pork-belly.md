@@ -5,10 +5,11 @@ title:  "Twice-Cooked Sticky Pork Belly"
 permalink: recipes/sticky-pork-belly
 image: sticky-pork-belly.jpg
 imagecredit: "https://www.amazon.co.uk/dp/1579655270"
-categories: oven
-tags: still working on it
+categories: oven marinade
+tags: asian pork
 chef: robert
-meal: mains
+meal: main
+time: over 120mins
 servings: 1
 
 ingredients:

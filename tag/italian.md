@@ -2,7 +2,7 @@
 layout: tagpage
 title: Italian
 tag: italian
-image: italian.jpg
+image: tag.jpg
 imagecredit: "https://unsplash.com"
 ---
 You've stolen a pizza my heart.

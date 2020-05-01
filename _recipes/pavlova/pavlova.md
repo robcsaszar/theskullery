@@ -5,10 +5,11 @@ permalink: recipes/pavlova
 title:  "Pavlova"
 image: pavlova.jpg
 imagecredit: "unsplash.com"
-categories: oven dessert
-tags: fruit
+categories: oven
+tags: fruit christmas
 meal: dessert
 chef: diana
+time: over 120mins
 servings: 1
 
 notes: 
@@ -20,7 +21,7 @@ notes:
 
 ingredients:
 - for the meringue:
-- 140|g egg whites *aprox. 40g/egg*
+- 4| medium eggs, whites only
 - 200|g caster sugar
 - pinch of salt
 - 2| tsp cornstarch

@@ -2,7 +2,7 @@
 layout: categorypage
 title: Sauces & Condiments
 category: sauce
-image: sauce.jpg
+image: category.jpg
 imagecredit: "https://unsplash.com"
 ---
 For sauces without losses.
