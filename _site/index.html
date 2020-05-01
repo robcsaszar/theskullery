@@ -125,10 +125,18 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <div class="search xs-px1 xs-mt2">
     <input type="text" id="search-input" placeholder="Search titles, ingredients, or categories...">
   </div>
+  <div id="spinner" class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
 </div>
 
 <div class="clearfix">
-  <div class="recipes xs-px1 xs-mt2" id="results-container"></div>
+
+  <div class="recipes xs-px1 xs-mt2" id="results-container">
+    
+  </div>
   <div class="recipes xs-px1 xs-mt2" id="recipes">
     
     
@@ -289,7 +297,10 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     $('#search-input').keyup('input', function () {
       if ($(this).val().length > 0) {
         $('#recipes').hide();
-        $('#search-container').show();
+        $('#spinner').show();
+        $('#spinner').delay(500).fadeOut(0);
+        $('#results-container').hide();
+        $('#results-container').delay(300).fadeIn(500);
         currentHeight = $('#search-container').outerHeight();
         $('.search').addClass('used').css('height', currentHeight);
         $(window).scrollTop($('#search').offset().top), 4000;
