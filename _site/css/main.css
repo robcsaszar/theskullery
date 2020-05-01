@@ -517,6 +517,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   40% { -webkit-transform: scale(1);
     transform: scale(1); } }
 
-.index--recipes { min-height: 50vh; }
+.index--recipes { min-height: 75vh; }
 
 /*# sourceMappingURL=main.css.map */
