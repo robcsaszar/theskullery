@@ -5,118 +5,120 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 May 2020 18:01:08 +0300</pubDate>
-    <lastBuildDate>Fri, 01 May 2020 18:01:08 +0300</lastBuildDate>
+    <pubDate>Sun, 03 May 2020 13:47:26 +0300</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 13:47:26 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>Burger Buns</title>
-        <description>&lt;p&gt;Easy, fluffy, and rich. Just like me. 🔪&lt;/p&gt;
+        <title>Amaretto Bourbon Punch</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/burger-buns</link>
+        <link>https://theskullery.net/recipes/amaretto-bourbon-punch</link>
           <image>
           
-          <url>/images/burger-buns.jpg</url>
+          <url>/images/amaretto-bourbon-punch.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/burger-buns</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/amaretto-bourbon-punch</guid>
         
-        <category>burger</category>
-        
-        <category>bread</category>
+        <category>vegetarian</category>
         
         
-        <category>oven</category>
+        <category>drink</category>
         
-        <category>baking</category>
+        <category>quick</category>
         
       </item>
     
       <item>
-        <title>Refried Beans (Frijoles Refritos)</title>
-        <description>&lt;p&gt;Beans. Beans. Beans. 🔪&lt;/p&gt;
+        <title>Vanilla Cinnamon Roll Dutch Baby</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/frijoles-refritos</link>
+        <link>https://theskullery.net/recipes/apple-bourbon-compote-dutch-baby</link>
           <image>
           
-          <url>/images/frijoles-refritos.jpg</url>
+          <url>/images/apple-bourbon-compote-dutch-baby.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/frijoles-refritos</guid>
-        
-        <category>mexican</category>
-        
-        
-        <category>appetizer</category>
-        
-      </item>
-    
-      <item>
-        <title>Momofuku Steamed Buns</title>
-        <description>&lt;p&gt;A-MA-ZING! 🔪&lt;/p&gt;
-</description>
-        <link>https://theskullery.net/recipes/momofuku-steamed-buns</link>
-          <image>
-          
-          <url>/images/momofuku-steamed-buns.jpg</url>
-          
-          </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/momofuku-steamed-buns</guid>
-        
-        <category>asian</category>
-        
-        <category>bread</category>
-        
-        <category>pork</category>
-        
-        
-        <category>oven</category>
-        
-        <category>sandwich</category>
-        
-      </item>
-    
-      <item>
-        <title>Pavlova</title>
-        <description>&lt;p&gt;Sweet AF. 🔪&lt;/p&gt;
-</description>
-        <link>https://theskullery.net/recipes/pavlova</link>
-          <image>
-          
-          <url>/images/pavlova.jpg</url>
-          
-          </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/pavlova</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/apple-bourbon-compote-dutch-baby</guid>
         
         <category>fruit</category>
+        
+        <category>vegetarian</category>
         
         <category>christmas</category>
         
         
         <category>oven</category>
         
+        <category>quick</category>
+        
       </item>
     
       <item>
-        <title>Pico de Gallo Salsa</title>
-        <description>&lt;p&gt;“Pico de gallo” translates to “rooster beak,” but what it refers to is the classic Mexican condiment made from fresh tomatoes, raw onion, chopped chilies, herbal cilantro, and vibrant lime juice. 🔪&lt;/p&gt;
+        <title>Apple Cider Shandy</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/pico-de-gallo</link>
+        <link>https://theskullery.net/recipes/apple-cider-shandy</link>
           <image>
           
-          <url>/images/pico-de-gallo.jpg</url>
+          <url>/images/apple-cider-shandy.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/pico-de-gallo</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/apple-cider-shandy</guid>
+        
+        <category>christmas</category>
+        
+        
+        <category>drink</category>
+        
+        <category>quick</category>
+        
+      </item>
+    
+      <item>
+        <title>Asian Sloppy Joes</title>
+        <description>
+</description>
+        <link>https://theskullery.net/recipes/asian-sloppy-joes</link>
+          <image>
+          
+          <url>/images/asian-sloppy-joes.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/asian-sloppy-joes</guid>
+        
+        <category>asian</category>
+        
+        <category>pork</category>
+        
+        <category>poultry</category>
+        
+        
+        <category>quick</category>
+        
+        <category>sandwich</category>
+        
+      </item>
+    
+      <item>
+        <title>Avocado Citrus Salad</title>
+        <description>
+</description>
+        <link>https://theskullery.net/recipes/avocado-citrus-salad</link>
+          <image>
+          
+          <url>/images/avocado-citrus-salad.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/avocado-citrus-salad</guid>
+        
+        <category>fruit</category>
         
         <category>vegetarian</category>
         
-        <category>mexican</category>
-        
         
         <category>salad</category>
-        
-        <category>appetizer</category>
         
         <category>raw</category>
         
@@ -125,106 +127,123 @@
       </item>
     
       <item>
-        <title>Savoury Spinach Scones</title>
-        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
-&lt;p&gt;Carbs don’t kill. 🔪&lt;/p&gt;
+        <title>Spicy Arrabiatta Baked Eggs</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/spinach-scones</link>
+        <link>https://theskullery.net/recipes/baked-arrabiatta-eggs</link>
           <image>
           
-          <url>/images/spinach-scones.jpg</url>
+          <url>/images/baked-arrabiatta-eggs.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/spinach-scones</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/baked-arrabiatta-eggs</guid>
+        
+        <category>italian</category>
         
         <category>vegetarian</category>
         
-        <category>bread</category>
         
+        <category>quick</category>
         
         <category>oven</category>
         
-        <category>appetizer</category>
+        <category>sauce</category>
         
-        <category>baking</category>
+      </item>
+    
+      <item>
+        <title>Baked Oatmeal</title>
+        <description>
+</description>
+        <link>https://theskullery.net/recipes/baked-oatmeal</link>
+          <image>
+          
+          <url>/images/baked-oatmeal.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/baked-oatmeal</guid>
         
-        <category>healthyish</category>
+        <category>vegetarian</category>
+        
+        <category>nuts</category>
+        
+        <category>fruit</category>
+        
+        
+        <category>snack</category>
+        
+        <category>oven</category>
         
         <category>quick</category>
         
       </item>
     
       <item>
-        <title>Twice-Cooked Sticky Pork Belly</title>
-        <description>&lt;p&gt;&lt;em&gt;I have no idea what to write here. Just enjoy making this!&lt;/em&gt; 🔪&lt;/p&gt;
+        <title>Baked Peaches &amp; Cream Oatmeal</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/sticky-pork-belly</link>
+        <link>https://theskullery.net/recipes/baked-peaches-oatmeal</link>
           <image>
           
-          <url>/images/sticky-pork-belly.jpg</url>
+          <url>/images/baked-peaches-oatmeal.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/sticky-pork-belly</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/baked-peaches-oatmeal</guid>
         
-        <category>asian</category>
+        <category>fruit</category>
         
-        <category>pork</category>
+        <category>vegetarian</category>
         
         
         <category>oven</category>
         
-        <category>marinade</category>
+        <category>healthyish</category>
         
       </item>
     
       <item>
-        <title>Veggie Curry Cream Soup</title>
-        <description>&lt;p&gt;Spice up your day. 🔪&lt;/p&gt;
+        <title>Basil Pesto Butter</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/veggie-curry-soup</link>
+        <link>https://theskullery.net/recipes/basil-pesto-butter</link>
           <image>
           
-          <url>/images/veggie-curry-soup.jpg</url>
+          <url>/images/basil-pesto-butter.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/veggie-curry-soup</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/basil-pesto-butter</guid>
         
         <category>vegetarian</category>
         
-        <category>indian</category>
+        <category>italian</category>
         
         
-        <category>soup</category>
-        
-        <category>healthyish</category>
+        <category>appetizer</category>
         
         <category>quick</category>
         
       </item>
     
       <item>
-        <title>Yucatán-Style Pickled Red Onions</title>
-        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
-&lt;p&gt;Put it on yo sandwich, put it on yo burger, put it on yo steak. 🔪&lt;/p&gt;
+        <title>Basil Ricotta Macaroni</title>
+        <description>
 </description>
-        <link>https://theskullery.net/recipes/yucatan-pickled-onions</link>
+        <link>https://theskullery.net/recipes/basil-ricotta-macaroni</link>
           <image>
           
-          <url>/images/yucatan-pickled-onions.jpg</url>
+          <url>/images/basil-ricotta-macaroni.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/yucatan-pickled-onions</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/basil-ricotta-macaroni</guid>
         
-        <category>mexican</category>
+        <category>italian</category>
+        
+        <category>pasta</category>
         
         <category>vegetarian</category>
         
         
-        <category>appetizer</category>
-        
-        <category>healthyish</category>
-        
-        <category>pickling</category>
+        <category>quick</category>
         
       </item>
     

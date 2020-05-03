@@ -26,9 +26,19 @@ title: Favorites
 <div class="page--header">
   <div class="page--suptitle ml3">Your recipes</div>
   <div class="page--title ml3 mr3">Favorites</div>
-  <div class="page--subtitle ml3 mr3">
-    <div id='favorites'></div>
-  </div>
+  <!-- <div class="page--subtitle m3">
+    If you want to export your favorites to a different browser, or simply want to include your liked recipes from other browsers, please do so below. <br>
+    Exporting will copy your favorites directly to your clipboard, while pasting the string in the input area and submitting will add them to your local storage and you'll have access to your favorites on other browsers, as well. <br>
+    <span class="highlight">No data is ever deleted, so any favorites you already have will stay there.</span><br>
+    <span class="warning">If you want to purge all favorites from this browser, please scroll to the bottom of the page.</span>
+    <div class="mt2 mb2" id="filesubmit">
+      <div class="messages"></div>
+      <button class="file-submit mt1">Export</button>
+      <input type="text"></input>
+      <button class="file-submit mt1">Import</button>
+    </div>
+  </div> -->
+  <div id='favorites'></div>
 </div>
 <script>
 var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {
