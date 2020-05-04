@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49af1a4bb3c2ffb3b7e815d7fff72b7fe515b7c377d7e2e9b832097b92eaf5b9
-size 1057
+---
+
+layout: recipe
+permalink: recipes/cilantro-jalapeno-sauce 
+title:  "Cilantro Jalapeño Sauce"
+image: cilantro-jalapeno-sauce.jpg 
+imagecredit: "unsplash.com" 
+categories: sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+tags: mexican vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
+meal: side # breakfast brunch dessert main side
+chef: robert 
+time: under 60mins # under 60mins under 120mins over 120mins
+servings: 1 
+
+ingredients:
+- 4| jalapeños, halved
+- 2| cup(s) loosely packed cilantro, stems removed
+- 0.5| cup(s) sour cream
+- 2| cloves garlic
+- 1| lime, juiced
+- pinch of salt
+- 0.5| cup olive oil
+- 1| tbsp apple cider vinegar
+
+directions:
+- Combine jalapenos, cilantro, sour cream, garlic, lime juice and salt in the bowl of a food processor. With the motor running, add olive oil and vinegar in a slow stream until emulsified.
+
+--- 
