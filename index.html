@@ -59,15 +59,15 @@ title: Your recipes, your time.
     {% assign sorted = site.recipes | sort:"date" %}
     {% for post in sorted %}
 
-    <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+    <div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
-          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/thumbnails/{{image}}?nf_resize=fit&w=600);"
+          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/{{image}});"
           {% endfor %}></div>
         <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h1>
         {% for meal in post.meal %}
-        <p class="recipe--meal p2 m1 absolute bottom-0 right-0">{{ meal }}</p>
-        {% endfor %}  
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">{{ meal }}</p>
+        {% endfor %} 
       </a>
     </div>
     {% endfor %}
@@ -80,16 +80,16 @@ title: Your recipes, your time.
 </div>
 <script src="{{site.baseurl}}/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
 <script>
-  var images = ['../assets/headers/header1.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header2.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header3.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header4.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header5.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header6.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header7.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header8.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header9.jpg?nf_resize=fit&w=1920',
-    '../assets/headers/header10.jpg?nf_resize=fit&w=1920'
+  var images = ['../assets/headers/header1.jpg',
+    '../assets/headers/header2.jpg',
+    '../assets/headers/header3.jpg',
+    '../assets/headers/header4.jpg',
+    '../assets/headers/header5.jpg',
+    '../assets/headers/header6.jpg',
+    '../assets/headers/header7.jpg',
+    '../assets/headers/header8.jpg',
+    '../assets/headers/header9.jpg',
+    '../assets/headers/header10.jpg'
   ];
 
   var randomImage = Math.floor(Math.random() * 10)
@@ -103,7 +103,7 @@ title: Your recipes, your time.
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image}?nf_resize=fit&w=600);"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal p2 m1 absolute bottom-0 right-0">{meal}</p></a></div>'
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
   })
 </script>
 <script>

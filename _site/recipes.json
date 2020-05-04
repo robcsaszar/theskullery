@@ -362,12 +362,6 @@
     },
 
     {
-        "title": "Gingerbread Fudge",
-        "image": "images/large/gingerbread-fudge.jpg",
-        "url": "/recipes/gingerbread-fudge",
-    },
-
-    {
         "title": "Roasted Green Chile Queso Dip",
         "image": "images/large/green-chile-queso-dip.jpg",
         "url": "/recipes/green-chile-queso-dip",
@@ -647,12 +641,6 @@
         "title": "Roasted Pineapple Ricotta Toast",
         "image": "images/large/roasted-pineapple-ricotta-toast.jpg",
         "url": "/recipes/roasted-pineapple-ricotta-toast",
-    },
-
-    {
-        "title": "Roasted Tomato Panzanella",
-        "image": "images/large/roasted-tomato-panzanella.jpg",
-        "url": "/recipes/roasted-tomato-panzanella",
     },
 
     {

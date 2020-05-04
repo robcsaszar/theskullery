@@ -962,22 +962,6 @@
   
     {
     
-	    "title"          : "Gingerbread Fudge",
-      
-      "ingredients"    : "50|g butter 395|g can of sweetened condensed milk 0.75| cup(s) packed soft brown sugar 0.25| cup(s) golden syrup 2| tsp ground ginger 1| tsp cinnamon 0.5| tsp nutmeg 250|g good quality white chocolate, roughly chopped *see note* ",
-      
-		  "image"	         : "/recipes/gingerbread-fudge/thumbnails/gingerbread-fudge.jpg",
-      "url"            : "/recipes/gingerbread-fudge",
-      
-      "categories"     : "baking oven ",
-      
-      "tags"           : "christmas vegetarian ",
-      "meal"           : "dessert ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
 	    "title"          : "Roasted Green Chile Queso Dip",
       
       "ingredients"    : "4| green chiles, *Anaheims are the best* 2| jalapeño peppers 1| tbsp olive oil 1| tbsp unsalted butter 0.5| sweet onion, diced 2| garlic cloves, minced 0.2| tsp salt 0.2| tsp pepper 1.5| cup(s) half-and-half cream 1| tbsp cornstarch 16| oz sharp white cheddar cheese, freshly grated 8| ounces Monterey Jack or Gouda cheese, freshly grated {&quot;for serving&quot;=&gt;nil} fresh cilantro tortilla chips ",
@@ -1724,22 +1708,6 @@
       "categories"     : "quick oven ",
       
       "tags"           : "fruit vegetarian ",
-      "meal"           : "brunch ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
-	    "title"          : "Roasted Tomato Panzanella",
-      
-      "ingredients"    : "4| cup(s) grape tomatoes 4| cup(s) cubed multigrain bread 6| tbsp olive oil 1| tsp salt 1| tsp pepper 2.5| cup(s) fresh mozzarella balls/pearls fresh basil leaves balsamic glaze ",
-      
-		  "image"	         : "/recipes/roasted-tomato-panzanella/thumbnails/roasted-tomato-panzanella.jpg",
-      "url"            : "/recipes/roasted-tomato-panzanella",
-      
-      "categories"     : "quick salad oven healthyish ",
-      
-      "tags"           : "vegetarian italian ",
       "meal"           : "brunch ",
       "chef"           : "robert "
     } ,
