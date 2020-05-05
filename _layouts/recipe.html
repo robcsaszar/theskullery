@@ -7,7 +7,9 @@ title: {{ page.title }}
   <!-- call up the image and image credit link -->
   {% for image in page.image %}
   <div class="xs-p1">
+    <div class="noisy">
     <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}" />
+    </div>  
     {% if page.imagecredit %}
     {% for imagecredit in page.imagecredit %}
     <span class="right" tooltip="{{ imagecredit }}" flow="left">
@@ -250,7 +252,7 @@ title: {{ page.title }}
     <div class="sm-col xs-col-6 sm-col-6 md-col-3 lg-col-3 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
-          style="background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%), url({{post.url|prepend:site.baseurl}}/{{image}});"
+        style='background-image:url(/images/blank.jpg);' data-echo-background='{{post.url|prepend:site.baseurl}}/{{image}}'
           {% endfor %}></div>
         <h3 class="title p1 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h3>
         <p class="m0 p1 absolute top-0 right-0 lh0">{{ commonTags }}</p>
@@ -265,6 +267,7 @@ title: {{ page.title }}
   </div>
 </div>
 <div id="output"></div>
+{% include lazyload.html %}
 <script>
   function copyText() {
     var outputText = "";
