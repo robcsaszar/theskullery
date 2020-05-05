@@ -10,6 +10,7 @@ twitter_username: robcsaszar
 github_username: robcsaszar
 timezone: Europe/Bucharest
 
+
 # Build settings
 markdown: kramdown
 
@@ -20,6 +21,7 @@ collections:
     output: true
   recipes:
     output: true
+    paginate: 16
   chef:
     output: true
   meal:
