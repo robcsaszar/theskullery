@@ -57,7 +57,7 @@ title: Your recipes, your time.
   </div>
   <div class="endless recipes xs-px1 xs-mt2">
     {% assign sorted = site.recipes | sort:"date" %}
-    {% for post in sorted limit: 16 %}
+    {% for post in sorted %}
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
@@ -72,7 +72,6 @@ title: Your recipes, your time.
     {% endfor %}
   </div>
 </div>
-<div class="infinite-spinner"></div>
 <div class="progress-wrap">
   <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
