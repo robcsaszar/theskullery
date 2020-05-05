@@ -21,7 +21,6 @@ collections:
     output: true
   recipes:
     output: true
-    paginate: 16
   chef:
     output: true
   meal:
