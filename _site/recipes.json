@@ -50,6 +50,18 @@
     },
 
     {
+        "title": "Banana Bread",
+        "image": "images/large/banana-bread.jpg",
+        "url": "/recipes/banana-bread",
+    },
+
+    {
+        "title": "Healthy Banoffee Pie",
+        "image": "images/large/banoffee-pie.jpg",
+        "url": "/recipes/banoffee-pie",
+    },
+
+    {
         "title": "Basil Pesto Butter",
         "image": "images/large/basil-pesto-butter.jpg",
         "url": "/recipes/basil-pesto-butter",
@@ -206,6 +218,12 @@
     },
 
     {
+        "title": "Bean and Chickpea Burgers",
+        "image": "images/large/chickpea-bean-burgers.jpg",
+        "url": "/recipes/chickpea-bean-burgers",
+    },
+
+    {
         "title": "Chili Cheese Pasta",
         "image": "images/large/chili-cheese-pasta.jpg",
         "url": "/recipes/chili-cheese-pasta",
@@ -230,6 +248,12 @@
     },
 
     {
+        "title": "Cinnamon Rolls",
+        "image": "images/large/cinnamon-rolls.jpg",
+        "url": "/recipes/cinnamon-rolls",
+    },
+
+    {
         "title": "Pretzel Roll Cleveland Cheesesteaks",
         "image": "images/large/cleveland-cheesesteaks.jpg",
         "url": "/recipes/cleveland-cheesesteaks",
@@ -239,6 +263,12 @@
         "title": "Coconut Chicken Soup",
         "image": "images/large/coconut-chicken-soup.jpg",
         "url": "/recipes/coconut-chicken-soup",
+    },
+
+    {
+        "title": "Coconut Chickpea Curry",
+        "image": "images/large/coconut-chickpea-curry.jpg",
+        "url": "/recipes/coconut-chickpea-curry",
     },
 
     {
@@ -269,6 +299,12 @@
         "title": "Coconut Milk Braised Turkey",
         "image": "images/large/coconut-milk-braised-turkey.jpg",
         "url": "/recipes/coconut-milk-braised-turkey",
+    },
+
+    {
+        "title": "Coconut Turkey",
+        "image": "images/large/coconut-turkey.jpg",
+        "url": "/recipes/coconut-turkey",
     },
 
     {
@@ -323,6 +359,12 @@
         "title": "Eggnog Cinnamon Rolls",
         "image": "images/large/eggnog-cinnamon-rolls.jpg",
         "url": "/recipes/eggnog-cinnamon-rolls",
+    },
+
+    {
+        "title": "Raw Energy Bites",
+        "image": "images/large/energy-balls.jpg",
+        "url": "/recipes/energy-balls",
     },
 
     {
@@ -383,6 +425,12 @@
         "title": "Guinness Pot Pie",
         "image": "images/large/guinness-pot-pie.jpg",
         "url": "/recipes/guinness-pot-pie",
+    },
+
+    {
+        "title": "Healthy Brownies",
+        "image": "images/large/healthy-brownies.jpg",
+        "url": "/recipes/healthy-brownies",
     },
 
     {
@@ -731,6 +779,12 @@
         "title": "Tacos al Pastor",
         "image": "images/large/tacos-al-pastor.jpg",
         "url": "/recipes/tacos-al-pastor",
+    },
+
+    {
+        "title": "Teriyaki Chicken",
+        "image": "images/large/teriyaki-chicken.jpg",
+        "url": "/recipes/teriyaki-chicken",
     },
 
     {

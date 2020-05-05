@@ -5,8 +5,8 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 May 2020 10:12:21 +0300</pubDate>
-    <lastBuildDate>Tue, 05 May 2020 10:12:21 +0300</lastBuildDate>
+    <pubDate>Tue, 05 May 2020 12:22:53 +0300</pubDate>
+    <lastBuildDate>Tue, 05 May 2020 12:22:53 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -202,48 +202,58 @@
       </item>
     
       <item>
-        <title>Basil Pesto Butter</title>
-        <description>
+        <title>Banana Bread</title>
+        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
+&lt;p&gt;Bread Bananza. 🔪&lt;/p&gt;
 </description>
-        <link>https://theskullery.net/recipes/basil-pesto-butter</link>
+        <link>https://theskullery.net/recipes/banana-bread</link>
           <image>
           
-          <url>/images/basil-pesto-butter.jpg</url>
+          <url>/images/banana-bread.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/basil-pesto-butter</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/banana-bread</guid>
+        
+        <category>bread</category>
+        
+        <category>fruit</category>
         
         <category>vegetarian</category>
         
-        <category>italian</category>
         
+        <category>baking</category>
         
-        <category>appetizer</category>
+        <category>healthyish</category>
+        
+        <category>oven</category>
         
         <category>quick</category>
         
       </item>
     
       <item>
-        <title>Basil Ricotta Macaroni</title>
-        <description>
+        <title>Healthy Banoffee Pie</title>
+        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
+&lt;p&gt;I only have P-Eyes for you. 🔪&lt;/p&gt;
 </description>
-        <link>https://theskullery.net/recipes/basil-ricotta-macaroni</link>
+        <link>https://theskullery.net/recipes/banoffee-pie</link>
           <image>
           
-          <url>/images/basil-ricotta-macaroni.jpg</url>
+          <url>/images/banoffee-pie.jpg</url>
           
           </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/basil-ricotta-macaroni</guid>
+        <guid isPermaLink="true">https://theskullery.net/recipes/banoffee-pie</guid>
         
-        <category>italian</category>
-        
-        <category>pasta</category>
+        <category>fruit</category>
         
         <category>vegetarian</category>
         
         
-        <category>quick</category>
+        <category>baking</category>
+        
+        <category>oven</category>
+        
+        <category>healthyish</category>
         
       </item>
     

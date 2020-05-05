@@ -130,6 +130,38 @@
   
     {
     
+	    "title"          : "Banana Bread",
+      
+      "ingredients"    : "8| tbsp unsalted butter, melted 1| cup(s) sugar 2| large eggs 1/4| cup(s) milk 1| tbsp vanilla extract 4| small/medium ripened bananas 1/4| tsp salt 1| tsp baking soda 1 and 1/2 | tsp baking powder 2| cup(s) all purpose flour 1/2| cup(s) chopped mixed nuts *cashews, pecans, walnuts, hazelnuts, almonds* ",
+      
+		  "image"	         : "/recipes/banana-bread/thumbnails/banana-bread.jpg",
+      "url"            : "/recipes/banana-bread",
+      
+      "categories"     : "baking healthyish oven quick ",
+      
+      "tags"           : "bread fruit vegetarian ",
+      "meal"           : "dessert ",
+      "chef"           : "roksana "
+    } ,
+  
+    {
+    
+	    "title"          : "Healthy Banoffee Pie",
+      
+      "ingredients"    : "5 ripened bananas *3 of them mashed* 1| cup(s) cashew nuts 1| cup(s) almond nuts 1.5| cup(s) pecan nuts 1| cup(s) dates 2| tsp vanilla extract 2| tbsp granulated sweetener 2| can(s) light coconut milk, refrigerated *don&#39;t shake the cans* caramel instant coffee or cappucino 1| tbsp almond butter 1| tsp salt 3| tbsp water 0.5| cup(s) grated dark chocolate ",
+      
+		  "image"	         : "/recipes/banoffee-pie/thumbnails/banoffee-pie.jpg",
+      "url"            : "/recipes/banoffee-pie",
+      
+      "categories"     : "baking oven healthyish ",
+      
+      "tags"           : "fruit vegetarian ",
+      "meal"           : "dessert ",
+      "chef"           : "roksana "
+    } ,
+  
+    {
+    
 	    "title"          : "Basil Pesto Butter",
       
       "ingredients"    : "1| tbsp pine nuts 0.25| tsp minced garlic 0.33| cup basil leaves 3| tbsp shredded parmesan cheese 1| cup unsalted butter pinch of salt ",
@@ -546,6 +578,22 @@
   
     {
     
+	    "title"          : "Bean and Chickpea Burgers",
+      
+      "ingredients"    : "1| onion, chopped 1| can of chickpeas 1| can of red kidney beans 1| small can of sweetcorn 0.5| cup Basmati rice, cooked 1| egg 0.5| cup breadcrumbs 1| tbsp lemon juice smoked paprika salt &amp; pepper, to taste 1| tsp Worchestershire sauce 1| tsp soy sauce 2| tbsp ketchup 5| slices cheddar cheese ",
+      
+		  "image"	         : "/recipes/chickpea-bean-burgers/thumbnails/chickpea-bean-burgers.jpg",
+      "url"            : "/recipes/chickpea-bean-burgers",
+      
+      "categories"     : "healthyish ",
+      
+      "tags"           : "burger vegetarian ",
+      "meal"           : "main ",
+      "chef"           : "roksana "
+    } ,
+  
+    {
+    
 	    "title"          : "Chili Cheese Pasta",
       
       "ingredients"    : "1| tbsp olive oil 1| sweet onion, diced 2| garlic cloves, minced 0.5| tsp salt 0.25| tsp pepper 1| pound lean ground beef 2| tbsp tomato paste 1| tbsp chili powder 2| tsp smoked paprika 0.5| tsp ground cumin 1| can fire roasted tomatoes 1| can diced green chiles 2.5| cup(s) low-sodium beef or chicken stock 8| oz elbow noodles 6| oz white cheddar cheese, freshly grated 3| green onions, thinly sliced sour cream, for serving ",
@@ -610,6 +658,22 @@
   
     {
     
+	    "title"          : "Cinnamon Rolls",
+      
+      "ingredients"    : "{&quot;for the dough&quot;=&gt;nil} 0.5| cup(s) unsalted butter, melted 2| cup(s) milk, warm 0.5| cup(s) granulated sugar 2.25 | tsp dry yeast 5| cup(s) plain flour 1| tsp baking powder 2| tsp salt {&quot;for the filling&quot;=&gt;nil} 3| tbsp butter, softened 1| cup(s) brown sugar 3| tbsp ground cinnamon {&quot;for the frosting&quot;=&gt;nil} 125|g cream cheese, softened 1.5| tbsp butter, melted 2| tbsp milk 1| tsp vanilla extract 0.75| cup(s) powdered sugar ",
+      
+		  "image"	         : "/recipes/cinnamon-rolls/thumbnails/cinnamon-rolls.jpg",
+      "url"            : "/recipes/cinnamon-rolls",
+      
+      "categories"     : "baking oven ",
+      
+      "tags"           : "vegetarian christmas ",
+      "meal"           : "dessert ",
+      "chef"           : "razvan "
+    } ,
+  
+    {
+    
 	    "title"          : "Pretzel Roll Cleveland Cheesesteaks",
       
       "ingredients"    : "{&quot;for the pretzel rolls&quot;=&gt;nil} 1.5| cups warm water 2| tbsp light brown sugar 2.25| tsp active dry yeast 8| tbsp unsalted butter 1.5| tsp sea salt or kosher salt 4.5| cups to 5 all-purpose flour 3| quarts water 0.66| cups baking soda 1| whole egg, beaten coarse sea salt {&quot;for the cheesesteak&quot;=&gt;nil} 3| pounds beef brisket 2| tbsp olive oil salt and pepper 2| cloves garlic, minced and grated 1| tbsp chili powder 1| tsp cumin 0.25| tsp onion powder 0.25| cup(s) cider vinegar 0.25| cup(s) Worcestershire sauce 1.5| cup(s) water 8| oz Provolone cheese, shredded {&quot;for toppings&quot;=&gt;nil} 2| tbsp butter 16| oz button mushrooms 2| large onions, sliced thin 1| green pepper, sliced 2| cloves garlic, minced or grated pinch of salt and pepper ",
@@ -638,6 +702,22 @@
       "tags"           : "asian bread poultry ",
       "meal"           : "main ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Coconut Chickpea Curry",
+      
+      "ingredients"    : "1| can chickpeas 0.5| can coconut milk 0.5| can chopped tomatoes 1| onion, chopped 2| garlic cloves *or 50% more, if you&#39;re feeling garlicky* 1| tsp turmeric 0.5| tsp chili powder 1| tsp curry powder 1| red bell pepper 1| cup spinach salt and pepper, to taste ",
+      
+		  "image"	         : "/recipes/coconut-chickpea-curry/thumbnails/coconut-chickpea-curry.jpg",
+      "url"            : "/recipes/coconut-chickpea-curry",
+      
+      "categories"     : "healthyish quick ",
+      
+      "tags"           : "indian vegetarian ",
+      "meal"           : "main ",
+      "chef"           : "Roksana "
     } ,
   
     {
@@ -718,6 +798,22 @@
       "tags"           : "asian poultry rice ",
       "meal"           : "main ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Coconut Turkey",
+      
+      "ingredients"    : "3| full turkey breasts 1| can light coconut milk 0.33| cup(s) cider vinegar 0.33| cup(s) soy sauce 5| garlic cloves 3| bay leaves 1| cup(s) spinach 0.25| cup(s) teriyaki sauce 2| tbsp Worchestershire sauce 1| tsp paprika 1| tsp crushed black pepper 1| tsp sugar 1| tbsp crushed parsley 1| tbsp salt ",
+      
+		  "image"	         : "/recipes/coconut-turkey/thumbnails/coconut-turkey.jpg",
+      "url"            : "/recipes/coconut-turkey",
+      
+      "categories"     : "",
+      
+      "tags"           : "",
+      "meal"           : "",
+      "chef"           : "Roksana "
     } ,
   
     {
@@ -862,6 +958,22 @@
       "tags"           : "christmas vegetarian ",
       "meal"           : "dessert ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Raw Energy Bites",
+      
+      "ingredients"    : "3/4| cup(s) pecans 5| dates 1/2| cup(s) mixed dried fruit 3| tbsp coconut shavings 1/2| cup(s) cashew nuts 3| tbsp almond butter 2| tbsp coconut oil 2| tbsp water ",
+      
+		  "image"	         : "/recipes/energy-balls/thumbnails/energy-balls.jpg",
+      "url"            : "/recipes/energy-balls",
+      
+      "categories"     : "snack quick raw ",
+      
+      "tags"           : "vegetarian nuts fruit ",
+      "meal"           : "dessert ",
+      "chef"           : "Razvan "
     } ,
   
     {
@@ -1022,6 +1134,22 @@
       "tags"           : "beef ",
       "meal"           : "main ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Healthy Brownies",
+      
+      "ingredients"    : "0.5| cup(s) granulated sweetener 0.5| cup(s) brown sugar 450|g vanilla yoghurt 2| tbsp vegetable oil 2| egg whites 3/4| cup(s) plain four 0.5| cup(s) cocoa powder 0.5| tsp salt 1| tsp vanilla extract 100|g dark chocolate chips ",
+      
+		  "image"	         : "/recipes/healthy-brownies/thumbnails/healthy-brownies.jpg",
+      "url"            : "/recipes/healthy-brownies",
+      
+      "categories"     : "quick oven baking healthyish ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "dessert ",
+      "chef"           : "roksana "
     } ,
   
     {
@@ -1950,6 +2078,22 @@
       "tags"           : "mexican pork ",
       "meal"           : "main ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Teriyaki Chicken",
+      
+      "ingredients"    : "2| large chicken breasts 1| cup soy sauce 1| tsp Worchestershire sauce 0.5| cup brown sugar 1| tbsp butter ",
+      
+		  "image"	         : "/recipes/teriyaki-chicken/thumbnails/teriyaki-chicken.jpg",
+      "url"            : "/recipes/teriyaki-chicken",
+      
+      "categories"     : "healthyish quick ",
+      
+      "tags"           : "asian poultry ",
+      "meal"           : "main ",
+      "chef"           : "razvan "
     } ,
   
     {
