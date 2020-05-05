@@ -562,13 +562,24 @@ ul li input {
         list-style: none;
         font-size: .875rem;
         color: var(--white);
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         cursor: pointer;
-        visibility: hidden;
+        text-decoration: none;
+        padding: 0;
 
         &:hover {
             color: var(--white);
             opacity: 0.6;
+        }
+
+        & a {
+        text-decoration: none;
+        color: var(--white);
+            &:hover {
+                color: var(--white);
+                opacity: 0.6;
+            }
+
         }
     }
 
@@ -626,35 +637,6 @@ ul li input {
         .cta--secondary:hover {
             background: var(--white);
             color: var(--mainColor-darker);
-        }
-
-        .cta--favorites {
-            fill: var(--white);
-            border: 1px solid var(--white);
-            background: transparent;
-            padding: calc(.675rem - 1px) 1rem;
-            font-weight: 500;
-        }
-
-        .cta--favorites.hidden {
-            display: none;
-        }
-
-        .cta--favorites svg {
-            display: inline-flex;
-            align-self: center;
-            position: relative;
-            height: 1.5em;
-            width: 1.5em;
-            top: 0.20em;    
-        }
-        
-        .cta--favorites:hover {
-            fill: var(--mainColor-darker);
-            border: 1px solid var(--white);
-            background: var(--white);
-            padding: calc(.675rem - 1px) 1rem;
-            font-weight: 500;
         }
     }
 }
@@ -1960,4 +1942,8 @@ input[type="number"] {
 
 .spinner {
     display: none;
+}
+
+#favs.hidden {
+    display: none !important;
 }

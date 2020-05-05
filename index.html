@@ -10,10 +10,9 @@ title: Your recipes, your time.
       <div class="header">
         <p class="logo">the<strong><i>Skullery</i></strong></p>
         <ul>
-          <li>Feed</li>
-          <li>Search</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li class='hero--link right'><a href='/categories'>Categories</a></li>
+          <li class='hero--link right'><a href='/tags'>Tags</a></li>
+          <li class='hero--link right' id="favs"><a href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div class="main--hero">
@@ -35,7 +34,6 @@ title: Your recipes, your time.
         </p>
         <a href="/submit" class="cta--main">Submit recipe</a>
         <a href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
-        <a id="favoritesBtn" href="/favorites" class="cta--favorites absolute top-2 right-2"><svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M16.5,3C13.605,3,12,5.09,12,5.09S10.395,3,7.5,3C4.462,3,2,5.462,2,8.5c0,4.171,4.912,8.213,6.281,9.49C9.858,19.46,12,21.35,12,21.35s2.142-1.89,3.719-3.36C17.088,16.713,22,12.671,22,8.5C22,5.462,19.538,3,16.5,3z"/></svg></a>
       </div>
     </div>
   </div>
@@ -180,9 +178,9 @@ $('#search-input').focus(function() {
     var favorites = localStorage.length;
     $(document).ready(function () {
     if (favorites == 0) {
-    $('#favoritesBtn').addClass('hidden');
+    $('#favs').addClass('hidden');
     } else {
-    $('#favoritesBtn').removeClass('hidden');
+    $('#favs').removeClass('hidden');
     }
     });
 </script>

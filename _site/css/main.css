@@ -131,9 +131,13 @@ ul li input { position: absolute; top: 5px; left: 0; opacity: 1; }
 
 .skullery--hero .logo { margin-bottom: 0; color: var(--white); font-size: 1rem; font-style: italic; visibility: hidden; }
 
-.skullery--hero .header ul li { display: inline-block; list-style: none; font-size: .875rem; color: var(--white); margin-left: 1.5rem; cursor: pointer; visibility: hidden; }
+.skullery--hero .header ul li { display: inline-block; list-style: none; font-size: .875rem; color: var(--white); margin-left: 1rem; cursor: pointer; text-decoration: none; padding: 0; }
 
 .skullery--hero .header ul li:hover { color: var(--white); opacity: 0.6; }
+
+.skullery--hero .header ul li a { text-decoration: none; color: var(--white); }
+
+.skullery--hero .header ul li a:hover { color: var(--white); opacity: 0.6; }
 
 .skullery--hero .main--hero { padding: 4rem 2rem; }
 
@@ -150,14 +154,6 @@ ul li input { position: absolute; top: 5px; left: 0; opacity: 1; }
 .skullery--hero .main--hero .cta--secondary { color: var(--white); border: 1px solid var(--white); background: transparent; padding: calc(.675rem - 1px) 2rem; font-weight: 500; }
 
 .skullery--hero .main--hero .cta--secondary:hover { background: var(--white); color: var(--mainColor-darker); }
-
-.skullery--hero .main--hero .cta--favorites { fill: var(--white); border: 1px solid var(--white); background: transparent; padding: calc(.675rem - 1px) 1rem; font-weight: 500; }
-
-.skullery--hero .main--hero .cta--favorites.hidden { display: none; }
-
-.skullery--hero .main--hero .cta--favorites svg { display: inline-flex; align-self: center; position: relative; height: 1.5em; width: 1.5em; top: 0.20em; }
-
-.skullery--hero .main--hero .cta--favorites:hover { fill: var(--mainColor-darker); border: 1px solid var(--white); background: var(--white); padding: calc(.675rem - 1px) 1rem; font-weight: 500; }
 
 .max-width-4 { max-width: 64em; }
 
@@ -526,5 +522,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .warning { font-weight: 300; color: var(--grey); }
 
 .spinner { display: none; }
+
+#favs.hidden { display: none !important; }
 
 /*# sourceMappingURL=main.css.map */
