@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Your recipes, your time.
+pagination: 
+  enabled: true
+  collection: recipes
+  trail: 
+  before: 2 # The number of links before the current page
+  after: 2  # The number of links after the current page
 ---
 <div class="home">
   <div class="skullery--hero">
@@ -40,7 +46,7 @@ title: Your recipes, your time.
 </div>
 <div id="search" class="clearfix">
   <div class="search xs-px1 xs-mt2">
-    <label for="#search-input" class="hidden">Search</label><input type="text" id="search-input" placeholder="Search titles, ingredients, or categories...">
+    <label for="#search-input" class="hidden">Search</label><input type="text" id="search-input" placeholder="Search titles, ingredients, or categories{{site.baseurl}}.">
   </div>
   <div id="spinner" class="spinner">
     <div class="bounce1"></div>
@@ -54,8 +60,7 @@ title: Your recipes, your time.
   <div class="recipes xs-px1 xs-mt2" id="results-container">
   </div>
   <div class="endless recipes xs-px1 xs-mt2" id="recipes">
-    {% assign sorted = site.recipes | sort:"date" %}
-    {% for post in sorted %}
+    {% for post in paginator.posts %}
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
       <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
@@ -75,19 +80,40 @@ title: Your recipes, your time.
     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
   </svg>
 </div>
+<div class='pagination center mx-auto mt1'>
+{% if paginator.total_pages > 1 %}
+  {% if paginator.previous_page %}
+  <span class='pagination--button previous-page'>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,27c6.627,0,12-5.373,12-12c0-6.627-5.373-12-12-12S3,8.373,3,15C3,21.627,8.373,27,15,27z M10.293,14.293l6-6 C16.488,8.098,16.744,8,17,8s0.512,0.098,0.707,0.293c0.391,0.391,0.391,1.023,0,1.414L12.414,15l5.293,5.293 c0.391,0.391,0.391,1.023,0,1.414s-1.023,0.391-1.414,0l-6-6C9.902,15.316,9.902,14.684,10.293,14.293z"/></svg></a>
+  </span>
+  {% endif %}
+{% if paginator.page_trail %}
+  {% for trail in paginator.page_trail %}
+    <span class='pages'>
+        <a {% if page.url == trail.path %}class="active"{% endif %} href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+    </span>
+  {% endfor %}
+{% endif %}
+{% if paginator.next_page %}
+  <span class='pagination--button next-page'>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,15.707l-6,6 C13.512,21.902,13.256,22,13,22s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L17.586,15l-5.293-5.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l6,6C20.098,14.684,20.098,15.316,19.707,15.707z"/></svg></a>
+  </span>
+  {% endif %}
+{% endif %}
+</div>
 {% include lazyload.html %}
 <script src="{{site.baseurl}}/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
 <script>
-  var images = ['../assets/headers/header1.jpg',
-    '../assets/headers/header2.jpg',
-    '../assets/headers/header3.jpg',
-    '../assets/headers/header4.jpg',
-    '../assets/headers/header5.jpg',
-    '../assets/headers/header6.jpg',
-    '../assets/headers/header7.jpg',
-    '../assets/headers/header8.jpg',
-    '../assets/headers/header9.jpg',
-    '../assets/headers/header10.jpg'
+  var images = ['{{site.baseurl}}/assets/headers/header1.jpg',
+    '{{site.baseurl}}/assets/headers/header2.jpg',
+    '{{site.baseurl}}/assets/headers/header3.jpg',
+    '{{site.baseurl}}/assets/headers/header4.jpg',
+    '{{site.baseurl}}/assets/headers/header5.jpg',
+    '{{site.baseurl}}/assets/headers/header6.jpg',
+    '{{site.baseurl}}/assets/headers/header7.jpg',
+    '{{site.baseurl}}/assets/headers/header8.jpg',
+    '{{site.baseurl}}/assets/headers/header9.jpg',
+    '{{site.baseurl}}/assets/headers/header10.jpg'
   ];
 
   var randomImage = Math.floor(Math.random() * 10)
@@ -142,7 +168,7 @@ $('#search-input').focus(function() {
   });
 }
 </script>
-<script src="js/random.json"></script>
+<script src="{{site.baseurl}}/js/random.json"></script>
 <script>
   		var progressPath = document.querySelector('.progress-wrap path');
   		var pathLength = progressPath.getTotalLength();
