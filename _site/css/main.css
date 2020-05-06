@@ -373,7 +373,7 @@ input[type="file"] { display: none; }
 
 #favTooltip { display: inline-block; }
 
-.hidden { display: none; }
+.hidden { display: none !important; }
 
 .copyIngredients { color: var(--yellowAccent-darker); display: inline-flex; }
 
@@ -523,6 +523,28 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .spinner { display: none; }
 
-#favs.hidden { display: none !important; }
+.skullbtn { border: none; padding: .875rem 2rem; border-radius: 5px; font-size: 1rem; font-weight: 700; cursor: pointer; display: inline-block; vertical-align: middle; height: 3rem; }
+
+.favs-input { background: var(--grey-lighter); padding: .875rem 2rem !important; height: 3rem !important; border-radius: 5px 0 0 5px !important; color: var(--grey-darkest); min-width: 3rem; opacity: 0.5; vertical-align: middle; display: inline-block; border: 2px solid var(--grey-lighter); }
+
+.favs-input::placeholder { color: var(--grey-darkest); }
+
+.favs-input::placeholder::-webkit-input-placeholder { color: var(--grey-darkest); }
+
+.favs-input::placeholder:-ms-input-placeholder { color: var(--danger-darkest); }
+
+.favs-import { border-radius: 0 5px 5px 0 !important; margin-left: -0.30rem; background: var(--greenAccent-light); border: 2px solid var(--greenAccent-light); color: var(--white); }
+
+.favs-import:hover { background: var(--greenAccent-lighter); border: 2px solid var(--greenAccent-lighter); }
+
+@media (max-width: 500px) { .favs-import { border-radius: 5px !important; margin-left: 0; } .favs-input { border-radius: 5px !important; } }
+
+.favs-export { background: transparent; border: 2px solid var(--grey-lighter); color: var(--greenAccent); }
+
+.favs-export:hover { background: var(--grey-lighter); border: 2px solid var(--grey-lighter); color: var(--white); }
+
+.favs-delete { border: 2px solid var(--danger-lightest); background: var(--danger-lightest); color: var(--danger-dark); }
+
+.favs-delete:hover { border: 2px solid var(--danger-lighter); background: var(--danger-lighter); color: var(--danger); }
 
 /*# sourceMappingURL=main.css.map */

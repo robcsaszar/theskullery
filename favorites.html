@@ -26,20 +26,23 @@ title: Favorites
 <div class="page--header">
   <div class="page--suptitle ml3">Your recipes</div>
   <div class="page--title ml3 mr3">Favorites</div>
-  <!-- <div class="page--subtitle m3">
+  <div class="page--subtitle m3">
     If you want to export your favorites to a different browser, or simply want to include your liked recipes from other browsers, please do so below. <br>
     Exporting will copy your favorites directly to your clipboard, while pasting the string in the input area and submitting will add them to your local storage and you'll have access to your favorites on other browsers, as well. <br>
     <span class="highlight">No data is ever deleted, so any favorites you already have will stay there.</span><br>
     <span class="warning">If you want to purge all favorites from this browser, please scroll to the bottom of the page.</span>
     <div class="mt2 mb2" id="filesubmit">
-      <div class="messages"></div>
-      <button class="file-submit mt1">Export</button>
-      <input type="text"></input>
-      <button class="file-submit mt1">Import</button>
+      <input class="favs-input mt1" type="text" placeholder="your code goes here" id="import-input"></input>
+      <button class="skullbtn favs-import mt1" id="import">Import</button>
+      <button class="skullbtn favs-export mt1" id="export">Export</button>
     </div>
-  </div> -->
-  <div id='favorites'></div>
+    <hr>
+    <div id='favorites'></div>
+    <hr>
+    <button class="skullbtn favs-delete mt1" id="delete">Delete all favorites</button>
+  </div>
 </div>
+<input type="hidden" id="input-url" value="Copied!">
 <script>
 var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i) {
     return localStorage.key(i);
@@ -47,18 +50,62 @@ var options = Array.apply(0, new Array(localStorage.length)).map(function (o, i)
 
 function makeUL() {
     var LIs = '';
-    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squigglyURL--main">this one</a>.';
+    var noFavs = 'Hmm, you must\'ve not favorited anything yet. Maybe you\'ll like <a href="#random-page" onclick="runme()" class="squigglyURL--main">this recipe</a>.';
     var len = options.length;
     if (len === 0) {
         document.getElementById('favorites').innerHTML = noFavs; 
+        $('#delete').addClass('hidden');
     } else {
         for (var i = 0; i < len; i += 1) {
             LIs += '<li>' + options[i] + '</li>';
         }
-        document.getElementById('favorites').innerHTML = '<ul>' + LIs + '</ul>'; 
+        document.getElementById('favorites').innerHTML = '<ul>' + LIs + '</ul>';
+        $('#delete').removeClass('hidden');
     }
 }
 
 makeUL();
 </script>
 <script src="js/random.json"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script>
+  var encodedData = btoa(JSON.stringify(localStorage));
+  var clipboard = new Clipboard('#export', {
+    text: function () {
+      return document.querySelector('input[type=hidden]').value;
+    }
+  });
+  clipboard.on('success', function (e) {
+    $('#export').html('Copied!');
+    e.clearSelection();
+  });
+  $("#input-url").val(encodedData);
+  //safari
+  if (navigator.vendor.indexOf("Apple") == 0 && /\sSafari\//.test(navigator.userAgent)) {
+    $('#export').on('click', function () {
+      var msg = window.prompt("Copy this link", encodedData);
+
+    });
+  }
+</script>
+<script>
+  $(document).ready(function(){
+  $("#import").click(function(){
+  var importString = $("#import-input").val();
+  var unencodedData = atob(importString);
+  var data = JSON.parse(unencodedData);
+  Object.keys(data).forEach(function (k) {
+  localStorage.setItem(k, data[k]);
+  });
+  location.reload();
+  });
+  });
+</script>
+<script>
+$(document).ready(function(){
+  $("#delete").click(function(){
+localStorage.clear();
+location.reload();
+});
+});
+</script>
