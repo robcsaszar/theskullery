@@ -549,4 +549,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .favs-delete:hover { border: 2px solid var(--danger-lighter); background: var(--danger-lighter); color: var(--danger); }
 
+.pagination { font-size: 1.25rem; }
+
+.pagination--button svg { fill: var(--mainColor-lighter); }
+
+.pagination--button svg:hover { fill: var(--mainColor-darker); }
+
+.active { color: var(--mainColor-darker); font-weight: 700; border-bottom: 2px solid var(--mainColor-darker); }
+
+.pages a { margin: 1rem 1rem; color: var(--mainColor-lighter); }
+
+.pages a:hover { text-decoration: none; color: var(--mainColor-darker); }
+
+.pages a.active { color: var(--mainColor-darker); font-weight: 700; border-bottom: 2px solid var(--mainColor-darker); }
+
 /*# sourceMappingURL=main.css.map */
