@@ -44,9 +44,11 @@
           </svg>
           by
           <a class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
-          <span>All rights reserved &copy; <script type="text/javascript">
-              document.write(new Date().getFullYear());
-            </script> theSkullery</span>
+          <span>All rights reserved &copy; <span id="copyright">
+              <script>
+                document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+              </script>
+            </span> theSkullery</span>
       </div>
     </div>
   </div>

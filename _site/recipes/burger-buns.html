@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   
   <!--
 {theSkullery.net is built at NHG.design}
@@ -40,7 +40,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script> -->
 
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -2007,9 +2007,11 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           </svg>
           by
           <a class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
-          <span>All rights reserved &copy; <script type="text/javascript">
-              document.write(new Date().getFullYear());
-            </script> theSkullery</span>
+          <span>All rights reserved &copy; <span id="copyright">
+              <script>
+                document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+              </script>
+            </span> theSkullery</span>
       </div>
     </div>
   </div>

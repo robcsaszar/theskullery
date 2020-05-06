@@ -8,7 +8,7 @@
       {% if post.ingredients %}
       "ingredients"    : "{% for ingredient in post.ingredients %}{{ ingredient | escape }} {% endfor %}",{% endif %}
       {% for image in post.image %}
-		  "image"	         : "{{post.url}}/thumbnails/{{ image }}",{% endfor %}
+		  "image"	         : "{{post.url}}/{{ image }}",{% endfor %}
       "url"            : "{{ post.url | prepend: site.baseurl }}",
       {% if post.categories %}
       "categories"     : "{% for category in post.categories %}{{ category | escape }} {% endfor %}",{% endif %}

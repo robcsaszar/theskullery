@@ -375,6 +375,8 @@ input[type="file"] { display: none; }
 
 .hidden { display: none !important; }
 
+.invisible { visibility: hidden !important; }
+
 .copyIngredients { color: var(--yellowAccent-darker); display: inline-flex; }
 
 .copyButton { background-color: var(--yellowAccent-lightest); border-radius: 5px; border: 1px solid var(--grey-lightest); box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.075); fill: var(--yellowAccent-darker); stroke: var(--yellowAccent-darker); }
