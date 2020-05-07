@@ -235,7 +235,7 @@ a:hover .image { opacity: 0.9; }
 
 .page--listitem { color: var(--grey-dark); font-weight: 700; font-size: 1.3rem; }
 
-.page--listitem a:hover { color: var(--mainColor-light); text-decoration: none; }
+.page--listitem:hover { color: var(--mainColor-light); text-decoration: none; }
 
 .page--list li { padding: 0px; }
 
@@ -491,7 +491,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 @media (max-width: 600px) { .tabs ul li label { padding: 5px; border-radius: 5px; } .tabs ul li label span { display: none; } .tabs .slider { display: none; } .tabs .content { margin-top: 20px; } .tabs .content section h2 { display: block; } }
 
-.collection--title { text-transform: capitalize; color: var(--grey-dark); }
+.collection--title { text-transform: capitalize; color: var(--mainColor-light); }
 
 .signature { position: relative; width: 6rem; height: 6rem; }
 

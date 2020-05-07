@@ -865,7 +865,7 @@ a:hover .image {
     font-size: 1.3rem;
 }
 
-.page--listitem a:hover {
+.page--listitem:hover {
     color: var(--mainColor-light);
     text-decoration: none;
 }
@@ -1838,7 +1838,7 @@ input[type="number"] {
 
   .collection--title {
       text-transform: capitalize;
-      color: var(--grey-dark);
+      color: var(--mainColor-light);
 }
 
 .signature {
