@@ -381,8 +381,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <div class="relatedPosts px1">
     <h4 class="related--title"><svg class="icon mr1" width="32" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
-        <path
-          d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M16,21h-2v-7h2V21z M15,11.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S15.828,11.5,15,11.5z" />
+        <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M15,17c-1.105,0-2-0.895-2-2 c0-1.105,0.895-2,2-2s2,0.895,2,2C17,16.105,16.105,17,15,17z M22,17c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2 C24,16.105,23.105,17,22,17z M8,17c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C10,16.105,9.105,17,8,17z"/>
         </svg>Related</h4>
 
     <!-- Maximum number of related posts that will be shown in the output. -->
@@ -1890,7 +1889,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   var path = window.location.href;
   var page = document.getElementsByClassName('post-title')[0].innerHTML;
   var href = '<a class="page--listitem" href="' + path +
-    '"><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg>' +
+    '"><svg class="listitem--icon icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M16.5,3C13.605,3,12,5.09,12,5.09S10.395,3,7.5,3C4.462,3,2,5.462,2,8.5c0,4.171,4.912,8.213,6.281,9.49 C9.858,19.46,12,21.35,12,21.35s2.142-1.89,3.719-3.36C17.088,16.713,22,12.671,22,8.5C22,5.462,19.538,3,16.5,3z"/></svg>' +
     page + '</a>'
   /* Check for each a tag if already added to localStorage
    * .contents[0].nodevalue returns value of tag a
@@ -1925,17 +1924,16 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <div class="container">
       <div class="col lg-col-6 md-col-12 sm-col-12 xs-col-12 p1 footer--about">
         <h4>About</h4>
-        <span class="sitename"><em>the<strong>skullery</strong></em>.net</span> is all about simplicity, you do not have to log in to
+        <span class="sitename"><em>the<strong>Skullery</strong></em>.net</span> is all about simplicity, you do not have to log in to
         see the recipes, your
         browser is keeping tabs on your favorites, you can dynamically scale your recipes up or down, you can tick off
         where you are with your instructions, and you can copy all unchecked ingredients to your clipboard for when
         you go shopping. <br>
         I hope you find your inspiration here and cook something as amazing as <strong>you</strong>.<br>
         <br>
-        <span class="quote">"Cooking is a craft, I like to think, and a good cook is a craftsman -- not an artist.
-          There's nothing
-          wrong with that: The great cathedrals of Europe were built by craftsmen -- though not designed by them.
-          Practicing your craft in expert fashion is noble, honorable, and satisfying."</span> --<strong>AB</strong>
+        <span class="quote"><span class="quotes">„</span>Cooking is a craft, I like to think, and a good cook is a craftsman -- not an artist.
+          There's nothing wrong with that: The great cathedrals of Europe were built by craftsmen -- though not designed by them.
+          Practicing your craft in expert fashion is noble, honorable, and satisfying.<span class="quotes">“</span></span> --<strong>AB</strong>
       </div>
       <div class="lg-col xs-col sm-col md-col lg-col-3 md-col-6 sm-col-6 xs-col-6 p1 footer--links">
         <h4>Links</h4>
@@ -1966,11 +1964,11 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           </svg>
           by
           <a class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
-          <span>All rights reserved &copy; <span id="copyright">
+          <span>>all rights reserved &copy; <span id="copyright">
               <script>
                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
               </script>
-            </span> theSkullery</span>
+            </span> <span><em>the<strong>Skullery</strong></em></span>
       </div>
     </div>
   </div>

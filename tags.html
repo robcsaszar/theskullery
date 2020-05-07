@@ -3,35 +3,55 @@ layout: default-recipe
 permalink: /tags
 Title: Cuisines
 ---
-<div class="hero--small xs-p2">
-    <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
-      {% include theSkullery-red.svg %}
-      <h1 class="hide">theSkullery</h1>
-    </a>
-    <img src="https://media.giphy.com/media/nuhtVdDkeUmZ2/giphy.gif" alt="nothing to see here"/>
-  </div>
-  <div class="page--header">
-    <div class="page--suptitle ml3 sm-mt3">Recipes listed by</div>
-    <div class="page--title ml3">Cuisine</div>
-    <div class="page--subtitle ml3"></div>
-  </div>
-
 {% assign recipes_tags = site.recipes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
 {% assign sorted_recipes = site.recipes | sort: 'title' %}
-
-<div id="tags">
-        {% for tag in recipes_tags %}
-        {% if tag == '' %}
-            {% continue %}
-        {% endif %}
-        <h3 class="ml3 collection--title">{{ tag }}</h3>
-        <ul>
-                {% for recipe in sorted_recipes %}
-                    {% assign tags_array = recipe.tags | join: ',' | split: ',' %}
-                    {% if tags_array contains tag %}
-                    <li><svg class="listitem--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px"><path d="M20,22l-8-3l-8,3V4c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V22z"/><path d="M18,2H6C4.9,2,4.01,2.9,4.01,4L4,22l8-3l8,3V4C20,2.9,19.1,2,18,2z"/></svg><a class="page--listitem" href="{{ recipe.url }}">{{ recipe.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-        </ul>
-        {% endfor %}
+<div class="hero--small xs-p2">
+  <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
+    {% include theSkullery-red.svg %}
+    <h1 class="hide">theSkullery</h1>
+  </a>
+  <img src="https://media.giphy.com/media/nuhtVdDkeUmZ2/giphy.gif" alt="nothing to see here" />
 </div>
+<div class="page--header">
+  <div class="page--suptitle ml3 sm-mt3">Recipes listed by</div>
+  <div class="page--title ml3">Cuisine</div>
+  <div class="page--subtitle ml3">Browse all recipes, sorted out by their cuisines.</br>
+    {% for tag in recipes_tags %}
+    {% if tag == '' %}
+    {% continue %}
+    {% endif %}
+    <a href="#{{ tag }}" class="scrollTo recipe--tag">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+
+<div class="mt1 clearfix" id="tags">
+  {% for tag in recipes_tags %}
+  {% if tag == '' %}
+  {% continue %}
+  {% endif %}
+  <h3 class="ml3 mb1 collection--title" id="{{ tag }}">{{ tag }}</h3>
+  <ul class="ml3 page--list">
+    {% for recipe in sorted_recipes %}
+    {% assign tags_array = recipe.tags | join: ',' | split: ',' %}
+    {% if tags_array contains tag %}
+    <li class="page--listitem"><svg class="listitem--icon icon" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px">
+        <path
+          d="M11 2L11 4.0527344C7.6416185 4.3032085 5.8471319 5.7626278 4.9316406 7L19.068359 7C18.152868 5.7626278 16.358382 4.3032085 13 4.0527344L13 2L11 2 z M 2 9L2 11L3 11C3.552 11 4 11.449 4 12L4 18C4 19.654 5.346 21 7 21L17 21C18.654 21 20 19.654 20 18L20 12C20 11.449 20.448 11 21 11L22 11L22 9L2 9 z" />
+        </svg><a class="page--listitem" href="{{ recipe.url }}">{{ recipe.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+<script>
+  $(".scrollTo").on('click', function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: ($(target).offset().top)
+    }, 1000);
+  });
+</script>

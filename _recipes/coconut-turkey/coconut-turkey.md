@@ -5,11 +5,11 @@ permalink: recipes/coconut-turkey # (this will be your final, pretty URL)
 title:  "Coconut Turkey" # (making sure we have a good title)
 image: coconut-turkey.jpg # (a nice, high-quality image I will carefully select for you)
 imagecredit: "unsplash.com" # (where I'm getting the image above)
-categories: # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
-tags: # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
-meal: # main (choose one that applies)
-chef: Roksana # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
-time: # under 120mins (choose one that applies)
+categories: quick helthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+tags: indian poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
+meal: main # main (choose one that applies)
+chef: roksana # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+time: under 60mins  # under 120mins (choose one that applies)
 servings: 3 # (this will be served as a baseline for the dynamic scaling)
 
 notes: # (you can add recipe notes here, if you don't have any just delete this whole section and it won't be processed)

@@ -717,7 +717,7 @@
       
       "tags"           : "indian vegetarian ",
       "meal"           : "main ",
-      "chef"           : "Roksana "
+      "chef"           : "roksana "
     } ,
   
     {
@@ -809,11 +809,11 @@
 		  "image"	         : "/recipes/coconut-turkey/coconut-turkey.jpg",
       "url"            : "/recipes/coconut-turkey",
       
-      "categories"     : "",
+      "categories"     : "quick helthyish ",
       
-      "tags"           : "",
-      "meal"           : "",
-      "chef"           : "Roksana "
+      "tags"           : "indian poultry ",
+      "meal"           : "main ",
+      "chef"           : "roksana "
     } ,
   
     {
@@ -973,7 +973,7 @@
       
       "tags"           : "vegetarian nuts fruit ",
       "meal"           : "dessert ",
-      "chef"           : "Razvan "
+      "chef"           : "razvan "
     } ,
   
     {
@@ -2269,7 +2269,7 @@
       
       "tags"           : "mexican vegetarian ",
       "meal"           : "side ",
-      "chef"           : "diana "
+      "chef"           : "robert "
     } ,
   
     {

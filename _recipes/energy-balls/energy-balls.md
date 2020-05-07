@@ -8,7 +8,7 @@ imagecredit: "unsplash.com" # (where I'm getting the image above)
 categories: snack quick raw # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian nuts fruit # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: dessert # dessert (choose one that applies)
-chef: Razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
+chef: razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
 time: under 60mins # under 60mins (choose one that applies)
 servings: 10 # (this will be served as a baseline for the dynamic scaling)
 
