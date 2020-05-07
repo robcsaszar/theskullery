@@ -2063,3 +2063,22 @@ input[type="number"] {
         border-bottom: 2px solid var(--mainColor-darker);
     }
 }
+
+.cube, .cube * {
+    position: absolute;
+    width: 100px;
+    height: 100px
+  }
+  
+  .sides {
+    transform-style: preserve-3d;
+    perspective: 600px
+  }
+  
+  .front  { transform: rotateY(0deg)    translateZ(50px) }
+  .back   { transform: rotateY(-180deg) translateZ(50px) }
+  .left   { transform: rotateY(-90deg)  translateZ(50px) }
+  .right  { transform: rotateY(90deg)   translateZ(50px) }
+  .top    { transform: rotateX(90deg)   translateZ(50px) }
+  .bottom { transform: rotateX(-90deg)  translateZ(50px) }
+  
