@@ -2087,6 +2087,8 @@ input[type="number"] {
     width:680px;
     height: 800px;
     padding:40px 20px;
+    position: absolute;
+    left: -9999px;
     margin:20px auto;
     border-radius:12px;
     background-color:var(--grey);
