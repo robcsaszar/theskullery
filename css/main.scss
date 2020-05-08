@@ -2083,8 +2083,11 @@ input[type="number"] {
     color: var(--mainColor);
 }
 
-#instaRecipe {
-    height: 1920px;
-    width: 1080px;
-    background-color: var(--background);
+#capture-area {
+    width:680px;
+    padding:40px 20px;
+    margin:20px auto;
+    border-radius:12px;
+    background-color:var(--background);
+    color: var(--black);
 }

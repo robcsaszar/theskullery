@@ -1,0 +1,70 @@
+---
+permalink: /insta
+layout: default-recipe
+title: Instagram Storymaker
+---
+<div class="hero--small xs-p2">
+  <a class="recipe--logo absolute no-line-height top-2 z4" href="{{ site.baseurl }}/">
+    {% include theSkullery-red.svg %}
+    <h1 class="hide">theSkullery</h1>
+  </a>
+  <img src="https://media.giphy.com/media/3EiNpweH34XGoQcq9Q/giphy.gif" alt="nothing to see here"/>
+</div>
+<div class="page--header">
+  <div class="page--suptitle ml3">Instagram</div>
+  <div class="page--title ml3">Storymaker</div>
+  <div class="page--subtitle ml3">
+  <div class="divider"></div>
+  <article id="capture-area">
+    <h1>Aenean commodo ligula eget dolor aenean massa</h1>
+    <p class="left">Lorem ipsum dolor sit amet, consectetuer adipiscing 
+  elit. Aenean commodo ligula eget dolor. Aenean massa. <br />
+  Cum sociis natoque penatibus et magnis dis parturient 
+  montes, nascetur ridiculus mus. Donec quam felis, 
+  ultricies nec, pellentesque eu, pretium quis, sem.</p>
+    <div class="right"><img src="https://unsplash.it/650/420?random" /></div>
+  </article>
+  
+  <div id="control-area">
+    <input id="btn-preview-image" class="btn" type="button" value="Step 1 : Capture ↑" disabled />
+    <a id="btn-download" class="btn" href="">Step 2 : Download ↓</a>
+  </div>
+  
+  <section id="preview-area">
+    <h2>Captured Image :</h2>
+    <div id="previewImage"></div>
+  </section>
+</div>
+</div>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" type="text/javascript"></script>
+<script>
+  window.onload = function(){
+    html2canvas(document.getElementById('capture-area'), {
+      allowTaint: true,
+      backgroundColor: 'transparent',
+      useCORS: true,
+      // scale: window.devicePixelRatio,
+    } ).then(
+      function(canvas) {
+        let previewButton = document.getElementById('btn-preview-image'),
+            downloadButton = document.getElementById('btn-download'),
+            imgageData = canvas.toDataURL("image/png");
+            // Now browser starts downloading it instead of just showing it
+            imgageData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+        previewButton.removeAttribute('disabled');
+        downloadButton.setAttribute('download', 'screenshot.png');
+        downloadButton.setAttribute('href', imgageData);
+  
+        previewButton.addEventListener('click', function(){
+          document.getElementById('previewImage').appendChild(canvas);
+        });
+        
+        downloadButton.addEventListener('click', function(){
+          if (capturedData === void 0) {
+            alert("Please preview before downloading.");
+          }
+        });
+      }
+    );
+  }
+  </script>
