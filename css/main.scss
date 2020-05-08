@@ -2085,9 +2085,10 @@ input[type="number"] {
 
 #capture-area {
     width:680px;
+    height: 800px;
     padding:40px 20px;
     margin:20px auto;
     border-radius:12px;
-    background-color:var(--background);
+    background-color:var(--grey);
     color: var(--black);
 }

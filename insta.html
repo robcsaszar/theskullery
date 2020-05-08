@@ -36,10 +36,11 @@ title: Instagram Storymaker
   </section>
 </div>
 </div>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" type="text/javascript"></script>
+
 <script>
   window.onload = function(){
     html2canvas(document.getElementById('capture-area'), {
+      letterRendering: 1,
       allowTaint: true,
       backgroundColor: 'transparent',
       useCORS: true,

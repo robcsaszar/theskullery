@@ -569,6 +569,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .quote .quotes { font-size: 1rem; line-height: 1rem; font-weight: 700; color: var(--mainColor); }
 
-#capture-area { width: 680px; padding: 40px 20px; margin: 20px auto; border-radius: 12px; background-color: var(--background); color: var(--black); }
+#capture-area { width: 680px; height: 800px; padding: 40px 20px; margin: 20px auto; border-radius: 12px; background-color: var(--grey); color: var(--black); }
 
 /*# sourceMappingURL=main.css.map */
