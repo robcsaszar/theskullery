@@ -7,9 +7,7 @@ title: {{ page.title }}
   <!-- call up the image and image credit link -->
   {% for image in page.image %}
   <div class="xs-p1">
-    <div class="noisy">
-    <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}" />
-    </div>  
+     <img itemprop="image" src="{{site.baseurl}}{{page.url}}/{{image}}" />
     {% if page.imagecredit %}
     {% for imagecredit in page.imagecredit %}
     <span class="right" tooltip="{{ imagecredit }}" flow="left">
@@ -265,8 +263,25 @@ title: {{ page.title }}
     {% endfor %}
   </div>
 </div>
+
+<div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2" id="instaRecipe">
+  <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
+    <div class="image ratio bg-cover" {% for image in page.image %}
+      style='background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({{site.baseurl}}{{page.url}}/{{image}});'
+      {% endfor %}></div>
+    <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ page.title }}</h1>
+    {% for meal in page.meal %}
+    <p class="recipe--meal m1 p1 absolute top-0 right-0">{{ meal }}</p>
+    {% endfor %} 
+  </a>
+</div>
+
+<button type="button" class="btn btn-default" id="getInsta">Take a Screenshot!</button>
+
 <div id="output"></div>
 {% include lazyload.html %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" type="text/javascript"></script>
+<script src="https://superal.github.io/canvas2image/canvas2image.js" type="text/javascript"></script>
 <script>
   function copyText() {
     var outputText = "";
@@ -498,4 +513,19 @@ title: {{ page.title }}
       $(this).addClass("unfavorite");
     }
   });
+</script>
+<script>
+  var instaRecipe = document.getElementById('instaRecipe');
+
+  document.querySelector('#getInsta').addEventListener('click', function() {
+        html2canvas(instaRecipe, {
+            letterRendering: 1, 
+            allowTaint: true, 
+            useCORS: true,
+            onrendered: function(canvas) {
+                // document.body.appendChild(canvas);
+              return Canvas2Image.saveAsPNG(canvas);
+            }
+        });
+    });
 </script>
