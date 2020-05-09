@@ -292,7 +292,7 @@ title: {{ page.title }}
     </div>
     <div class="shadow">
       {% for image in page.image %}
-      <div class="image ratio bg-cover insta--image" style='background-image: url("{{image}}");'>
+      <div class="image ratio bg-cover insta--image" style='background-image: url("{{site.baseurl}}{{page.url}}/{{image}}");'>
       {% endfor %}
       </div>
     </div>
