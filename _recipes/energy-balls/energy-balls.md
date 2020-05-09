@@ -17,11 +17,11 @@ notes: # (you can add recipe notes here, if you don't have any just delete this 
 - Sprinkle with additional coconut shavings before serving. 
 
 ingredients:
-- 3/4| cup(s) pecans
+- 0.75| cup(s) pecans
 - 5| dates
-- 1/2| cup(s) mixed dried fruit
+- 0.5| cup(s) mixed dried fruit
 - 3| tbsp coconut shavings
-- 1/2| cup(s) cashew nuts 
+- 0.5| cup(s) cashew nuts 
 - 3| tbsp almond butter
 - 2| tbsp coconut oil 
 - 2| tbsp water 

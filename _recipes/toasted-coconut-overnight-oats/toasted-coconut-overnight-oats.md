@@ -24,7 +24,7 @@ ingredients:
 - 1| tbsp chia seeds
 - 2| tsp vanilla extract
 - 0.25| tsp salt
-- 0.33| cup almond butter
+- 0.3333| cup almond butter
 - for the honey caramelized pineapple:
 - 0.5| cup(s) pineapple chunks
 - 1| tbsp honey

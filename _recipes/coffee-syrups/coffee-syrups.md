@@ -18,20 +18,20 @@ notes:
 ingredients:
 - for the vanilla bean syrup:
 - 0.5| cup(s) sugar
-- 0.33| cup(s) water
+- 0.3333| cup(s) water
 - 1| vanilla bean, seeds scraped
 - 0.5| tsp pure vanilla extract
 - for the blackberry syrup:
 - 2| cup(s) fresh blackberries
-- 0.33| cup(s) water
-- 0.33| cup(s) sugar
+- 0.3333| cup(s) water
+- 0.3333| cup(s) sugar
 - for the cinnamon brown sugar syrup:
 - 0.5| cup(s) brown sugar
 - 0.5| tsp cinnamon
-- 0.33| cup(s) water
+- 0.3333| cup(s) water
 - for the almond syrup:
 - 0.5| cup(s) sugar
-- 0.33| cup(s) water
+- 0.3333| cup(s) water
 - 1| tsp pure almond extract
 
 directions:

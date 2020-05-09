@@ -29,7 +29,7 @@ ingredients:
 - 0.25| tsp salt
 - 1| tsp vanilla extract
 - 1| cup(s) all-purpose flour
-- 0.66| cup(s) sugar
+- 0.6666| cup(s) sugar
 - 2| tsp baking powder
 - 0.25| tsp salt
 - 0.25| cup(s) unsalted butter melted

@@ -20,7 +20,7 @@
     
 	    "title"          : "Vanilla Cinnamon Roll Dutch Baby",
       
-      "ingredients"    : "2| tbsp unsalted butter 0.66 cup(s) all-purpose flour 2| tbsp sugar 0.5| tsp cinnamon pinch of salt 3| large eggs 0.75| cup(s) milk 1| tbsp vanilla bean paste powdered sugar, for sprinkling {&quot;for the apple bourbon compote&quot;=&gt;nil} 4| honeycrisp apples, chopped 0.25| tsp cinnamon 0.25| tsp nutmeg 0.25| tsp salt 0.33| cup(s) brown sugar 0.33| cup(s) bourbon 0.33| cup(s) apple cider cream cheese icing {&quot;for the cream cheese icing&quot;=&gt;nil} 2| tbsp cream cheese, softened 2| tbsp unsalted butter, softened 2| tsp vanilla extract 1.5| cup(s) powdered sugar 2| tbsp milk ",
+      "ingredients"    : "2| tbsp unsalted butter 0.6666| cup(s) all-purpose flour 2| tbsp sugar 0.5| tsp cinnamon pinch of salt 3| large eggs 0.75| cup(s) milk 1| tbsp vanilla bean paste powdered sugar, for sprinkling {&quot;for the apple bourbon compote&quot;=&gt;nil} 4| honeycrisp apples, chopped 0.25| tsp cinnamon 0.25| tsp nutmeg 0.25| tsp salt 0.3333| cup(s) brown sugar 0.3333| cup(s) bourbon 0.3333| cup(s) apple cider cream cheese icing {&quot;for the cream cheese icing&quot;=&gt;nil} 2| tbsp cream cheese, softened 2| tbsp unsalted butter, softened 2| tsp vanilla extract 1.5| cup(s) powdered sugar 2| tbsp milk ",
       
 		  "image"	         : "/recipes/apple-bourbon-compote-dutch-baby/apple-bourbon-compote-dutch-baby.jpg",
       "url"            : "/recipes/apple-bourbon-compote-dutch-baby",
@@ -84,7 +84,7 @@
     
 	    "title"          : "Spicy Arrabiatta Baked Eggs",
       
-      "ingredients"    : "2| slices bacon, diced 0.5| sweet onion, diced 2| garlic cloves, minced 1| tbsp tomato paste, I really love this basil one! 0.33| tsp smoked paprika 0.25| tsp salt 0.25| tsp pepper 0.25| tsp crushed red pepper flakes 2.5| cups spicy tomato sauce 1 jar of roasted red peppers, drained 6| large eggs 0.5| cup freshly grated Parmigiano-Reggiano fresh herbs for topping, basil, rosemary, thyme doughy bread for serving ",
+      "ingredients"    : "2| slices bacon, diced 0.5| sweet onion, diced 2| garlic cloves, minced 1| tbsp tomato paste, I really love this basil one! 0.3333| tsp smoked paprika 0.25| tsp salt 0.25| tsp pepper 0.25| tsp crushed red pepper flakes 2.5| cups spicy tomato sauce 1 jar of roasted red peppers, drained 6| large eggs 0.5| cup freshly grated Parmigiano-Reggiano fresh herbs for topping, basil, rosemary, thyme doughy bread for serving ",
       
 		  "image"	         : "/recipes/baked-arrabiatta-eggs/baked-arrabiatta-eggs.jpg",
       "url"            : "/recipes/baked-arrabiatta-eggs",
@@ -100,7 +100,7 @@
     
 	    "title"          : "Baked Oatmeal",
       
-      "ingredients"    : "4.5| cup(s) quick oats 0.75| cup(s) sugar 0.5| tsp baking powder 0.25| tsp salt 3| large eggs 2| cup(s) milk whatever you like! dairy or nondairy 0.75| cup(s) canola oil 2| tsp vanilla extract 0.25| cup(s) chocolate chips 0.33| cup(s) sliced almonds 0.33| cup(s) flaked coconut toasted if you&#39;ve like! 2| tablespoons hemp hearts 1| tablespoon chia seeds milk or cream for drizzling ",
+      "ingredients"    : "4.5| cup(s) quick oats 0.75| cup(s) sugar 0.5| tsp baking powder 0.25| tsp salt 3| large eggs 2| cup(s) milk whatever you like! dairy or nondairy 0.75| cup(s) canola oil 2| tsp vanilla extract 0.25| cup(s) chocolate chips 0.3333| cup(s) sliced almonds 0.3333| cup(s) flaked coconut toasted if you&#39;ve like! 2| tablespoons hemp hearts 1| tablespoon chia seeds milk or cream for drizzling ",
       
 		  "image"	         : "/recipes/baked-oatmeal/baked-oatmeal.jpg",
       "url"            : "/recipes/baked-oatmeal",
@@ -132,7 +132,7 @@
     
 	    "title"          : "Banana Bread",
       
-      "ingredients"    : "8| tbsp unsalted butter, melted 1| cup(s) sugar 2| large eggs 1/4| cup(s) milk 1| tbsp vanilla extract 4| small/medium ripened bananas 1/4| tsp salt 1| tsp baking soda 1 and 1/2 | tsp baking powder 2| cup(s) all purpose flour 1/2| cup(s) chopped mixed nuts *cashews, pecans, walnuts, hazelnuts, almonds* ",
+      "ingredients"    : "8| tbsp unsalted butter, melted 1| cup(s) sugar 2| large eggs 0.25| cup(s) milk 1| tbsp vanilla extract 4| small/medium ripened bananas 0.25| tsp salt 1| tsp baking soda 1.5| tsp baking powder 2| cup(s) all purpose flour 0.5| cup(s) chopped mixed nuts *cashews, pecans, walnuts, hazelnuts, almonds* ",
       
 		  "image"	         : "/recipes/banana-bread/banana-bread.jpg",
       "url"            : "/recipes/banana-bread",
@@ -164,7 +164,7 @@
     
 	    "title"          : "Basil Pesto Butter",
       
-      "ingredients"    : "1| tbsp pine nuts 0.25| tsp minced garlic 0.33| cup basil leaves 3| tbsp shredded parmesan cheese 1| cup unsalted butter pinch of salt ",
+      "ingredients"    : "1| tbsp pine nuts 0.25| tsp minced garlic 0.3333| cup basil leaves 3| tbsp shredded parmesan cheese 1| cup unsalted butter pinch of salt ",
       
 		  "image"	         : "/recipes/basil-pesto-butter/basil-pesto-butter.jpg",
       "url"            : "/recipes/basil-pesto-butter",
@@ -244,7 +244,7 @@
     
 	    "title"          : "Bourbon Peach Upside Down Cake",
       
-      "ingredients"    : "{&quot;for the topping&quot;=&gt;nil} 4| tbsp unsalted butter 0.33| cup(s) brown sugar 0.5| tsp cinnamon 2| tbsp bourbon 6| peaches, sliced into 1/4-1/2 inch slices (peeled if desired) {&quot;for the cake&quot;=&gt;nil} 2| cup(s) all-purpose flour 1| tsp baking powder 0.5| tsp salt 0.25| tsp cinnamon 12| tbsp unsalted butter, at room temperature 0.75| cup(s) sugar 2| large eggs 2| tsp vanilla extract {&quot;for the bourbon whipped cream&quot;=&gt;nil} 2| cup(s) cold heavy cream 2| tbsp bourbon 2| tbsp powdered sugar ",
+      "ingredients"    : "{&quot;for the topping&quot;=&gt;nil} 4| tbsp unsalted butter 0.3333| cup(s) brown sugar 0.5| tsp cinnamon 2| tbsp bourbon 6| peaches, sliced into 1/4-1/2 inch slices (peeled if desired) {&quot;for the cake&quot;=&gt;nil} 2| cup(s) all-purpose flour 1| tsp baking powder 0.5| tsp salt 0.25| tsp cinnamon 12| tbsp unsalted butter, at room temperature 0.75| cup(s) sugar 2| large eggs 2| tsp vanilla extract {&quot;for the bourbon whipped cream&quot;=&gt;nil} 2| cup(s) cold heavy cream 2| tbsp bourbon 2| tbsp powdered sugar ",
       
 		  "image"	         : "/recipes/bourbon-peach-upside-down-cake/bourbon-peach-upside-down-cake.jpg",
       "url"            : "/recipes/bourbon-peach-upside-down-cake",
@@ -292,7 +292,7 @@
     
 	    "title"          : "Caprese Skillet Lasagna",
       
-      "ingredients"    : "2| tbsp olive oil 1| shallot diced 4| garlic cloves, minced 8| oz grape tomatoes 8| oz fresh mozzarella balls 4| campari tomatoes, thinly sliced 0.25| cup(s) pesto fresh, leftover or jarred 0.25| cup(s) fresh chopped basil 1| package whole wheat/brown rice lasagna noodles 1| cup(s) ricotta cheese ½| cup(s) freshly grated provolone cheese ½| cup(s) freshly grated mozzarella cheese ½| cup(s) freshly grated Parmigiano Reggiano cheese fresh basil leaves for garnish ",
+      "ingredients"    : "2| tbsp olive oil 1| shallot diced 4| garlic cloves, minced 8| oz grape tomatoes 8| oz fresh mozzarella balls 4| campari tomatoes, thinly sliced 0.25| cup(s) pesto fresh, leftover or jarred 0.25| cup(s) fresh chopped basil 1| package whole wheat/brown rice lasagna noodles 1| cup(s) ricotta cheese 0.5| cup(s) freshly grated provolone cheese 0.5| cup(s) freshly grated mozzarella cheese 0.5| cup(s) freshly grated Parmigiano Reggiano cheese fresh basil leaves for garnish ",
       
 		  "image"	         : "/recipes/caprese-skillet-lasagna/caprese-skillet-lasagna.jpg",
       "url"            : "/recipes/caprese-skillet-lasagna",
@@ -324,7 +324,7 @@
     
 	    "title"          : "Caramel Mascarpone Dip",
       
-      "ingredients"    : "{&quot;for the bourbon caramel&quot;=&gt;nil} 1| cup(s) brown sugar 0.33| cup(s) bourbon 0.25| cup(s) unsalted butter 0.25| cup(s)  heavy cream 1| tbsp vanilla extract 0.25| tsp salt {&quot;for the dip&quot;=&gt;nil} 12| oz mascarpone cheese, softened 3| tbsp powdered sugar 1| tsp vanilla extract 0.66| cup(s) bourbon caramel 0.75| cup(s) roasted salted cashews, coarsely chopped a pinch of cinnamon, for sprinklng 4| granny smith apples, sliced ",
+      "ingredients"    : "{&quot;for the bourbon caramel&quot;=&gt;nil} 1| cup(s) brown sugar 0.3333| cup(s) bourbon 0.25| cup(s) unsalted butter 0.25| cup(s)  heavy cream 1| tbsp vanilla extract 0.25| tsp salt {&quot;for the dip&quot;=&gt;nil} 12| oz mascarpone cheese, softened 3| tbsp powdered sugar 1| tsp vanilla extract 0.6666| cup(s) bourbon caramel 0.75| cup(s) roasted salted cashews, coarsely chopped a pinch of cinnamon, for sprinklng 4| granny smith apples, sliced ",
       
 		  "image"	         : "/recipes/caramel-mascarpone-dip/caramel-mascarpone-dip.jpg",
       "url"            : "/recipes/caramel-mascarpone-dip",
@@ -356,7 +356,7 @@
     
 	    "title"          : "Caramelized Onion Focaccia",
       
-      "ingredients"    : "2| sweet onions, thinly sliced 4| tbsp unsalted butter 1| tbsp olive oil 0.5| tsp salt 1.75| cups warm water 2.25| tsp active dry yeast 1| tbsp honey 5| cups all-purpose flour,  plus more for your workspace 2| tsp garlic powder 2| tsp kosher salt 0.33| cup extra virgin olive oil 4| tbsp unsalted butter, melted 3| garlic cloves, minced 0.25| cup your favorite chopped fresh herbs, like chives, dill, basil, oregano, thyme 0.5| tbsp flaked sea salt ",
+      "ingredients"    : "2| sweet onions, thinly sliced 4| tbsp unsalted butter 1| tbsp olive oil 0.5| tsp salt 1.75| cups warm water 2.25| tsp active dry yeast 1| tbsp honey 5| cups all-purpose flour,  plus more for your workspace 2| tsp garlic powder 2| tsp kosher salt 0.3333| cup extra virgin olive oil 4| tbsp unsalted butter, melted 3| garlic cloves, minced 0.25| cup your favorite chopped fresh herbs, like chives, dill, basil, oregano, thyme 0.5| tbsp flaked sea salt ",
       
 		  "image"	         : "/recipes/caramelized-onion-focaccia/caramelized-onion-focaccia.jpg",
       "url"            : "/recipes/caramelized-onion-focaccia",
@@ -436,7 +436,7 @@
     
 	    "title"          : "Cheddar Jalapeño Bread",
       
-      "ingredients"    : "3| cups bread flour 0.25| tsp instant yeast 1.5| tsp fine grain sea salt 15|g distilled white vinegar 85|g beer *pilsner works well* 198|g water 1| cup diced extra sharp cheddar cheese 0.33| cup(s) finely chopped jalapeño (including ribs and seeds) {&quot;for toppings&quot;=&gt;nil} 3| tablespoons shredded extra sharp cheddar cheese 1| tbsp sliced jalapeños ",
+      "ingredients"    : "3| cups bread flour 0.25| tsp instant yeast 1.5| tsp fine grain sea salt 15|g distilled white vinegar 85|g beer *pilsner works well* 198|g water 1| cup diced extra sharp cheddar cheese 0.3333| cup(s) finely chopped jalapeño (including ribs and seeds) {&quot;for toppings&quot;=&gt;nil} 3| tablespoons shredded extra sharp cheddar cheese 1| tbsp sliced jalapeños ",
       
 		  "image"	         : "/recipes/cheddar-jalapeno-bread/cheddar-jalapeno-bread.jpg",
       "url"            : "/recipes/cheddar-jalapeno-bread",
@@ -452,7 +452,7 @@
     
 	    "title"          : "Bacon &amp; Cheese Meatloaf Sliders",
       
-      "ingredients"    : "4| slices bacon 1| pound ground sirloin *best with 93% lean* 0.66| cup(s) panko breadcrumbs 1| tbsp Worcestershire sauce 1| tbsp Djion mustard 0.5| cup(s) smoky BBQ sauce, plus extra for serving 1| tbsp honey 0.25| tsp salt 0.25| tsp pepper 1| tbsp olive oil 4| oz pepper-jack cheese, sliced 8| slider buns {&quot;for the frizzled onions&quot;=&gt;nil} 1| large egg 1| cup(s) buttermilk or kefir 1| large sweet onion, sliced into super thin rings 1| cup(s) all-purpose flour 1| tsp garlic powder 0.5| tsp smoked paprika 0.5| tsp black pepper peanut oil for frying 1| tsp sea salt ",
+      "ingredients"    : "4| slices bacon 1| pound ground sirloin *best with 93% lean* 0.6666| cup(s) panko breadcrumbs 1| tbsp Worcestershire sauce 1| tbsp Djion mustard 0.5| cup(s) smoky BBQ sauce, plus extra for serving 1| tbsp honey 0.25| tsp salt 0.25| tsp pepper 1| tbsp olive oil 4| oz pepper-jack cheese, sliced 8| slider buns {&quot;for the frizzled onions&quot;=&gt;nil} 1| large egg 1| cup(s) buttermilk or kefir 1| large sweet onion, sliced into super thin rings 1| cup(s) all-purpose flour 1| tsp garlic powder 0.5| tsp smoked paprika 0.5| tsp black pepper peanut oil for frying 1| tsp sea salt ",
       
 		  "image"	         : "/recipes/cheese-bacon-meatloaf-sliders/cheese-bacon-meatloaf-sliders.jpg",
       "url"            : "/recipes/cheese-bacon-meatloaf-sliders",
@@ -676,7 +676,7 @@
     
 	    "title"          : "Pretzel Roll Cleveland Cheesesteaks",
       
-      "ingredients"    : "{&quot;for the pretzel rolls&quot;=&gt;nil} 1.5| cups warm water 2| tbsp light brown sugar 2.25| tsp active dry yeast 8| tbsp unsalted butter 1.5| tsp sea salt or kosher salt 4.5| cups to 5 all-purpose flour 3| quarts water 0.66| cups baking soda 1| whole egg, beaten coarse sea salt {&quot;for the cheesesteak&quot;=&gt;nil} 3| pounds beef brisket 2| tbsp olive oil salt and pepper 2| cloves garlic, minced and grated 1| tbsp chili powder 1| tsp cumin 0.25| tsp onion powder 0.25| cup(s) cider vinegar 0.25| cup(s) Worcestershire sauce 1.5| cup(s) water 8| oz Provolone cheese, shredded {&quot;for toppings&quot;=&gt;nil} 2| tbsp butter 16| oz button mushrooms 2| large onions, sliced thin 1| green pepper, sliced 2| cloves garlic, minced or grated pinch of salt and pepper ",
+      "ingredients"    : "{&quot;for the pretzel rolls&quot;=&gt;nil} 1.5| cups warm water 2| tbsp light brown sugar 2.25| tsp active dry yeast 8| tbsp unsalted butter 1.5| tsp sea salt or kosher salt 4.5| cups to 5 all-purpose flour 3| quarts water 0.6666| cups baking soda 1| whole egg, beaten coarse sea salt {&quot;for the cheesesteak&quot;=&gt;nil} 3| pounds beef brisket 2| tbsp olive oil salt and pepper 2| cloves garlic, minced and grated 1| tbsp chili powder 1| tsp cumin 0.25| tsp onion powder 0.25| cup(s) cider vinegar 0.25| cup(s) Worcestershire sauce 1.5| cup(s) water 8| oz Provolone cheese, shredded {&quot;for toppings&quot;=&gt;nil} 2| tbsp butter 16| oz button mushrooms 2| large onions, sliced thin 1| green pepper, sliced 2| cloves garlic, minced or grated pinch of salt and pepper ",
       
 		  "image"	         : "/recipes/cleveland-cheesesteaks/cleveland-cheesesteaks.jpg",
       "url"            : "/recipes/cleveland-cheesesteaks",
@@ -740,7 +740,7 @@
     
 	    "title"          : "Coconut Curry Shrimp Noodles",
       
-      "ingredients"    : "3| tbsp coconut oil 0.5| pound raw peeled and deveined shrimp, patted dry 0.5| sweet onion, sliced 0.5| red bell pepper, sliced 0.5| orange bell pepper, sliced 0.5| tsp salt 0.5| tsp pepper 2| garlic cloves, minced 0.5| tsp freshly grated ginger 2| tbsp red curry paste 0.33| cup(s) sugar snap peas 1| can full-fat coconut milk 1| can light coconut milk 6| ounces cooked rice noodles *soba noodles or spaghetti work, too* 3| tbsp fresh chopped cilantro 2| green onions, sliced ",
+      "ingredients"    : "3| tbsp coconut oil 0.5| pound raw peeled and deveined shrimp, patted dry 0.5| sweet onion, sliced 0.5| red bell pepper, sliced 0.5| orange bell pepper, sliced 0.5| tsp salt 0.5| tsp pepper 2| garlic cloves, minced 0.5| tsp freshly grated ginger 2| tbsp red curry paste 0.3333| cup(s) sugar snap peas 1| can full-fat coconut milk 1| can light coconut milk 6| ounces cooked rice noodles *soba noodles or spaghetti work, too* 3| tbsp fresh chopped cilantro 2| green onions, sliced ",
       
 		  "image"	         : "/recipes/coconut-curry-shrimp-noodles/coconut-curry-shrimp-noodles.jpg",
       "url"            : "/recipes/coconut-curry-shrimp-noodles",
@@ -788,7 +788,7 @@
     
 	    "title"          : "Coconut Milk Braised Turkey",
       
-      "ingredients"    : "1.5| cup(s) long-grain rice, rinsed 1| tbsp extra virgin olive oil 1| boneless turkey breast, sliced into 4 pieces 1| can coconut milk, shaken 0.33| cup(s) cider vinegar 0.33| cup(s) soy sauce 1| large head garlic, smashed and peeled 3| bay leaves 0.25| tsp crushed red pepper 8| oz baby spinach ",
+      "ingredients"    : "1.5| cup(s) long-grain rice, rinsed 1| tbsp extra virgin olive oil 1| boneless turkey breast, sliced into 4 pieces 1| can coconut milk, shaken 0.3333| cup(s) cider vinegar 0.3333| cup(s) soy sauce 1| large head garlic, smashed and peeled 3| bay leaves 0.25| tsp crushed red pepper 8| oz baby spinach ",
       
 		  "image"	         : "/recipes/coconut-milk-braised-turkey/coconut-milk-braised-turkey.jpg",
       "url"            : "/recipes/coconut-milk-braised-turkey",
@@ -804,7 +804,7 @@
     
 	    "title"          : "Coconut Turkey",
       
-      "ingredients"    : "3| full turkey breasts 1| can light coconut milk 0.33| cup(s) cider vinegar 0.33| cup(s) soy sauce 5| garlic cloves 3| bay leaves 1| cup(s) spinach 0.25| cup(s) teriyaki sauce 2| tbsp Worchestershire sauce 1| tsp paprika 1| tsp crushed black pepper 1| tsp sugar 1| tbsp crushed parsley 1| tbsp salt ",
+      "ingredients"    : "3| full turkey breasts 1| can light coconut milk 0.3333| cup(s) cider vinegar 0.3333| cup(s) soy sauce 5| garlic cloves 3| bay leaves 1| cup(s) spinach 0.25| cup(s) teriyaki sauce 2| tbsp Worchestershire sauce 1| tsp paprika 1| tsp crushed black pepper 1| tsp sugar 1| tbsp crushed parsley 1| tbsp salt ",
       
 		  "image"	         : "/recipes/coconut-turkey/coconut-turkey.jpg",
       "url"            : "/recipes/coconut-turkey",
@@ -820,7 +820,7 @@
     
 	    "title"          : "Fancy-Ass Coffee Syrups",
       
-      "ingredients"    : "{&quot;for the vanilla bean syrup&quot;=&gt;nil} 0.5| cup(s) sugar 0.33| cup(s) water 1| vanilla bean, seeds scraped 0.5| tsp pure vanilla extract {&quot;for the blackberry syrup&quot;=&gt;nil} 2| cup(s) fresh blackberries 0.33| cup(s) water 0.33| cup(s) sugar {&quot;for the cinnamon brown sugar syrup&quot;=&gt;nil} 0.5| cup(s) brown sugar 0.5| tsp cinnamon 0.33| cup(s) water {&quot;for the almond syrup&quot;=&gt;nil} 0.5| cup(s) sugar 0.33| cup(s) water 1| tsp pure almond extract ",
+      "ingredients"    : "{&quot;for the vanilla bean syrup&quot;=&gt;nil} 0.5| cup(s) sugar 0.3333| cup(s) water 1| vanilla bean, seeds scraped 0.5| tsp pure vanilla extract {&quot;for the blackberry syrup&quot;=&gt;nil} 2| cup(s) fresh blackberries 0.3333| cup(s) water 0.3333| cup(s) sugar {&quot;for the cinnamon brown sugar syrup&quot;=&gt;nil} 0.5| cup(s) brown sugar 0.5| tsp cinnamon 0.3333| cup(s) water {&quot;for the almond syrup&quot;=&gt;nil} 0.5| cup(s) sugar 0.3333| cup(s) water 1| tsp pure almond extract ",
       
 		  "image"	         : "/recipes/coffee-syrups/coffee-syrups.jpg",
       "url"            : "/recipes/coffee-syrups",
@@ -836,7 +836,7 @@
     
 	    "title"          : "Corn &amp; Celery Tacos",
       
-      "ingredients"    : "{&quot;for the corn salad&quot;=&gt;nil} 4| ears corn, shucked 1| celery, peeled and diced *or jicama, should you have access to it* 0.5| cup(s) chopped cilantro, plus more for serving 0.3| cup(s) sliced green onions 0.25| cup(s) crumbled cotija cheese, plus more for topping *see note* 0.25| tsp salt 0.25| tsp freshly cracked black pepper 0.25| tsp chili powder 0.25| tsp smoked paprika 1| lime, juiced and zest freshly grated {&quot;for the garlic lime mayo&quot;=&gt;nil} 0.5| cup(s) mayo 2| garlic cloves, minced 1| lime, juiced {&quot;for serving&quot;=&gt;nil} 8| corn tortillas, warmed lime wedges for spritzing ",
+      "ingredients"    : "{&quot;for the corn salad&quot;=&gt;nil} 4| ears corn, shucked 1| celery, peeled and diced *or jicama, should you have access to it* 0.5| cup(s) chopped cilantro, plus more for serving 0.3333| cup(s) sliced green onions 0.25| cup(s) crumbled cotija cheese, plus more for topping *see note* 0.25| tsp salt 0.25| tsp freshly cracked black pepper 0.25| tsp chili powder 0.25| tsp smoked paprika 1| lime, juiced and zest freshly grated {&quot;for the garlic lime mayo&quot;=&gt;nil} 0.5| cup(s) mayo 2| garlic cloves, minced 1| lime, juiced {&quot;for serving&quot;=&gt;nil} 8| corn tortillas, warmed lime wedges for spritzing ",
       
 		  "image"	         : "/recipes/corn-celery-tacos/corn-celery-tacos.jpg",
       "url"            : "/recipes/corn-celery-tacos",
@@ -900,7 +900,7 @@
     
 	    "title"          : "Crispy Carnitas Guacamole",
       
-      "ingredients"    : "1| cup(s) pulled pork 4| ripe avocados 1| jalapeño pepper, seeded and diced 0.33| cup(s) crumbled queso fresco cheese plus extra for topping 0.25| cup(s) chopped fresh cilantro 3| tbsp diced sweet onion 1| lime, juiced 0.25| tsp salt 0.25| tsp pepper 1| jalapeño pepper, sliced for topping ",
+      "ingredients"    : "1| cup(s) pulled pork 4| ripe avocados 1| jalapeño pepper, seeded and diced 0.3333| cup(s) crumbled queso fresco cheese plus extra for topping 0.25| cup(s) chopped fresh cilantro 3| tbsp diced sweet onion 1| lime, juiced 0.25| tsp salt 0.25| tsp pepper 1| jalapeño pepper, sliced for topping ",
       
 		  "image"	         : "/recipes/crispy-carnitas-guacamole/crispy-carnitas-guacamole.jpg",
       "url"            : "/recipes/crispy-carnitas-guacamole",
@@ -948,7 +948,7 @@
     
 	    "title"          : "Eggnog Cinnamon Rolls",
       
-      "ingredients"    : "{&quot;for the cinnamon rolls&quot;=&gt;nil} 2.75| cup(s) all-purpose flour 2| tbsp sugar 2.25| tsp active dry yeast 0.33| cup(s) eggnog 0.25| cup(s) unsalted butter 0.25| cup(s) water 2| tsp vanilla extract 0.25| tsp salt 0.25| tsp cinnamon 2| large eggs {&quot;for the filling&quot;=&gt;nil} 6| tbsp unsalted butter, melted 0.33| cup(s) sugar 1| tsp cinnamon 0.25| tsp freshly grated nutmeg {&quot;for the eggnog glaze&quot;=&gt;nil} 2| cup(s) powdered sugar 0.25| cup(s) eggnog 0.25| tsp freshly grated nutmeg ",
+      "ingredients"    : "{&quot;for the cinnamon rolls&quot;=&gt;nil} 2.75| cup(s) all-purpose flour 2| tbsp sugar 2.25| tsp active dry yeast 0.3333| cup(s) eggnog 0.25| cup(s) unsalted butter 0.25| cup(s) water 2| tsp vanilla extract 0.25| tsp salt 0.25| tsp cinnamon 2| large eggs {&quot;for the filling&quot;=&gt;nil} 6| tbsp unsalted butter, melted 0.3333| cup(s) sugar 1| tsp cinnamon 0.25| tsp freshly grated nutmeg {&quot;for the eggnog glaze&quot;=&gt;nil} 2| cup(s) powdered sugar 0.25| cup(s) eggnog 0.25| tsp freshly grated nutmeg ",
       
 		  "image"	         : "/recipes/eggnog-cinnamon-rolls/eggnog-cinnamon-rolls.jpg",
       "url"            : "/recipes/eggnog-cinnamon-rolls",
@@ -964,7 +964,7 @@
     
 	    "title"          : "Raw Energy Bites",
       
-      "ingredients"    : "3/4| cup(s) pecans 5| dates 1/2| cup(s) mixed dried fruit 3| tbsp coconut shavings 1/2| cup(s) cashew nuts 3| tbsp almond butter 2| tbsp coconut oil 2| tbsp water ",
+      "ingredients"    : "0.75| cup(s) pecans 5| dates 0.5| cup(s) mixed dried fruit 3| tbsp coconut shavings 0.5| cup(s) cashew nuts 3| tbsp almond butter 2| tbsp coconut oil 2| tbsp water ",
       
 		  "image"	         : "/recipes/energy-balls/energy-balls.jpg",
       "url"            : "/recipes/energy-balls",
@@ -1044,7 +1044,7 @@
     
 	    "title"          : "Chocolate Fudge Pecan Tart",
       
-      "ingredients"    : "{&quot;for the crust&quot;=&gt;nil} 0.5 cup(s) unsalted butter, softened 0.33| cup(s) brown sugar 1.25 cup(s) all-purpose flour 0.5| tsp salt {&quot;for the filling&quot;=&gt;nil} 2| large eggs, lightly beaten 0.66| cup(s) light corn syrup 0.25| cup(s) brown sugar 2| tbsp bourbon 1| tsp vanilla extract 6| oz high-quality dark chocolate, chopped 1.5| cup(s) pecans, chopped 1| cup(s) unsalted whole pecans, for topping ",
+      "ingredients"    : "{&quot;for the crust&quot;=&gt;nil} 0.5 cup(s) unsalted butter, softened 0.3333| cup(s) brown sugar 1.25 cup(s) all-purpose flour 0.5| tsp salt {&quot;for the filling&quot;=&gt;nil} 2| large eggs, lightly beaten 0.6666| cup(s) light corn syrup 0.25| cup(s) brown sugar 2| tbsp bourbon 1| tsp vanilla extract 6| oz high-quality dark chocolate, chopped 1.5| cup(s) pecans, chopped 1| cup(s) unsalted whole pecans, for topping ",
       
 		  "image"	         : "/recipes/fudge-pecan-tart/fudge-pecan-tart.jpg",
       "url"            : "/recipes/fudge-pecan-tart",
@@ -1124,7 +1124,7 @@
     
 	    "title"          : "Guinness Pot Pie",
       
-      "ingredients"    : "2| pounds boneless beef chuck roast, cut into 1 inch pieces 0.5| tsp salt 0.5| tsp pepper 2| tbsp flour 1| tbsp olive oil 1| tbsp unsalted butter 1| sweet onion, diced 0.33| cup(s) sliced carrots 0.33| cup(s) diced celery 2| garlic cloves, minced 0.5| tsp dried thyme 8| oz cremini mushrooms, sliced 2| tbsp tomato paste 0.66| cup(s) frozen peas 8| oz guinness beer 12| oz beef stock or broth {&quot;for the beer bread biscuits&quot;=&gt;nil} 2| cup(s) all purpose flour 1| cup(s) whole wheat flour 3| teaspoons baking powder 1| tsp salt 12| oz of your favorite beer 3| tbsp unsalted butter, melted ",
+      "ingredients"    : "2| pounds boneless beef chuck roast, cut into 1 inch pieces 0.5| tsp salt 0.5| tsp pepper 2| tbsp flour 1| tbsp olive oil 1| tbsp unsalted butter 1| sweet onion, diced 0.3333| cup(s) sliced carrots 0.3333| cup(s) diced celery 2| garlic cloves, minced 0.5| tsp dried thyme 8| oz cremini mushrooms, sliced 2| tbsp tomato paste 0.6666| cup(s) frozen peas 8| oz guinness beer 12| oz beef stock or broth {&quot;for the beer bread biscuits&quot;=&gt;nil} 2| cup(s) all purpose flour 1| cup(s) whole wheat flour 3| teaspoons baking powder 1| tsp salt 12| oz of your favorite beer 3| tbsp unsalted butter, melted ",
       
 		  "image"	         : "/recipes/guinness-pot-pie/guinness-pot-pie.jpg",
       "url"            : "/recipes/guinness-pot-pie",
@@ -1140,7 +1140,7 @@
     
 	    "title"          : "Healthy Brownies",
       
-      "ingredients"    : "0.5| cup(s) granulated sweetener 0.5| cup(s) brown sugar 450|g vanilla yoghurt 2| tbsp vegetable oil 2| egg whites 3/4| cup(s) plain four 0.5| cup(s) cocoa powder 0.5| tsp salt 1| tsp vanilla extract 100|g dark chocolate chips ",
+      "ingredients"    : "0.5| cup(s) granulated sweetener 0.5| cup(s) brown sugar 450|g vanilla yoghurt 2| tbsp vegetable oil 2| egg whites 0.75| cup(s) plain four 0.5| cup(s) cocoa powder 0.5| tsp salt 1| tsp vanilla extract 100|g dark chocolate chips ",
       
 		  "image"	         : "/recipes/healthy-brownies/healthy-brownies.jpg",
       "url"            : "/recipes/healthy-brownies",
@@ -1156,7 +1156,7 @@
     
 	    "title"          : "Not Shitty Snack Mix",
       
-      "ingredients"    : "1| cup(s) banana chips 1| cup(s) unsweetened, flaked coconut 0.75| cup(s) whole almonds 0.5| cup(s) pecans 0.33| cup(s) pepitas 3| tbsp maple syrup 1| to 2 tbsp coconut oil 0.5| tbsp liquid/coconut aminos or low-sodium soy sauce/tamari 0.5| tsp freshly cracked black pepper 0.5| tsp chili powder 0.5| tsp smoked paprika 0.25| tsp cinnamon 0.25| tsp cumin 0.25| cup(s) hemp hearts 0.25| cup(s) chia seeds 2| tbsp nutritional yeast ",
+      "ingredients"    : "1| cup(s) banana chips 1| cup(s) unsweetened, flaked coconut 0.75| cup(s) whole almonds 0.5| cup(s) pecans 0.3333| cup(s) pepitas 3| tbsp maple syrup 1| to 2 tbsp coconut oil 0.5| tbsp liquid/coconut aminos or low-sodium soy sauce/tamari 0.5| tsp freshly cracked black pepper 0.5| tsp chili powder 0.5| tsp smoked paprika 0.25| tsp cinnamon 0.25| tsp cumin 0.25| cup(s) hemp hearts 0.25| cup(s) chia seeds 2| tbsp nutritional yeast ",
       
 		  "image"	         : "/recipes/healthy-snack-mix/healthy-snack-mix.jpg",
       "url"            : "/recipes/healthy-snack-mix",
@@ -1188,7 +1188,7 @@
     
 	    "title"          : "Homemade Ricotta",
       
-      "ingredients"    : "1.9l whole milk, not ultra-pasteurized *see note* kosher salt, optional *see note* 40|ml distilled white vinegar or fresh lemon juice *see note* ",
+      "ingredients"    : "2|liters whole milk, not ultra-pasteurized *see note* kosher salt, optional *see note* 40|ml distilled white vinegar or fresh lemon juice *see note* ",
       
 		  "image"	         : "/recipes/homemade-ricotta/homemade-ricotta.jpg",
       "url"            : "/recipes/homemade-ricotta",
@@ -1252,7 +1252,7 @@
     
 	    "title"          : "Kale Pesto Minestrone",
       
-      "ingredients"    : "2| tbsp olive oil 1| sweet onion diced 2| garlic cloves minced 0.5| tsp salt 0.5| tsp pepper 0.75| cup(s) diced carrots 0.33| cup(s) diced celery 1| rind of parmesan cheese, if you have it 2| oz cans butter beans, drained and rinsed 2| oz cans fire roasted diced tomatoes 5| cup(s) low-sodium vegetable stock 0.5| tsp dried basil 0.5| tsp dried oregano 1| cup(s) ditalini pasta 6| cup(s) fresh baby spinach shaved parmesan, for topping {&quot;for the kale pesto&quot;=&gt;nil} 2| cup(s) kale leaves, torn from stems 0.5| cup(s) basil leaves, torn 0.25| cup(s) flat leaf parsley, torn 1| garlic clove 0.33| cup(s) finely grated parmesan or romano cheese 3| tbsp pistachios pinch of salt and pepper 0.33| cup(s) extra virgin olive oil ",
+      "ingredients"    : "2| tbsp olive oil 1| sweet onion diced 2| garlic cloves minced 0.5| tsp salt 0.5| tsp pepper 0.75| cup(s) diced carrots 0.3333| cup(s) diced celery 1| rind of parmesan cheese, if you have it 2| oz cans butter beans, drained and rinsed 2| oz cans fire roasted diced tomatoes 5| cup(s) low-sodium vegetable stock 0.5| tsp dried basil 0.5| tsp dried oregano 1| cup(s) ditalini pasta 6| cup(s) fresh baby spinach shaved parmesan, for topping {&quot;for the kale pesto&quot;=&gt;nil} 2| cup(s) kale leaves, torn from stems 0.5| cup(s) basil leaves, torn 0.25| cup(s) flat leaf parsley, torn 1| garlic clove 0.3333| cup(s) finely grated parmesan or romano cheese 3| tbsp pistachios pinch of salt and pepper 0.3333| cup(s) extra virgin olive oil ",
       
 		  "image"	         : "/recipes/kale-pesto-minestrone/kale-pesto-minestrone.jpg",
       "url"            : "/recipes/kale-pesto-minestrone",
@@ -1268,7 +1268,7 @@
     
 	    "title"          : "Lasagne alla Bolognese",
       
-      "ingredients"    : "{&quot;for the ragù bolognese&quot;=&gt;nil} 2| tbsp extra virgin olive oil 4| tbsp butter 0.66| pound ground lamb *or 85% / 15% ground beef* 0.66| pound ground pork 0.66| pound ground veal 4| oz chicken livers, finely chopped *optional, see note* 1| large onion, finely chopped 2| large carrots, peeled, and cut into 1/4-inch dice 3| large ribs celery, peeled, and cut into 1/4-inch dice 4| cloves garlic, finely minced, or grated on a microplane grater 0.5| cup(s) fresh sage leaves, finely chopped large pinch red pepper flakes *optional* 1| can crushed Italian plum tomatoes, preferably D.O.P. San Marzano 1.5| cup(s) dry red wine *white works fine as well* 1.5| cup(s) whole milk 2| cup(s) homemade chicken or veal stock *if you only have canned, go for the low-sodium ones* 2| bay leaves 1| tbsp Vietnamese or Thai fish sauce 0.5| cup(s) heavy cream salt and freshly ground black pepper 0.5| cup(s) minced basil or parsley *or a mix of both* {&quot;for the ricotta mixture&quot;=&gt;nil} 3| cup(s) home-made fresh ricotta *see note* salt and freshly ground black pepper 2| large eggs 0.25| cup(s) minced basil or parsley *or a mix of both* {&quot;for the besciamella&quot;=&gt;nil} 2| tbsp butter 2| tbsp flour 2| cloves garlic, finely minced, or grated on a microplane grater 2| cup(s) whole milk 0.5| pound dry whole milk mozzarella cheese, grated *see note* 0.25| teaspoon freshly grated nutmeg salt and freshly ground black pepper {&quot;to assemble&quot;=&gt;nil} Fifteen sheets fresh rolled pasta, or 15 pieces no-boil lasagna noodles from 1 package *see note* 4| oz parmesan, grated on a microplane grater 2| tbsp minced basil or parsley *or a mix of both* ",
+      "ingredients"    : "{&quot;for the ragù bolognese&quot;=&gt;nil} 2| tbsp extra virgin olive oil 4| tbsp butter 0.6666| pound ground lamb *or 85% / 15% ground beef* 0.6666| pound ground pork 0.6666| pound ground veal 4| oz chicken livers, finely chopped *optional, see note* 1| large onion, finely chopped 2| large carrots, peeled, and cut into 1/4-inch dice 3| large ribs celery, peeled, and cut into 1/4-inch dice 4| cloves garlic, finely minced, or grated on a microplane grater 0.5| cup(s) fresh sage leaves, finely chopped large pinch red pepper flakes *optional* 1| can crushed Italian plum tomatoes, preferably D.O.P. San Marzano 1.5| cup(s) dry red wine *white works fine as well* 1.5| cup(s) whole milk 2| cup(s) homemade chicken or veal stock *if you only have canned, go for the low-sodium ones* 2| bay leaves 1| tbsp Vietnamese or Thai fish sauce 0.5| cup(s) heavy cream salt and freshly ground black pepper 0.5| cup(s) minced basil or parsley *or a mix of both* {&quot;for the ricotta mixture&quot;=&gt;nil} 3| cup(s) home-made fresh ricotta *see note* salt and freshly ground black pepper 2| large eggs 0.25| cup(s) minced basil or parsley *or a mix of both* {&quot;for the besciamella&quot;=&gt;nil} 2| tbsp butter 2| tbsp flour 2| cloves garlic, finely minced, or grated on a microplane grater 2| cup(s) whole milk 0.5| pound dry whole milk mozzarella cheese, grated *see note* 0.25| teaspoon freshly grated nutmeg salt and freshly ground black pepper {&quot;to assemble&quot;=&gt;nil} Fifteen sheets fresh rolled pasta, or 15 pieces no-boil lasagna noodles from 1 package *see note* 4| oz parmesan, grated on a microplane grater 2| tbsp minced basil or parsley *or a mix of both* ",
       
 		  "image"	         : "/recipes/lasagna-bolognese/lasagna-bolognese.jpg",
       "url"            : "/recipes/lasagna-bolognese",
@@ -1284,7 +1284,7 @@
     
 	    "title"          : "Lemon Almond Pudding",
       
-      "ingredients"    : "0.75| cup(s) sugar 0.33| cup(s) all-purpose flour 0.25| tsp salt 3| large eggs, separated 2| tbsp unsalted butter, melted and slightly cooled 1| cup(s) milk the original recipe calls for skim, I used whole with good results 5| tbsp fresh lemon juice 1| tsp finely grated lemon zest 0.5| tsp almond extract sliced almonds, for topping ",
+      "ingredients"    : "0.75| cup(s) sugar 0.3333| cup(s) all-purpose flour 0.25| tsp salt 3| large eggs, separated 2| tbsp unsalted butter, melted and slightly cooled 1| cup(s) milk the original recipe calls for skim, I used whole with good results 5| tbsp fresh lemon juice 1| tsp finely grated lemon zest 0.5| tsp almond extract sliced almonds, for topping ",
       
 		  "image"	         : "/recipes/lemon-almond-pudding/lemon-almond-pudding.jpg",
       "url"            : "/recipes/lemon-almond-pudding",
@@ -1380,7 +1380,7 @@
     
 	    "title"          : "Mascarpone Polenta Short Ribs",
       
-      "ingredients"    : "12| beef short ribs 1| tsp salt 1| tsp pepper 3| tbsp flour 2| tbsp canola or vegetable oil 0.33| cup(s) your favorite Cabernet fresh chopped herbs, for garnish {&quot;for the mascarpone polenta&quot;=&gt;nil} 4| cup(s) low-sodium chicken stock 0.75| cup(s) polenta coarse grind cornmeal 2| tbsp unsalted butter 0.66| cup(s) mascarpone cheese 4| oz pecorino Romano cheese freshly grated 0.25| tsp salt 0.25| tsp freshly ground black pepper ",
+      "ingredients"    : "12| beef short ribs 1| tsp salt 1| tsp pepper 3| tbsp flour 2| tbsp canola or vegetable oil 0.3333| cup(s) your favorite Cabernet fresh chopped herbs, for garnish {&quot;for the mascarpone polenta&quot;=&gt;nil} 4| cup(s) low-sodium chicken stock 0.75| cup(s) polenta coarse grind cornmeal 2| tbsp unsalted butter 0.6666| cup(s) mascarpone cheese 4| oz pecorino Romano cheese freshly grated 0.25| tsp salt 0.25| tsp freshly ground black pepper ",
       
 		  "image"	         : "/recipes/mascarpone-polenta-short-ribs/mascarpone-polenta-short-ribs.jpg",
       "url"            : "/recipes/mascarpone-polenta-short-ribs",
@@ -1540,7 +1540,7 @@
     
 	    "title"          : "Orange, Sage, and Macadamia Cheese Ball",
       
-      "ingredients"    : "{&quot;for the cheese balls&quot;=&gt;nil} 450|g cream cheese, at room temperature 1| cup(s) finely grated pecorino cheese 0.25| cup(s) finely chopped macadamia nuts 2| tbsp freshly chopped chives 2| tbsp chopped crispy sage *recipe below* 3| tsp freshly grated orange zest 0.5| tsp ground allspice 0.5| tsp freshly ground nutmeg pinch of salt pinch of freshly cracked black pepper {&quot;for the coating&quot;=&gt;nil} 0.66| cup(s) finely chopped macadamia nuts 0.5| cup(s) finely chopped pecans 3| tbsp chopped fresh herbs, like parsley, sage and chives ",
+      "ingredients"    : "{&quot;for the cheese balls&quot;=&gt;nil} 450|g cream cheese, at room temperature 1| cup(s) finely grated pecorino cheese 0.25| cup(s) finely chopped macadamia nuts 2| tbsp freshly chopped chives 2| tbsp chopped crispy sage *recipe below* 3| tsp freshly grated orange zest 0.5| tsp ground allspice 0.5| tsp freshly ground nutmeg pinch of salt pinch of freshly cracked black pepper {&quot;for the coating&quot;=&gt;nil} 0.6666| cup(s) finely chopped macadamia nuts 0.5| cup(s) finely chopped pecans 3| tbsp chopped fresh herbs, like parsley, sage and chives ",
       
 		  "image"	         : "/recipes/orange-sage-macadamia-cheese-ball/orange-sage-macadamia-cheese-ball.jpg",
       "url"            : "/recipes/orange-sage-macadamia-cheese-ball",
@@ -1556,7 +1556,7 @@
     
 	    "title"          : "Outback Steakhouse Dip",
       
-      "ingredients"    : "0.5| cup mayonnaise 2| tbsp creamy horseradish 1| tbsp ketchup 0.33| tsp paprika 0.33| tsp cayenne pepper 0.2| tsp dried oregano 0.25| tsp salt 1| pinch ground black pepper ",
+      "ingredients"    : "0.5| cup mayonnaise 2| tbsp creamy horseradish 1| tbsp ketchup 0.3333| tsp paprika 0.3333| tsp cayenne pepper 0.2| tsp dried oregano 0.25| tsp salt 1| pinch ground black pepper ",
       
 		  "image"	         : "/recipes/outback-steakhouse-sauce/outback-steakhouse-sauce.jpg",
       "url"            : "/recipes/outback-steakhouse-sauce",
@@ -1572,7 +1572,7 @@
     
 	    "title"          : "Marshmallow Pavlova &amp; Pineapple Curd",
       
-      "ingredients"    : "{&quot;for the pineapple curd&quot;=&gt;nil} 0.75 cup(s) strained pineapple puree *see note* 1| cup(s) sugar 3| tbsp cornstarch pinch of salt 5| large egg yolks 6| tbsp unsalted butter, at room temperature {&quot;for the pavlova&quot;=&gt;nil} 5| large egg whites 1| cup sugar 1| tsp vanilla extract 2| tsp cornstarch {&quot;for topping&quot;=&gt;nil} whipped cream or coconut whipped cream kiwi ",
+      "ingredients"    : "{&quot;for the pineapple curd&quot;=&gt;nil} 0.75| cup(s) strained pineapple puree *see note* 1| cup(s) sugar 3| tbsp cornstarch pinch of salt 5| large egg yolks 6| tbsp unsalted butter, at room temperature {&quot;for the pavlova&quot;=&gt;nil} 5| large egg whites 1| cup sugar 1| tsp vanilla extract 2| tsp cornstarch {&quot;for topping&quot;=&gt;nil} whipped cream or coconut whipped cream kiwi ",
       
 		  "image"	         : "/recipes/pavlova-pineapple-curd/pavlova-pineapple-curd.jpg",
       "url"            : "/recipes/pavlova-pineapple-curd",
@@ -1636,7 +1636,7 @@
     
 	    "title"          : "Pickled Peaches Pulled Pork",
       
-      "ingredients"    : "{&quot;for the pulled pork&quot;=&gt;nil} 4| pound pork shoulder, roasted 2| tsp tablespoon coarse salt 1| tsp pepper 1| tbsp canola or vegetable oil 0.33| cup(s) your favorite beer 2| chipotles peppers diced 3| tbsp adobo sauce from the can of chipotles 3| tbsp peach preserves buns, for serving *brioche work best* {&quot;for the pickled peaches&quot;=&gt;nil} 0.75| cup(s) apple cider vinegar 0.75| cup(s) water 0.5| cup(s) sugar 2| tsp kosher salt 1| tsp crushed red pepper 1| tsp whole black peppercorns 3| peaches sliced {&quot;for the quick slaw&quot;=&gt;nil} 2| cup(s) chopped Napa cabbage 0.25| cup(s) chopped fresh cilantro 1| lime, juiced 1| tsp olive oil pinch of salt and pepper ",
+      "ingredients"    : "{&quot;for the pulled pork&quot;=&gt;nil} 4| pound pork shoulder, roasted 2| tsp tablespoon coarse salt 1| tsp pepper 1| tbsp canola or vegetable oil 0.3333| cup(s) your favorite beer 2| chipotles peppers diced 3| tbsp adobo sauce from the can of chipotles 3| tbsp peach preserves buns, for serving *brioche work best* {&quot;for the pickled peaches&quot;=&gt;nil} 0.75| cup(s) apple cider vinegar 0.75| cup(s) water 0.5| cup(s) sugar 2| tsp kosher salt 1| tsp crushed red pepper 1| tsp whole black peppercorns 3| peaches sliced {&quot;for the quick slaw&quot;=&gt;nil} 2| cup(s) chopped Napa cabbage 0.25| cup(s) chopped fresh cilantro 1| lime, juiced 1| tsp olive oil pinch of salt and pepper ",
       
 		  "image"	         : "/recipes/pickled-peaches-pulled-pork/pickled-peaches-pulled-pork.jpg",
       "url"            : "/recipes/pickled-peaches-pulled-pork",
@@ -1668,7 +1668,7 @@
     
 	    "title"          : "Pineapple Ahi Poke Bowl",
       
-      "ingredients"    : "1| pound sushi-grade ahi tuna, cut into cubes 0.25| cup(s) low-sodium soy sauce 3| tbsp toasted sesame oil 1| tbsp rice vinegar 1| tsp toasted sesame seeds 1| tsp black sesame seeds 0.5 tsp freshly grated ginger 1| garlic clove(s), freshly grated 4| green scallions, thinly sliced 2| avocados, 1 cubed and 1 sliced 0.33| cup(s) cubed pineapple 1| seedless cucumber, cut into half moons {&quot;for serving&quot;=&gt;nil} your favorite rice seaweed salad tortilla chips ",
+      "ingredients"    : "1| pound sushi-grade ahi tuna, cut into cubes 0.25| cup(s) low-sodium soy sauce 3| tbsp toasted sesame oil 1| tbsp rice vinegar 1| tsp toasted sesame seeds 1| tsp black sesame seeds 0.5 tsp freshly grated ginger 1| garlic clove(s), freshly grated 4| green scallions, thinly sliced 2| avocados, 1 cubed and 1 sliced 0.3333| cup(s) cubed pineapple 1| seedless cucumber, cut into half moons {&quot;for serving&quot;=&gt;nil} your favorite rice seaweed salad tortilla chips ",
       
 		  "image"	         : "/recipes/pineapple-ahi-poke-bowl/pineapple-ahi-poke-bowl.jpg",
       "url"            : "/recipes/pineapple-ahi-poke-bowl",
@@ -1700,7 +1700,7 @@
     
 	    "title"          : "Pistachioo Butter Dutch Baby",
       
-      "ingredients"    : "{&quot;for the dutch baby&quot;=&gt;nil} 2| tbsp unsalted butter 0.66| cup(s) all-purpose flour 2| tbsp sugar 0.5 tsp cinnamon pinch of salt 3| large eggs 0.75 cup(s) milk 1| tbsp vanilla bean paste 1| cup(s) blueberries, chopped {&quot;for the pistachio butter&quot;=&gt;nil} 3| tbsp finely ground pistachios 6| tbsp unsalted butter {&quot;for the pistachio sugar&quot;=&gt;nil} 3| tbsp finely ground pistachios almost to powder 0.25| cup(s) powdered sugar ",
+      "ingredients"    : "{&quot;for the dutch baby&quot;=&gt;nil} 2| tbsp unsalted butter 0.6666| cup(s) all-purpose flour 2| tbsp sugar 0.5 tsp cinnamon pinch of salt 3| large eggs 0.75| cup(s) milk 1| tbsp vanilla bean paste 1| cup(s) blueberries, chopped {&quot;for the pistachio butter&quot;=&gt;nil} 3| tbsp finely ground pistachios 6| tbsp unsalted butter {&quot;for the pistachio sugar&quot;=&gt;nil} 3| tbsp finely ground pistachios almost to powder 0.25| cup(s) powdered sugar ",
       
 		  "image"	         : "/recipes/pistachio-dutch-baby/pistachio-dutch-baby.jpg",
       "url"            : "/recipes/pistachio-dutch-baby",
@@ -1780,7 +1780,7 @@
     
 	    "title"          : "Pumpkin Skillet Cobbler",
       
-      "ingredients"    : "0.5| cup(s) brown sugar 2| large eggs 1| can pumpkin puree 0.75| cup(s) evaporated milk 1.5| tsp pumpkin pie spice 4| tsp cinnamon 1.5| tsp ginger 0.75| tsp ground cloves 0.75| tsp nutmeg a pinch of cardamom 0.25| tsp salt 1| tsp vanilla extract 1| cup(s) all-purpose flour 0.66| cup(s) sugar 2| tsp baking powder 0.25| tsp salt 0.25| cup(s) unsalted butter melted vanilla or cinnamon ice cream for serving chopped chocolate for topping ",
+      "ingredients"    : "0.5| cup(s) brown sugar 2| large eggs 1| can pumpkin puree 0.75| cup(s) evaporated milk 1.5| tsp pumpkin pie spice 4| tsp cinnamon 1.5| tsp ginger 0.75| tsp ground cloves 0.75| tsp nutmeg a pinch of cardamom 0.25| tsp salt 1| tsp vanilla extract 1| cup(s) all-purpose flour 0.6666| cup(s) sugar 2| tsp baking powder 0.25| tsp salt 0.25| cup(s) unsalted butter melted vanilla or cinnamon ice cream for serving chopped chocolate for topping ",
       
 		  "image"	         : "/recipes/pumpkin-skillet-cobbler/pumpkin-skillet-cobbler.jpg",
       "url"            : "/recipes/pumpkin-skillet-cobbler",
@@ -1860,7 +1860,7 @@
     
 	    "title"          : "Potato Chip Salted Champagne Caramels",
       
-      "ingredients"    : "1| cup(s) heavy cream 4| tbsp unsalted butter 0.25| tsp salt 0.33| cup(s) of your favorite champagne 1.5| cup(s) white granulated sugar 0.25| cup(s) corn syrup 0.5| tsp vanilla extract 1| cup(s) kettle cooked potato chips, crushed into crumbs metallic sprinkles parchment paper for wrapping ",
+      "ingredients"    : "1| cup(s) heavy cream 4| tbsp unsalted butter 0.25| tsp salt 0.3333| cup(s) of your favorite champagne 1.5| cup(s) white granulated sugar 0.25| cup(s) corn syrup 0.5| tsp vanilla extract 1| cup(s) kettle cooked potato chips, crushed into crumbs metallic sprinkles parchment paper for wrapping ",
       
 		  "image"	         : "/recipes/salted-champagne-caramels/salted-champagne-caramels.jpg",
       "url"            : "/recipes/salted-champagne-caramels",
@@ -1940,7 +1940,7 @@
     
 	    "title"          : "Smoky Vanilla Bourbon Pretzels",
       
-      "ingredients"    : "1 bag mini pretzel twists 0.5 cup unsalted butter, melted 0.25 cup bourbon 2 tbsp brown sugar 1 tsp vanilla bean extract 1 tsp smoked paprika 1 tsp garlic powder pinch crushed red pepper flakes ",
+      "ingredients"    : "1| bag mini pretzel twists 0.5| cup unsalted butter, melted 0.25| cup bourbon 2| tbsp brown sugar 1| tsp vanilla bean extract 1| tsp smoked paprika 1| tsp garlic powder pinch crushed red pepper flakes ",
       
 		  "image"	         : "/recipes/smoky-vanilla-pretzels/smoky-vanilla-pretzels.jpg",
       "url"            : "/recipes/smoky-vanilla-pretzels",
@@ -1956,7 +1956,7 @@
     
 	    "title"          : "Sour Cherry Galette",
       
-      "ingredients"    : "{&quot;for the crust&quot;=&gt;nil} 4| cup(s) sifted all-purpose flour 1| tbsp sugar 3| tsp salt 1| large egg, lightly beaten 1| tsp white vinegar 0.5| cup(s) ice cold water 1.5| cup(s) cold unsalted butter, cut into pieces raw sugar for sprinkling {&quot;for brushing&quot;=&gt;nil} 1 egg &amp; a few drops of water beaten together {&quot;for the filling&quot;=&gt;nil} 2| pounds sour cherries, fresh or thawed 0.33| cup(s) sugar 3| tbsp cornstarch 0.25| tsp salt 1| tsp vanilla extract 2| tbsp butter, cut into pieces vanilla ice cream, for serving ",
+      "ingredients"    : "{&quot;for the crust&quot;=&gt;nil} 4| cup(s) sifted all-purpose flour 1| tbsp sugar 3| tsp salt 1| large egg, lightly beaten 1| tsp white vinegar 0.5| cup(s) ice cold water 1.5| cup(s) cold unsalted butter, cut into pieces raw sugar for sprinkling {&quot;for brushing&quot;=&gt;nil} 1 egg &amp; a few drops of water beaten together {&quot;for the filling&quot;=&gt;nil} 2| pounds sour cherries, fresh or thawed 0.3333| cup(s) sugar 3| tbsp cornstarch 0.25| tsp salt 1| tsp vanilla extract 2| tbsp butter, cut into pieces vanilla ice cream, for serving ",
       
 		  "image"	         : "/recipes/sour-cherry-galette/sour-cherry-galette.jpg",
       "url"            : "/recipes/sour-cherry-galette",
@@ -2020,7 +2020,7 @@
     
 	    "title"          : "Strawberry Cobbler",
       
-      "ingredients"    : "{&quot;for the strawberries&quot;=&gt;nil} 3| cup(s) chopped &amp; halved strawberries 0.33| cup(s) sugar 1| tbsp cornstarch {&quot;for the topping&quot;=&gt;nil} 1.33 cup(s) all-purpose flour 2| tbsp sugar 2| tsp baking powder 0.25| tsp cinnamon pinch of salt 6| tbsp unsalted butter, cold and cut into pieces 1| egg, lightly beaten 0.5| cup(s) milk 1| tsp vanilla extract vanilla ice cream for serving ",
+      "ingredients"    : "{&quot;for the strawberries&quot;=&gt;nil} 3| cup(s) chopped &amp; halved strawberries 0.3333| cup(s) sugar 1| tbsp cornstarch {&quot;for the topping&quot;=&gt;nil} 1.3333| cup(s) all-purpose flour 2| tbsp sugar 2| tsp baking powder 0.25| tsp cinnamon pinch of salt 6| tbsp unsalted butter, cold and cut into pieces 1| egg, lightly beaten 0.5| cup(s) milk 1| tsp vanilla extract vanilla ice cream for serving ",
       
 		  "image"	         : "/recipes/strawberry-cobbler/strawberry-cobbler.jpg",
       "url"            : "/recipes/strawberry-cobbler",
@@ -2034,9 +2034,9 @@
   
     {
     
-	    "title"          : "Strawberry GranolaYoghurt Doughnuts",
+	    "title"          : "Strawberry Granola Yoghurt Doughnuts",
       
-      "ingredients"    : "1| cup(s) all-purpose flour 0.75| cup(s) cake flour 1.5| tsp baking powder 0.25| tsp salt 0.5| cup(s) coconut oil, melted 0.33| cup(s) granulated sugar 0.75| cup(s) plain greek yogurt 2| large eggs 2| tsp vanilla bean extract 0.25| cup(s) buttermilk {&quot;for the Greek yoghurt glaze&quot;=&gt;nil} 0.66| cup(s) plain greek yoghurt 1.5| cup(s) powdered sugar 2| tsp vanilla extract 1| tbsp milk {&quot;for the strawberry granola&quot;=&gt;nil} 1.5| tbsp coconut oil 0.75| cups old-fashioned oats 0.25| cup(s) sliced almonds 3| tbsp honey 1| tbsp brown sugar pinch of salt pinch of cinnamon 0.25| cup(s) freeze-dried strawberries ",
+      "ingredients"    : "1| cup(s) all-purpose flour 0.75| cup(s) cake flour 1.5| tsp baking powder 0.25| tsp salt 0.5| cup(s) coconut oil, melted 0.3333| cup(s) granulated sugar 0.75| cup(s) plain greek yogurt 2| large eggs 2| tsp vanilla bean extract 0.25| cup(s) buttermilk {&quot;for the Greek yoghurt glaze&quot;=&gt;nil} 0.6666| cup(s) plain greek yoghurt 1.5| cup(s) powdered sugar 2| tsp vanilla extract 1| tbsp milk {&quot;for the strawberry granola&quot;=&gt;nil} 1.5| tbsp coconut oil 0.75| cups old-fashioned oats 0.25| cup(s) sliced almonds 3| tbsp honey 1| tbsp brown sugar pinch of salt pinch of cinnamon 0.25| cup(s) freeze-dried strawberries ",
       
 		  "image"	         : "/recipes/strawberry-granola-yoghurt-doughnuts/strawberry-granola-yoghurt-doughnuts.jpg",
       "url"            : "/recipes/strawberry-granola-yoghurt-doughnuts",
@@ -2052,7 +2052,7 @@
     
 	    "title"          : "Sundried Tomato Mushroom Pasta",
       
-      "ingredients"    : "2| tbsp olive oil 8| oz mushrooms, sliced 3| garlic cloves, minced 3|.5 oz sun-dried tomatoes, diced 2| cubes chicken bullion *use vegetarian bouillon for vegetarian version* 2| cup(s) boiling water 0.5| cup(s) half and half *if you want it more creamy, add more* 0.5| cup(s) heavy cream 0.5| cup(s) shredded Parmesan cheese 1| tablespoon dried basil *fresh is better* 0.5| pound fettuccine pasta ",
+      "ingredients"    : "2| tbsp olive oil 8| oz mushrooms, sliced 3| garlic cloves, minced 3.5| oz sun-dried tomatoes, diced 2| cubes chicken bullion *use vegetarian bouillon for vegetarian version* 2| cup(s) boiling water 0.5| cup(s) half and half *if you want it more creamy, add more* 0.5| cup(s) heavy cream 0.5| cup(s) shredded Parmesan cheese 1| tablespoon dried basil *fresh is better* 0.5| pound fettuccine pasta ",
       
 		  "image"	         : "/recipes/sundried-tomato-mushroom-pasta/sundried-tomato-mushroom-pasta.jpg",
       "url"            : "/recipes/sundried-tomato-mushroom-pasta",
@@ -2132,7 +2132,7 @@
     
 	    "title"          : "Toasted Coconut Overnight Oats",
       
-      "ingredients"    : "1| cup(s) rolled oats 1| can coconut milk *light or full-fat* 0.5| cup(s) greek yogurt, preferably coconut flavored! (I used siggi’s) 0.25| cup(s) toasted unsweetened, flaked coconut *see note* 2| tbsp honey 1| tbsp chia seeds 2| tsp vanilla extract 0.25| tsp salt 0.33| cup almond butter {&quot;for the honey caramelized pineapple&quot;=&gt;nil} 0.5| cup(s) pineapple chunks 1| tbsp honey {&quot;for serving&quot;=&gt;nil} extra toasted coconut almond butter sliced kiwi honey for drizzling ",
+      "ingredients"    : "1| cup(s) rolled oats 1| can coconut milk *light or full-fat* 0.5| cup(s) greek yogurt, preferably coconut flavored! (I used siggi’s) 0.25| cup(s) toasted unsweetened, flaked coconut *see note* 2| tbsp honey 1| tbsp chia seeds 2| tsp vanilla extract 0.25| tsp salt 0.3333| cup almond butter {&quot;for the honey caramelized pineapple&quot;=&gt;nil} 0.5| cup(s) pineapple chunks 1| tbsp honey {&quot;for serving&quot;=&gt;nil} extra toasted coconut almond butter sliced kiwi honey for drizzling ",
       
 		  "image"	         : "/recipes/toasted-coconut-overnight-oats/toasted-coconut-overnight-oats.jpg",
       "url"            : "/recipes/toasted-coconut-overnight-oats",
@@ -2196,7 +2196,7 @@
     
 	    "title"          : "Vanilla Cider Cranberry Sauce",
       
-      "ingredients"    : "1| oz bag of fresh cranberries 0.5| cup(s) sugar 0.33| cup(s) bourbon 3| tbsp apple cider 1| vanilla bean, split ",
+      "ingredients"    : "1| oz bag of fresh cranberries 0.5| cup(s) sugar 0.3333| cup(s) bourbon 3| tbsp apple cider 1| vanilla bean, split ",
       
 		  "image"	         : "/recipes/vanilla-cider-cranberry-sauce/vanilla-cider-cranberry-sauce.jpg",
       "url"            : "/recipes/vanilla-cider-cranberry-sauce",
@@ -2276,7 +2276,7 @@
     
 	    "title"          : "Zabaglione",
       
-      "ingredients"    : "4| egg yolks 0.33| cup sugar 0.25| cup Marsala wine *or any other good quality sweet white wine* berries or chopped peaches, for serving ",
+      "ingredients"    : "4| egg yolks 0.3333| cup sugar 0.25| cup Marsala wine *or any other good quality sweet white wine* berries or chopped peaches, for serving ",
       
 		  "image"	         : "/recipes/zabaglione/zabaglione.jpg",
       "url"            : "/recipes/zabaglione",

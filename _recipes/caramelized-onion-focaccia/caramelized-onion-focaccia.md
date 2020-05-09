@@ -24,7 +24,7 @@ ingredients:
 - 5| cups all-purpose flour,  plus more for your workspace
 - 2| tsp garlic powder
 - 2| tsp kosher salt
-- 0.33| cup extra virgin olive oil
+- 0.3333| cup extra virgin olive oil
 - 4| tbsp unsalted butter, melted
 - 3| garlic cloves, minced
 - 0.25| cup your favorite chopped fresh herbs, like chives, dill, basil, oregano, thyme

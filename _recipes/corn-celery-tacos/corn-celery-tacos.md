@@ -20,7 +20,7 @@ ingredients:
 - 4| ears corn, shucked
 - 1| celery, peeled and diced *or jicama, should you have access to it*
 - 0.5| cup(s) chopped cilantro, plus more for serving
-- 0.3| cup(s) sliced green onions
+- 0.3333| cup(s) sliced green onions
 - 0.25| cup(s) crumbled cotija cheese, plus more for topping *see note*
 - 0.25| tsp salt
 - 0.25| tsp freshly cracked black pepper

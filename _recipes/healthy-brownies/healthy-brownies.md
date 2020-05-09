@@ -23,7 +23,7 @@ ingredients:
 - 450|g vanilla yoghurt 
 - 2| tbsp vegetable oil
 - 2| egg whites 
-- 3/4| cup(s) plain four
+- 0.75| cup(s) plain four
 - 0.5| cup(s) cocoa powder
 - 0.5| tsp salt
 - 1| tsp vanilla extract

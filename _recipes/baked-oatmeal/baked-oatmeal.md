@@ -22,8 +22,8 @@ ingredients:
 - 0.75| cup(s) canola oil
 - 2| tsp vanilla extract
 - 0.25| cup(s) chocolate chips
-- 0.33| cup(s) sliced almonds
-- 0.33| cup(s) flaked coconut toasted if you've like!
+- 0.3333| cup(s) sliced almonds
+- 0.3333| cup(s) flaked coconut toasted if you've like!
 - 2| tablespoons hemp hearts
 - 1| tablespoon chia seeds
 - milk or cream for drizzling

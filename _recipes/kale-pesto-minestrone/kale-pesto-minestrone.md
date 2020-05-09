@@ -19,7 +19,7 @@ ingredients:
 - 0.5| tsp salt
 - 0.5| tsp pepper
 - 0.75| cup(s) diced carrots
-- 0.33| cup(s) diced celery
+- 0.3333| cup(s) diced celery
 - 1| rind of parmesan cheese, if you have it
 - 2| oz cans butter beans, drained and rinsed
 - 2| oz cans fire roasted diced tomatoes
@@ -34,10 +34,10 @@ ingredients:
 - 0.5| cup(s) basil leaves, torn
 - 0.25| cup(s) flat leaf parsley, torn
 - 1| garlic clove
-- 0.33| cup(s) finely grated parmesan or romano cheese
+- 0.3333| cup(s) finely grated parmesan or romano cheese
 - 3| tbsp pistachios
 - pinch of salt and pepper
-- 0.33| cup(s) extra virgin olive oil
+- 0.3333| cup(s) extra virgin olive oil
 
 directions:
 - Heat a large stock pot over medium-low heat and add the olive oil.

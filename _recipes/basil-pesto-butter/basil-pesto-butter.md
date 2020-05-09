@@ -15,7 +15,7 @@ servings: 1
 ingredients:
 - 1| tbsp pine nuts
 - 0.25| tsp minced garlic
-- 0.33| cup basil leaves
+- 0.3333| cup basil leaves
 - 3| tbsp shredded parmesan cheese
 - 1| cup unsalted butter
 - pinch of salt

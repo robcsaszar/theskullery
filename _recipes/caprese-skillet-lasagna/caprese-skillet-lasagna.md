@@ -23,9 +23,9 @@ ingredients:
 - 0.25| cup(s) fresh chopped basil
 - 1| package whole wheat/brown rice lasagna noodles
 - 1| cup(s) ricotta cheese
-- ½| cup(s) freshly grated provolone cheese
-- ½| cup(s) freshly grated mozzarella cheese
-- ½| cup(s) freshly grated Parmigiano Reggiano cheese
+- 0.5| cup(s) freshly grated provolone cheese
+- 0.5| cup(s) freshly grated mozzarella cheese
+- 0.5| cup(s) freshly grated Parmigiano Reggiano cheese
 - fresh basil leaves for garnish
 
 directions:

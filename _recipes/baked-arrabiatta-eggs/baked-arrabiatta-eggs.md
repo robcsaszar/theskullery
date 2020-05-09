@@ -20,7 +20,7 @@ ingredients:
 - 0.5| sweet onion, diced
 - 2| garlic cloves, minced
 - 1| tbsp tomato paste, I really love this basil one!
-- 0.33| tsp smoked paprika
+- 0.3333| tsp smoked paprika
 - 0.25| tsp salt
 - 0.25| tsp pepper
 - 0.25| tsp crushed red pepper flakes

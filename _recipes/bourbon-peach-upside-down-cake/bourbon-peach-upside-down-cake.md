@@ -15,7 +15,7 @@ servings: 1
 ingredients:
 - for the topping:
 - 4| tbsp unsalted butter
-- 0.33| cup(s) brown sugar
+- 0.3333| cup(s) brown sugar
 - 0.5| tsp cinnamon
 - 2| tbsp bourbon
 - 6| peaches, sliced into 1/4-1/2 inch slices (peeled if desired)

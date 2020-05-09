@@ -2,7 +2,7 @@
 
 layout: recipe
 permalink: recipes/strawberry-granola-yoghurt-doughnuts 
-title:  "Strawberry GranolaYoghurt Doughnuts"
+title:  "Strawberry Granola Yoghurt Doughnuts"
 image: strawberry-granola-yoghurt-doughnuts.jpg 
 imagecredit: "unsplash.com" 
 categories: snack healthyish oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
@@ -18,13 +18,13 @@ ingredients:
 - 1.5| tsp baking powder
 - 0.25| tsp salt
 - 0.5| cup(s) coconut oil, melted
-- 0.33| cup(s) granulated sugar
+- 0.3333| cup(s) granulated sugar
 - 0.75| cup(s) plain greek yogurt
 - 2| large eggs
 - 2| tsp vanilla bean extract
 - 0.25| cup(s) buttermilk
 - for the Greek yoghurt glaze:
-- 0.66| cup(s) plain greek yoghurt
+- 0.6666| cup(s) plain greek yoghurt
 - 1.5| cup(s) powdered sugar
 - 2| tsp vanilla extract
 - 1| tbsp milk

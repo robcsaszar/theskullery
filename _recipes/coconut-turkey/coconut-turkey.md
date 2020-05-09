@@ -18,8 +18,8 @@ notes: # (you can add recipe notes here, if you don't have any just delete this 
 ingredients:
 - 3| full turkey breasts
 - 1| can light coconut milk
-- 0.33| cup(s) cider vinegar
-- 0.33| cup(s) soy sauce 
+- 0.3333| cup(s) cider vinegar
+- 0.3333| cup(s) soy sauce 
 - 5| garlic cloves
 - 3| bay leaves
 - 1| cup(s) spinach 

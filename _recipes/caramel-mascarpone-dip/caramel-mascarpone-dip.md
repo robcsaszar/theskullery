@@ -16,7 +16,7 @@ servings: 1
 ingredients:
 - for the bourbon caramel:
 - 1| cup(s) brown sugar
-- 0.33| cup(s) bourbon
+- 0.3333| cup(s) bourbon
 - 0.25| cup(s) unsalted butter
 - 0.25| cup(s)  heavy cream
 - 1| tbsp vanilla extract
@@ -25,7 +25,7 @@ ingredients:
 - 12| oz mascarpone cheese, softened
 - 3| tbsp powdered sugar
 - 1| tsp vanilla extract
-- 0.66| cup(s) bourbon caramel
+- 0.6666| cup(s) bourbon caramel
 - 0.75| cup(s) roasted salted cashews, coarsely chopped
 - a pinch of cinnamon, for sprinklng
 - 4| granny smith apples, sliced

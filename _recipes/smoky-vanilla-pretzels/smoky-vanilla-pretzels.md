@@ -13,13 +13,13 @@ time: under 60mins # under 60mins under 120mins over 120mins
 servings: 1 
 
 ingredients:
-- 1 bag mini pretzel twists
-- 0.5 cup unsalted butter, melted
-- 0.25 cup bourbon
-- 2 tbsp brown sugar
-- 1 tsp vanilla bean extract
-- 1 tsp smoked paprika
-- 1 tsp garlic powder
+- 1| bag mini pretzel twists
+- 0.5| cup unsalted butter, melted
+- 0.25| cup bourbon
+- 2| tbsp brown sugar
+- 1| tsp vanilla bean extract
+- 1| tsp smoked paprika
+- 1| tsp garlic powder
 - pinch crushed red pepper flakes
 
 directions:

@@ -18,13 +18,13 @@ ingredients:
 - 1| tsp pepper
 - 3| tbsp flour
 - 2| tbsp canola or vegetable oil
-- 0.33| cup(s) your favorite Cabernet
+- 0.3333| cup(s) your favorite Cabernet
 - fresh chopped herbs, for garnish
 - for the mascarpone polenta: 
 - 4| cup(s) low-sodium chicken stock
 - 0.75| cup(s) polenta coarse grind cornmeal
 - 2| tbsp unsalted butter
-- 0.66| cup(s) mascarpone cheese
+- 0.6666| cup(s) mascarpone cheese
 - 4| oz pecorino Romano cheese freshly grated
 - 0.25| tsp salt
 - 0.25| tsp freshly ground black pepper

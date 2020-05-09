@@ -19,14 +19,14 @@ ingredients:
 - 8| tbsp unsalted butter, melted
 - 1| cup(s) sugar
 - 2| large eggs 
-- 1/4| cup(s) milk
+- 0.25| cup(s) milk
 - 1| tbsp vanilla extract
 - 4| small/medium ripened bananas
-- 1/4| tsp salt
+- 0.25| tsp salt
 - 1| tsp baking soda
-- 1 and 1/2 | tsp baking powder
+- 1.5| tsp baking powder
 - 2| cup(s) all purpose flour
-- 1/2| cup(s) chopped mixed nuts *cashews, pecans, walnuts, hazelnuts, almonds*
+- 0.5| cup(s) chopped mixed nuts *cashews, pecans, walnuts, hazelnuts, almonds*
 
 directions:
 - Preheat your oven to 180°C.

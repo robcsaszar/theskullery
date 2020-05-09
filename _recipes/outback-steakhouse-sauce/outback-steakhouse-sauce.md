@@ -16,8 +16,8 @@ ingredients:
 - 0.5| cup mayonnaise
 - 2| tbsp creamy horseradish
 - 1| tbsp ketchup
-- 0.33| tsp paprika
-- 0.33| tsp cayenne pepper
+- 0.3333| tsp paprika
+- 0.3333| tsp cayenne pepper
 - 0.2| tsp dried oregano
 - 0.25| tsp salt
 - 1| pinch ground black pepper

@@ -19,7 +19,7 @@ ingredients:
 - 2| tbsp olive oil
 - 8| oz mushrooms, sliced
 - 3| garlic cloves, minced
-- 3|.5 oz sun-dried tomatoes, diced
+- 3.5| oz sun-dried tomatoes, diced
 - 2| cubes chicken bullion *use vegetarian bouillon for vegetarian version*
 - 2| cup(s) boiling water
 - 0.5| cup(s) half and half *if you want it more creamy, add more*

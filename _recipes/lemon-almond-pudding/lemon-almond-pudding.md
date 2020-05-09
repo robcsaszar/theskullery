@@ -14,7 +14,7 @@ servings: 1
 
 ingredients:
 - 0.75| cup(s) sugar
-- 0.33| cup(s) all-purpose flour
+- 0.3333| cup(s) all-purpose flour
 - 0.25| tsp salt
 - 3| large eggs, separated
 - 2| tbsp unsalted butter, melted and slightly cooled

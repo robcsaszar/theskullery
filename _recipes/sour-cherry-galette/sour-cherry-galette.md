@@ -29,7 +29,7 @@ ingredients:
 - 1 egg & a few drops of water beaten together
 - for the filling: 
 - 2| pounds sour cherries, fresh or thawed
-- 0.33| cup(s) sugar
+- 0.3333| cup(s) sugar
 - 3| tbsp cornstarch
 - 0.25| tsp salt
 - 1| tsp vanilla extract

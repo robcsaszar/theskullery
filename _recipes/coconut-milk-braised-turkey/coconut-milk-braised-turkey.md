@@ -17,8 +17,8 @@ ingredients:
 - 1| tbsp extra virgin olive oil
 - 1| boneless turkey breast, sliced into 4 pieces
 - 1| can coconut milk, shaken
-- 0.33| cup(s) cider vinegar
-- 0.33| cup(s) soy sauce
+- 0.3333| cup(s) cider vinegar
+- 0.3333| cup(s) soy sauce
 - 1| large head garlic, smashed and peeled
 - 3| bay leaves
 - 0.25| tsp crushed red pepper

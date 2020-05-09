@@ -23,7 +23,7 @@ ingredients:
 - 1| garlic clove(s), freshly grated
 - 4| green scallions, thinly sliced
 - 2| avocados, 1 cubed and 1 sliced
-- 0.33| cup(s) cubed pineapple
+- 0.3333| cup(s) cubed pineapple
 - 1| seedless cucumber, cut into half moons
 - for serving:
 - your favorite rice

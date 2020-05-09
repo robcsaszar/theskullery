@@ -20,7 +20,7 @@ ingredients:
 - 85|g beer *pilsner works well*
 - 198|g water
 - 1| cup diced extra sharp cheddar cheese
-- 0.33| cup(s) finely chopped jalapeño (including ribs and seeds)
+- 0.3333| cup(s) finely chopped jalapeño (including ribs and seeds)
 - for toppings: 
 - 3| tablespoons shredded extra sharp cheddar cheese
 - 1| tbsp sliced jalapeños

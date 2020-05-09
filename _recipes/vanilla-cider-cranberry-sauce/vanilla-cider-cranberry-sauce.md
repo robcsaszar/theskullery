@@ -15,7 +15,7 @@ servings: 1
 ingredients:
 - 1| oz bag of fresh cranberries
 - 0.5| cup(s) sugar
-- 0.33| cup(s) bourbon
+- 0.3333| cup(s) bourbon
 - 3| tbsp apple cider
 - 1| vanilla bean, split
 

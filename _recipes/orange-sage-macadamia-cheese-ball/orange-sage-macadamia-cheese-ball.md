@@ -25,7 +25,7 @@ ingredients:
 - pinch of salt
 - pinch of freshly cracked black pepper
 - for the coating:
-- 0.66| cup(s) finely chopped macadamia nuts
+- 0.6666| cup(s) finely chopped macadamia nuts
 - 0.5| cup(s) finely chopped pecans
 - 3| tbsp chopped fresh herbs, like parsley, sage and chives
 

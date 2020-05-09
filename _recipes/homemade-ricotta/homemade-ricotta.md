@@ -21,7 +21,7 @@ notes:
 - I prefer not to add salt, since the ricotta can always be seasoned later, but feel free to add a pinch if you like.
 
 ingredients:
-- 1.9l whole milk, not ultra-pasteurized *see note*
+- 2|liters whole milk, not ultra-pasteurized *see note*
 - kosher salt, optional *see note*
 - 40|ml distilled white vinegar or fresh lemon juice *see note*
 

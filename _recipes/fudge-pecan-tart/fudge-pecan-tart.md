@@ -15,12 +15,12 @@ servings: 1
 ingredients:
 - for the crust:
 - 0.5 cup(s) unsalted butter, softened
-- 0.33| cup(s) brown sugar
+- 0.3333| cup(s) brown sugar
 - 1.25 cup(s) all-purpose flour
 - 0.5| tsp salt
 - for the filling:
 - 2| large eggs, lightly beaten
-- 0.66| cup(s) light corn syrup
+- 0.6666| cup(s) light corn syrup
 - 0.25| cup(s) brown sugar
 - 2| tbsp bourbon
 - 1| tsp vanilla extract

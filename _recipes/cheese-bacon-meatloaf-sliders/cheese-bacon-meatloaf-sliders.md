@@ -18,7 +18,7 @@ notes:
 ingredients:
 - 4| slices bacon
 - 1| pound ground sirloin *best with 93% lean*
-- 0.66| cup(s) panko breadcrumbs
+- 0.6666| cup(s) panko breadcrumbs
 - 1| tbsp Worcestershire sauce
 - 1| tbsp Djion mustard
 - 0.5| cup(s) smoky BBQ sauce, plus extra for serving

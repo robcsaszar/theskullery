@@ -23,7 +23,7 @@ ingredients:
 - 2| garlic cloves, minced
 - 0.5| tsp freshly grated ginger
 - 2| tbsp red curry paste
-- 0.33| cup(s) sugar snap peas
+- 0.3333| cup(s) sugar snap peas
 - 1| can full-fat coconut milk
 - 1| can light coconut milk
 - 6| ounces cooked rice noodles *soba noodles or spaghetti work, too*

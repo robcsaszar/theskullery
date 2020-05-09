@@ -15,12 +15,12 @@ servings: 1
 ingredients:
 - for the dutch baby:
 - 2| tbsp unsalted butter
-- 0.66| cup(s) all-purpose flour
+- 0.6666| cup(s) all-purpose flour
 - 2| tbsp sugar
 - 0.5 tsp cinnamon
 - pinch of salt
 - 3| large eggs
-- 0.75 cup(s) milk
+- 0.75| cup(s) milk
 - 1| tbsp vanilla bean paste
 - 1| cup(s) blueberries, chopped
 - for the pistachio butter:

@@ -15,10 +15,10 @@ servings: 1
 ingredients:
 - for the strawberries:
 - 3| cup(s) chopped & halved strawberries
-- 0.33| cup(s) sugar
+- 0.3333| cup(s) sugar
 - 1| tbsp cornstarch
 - for the topping:
-- 1.33 cup(s) all-purpose flour
+- 1.3333| cup(s) all-purpose flour
 - 2| tbsp sugar
 - 2| tsp baking powder
 - 0.25| tsp cinnamon

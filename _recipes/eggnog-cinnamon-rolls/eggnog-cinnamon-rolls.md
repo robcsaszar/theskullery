@@ -17,7 +17,7 @@ ingredients:
 - 2.75| cup(s) all-purpose flour
 - 2| tbsp sugar
 - 2.25| tsp active dry yeast
-- 0.33| cup(s) eggnog
+- 0.3333| cup(s) eggnog
 - 0.25| cup(s) unsalted butter
 - 0.25| cup(s) water
 - 2| tsp vanilla extract
@@ -26,7 +26,7 @@ ingredients:
 - 2| large eggs
 - for the filling:
 - 6| tbsp unsalted butter, melted
-- 0.33| cup(s) sugar
+- 0.3333| cup(s) sugar
 - 1| tsp cinnamon
 - 0.25| tsp freshly grated nutmeg
 - for the eggnog glaze:

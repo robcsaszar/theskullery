@@ -23,13 +23,13 @@ ingredients:
 - 1| tbsp olive oil
 - 1| tbsp unsalted butter
 - 1| sweet onion, diced
-- 0.33| cup(s) sliced carrots
-- 0.33| cup(s) diced celery
+- 0.3333| cup(s) sliced carrots
+- 0.3333| cup(s) diced celery
 - 2| garlic cloves, minced
 - 0.5| tsp dried thyme
 - 8| oz cremini mushrooms, sliced
 - 2| tbsp tomato paste
-- 0.66| cup(s) frozen peas
+- 0.6666| cup(s) frozen peas
 - 8| oz guinness beer
 - 12| oz beef stock or broth
 - for the beer bread biscuits:

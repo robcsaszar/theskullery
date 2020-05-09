@@ -21,7 +21,7 @@ ingredients:
 - 1.5| tsp sea salt or kosher salt
 - 4.5| cups to 5 all-purpose flour
 - 3| quarts water
-- 0.66| cups baking soda
+- 0.6666| cups baking soda
 - 1| whole egg, beaten
 - coarse sea salt
 - for the cheesesteak:

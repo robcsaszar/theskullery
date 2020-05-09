@@ -14,7 +14,7 @@ servings: 1
 
 ingredients:
 - 4| egg yolks
-- 0.33| cup sugar
+- 0.3333| cup sugar
 - 0.25| cup Marsala wine *or any other good quality sweet white wine*
 - berries or chopped peaches, for serving
 

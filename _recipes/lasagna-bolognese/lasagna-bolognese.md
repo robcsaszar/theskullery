@@ -22,9 +22,9 @@ ingredients:
 - for the ragù bolognese:
 - 2| tbsp extra virgin olive oil
 - 4| tbsp butter
-- 0.66| pound ground lamb *or 85% / 15% ground beef*
-- 0.66| pound ground pork
-- 0.66| pound ground veal
+- 0.6666| pound ground lamb *or 85% / 15% ground beef*
+- 0.6666| pound ground pork
+- 0.6666| pound ground veal
 - 4| oz chicken livers, finely chopped *optional, see note*
 - 1| large onion, finely chopped
 - 2| large carrots, peeled, and cut into 1/4-inch dice

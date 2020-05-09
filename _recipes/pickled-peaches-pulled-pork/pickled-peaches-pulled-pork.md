@@ -18,7 +18,7 @@ ingredients:
 - 2| tsp tablespoon coarse salt
 - 1| tsp pepper
 - 1| tbsp canola or vegetable oil
-- 0.33| cup(s) your favorite beer
+- 0.3333| cup(s) your favorite beer
 - 2| chipotles peppers diced
 - 3| tbsp adobo sauce from the can of chipotles
 - 3| tbsp peach preserves

@@ -17,7 +17,7 @@ ingredients:
 - 1| cup(s) unsweetened, flaked coconut
 - 0.75| cup(s) whole almonds
 - 0.5| cup(s) pecans
-- 0.33| cup(s) pepitas
+- 0.3333| cup(s) pepitas
 - 3| tbsp maple syrup
 - 1| to 2 tbsp coconut oil
 - 0.5| tbsp liquid/coconut aminos or low-sodium soy sauce/tamari

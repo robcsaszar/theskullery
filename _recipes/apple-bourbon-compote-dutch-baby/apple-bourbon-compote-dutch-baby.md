@@ -14,7 +14,7 @@ servings: 1
 
 ingredients:
 - 2| tbsp unsalted butter
-- 0.66 cup(s) all-purpose flour
+- 0.6666| cup(s) all-purpose flour
 - 2| tbsp sugar
 - 0.5| tsp cinnamon
 - pinch of salt
@@ -27,9 +27,9 @@ ingredients:
 - 0.25| tsp cinnamon
 - 0.25| tsp nutmeg
 - 0.25| tsp salt
-- 0.33| cup(s) brown sugar
-- 0.33| cup(s) bourbon
-- 0.33| cup(s) apple cider
+- 0.3333| cup(s) brown sugar
+- 0.3333| cup(s) bourbon
+- 0.3333| cup(s) apple cider
 - cream cheese icing
 - for the cream cheese icing:
 - 2| tbsp cream cheese, softened

@@ -16,7 +16,7 @@ ingredients:
 - 1| cup(s) pulled pork
 - 4| ripe avocados
 - 1| jalapeño pepper, seeded and diced
-- 0.33| cup(s) crumbled queso fresco cheese plus extra for topping
+- 0.3333| cup(s) crumbled queso fresco cheese plus extra for topping
 - 0.25| cup(s) chopped fresh cilantro
 - 3| tbsp diced sweet onion
 - 1| lime, juiced

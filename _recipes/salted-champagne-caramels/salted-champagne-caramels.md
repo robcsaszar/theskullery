@@ -16,7 +16,7 @@ ingredients:
 - 1| cup(s) heavy cream
 - 4| tbsp unsalted butter
 - 0.25| tsp salt
-- 0.33| cup(s) of your favorite champagne
+- 0.3333| cup(s) of your favorite champagne
 - 1.5| cup(s) white granulated sugar
 - 0.25| cup(s) corn syrup
 - 0.5| tsp vanilla extract

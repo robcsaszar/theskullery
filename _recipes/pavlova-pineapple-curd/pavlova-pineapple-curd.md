@@ -17,7 +17,7 @@ notes:
 
 ingredients:
 - for the pineapple curd:
-- 0.75 cup(s) strained pineapple puree *see note*
+- 0.75| cup(s) strained pineapple puree *see note*
 - 1| cup(s) sugar
 - 3| tbsp cornstarch
 - pinch of salt
