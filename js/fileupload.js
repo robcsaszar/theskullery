@@ -21,7 +21,7 @@
 
   function handleFileUploadChange(e) {
     selectedFile = e.target.files[0];
-  };
+  }
 
   function handleFileUploadSubmit(e) {
     const uploadTask = storageRef.child(`recipes/${selectedFile.name}`).put(
@@ -52,7 +52,7 @@
       request.send(JSON.stringify(params));
 
     });
-  };
+  }
   $('#file-upload').bind('change', function () {
     var fileName = '';
     fileName = $(this).val().replace("C:\\fakepath\\", "");
