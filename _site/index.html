@@ -83,7 +83,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 </head>
   <body>
 
-  	<a class="home--logo absolute no-line-height top-2 left-2 z4" href="/">
+  	<a aria-label="logo" class="home--logo absolute no-line-height top-2 left-2 z4" href="/">
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 800 800" width='64'><g fill="#fff"><path d="M570 800H285l33-104h-33A283 283 0 010 416c0-154 128-279 285-279 135 0 247 92 277 215-39 3-69 35-69 74 0 41 33 74 75 74h2v300zM334 500c-42 0-75-33-75-74s33-74 75-74 76 33 76 74-34 74-76 74zM673 800h-73V0l23 13c84 47 128 165 151 288 23 121 26 221 26 287v17H673v195z"/></g></svg>
   <h1 class="hide">theSkullery</h1>
 </a>
@@ -99,9 +99,9 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <div class="header">
         <p class="logo">the<strong><i>Skullery</i></strong></p>
         <ul>
-          <li class='hero--link right'><a href='/categories'>Categories</a></li>
-          <li class='hero--link right'><a href='/tags'>Tags</a></li>
-          <li class='hero--link right' id="favs"><a href='/favorites'>Favorites</a></li>
+          <li class='hero--link right'><a aria-label="categories" href='/categories'>Categories</a></li>
+          <li class='hero--link right'><a aria-label="tags" href='/tags'>Tags</a></li>
+          <li class='hero--link right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div class="main--hero">
@@ -121,15 +121,15 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
             </svg>
               </div>
         </p>
-        <a href="/submit" class="cta--main">Submit recipe</a>
-        <a href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
+        <a aria-label="submit" href="/submit" class="cta--main">Submit recipe</a>
+        <a aria-label="browse" href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
       </div>
     </div>
   </div>
 </div>
 <div id="search" class="clearfix">
   <div class="search xs-px1 xs-mt2">
-    <input aria-labelledby="Search" type="text" id="search-input" placeholder="Search titles, ingredients, or categories.">
+    <label for="#search-input" id="searchLabel" class="hidden">Search</label><input aria-labelledby="searchLabel" type="text" id="search-input" placeholder="Search titles, ingredients, or categories.">
   </div>
   <div id="spinner" class="spinner">
     <div class="bounce1"></div>
@@ -144,7 +144,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <div class="recipes xs-px1 xs-mt2" id="recipes">
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Amaretto Bourbon Punch" href="/recipes/amaretto-bourbon-punch">
+      <a aria-label="Amaretto Bourbon Punch" class="block relative" href="/recipes/amaretto-bourbon-punch">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/amaretto-bourbon-punch/amaretto-bourbon-punch.jpg'
           ></div>
@@ -156,7 +156,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Vanilla Cinnamon Roll Dutch Baby" href="/recipes/apple-bourbon-compote-dutch-baby">
+      <a aria-label="Vanilla Cinnamon Roll Dutch Baby" class="block relative" href="/recipes/apple-bourbon-compote-dutch-baby">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/apple-bourbon-compote-dutch-baby/apple-bourbon-compote-dutch-baby.jpg'
           ></div>
@@ -168,7 +168,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Apple Cider Shandy" href="/recipes/apple-cider-shandy">
+      <a aria-label="Apple Cider Shandy" class="block relative" href="/recipes/apple-cider-shandy">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/apple-cider-shandy/apple-cider-shandy.jpg'
           ></div>
@@ -180,7 +180,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Asian Sloppy Joes" href="/recipes/asian-sloppy-joes">
+      <a aria-label="Asian Sloppy Joes" class="block relative" href="/recipes/asian-sloppy-joes">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/asian-sloppy-joes/asian-sloppy-joes.jpg'
           ></div>
@@ -192,7 +192,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Avocado Citrus Salad" href="/recipes/avocado-citrus-salad">
+      <a aria-label="Avocado Citrus Salad" class="block relative" href="/recipes/avocado-citrus-salad">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/avocado-citrus-salad/avocado-citrus-salad.jpg'
           ></div>
@@ -204,7 +204,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Spicy Arrabiatta Baked Eggs" href="/recipes/baked-arrabiatta-eggs">
+      <a aria-label="Spicy Arrabiatta Baked Eggs" class="block relative" href="/recipes/baked-arrabiatta-eggs">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-arrabiatta-eggs/baked-arrabiatta-eggs.jpg'
           ></div>
@@ -216,7 +216,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Baked Oatmeal" href="/recipes/baked-oatmeal">
+      <a aria-label="Baked Oatmeal" class="block relative" href="/recipes/baked-oatmeal">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-oatmeal/baked-oatmeal.jpg'
           ></div>
@@ -228,7 +228,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Baked Peaches & Cream Oatmeal" href="/recipes/baked-peaches-oatmeal">
+      <a aria-label="Baked Peaches & Cream Oatmeal" class="block relative" href="/recipes/baked-peaches-oatmeal">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-peaches-oatmeal/baked-peaches-oatmeal.jpg'
           ></div>
@@ -240,7 +240,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Banana Bread" href="/recipes/banana-bread">
+      <a aria-label="Banana Bread" class="block relative" href="/recipes/banana-bread">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/banana-bread/banana-bread.jpg'
           ></div>
@@ -252,7 +252,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Healthy Banoffee Pie" href="/recipes/banoffee-pie">
+      <a aria-label="Healthy Banoffee Pie" class="block relative" href="/recipes/banoffee-pie">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/banoffee-pie/banoffee-pie.jpg'
           ></div>
@@ -264,7 +264,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Basil Pesto Butter" href="/recipes/basil-pesto-butter">
+      <a aria-label="Basil Pesto Butter" class="block relative" href="/recipes/basil-pesto-butter">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/basil-pesto-butter/basil-pesto-butter.jpg'
           ></div>
@@ -276,7 +276,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Basil Ricotta Macaroni" href="/recipes/basil-ricotta-macaroni">
+      <a aria-label="Basil Ricotta Macaroni" class="block relative" href="/recipes/basil-ricotta-macaroni">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/basil-ricotta-macaroni/basil-ricotta-macaroni.jpg'
           ></div>
@@ -288,7 +288,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Blue Cheese Deviled Eggs" href="/recipes/blue-cheese-deviled-eggs">
+      <a aria-label="Blue Cheese Deviled Eggs" class="block relative" href="/recipes/blue-cheese-deviled-eggs">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blue-cheese-deviled-eggs/blue-cheese-deviled-eggs.jpg'
           ></div>
@@ -300,7 +300,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Blue Cheese Portobello Burgers" href="/recipes/blue-cheese-portobello-burgers">
+      <a aria-label="Blue Cheese Portobello Burgers" class="block relative" href="/recipes/blue-cheese-portobello-burgers">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blue-cheese-portobello-burgers/blue-cheese-portobello-burgers.jpg'
           ></div>
@@ -312,7 +312,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Blueberry Lavender Chia Jam" href="/recipes/blueberry-lavender-chia-jam">
+      <a aria-label="Blueberry Lavender Chia Jam" class="block relative" href="/recipes/blueberry-lavender-chia-jam">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blueberry-lavender-chia-jam/blueberry-lavender-chia-jam.jpg'
           ></div>
@@ -324,7 +324,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Bourbon Peach Upside Down Cake" href="/recipes/bourbon-peach-upside-down-cake">
+      <a aria-label="Bourbon Peach Upside Down Cake" class="block relative" href="/recipes/bourbon-peach-upside-down-cake">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/bourbon-peach-upside-down-cake/bourbon-peach-upside-down-cake.jpg'
           ></div>
@@ -336,7 +336,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Badass Breakfast Sandwich" href="/recipes/breakfast-sandwich">
+      <a aria-label="Badass Breakfast Sandwich" class="block relative" href="/recipes/breakfast-sandwich">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/breakfast-sandwich/breakfast-sandwich.jpg'
           ></div>
@@ -348,7 +348,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Burger Buns" href="/recipes/burger-buns">
+      <a aria-label="Burger Buns" class="block relative" href="/recipes/burger-buns">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/burger-buns/burger-buns.jpg'
           ></div>
@@ -360,7 +360,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Caprese Skillet Lasagna" href="/recipes/caprese-skillet-lasagna">
+      <a aria-label="Caprese Skillet Lasagna" class="block relative" href="/recipes/caprese-skillet-lasagna">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/caprese-skillet-lasagna/caprese-skillet-lasagna.jpg'
           ></div>
@@ -372,7 +372,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for Caramel Apple Hot Toddy" href="/recipes/caramel-apple-hot-toddy">
+      <a aria-label="Caramel Apple Hot Toddy" class="block relative" href="/recipes/caramel-apple-hot-toddy">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/caramel-apple-hot-toddy/caramel-apple-hot-toddy.jpg'
           ></div>
@@ -396,29 +396,29 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
 
   
     <span class='pages'>
-        <a class="active" href="/index.html" title="Your recipes, your time.">1</a>
+        <a aria-label="current page" class="active" href="/index.html" title="Your recipes, your time.">1</a>
     </span>
   
     <span class='pages'>
-        <a  href="/recipes/2/index.html" title="Your recipes, your time. | 2 of 8">2</a>
+        <a aria-label="current page"  href="/recipes/2/index.html" title="Your recipes, your time. | 2 of 8">2</a>
     </span>
   
     <span class='pages'>
-        <a  href="/recipes/3/index.html" title="Your recipes, your time. | 3 of 8">3</a>
+        <a aria-label="current page"  href="/recipes/3/index.html" title="Your recipes, your time. | 3 of 8">3</a>
     </span>
   
     <span class='pages'>
-        <a  href="/recipes/4/index.html" title="Your recipes, your time. | 4 of 8">4</a>
+        <a aria-label="current page"  href="/recipes/4/index.html" title="Your recipes, your time. | 4 of 8">4</a>
     </span>
   
     <span class='pages'>
-        <a  href="/recipes/5/index.html" title="Your recipes, your time. | 5 of 8">5</a>
+        <a aria-label="current page"  href="/recipes/5/index.html" title="Your recipes, your time. | 5 of 8">5</a>
     </span>
   
 
 
   <span class='pagination--button next-page'>
-    <a href="/recipes/2/index.html"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,15.707l-6,6 C13.512,21.902,13.256,22,13,22s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L17.586,15l-5.293-5.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l6,6C20.098,14.684,20.098,15.316,19.707,15.707z"/></svg></a>
+    <a aria-label="next page" href="/recipes/2/index.html"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,15.707l-6,6 C13.512,21.902,13.256,22,13,22s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L17.586,15l-5.293-5.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l6,6C20.098,14.684,20.098,15.316,19.707,15.707z"/></svg></a>
   </span>
   
 
@@ -575,7 +575,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
-    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a aria-label="" class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
   })
 </script>
       </div>
@@ -600,32 +600,32 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <div class="lg-col xs-col sm-col md-col lg-col-3 md-col-6 sm-col-6 xs-col-6 p1 footer--links">
         <h4>Links</h4>
         <ul>
-          <li><a href='https://stats.theskullery.net'>Stats</a></li>
-          <li><a href='/submit'>Contact</a></li>
-          <li><a href='/privacy'>Privacy</a></li>
-          <li><a href='/favorites'>Favorites</a></li>
+          <li><a aria-label="statistics" href='https://stats.theskullery.net'>Stats</a></li>
+          <li><a aria-label="contact" href='/submit'>Contact</a></li>
+          <li><a aria-label="privacy" href='/privacy'>Privacy</a></li>
+          <li><a aria-label="favorites" href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div
         class="lg-col-right xs-col-right sm-col-right md-col-right lg-col-3 md-col-6 sm-col-6 xs-col-6 p1 footer--links">
         <h4>Site</h4>
         <ul>
-          <li><a href='/categories'>Categories</a></li>
-          <li><a href='/tags'>Cuisines</a></li>
-          <li><a href='/chefs'>Chefs</a></li>
-          <li><a href='/meals'>Meals</a></li>
+          <li><a aria-label="categories" href='/categories'>Categories</a></li>
+          <li><a aria-label="cuisines" href='/tags'>Cuisines</a></li>
+          <li><a aria-label="chefs" href='/chefs'>Chefs</a></li>
+          <li><a aria-label="meals" href='/meals'>Meals</a></li>
         </ul>
       </div>
       <div class="mx-auto center col lg-col-12 md-col-12 sm-col-12 xs-col-12 p1 footer--copyright">
         <hr>
-        <a class="squigglyURL--main" href='mailto:recipes@theskullery.net'>recipes@<span class="siteName"><em>the<strong>skullery</strong></em></span>.net</span></a><br>
+        <a aria-label="e-mail" class="squigglyURL--main" href='mailto:recipes@theskullery.net'>recipes@<span class="siteName"><em>the<strong>skullery</strong></em></span>.net</span></a><br>
         <span class="footer--love">
           made with
           <svg height=".8em" fill="#e83151" viewBox="0 0 32 32">
             <path d="M0 10c0-4 3-8 8-8 4 0 7 3 8 4 1-1 4-4 8-4 6 0 8 4 8 8 0 8-14 19-16 20-2-1-16-12-16-20" />
           </svg>
           by
-          <a class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
+          <a aria-label="author" class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
           <span>>all rights reserved &copy; <span id="copyright">
               <script>
                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))

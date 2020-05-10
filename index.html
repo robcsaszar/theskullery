@@ -16,9 +16,9 @@ pagination:
       <div class="header">
         <p class="logo">the<strong><i>Skullery</i></strong></p>
         <ul>
-          <li class='hero--link right'><a href='/categories'>Categories</a></li>
-          <li class='hero--link right'><a href='/tags'>Tags</a></li>
-          <li class='hero--link right' id="favs"><a href='/favorites'>Favorites</a></li>
+          <li class='hero--link right'><a aria-label="categories" href='/categories'>Categories</a></li>
+          <li class='hero--link right'><a aria-label="tags" href='/tags'>Tags</a></li>
+          <li class='hero--link right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div class="main--hero">
@@ -38,15 +38,15 @@ pagination:
             </svg>
               </div>
         </p>
-        <a href="/submit" class="cta--main">Submit recipe</a>
-        <a href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
+        <a aria-label="submit" href="/submit" class="cta--main">Submit recipe</a>
+        <a aria-label="browse" href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
       </div>
     </div>
   </div>
 </div>
 <div id="search" class="clearfix">
   <div class="search xs-px1 xs-mt2">
-    <input aria-labelledby="Search" type="text" id="search-input" placeholder="Search titles, ingredients, or categories{{site.baseurl}}.">
+    <label for="#search-input" id="searchLabel" class="hidden">Search</label><input aria-labelledby="searchLabel" type="text" id="search-input" placeholder="Search titles, ingredients, or categories{{site.baseurl}}.">
   </div>
   <div id="spinner" class="spinner">
     <div class="bounce1"></div>
@@ -61,7 +61,7 @@ pagination:
   <div class="recipes xs-px1 xs-mt2" id="recipes">
     {% for post in paginator.posts %}
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" aria-label="Recipe for {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
+      <a aria-label="{{ post.title }}" class="block relative" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
           style='background-image:url(/images/blank.jpg);' data-echo-background='{{post.url|prepend:site.baseurl}}/{{image}}'
           {% endfor %}></div>
@@ -83,19 +83,19 @@ pagination:
 {% if paginator.total_pages > 1 %}
   {% if paginator.previous_page %}
   <span class='pagination--button previous-page'>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,27c6.627,0,12-5.373,12-12c0-6.627-5.373-12-12-12S3,8.373,3,15C3,21.627,8.373,27,15,27z M10.293,14.293l6-6 C16.488,8.098,16.744,8,17,8s0.512,0.098,0.707,0.293c0.391,0.391,0.391,1.023,0,1.414L12.414,15l5.293,5.293 c0.391,0.391,0.391,1.023,0,1.414s-1.023,0.391-1.414,0l-6-6C9.902,15.316,9.902,14.684,10.293,14.293z"/></svg></a>
+    <a aria-label="previous page" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,27c6.627,0,12-5.373,12-12c0-6.627-5.373-12-12-12S3,8.373,3,15C3,21.627,8.373,27,15,27z M10.293,14.293l6-6 C16.488,8.098,16.744,8,17,8s0.512,0.098,0.707,0.293c0.391,0.391,0.391,1.023,0,1.414L12.414,15l5.293,5.293 c0.391,0.391,0.391,1.023,0,1.414s-1.023,0.391-1.414,0l-6-6C9.902,15.316,9.902,14.684,10.293,14.293z"/></svg></a>
   </span>
   {% endif %}
 {% if paginator.page_trail %}
   {% for trail in paginator.page_trail %}
     <span class='pages'>
-        <a {% if page.url == trail.path %}class="active"{% endif %} href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+        <a aria-label="current page" {% if page.url == trail.path %}class="active"{% endif %} href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
     </span>
   {% endfor %}
 {% endif %}
 {% if paginator.next_page %}
   <span class='pagination--button next-page'>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,15.707l-6,6 C13.512,21.902,13.256,22,13,22s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L17.586,15l-5.293-5.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l6,6C20.098,14.684,20.098,15.316,19.707,15.707z"/></svg></a>
+    <a aria-label="next page" href="{{ paginator.next_page_path | prepend: site.baseurl }}"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" viewBox="0 0 30 30"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,15.707l-6,6 C13.512,21.902,13.256,22,13,22s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L17.586,15l-5.293-5.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l6,6C20.098,14.684,20.098,15.316,19.707,15.707z"/></svg></a>
   </span>
   {% endif %}
 {% endif %}
@@ -107,6 +107,6 @@ pagination:
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
+    searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a aria-label="{{ post.title }}" class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
   })
 </script>
