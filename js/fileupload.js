@@ -39,17 +39,17 @@
         "<div class='success'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span><strong>Success!</strong> Your file was uploaded, which means you\'re one step away from having your recipe displayed.</div>";
       $('#filesubmit').find('.messages').html(uploadSuccess);
       var request = new XMLHttpRequest();
-    request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
+      request.open("POST", "https://discordapp.com/api/webhooks/703957505964900482/eUGQoi_v6Og0zZId7woGURp6CSkr-MYZu_7E3pPx4QCnYuMj9X29IOjU4OvZaA6CTBgs");
 
-    request.setRequestHeader('Content-type', 'application/json');
+      request.setRequestHeader('Content-type', 'application/json');
 
-    var params = {
-      username: "",
-      avatar_url: "",
-      content: "Someone submitted a recipe <@109375609406230528>! 🔥 Check it out here: https://console.firebase.google.com/u/2/project/the-skullery/storage/the-skullery.appspot.com/files"
-    }
+      var params = {
+        username: "",
+        avatar_url: "",
+        content: "Someone submitted a recipe <@109375609406230528>! 🔥 Check it out here: https://console.firebase.google.com/u/2/project/the-skullery/storage/the-skullery.appspot.com/files"
+      }
 
-    request.send(JSON.stringify(params));
+      request.send(JSON.stringify(params));
 
     });
   };

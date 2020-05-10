@@ -5,9 +5,10 @@
  */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global = global || self, global.html2canvas = factory());
-}(this, function () { 'use strict';
+        typeof define === 'function' && define.amd ? define(factory) :
+        (global = global || self, global.html2canvas = factory());
+}(this, function () {
+    'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -25,24 +26,36 @@
     ***************************************************************************** */
     /* global Reflect, Promise */
 
-    var extendStatics = function(d, b) {
+    var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+            ({
+                    __proto__: []
+                }
+                instanceof Array && function (d, b) {
+                    d.__proto__ = b;
+                }) ||
+            function (d, b) {
+                for (var p in b)
+                    if (b.hasOwnProperty(p)) d[p] = b[p];
+            };
         return extendStatics(d, b);
     };
 
     function __extends(d, b) {
         extendStatics(d, b);
-        function __() { this.constructor = d; }
+
+        function __() {
+            this.constructor = d;
+        }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     }
 
-    var __assign = function() {
+    var __assign = function () {
         __assign = Object.assign || function __assign(t) {
             for (var s, i = 1, n = arguments.length; i < n; i++) {
                 s = arguments[i];
-                for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+                for (var p in s)
+                    if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
             }
             return t;
         };
@@ -50,39 +63,116 @@
     };
 
     function __awaiter(thisArg, _arguments, P, generator) {
-        return new (P || (P = Promise))(function (resolve, reject) {
-            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        return new(P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) {
+                try {
+                    step(generator.next(value));
+                } catch (e) {
+                    reject(e);
+                }
+            }
+
+            function rejected(value) {
+                try {
+                    step(generator["throw"](value));
+                } catch (e) {
+                    reject(e);
+                }
+            }
+
+            function step(result) {
+                result.done ? resolve(result.value) : new P(function (resolve) {
+                    resolve(result.value);
+                }).then(fulfilled, rejected);
+            }
             step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
     }
 
     function __generator(thisArg, body) {
-        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-        function verb(n) { return function (v) { return step([n, v]); }; }
+        var _ = {
+                label: 0,
+                sent: function () {
+                    if (t[0] & 1) throw t[1];
+                    return t[1];
+                },
+                trys: [],
+                ops: []
+            },
+            f, y, t, g;
+        return g = {
+            next: verb(0),
+            "throw": verb(1),
+            "return": verb(2)
+        }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {
+            return this;
+        }), g;
+
+        function verb(n) {
+            return function (v) {
+                return step([n, v]);
+            };
+        }
+
         function step(op) {
             if (f) throw new TypeError("Generator is already executing.");
             while (_) try {
                 if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
                 if (y = 0, t) op = [op[0] & 2, t.value];
                 switch (op[0]) {
-                    case 0: case 1: t = op; break;
-                    case 4: _.label++; return { value: op[1], done: false };
-                    case 5: _.label++; y = op[1]; op = [0]; continue;
-                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    case 0:
+                    case 1:
+                        t = op;
+                        break;
+                    case 4:
+                        _.label++;
+                        return {
+                            value: op[1], done: false
+                        };
+                    case 5:
+                        _.label++;
+                        y = op[1];
+                        op = [0];
+                        continue;
+                    case 7:
+                        op = _.ops.pop();
+                        _.trys.pop();
+                        continue;
                     default:
-                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                            _ = 0;
+                            continue;
+                        }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) {
+                            _.label = op[1];
+                            break;
+                        }
+                        if (op[0] === 6 && _.label < t[1]) {
+                            _.label = t[1];
+                            t = op;
+                            break;
+                        }
+                        if (t && _.label < t[2]) {
+                            _.label = t[2];
+                            _.ops.push(op);
+                            break;
+                        }
                         if (t[2]) _.ops.pop();
-                        _.trys.pop(); continue;
+                        _.trys.pop();
+                        continue;
                 }
                 op = body.call(thisArg, _);
-            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+            } catch (e) {
+                op = [6, e];
+                y = 0;
+            } finally {
+                f = t = 0;
+            }
+            if (op[0] & 5) throw op[1];
+            return {
+                value: op[0] ? op[1] : void 0,
+                done: true
+            };
         }
     }
 
@@ -130,13 +220,11 @@
                 var extra = str.charCodeAt(i++);
                 if ((extra & 0xfc00) === 0xdc00) {
                     codePoints.push(((value & 0x3ff) << 10) + (extra & 0x3ff) + 0x10000);
-                }
-                else {
+                } else {
                     codePoints.push(value);
                     i--;
                 }
-            }
-            else {
+            } else {
                 codePoints.push(value);
             }
         }
@@ -161,8 +249,7 @@
             var codePoint = codePoints[index];
             if (codePoint <= 0xffff) {
                 codeUnits.push(codePoint);
-            }
-            else {
+            } else {
                 codePoint -= 0x10000;
                 codeUnits.push((codePoint >> 10) + 0xd800, codePoint % 0x400 + 0xdc00);
             }
@@ -180,7 +267,10 @@
         lookup[chars.charCodeAt(i)] = i;
     }
     var decode = function (base64) {
-        var bufferLength = base64.length * 0.75, len = base64.length, i, p = 0, encoded1, encoded2, encoded3, encoded4;
+        var bufferLength = base64.length * 0.75,
+            len = base64.length,
+            i, p = 0,
+            encoded1, encoded2, encoded3, encoded4;
         if (base64[base64.length - 1] === '=') {
             bufferLength--;
             if (base64[base64.length - 2] === '=') {
@@ -189,9 +279,9 @@
         }
         var buffer = typeof ArrayBuffer !== 'undefined' &&
             typeof Uint8Array !== 'undefined' &&
-            typeof Uint8Array.prototype.slice !== 'undefined'
-            ? new ArrayBuffer(bufferLength)
-            : new Array(bufferLength);
+            typeof Uint8Array.prototype.slice !== 'undefined' ?
+            new ArrayBuffer(bufferLength) :
+            new Array(bufferLength);
         var bytes = Array.isArray(buffer) ? buffer : new Uint8Array(buffer);
         for (i = 0; i < len; i += 4) {
             encoded1 = lookup[base64.charCodeAt(i)];
@@ -297,9 +387,9 @@
         var view16 = Array.isArray(buffer) ? polyUint16Array(buffer) : new Uint16Array(buffer);
         var headerLength = 24;
         var index = slice16(view16, headerLength / 2, view32[4] / 2);
-        var data = view32[5] === 2
-            ? slice16(view16, (headerLength + view32[4]) / 2)
-            : slice32(view32, Math.ceil((headerLength + view32[4]) / 4));
+        var data = view32[5] === 2 ?
+            slice16(view16, (headerLength + view32[4]) / 2) :
+            slice32(view32, Math.ceil((headerLength + view32[4]) / 4));
         return new Trie(view32[0], view32[1], view32[2], view32[3], index, data);
     };
     var Trie = /** @class */ (function () {
@@ -421,7 +511,9 @@
     var KOREAN_SYLLABLE_BLOCK = [JL, JV, JT, H2, H3];
     var HYPHEN = [HY, BA];
     var codePointsToCharacterClasses = function (codePoints, lineBreak) {
-        if (lineBreak === void 0) { lineBreak = 'strict'; }
+        if (lineBreak === void 0) {
+            lineBreak = 'strict';
+        }
         var types = [];
         var indicies = [];
         var categories = [];
@@ -430,8 +522,7 @@
             if (classType > LETTER_NUMBER_MODIFIER) {
                 categories.push(true);
                 classType -= LETTER_NUMBER_MODIFIER;
-            }
-            else {
+            } else {
                 categories.push(false);
             }
             if (['normal', 'auto', 'loose'].indexOf(lineBreak) !== -1) {
@@ -473,8 +564,7 @@
             if (classType === XX) {
                 if ((codePoint >= 0x20000 && codePoint <= 0x2fffd) || (codePoint >= 0x30000 && codePoint <= 0x3fffd)) {
                     return types.push(ID);
-                }
-                else {
+                } else {
                     return types.push(AL);
                 }
             }
@@ -528,8 +618,7 @@
             var type = classTypes[i];
             if (type === SP) {
                 i--;
-            }
-            else {
+            } else {
                 return type;
             }
         }
@@ -648,9 +737,9 @@
         }
         // LB25 Do not break between the following pairs of classes relevant to numbers:
         if (
-        // (PR | PO) × ( OP | HY )? NU
-        ([PR, PO].indexOf(current) !== -1 &&
-            (next === NU || ([OP, HY].indexOf(next) !== -1 && classTypes[afterIndex + 1] === NU))) ||
+            // (PR | PO) × ( OP | HY )? NU
+            ([PR, PO].indexOf(current) !== -1 &&
+                (next === NU || ([OP, HY].indexOf(next) !== -1 && classTypes[afterIndex + 1] === NU))) ||
             // ( OP | HY ) × NU
             ([OP, HY].indexOf(current) !== -1 && next === NU) ||
             // NU ×	(NU | SY | IS)
@@ -664,11 +753,9 @@
                 var type = classTypes[prevIndex];
                 if (type === NU) {
                     return BREAK_NOT_ALLOWED;
-                }
-                else if ([SY, IS].indexOf(type) !== -1) {
+                } else if ([SY, IS].indexOf(type) !== -1) {
                     prevIndex--;
-                }
-                else {
+                } else {
                     break;
                 }
             }
@@ -680,11 +767,9 @@
                 var type = classTypes[prevIndex];
                 if (type === NU) {
                     return BREAK_NOT_ALLOWED;
-                }
-                else if ([SY, IS].indexOf(type) !== -1) {
+                } else if ([SY, IS].indexOf(type) !== -1) {
                     prevIndex--;
-                }
-                else {
+                } else {
                     break;
                 }
             }
@@ -722,8 +807,7 @@
                 i--;
                 if (classTypes[i] === RI) {
                     count++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
@@ -739,17 +823,25 @@
     };
     var cssFormattedClasses = function (codePoints, options) {
         if (!options) {
-            options = { lineBreak: 'normal', wordBreak: 'normal' };
+            options = {
+                lineBreak: 'normal',
+                wordBreak: 'normal'
+            };
         }
-        var _a = codePointsToCharacterClasses(codePoints, options.lineBreak), indicies = _a[0], classTypes = _a[1], isLetterNumber = _a[2];
+        var _a = codePointsToCharacterClasses(codePoints, options.lineBreak),
+            indicies = _a[0],
+            classTypes = _a[1],
+            isLetterNumber = _a[2];
         if (options.wordBreak === 'break-all' || options.wordBreak === 'break-word') {
-            classTypes = classTypes.map(function (type) { return ([NU, AL, SA].indexOf(type) !== -1 ? ID : type); });
+            classTypes = classTypes.map(function (type) {
+                return ([NU, AL, SA].indexOf(type) !== -1 ? ID : type);
+            });
         }
-        var forbiddenBreakpoints = options.wordBreak === 'keep-all'
-            ? isLetterNumber.map(function (letterNumber, i) {
+        var forbiddenBreakpoints = options.wordBreak === 'keep-all' ?
+            isLetterNumber.map(function (letterNumber, i) {
                 return letterNumber && codePoints[i] >= 0x4e00 && codePoints[i] <= 0x9fff;
-            })
-            : undefined;
+            }) :
+            undefined;
         return [indicies, classTypes, forbiddenBreakpoints];
     };
     var Break = /** @class */ (function () {
@@ -766,25 +858,37 @@
     }());
     var LineBreaker = function (str, options) {
         var codePoints = toCodePoints(str);
-        var _a = cssFormattedClasses(codePoints, options), indicies = _a[0], classTypes = _a[1], forbiddenBreakpoints = _a[2];
+        var _a = cssFormattedClasses(codePoints, options),
+            indicies = _a[0],
+            classTypes = _a[1],
+            forbiddenBreakpoints = _a[2];
         var length = codePoints.length;
         var lastEnd = 0;
         var nextIndex = 0;
         return {
             next: function () {
                 if (nextIndex >= length) {
-                    return { done: true, value: null };
+                    return {
+                        done: true,
+                        value: null
+                    };
                 }
                 var lineBreak = BREAK_NOT_ALLOWED;
                 while (nextIndex < length &&
                     (lineBreak = _lineBreakAtIndex(codePoints, classTypes, indicies, ++nextIndex, forbiddenBreakpoints)) ===
-                        BREAK_NOT_ALLOWED) { }
+                    BREAK_NOT_ALLOWED) {}
                 if (lineBreak !== BREAK_NOT_ALLOWED || nextIndex === length) {
                     var value = new Break(codePoints, lineBreak, lastEnd, nextIndex);
                     lastEnd = nextIndex;
-                    return { value: value, done: false };
+                    return {
+                        value: value,
+                        done: false
+                    };
                 }
-                return { done: true, value: null };
+                return {
+                    done: true,
+                    value: null
+                };
             },
         };
     };
@@ -883,15 +987,27 @@
     var F = 0x0046;
     var U = 0x0055;
     var Z = 0x005a;
-    var isDigit = function (codePoint) { return codePoint >= ZERO && codePoint <= 0x0039; };
-    var isSurrogateCodePoint = function (codePoint) { return codePoint >= 0xd800 && codePoint <= 0xdfff; };
+    var isDigit = function (codePoint) {
+        return codePoint >= ZERO && codePoint <= 0x0039;
+    };
+    var isSurrogateCodePoint = function (codePoint) {
+        return codePoint >= 0xd800 && codePoint <= 0xdfff;
+    };
     var isHex = function (codePoint) {
         return isDigit(codePoint) || (codePoint >= A && codePoint <= F) || (codePoint >= a && codePoint <= f);
     };
-    var isLowerCaseLetter = function (codePoint) { return codePoint >= a && codePoint <= z; };
-    var isUpperCaseLetter = function (codePoint) { return codePoint >= A && codePoint <= Z; };
-    var isLetter = function (codePoint) { return isLowerCaseLetter(codePoint) || isUpperCaseLetter(codePoint); };
-    var isNonASCIICodePoint = function (codePoint) { return codePoint >= CONTROL; };
+    var isLowerCaseLetter = function (codePoint) {
+        return codePoint >= a && codePoint <= z;
+    };
+    var isUpperCaseLetter = function (codePoint) {
+        return codePoint >= A && codePoint <= Z;
+    };
+    var isLetter = function (codePoint) {
+        return isLowerCaseLetter(codePoint) || isUpperCaseLetter(codePoint);
+    };
+    var isNonASCIICodePoint = function (codePoint) {
+        return codePoint >= CONTROL;
+    };
     var isWhiteSpace = function (codePoint) {
         return codePoint === LINE_FEED || codePoint === CHARACTER_TABULATION || codePoint === SPACE$1;
     };
@@ -916,11 +1032,9 @@
     var isIdentifierStart = function (c1, c2, c3) {
         if (c1 === HYPHEN_MINUS) {
             return isNameStartCodePoint(c2) || isValidEscape(c2, c3);
-        }
-        else if (isNameStartCodePoint(c1)) {
+        } else if (isNameStartCodePoint(c1)) {
             return true;
-        }
-        else if (c1 === REVERSE_SOLIDUS && isValidEscape(c1, c2)) {
+        } else if (c1 === REVERSE_SOLIDUS && isValidEscape(c1, c2)) {
             return true;
         }
         return false;
@@ -983,33 +1097,63 @@
     var RIGHT_PARENTHESIS_TOKEN = {
         type: TokenType.RIGHT_PARENTHESIS_TOKEN
     };
-    var COMMA_TOKEN = { type: TokenType.COMMA_TOKEN };
-    var SUFFIX_MATCH_TOKEN = { type: TokenType.SUFFIX_MATCH_TOKEN };
-    var PREFIX_MATCH_TOKEN = { type: TokenType.PREFIX_MATCH_TOKEN };
-    var COLUMN_TOKEN = { type: TokenType.COLUMN_TOKEN };
-    var DASH_MATCH_TOKEN = { type: TokenType.DASH_MATCH_TOKEN };
-    var INCLUDE_MATCH_TOKEN = { type: TokenType.INCLUDE_MATCH_TOKEN };
+    var COMMA_TOKEN = {
+        type: TokenType.COMMA_TOKEN
+    };
+    var SUFFIX_MATCH_TOKEN = {
+        type: TokenType.SUFFIX_MATCH_TOKEN
+    };
+    var PREFIX_MATCH_TOKEN = {
+        type: TokenType.PREFIX_MATCH_TOKEN
+    };
+    var COLUMN_TOKEN = {
+        type: TokenType.COLUMN_TOKEN
+    };
+    var DASH_MATCH_TOKEN = {
+        type: TokenType.DASH_MATCH_TOKEN
+    };
+    var INCLUDE_MATCH_TOKEN = {
+        type: TokenType.INCLUDE_MATCH_TOKEN
+    };
     var LEFT_CURLY_BRACKET_TOKEN = {
         type: TokenType.LEFT_CURLY_BRACKET_TOKEN
     };
     var RIGHT_CURLY_BRACKET_TOKEN = {
         type: TokenType.RIGHT_CURLY_BRACKET_TOKEN
     };
-    var SUBSTRING_MATCH_TOKEN = { type: TokenType.SUBSTRING_MATCH_TOKEN };
-    var BAD_URL_TOKEN = { type: TokenType.BAD_URL_TOKEN };
-    var BAD_STRING_TOKEN = { type: TokenType.BAD_STRING_TOKEN };
-    var CDO_TOKEN = { type: TokenType.CDO_TOKEN };
-    var CDC_TOKEN = { type: TokenType.CDC_TOKEN };
-    var COLON_TOKEN = { type: TokenType.COLON_TOKEN };
-    var SEMICOLON_TOKEN = { type: TokenType.SEMICOLON_TOKEN };
+    var SUBSTRING_MATCH_TOKEN = {
+        type: TokenType.SUBSTRING_MATCH_TOKEN
+    };
+    var BAD_URL_TOKEN = {
+        type: TokenType.BAD_URL_TOKEN
+    };
+    var BAD_STRING_TOKEN = {
+        type: TokenType.BAD_STRING_TOKEN
+    };
+    var CDO_TOKEN = {
+        type: TokenType.CDO_TOKEN
+    };
+    var CDC_TOKEN = {
+        type: TokenType.CDC_TOKEN
+    };
+    var COLON_TOKEN = {
+        type: TokenType.COLON_TOKEN
+    };
+    var SEMICOLON_TOKEN = {
+        type: TokenType.SEMICOLON_TOKEN
+    };
     var LEFT_SQUARE_BRACKET_TOKEN = {
         type: TokenType.LEFT_SQUARE_BRACKET_TOKEN
     };
     var RIGHT_SQUARE_BRACKET_TOKEN = {
         type: TokenType.RIGHT_SQUARE_BRACKET_TOKEN
     };
-    var WHITESPACE_TOKEN = { type: TokenType.WHITESPACE_TOKEN };
-    var EOF_TOKEN = { type: TokenType.EOF_TOKEN };
+    var WHITESPACE_TOKEN = {
+        type: TokenType.WHITESPACE_TOKEN
+    };
+    var EOF_TOKEN = {
+        type: TokenType.EOF_TOKEN
+    };
     var Tokenizer = /** @class */ (function () {
         function Tokenizer() {
             this._value = [];
@@ -1038,7 +1182,11 @@
                     if (isNameCodePoint(c1) || isValidEscape(c2, c3)) {
                         var flags = isIdentifierStart(c1, c2, c3) ? FLAG_ID : FLAG_UNRESTRICTED;
                         var value = this.consumeName();
-                        return { type: TokenType.HASH_TOKEN, value: value, flags: flags };
+                        return {
+                            type: TokenType.HASH_TOKEN,
+                            value: value,
+                            flags: flags
+                        };
                     }
                     break;
                 case DOLLAR_SIGN:
@@ -1127,7 +1275,10 @@
                     var a3 = this.peekCodePoint(2);
                     if (isIdentifierStart(a1, a2, a3)) {
                         var value = this.consumeName();
-                        return { type: TokenType.AT_KEYWORD_TOKEN, value: value };
+                        return {
+                            type: TokenType.AT_KEYWORD_TOKEN,
+                            value: value
+                        };
                     }
                     break;
                 case LEFT_SQUARE_BRACKET:
@@ -1191,7 +1342,10 @@
                 this.reconsumeCodePoint(codePoint);
                 return this.consumeIdentLikeToken();
             }
-            return { type: TokenType.DELIM_TOKEN, value: fromCodePoint(codePoint) };
+            return {
+                type: TokenType.DELIM_TOKEN,
+                value: fromCodePoint(codePoint)
+            };
         };
         Tokenizer.prototype.consumeCodePoint = function () {
             var value = this._value.shift();
@@ -1220,9 +1374,17 @@
                 questionMarks = true;
             }
             if (questionMarks) {
-                var start_1 = parseInt(fromCodePoint.apply(void 0, digits.map(function (digit) { return (digit === QUESTION_MARK ? ZERO : digit); })), 16);
-                var end = parseInt(fromCodePoint.apply(void 0, digits.map(function (digit) { return (digit === QUESTION_MARK ? F : digit); })), 16);
-                return { type: TokenType.UNICODE_RANGE_TOKEN, start: start_1, end: end };
+                var start_1 = parseInt(fromCodePoint.apply(void 0, digits.map(function (digit) {
+                    return (digit === QUESTION_MARK ? ZERO : digit);
+                })), 16);
+                var end = parseInt(fromCodePoint.apply(void 0, digits.map(function (digit) {
+                    return (digit === QUESTION_MARK ? F : digit);
+                })), 16);
+                return {
+                    type: TokenType.UNICODE_RANGE_TOKEN,
+                    start: start_1,
+                    end: end
+                };
             }
             var start = parseInt(fromCodePoint.apply(void 0, digits), 16);
             if (this.peekCodePoint(0) === HYPHEN_MINUS && isHex(this.peekCodePoint(1))) {
@@ -1234,10 +1396,17 @@
                     codePoint = this.consumeCodePoint();
                 }
                 var end = parseInt(fromCodePoint.apply(void 0, endDigits), 16);
-                return { type: TokenType.UNICODE_RANGE_TOKEN, start: start, end: end };
-            }
-            else {
-                return { type: TokenType.UNICODE_RANGE_TOKEN, start: start, end: start };
+                return {
+                    type: TokenType.UNICODE_RANGE_TOKEN,
+                    start: start,
+                    end: end
+                };
+            } else {
+                return {
+                    type: TokenType.UNICODE_RANGE_TOKEN,
+                    start: start,
+                    end: start
+                };
             }
         };
         Tokenizer.prototype.consumeIdentLikeToken = function () {
@@ -1245,18 +1414,26 @@
             if (value.toLowerCase() === 'url' && this.peekCodePoint(0) === LEFT_PARENTHESIS) {
                 this.consumeCodePoint();
                 return this.consumeUrlToken();
-            }
-            else if (this.peekCodePoint(0) === LEFT_PARENTHESIS) {
+            } else if (this.peekCodePoint(0) === LEFT_PARENTHESIS) {
                 this.consumeCodePoint();
-                return { type: TokenType.FUNCTION_TOKEN, value: value };
+                return {
+                    type: TokenType.FUNCTION_TOKEN,
+                    value: value
+                };
             }
-            return { type: TokenType.IDENT_TOKEN, value: value };
+            return {
+                type: TokenType.IDENT_TOKEN,
+                value: value
+            };
         };
         Tokenizer.prototype.consumeUrlToken = function () {
             var value = [];
             this.consumeWhiteSpace();
             if (this.peekCodePoint(0) === EOF) {
-                return { type: TokenType.URL_TOKEN, value: '' };
+                return {
+                    type: TokenType.URL_TOKEN,
+                    value: ''
+                };
             }
             var next = this.peekCodePoint(0);
             if (next === APOSTROPHE || next === QUOTATION_MARK) {
@@ -1265,7 +1442,10 @@
                     this.consumeWhiteSpace();
                     if (this.peekCodePoint(0) === EOF || this.peekCodePoint(0) === RIGHT_PARENTHESIS) {
                         this.consumeCodePoint();
-                        return { type: TokenType.URL_TOKEN, value: stringToken.value };
+                        return {
+                            type: TokenType.URL_TOKEN,
+                            value: stringToken.value
+                        };
                     }
                 }
                 this.consumeBadUrlRemnants();
@@ -1274,34 +1454,35 @@
             while (true) {
                 var codePoint = this.consumeCodePoint();
                 if (codePoint === EOF || codePoint === RIGHT_PARENTHESIS) {
-                    return { type: TokenType.URL_TOKEN, value: fromCodePoint.apply(void 0, value) };
-                }
-                else if (isWhiteSpace(codePoint)) {
+                    return {
+                        type: TokenType.URL_TOKEN,
+                        value: fromCodePoint.apply(void 0, value)
+                    };
+                } else if (isWhiteSpace(codePoint)) {
                     this.consumeWhiteSpace();
                     if (this.peekCodePoint(0) === EOF || this.peekCodePoint(0) === RIGHT_PARENTHESIS) {
                         this.consumeCodePoint();
-                        return { type: TokenType.URL_TOKEN, value: fromCodePoint.apply(void 0, value) };
+                        return {
+                            type: TokenType.URL_TOKEN,
+                            value: fromCodePoint.apply(void 0, value)
+                        };
                     }
                     this.consumeBadUrlRemnants();
                     return BAD_URL_TOKEN;
-                }
-                else if (codePoint === QUOTATION_MARK ||
+                } else if (codePoint === QUOTATION_MARK ||
                     codePoint === APOSTROPHE ||
                     codePoint === LEFT_PARENTHESIS ||
                     isNonPrintableCodePoint(codePoint)) {
                     this.consumeBadUrlRemnants();
                     return BAD_URL_TOKEN;
-                }
-                else if (codePoint === REVERSE_SOLIDUS) {
+                } else if (codePoint === REVERSE_SOLIDUS) {
                     if (isValidEscape(codePoint, this.peekCodePoint(0))) {
                         value.push(this.consumeEscapedCodePoint());
-                    }
-                    else {
+                    } else {
                         this.consumeBadUrlRemnants();
                         return BAD_URL_TOKEN;
                     }
-                }
-                else {
+                } else {
                     value.push(codePoint);
                 }
             }
@@ -1340,7 +1521,10 @@
                 var codePoint = this._value[i];
                 if (codePoint === EOF || codePoint === undefined || codePoint === endingCodePoint) {
                     value += this.consumeStringSlice(i);
-                    return { type: TokenType.STRING_TOKEN, value: value };
+                    return {
+                        type: TokenType.STRING_TOKEN,
+                        value: value
+                    };
                 }
                 if (codePoint === LINE_FEED) {
                     this._value.splice(0, i);
@@ -1353,8 +1537,7 @@
                             value += this.consumeStringSlice(i);
                             i = -1;
                             this._value.shift();
-                        }
-                        else if (isValidEscape(codePoint, next)) {
+                        } else if (isValidEscape(codePoint, next)) {
                             value += this.consumeStringSlice(i);
                             value += fromCodePoint(this.consumeEscapedCodePoint());
                             i = -1;
@@ -1396,19 +1579,34 @@
             return [stringToNumber(repr), type];
         };
         Tokenizer.prototype.consumeNumericToken = function () {
-            var _a = this.consumeNumber(), number = _a[0], flags = _a[1];
+            var _a = this.consumeNumber(),
+                number = _a[0],
+                flags = _a[1];
             var c1 = this.peekCodePoint(0);
             var c2 = this.peekCodePoint(1);
             var c3 = this.peekCodePoint(2);
             if (isIdentifierStart(c1, c2, c3)) {
                 var unit = this.consumeName();
-                return { type: TokenType.DIMENSION_TOKEN, number: number, flags: flags, unit: unit };
+                return {
+                    type: TokenType.DIMENSION_TOKEN,
+                    number: number,
+                    flags: flags,
+                    unit: unit
+                };
             }
             if (c1 === PERCENTAGE_SIGN) {
                 this.consumeCodePoint();
-                return { type: TokenType.PERCENTAGE_TOKEN, number: number, flags: flags };
+                return {
+                    type: TokenType.PERCENTAGE_TOKEN,
+                    number: number,
+                    flags: flags
+                };
             }
-            return { type: TokenType.NUMBER_TOKEN, number: number, flags: flags };
+            return {
+                type: TokenType.NUMBER_TOKEN,
+                number: number,
+                flags: flags
+            };
         };
         Tokenizer.prototype.consumeEscapedCodePoint = function () {
             var codePoint = this.consumeCodePoint();
@@ -1437,11 +1635,9 @@
                 var codePoint = this.consumeCodePoint();
                 if (isNameCodePoint(codePoint)) {
                     result += fromCodePoint(codePoint);
-                }
-                else if (isValidEscape(codePoint, this.peekCodePoint(0))) {
+                } else if (isValidEscape(codePoint, this.peekCodePoint(0))) {
                     result += fromCodePoint(this.consumeEscapedCodePoint());
-                }
-                else {
+                } else {
                     this.reconsumeCodePoint(codePoint);
                     return result;
                 }
@@ -1507,7 +1703,10 @@
             return token;
         };
         Parser.prototype.consumeSimpleBlock = function (type) {
-            var block = { type: type, values: [] };
+            var block = {
+                type: type,
+                values: []
+            };
             var token = this.consumeToken();
             while (true) {
                 if (token.type === TokenType.EOF_TOKEN || isEndingTokenFor(token, type)) {
@@ -1542,14 +1741,24 @@
         };
         return Parser;
     }());
-    var isDimensionToken = function (token) { return token.type === TokenType.DIMENSION_TOKEN; };
-    var isNumberToken = function (token) { return token.type === TokenType.NUMBER_TOKEN; };
-    var isIdentToken = function (token) { return token.type === TokenType.IDENT_TOKEN; };
-    var isStringToken = function (token) { return token.type === TokenType.STRING_TOKEN; };
+    var isDimensionToken = function (token) {
+        return token.type === TokenType.DIMENSION_TOKEN;
+    };
+    var isNumberToken = function (token) {
+        return token.type === TokenType.NUMBER_TOKEN;
+    };
+    var isIdentToken = function (token) {
+        return token.type === TokenType.IDENT_TOKEN;
+    };
+    var isStringToken = function (token) {
+        return token.type === TokenType.STRING_TOKEN;
+    };
     var isIdentWithValue = function (token, value) {
         return isIdentToken(token) && token.value === value;
     };
-    var nonWhiteSpace = function (token) { return token.type !== TokenType.WHITESPACE_TOKEN; };
+    var nonWhiteSpace = function (token) {
+        return token.type !== TokenType.WHITESPACE_TOKEN;
+    };
     var nonFunctionArgSeparator = function (token) {
         return token.type !== TokenType.WHITESPACE_TOKEN && token.type !== TokenType.COMMA_TOKEN;
     };
@@ -1610,7 +1819,8 @@
         flags: FLAG_INTEGER
     };
     var getAbsoluteValueForTuple = function (tuple, width, height) {
-        var x = tuple[0], y = tuple[1];
+        var x = tuple[0],
+            y = tuple[1];
         return [getAbsoluteValue(x, width), getAbsoluteValue(typeof y !== 'undefined' ? y : x, height)];
     };
     var getAbsoluteValue = function (token, parent) {
@@ -1663,7 +1873,9 @@
     var parseNamedSide = function (tokens) {
         var sideOrCorner = tokens
             .filter(isIdentToken)
-            .map(function (ident) { return ident.value; })
+            .map(function (ident) {
+                return ident.value;
+            })
             .join(' ');
         switch (sideOrCorner) {
             case 'to bottom right':
@@ -1701,7 +1913,9 @@
         }
         return 0;
     };
-    var deg = function (deg) { return (Math.PI * deg) / 180; };
+    var deg = function (deg) {
+        return (Math.PI * deg) / 180;
+    };
 
     var color = {
         name: 'color',
@@ -1750,7 +1964,9 @@
             return COLORS.TRANSPARENT;
         }
     };
-    var isTransparent = function (color) { return (0xff & color) === 0; };
+    var isTransparent = function (color) {
+        return (0xff & color) === 0;
+    };
     var asString = function (color) {
         var alpha = 0xff & color;
         var blue = 0xff & (color >> 8);
@@ -1774,15 +1990,23 @@
     var rgb = function (args) {
         var tokens = args.filter(nonFunctionArgSeparator);
         if (tokens.length === 3) {
-            var _a = tokens.map(getTokenColorValue), r = _a[0], g = _a[1], b = _a[2];
+            var _a = tokens.map(getTokenColorValue),
+                r = _a[0],
+                g = _a[1],
+                b = _a[2];
             return pack(r, g, b, 1);
         }
         if (tokens.length === 4) {
-            var _b = tokens.map(getTokenColorValue), r = _b[0], g = _b[1], b = _b[2], a = _b[3];
+            var _b = tokens.map(getTokenColorValue),
+                r = _b[0],
+                g = _b[1],
+                b = _b[2],
+                a = _b[3];
             return pack(r, g, b, a);
         }
         return 0;
     };
+
     function hue2rgb(t1, t2, hue) {
         if (hue < 0) {
             hue += 1;
@@ -1792,20 +2016,20 @@
         }
         if (hue < 1 / 6) {
             return (t2 - t1) * hue * 6 + t1;
-        }
-        else if (hue < 1 / 2) {
+        } else if (hue < 1 / 2) {
             return t2;
-        }
-        else if (hue < 2 / 3) {
+        } else if (hue < 2 / 3) {
             return (t2 - t1) * 6 * (2 / 3 - hue) + t1;
-        }
-        else {
+        } else {
             return t1;
         }
     }
     var hsl = function (args) {
         var tokens = args.filter(nonFunctionArgSeparator);
-        var hue = tokens[0], saturation = tokens[1], lightness = tokens[2], alpha = tokens[3];
+        var hue = tokens[0],
+            saturation = tokens[1],
+            lightness = tokens[2],
+            alpha = tokens[3];
         var h = (hue.type === TokenType.NUMBER_TOKEN ? deg(hue.number) : angle.parse(hue)) / (Math.PI * 2);
         var s = isLengthPercentage(saturation) ? saturation.number / 100 : 0;
         var l = isLengthPercentage(lightness) ? lightness.number / 100 : 0;
@@ -2024,7 +2248,13 @@
     var parseColorStop = function (args) {
         var color$1 = color.parse(args[0]);
         var stop = args[1];
-        return stop && isLengthPercentage(stop) ? { color: color$1, stop: stop } : { color: color$1, stop: null };
+        return stop && isLengthPercentage(stop) ? {
+            color: color$1,
+            stop: stop
+        } : {
+            color: color$1,
+            stop: null
+        };
     };
     var processColorStops = function (stops, lineLength) {
         var first = stops[0];
@@ -2043,13 +2273,11 @@
                 var absoluteValue = getAbsoluteValue(stop_1, lineLength);
                 if (absoluteValue > previous) {
                     processStops.push(absoluteValue);
-                }
-                else {
+                } else {
                     processStops.push(previous);
                 }
                 previous = absoluteValue;
-            }
-            else {
+            } else {
                 processStops.push(null);
             }
         }
@@ -2060,8 +2288,7 @@
                 if (gapBegin === null) {
                     gapBegin = i;
                 }
-            }
-            else if (gapBegin !== null) {
+            } else if (gapBegin !== null) {
                 var gapLength = i - gapBegin;
                 var beforeGap = processStops[gapBegin - 1];
                 var gapValue = (stop_2 - beforeGap) / (gapLength + 1);
@@ -2073,7 +2300,10 @@
         }
         return stops.map(function (_a, i) {
             var color = _a.color;
-            return { color: color, stop: Math.max(Math.min(1, processStops[i] / lineLength), 0) };
+            return {
+                color: color,
+                stop: Math.max(Math.min(1, processStops[i] / lineLength), 0)
+            };
         });
     };
     var getAngleFromCorner = function (corner, width, height) {
@@ -2093,11 +2323,19 @@
         var xDiff = Math.cos(radian - Math.PI / 2) * halfLineLength;
         return [lineLength, halfWidth - xDiff, halfWidth + xDiff, halfHeight - yDiff, halfHeight + yDiff];
     };
-    var distance = function (a, b) { return Math.sqrt(a * a + b * b); };
+    var distance = function (a, b) {
+        return Math.sqrt(a * a + b * b);
+    };
     var findCorner = function (width, height, x, y, closest) {
-        var corners = [[0, 0], [0, height], [width, 0], [width, height]];
+        var corners = [
+            [0, 0],
+            [0, height],
+            [width, 0],
+            [width, height]
+        ];
         return corners.reduce(function (stat, corner) {
-            var cx = corner[0], cy = corner[1];
+            var cx = corner[0],
+                cy = corner[1];
             var d = distance(x - cx, y - cy);
             if (closest ? d < stat.optimumDistance : d > stat.optimumDistance) {
                 return {
@@ -2120,8 +2358,7 @@
                 // If the shape is an ellipse, it exactly meets the closest side in each dimension.
                 if (gradient.shape === CSSRadialShape.CIRCLE) {
                     rx = ry = Math.min(Math.abs(x), Math.abs(x - width), Math.abs(y), Math.abs(y - height));
-                }
-                else if (gradient.shape === CSSRadialShape.ELLIPSE) {
+                } else if (gradient.shape === CSSRadialShape.ELLIPSE) {
                     rx = Math.min(Math.abs(x), Math.abs(x - width));
                     ry = Math.min(Math.abs(y), Math.abs(y - height));
                 }
@@ -2131,11 +2368,12 @@
                 // If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.
                 if (gradient.shape === CSSRadialShape.CIRCLE) {
                     rx = ry = Math.min(distance(x, y), distance(x, y - height), distance(x - width, y), distance(x - width, y - height));
-                }
-                else if (gradient.shape === CSSRadialShape.ELLIPSE) {
+                } else if (gradient.shape === CSSRadialShape.ELLIPSE) {
                     // Compute the ratio ry/rx (which is to be the same as for "closest-side")
                     var c = Math.min(Math.abs(y), Math.abs(y - height)) / Math.min(Math.abs(x), Math.abs(x - width));
-                    var _a = findCorner(width, height, x, y, true), cx = _a[0], cy = _a[1];
+                    var _a = findCorner(width, height, x, y, true),
+                        cx = _a[0],
+                        cy = _a[1];
                     rx = distance(cx - x, (cy - y) / c);
                     ry = c * rx;
                 }
@@ -2144,8 +2382,7 @@
                 // Same as closest-side, except the ending shape is sized based on the farthest side(s)
                 if (gradient.shape === CSSRadialShape.CIRCLE) {
                     rx = ry = Math.max(Math.abs(x), Math.abs(x - width), Math.abs(y), Math.abs(y - height));
-                }
-                else if (gradient.shape === CSSRadialShape.ELLIPSE) {
+                } else if (gradient.shape === CSSRadialShape.ELLIPSE) {
                     rx = Math.max(Math.abs(x), Math.abs(x - width));
                     ry = Math.max(Math.abs(y), Math.abs(y - height));
                 }
@@ -2155,11 +2392,12 @@
                 // If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.
                 if (gradient.shape === CSSRadialShape.CIRCLE) {
                     rx = ry = Math.max(distance(x, y), distance(x, y - height), distance(x - width, y), distance(x - width, y - height));
-                }
-                else if (gradient.shape === CSSRadialShape.ELLIPSE) {
+                } else if (gradient.shape === CSSRadialShape.ELLIPSE) {
                     // Compute the ratio ry/rx (which is to be the same as for "farthest-side")
                     var c = Math.max(Math.abs(y), Math.abs(y - height)) / Math.max(Math.abs(x), Math.abs(x - width));
-                    var _b = findCorner(width, height, x, y, false), cx = _b[0], cy = _b[1];
+                    var _b = findCorner(width, height, x, y, false),
+                        cx = _b[0],
+                        cy = _b[1];
                     rx = distance(cx - x, (cy - y) / c);
                     ry = c * rx;
                 }
@@ -2181,8 +2419,7 @@
                 if (firstToken.type === TokenType.IDENT_TOKEN && firstToken.value === 'to') {
                     angle$1 = parseNamedSide(arg);
                     return;
-                }
-                else if (isAngle(firstToken)) {
+                } else if (isAngle(firstToken)) {
                     angle$1 = angle.parse(firstToken);
                     return;
                 }
@@ -2190,7 +2427,11 @@
             var colorStop = parseColorStop(arg);
             stops.push(colorStop);
         });
-        return { angle: angle$1, stops: stops, type: CSSImageType.LINEAR_GRADIENT };
+        return {
+            angle: angle$1,
+            stops: stops,
+            type: CSSImageType.LINEAR_GRADIENT
+        };
     };
 
     var prefixLinearGradient = function (tokens) {
@@ -2199,12 +2440,10 @@
         parseFunctionArgs(tokens).forEach(function (arg, i) {
             if (i === 0) {
                 var firstToken = arg[0];
-                if (firstToken.type === TokenType.IDENT_TOKEN &&
-                    ['top', 'left', 'right', 'bottom'].indexOf(firstToken.value) !== -1) {
+                if (firstToken.type === TokenType.IDENT_TOKEN && ['top', 'left', 'right', 'bottom'].indexOf(firstToken.value) !== -1) {
                     angle$1 = parseNamedSide(arg);
                     return;
-                }
-                else if (isAngle(firstToken)) {
+                } else if (isAngle(firstToken)) {
                     angle$1 = (angle.parse(firstToken) + deg(270)) % deg(360);
                     return;
                 }
@@ -2239,8 +2478,12 @@
         }
         return false;
     };
-    var testCORS = function () { return typeof new Image().crossOrigin !== 'undefined'; };
-    var testResponseType = function () { return typeof new XMLHttpRequest().responseType === 'string'; };
+    var testCORS = function () {
+        return typeof new Image().crossOrigin !== 'undefined';
+    };
+    var testResponseType = function () {
+        return typeof new XMLHttpRequest().responseType === 'string';
+    };
     var testSVG = function (document) {
         var img = new Image();
         var canvas = document.createElement('canvas');
@@ -2252,8 +2495,7 @@
         try {
             ctx.drawImage(img, 0, 0);
             canvas.toDataURL();
-        }
-        catch (e) {
+        } catch (e) {
             return false;
         }
         return true;
@@ -2280,24 +2522,26 @@
         ctx.fillRect(0, 0, size, size);
         return loadSerializedSVG(svg)
             .then(function (img) {
-            ctx.drawImage(img, 0, 0);
-            var data = ctx.getImageData(0, 0, size, size).data;
-            ctx.fillStyle = 'red';
-            ctx.fillRect(0, 0, size, size);
-            var node = document.createElement('div');
-            node.style.backgroundImage = "url(" + greenImageSrc + ")";
-            node.style.height = size + "px";
-            // Firefox 55 does not render inline <img /> tags
-            return isGreenPixel(data)
-                ? loadSerializedSVG(createForeignObjectSVG(size, size, 0, 0, node))
-                : Promise.reject(false);
-        })
+                ctx.drawImage(img, 0, 0);
+                var data = ctx.getImageData(0, 0, size, size).data;
+                ctx.fillStyle = 'red';
+                ctx.fillRect(0, 0, size, size);
+                var node = document.createElement('div');
+                node.style.backgroundImage = "url(" + greenImageSrc + ")";
+                node.style.height = size + "px";
+                // Firefox 55 does not render inline <img /> tags
+                return isGreenPixel(data) ?
+                    loadSerializedSVG(createForeignObjectSVG(size, size, 0, 0, node)) :
+                    Promise.reject(false);
+            })
             .then(function (img) {
-            ctx.drawImage(img, 0, 0);
-            // Edge does not render background-images
-            return isGreenPixel(ctx.getImageData(0, 0, size, size).data);
-        })
-            .catch(function () { return false; });
+                ctx.drawImage(img, 0, 0);
+                // Edge does not render background-images
+                return isGreenPixel(ctx.getImageData(0, 0, size, size).data);
+            })
+            .catch(function () {
+                return false;
+            });
     };
     var createForeignObjectSVG = function (width, height, x, y, node) {
         var xmlns = 'http://www.w3.org/2000/svg';
@@ -2317,7 +2561,9 @@
     var loadSerializedSVG = function (svg) {
         return new Promise(function (resolve, reject) {
             var img = new Image();
-            img.onload = function () { return resolve(img); };
+            img.onload = function () {
+                return resolve(img);
+            };
             img.onerror = reject;
             img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(new XMLSerializer().serializeToString(svg));
         });
@@ -2325,41 +2571,54 @@
     var FEATURES = {
         get SUPPORT_RANGE_BOUNDS() {
             var value = testRangeBounds(document);
-            Object.defineProperty(FEATURES, 'SUPPORT_RANGE_BOUNDS', { value: value });
+            Object.defineProperty(FEATURES, 'SUPPORT_RANGE_BOUNDS', {
+                value: value
+            });
             return value;
         },
         get SUPPORT_SVG_DRAWING() {
             var value = testSVG(document);
-            Object.defineProperty(FEATURES, 'SUPPORT_SVG_DRAWING', { value: value });
+            Object.defineProperty(FEATURES, 'SUPPORT_SVG_DRAWING', {
+                value: value
+            });
             return value;
         },
         get SUPPORT_FOREIGNOBJECT_DRAWING() {
-            var value = typeof Array.from === 'function' && typeof window.fetch === 'function'
-                ? testForeignObject(document)
-                : Promise.resolve(false);
-            Object.defineProperty(FEATURES, 'SUPPORT_FOREIGNOBJECT_DRAWING', { value: value });
+            var value = typeof Array.from === 'function' && typeof window.fetch === 'function' ?
+                testForeignObject(document) :
+                Promise.resolve(false);
+            Object.defineProperty(FEATURES, 'SUPPORT_FOREIGNOBJECT_DRAWING', {
+                value: value
+            });
             return value;
         },
         get SUPPORT_CORS_IMAGES() {
             var value = testCORS();
-            Object.defineProperty(FEATURES, 'SUPPORT_CORS_IMAGES', { value: value });
+            Object.defineProperty(FEATURES, 'SUPPORT_CORS_IMAGES', {
+                value: value
+            });
             return value;
         },
         get SUPPORT_RESPONSE_TYPE() {
             var value = testResponseType();
-            Object.defineProperty(FEATURES, 'SUPPORT_RESPONSE_TYPE', { value: value });
+            Object.defineProperty(FEATURES, 'SUPPORT_RESPONSE_TYPE', {
+                value: value
+            });
             return value;
         },
         get SUPPORT_CORS_XHR() {
             var value = 'withCredentials' in new XMLHttpRequest();
-            Object.defineProperty(FEATURES, 'SUPPORT_CORS_XHR', { value: value });
+            Object.defineProperty(FEATURES, 'SUPPORT_CORS_XHR', {
+                value: value
+            });
             return value;
         }
     };
 
     var Logger = /** @class */ (function () {
         function Logger(_a) {
-            var id = _a.id, enabled = _a.enabled;
+            var id = _a.id,
+                enabled = _a.enabled;
             this.id = id;
             this.enabled = enabled;
             this.start = Date.now();
@@ -2375,8 +2634,7 @@
                 if (typeof window !== 'undefined' && window.console && typeof console.debug === 'function') {
                     // eslint-disable-next-line no-console
                     console.debug.apply(console, [this.id, this.getTime() + "ms"].concat(args));
-                }
-                else {
+                } else {
                     this.info.apply(this, args);
                 }
             }
@@ -2422,8 +2680,7 @@
                 if (typeof window !== 'undefined' && window.console && typeof console.error === 'function') {
                     // eslint-disable-next-line no-console
                     console.error.apply(console, [this.id, this.getTime() + "ms"].concat(args));
-                }
-                else {
+                } else {
                     this.info.apply(this, args);
                 }
             }
@@ -2433,8 +2690,7 @@
     }());
 
     var CacheStorage = /** @class */ (function () {
-        function CacheStorage() {
-        }
+        function CacheStorage() {}
         CacheStorage.create = function (name, options) {
             return (CacheStorage._caches[name] = new Cache(name, options));
         };
@@ -2518,34 +2774,41 @@
                                 FEATURES.SUPPORT_CORS_XHR &&
                                 !useCORS;
                             if (!isSameOrigin && this._options.allowTaint === false && !isInlineImage(key) && !useProxy && !useCORS) {
-                                return [2 /*return*/];
+                                return [2 /*return*/ ];
                             }
                             src = key;
-                            if (!useProxy) return [3 /*break*/, 2];
-                            return [4 /*yield*/, this.proxy(src)];
+                            if (!useProxy) return [3 /*break*/ , 2];
+                            return [4 /*yield*/ , this.proxy(src)];
                         case 1:
                             src = _a.sent();
                             _a.label = 2;
                         case 2:
                             Logger.getInstance(this.id).debug("Added image " + key.substring(0, 256));
-                            return [4 /*yield*/, new Promise(function (resolve, reject) {
-                                    var img = new Image();
-                                    img.onload = function () { return resolve(img); };
-                                    img.onerror = reject;
-                                    //ios safari 10.3 taints canvas with data urls unless crossOrigin is set to anonymous
-                                    if (isInlineBase64Image(src) || useCORS) {
-                                        img.crossOrigin = 'anonymous';
-                                    }
-                                    img.src = src;
-                                    if (img.complete === true) {
-                                        // Inline XML images may fail to parse, throwing an Error later on
-                                        setTimeout(function () { return resolve(img); }, 500);
-                                    }
-                                    if (_this._options.imageTimeout > 0) {
-                                        setTimeout(function () { return reject("Timed out (" + _this._options.imageTimeout + "ms) loading image"); }, _this._options.imageTimeout);
-                                    }
-                                })];
-                        case 3: return [2 /*return*/, _a.sent()];
+                            return [4 /*yield*/ , new Promise(function (resolve, reject) {
+                                var img = new Image();
+                                img.onload = function () {
+                                    return resolve(img);
+                                };
+                                img.onerror = reject;
+                                //ios safari 10.3 taints canvas with data urls unless crossOrigin is set to anonymous
+                                if (isInlineBase64Image(src) || useCORS) {
+                                    img.crossOrigin = 'anonymous';
+                                }
+                                img.src = src;
+                                if (img.complete === true) {
+                                    // Inline XML images may fail to parse, throwing an Error later on
+                                    setTimeout(function () {
+                                        return resolve(img);
+                                    }, 500);
+                                }
+                                if (_this._options.imageTimeout > 0) {
+                                    setTimeout(function () {
+                                        return reject("Timed out (" + _this._options.imageTimeout + "ms) loading image");
+                                    }, _this._options.imageTimeout);
+                                }
+                            })];
+                        case 3:
+                            return [2 /*return*/ , _a.sent()];
                     }
                 });
             });
@@ -2570,15 +2833,17 @@
                     if (xhr.status === 200) {
                         if (responseType === 'text') {
                             resolve(xhr.response);
-                        }
-                        else {
+                        } else {
                             var reader_1 = new FileReader();
-                            reader_1.addEventListener('load', function () { return resolve(reader_1.result); }, false);
-                            reader_1.addEventListener('error', function (e) { return reject(e); }, false);
+                            reader_1.addEventListener('load', function () {
+                                return resolve(reader_1.result);
+                            }, false);
+                            reader_1.addEventListener('error', function (e) {
+                                return reject(e);
+                            }, false);
                             reader_1.readAsDataURL(xhr.response);
                         }
-                    }
-                    else {
+                    } else {
                         reject("Failed to proxy resource " + key + " with status code " + xhr.status);
                     }
                 };
@@ -2590,7 +2855,9 @@
                 if (_this._options.imageTimeout) {
                     var timeout_1 = _this._options.imageTimeout;
                     xhr.timeout = timeout_1;
-                    xhr.ontimeout = function () { return reject("Timed out (" + timeout_1 + "ms) proxying " + key); };
+                    xhr.ontimeout = function () {
+                        return reject("Timed out (" + timeout_1 + "ms) proxying " + key);
+                    };
                 }
                 xhr.send();
             });
@@ -2600,11 +2867,21 @@
     var INLINE_SVG = /^data:image\/svg\+xml/i;
     var INLINE_BASE64 = /^data:image\/.*;base64,/i;
     var INLINE_IMG = /^data:image\/.*/i;
-    var isRenderable = function (src) { return FEATURES.SUPPORT_SVG_DRAWING || !isSVG(src); };
-    var isInlineImage = function (src) { return INLINE_IMG.test(src); };
-    var isInlineBase64Image = function (src) { return INLINE_BASE64.test(src); };
-    var isBlobImage = function (src) { return src.substr(0, 4) === 'blob'; };
-    var isSVG = function (src) { return src.substr(-3).toLowerCase() === 'svg' || INLINE_SVG.test(src); };
+    var isRenderable = function (src) {
+        return FEATURES.SUPPORT_SVG_DRAWING || !isSVG(src);
+    };
+    var isInlineImage = function (src) {
+        return INLINE_IMG.test(src);
+    };
+    var isInlineBase64Image = function (src) {
+        return INLINE_BASE64.test(src);
+    };
+    var isBlobImage = function (src) {
+        return src.substr(0, 4) === 'blob';
+    };
+    var isSVG = function (src) {
+        return src.substr(-3).toLowerCase() === 'svg' || INLINE_SVG.test(src);
+    };
 
     var webkitGradient = function (tokens) {
         var angle = deg(180);
@@ -2619,8 +2896,7 @@
                 if (isIdentToken(firstToken) && firstToken.value === 'linear') {
                     type = CSSImageType.LINEAR_GRADIENT;
                     return;
-                }
-                else if (isIdentToken(firstToken) && firstToken.value === 'radial') {
+                } else if (isIdentToken(firstToken) && firstToken.value === 'radial') {
                     type = CSSImageType.RADIAL_GRADIENT;
                     return;
                 }
@@ -2628,20 +2904,28 @@
             if (firstToken.type === TokenType.FUNCTION) {
                 if (firstToken.name === 'from') {
                     var color$1 = color.parse(firstToken.values[0]);
-                    stops.push({ stop: ZERO_LENGTH, color: color$1 });
-                }
-                else if (firstToken.name === 'to') {
+                    stops.push({
+                        stop: ZERO_LENGTH,
+                        color: color$1
+                    });
+                } else if (firstToken.name === 'to') {
                     var color$1 = color.parse(firstToken.values[0]);
-                    stops.push({ stop: HUNDRED_PERCENT, color: color$1 });
-                }
-                else if (firstToken.name === 'color-stop') {
+                    stops.push({
+                        stop: HUNDRED_PERCENT,
+                        color: color$1
+                    });
+                } else if (firstToken.name === 'color-stop') {
                     var values = firstToken.values.filter(nonFunctionArgSeparator);
                     if (values.length === 2) {
                         var color$1 = color.parse(values[1]);
                         var stop_1 = values[0];
                         if (isNumberToken(stop_1)) {
                             stops.push({
-                                stop: { type: TokenType.PERCENTAGE_TOKEN, number: stop_1.number * 100, flags: stop_1.flags },
+                                stop: {
+                                    type: TokenType.PERCENTAGE_TOKEN,
+                                    number: stop_1.number * 100,
+                                    flags: stop_1.flags
+                                },
                                 color: color$1
                             });
                         }
@@ -2649,13 +2933,17 @@
                 }
             }
         });
-        return type === CSSImageType.LINEAR_GRADIENT
-            ? {
-                angle: (angle + deg(180)) % deg(360),
-                stops: stops,
-                type: type
-            }
-            : { size: size, shape: shape, stops: stops, position: position, type: type };
+        return type === CSSImageType.LINEAR_GRADIENT ? {
+            angle: (angle + deg(180)) % deg(360),
+            stops: stops,
+            type: type
+        } : {
+            size: size,
+            shape: shape,
+            stops: stops,
+            position: position,
+            type: type
+        };
     };
 
     var CLOSEST_SIDE = 'closest-side';
@@ -2691,12 +2979,10 @@
                                     position.push(HUNDRED_PERCENT);
                                     return acc;
                             }
-                        }
-                        else if (isLengthPercentage(token) || isLength(token)) {
+                        } else if (isLengthPercentage(token) || isLength(token)) {
                             position.push(token);
                         }
-                    }
-                    else if (isIdentToken(token)) {
+                    } else if (isIdentToken(token)) {
                         switch (token.value) {
                             case CIRCLE:
                                 shape = CSSRadialShape.CIRCLE;
@@ -2722,8 +3008,7 @@
                                 size = CSSRadialExtent.FARTHEST_CORNER;
                                 return false;
                         }
-                    }
-                    else if (isLength(token) || isLengthPercentage(token)) {
+                    } else if (isLength(token) || isLengthPercentage(token)) {
                         if (!Array.isArray(size)) {
                             size = [];
                         }
@@ -2738,7 +3023,13 @@
                 stops.push(colorStop);
             }
         });
-        return { size: size, shape: shape, stops: stops, position: position, type: CSSImageType.RADIAL_GRADIENT };
+        return {
+            size: size,
+            shape: shape,
+            stops: stops,
+            position: position,
+            type: CSSImageType.RADIAL_GRADIENT
+        };
     };
 
     var prefixRadialGradient = function (tokens) {
@@ -2764,15 +3055,13 @@
                                 position.push(HUNDRED_PERCENT);
                                 return false;
                         }
-                    }
-                    else if (isLengthPercentage(token) || isLength(token)) {
+                    } else if (isLengthPercentage(token) || isLength(token)) {
                         position.push(token);
                         return false;
                     }
                     return acc;
                 }, isColorStop);
-            }
-            else if (i === 1) {
+            } else if (i === 1) {
                 isColorStop = arg.reduce(function (acc, token) {
                     if (isIdentToken(token)) {
                         switch (token.value) {
@@ -2797,8 +3086,7 @@
                                 size = CSSRadialExtent.FARTHEST_CORNER;
                                 return false;
                         }
-                    }
-                    else if (isLength(token) || isLengthPercentage(token)) {
+                    } else if (isLength(token) || isLengthPercentage(token)) {
                         if (!Array.isArray(size)) {
                             size = [];
                         }
@@ -2813,7 +3101,13 @@
                 stops.push(colorStop);
             }
         });
-        return { size: size, shape: shape, stops: stops, position: position, type: CSSImageType.RADIAL_GRADIENT };
+        return {
+            size: size,
+            shape: shape,
+            stops: stops,
+            position: position,
+            type: CSSImageType.RADIAL_GRADIENT
+        };
     };
 
     var CSSImageType;
@@ -2844,7 +3138,10 @@
         name: 'image',
         parse: function (value) {
             if (value.type === TokenType.URL_TOKEN) {
-                var image_1 = { url: value.value, type: CSSImageType.URL };
+                var image_1 = {
+                    url: value.value,
+                    type: CSSImageType.URL
+                };
                 CacheStorage.getInstance().addImage(value.value);
                 return image_1;
             }
@@ -2858,6 +3155,7 @@
             throw new Error("Unsupported image type");
         }
     };
+
     function isSupportedImage(value) {
         return value.type !== TokenType.FUNCTION || SUPPORTED_IMAGE_FUNCTIONS[value.name];
     }
@@ -2888,7 +3186,9 @@
             if (first.type === TokenType.IDENT_TOKEN && first.value === 'none') {
                 return [];
             }
-            return tokens.filter(function (value) { return nonFunctionArgSeparator(value) && isSupportedImage(value); }).map(image.parse);
+            return tokens.filter(function (value) {
+                return nonFunctionArgSeparator(value) && isSupportedImage(value);
+            }).map(image.parse);
         }
     };
 
@@ -2902,12 +3202,12 @@
                 if (isIdentToken(token)) {
                     switch (token.value) {
                         case 'padding-box':
-                            return 1 /* PADDING_BOX */;
+                            return 1 /* PADDING_BOX */ ;
                         case 'content-box':
-                            return 2 /* CONTENT_BOX */;
+                            return 2 /* CONTENT_BOX */ ;
                     }
                 }
-                return 0 /* BORDER_BOX */;
+                return 0 /* BORDER_BOX */ ;
             });
         }
     };
@@ -2919,7 +3219,9 @@
         prefix: false,
         parse: function (tokens) {
             return parseFunctionArgs(tokens)
-                .map(function (values) { return values.filter(isLengthPercentage); })
+                .map(function (values) {
+                    return values.filter(isLengthPercentage);
+                })
                 .map(parseLengthPercentageTuple);
         }
     };
@@ -2939,11 +3241,13 @@
         parse: function (tokens) {
             return parseFunctionArgs(tokens)
                 .map(function (values) {
-                return values
-                    .filter(isIdentToken)
-                    .map(function (token) { return token.value; })
-                    .join(' ');
-            })
+                    return values
+                        .filter(isIdentToken)
+                        .map(function (token) {
+                            return token.value;
+                        })
+                        .join(' ');
+                })
                 .map(parseBackgroundRepeat);
         }
     };
@@ -2975,32 +3279,40 @@
         prefix: false,
         type: PropertyDescriptorParsingType.LIST,
         parse: function (tokens) {
-            return parseFunctionArgs(tokens).map(function (values) { return values.filter(isBackgroundSizeInfoToken); });
+            return parseFunctionArgs(tokens).map(function (values) {
+                return values.filter(isBackgroundSizeInfoToken);
+            });
         }
     };
     var isBackgroundSizeInfoToken = function (value) {
         return isIdentToken(value) || isLengthPercentage(value);
     };
 
-    var borderColorForSide = function (side) { return ({
-        name: "border-" + side + "-color",
-        initialValue: 'transparent',
-        prefix: false,
-        type: PropertyDescriptorParsingType.TYPE_VALUE,
-        format: 'color'
-    }); };
+    var borderColorForSide = function (side) {
+        return ({
+            name: "border-" + side + "-color",
+            initialValue: 'transparent',
+            prefix: false,
+            type: PropertyDescriptorParsingType.TYPE_VALUE,
+            format: 'color'
+        });
+    };
     var borderTopColor = borderColorForSide('top');
     var borderRightColor = borderColorForSide('right');
     var borderBottomColor = borderColorForSide('bottom');
     var borderLeftColor = borderColorForSide('left');
 
-    var borderRadiusForSide = function (side) { return ({
-        name: "border-radius-" + side,
-        initialValue: '0 0',
-        prefix: false,
-        type: PropertyDescriptorParsingType.LIST,
-        parse: function (tokens) { return parseLengthPercentageTuple(tokens.filter(isLengthPercentage)); }
-    }); };
+    var borderRadiusForSide = function (side) {
+        return ({
+            name: "border-radius-" + side,
+            initialValue: '0 0',
+            prefix: false,
+            type: PropertyDescriptorParsingType.LIST,
+            parse: function (tokens) {
+                return parseLengthPercentageTuple(tokens.filter(isLengthPercentage));
+            }
+        });
+    };
     var borderTopLeftRadius = borderRadiusForSide('top-left');
     var borderTopRightRadius = borderRadiusForSide('top-right');
     var borderBottomRightRadius = borderRadiusForSide('bottom-right');
@@ -3011,36 +3323,40 @@
         BORDER_STYLE[BORDER_STYLE["NONE"] = 0] = "NONE";
         BORDER_STYLE[BORDER_STYLE["SOLID"] = 1] = "SOLID";
     })(BORDER_STYLE || (BORDER_STYLE = {}));
-    var borderStyleForSide = function (side) { return ({
-        name: "border-" + side + "-style",
-        initialValue: 'solid',
-        prefix: false,
-        type: PropertyDescriptorParsingType.IDENT_VALUE,
-        parse: function (style) {
-            switch (style) {
-                case 'none':
-                    return BORDER_STYLE.NONE;
+    var borderStyleForSide = function (side) {
+        return ({
+            name: "border-" + side + "-style",
+            initialValue: 'solid',
+            prefix: false,
+            type: PropertyDescriptorParsingType.IDENT_VALUE,
+            parse: function (style) {
+                switch (style) {
+                    case 'none':
+                        return BORDER_STYLE.NONE;
+                }
+                return BORDER_STYLE.SOLID;
             }
-            return BORDER_STYLE.SOLID;
-        }
-    }); };
+        });
+    };
     var borderTopStyle = borderStyleForSide('top');
     var borderRightStyle = borderStyleForSide('right');
     var borderBottomStyle = borderStyleForSide('bottom');
     var borderLeftStyle = borderStyleForSide('left');
 
-    var borderWidthForSide = function (side) { return ({
-        name: "border-" + side + "-width",
-        initialValue: '0',
-        type: PropertyDescriptorParsingType.VALUE,
-        prefix: false,
-        parse: function (token) {
-            if (isDimensionToken(token)) {
-                return token.number;
+    var borderWidthForSide = function (side) {
+        return ({
+            name: "border-" + side + "-width",
+            initialValue: '0',
+            type: PropertyDescriptorParsingType.VALUE,
+            prefix: false,
+            parse: function (token) {
+                if (isDimensionToken(token)) {
+                    return token.number;
+                }
+                return 0;
             }
-            return 0;
-        }
-    }); };
+        });
+    };
     var borderTopWidth = borderWidthForSide('top');
     var borderRightWidth = borderWidthForSide('right');
     var borderBottomWidth = borderWidthForSide('bottom');
@@ -3062,73 +3378,73 @@
         parse: function (tokens) {
             return tokens.filter(isIdentToken).reduce(function (bit, token) {
                 return bit | parseDisplayValue(token.value);
-            }, 0 /* NONE */);
+            }, 0 /* NONE */ );
         }
     };
     var parseDisplayValue = function (display) {
         switch (display) {
             case 'block':
-                return 2 /* BLOCK */;
+                return 2 /* BLOCK */ ;
             case 'inline':
-                return 4 /* INLINE */;
+                return 4 /* INLINE */ ;
             case 'run-in':
-                return 8 /* RUN_IN */;
+                return 8 /* RUN_IN */ ;
             case 'flow':
-                return 16 /* FLOW */;
+                return 16 /* FLOW */ ;
             case 'flow-root':
-                return 32 /* FLOW_ROOT */;
+                return 32 /* FLOW_ROOT */ ;
             case 'table':
-                return 64 /* TABLE */;
+                return 64 /* TABLE */ ;
             case 'flex':
             case '-webkit-flex':
-                return 128 /* FLEX */;
+                return 128 /* FLEX */ ;
             case 'grid':
             case '-ms-grid':
-                return 256 /* GRID */;
+                return 256 /* GRID */ ;
             case 'ruby':
-                return 512 /* RUBY */;
+                return 512 /* RUBY */ ;
             case 'subgrid':
-                return 1024 /* SUBGRID */;
+                return 1024 /* SUBGRID */ ;
             case 'list-item':
-                return 2048 /* LIST_ITEM */;
+                return 2048 /* LIST_ITEM */ ;
             case 'table-row-group':
-                return 4096 /* TABLE_ROW_GROUP */;
+                return 4096 /* TABLE_ROW_GROUP */ ;
             case 'table-header-group':
-                return 8192 /* TABLE_HEADER_GROUP */;
+                return 8192 /* TABLE_HEADER_GROUP */ ;
             case 'table-footer-group':
-                return 16384 /* TABLE_FOOTER_GROUP */;
+                return 16384 /* TABLE_FOOTER_GROUP */ ;
             case 'table-row':
-                return 32768 /* TABLE_ROW */;
+                return 32768 /* TABLE_ROW */ ;
             case 'table-cell':
-                return 65536 /* TABLE_CELL */;
+                return 65536 /* TABLE_CELL */ ;
             case 'table-column-group':
-                return 131072 /* TABLE_COLUMN_GROUP */;
+                return 131072 /* TABLE_COLUMN_GROUP */ ;
             case 'table-column':
-                return 262144 /* TABLE_COLUMN */;
+                return 262144 /* TABLE_COLUMN */ ;
             case 'table-caption':
-                return 524288 /* TABLE_CAPTION */;
+                return 524288 /* TABLE_CAPTION */ ;
             case 'ruby-base':
-                return 1048576 /* RUBY_BASE */;
+                return 1048576 /* RUBY_BASE */ ;
             case 'ruby-text':
-                return 2097152 /* RUBY_TEXT */;
+                return 2097152 /* RUBY_TEXT */ ;
             case 'ruby-base-container':
-                return 4194304 /* RUBY_BASE_CONTAINER */;
+                return 4194304 /* RUBY_BASE_CONTAINER */ ;
             case 'ruby-text-container':
-                return 8388608 /* RUBY_TEXT_CONTAINER */;
+                return 8388608 /* RUBY_TEXT_CONTAINER */ ;
             case 'contents':
-                return 16777216 /* CONTENTS */;
+                return 16777216 /* CONTENTS */ ;
             case 'inline-block':
-                return 33554432 /* INLINE_BLOCK */;
+                return 33554432 /* INLINE_BLOCK */ ;
             case 'inline-list-item':
-                return 67108864 /* INLINE_LIST_ITEM */;
+                return 67108864 /* INLINE_LIST_ITEM */ ;
             case 'inline-table':
-                return 134217728 /* INLINE_TABLE */;
+                return 134217728 /* INLINE_TABLE */ ;
             case 'inline-flex':
-                return 268435456 /* INLINE_FLEX */;
+                return 268435456 /* INLINE_FLEX */ ;
             case 'inline-grid':
-                return 536870912 /* INLINE_GRID */;
+                return 536870912 /* INLINE_GRID */ ;
         }
-        return 0 /* NONE */;
+        return 0 /* NONE */ ;
     };
 
     var FLOAT;
@@ -3208,11 +3524,9 @@
     var computeLineHeight = function (token, fontSize) {
         if (isIdentToken(token) && token.value === 'normal') {
             return 1.2 * fontSize;
-        }
-        else if (token.type === TokenType.NUMBER_TOKEN) {
+        } else if (token.type === TokenType.NUMBER_TOKEN) {
             return fontSize * token.number;
-        }
-        else if (isLengthPercentage(token)) {
+        } else if (isLengthPercentage(token)) {
             return getAbsoluteValue(token, fontSize);
         }
         return fontSize;
@@ -3429,12 +3743,14 @@
         }
     };
 
-    var marginForSide = function (side) { return ({
-        name: "margin-" + side,
-        initialValue: '0',
-        prefix: false,
-        type: PropertyDescriptorParsingType.TOKEN_VALUE
-    }); };
+    var marginForSide = function (side) {
+        return ({
+            name: "margin-" + side,
+            initialValue: '0',
+            prefix: false,
+            type: PropertyDescriptorParsingType.TOKEN_VALUE
+        });
+    };
     var marginTop = marginForSide('top');
     var marginRight = marginForSide('right');
     var marginBottom = marginForSide('bottom');
@@ -3490,13 +3806,15 @@
         }
     };
 
-    var paddingForSide = function (side) { return ({
-        name: "padding-" + side,
-        initialValue: '0',
-        prefix: false,
-        type: PropertyDescriptorParsingType.TYPE_VALUE,
-        format: 'length-percentage'
-    }); };
+    var paddingForSide = function (side) {
+        return ({
+            name: "padding-" + side,
+            initialValue: '0',
+            prefix: false,
+            type: PropertyDescriptorParsingType.TYPE_VALUE,
+            format: 'length-percentage'
+        });
+    };
     var paddingTop = paddingForSide('top');
     var paddingRight = paddingForSide('right');
     var paddingBottom = paddingForSide('bottom');
@@ -3577,16 +3895,13 @@
                     if (isLength(token)) {
                         if (c === 0) {
                             shadow.offsetX = token;
-                        }
-                        else if (c === 1) {
+                        } else if (c === 1) {
                             shadow.offsetY = token;
-                        }
-                        else {
+                        } else {
                             shadow.blur = token;
                         }
                         c++;
-                    }
-                    else {
+                    } else {
                         shadow.color = color.parse(token);
                     }
                 }
@@ -3640,13 +3955,36 @@
         }
     };
     var matrix = function (args) {
-        var values = args.filter(function (arg) { return arg.type === TokenType.NUMBER_TOKEN; }).map(function (arg) { return arg.number; });
+        var values = args.filter(function (arg) {
+            return arg.type === TokenType.NUMBER_TOKEN;
+        }).map(function (arg) {
+            return arg.number;
+        });
         return values.length === 6 ? values : null;
     };
     // doesn't support 3D transforms at the moment
     var matrix3d = function (args) {
-        var values = args.filter(function (arg) { return arg.type === TokenType.NUMBER_TOKEN; }).map(function (arg) { return arg.number; });
-        var a1 = values[0], b1 = values[1], _a = values[2], _b = values[3], a2 = values[4], b2 = values[5], _c = values[6], _d = values[7], _e = values[8], _f = values[9], _g = values[10], _h = values[11], a4 = values[12], b4 = values[13], _j = values[14], _k = values[15];
+        var values = args.filter(function (arg) {
+            return arg.type === TokenType.NUMBER_TOKEN;
+        }).map(function (arg) {
+            return arg.number;
+        });
+        var a1 = values[0],
+            b1 = values[1],
+            _a = values[2],
+            _b = values[3],
+            a2 = values[4],
+            b2 = values[5],
+            _c = values[6],
+            _d = values[7],
+            _e = values[8],
+            _f = values[9],
+            _g = values[10],
+            _h = values[11],
+            a4 = values[12],
+            b4 = values[13],
+            _j = values[14],
+            _k = values[15];
         return values.length === 16 ? [a1, b1, a2, b2, a4, b4] : null;
     };
     var SUPPORTED_TRANSFORM_FUNCTIONS = {
@@ -3729,10 +4067,16 @@
         type: PropertyDescriptorParsingType.VALUE,
         parse: function (token) {
             if (token.type === TokenType.IDENT_TOKEN) {
-                return { auto: true, order: 0 };
+                return {
+                    auto: true,
+                    order: 0
+                };
             }
             if (isNumberToken(token)) {
-                return { auto: false, order: token.number };
+                return {
+                    auto: false,
+                    order: token.number
+                };
             }
             throw new Error("Invalid z-index number parsed");
         }
@@ -3768,19 +4112,21 @@
             return tokens
                 .filter(isIdentToken)
                 .map(function (token) {
-                switch (token.value) {
-                    case 'underline':
-                        return 1 /* UNDERLINE */;
-                    case 'overline':
-                        return 2 /* OVERLINE */;
-                    case 'line-through':
-                        return 3 /* LINE_THROUGH */;
-                    case 'none':
-                        return 4 /* BLINK */;
-                }
-                return 0 /* NONE */;
-            })
-                .filter(function (line) { return line !== 0 /* NONE */; });
+                    switch (token.value) {
+                        case 'underline':
+                            return 1 /* UNDERLINE */ ;
+                        case 'overline':
+                            return 2 /* OVERLINE */ ;
+                        case 'line-through':
+                            return 3 /* LINE_THROUGH */ ;
+                        case 'none':
+                            return 4 /* BLINK */ ;
+                    }
+                    return 0 /* NONE */ ;
+                })
+                .filter(function (line) {
+                    return line !== 0 /* NONE */ ;
+                });
         }
     };
 
@@ -3790,7 +4136,9 @@
         prefix: false,
         type: PropertyDescriptorParsingType.LIST,
         parse: function (tokens) {
-            return tokens.filter(isStringToken$1).map(function (token) { return token.value; });
+            return tokens.filter(isStringToken$1).map(function (token) {
+                return token.value;
+            });
         }
     };
     var isStringToken$1 = function (token) {
@@ -3833,7 +4181,9 @@
         type: PropertyDescriptorParsingType.LIST,
         prefix: false,
         parse: function (tokens) {
-            return tokens.filter(isIdentToken).map(function (token) { return token.value; });
+            return tokens.filter(isIdentToken).map(function (token) {
+                return token.value;
+            });
         }
     };
 
@@ -3861,7 +4211,9 @@
         }
     };
 
-    var contains = function (bit, value) { return (bit & value) !== 0; };
+    var contains = function (bit, value) {
+        return (bit & value) !== 0;
+    };
 
     var content = {
         name: 'content',
@@ -3900,7 +4252,10 @@
                 var next = filtered[i + 1];
                 if (counter.type === TokenType.IDENT_TOKEN) {
                     var increment = next && isNumberToken(next) ? next.number : 1;
-                    increments.push({ counter: counter.value, increment: increment });
+                    increments.push({
+                        counter: counter.value,
+                        increment: increment
+                    });
                 }
             }
             return increments;
@@ -3923,7 +4278,10 @@
                 var next = filtered[i + 1];
                 if (isIdentToken(counter) && counter.value !== 'none') {
                     var reset = next && isNumberToken(next) ? next.number : 0;
-                    resets.push({ counter: counter.value, reset: reset });
+                    resets.push({
+                        counter: counter.value,
+                        reset: reset
+                    });
                 }
             }
             return resets;
@@ -3951,7 +4309,10 @@
             for (var i = 0; i < filtered.length; i += 2) {
                 var open_1 = filtered[i].value;
                 var close_1 = filtered[i + 1].value;
-                quotes.push({ open: open_1, close: close_1 });
+                quotes.push({
+                    open: open_1,
+                    close: close_1
+                });
             }
             return quotes;
         }
@@ -3990,23 +4351,18 @@
                     var token = values[i];
                     if (isIdentWithValue(token, 'inset')) {
                         shadow.inset = true;
-                    }
-                    else if (isLength(token)) {
+                    } else if (isLength(token)) {
                         if (c === 0) {
                             shadow.offsetX = token;
-                        }
-                        else if (c === 1) {
+                        } else if (c === 1) {
                             shadow.offsetY = token;
-                        }
-                        else if (c === 2) {
+                        } else if (c === 2) {
                             shadow.blur = token;
-                        }
-                        else {
+                        } else {
                             shadow.spread = token;
                         }
                         c++;
-                    }
-                    else {
+                    } else {
                         shadow.color = color.parse(token);
                     }
                 }
@@ -4099,12 +4455,12 @@
             return this.float !== FLOAT.NONE;
         };
         CSSParsedDeclaration.prototype.isInlineLevel = function () {
-            return (contains(this.display, 4 /* INLINE */) ||
-                contains(this.display, 33554432 /* INLINE_BLOCK */) ||
-                contains(this.display, 268435456 /* INLINE_FLEX */) ||
-                contains(this.display, 536870912 /* INLINE_GRID */) ||
-                contains(this.display, 67108864 /* INLINE_LIST_ITEM */) ||
-                contains(this.display, 134217728 /* INLINE_TABLE */));
+            return (contains(this.display, 4 /* INLINE */ ) ||
+                contains(this.display, 33554432 /* INLINE_BLOCK */ ) ||
+                contains(this.display, 268435456 /* INLINE_FLEX */ ) ||
+                contains(this.display, 536870912 /* INLINE_GRID */ ) ||
+                contains(this.display, 67108864 /* INLINE_LIST_ITEM */ ) ||
+                contains(this.display, 134217728 /* INLINE_TABLE */ ));
         };
         return CSSParsedDeclaration;
     }());
@@ -4187,14 +4543,12 @@
             if (styles.textDecorationLine.length || text.trim().length > 0) {
                 if (FEATURES.SUPPORT_RANGE_BOUNDS) {
                     textBounds.push(new TextBounds(text, getRangeBounds(node, offset, text.length)));
-                }
-                else {
+                } else {
                     var replacementNode = node.splitText(text.length);
                     textBounds.push(new TextBounds(text, getWrapperBounds(node)));
                     node = replacementNode;
                 }
-            }
-            else if (!FEATURES.SUPPORT_RANGE_BOUNDS) {
+            } else if (!FEATURES.SUPPORT_RANGE_BOUNDS) {
                 node = node.splitText(text.length);
             }
             offset += text.length;
@@ -4229,7 +4583,9 @@
         return Bounds.fromClientRect(range.getBoundingClientRect());
     };
     var breakText = function (value, styles) {
-        return styles.letterSpacing !== 0 ? toCodePoints(value).map(function (i) { return fromCodePoint(i); }) : breakWords(value, styles);
+        return styles.letterSpacing !== 0 ? toCodePoints(value).map(function (i) {
+            return fromCodePoint(i);
+        }) : breakWords(value, styles);
     };
     var breakWords = function (str, styles) {
         var breaker = LineBreaker(str, {
@@ -4275,6 +4631,7 @@
 
     var ImageElementContainer = /** @class */ (function (_super) {
         __extends(ImageElementContainer, _super);
+
         function ImageElementContainer(img) {
             var _this = _super.call(this, img) || this;
             _this.src = img.currentSrc || img.src;
@@ -4288,6 +4645,7 @@
 
     var CanvasElementContainer = /** @class */ (function (_super) {
         __extends(CanvasElementContainer, _super);
+
         function CanvasElementContainer(canvas) {
             var _this = _super.call(this, canvas) || this;
             _this.canvas = canvas;
@@ -4300,6 +4658,7 @@
 
     var SVGElementContainer = /** @class */ (function (_super) {
         __extends(SVGElementContainer, _super);
+
         function SVGElementContainer(img) {
             var _this = _super.call(this, img) || this;
             var s = new XMLSerializer();
@@ -4314,6 +4673,7 @@
 
     var LIElementContainer = /** @class */ (function (_super) {
         __extends(LIElementContainer, _super);
+
         function LIElementContainer(element) {
             var _this = _super.call(this, element) || this;
             _this.value = element.value;
@@ -4324,6 +4684,7 @@
 
     var OLElementContainer = /** @class */ (function (_super) {
         __extends(OLElementContainer, _super);
+
         function OLElementContainer(element) {
             var _this = _super.call(this, element) || this;
             _this.start = element.start;
@@ -4333,26 +4694,21 @@
         return OLElementContainer;
     }(ElementContainer));
 
-    var CHECKBOX_BORDER_RADIUS = [
-        {
-            type: TokenType.DIMENSION_TOKEN,
-            flags: 0,
-            unit: 'px',
-            number: 3
-        }
-    ];
-    var RADIO_BORDER_RADIUS = [
-        {
-            type: TokenType.PERCENTAGE_TOKEN,
-            flags: 0,
-            number: 50
-        }
-    ];
+    var CHECKBOX_BORDER_RADIUS = [{
+        type: TokenType.DIMENSION_TOKEN,
+        flags: 0,
+        unit: 'px',
+        number: 3
+    }];
+    var RADIO_BORDER_RADIUS = [{
+        type: TokenType.PERCENTAGE_TOKEN,
+        flags: 0,
+        number: 50
+    }];
     var reformatInputBounds = function (bounds) {
         if (bounds.width > bounds.height) {
             return new Bounds(bounds.left + (bounds.width - bounds.height) / 2, bounds.top, bounds.height, bounds.height);
-        }
-        else if (bounds.width < bounds.height) {
+        } else if (bounds.width < bounds.height) {
             return new Bounds(bounds.left, bounds.top + (bounds.height - bounds.width) / 2, bounds.width, bounds.width);
         }
         return bounds;
@@ -4367,6 +4723,7 @@
     var INPUT_COLOR = 0x2a2a2aff;
     var InputElementContainer = /** @class */ (function (_super) {
         __extends(InputElementContainer, _super);
+
         function InputElementContainer(input) {
             var _this = _super.call(this, input) || this;
             _this.type = input.type.toLowerCase();
@@ -4379,7 +4736,7 @@
                 _this.styles.borderTopStyle = _this.styles.borderRightStyle = _this.styles.borderBottomStyle = _this.styles.borderLeftStyle =
                     BORDER_STYLE.SOLID;
                 _this.styles.backgroundClip = [BACKGROUND_CLIP.BORDER_BOX];
-                _this.styles.backgroundOrigin = [0 /* BORDER_BOX */];
+                _this.styles.backgroundOrigin = [0 /* BORDER_BOX */ ];
                 _this.bounds = reformatInputBounds(_this.bounds);
             }
             switch (_this.type) {
@@ -4397,6 +4754,7 @@
 
     var SelectElementContainer = /** @class */ (function (_super) {
         __extends(SelectElementContainer, _super);
+
         function SelectElementContainer(element) {
             var _this = _super.call(this, element) || this;
             var option = element.options[element.selectedIndex || 0];
@@ -4408,6 +4766,7 @@
 
     var TextareaElementContainer = /** @class */ (function (_super) {
         __extends(TextareaElementContainer, _super);
+
         function TextareaElementContainer(element) {
             var _this = _super.call(this, element) || this;
             _this.value = element.value;
@@ -4416,9 +4775,12 @@
         return TextareaElementContainer;
     }(ElementContainer));
 
-    var parseColor = function (value) { return color.parse(Parser.create(value).parseComponentValue()); };
+    var parseColor = function (value) {
+        return color.parse(Parser.create(value).parseComponentValue());
+    };
     var IFrameElementContainer = /** @class */ (function (_super) {
         __extends(IFrameElementContainer, _super);
+
         function IFrameElementContainer(iframe) {
             var _this = _super.call(this, iframe) || this;
             _this.src = iframe.src;
@@ -4431,21 +4793,20 @@
                     iframe.contentWindow.document.documentElement) {
                     _this.tree = parseTree(iframe.contentWindow.document.documentElement);
                     // http://www.w3.org/TR/css3-background/#special-backgrounds
-                    var documentBackgroundColor = iframe.contentWindow.document.documentElement
-                        ? parseColor(getComputedStyle(iframe.contentWindow.document.documentElement)
-                            .backgroundColor)
-                        : COLORS.TRANSPARENT;
-                    var bodyBackgroundColor = iframe.contentWindow.document.body
-                        ? parseColor(getComputedStyle(iframe.contentWindow.document.body).backgroundColor)
-                        : COLORS.TRANSPARENT;
-                    _this.backgroundColor = isTransparent(documentBackgroundColor)
-                        ? isTransparent(bodyBackgroundColor)
-                            ? _this.styles.backgroundColor
-                            : bodyBackgroundColor
-                        : documentBackgroundColor;
+                    var documentBackgroundColor = iframe.contentWindow.document.documentElement ?
+                        parseColor(getComputedStyle(iframe.contentWindow.document.documentElement)
+                            .backgroundColor) :
+                        COLORS.TRANSPARENT;
+                    var bodyBackgroundColor = iframe.contentWindow.document.body ?
+                        parseColor(getComputedStyle(iframe.contentWindow.document.body).backgroundColor) :
+                        COLORS.TRANSPARENT;
+                    _this.backgroundColor = isTransparent(documentBackgroundColor) ?
+                        isTransparent(bodyBackgroundColor) ?
+                        _this.styles.backgroundColor :
+                        bodyBackgroundColor :
+                        documentBackgroundColor;
                 }
-            }
-            catch (e) { }
+            } catch (e) {}
             return _this;
         }
         return IFrameElementContainer;
@@ -4457,18 +4818,16 @@
             nextNode = childNode.nextSibling;
             if (isTextNode(childNode) && childNode.data.trim().length > 0) {
                 parent.textNodes.push(new TextContainer(childNode, parent.styles));
-            }
-            else if (isElementNode(childNode)) {
+            } else if (isElementNode(childNode)) {
                 var container = createContainer(childNode);
                 if (container.styles.isVisible()) {
                     if (createsRealStackingContext(childNode, container, root)) {
-                        container.flags |= 4 /* CREATES_REAL_STACKING_CONTEXT */;
-                    }
-                    else if (createsStackingContext(container.styles)) {
-                        container.flags |= 2 /* CREATES_STACKING_CONTEXT */;
+                        container.flags |= 4 /* CREATES_REAL_STACKING_CONTEXT */ ;
+                    } else if (createsStackingContext(container.styles)) {
+                        container.flags |= 2 /* CREATES_STACKING_CONTEXT */ ;
                     }
                     if (LIST_OWNERS.indexOf(childNode.tagName) !== -1) {
-                        container.flags |= 8 /* IS_LIST_OWNER */;
+                        container.flags |= 8 /* IS_LIST_OWNER */ ;
                     }
                     parent.elements.push(container);
                     if (!isTextareaElement(childNode) && !isSVGElement(childNode) && !isSelectElement(childNode)) {
@@ -4510,7 +4869,7 @@
     };
     var parseTree = function (element) {
         var container = createContainer(element);
-        container.flags |= 4 /* CREATES_REAL_STACKING_CONTEXT */;
+        container.flags |= 4 /* CREATES_REAL_STACKING_CONTEXT */ ;
         parseNodeTree(element, container, container);
         return container;
     };
@@ -4520,28 +4879,60 @@
             container.styles.isTransformed() ||
             (isBodyElement(node) && root.styles.isTransparent()));
     };
-    var createsStackingContext = function (styles) { return styles.isPositioned() || styles.isFloating(); };
-    var isTextNode = function (node) { return node.nodeType === Node.TEXT_NODE; };
-    var isElementNode = function (node) { return node.nodeType === Node.ELEMENT_NODE; };
+    var createsStackingContext = function (styles) {
+        return styles.isPositioned() || styles.isFloating();
+    };
+    var isTextNode = function (node) {
+        return node.nodeType === Node.TEXT_NODE;
+    };
+    var isElementNode = function (node) {
+        return node.nodeType === Node.ELEMENT_NODE;
+    };
     var isHTMLElementNode = function (node) {
         return typeof node.style !== 'undefined';
     };
     var isSVGElementNode = function (element) {
         return typeof element.className === 'object';
     };
-    var isLIElement = function (node) { return node.tagName === 'LI'; };
-    var isOLElement = function (node) { return node.tagName === 'OL'; };
-    var isInputElement = function (node) { return node.tagName === 'INPUT'; };
-    var isHTMLElement = function (node) { return node.tagName === 'HTML'; };
-    var isSVGElement = function (node) { return node.tagName === 'svg'; };
-    var isBodyElement = function (node) { return node.tagName === 'BODY'; };
-    var isCanvasElement = function (node) { return node.tagName === 'CANVAS'; };
-    var isImageElement = function (node) { return node.tagName === 'IMG'; };
-    var isIFrameElement = function (node) { return node.tagName === 'IFRAME'; };
-    var isStyleElement = function (node) { return node.tagName === 'STYLE'; };
-    var isScriptElement = function (node) { return node.tagName === 'SCRIPT'; };
-    var isTextareaElement = function (node) { return node.tagName === 'TEXTAREA'; };
-    var isSelectElement = function (node) { return node.tagName === 'SELECT'; };
+    var isLIElement = function (node) {
+        return node.tagName === 'LI';
+    };
+    var isOLElement = function (node) {
+        return node.tagName === 'OL';
+    };
+    var isInputElement = function (node) {
+        return node.tagName === 'INPUT';
+    };
+    var isHTMLElement = function (node) {
+        return node.tagName === 'HTML';
+    };
+    var isSVGElement = function (node) {
+        return node.tagName === 'svg';
+    };
+    var isBodyElement = function (node) {
+        return node.tagName === 'BODY';
+    };
+    var isCanvasElement = function (node) {
+        return node.tagName === 'CANVAS';
+    };
+    var isImageElement = function (node) {
+        return node.tagName === 'IMG';
+    };
+    var isIFrameElement = function (node) {
+        return node.tagName === 'IFRAME';
+    };
+    var isStyleElement = function (node) {
+        return node.tagName === 'STYLE';
+    };
+    var isScriptElement = function (node) {
+        return node.tagName === 'SCRIPT';
+    };
+    var isTextareaElement = function (node) {
+        return node.tagName === 'TEXTAREA';
+    };
+    var isSelectElement = function (node) {
+        return node.tagName === 'SELECT';
+    };
 
     var CounterState = /** @class */ (function () {
         function CounterState() {
@@ -4560,7 +4951,9 @@
         };
         CounterState.prototype.pop = function (counters) {
             var _this = this;
-            counters.forEach(function (counter) { return _this.counters[counter].pop(); });
+            counters.forEach(function (counter) {
+                return _this.counters[counter].pop();
+            });
         };
         CounterState.prototype.parse = function (style) {
             var _this = this;
@@ -4860,14 +5253,18 @@
         var codePointRangeLength = codePointRangeEnd - codePointRangeStart + 1;
         return ((value < 0 ? '-' : '') +
             (createCounterStyleWithSymbolResolver(Math.abs(value), codePointRangeLength, isNumeric, function (codePoint) {
-                return fromCodePoint(Math.floor(codePoint % codePointRangeLength) + codePointRangeStart);
-            }) +
+                    return fromCodePoint(Math.floor(codePoint % codePointRangeLength) + codePointRangeStart);
+                }) +
                 suffix));
     };
     var createCounterStyleFromSymbols = function (value, symbols, suffix) {
-        if (suffix === void 0) { suffix = '. '; }
+        if (suffix === void 0) {
+            suffix = '. ';
+        }
         var codePointRangeLength = symbols.length;
-        return (createCounterStyleWithSymbolResolver(Math.abs(value), codePointRangeLength, false, function (codePoint) { return symbols[Math.floor(codePoint % codePointRangeLength)]; }) + suffix);
+        return (createCounterStyleWithSymbolResolver(Math.abs(value), codePointRangeLength, false, function (codePoint) {
+            return symbols[Math.floor(codePoint % codePointRangeLength)];
+        }) + suffix);
     };
     var CJK_ZEROS = 1 << 0;
     var CJK_TEN_COEFFICIENTS = 1 << 1;
@@ -4886,15 +5283,13 @@
             var coefficient = tmp % 10;
             if (coefficient === 0 && contains(flags, CJK_ZEROS) && string !== '') {
                 string = numbers[coefficient] + string;
-            }
-            else if (coefficient > 1 ||
+            } else if (coefficient > 1 ||
                 (coefficient === 1 && digit === 0) ||
                 (coefficient === 1 && digit === 1 && contains(flags, CJK_TEN_COEFFICIENTS)) ||
                 (coefficient === 1 && digit === 1 && contains(flags, CJK_TEN_HIGH_COEFFICIENTS) && value > 100) ||
                 (coefficient === 1 && digit > 1 && contains(flags, CJK_HUNDRED_COEFFICIENTS))) {
                 string = numbers[coefficient] + (digit > 0 ? multipliers[digit - 1] : '') + string;
-            }
-            else if (coefficient === 1 && digit > 0) {
+            } else if (coefficient === 1 && digit > 0) {
                 string = multipliers[digit - 1] + string;
             }
             tmp = Math.floor(tmp / 10);
@@ -5037,40 +5432,47 @@
             /* Chrome doesn't detect relative background-images assigned in inline <style> sheets when fetched through getComputedStyle
              if window url is about:blank, we can assign the url to current by writing onto the document
              */
-            var iframeLoad = iframeLoader(iframe).then(function () { return __awaiter(_this, void 0, void 0, function () {
-                var onclone;
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.scrolledElements.forEach(restoreNodeScroll);
-                            if (cloneWindow) {
-                                cloneWindow.scrollTo(windowSize.left, windowSize.top);
-                                if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent) &&
-                                    (cloneWindow.scrollY !== windowSize.top || cloneWindow.scrollX !== windowSize.left)) {
-                                    documentClone.documentElement.style.top = -windowSize.top + 'px';
-                                    documentClone.documentElement.style.left = -windowSize.left + 'px';
-                                    documentClone.documentElement.style.position = 'absolute';
+            var iframeLoad = iframeLoader(iframe).then(function () {
+                return __awaiter(_this, void 0, void 0, function () {
+                    var onclone;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0:
+                                this.scrolledElements.forEach(restoreNodeScroll);
+                                if (cloneWindow) {
+                                    cloneWindow.scrollTo(windowSize.left, windowSize.top);
+                                    if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent) &&
+                                        (cloneWindow.scrollY !== windowSize.top || cloneWindow.scrollX !== windowSize.left)) {
+                                        documentClone.documentElement.style.top = -windowSize.top + 'px';
+                                        documentClone.documentElement.style.left = -windowSize.left + 'px';
+                                        documentClone.documentElement.style.position = 'absolute';
+                                    }
                                 }
-                            }
-                            onclone = this.options.onclone;
-                            if (typeof this.clonedReferenceElement === 'undefined') {
-                                return [2 /*return*/, Promise.reject("Error finding the " + this.referenceElement.nodeName + " in the cloned document")];
-                            }
-                            if (!(documentClone.fonts && documentClone.fonts.ready)) return [3 /*break*/, 2];
-                            return [4 /*yield*/, documentClone.fonts.ready];
-                        case 1:
-                            _a.sent();
-                            _a.label = 2;
-                        case 2:
-                            if (typeof onclone === 'function') {
-                                return [2 /*return*/, Promise.resolve()
-                                        .then(function () { return onclone(documentClone); })
-                                        .then(function () { return iframe; })];
-                            }
-                            return [2 /*return*/, iframe];
-                    }
+                                onclone = this.options.onclone;
+                                if (typeof this.clonedReferenceElement === 'undefined') {
+                                    return [2 /*return*/ , Promise.reject("Error finding the " + this.referenceElement.nodeName + " in the cloned document")];
+                                }
+                                if (!(documentClone.fonts && documentClone.fonts.ready)) return [3 /*break*/ , 2];
+                                return [4 /*yield*/ , documentClone.fonts.ready];
+                            case 1:
+                                _a.sent();
+                                _a.label = 2;
+                            case 2:
+                                if (typeof onclone === 'function') {
+                                    return [2 /*return*/ , Promise.resolve()
+                                        .then(function () {
+                                            return onclone(documentClone);
+                                        })
+                                        .then(function () {
+                                            return iframe;
+                                        })
+                                    ];
+                                }
+                                return [2 /*return*/ , iframe];
+                        }
+                    });
                 });
-            }); });
+            });
             documentClone.open();
             documentClone.write(serializeDoctype(document.doctype) + "<html></html>");
             // Chrome scrolls the parent document for some reason after the write to the cloned window???
@@ -5107,8 +5509,7 @@
                     style.textContent = css;
                     return style;
                 }
-            }
-            catch (e) {
+            } catch (e) {
                 // accessing node.sheet.cssRules throws a DOMException
                 Logger.getInstance(this.options.id).error('Unable to access cssRules property', e);
                 if (e.name !== 'SecurityError') {
@@ -5123,8 +5524,7 @@
                 try {
                     img.src = canvas.toDataURL();
                     return img;
-                }
-                catch (e) {
+                } catch (e) {
                     Logger.getInstance(this.options.id).info("Unable to clone canvas contents, canvas is tainted");
                 }
             }
@@ -5137,14 +5537,12 @@
                 if (clonedCtx) {
                     if (ctx) {
                         clonedCtx.putImageData(ctx.getImageData(0, 0, canvas.width, canvas.height), 0, 0);
-                    }
-                    else {
+                    } else {
                         clonedCtx.drawImage(canvas, 0, 0);
                     }
                 }
                 return clonedCanvas;
-            }
-            catch (e) { }
+            } catch (e) {}
             return clonedCanvas;
         };
         /*
@@ -5279,46 +5677,48 @@
             declaration.content.forEach(function (token) {
                 if (token.type === TokenType.STRING_TOKEN) {
                     anonymousReplacedElement.appendChild(document.createTextNode(token.value));
-                }
-                else if (token.type === TokenType.URL_TOKEN) {
+                } else if (token.type === TokenType.URL_TOKEN) {
                     var img = document.createElement('img');
                     img.src = token.value;
                     img.style.opacity = '1';
                     anonymousReplacedElement.appendChild(img);
-                }
-                else if (token.type === TokenType.FUNCTION) {
+                } else if (token.type === TokenType.FUNCTION) {
                     if (token.name === 'attr') {
                         var attr = token.values.filter(isIdentToken);
                         if (attr.length) {
                             anonymousReplacedElement.appendChild(document.createTextNode(node.getAttribute(attr[0].value) || ''));
                         }
-                    }
-                    else if (token.name === 'counter') {
-                        var _a = token.values.filter(nonFunctionArgSeparator), counter = _a[0], counterStyle = _a[1];
+                    } else if (token.name === 'counter') {
+                        var _a = token.values.filter(nonFunctionArgSeparator),
+                            counter = _a[0],
+                            counterStyle = _a[1];
                         if (counter && isIdentToken(counter)) {
                             var counterState = _this.counters.getCounterValue(counter.value);
-                            var counterType = counterStyle && isIdentToken(counterStyle)
-                                ? listStyleType.parse(counterStyle.value)
-                                : LIST_STYLE_TYPE.DECIMAL;
+                            var counterType = counterStyle && isIdentToken(counterStyle) ?
+                                listStyleType.parse(counterStyle.value) :
+                                LIST_STYLE_TYPE.DECIMAL;
                             anonymousReplacedElement.appendChild(document.createTextNode(createCounterText(counterState, counterType, false)));
                         }
-                    }
-                    else if (token.name === 'counters') {
-                        var _b = token.values.filter(nonFunctionArgSeparator), counter = _b[0], delim = _b[1], counterStyle = _b[2];
+                    } else if (token.name === 'counters') {
+                        var _b = token.values.filter(nonFunctionArgSeparator),
+                            counter = _b[0],
+                            delim = _b[1],
+                            counterStyle = _b[2];
                         if (counter && isIdentToken(counter)) {
                             var counterStates = _this.counters.getCounterValues(counter.value);
-                            var counterType_1 = counterStyle && isIdentToken(counterStyle)
-                                ? listStyleType.parse(counterStyle.value)
-                                : LIST_STYLE_TYPE.DECIMAL;
+                            var counterType_1 = counterStyle && isIdentToken(counterStyle) ?
+                                listStyleType.parse(counterStyle.value) :
+                                LIST_STYLE_TYPE.DECIMAL;
                             var separator = delim && delim.type === TokenType.STRING_TOKEN ? delim.value : '';
                             var text = counterStates
-                                .map(function (value) { return createCounterText(value, counterType_1, false); })
+                                .map(function (value) {
+                                    return createCounterText(value, counterType_1, false);
+                                })
                                 .join(separator);
                             anonymousReplacedElement.appendChild(document.createTextNode(text));
                         }
                     }
-                }
-                else if (token.type === TokenType.IDENT_TOKEN) {
+                } else if (token.type === TokenType.IDENT_TOKEN) {
                     switch (token.value) {
                         case 'open-quote':
                             anonymousReplacedElement.appendChild(document.createTextNode(getQuote(declaration.quotes, _this.quoteDepth++, true)));
@@ -5333,13 +5733,12 @@
                 }
             });
             anonymousReplacedElement.className = PSEUDO_HIDE_ELEMENT_CLASS_BEFORE + " " + PSEUDO_HIDE_ELEMENT_CLASS_AFTER;
-            var newClassName = pseudoElt === PseudoElementType.BEFORE
-                ? " " + PSEUDO_HIDE_ELEMENT_CLASS_BEFORE
-                : " " + PSEUDO_HIDE_ELEMENT_CLASS_AFTER;
+            var newClassName = pseudoElt === PseudoElementType.BEFORE ?
+                " " + PSEUDO_HIDE_ELEMENT_CLASS_BEFORE :
+                " " + PSEUDO_HIDE_ELEMENT_CLASS_AFTER;
             if (isSVGElementNode(clone)) {
                 clone.className.baseValue += newClassName;
-            }
-            else {
+            } else {
                 clone.className += newClassName;
             }
             return anonymousReplacedElement;
@@ -5430,7 +5829,9 @@
         }
     };
     var restoreNodeScroll = function (_a) {
-        var element = _a[0], x = _a[1], y = _a[2];
+        var element = _a[0],
+            x = _a[1],
+            y = _a[2];
         element.scrollLeft = x;
         element.scrollTop = y;
     };
@@ -5458,7 +5859,9 @@
     })(PathType || (PathType = {}));
     var equalPath = function (a, b) {
         if (a.length === b.length) {
-            return a.some(function (v, i) { return v === b[i]; });
+            return a.some(function (v, i) {
+                return v === b[i];
+            });
         }
         return false;
     };
@@ -5518,16 +5921,26 @@
         };
         return BezierCurve;
     }());
-    var isBezierCurve = function (path) { return path.type === PathType.BEZIER_CURVE; };
+    var isBezierCurve = function (path) {
+        return path.type === PathType.BEZIER_CURVE;
+    };
 
     var BoundCurves = /** @class */ (function () {
         function BoundCurves(element) {
             var styles = element.styles;
             var bounds = element.bounds;
-            var _a = getAbsoluteValueForTuple(styles.borderTopLeftRadius, bounds.width, bounds.height), tlh = _a[0], tlv = _a[1];
-            var _b = getAbsoluteValueForTuple(styles.borderTopRightRadius, bounds.width, bounds.height), trh = _b[0], trv = _b[1];
-            var _c = getAbsoluteValueForTuple(styles.borderBottomRightRadius, bounds.width, bounds.height), brh = _c[0], brv = _c[1];
-            var _d = getAbsoluteValueForTuple(styles.borderBottomLeftRadius, bounds.width, bounds.height), blh = _d[0], blv = _d[1];
+            var _a = getAbsoluteValueForTuple(styles.borderTopLeftRadius, bounds.width, bounds.height),
+                tlh = _a[0],
+                tlv = _a[1];
+            var _b = getAbsoluteValueForTuple(styles.borderTopRightRadius, bounds.width, bounds.height),
+                trh = _b[0],
+                trv = _b[1];
+            var _c = getAbsoluteValueForTuple(styles.borderBottomRightRadius, bounds.width, bounds.height),
+                brh = _c[0],
+                brv = _c[1];
+            var _d = getAbsoluteValueForTuple(styles.borderBottomLeftRadius, bounds.width, bounds.height),
+                blh = _d[0],
+                blv = _d[1];
             var factors = [];
             factors.push((tlh + trh) / bounds.width);
             factors.push((blh + brh) / bounds.width);
@@ -5557,53 +5970,53 @@
             var paddingBottom = getAbsoluteValue(styles.paddingBottom, element.bounds.width);
             var paddingLeft = getAbsoluteValue(styles.paddingLeft, element.bounds.width);
             this.topLeftBorderBox =
-                tlh > 0 || tlv > 0
-                    ? getCurvePoints(bounds.left, bounds.top, tlh, tlv, CORNER.TOP_LEFT)
-                    : new Vector(bounds.left, bounds.top);
+                tlh > 0 || tlv > 0 ?
+                getCurvePoints(bounds.left, bounds.top, tlh, tlv, CORNER.TOP_LEFT) :
+                new Vector(bounds.left, bounds.top);
             this.topRightBorderBox =
-                trh > 0 || trv > 0
-                    ? getCurvePoints(bounds.left + topWidth, bounds.top, trh, trv, CORNER.TOP_RIGHT)
-                    : new Vector(bounds.left + bounds.width, bounds.top);
+                trh > 0 || trv > 0 ?
+                getCurvePoints(bounds.left + topWidth, bounds.top, trh, trv, CORNER.TOP_RIGHT) :
+                new Vector(bounds.left + bounds.width, bounds.top);
             this.bottomRightBorderBox =
-                brh > 0 || brv > 0
-                    ? getCurvePoints(bounds.left + bottomWidth, bounds.top + rightHeight, brh, brv, CORNER.BOTTOM_RIGHT)
-                    : new Vector(bounds.left + bounds.width, bounds.top + bounds.height);
+                brh > 0 || brv > 0 ?
+                getCurvePoints(bounds.left + bottomWidth, bounds.top + rightHeight, brh, brv, CORNER.BOTTOM_RIGHT) :
+                new Vector(bounds.left + bounds.width, bounds.top + bounds.height);
             this.bottomLeftBorderBox =
-                blh > 0 || blv > 0
-                    ? getCurvePoints(bounds.left, bounds.top + leftHeight, blh, blv, CORNER.BOTTOM_LEFT)
-                    : new Vector(bounds.left, bounds.top + bounds.height);
+                blh > 0 || blv > 0 ?
+                getCurvePoints(bounds.left, bounds.top + leftHeight, blh, blv, CORNER.BOTTOM_LEFT) :
+                new Vector(bounds.left, bounds.top + bounds.height);
             this.topLeftPaddingBox =
-                tlh > 0 || tlv > 0
-                    ? getCurvePoints(bounds.left + borderLeftWidth, bounds.top + borderTopWidth, Math.max(0, tlh - borderLeftWidth), Math.max(0, tlv - borderTopWidth), CORNER.TOP_LEFT)
-                    : new Vector(bounds.left + borderLeftWidth, bounds.top + borderTopWidth);
+                tlh > 0 || tlv > 0 ?
+                getCurvePoints(bounds.left + borderLeftWidth, bounds.top + borderTopWidth, Math.max(0, tlh - borderLeftWidth), Math.max(0, tlv - borderTopWidth), CORNER.TOP_LEFT) :
+                new Vector(bounds.left + borderLeftWidth, bounds.top + borderTopWidth);
             this.topRightPaddingBox =
-                trh > 0 || trv > 0
-                    ? getCurvePoints(bounds.left + Math.min(topWidth, bounds.width + borderLeftWidth), bounds.top + borderTopWidth, topWidth > bounds.width + borderLeftWidth ? 0 : trh - borderLeftWidth, trv - borderTopWidth, CORNER.TOP_RIGHT)
-                    : new Vector(bounds.left + bounds.width - borderRightWidth, bounds.top + borderTopWidth);
+                trh > 0 || trv > 0 ?
+                getCurvePoints(bounds.left + Math.min(topWidth, bounds.width + borderLeftWidth), bounds.top + borderTopWidth, topWidth > bounds.width + borderLeftWidth ? 0 : trh - borderLeftWidth, trv - borderTopWidth, CORNER.TOP_RIGHT) :
+                new Vector(bounds.left + bounds.width - borderRightWidth, bounds.top + borderTopWidth);
             this.bottomRightPaddingBox =
-                brh > 0 || brv > 0
-                    ? getCurvePoints(bounds.left + Math.min(bottomWidth, bounds.width - borderLeftWidth), bounds.top + Math.min(rightHeight, bounds.height + borderTopWidth), Math.max(0, brh - borderRightWidth), brv - borderBottomWidth, CORNER.BOTTOM_RIGHT)
-                    : new Vector(bounds.left + bounds.width - borderRightWidth, bounds.top + bounds.height - borderBottomWidth);
+                brh > 0 || brv > 0 ?
+                getCurvePoints(bounds.left + Math.min(bottomWidth, bounds.width - borderLeftWidth), bounds.top + Math.min(rightHeight, bounds.height + borderTopWidth), Math.max(0, brh - borderRightWidth), brv - borderBottomWidth, CORNER.BOTTOM_RIGHT) :
+                new Vector(bounds.left + bounds.width - borderRightWidth, bounds.top + bounds.height - borderBottomWidth);
             this.bottomLeftPaddingBox =
-                blh > 0 || blv > 0
-                    ? getCurvePoints(bounds.left + borderLeftWidth, bounds.top + leftHeight, Math.max(0, blh - borderLeftWidth), blv - borderBottomWidth, CORNER.BOTTOM_LEFT)
-                    : new Vector(bounds.left + borderLeftWidth, bounds.top + bounds.height - borderBottomWidth);
+                blh > 0 || blv > 0 ?
+                getCurvePoints(bounds.left + borderLeftWidth, bounds.top + leftHeight, Math.max(0, blh - borderLeftWidth), blv - borderBottomWidth, CORNER.BOTTOM_LEFT) :
+                new Vector(bounds.left + borderLeftWidth, bounds.top + bounds.height - borderBottomWidth);
             this.topLeftContentBox =
-                tlh > 0 || tlv > 0
-                    ? getCurvePoints(bounds.left + borderLeftWidth + paddingLeft, bounds.top + borderTopWidth + paddingTop, Math.max(0, tlh - (borderLeftWidth + paddingLeft)), Math.max(0, tlv - (borderTopWidth + paddingTop)), CORNER.TOP_LEFT)
-                    : new Vector(bounds.left + borderLeftWidth + paddingLeft, bounds.top + borderTopWidth + paddingTop);
+                tlh > 0 || tlv > 0 ?
+                getCurvePoints(bounds.left + borderLeftWidth + paddingLeft, bounds.top + borderTopWidth + paddingTop, Math.max(0, tlh - (borderLeftWidth + paddingLeft)), Math.max(0, tlv - (borderTopWidth + paddingTop)), CORNER.TOP_LEFT) :
+                new Vector(bounds.left + borderLeftWidth + paddingLeft, bounds.top + borderTopWidth + paddingTop);
             this.topRightContentBox =
-                trh > 0 || trv > 0
-                    ? getCurvePoints(bounds.left + Math.min(topWidth, bounds.width + borderLeftWidth + paddingLeft), bounds.top + borderTopWidth + paddingTop, topWidth > bounds.width + borderLeftWidth + paddingLeft ? 0 : trh - borderLeftWidth + paddingLeft, trv - (borderTopWidth + paddingTop), CORNER.TOP_RIGHT)
-                    : new Vector(bounds.left + bounds.width - (borderRightWidth + paddingRight), bounds.top + borderTopWidth + paddingTop);
+                trh > 0 || trv > 0 ?
+                getCurvePoints(bounds.left + Math.min(topWidth, bounds.width + borderLeftWidth + paddingLeft), bounds.top + borderTopWidth + paddingTop, topWidth > bounds.width + borderLeftWidth + paddingLeft ? 0 : trh - borderLeftWidth + paddingLeft, trv - (borderTopWidth + paddingTop), CORNER.TOP_RIGHT) :
+                new Vector(bounds.left + bounds.width - (borderRightWidth + paddingRight), bounds.top + borderTopWidth + paddingTop);
             this.bottomRightContentBox =
-                brh > 0 || brv > 0
-                    ? getCurvePoints(bounds.left + Math.min(bottomWidth, bounds.width - (borderLeftWidth + paddingLeft)), bounds.top + Math.min(rightHeight, bounds.height + borderTopWidth + paddingTop), Math.max(0, brh - (borderRightWidth + paddingRight)), brv - (borderBottomWidth + paddingBottom), CORNER.BOTTOM_RIGHT)
-                    : new Vector(bounds.left + bounds.width - (borderRightWidth + paddingRight), bounds.top + bounds.height - (borderBottomWidth + paddingBottom));
+                brh > 0 || brv > 0 ?
+                getCurvePoints(bounds.left + Math.min(bottomWidth, bounds.width - (borderLeftWidth + paddingLeft)), bounds.top + Math.min(rightHeight, bounds.height + borderTopWidth + paddingTop), Math.max(0, brh - (borderRightWidth + paddingRight)), brv - (borderBottomWidth + paddingBottom), CORNER.BOTTOM_RIGHT) :
+                new Vector(bounds.left + bounds.width - (borderRightWidth + paddingRight), bounds.top + bounds.height - (borderBottomWidth + paddingBottom));
             this.bottomLeftContentBox =
-                blh > 0 || blv > 0
-                    ? getCurvePoints(bounds.left + borderLeftWidth + paddingLeft, bounds.top + leftHeight, Math.max(0, blh - (borderLeftWidth + paddingLeft)), blv - (borderBottomWidth + paddingBottom), CORNER.BOTTOM_LEFT)
-                    : new Vector(bounds.left + borderLeftWidth + paddingLeft, bounds.top + bounds.height - (borderBottomWidth + paddingBottom));
+                blh > 0 || blv > 0 ?
+                getCurvePoints(bounds.left + borderLeftWidth + paddingLeft, bounds.top + leftHeight, Math.max(0, blh - (borderLeftWidth + paddingLeft)), blv - (borderBottomWidth + paddingBottom), CORNER.BOTTOM_LEFT) :
+                new Vector(bounds.left + borderLeftWidth + paddingLeft, bounds.top + bounds.height - (borderBottomWidth + paddingBottom));
         }
         return BoundCurves;
     }());
@@ -5654,26 +6067,28 @@
 
     var TransformEffect = /** @class */ (function () {
         function TransformEffect(offsetX, offsetY, matrix) {
-            this.type = 0 /* TRANSFORM */;
+            this.type = 0 /* TRANSFORM */ ;
             this.offsetX = offsetX;
             this.offsetY = offsetY;
             this.matrix = matrix;
-            this.target = 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */;
+            this.target = 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */ ;
         }
         return TransformEffect;
     }());
     var ClipEffect = /** @class */ (function () {
         function ClipEffect(path, target) {
-            this.type = 1 /* CLIP */;
+            this.type = 1 /* CLIP */ ;
             this.target = target;
             this.path = path;
         }
         return ClipEffect;
     }());
     var isTransformEffect = function (effect) {
-        return effect.type === 0 /* TRANSFORM */;
+        return effect.type === 0 /* TRANSFORM */ ;
     };
-    var isClipEffect = function (effect) { return effect.type === 1 /* CLIP */; };
+    var isClipEffect = function (effect) {
+        return effect.type === 1 /* CLIP */ ;
+    };
 
     var StackingContext = /** @class */ (function () {
         function StackingContext(container) {
@@ -5703,11 +6118,10 @@
                 var borderBox = calculateBorderBoxPath(this.curves);
                 var paddingBox = calculatePaddingBoxPath(this.curves);
                 if (equalPath(borderBox, paddingBox)) {
-                    this.effects.push(new ClipEffect(borderBox, 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */));
-                }
-                else {
-                    this.effects.push(new ClipEffect(borderBox, 2 /* BACKGROUND_BORDERS */));
-                    this.effects.push(new ClipEffect(paddingBox, 4 /* CONTENT */));
+                    this.effects.push(new ClipEffect(borderBox, 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */ ));
+                } else {
+                    this.effects.push(new ClipEffect(borderBox, 2 /* BACKGROUND_BORDERS */ ));
+                    this.effects.push(new ClipEffect(paddingBox, 4 /* CONTENT */ ));
                 }
             }
         }
@@ -5717,7 +6131,7 @@
                 var borderBox = calculateBorderBoxPath(this.curves);
                 var paddingBox = calculatePaddingBoxPath(this.curves);
                 if (!equalPath(borderBox, paddingBox)) {
-                    effects.push(new ClipEffect(paddingBox, 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */));
+                    effects.push(new ClipEffect(paddingBox, 2 /* BACKGROUND_BORDERS */ | 4 /* CONTENT */ ));
                 }
             }
             return effects;
@@ -5726,13 +6140,13 @@
     }());
     var parseStackTree = function (parent, stackingContext, realStackingContext, listItems) {
         parent.container.elements.forEach(function (child) {
-            var treatAsRealStackingContext = contains(child.flags, 4 /* CREATES_REAL_STACKING_CONTEXT */);
-            var createsStackingContext = contains(child.flags, 2 /* CREATES_STACKING_CONTEXT */);
+            var treatAsRealStackingContext = contains(child.flags, 4 /* CREATES_REAL_STACKING_CONTEXT */ );
+            var createsStackingContext = contains(child.flags, 2 /* CREATES_STACKING_CONTEXT */ );
             var paintContainer = new ElementPaint(child, parent.getParentEffects());
-            if (contains(child.styles.display, 2048 /* LIST_ITEM */)) {
+            if (contains(child.styles.display, 2048 /* LIST_ITEM */ )) {
                 listItems.push(paintContainer);
             }
-            var listOwnerItems = contains(child.flags, 8 /* IS_LIST_OWNER */) ? [] : listItems;
+            var listOwnerItems = contains(child.flags, 8 /* IS_LIST_OWNER */ ) ? [] : listItems;
             if (treatAsRealStackingContext || createsStackingContext) {
                 var parentStack = treatAsRealStackingContext || child.styles.isPositioned() ? realStackingContext : stackingContext;
                 var stack = new StackingContext(paintContainer);
@@ -5744,52 +6158,44 @@
                             if (order_1 > current.element.container.styles.zIndex.order) {
                                 index_1 = i;
                                 return false;
-                            }
-                            else if (index_1 > 0) {
+                            } else if (index_1 > 0) {
                                 return true;
                             }
                             return false;
                         });
                         parentStack.negativeZIndex.splice(index_1, 0, stack);
-                    }
-                    else if (order_1 > 0) {
+                    } else if (order_1 > 0) {
                         var index_2 = 0;
                         parentStack.positiveZIndex.some(function (current, i) {
                             if (order_1 > current.element.container.styles.zIndex.order) {
                                 index_2 = i + 1;
                                 return false;
-                            }
-                            else if (index_2 > 0) {
+                            } else if (index_2 > 0) {
                                 return true;
                             }
                             return false;
                         });
                         parentStack.positiveZIndex.splice(index_2, 0, stack);
-                    }
-                    else {
+                    } else {
                         parentStack.zeroOrAutoZIndexOrTransformedOrOpacity.push(stack);
                     }
-                }
-                else {
+                } else {
                     if (child.styles.isFloating()) {
                         parentStack.nonPositionedFloats.push(stack);
-                    }
-                    else {
+                    } else {
                         parentStack.nonPositionedInlineLevel.push(stack);
                     }
                 }
                 parseStackTree(paintContainer, stack, treatAsRealStackingContext ? stack : realStackingContext, listOwnerItems);
-            }
-            else {
+            } else {
                 if (child.styles.isInlineLevel()) {
                     stackingContext.inlineLevel.push(paintContainer);
-                }
-                else {
+                } else {
                     stackingContext.nonInlineLevel.push(paintContainer);
                 }
                 parseStackTree(paintContainer, stackingContext, realStackingContext, listOwnerItems);
             }
-            if (contains(child.flags, 8 /* IS_LIST_OWNER */)) {
+            if (contains(child.flags, 8 /* IS_LIST_OWNER */ )) {
                 processListItems(child, listOwnerItems);
             }
         });
@@ -5834,26 +6240,22 @@
         var path = [];
         if (isBezierCurve(outer1)) {
             path.push(outer1.subdivide(0.5, false));
-        }
-        else {
+        } else {
             path.push(outer1);
         }
         if (isBezierCurve(outer2)) {
             path.push(outer2.subdivide(0.5, true));
-        }
-        else {
+        } else {
             path.push(outer2);
         }
         if (isBezierCurve(inner2)) {
             path.push(inner2.subdivide(0.5, true).reverse());
-        }
-        else {
+        } else {
             path.push(inner2);
         }
         if (isBezierCurve(inner1)) {
             path.push(inner1.subdivide(0.5, false).reverse());
-        }
-        else {
+        } else {
             path.push(inner1);
         }
         return path;
@@ -5875,10 +6277,10 @@
     };
 
     var calculateBackgroundPositioningArea = function (backgroundOrigin, element) {
-        if (backgroundOrigin === 0 /* BORDER_BOX */) {
+        if (backgroundOrigin === 0 /* BORDER_BOX */ ) {
             return element.bounds;
         }
-        if (backgroundOrigin === 2 /* CONTENT_BOX */) {
+        if (backgroundOrigin === 2 /* CONTENT_BOX */ ) {
             return contentBox(element);
         }
         return paddingBox(element);
@@ -5896,18 +6298,26 @@
         var backgroundPositioningArea = calculateBackgroundPositioningArea(getBackgroundValueForIndex(container.styles.backgroundOrigin, index), container);
         var backgroundPaintingArea = calculateBackgroundPaintingArea(getBackgroundValueForIndex(container.styles.backgroundClip, index), container);
         var backgroundImageSize = calculateBackgroundSize(getBackgroundValueForIndex(container.styles.backgroundSize, index), intrinsicSize, backgroundPositioningArea);
-        var sizeWidth = backgroundImageSize[0], sizeHeight = backgroundImageSize[1];
+        var sizeWidth = backgroundImageSize[0],
+            sizeHeight = backgroundImageSize[1];
         var position = getAbsoluteValueForTuple(getBackgroundValueForIndex(container.styles.backgroundPosition, index), backgroundPositioningArea.width - sizeWidth, backgroundPositioningArea.height - sizeHeight);
         var path = calculateBackgroundRepeatPath(getBackgroundValueForIndex(container.styles.backgroundRepeat, index), position, backgroundImageSize, backgroundPositioningArea, backgroundPaintingArea);
         var offsetX = Math.round(backgroundPositioningArea.left + position[0]);
         var offsetY = Math.round(backgroundPositioningArea.top + position[1]);
         return [path, offsetX, offsetY, sizeWidth, sizeHeight];
     };
-    var isAuto = function (token) { return isIdentToken(token) && token.value === BACKGROUND_SIZE.AUTO; };
-    var hasIntrinsicValue = function (value) { return typeof value === 'number'; };
+    var isAuto = function (token) {
+        return isIdentToken(token) && token.value === BACKGROUND_SIZE.AUTO;
+    };
+    var hasIntrinsicValue = function (value) {
+        return typeof value === 'number';
+    };
     var calculateBackgroundSize = function (size, _a, bounds) {
-        var intrinsicWidth = _a[0], intrinsicHeight = _a[1], intrinsicProportion = _a[2];
-        var first = size[0], second = size[1];
+        var intrinsicWidth = _a[0],
+            intrinsicHeight = _a[1],
+            intrinsicProportion = _a[2];
+        var first = size[0],
+            second = size[1];
         if (isLengthPercentage(first) && second && isLengthPercentage(second)) {
             return [getAbsoluteValue(first, bounds.width), getAbsoluteValue(second, bounds.height)];
         }
@@ -5915,9 +6325,7 @@
         if (isIdentToken(first) && (first.value === BACKGROUND_SIZE.CONTAIN || first.value === BACKGROUND_SIZE.COVER)) {
             if (hasIntrinsicValue(intrinsicProportion)) {
                 var targetRatio = bounds.width / bounds.height;
-                return targetRatio < intrinsicProportion !== (first.value === BACKGROUND_SIZE.COVER)
-                    ? [bounds.width, bounds.width / intrinsicProportion]
-                    : [bounds.height * intrinsicProportion, bounds.height];
+                return targetRatio < intrinsicProportion !== (first.value === BACKGROUND_SIZE.COVER) ? [bounds.width, bounds.width / intrinsicProportion] : [bounds.height * intrinsicProportion, bounds.height];
             }
             return [bounds.width, bounds.height];
         }
@@ -5939,12 +6347,12 @@
             // If the image has only one intrinsic dimension and has intrinsic proportions, it's rendered at the size corresponding to that one dimension.
             // The other dimension is computed using the specified dimension and the intrinsic proportions.
             if (hasIntrinsicDimensions && hasIntrinsicProportion) {
-                var width_1 = hasIntrinsicWidth
-                    ? intrinsicWidth
-                    : intrinsicHeight * intrinsicProportion;
-                var height_1 = hasIntrinsicHeight
-                    ? intrinsicHeight
-                    : intrinsicWidth / intrinsicProportion;
+                var width_1 = hasIntrinsicWidth ?
+                    intrinsicWidth :
+                    intrinsicHeight * intrinsicProportion;
+                var height_1 = hasIntrinsicHeight ?
+                    intrinsicHeight :
+                    intrinsicWidth / intrinsicProportion;
                 return [width_1, height_1];
             }
             // If the image has only one intrinsic dimension but has no intrinsic proportions,
@@ -5960,14 +6368,12 @@
             var height_3 = 0;
             if (isLengthPercentage(first)) {
                 width_3 = getAbsoluteValue(first, bounds.width);
-            }
-            else if (isLengthPercentage(second)) {
+            } else if (isLengthPercentage(second)) {
                 height_3 = getAbsoluteValue(second, bounds.height);
             }
             if (isAuto(first)) {
                 width_3 = height_3 * intrinsicProportion;
-            }
-            else if (!second || isAuto(second)) {
+            } else if (!second || isAuto(second)) {
                 height_3 = width_3 / intrinsicProportion;
             }
             return [width_3, height_3];
@@ -5980,21 +6386,20 @@
         var height = null;
         if (isLengthPercentage(first)) {
             width = getAbsoluteValue(first, bounds.width);
-        }
-        else if (second && isLengthPercentage(second)) {
+        } else if (second && isLengthPercentage(second)) {
             height = getAbsoluteValue(second, bounds.height);
         }
         if (width !== null && (!second || isAuto(second))) {
             height =
-                hasIntrinsicWidth && hasIntrinsicHeight
-                    ? (width / intrinsicWidth) * intrinsicHeight
-                    : bounds.height;
+                hasIntrinsicWidth && hasIntrinsicHeight ?
+                (width / intrinsicWidth) * intrinsicHeight :
+                bounds.height;
         }
         if (height !== null && isAuto(first)) {
             width =
-                hasIntrinsicWidth && hasIntrinsicHeight
-                    ? (height / intrinsicHeight) * intrinsicWidth
-                    : bounds.width;
+                hasIntrinsicWidth && hasIntrinsicHeight ?
+                (height / intrinsicHeight) * intrinsicWidth :
+                bounds.width;
         }
         if (width !== null && height !== null) {
             return [width, height];
@@ -6009,8 +6414,10 @@
         return value;
     };
     var calculateBackgroundRepeatPath = function (repeat, _a, _b, backgroundPositioningArea, backgroundPaintingArea) {
-        var x = _a[0], y = _a[1];
-        var width = _b[0], height = _b[1];
+        var x = _a[0],
+            y = _a[1];
+        var width = _b[0],
+            height = _b[1];
         switch (repeat) {
             case BACKGROUND_REPEAT.REPEAT_X:
                 return [
@@ -6082,7 +6489,10 @@
             img.style.verticalAlign = 'super';
             var middle = img.offsetTop - container.offsetTop + 2;
             body.removeChild(container);
-            return { baseline: baseline, middle: middle };
+            return {
+                baseline: baseline,
+                middle: middle
+            };
         };
         FontMetrics.prototype.getMetrics = function (fontFamily, fontSize) {
             var key = fontFamily + " " + fontSize;
@@ -6119,7 +6529,11 @@
             while (this._activeEffects.length) {
                 this.popEffect();
             }
-            effects.filter(function (effect) { return contains(effect.target, target); }).forEach(function (effect) { return _this.applyEffect(effect); });
+            effects.filter(function (effect) {
+                return contains(effect.target, target);
+            }).forEach(function (effect) {
+                return _this.applyEffect(effect);
+            });
         };
         CanvasRenderer.prototype.applyEffect = function (effect) {
             this.ctx.save();
@@ -6145,13 +6559,14 @@
                     switch (_a.label) {
                         case 0:
                             styles = stack.element.container.styles;
-                            if (!styles.isVisible()) return [3 /*break*/, 2];
+                            if (!styles.isVisible()) return [3 /*break*/ , 2];
                             this.ctx.globalAlpha = styles.opacity;
-                            return [4 /*yield*/, this.renderStackContent(stack)];
+                            return [4 /*yield*/ , this.renderStackContent(stack)];
                         case 1:
                             _a.sent();
                             _a.label = 2;
-                        case 2: return [2 /*return*/];
+                        case 2:
+                            return [2 /*return*/ ];
                     }
                 });
             });
@@ -6161,15 +6576,16 @@
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
-                            if (!paint.container.styles.isVisible()) return [3 /*break*/, 3];
-                            return [4 /*yield*/, this.renderNodeBackgroundAndBorders(paint)];
+                            if (!paint.container.styles.isVisible()) return [3 /*break*/ , 3];
+                            return [4 /*yield*/ , this.renderNodeBackgroundAndBorders(paint)];
                         case 1:
                             _a.sent();
-                            return [4 /*yield*/, this.renderNodeContent(paint)];
+                            return [4 /*yield*/ , this.renderNodeContent(paint)];
                         case 2:
                             _a.sent();
                             _a.label = 3;
-                        case 3: return [2 /*return*/];
+                        case 3:
+                            return [2 /*return*/ ];
                     }
                 });
             });
@@ -6178,9 +6594,10 @@
             var _this = this;
             if (letterSpacing === 0) {
                 this.ctx.fillText(text.text, text.bounds.left, text.bounds.top + text.bounds.height);
-            }
-            else {
-                var letters = toCodePoints(text.text).map(function (i) { return fromCodePoint(i); });
+            } else {
+                var letters = toCodePoints(text.text).map(function (i) {
+                    return fromCodePoint(i);
+                });
                 letters.reduce(function (left, letter) {
                     _this.ctx.fillText(letter, left, text.bounds.top + text.bounds.height);
                     return left + _this.ctx.measureText(letter).width;
@@ -6189,12 +6606,14 @@
         };
         CanvasRenderer.prototype.createFontStyle = function (styles) {
             var fontVariant = styles.fontVariant
-                .filter(function (variant) { return variant === 'normal' || variant === 'small-caps'; })
+                .filter(function (variant) {
+                    return variant === 'normal' || variant === 'small-caps';
+                })
                 .join('');
             var fontFamily = styles.fontFamily.join(', ');
-            var fontSize = isDimensionToken(styles.fontSize)
-                ? "" + styles.fontSize.number + styles.fontSize.unit
-                : styles.fontSize.number + "px";
+            var fontSize = isDimensionToken(styles.fontSize) ?
+                "" + styles.fontSize.number + styles.fontSize.unit :
+                styles.fontSize.number + "px";
             return [
                 [styles.fontStyle, fontVariant, styles.fontWeight, fontSize, fontFamily].join(' '),
                 fontFamily,
@@ -6217,12 +6636,12 @@
                                 .slice(0)
                                 .reverse()
                                 .forEach(function (textShadow) {
-                                _this.ctx.shadowColor = asString(textShadow.color);
-                                _this.ctx.shadowOffsetX = textShadow.offsetX.number * _this.options.scale;
-                                _this.ctx.shadowOffsetY = textShadow.offsetY.number * _this.options.scale;
-                                _this.ctx.shadowBlur = textShadow.blur.number;
-                                _this.ctx.fillText(text.text, text.bounds.left, text.bounds.top + text.bounds.height);
-                            });
+                                    _this.ctx.shadowColor = asString(textShadow.color);
+                                    _this.ctx.shadowOffsetX = textShadow.offsetX.number * _this.options.scale;
+                                    _this.ctx.shadowOffsetY = textShadow.offsetY.number * _this.options.scale;
+                                    _this.ctx.shadowBlur = textShadow.blur.number;
+                                    _this.ctx.fillText(text.text, text.bounds.left, text.bounds.top + text.bounds.height);
+                                });
                             _this.ctx.shadowColor = '';
                             _this.ctx.shadowOffsetX = 0;
                             _this.ctx.shadowOffsetY = 0;
@@ -6232,17 +6651,17 @@
                             _this.ctx.fillStyle = asString(styles.textDecorationColor || styles.color);
                             styles.textDecorationLine.forEach(function (textDecorationLine) {
                                 switch (textDecorationLine) {
-                                    case 1 /* UNDERLINE */:
+                                    case 1 /* UNDERLINE */ :
                                         // Draws a line at the baseline of the font
                                         // TODO As some browsers display the line as more than 1px if the font-size is big,
                                         // need to take that into account both in position and size
                                         var baseline = _this.fontMetrics.getMetrics(fontFamily, fontSize).baseline;
                                         _this.ctx.fillRect(text.bounds.left, Math.round(text.bounds.top + baseline), text.bounds.width, 1);
                                         break;
-                                    case 2 /* OVERLINE */:
+                                    case 2 /* OVERLINE */ :
                                         _this.ctx.fillRect(text.bounds.left, Math.round(text.bounds.top), text.bounds.width, 1);
                                         break;
-                                    case 3 /* LINE_THROUGH */:
+                                    case 3 /* LINE_THROUGH */ :
                                         // TODO try and find exact position for line-through
                                         var middle = _this.fontMetrics.getMetrics(fontFamily, fontSize).middle;
                                         _this.ctx.fillRect(text.bounds.left, Math.ceil(text.bounds.top + middle), text.bounds.width, 1);
@@ -6251,7 +6670,7 @@
                             });
                         }
                     });
-                    return [2 /*return*/];
+                    return [2 /*return*/ ];
                 });
             });
         };
@@ -6272,55 +6691,55 @@
                 return __generator(this, function (_b) {
                     switch (_b.label) {
                         case 0:
-                            this.applyEffects(paint.effects, 4 /* CONTENT */);
+                            this.applyEffects(paint.effects, 4 /* CONTENT */ );
                             container = paint.container;
                             curves = paint.curves;
                             styles = container.styles;
                             _i = 0, _a = container.textNodes;
                             _b.label = 1;
                         case 1:
-                            if (!(_i < _a.length)) return [3 /*break*/, 4];
+                            if (!(_i < _a.length)) return [3 /*break*/ , 4];
                             child = _a[_i];
-                            return [4 /*yield*/, this.renderTextNode(child, styles)];
+                            return [4 /*yield*/ , this.renderTextNode(child, styles)];
                         case 2:
                             _b.sent();
                             _b.label = 3;
                         case 3:
                             _i++;
-                            return [3 /*break*/, 1];
+                            return [3 /*break*/ , 1];
                         case 4:
-                            if (!(container instanceof ImageElementContainer)) return [3 /*break*/, 8];
+                            if (!(container instanceof ImageElementContainer)) return [3 /*break*/ , 8];
                             _b.label = 5;
                         case 5:
                             _b.trys.push([5, 7, , 8]);
-                            return [4 /*yield*/, this.options.cache.match(container.src)];
+                            return [4 /*yield*/ , this.options.cache.match(container.src)];
                         case 6:
                             image = _b.sent();
                             this.renderReplacedElement(container, curves, image);
-                            return [3 /*break*/, 8];
+                            return [3 /*break*/ , 8];
                         case 7:
                             e_1 = _b.sent();
                             Logger.getInstance(this.options.id).error("Error loading image " + container.src);
-                            return [3 /*break*/, 8];
+                            return [3 /*break*/ , 8];
                         case 8:
                             if (container instanceof CanvasElementContainer) {
                                 this.renderReplacedElement(container, curves, container.canvas);
                             }
-                            if (!(container instanceof SVGElementContainer)) return [3 /*break*/, 12];
+                            if (!(container instanceof SVGElementContainer)) return [3 /*break*/ , 12];
                             _b.label = 9;
                         case 9:
                             _b.trys.push([9, 11, , 12]);
-                            return [4 /*yield*/, this.options.cache.match(container.svg)];
+                            return [4 /*yield*/ , this.options.cache.match(container.svg)];
                         case 10:
                             image = _b.sent();
                             this.renderReplacedElement(container, curves, image);
-                            return [3 /*break*/, 12];
+                            return [3 /*break*/ , 12];
                         case 11:
                             e_2 = _b.sent();
                             Logger.getInstance(this.options.id).error("Error loading svg " + container.svg.substring(0, 255));
-                            return [3 /*break*/, 12];
+                            return [3 /*break*/ , 12];
                         case 12:
-                            if (!(container instanceof IFrameElementContainer && container.tree)) return [3 /*break*/, 14];
+                            if (!(container instanceof IFrameElementContainer && container.tree)) return [3 /*break*/ , 14];
                             iframeRenderer = new CanvasRenderer({
                                 id: this.options.id,
                                 scale: this.options.scale,
@@ -6335,7 +6754,7 @@
                                 windowWidth: container.width,
                                 windowHeight: container.height
                             });
-                            return [4 /*yield*/, iframeRenderer.render(container.tree)];
+                            return [4 /*yield*/ , iframeRenderer.render(container.tree)];
                         case 13:
                             canvas = _b.sent();
                             if (container.width && container.height) {
@@ -6361,8 +6780,7 @@
                                         this.ctx.fill();
                                         this.ctx.restore();
                                     }
-                                }
-                                else if (container.type === RADIO) {
+                                } else if (container.type === RADIO) {
                                     if (container.checked) {
                                         this.ctx.save();
                                         this.ctx.beginPath();
@@ -6402,25 +6820,26 @@
                                 this.ctx.textBaseline = 'bottom';
                                 this.ctx.textAlign = 'left';
                             }
-                            if (!contains(container.styles.display, 2048 /* LIST_ITEM */)) return [3 /*break*/, 20];
-                            if (!(container.styles.listStyleImage !== null)) return [3 /*break*/, 19];
+                            if (!contains(container.styles.display, 2048 /* LIST_ITEM */ )) return [3 /*break*/ , 20];
+                            if (!(container.styles.listStyleImage !== null)) return [3 /*break*/ , 19];
                             img = container.styles.listStyleImage;
-                            if (!(img.type === CSSImageType.URL)) return [3 /*break*/, 18];
+                            if (!(img.type === CSSImageType.URL)) return [3 /*break*/ , 18];
                             image = void 0;
                             url = img.url;
                             _b.label = 15;
                         case 15:
                             _b.trys.push([15, 17, , 18]);
-                            return [4 /*yield*/, this.options.cache.match(url)];
+                            return [4 /*yield*/ , this.options.cache.match(url)];
                         case 16:
                             image = _b.sent();
                             this.ctx.drawImage(image, container.bounds.left - (image.width + 10), container.bounds.top);
-                            return [3 /*break*/, 18];
+                            return [3 /*break*/ , 18];
                         case 17:
                             e_3 = _b.sent();
                             Logger.getInstance(this.options.id).error("Error loading list-style-image " + url);
-                            return [3 /*break*/, 18];
-                        case 18: return [3 /*break*/, 20];
+                            return [3 /*break*/ , 18];
+                        case 18:
+                            return [3 /*break*/ , 20];
                         case 19:
                             if (paint.listValue && container.styles.listStyleType !== LIST_STYLE_TYPE.NONE) {
                                 this.ctx.font = this.createFontStyle(styles)[0];
@@ -6433,7 +6852,8 @@
                                 this.ctx.textAlign = 'left';
                             }
                             _b.label = 20;
-                        case 20: return [2 /*return*/];
+                        case 20:
+                            return [2 /*return*/ ];
                     }
                 });
             });
@@ -6443,10 +6863,10 @@
                 var _i, _a, child, _b, _c, child, _d, _e, child, _f, _g, child, _h, _j, child, _k, _l, child, _m, _o, child;
                 return __generator(this, function (_p) {
                     switch (_p.label) {
-                        case 0: 
-                        // https://www.w3.org/TR/css-position-3/#painting-order
-                        // 1. the background and borders of the element forming the stacking context.
-                        return [4 /*yield*/, this.renderNodeBackgroundAndBorders(stack.element)];
+                        case 0:
+                            // https://www.w3.org/TR/css-position-3/#painting-order
+                            // 1. the background and borders of the element forming the stacking context.
+                            return [4 /*yield*/ , this.renderNodeBackgroundAndBorders(stack.element)];
                         case 1:
                             // https://www.w3.org/TR/css-position-3/#painting-order
                             // 1. the background and borders of the element forming the stacking context.
@@ -6454,110 +6874,112 @@
                             _i = 0, _a = stack.negativeZIndex;
                             _p.label = 2;
                         case 2:
-                            if (!(_i < _a.length)) return [3 /*break*/, 5];
+                            if (!(_i < _a.length)) return [3 /*break*/ , 5];
                             child = _a[_i];
-                            return [4 /*yield*/, this.renderStack(child)];
+                            return [4 /*yield*/ , this.renderStack(child)];
                         case 3:
                             _p.sent();
                             _p.label = 4;
                         case 4:
                             _i++;
-                            return [3 /*break*/, 2];
-                        case 5: 
-                        // 3. For all its in-flow, non-positioned, block-level descendants in tree order:
-                        return [4 /*yield*/, this.renderNodeContent(stack.element)];
+                            return [3 /*break*/ , 2];
+                        case 5:
+                            // 3. For all its in-flow, non-positioned, block-level descendants in tree order:
+                            return [4 /*yield*/ , this.renderNodeContent(stack.element)];
                         case 6:
                             // 3. For all its in-flow, non-positioned, block-level descendants in tree order:
                             _p.sent();
                             _b = 0, _c = stack.nonInlineLevel;
                             _p.label = 7;
                         case 7:
-                            if (!(_b < _c.length)) return [3 /*break*/, 10];
+                            if (!(_b < _c.length)) return [3 /*break*/ , 10];
                             child = _c[_b];
-                            return [4 /*yield*/, this.renderNode(child)];
+                            return [4 /*yield*/ , this.renderNode(child)];
                         case 8:
                             _p.sent();
                             _p.label = 9;
                         case 9:
                             _b++;
-                            return [3 /*break*/, 7];
+                            return [3 /*break*/ , 7];
                         case 10:
                             _d = 0, _e = stack.nonPositionedFloats;
                             _p.label = 11;
                         case 11:
-                            if (!(_d < _e.length)) return [3 /*break*/, 14];
+                            if (!(_d < _e.length)) return [3 /*break*/ , 14];
                             child = _e[_d];
-                            return [4 /*yield*/, this.renderStack(child)];
+                            return [4 /*yield*/ , this.renderStack(child)];
                         case 12:
                             _p.sent();
                             _p.label = 13;
                         case 13:
                             _d++;
-                            return [3 /*break*/, 11];
+                            return [3 /*break*/ , 11];
                         case 14:
                             _f = 0, _g = stack.nonPositionedInlineLevel;
                             _p.label = 15;
                         case 15:
-                            if (!(_f < _g.length)) return [3 /*break*/, 18];
+                            if (!(_f < _g.length)) return [3 /*break*/ , 18];
                             child = _g[_f];
-                            return [4 /*yield*/, this.renderStack(child)];
+                            return [4 /*yield*/ , this.renderStack(child)];
                         case 16:
                             _p.sent();
                             _p.label = 17;
                         case 17:
                             _f++;
-                            return [3 /*break*/, 15];
+                            return [3 /*break*/ , 15];
                         case 18:
                             _h = 0, _j = stack.inlineLevel;
                             _p.label = 19;
                         case 19:
-                            if (!(_h < _j.length)) return [3 /*break*/, 22];
+                            if (!(_h < _j.length)) return [3 /*break*/ , 22];
                             child = _j[_h];
-                            return [4 /*yield*/, this.renderNode(child)];
+                            return [4 /*yield*/ , this.renderNode(child)];
                         case 20:
                             _p.sent();
                             _p.label = 21;
                         case 21:
                             _h++;
-                            return [3 /*break*/, 19];
+                            return [3 /*break*/ , 19];
                         case 22:
                             _k = 0, _l = stack.zeroOrAutoZIndexOrTransformedOrOpacity;
                             _p.label = 23;
                         case 23:
-                            if (!(_k < _l.length)) return [3 /*break*/, 26];
+                            if (!(_k < _l.length)) return [3 /*break*/ , 26];
                             child = _l[_k];
-                            return [4 /*yield*/, this.renderStack(child)];
+                            return [4 /*yield*/ , this.renderStack(child)];
                         case 24:
                             _p.sent();
                             _p.label = 25;
                         case 25:
                             _k++;
-                            return [3 /*break*/, 23];
+                            return [3 /*break*/ , 23];
                         case 26:
                             _m = 0, _o = stack.positiveZIndex;
                             _p.label = 27;
                         case 27:
-                            if (!(_m < _o.length)) return [3 /*break*/, 30];
+                            if (!(_m < _o.length)) return [3 /*break*/ , 30];
                             child = _o[_m];
-                            return [4 /*yield*/, this.renderStack(child)];
+                            return [4 /*yield*/ , this.renderStack(child)];
                         case 28:
                             _p.sent();
                             _p.label = 29;
                         case 29:
                             _m++;
-                            return [3 /*break*/, 27];
-                        case 30: return [2 /*return*/];
+                            return [3 /*break*/ , 27];
+                        case 30:
+                            return [2 /*return*/ ];
                     }
                 });
             });
         };
         CanvasRenderer.prototype.mask = function (paths) {
-            var x=this.options.x,y=this.options.y;
+            var x = this.options.x,
+                y = this.options.y;
             this.ctx.beginPath();
             this.ctx.moveTo(x, y);
-            this.ctx.lineTo(this.canvas.width+x, y);
-            this.ctx.lineTo(this.canvas.width+x, this.canvas.height+y);
-            this.ctx.lineTo(x, this.canvas.height+y);
+            this.ctx.lineTo(this.canvas.width + x, y);
+            this.ctx.lineTo(this.canvas.width + x, this.canvas.height + y);
+            this.ctx.lineTo(x, this.canvas.height + y);
             this.ctx.lineTo(x, y);
             this.formatPath(paths.slice(0).reverse());
             this.ctx.closePath();
@@ -6573,8 +6995,7 @@
                 var start = isBezierCurve(point) ? point.start : point;
                 if (index === 0) {
                     _this.ctx.moveTo(start.x, start.y);
-                }
-                else {
+                } else {
                     _this.ctx.lineTo(start.x, start.y);
                 }
                 if (isBezierCurve(point)) {
@@ -6612,20 +7033,20 @@
                                 return __generator(this, function (_f) {
                                     switch (_f.label) {
                                         case 0:
-                                            if (!(backgroundImage.type === CSSImageType.URL)) return [3 /*break*/, 5];
+                                            if (!(backgroundImage.type === CSSImageType.URL)) return [3 /*break*/ , 5];
                                             image = void 0;
                                             url = backgroundImage.url;
                                             _f.label = 1;
                                         case 1:
                                             _f.trys.push([1, 3, , 4]);
-                                            return [4 /*yield*/, this_1.options.cache.match(url)];
+                                            return [4 /*yield*/ , this_1.options.cache.match(url)];
                                         case 2:
                                             image = _f.sent();
-                                            return [3 /*break*/, 4];
+                                            return [3 /*break*/ , 4];
                                         case 3:
                                             e_4 = _f.sent();
                                             Logger.getInstance(this_1.options.id).error("Error loading background-image " + url);
-                                            return [3 /*break*/, 4];
+                                            return [3 /*break*/ , 4];
                                         case 4:
                                             if (image) {
                                                 _a = calculateBackgroundRendering(container, index, [
@@ -6636,7 +7057,7 @@
                                                 pattern = this_1.ctx.createPattern(this_1.resizeImage(image, width, height), 'repeat');
                                                 this_1.renderRepeat(path, pattern, x, y);
                                             }
-                                            return [3 /*break*/, 6];
+                                            return [3 /*break*/ , 6];
                                         case 5:
                                             if (isLinearGradient(backgroundImage)) {
                                                 _b = calculateBackgroundRendering(container, index, [null, null, null]), path = _b[0], x = _b[1], y = _b[2], width = _b[3], height = _b[4];
@@ -6655,8 +7076,7 @@
                                                     pattern = this_1.ctx.createPattern(canvas, 'repeat');
                                                     this_1.renderRepeat(path, pattern, x, y);
                                                 }
-                                            }
-                                            else if (isRadialGradient(backgroundImage)) {
+                                            } else if (isRadialGradient(backgroundImage)) {
                                                 _d = calculateBackgroundRendering(container, index, [
                                                     null,
                                                     null,
@@ -6684,8 +7104,7 @@
                                                         this_1.ctx.translate(-midX, -midY);
                                                         this_1.ctx.fillRect(left, invF * (top_1 - midY) + midY, width, height * invF);
                                                         this_1.ctx.restore();
-                                                    }
-                                                    else {
+                                                    } else {
                                                         this_1.ctx.fill();
                                                     }
                                                 }
@@ -6693,7 +7112,7 @@
                                             _f.label = 6;
                                         case 6:
                                             index--;
-                                            return [2 /*return*/];
+                                            return [2 /*return*/ ];
                                     }
                                 });
                             };
@@ -6701,16 +7120,17 @@
                             _i = 0, _a = container.styles.backgroundImage.slice(0).reverse();
                             _b.label = 1;
                         case 1:
-                            if (!(_i < _a.length)) return [3 /*break*/, 4];
+                            if (!(_i < _a.length)) return [3 /*break*/ , 4];
                             backgroundImage = _a[_i];
-                            return [5 /*yield**/, _loop_1(backgroundImage)];
+                            return [5 /*yield**/ , _loop_1(backgroundImage)];
                         case 2:
                             _b.sent();
                             _b.label = 3;
                         case 3:
                             _i++;
-                            return [3 /*break*/, 1];
-                        case 4: return [2 /*return*/];
+                            return [3 /*break*/ , 1];
+                        case 4:
+                            return [2 /*return*/ ];
                     }
                 });
             });
@@ -6721,7 +7141,7 @@
                     this.path(parsePathForBorder(curvePoints, side));
                     this.ctx.fillStyle = asString(color);
                     this.ctx.fill();
-                    return [2 /*return*/];
+                    return [2 /*return*/ ];
                 });
             });
         };
@@ -6732,17 +7152,28 @@
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
-                            this.applyEffects(paint.effects, 2 /* BACKGROUND_BORDERS */);
+                            this.applyEffects(paint.effects, 2 /* BACKGROUND_BORDERS */ );
                             styles = paint.container.styles;
                             hasBackground = !isTransparent(styles.backgroundColor) || styles.backgroundImage.length;
-                            borders = [
-                                { style: styles.borderTopStyle, color: styles.borderTopColor },
-                                { style: styles.borderRightStyle, color: styles.borderRightColor },
-                                { style: styles.borderBottomStyle, color: styles.borderBottomColor },
-                                { style: styles.borderLeftStyle, color: styles.borderLeftColor }
+                            borders = [{
+                                    style: styles.borderTopStyle,
+                                    color: styles.borderTopColor
+                                },
+                                {
+                                    style: styles.borderRightStyle,
+                                    color: styles.borderRightColor
+                                },
+                                {
+                                    style: styles.borderBottomStyle,
+                                    color: styles.borderBottomColor
+                                },
+                                {
+                                    style: styles.borderLeftStyle,
+                                    color: styles.borderLeftColor
+                                }
                             ];
                             backgroundPaintingArea = calculateBackgroundCurvedPaintingArea(getBackgroundValueForIndex(styles.backgroundClip, 0), paint.curves);
-                            if (!(hasBackground || styles.boxShadow.length)) return [3 /*break*/, 2];
+                            if (!(hasBackground || styles.boxShadow.length)) return [3 /*break*/ , 2];
                             this.ctx.save();
                             this.path(backgroundPaintingArea);
                             this.ctx.clip();
@@ -6750,7 +7181,7 @@
                                 this.ctx.fillStyle = asString(styles.backgroundColor);
                                 this.ctx.fill();
                             }
-                            return [4 /*yield*/, this.renderBackgroundImage(paint.container)];
+                            return [4 /*yield*/ , this.renderBackgroundImage(paint.container)];
                         case 1:
                             _a.sent();
                             this.ctx.restore();
@@ -6758,38 +7189,37 @@
                                 .slice(0)
                                 .reverse()
                                 .forEach(function (shadow) {
-                                _this.ctx.save();
-                                var borderBoxArea = calculateBorderBoxPath(paint.curves);
-                                var maskOffset = shadow.inset ? 0 : MASK_OFFSET;
-                                var shadowPaintingArea = transformPath(borderBoxArea, -maskOffset + (shadow.inset ? 1 : -1) * shadow.spread.number, (shadow.inset ? 1 : -1) * shadow.spread.number, shadow.spread.number * (shadow.inset ? -2 : 2), shadow.spread.number * (shadow.inset ? -2 : 2));
-                                if (shadow.inset) {
-                                    _this.path(borderBoxArea);
-                                    _this.ctx.clip();
-                                    _this.mask(shadowPaintingArea);
-                                }
-                                else {
-                                    _this.mask(borderBoxArea);
-                                    _this.ctx.clip();
-                                    _this.path(shadowPaintingArea);
-                                }
-                                _this.ctx.shadowOffsetX = shadow.offsetX.number + maskOffset*window.devicePixelRatio;
-                                _this.ctx.shadowOffsetY = shadow.offsetY.number;
-                                _this.ctx.shadowColor = asString(shadow.color);
-                                _this.ctx.shadowBlur = shadow.blur.number;
-                                _this.ctx.fillStyle = shadow.inset ? asString(shadow.color) : 'rgba(0,0,0,1)';
-                                _this.ctx.fill();
-                                _this.ctx.restore();
-                            });
+                                    _this.ctx.save();
+                                    var borderBoxArea = calculateBorderBoxPath(paint.curves);
+                                    var maskOffset = shadow.inset ? 0 : MASK_OFFSET;
+                                    var shadowPaintingArea = transformPath(borderBoxArea, -maskOffset + (shadow.inset ? 1 : -1) * shadow.spread.number, (shadow.inset ? 1 : -1) * shadow.spread.number, shadow.spread.number * (shadow.inset ? -2 : 2), shadow.spread.number * (shadow.inset ? -2 : 2));
+                                    if (shadow.inset) {
+                                        _this.path(borderBoxArea);
+                                        _this.ctx.clip();
+                                        _this.mask(shadowPaintingArea);
+                                    } else {
+                                        _this.mask(borderBoxArea);
+                                        _this.ctx.clip();
+                                        _this.path(shadowPaintingArea);
+                                    }
+                                    _this.ctx.shadowOffsetX = shadow.offsetX.number + maskOffset * window.devicePixelRatio;
+                                    _this.ctx.shadowOffsetY = shadow.offsetY.number;
+                                    _this.ctx.shadowColor = asString(shadow.color);
+                                    _this.ctx.shadowBlur = shadow.blur.number;
+                                    _this.ctx.fillStyle = shadow.inset ? asString(shadow.color) : 'rgba(0,0,0,1)';
+                                    _this.ctx.fill();
+                                    _this.ctx.restore();
+                                });
                             _a.label = 2;
                         case 2:
                             side = 0;
                             _i = 0, borders_1 = borders;
                             _a.label = 3;
                         case 3:
-                            if (!(_i < borders_1.length)) return [3 /*break*/, 7];
+                            if (!(_i < borders_1.length)) return [3 /*break*/ , 7];
                             border = borders_1[_i];
-                            if (!(border.style !== BORDER_STYLE.NONE && !isTransparent(border.color))) return [3 /*break*/, 5];
-                            return [4 /*yield*/, this.renderBorder(border.color, side, paint.curves)];
+                            if (!(border.style !== BORDER_STYLE.NONE && !isTransparent(border.color))) return [3 /*break*/ , 5];
+                            return [4 /*yield*/ , this.renderBorder(border.color, side, paint.curves)];
                         case 4:
                             _a.sent();
                             _a.label = 5;
@@ -6798,8 +7228,9 @@
                             _a.label = 6;
                         case 6:
                             _i++;
-                            return [3 /*break*/, 3];
-                        case 7: return [2 /*return*/];
+                            return [3 /*break*/ , 3];
+                        case 7:
+                            return [2 /*return*/ ];
                     }
                 });
             });
@@ -6815,11 +7246,11 @@
                                 this.ctx.fillRect(this.options.x - this.options.scrollX, this.options.y - this.options.scrollY, this.options.width, this.options.height);
                             }
                             stack = parseStackingContexts(element);
-                            return [4 /*yield*/, this.renderStack(stack)];
+                            return [4 /*yield*/ , this.renderStack(stack)];
                         case 1:
                             _a.sent();
-                            this.applyEffects([], 2 /* BACKGROUND_BORDERS */);
-                            return [2 /*return*/, this.canvas];
+                            this.applyEffects([], 2 /* BACKGROUND_BORDERS */ );
+                            return [2 /*return*/ , this.canvas];
                     }
                 });
             });
@@ -6829,11 +7260,9 @@
     var isTextInputElement = function (container) {
         if (container instanceof TextareaElementContainer) {
             return true;
-        }
-        else if (container instanceof SelectElementContainer) {
+        } else if (container instanceof SelectElementContainer) {
             return true;
-        }
-        else if (container instanceof InputElementContainer && container.type !== RADIO && container.type !== CHECKBOX) {
+        } else if (container instanceof InputElementContainer && container.type !== RADIO && container.type !== CHECKBOX) {
             return true;
         }
         return false;
@@ -6881,7 +7310,7 @@
                     switch (_a.label) {
                         case 0:
                             svg = createForeignObjectSVG(Math.max(this.options.windowWidth, this.options.width) * this.options.scale, Math.max(this.options.windowHeight, this.options.height) * this.options.scale, this.options.scrollX * this.options.scale, this.options.scrollY * this.options.scale, element);
-                            return [4 /*yield*/, loadSerializedSVG$1(svg)];
+                            return [4 /*yield*/ , loadSerializedSVG$1(svg)];
                         case 1:
                             img = _a.sent();
                             if (this.options.backgroundColor) {
@@ -6889,7 +7318,7 @@
                                 this.ctx.fillRect(0, 0, this.options.width * this.options.scale, this.options.height * this.options.scale);
                             }
                             this.ctx.drawImage(img, -this.options.x * this.options.scale, -this.options.y * this.options.scale);
-                            return [2 /*return*/, this.canvas];
+                            return [2 /*return*/ , this.canvas];
                     }
                 });
             });
@@ -6908,136 +7337,145 @@
     };
 
     var _this = undefined;
-    var parseColor$1 = function (value) { return color.parse(Parser.create(value).parseComponentValue()); };
+    var parseColor$1 = function (value) {
+        return color.parse(Parser.create(value).parseComponentValue());
+    };
     var html2canvas = function (element, options) {
-        if (options === void 0) { options = {}; }
+        if (options === void 0) {
+            options = {};
+        }
         return renderElement(element, options);
     };
     if (typeof window !== "undefined") {
         CacheStorage.setContext(window);
     }
-    var renderElement = function (element, opts) { return __awaiter(_this, void 0, void 0, function () {
-        var ownerDocument, defaultView, instanceName, _a, width, height, left, top, defaultResourceOptions, resourceOptions, defaultOptions, options, windowBounds, documentCloner, clonedElement, container, documentBackgroundColor, bodyBackgroundColor, bgColor, defaultBackgroundColor, backgroundColor, renderOptions, canvas, renderer, root, renderer;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0:
-                    ownerDocument = element.ownerDocument;
-                    if (!ownerDocument) {
-                        throw new Error("Element is not attached to a Document");
-                    }
-                    defaultView = ownerDocument.defaultView;
-                    if (!defaultView) {
-                        throw new Error("Document is not attached to a Window");
-                    }
-                    instanceName = (Math.round(Math.random() * 1000) + Date.now()).toString(16);
-                    _a = isBodyElement(element) || isHTMLElement(element) ? parseDocumentSize(ownerDocument) : parseBounds(element), width = _a.width, height = _a.height, left = _a.left, top = _a.top;
-                    defaultResourceOptions = {
-                        allowTaint: false,
-                        imageTimeout: 15000,
-                        proxy: undefined,
-                        useCORS: false
-                    };
-                    resourceOptions = __assign({}, defaultResourceOptions, opts);
-                    defaultOptions = {
-                        backgroundColor: '#ffffff',
-                        cache: opts.cache ? opts.cache : CacheStorage.create(instanceName, resourceOptions),
-                        logging: true,
-                        removeContainer: true,
-                        foreignObjectRendering: false,
-                        scale: defaultView.devicePixelRatio || 1,
-                        windowWidth: defaultView.innerWidth,
-                        windowHeight: defaultView.innerHeight,
-                        scrollX: defaultView.pageXOffset,
-                        scrollY: defaultView.pageYOffset,
-                        x: left,
-                        y: top,
-                        width: Math.ceil(width),
-                        height: Math.ceil(height),
-                        id: instanceName
-                    };
-                    options = __assign({}, defaultOptions, resourceOptions, opts);
-                    windowBounds = new Bounds(options.scrollX, options.scrollY, options.windowWidth, options.windowHeight);
-                    Logger.create({ id: instanceName, enabled: options.logging });
-                    Logger.getInstance(instanceName).debug("Starting document clone");
-                    documentCloner = new DocumentCloner(element, {
-                        id: instanceName,
-                        onclone: options.onclone,
-                        ignoreElements: options.ignoreElements,
-                        inlineImages: options.foreignObjectRendering,
-                        copyStyles: options.foreignObjectRendering
-                    });
-                    clonedElement = documentCloner.clonedReferenceElement;
-                    if (!clonedElement) {
-                        return [2 /*return*/, Promise.reject("Unable to find element in cloned iframe")];
-                    }
-                    return [4 /*yield*/, documentCloner.toIFrame(ownerDocument, windowBounds)];
-                case 1:
-                    container = _b.sent();
-                    documentBackgroundColor = ownerDocument.documentElement
-                        ? parseColor$1(getComputedStyle(ownerDocument.documentElement).backgroundColor)
-                        : COLORS.TRANSPARENT;
-                    bodyBackgroundColor = ownerDocument.body
-                        ? parseColor$1(getComputedStyle(ownerDocument.body).backgroundColor)
-                        : COLORS.TRANSPARENT;
-                    bgColor = opts.backgroundColor;
-                    defaultBackgroundColor = typeof bgColor === 'string' ? parseColor$1(bgColor) : bgColor === null ? COLORS.TRANSPARENT : 0xffffffff;
-                    backgroundColor = element === ownerDocument.documentElement
-                        ? isTransparent(documentBackgroundColor)
-                            ? isTransparent(bodyBackgroundColor)
-                                ? defaultBackgroundColor
-                                : bodyBackgroundColor
-                            : documentBackgroundColor
-                        : defaultBackgroundColor;
-                    renderOptions = {
-                        id: instanceName,
-                        cache: options.cache,
-                        canvas: options.canvas,
-                        backgroundColor: backgroundColor,
-                        scale: options.scale,
-                        x: options.x,
-                        y: options.y,
-                        scrollX: options.scrollX,
-                        scrollY: options.scrollY,
-                        width: options.width,
-                        height: options.height,
-                        windowWidth: options.windowWidth,
-                        windowHeight: options.windowHeight
-                    };
-                    if (!options.foreignObjectRendering) return [3 /*break*/, 3];
-                    Logger.getInstance(instanceName).debug("Document cloned, using foreign object rendering");
-                    renderer = new ForeignObjectRenderer(renderOptions);
-                    return [4 /*yield*/, renderer.render(clonedElement)];
-                case 2:
-                    canvas = _b.sent();
-                    return [3 /*break*/, 5];
-                case 3:
-                    Logger.getInstance(instanceName).debug("Document cloned, using computed rendering");
-                    CacheStorage.attachInstance(options.cache);
-                    Logger.getInstance(instanceName).debug("Starting DOM parsing");
-                    root = parseTree(clonedElement);
-                    CacheStorage.detachInstance();
-                    if (backgroundColor === root.styles.backgroundColor) {
-                        root.styles.backgroundColor = COLORS.TRANSPARENT;
-                    }
-                    Logger.getInstance(instanceName).debug("Starting renderer");
-                    renderer = new CanvasRenderer(renderOptions);
-                    return [4 /*yield*/, renderer.render(root)];
-                case 4:
-                    canvas = _b.sent();
-                    _b.label = 5;
-                case 5:
-                    if (options.removeContainer === true) {
-                        if (!DocumentCloner.destroy(container)) {
-                            Logger.getInstance(instanceName).error("Cannot detach cloned iframe as it is not in the DOM anymore");
+    var renderElement = function (element, opts) {
+        return __awaiter(_this, void 0, void 0, function () {
+            var ownerDocument, defaultView, instanceName, _a, width, height, left, top, defaultResourceOptions, resourceOptions, defaultOptions, options, windowBounds, documentCloner, clonedElement, container, documentBackgroundColor, bodyBackgroundColor, bgColor, defaultBackgroundColor, backgroundColor, renderOptions, canvas, renderer, root, renderer;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        ownerDocument = element.ownerDocument;
+                        if (!ownerDocument) {
+                            throw new Error("Element is not attached to a Document");
                         }
-                    }
-                    Logger.getInstance(instanceName).debug("Finished rendering");
-                    Logger.destroy(instanceName);
-                    CacheStorage.destroy(instanceName);
-                    return [2 /*return*/, canvas];
-            }
+                        defaultView = ownerDocument.defaultView;
+                        if (!defaultView) {
+                            throw new Error("Document is not attached to a Window");
+                        }
+                        instanceName = (Math.round(Math.random() * 1000) + Date.now()).toString(16);
+                        _a = isBodyElement(element) || isHTMLElement(element) ? parseDocumentSize(ownerDocument) : parseBounds(element), width = _a.width, height = _a.height, left = _a.left, top = _a.top;
+                        defaultResourceOptions = {
+                            allowTaint: false,
+                            imageTimeout: 15000,
+                            proxy: undefined,
+                            useCORS: false
+                        };
+                        resourceOptions = __assign({}, defaultResourceOptions, opts);
+                        defaultOptions = {
+                            backgroundColor: '#ffffff',
+                            cache: opts.cache ? opts.cache : CacheStorage.create(instanceName, resourceOptions),
+                            logging: true,
+                            removeContainer: true,
+                            foreignObjectRendering: false,
+                            scale: defaultView.devicePixelRatio || 1,
+                            windowWidth: defaultView.innerWidth,
+                            windowHeight: defaultView.innerHeight,
+                            scrollX: defaultView.pageXOffset,
+                            scrollY: defaultView.pageYOffset,
+                            x: left,
+                            y: top,
+                            width: Math.ceil(width),
+                            height: Math.ceil(height),
+                            id: instanceName
+                        };
+                        options = __assign({}, defaultOptions, resourceOptions, opts);
+                        windowBounds = new Bounds(options.scrollX, options.scrollY, options.windowWidth, options.windowHeight);
+                        Logger.create({
+                            id: instanceName,
+                            enabled: options.logging
+                        });
+                        Logger.getInstance(instanceName).debug("Starting document clone");
+                        documentCloner = new DocumentCloner(element, {
+                            id: instanceName,
+                            onclone: options.onclone,
+                            ignoreElements: options.ignoreElements,
+                            inlineImages: options.foreignObjectRendering,
+                            copyStyles: options.foreignObjectRendering
+                        });
+                        clonedElement = documentCloner.clonedReferenceElement;
+                        if (!clonedElement) {
+                            return [2 /*return*/ , Promise.reject("Unable to find element in cloned iframe")];
+                        }
+                        return [4 /*yield*/ , documentCloner.toIFrame(ownerDocument, windowBounds)];
+                    case 1:
+                        container = _b.sent();
+                        documentBackgroundColor = ownerDocument.documentElement ?
+                            parseColor$1(getComputedStyle(ownerDocument.documentElement).backgroundColor) :
+                            COLORS.TRANSPARENT;
+                        bodyBackgroundColor = ownerDocument.body ?
+                            parseColor$1(getComputedStyle(ownerDocument.body).backgroundColor) :
+                            COLORS.TRANSPARENT;
+                        bgColor = opts.backgroundColor;
+                        defaultBackgroundColor = typeof bgColor === 'string' ? parseColor$1(bgColor) : bgColor === null ? COLORS.TRANSPARENT : 0xffffffff;
+                        backgroundColor = element === ownerDocument.documentElement ?
+                            isTransparent(documentBackgroundColor) ?
+                            isTransparent(bodyBackgroundColor) ?
+                            defaultBackgroundColor :
+                            bodyBackgroundColor :
+                            documentBackgroundColor :
+                            defaultBackgroundColor;
+                        renderOptions = {
+                            id: instanceName,
+                            cache: options.cache,
+                            canvas: options.canvas,
+                            backgroundColor: backgroundColor,
+                            scale: options.scale,
+                            x: options.x,
+                            y: options.y,
+                            scrollX: options.scrollX,
+                            scrollY: options.scrollY,
+                            width: options.width,
+                            height: options.height,
+                            windowWidth: options.windowWidth,
+                            windowHeight: options.windowHeight
+                        };
+                        if (!options.foreignObjectRendering) return [3 /*break*/ , 3];
+                        Logger.getInstance(instanceName).debug("Document cloned, using foreign object rendering");
+                        renderer = new ForeignObjectRenderer(renderOptions);
+                        return [4 /*yield*/ , renderer.render(clonedElement)];
+                    case 2:
+                        canvas = _b.sent();
+                        return [3 /*break*/ , 5];
+                    case 3:
+                        Logger.getInstance(instanceName).debug("Document cloned, using computed rendering");
+                        CacheStorage.attachInstance(options.cache);
+                        Logger.getInstance(instanceName).debug("Starting DOM parsing");
+                        root = parseTree(clonedElement);
+                        CacheStorage.detachInstance();
+                        if (backgroundColor === root.styles.backgroundColor) {
+                            root.styles.backgroundColor = COLORS.TRANSPARENT;
+                        }
+                        Logger.getInstance(instanceName).debug("Starting renderer");
+                        renderer = new CanvasRenderer(renderOptions);
+                        return [4 /*yield*/ , renderer.render(root)];
+                    case 4:
+                        canvas = _b.sent();
+                        _b.label = 5;
+                    case 5:
+                        if (options.removeContainer === true) {
+                            if (!DocumentCloner.destroy(container)) {
+                                Logger.getInstance(instanceName).error("Cannot detach cloned iframe as it is not in the DOM anymore");
+                            }
+                        }
+                        Logger.getInstance(instanceName).debug("Finished rendering");
+                        Logger.destroy(instanceName);
+                        CacheStorage.destroy(instanceName);
+                        return [2 /*return*/ , canvas];
+                }
+            });
         });
-    }); };
+    };
 
     return html2canvas;
 
