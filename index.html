@@ -46,7 +46,7 @@ pagination:
 </div>
 <div id="search" class="clearfix">
   <div class="search xs-px1 xs-mt2">
-    <label for="#search-input" class="hidden">Search</label><input type="text" id="search-input" placeholder="Search titles, ingredients, or categories{{site.baseurl}}.">
+    <input aria-labelledby="Search" type="text" id="search-input" placeholder="Search titles, ingredients, or categories{{site.baseurl}}.">
   </div>
   <div id="spinner" class="spinner">
     <div class="bounce1"></div>
@@ -61,7 +61,7 @@ pagination:
   <div class="recipes xs-px1 xs-mt2" id="recipes">
     {% for post in paginator.posts %}
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a class="block relative" href="{{ post.url | prepend: site.baseurl }}">
+      <a class="block relative" aria-label="Recipe for {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
         <div class="image ratio bg-cover" {% for image in post.image %}
           style='background-image:url(/images/blank.jpg);' data-echo-background='{{post.url|prepend:site.baseurl}}/{{image}}'
           {% endfor %}></div>
