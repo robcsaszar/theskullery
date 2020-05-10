@@ -41,7 +41,7 @@ input[type=url],
 input[type=week] {
   box-sizing: border-box;
   height: 2.25rem;
-  padding: .5rem .5rem;
+  padding: .5rem;
   vertical-align: middle;
   -webkit-appearance: none;
 }
@@ -49,7 +49,7 @@ input[type=week] {
 select {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .5rem .5rem;
+  padding: .5rem;
 }
 
 select:not([multiple]) {
@@ -60,7 +60,7 @@ select:not([multiple]) {
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .5rem .5rem;
+  padding: .5rem;
 }
 
 .fieldset-reset {
@@ -1187,7 +1187,7 @@ input[type=range] {
   box-shadow: none;
 }
 
-.button-transparent:hover:before, 
+.button-transparent:hover:before,
 .button-transparent:focus:before {
   opacity: .09375;
 }
@@ -1195,7 +1195,7 @@ input[type=range] {
 .button-transparent:focus {
   outline: none;
   border-color: transparent;
-  box-shadow: 0 0 0 2px; 
+  box-shadow: 0 0 0 2px;
 }
 
 .button-transparent:active,
