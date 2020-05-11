@@ -6,8 +6,6 @@ collections:
   - name: 'recipes'
     label: 'Recipes'
     folder: '_recipes/'
-    fields:
-      - { name: Title }
     create: true
     editor:
       preview: false
