@@ -1,0 +1,10 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'assets/uploads'
+collections:
+  - name: 'recipes'
+    label: 'Recipes'
+    folder: '_recipes/'
+    fields:
+      - { name: Title }
