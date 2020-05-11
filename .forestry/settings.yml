@@ -25,11 +25,6 @@ sections:
   label: Recipes
   create: all
   match: "**/*"
-- type: directory
-  path: _components
-  label: Components
-  create: all
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
