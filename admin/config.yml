@@ -1,24 +1,24 @@
 backend:
   name: git-gateway
   branch: CMS # Branch to update (optional; defaults to master)
-media_folder: '_recipes/'
+media_folder: '_recipes/{{slug}}'
 collections:
   - name: 'recipes'
     label: 'Recipes'
-    folder: '_recipes/'
+    folder: '_recipes/{{slug}}'
     create: true
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Categories', name: 'categories', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'string' }
-      - { label: 'Meal', name: 'meal', widget: 'string' }
-      - { label: 'Time', name: 'time', widget: 'string' }
-      - { label: 'Servings', name: 'servings', widget: 'string' }
-      - { label: 'Notes', name: 'notes', widget: 'markdown' }
-      - { label: 'Ingredients', name: 'ingredients', widget: 'markdown' }
-      - { label: 'Directions', name: 'directions', widget: 'markdown' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Categories', name: 'categories', widget: 'select', multiple: true, options: ["appetizer", "baking", "dressing", "drink", "grill", "healthyish", "marinade", "oven", "pickling", "quick", "raw", "salad", "sandwich", "sauce", "snack", "soup"] }
+      - { label: 'Tags', name: 'tags', widget: 'select', multiple: true, options: ["asian", "beef", "bread", "burger", "christmas", "duck", "french", "fruit", "indian", "italian", "mexican", "nuts", "pasta", "pork", "poultry", "rice", "seafood", "thanksgiving", "vegetarian"] }
+      - { label: 'Meal', name: 'meal', widget: 'select', multiple: false, options: ["breakfast", "brunch", "dessert", "main", "side"] }
+      - { label: 'Time', name: 'time', widget: 'select', multiple: false, options: ["under 60mins", "under 120mins", "over 120mins"] }
+      - { label: 'Servings', name: 'servings', widget: 'number' }
+      - { label: 'Notes', name: 'notes', widget: 'text' }
+      - { label: 'Ingredients', name: 'ingredients', widget: 'text' }
+      - { label: 'Directions', name: 'directions', widget: 'text' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Body', name: 'body', widget: 'text' }
