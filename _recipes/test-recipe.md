@@ -6,19 +6,19 @@ tags: poultry
 meal: dessert
 time: under 60mins
 servings: "1"
-notes: \- yesh this is a note
+notes: "- yesh this is a note"
 ingredients: |-
-  \- need this
+  - need this
 
-  \- also that
+  - also that
 
-  \- and don't forget this other thing
+  - and don't forget this other thing
 directions: |-
-  \- do this
+  - do this
 
-  \- then that
+  - then that
 
-  \- the this other thing
+  - the this other thing
 date: 2020-05-21T10:42:38.797Z
 ---
 Well, this was nice.
