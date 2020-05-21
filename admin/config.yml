@@ -8,9 +8,17 @@ collections:
     folder: '_recipes/'
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'admin' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Categories', name: 'categories', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'string' }
+      - { label: 'Meal', name: 'meal', widget: 'string' }
+      - { label: 'Time', name: 'time', widget: 'string' }
+      - { label: 'Servings', name: 'servings', widget: 'string' }
+      - { label: 'Notes', name: 'notes', widget: 'markdown' }
+      - { label: 'Ingredients', name: 'ingredients', widget: 'markdown' }
+      - { label: 'Directions', name: 'directions', widget: 'markdown' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
