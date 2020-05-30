@@ -16,11 +16,11 @@ notes: # (you can add recipe notes here, if you don't have any just delete this 
 - This salsa is typically made with chiles país, which are not widely available outside of the Yucatán. I use a combination of chiles de árbol and chiles pasillas in their place (I got them from eMAG). If you can find bitter oranges (Seville oranges), use 180ml fresh bitter-orange juice in place of the lime, orange, and grapefruit juice combo per serving.
 
 ingredients:
-- 30g| dried chiles de árbol
-- 30g| dried chiles pasillas
-- 60ml| fresh juice from 4 to 5 limes
-- 60ml| fresh juice from 1 grapefruit
-- 60ml| fresh juice from 1 orange
+- 30|g dried chiles de árbol
+- 30|g dried chiles pasillas
+- 60|ml fresh juice from 4 to 5 limes
+- 60|ml fresh juice from 1 grapefruit
+- 60|ml fresh juice from 1 orange
 - salt
 
 directions:
