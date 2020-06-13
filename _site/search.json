@@ -932,7 +932,7 @@
     
 	    "title"          : "Yucatán-Style Hot Dried-Chili Salsa",
       
-      "ingredients"    : "30g| dried chiles de árbol 30g| dried chiles pasillas 60ml| fresh juice from 4 to 5 limes 60ml| fresh juice from 1 grapefruit 60ml| fresh juice from 1 orange salt ",
+      "ingredients"    : "30|g dried chiles de árbol 30|g dried chiles pasillas 60|ml fresh juice from 4 to 5 limes 60|ml fresh juice from 1 grapefruit 60|ml fresh juice from 1 orange salt ",
       
 		  "image"	         : "/recipes/dried-chili-salsa/dried-chili-salsa.jpg",
       "url"            : "/recipes/dried-chili-salsa",
@@ -2094,20 +2094,6 @@
       "tags"           : "asian poultry ",
       "meal"           : "main ",
       "chef"           : "razvan "
-    } ,
-  
-    {
-    
-	    "title"          : "Test recipe",
-      
-      
-      "url"            : "/recipes/test-recipe.html",
-      
-      "categories"     : "",
-      
-      "tags"           : "",
-      "meal"           : "",
-      "chef"           : ""
     } ,
   
     {

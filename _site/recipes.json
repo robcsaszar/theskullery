@@ -788,12 +788,6 @@
     },
 
     {
-        "title": "Test recipe",
-        "image": "images/large/",
-        "url": "/recipes/test-recipe.html",
-    },
-
-    {
         "title": "Thor's World Peace Wings",
         "image": "images/large/thors-world-peace-wings.jpg",
         "url": "/recipes/thors-world-peace-wings",

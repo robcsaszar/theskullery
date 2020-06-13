@@ -20,10 +20,10 @@ notes:
 
 ingredients:
 - 90|g unsalted butter, plus more for toasts
-- 1.4|kg yellow or mixed onions, french cut *see note*
+- 3| pounds yellow or mixed onions, french cut *see note*
 - kosher salt and freshly ground black pepper
 - 120|ml dry sherry *such as Amontillado*
-- 1.8|l homemade or store-bought low-sodium chicken stock
+- 2| pounds homemade or store-bought low-sodium chicken stock
 - 2| sprigs thyme
 - 1| bay leaf
 - 5|ml Asian fish sauce *optional*
