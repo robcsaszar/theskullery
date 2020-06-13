@@ -41,7 +41,7 @@ ingredients:
 
 directions:
 - Melt the butter and a splash of oil *optional* in a large pot.
-- Add the onion, celery, leek and carrot and fry for 10 minutes until soft and fragrant. 
+- Add the onion, celery, leek, butternut squash, and carrot and fry for 10 minutes until soft and fragrant. 
 - Add the garlic and ginger and fry for a min
 - Add the spices.
 - Stir together.
