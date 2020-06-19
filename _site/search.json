@@ -2290,6 +2290,22 @@
   
     {
     
+	    "title"          : "Hokkaido Burger Buns",
+      
+      "ingredients"    : "{&quot;for the tangzhong&quot;=&gt;nil} 20|g bread flour 27|g water 60|g whole milk {&quot;for the dough&quot;=&gt;nil} 120|g whole milk @ 30­°C 9|g instant yeast 320|g bread flour 7|g fine sea salt 35|g granulated sugar 1| whole egg(s) 1| egg yolk(s) 42|g unsalted butter, softened {&quot;for the egg wash&quot;=&gt;nil} 1 whole egg splash of whole milk ",
+      
+		  "image"	         : "/recipes/hokkaido-burger-buns/hokkaido-burger-buns.jpg",
+      "url"            : "/recipes/hokkaido-burger-buns",
+      
+      "categories"     : "baking oven sandwich ",
+      
+      "tags"           : "asian burger vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
 	    "title"          : "Muối Ớt Xanh Sauce",
       
       "ingredients"    : "20|g green Thai chili peppers, de-seeded 70|g green bell peppers, de-seeded 75|g lime juice 70|g granulated white sugar 20|g salt 0.5| tsp MSG *monosodium glutamate, optional* 3| lime leaves *see note* 35|g sweetened condensed milk ",
@@ -2322,6 +2338,22 @@
   
     {
     
+	    "title"          : "Pretzels",
+      
+      "ingredients"    : "350|g warm water @ 40°C 1| tbsp sugar 2| tsp kosher salt 7|g active dry yeast 625|g all-purpose flour 4|tsp unsalted butter, melted {&quot;for the boiling&quot;=&gt;nil} 2.3333|l water 96|g baked baking soda *see directions* {&quot;for topping&quot;=&gt;nil} 1| large egg yolk 1| tbsp water flaky salt ",
+      
+		  "image"	         : "/recipes/pretzels/pretzels.jpg",
+      "url"            : "/recipes/pretzels",
+      
+      "categories"     : "baking oven appetizer ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
 	    "title"          : "Spicy Quick Pickled Radishes",
       
       "ingredients"    : "1| bunch of radishes 2| tbsp red wine vinegar *apple cider vinegar also works* 2| tbsp caster sugar *I tried it with Panela sugar and it was amazing* salt peppercorns mustard seeds cloves pepper flakes ",
@@ -2332,6 +2364,22 @@
       "categories"     : "healthyish pickling quick raw ",
       
       "tags"           : "vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Sourdough English Muffins",
+      
+      "ingredients"    : "25|g bread flour 454|g warm water @ 43-46°C 1| tbsp active dry yeast 227|g sourdough starter, ripe (fed) or discard *ripe will give you a more vigorous rise* 843|g all-purpose, unbleached flour 43|g nonfat dry milk 57|g butter, at room temperature 1| tbsp salt 1/4 tsp sour salt (citric acid) *optional, for enhanced sour flavor* semolina or cornmeal, for coating ",
+      
+		  "image"	         : "/recipes/sourdough-english-muffins/sourdough-english-muffins.jpg",
+      "url"            : "/recipes/sourdough-english-muffins",
+      
+      "categories"     : "baking oven sandwich ",
+      
+      "tags"           : "burger vegetarian ",
       "meal"           : "side ",
       "chef"           : "robert "
     } 

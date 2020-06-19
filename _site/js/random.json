@@ -143,9 +143,12 @@ function runme() {
         "https://theskullery.net/recipes/whipped-ricotta-grilled-peaches",
         "https://theskullery.net/recipes/yucatan-pickled-onions",
         "https://theskullery.net/recipes/zabaglione",
+        "https://theskullery.net/recipes/hokkaido-burger-buns",
         "https://theskullery.net/recipes/muoi-ot-xanh-sauce",
         "https://theskullery.net/recipes/nuoc-cham-carrots",
+        "https://theskullery.net/recipes/pretzels",
         "https://theskullery.net/recipes/quick-pickled-radishes",
+        "https://theskullery.net/recipes/sourdough-english-muffins",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);
