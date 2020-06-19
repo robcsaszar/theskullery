@@ -860,9 +860,21 @@
     },
 
     {
+        "title": "Chicken & Dumpling Stew",
+        "image": "images/large/chicken-and-dumplings.jpg",
+        "url": "/recipes/chicken-and-dumplings",
+    },
+
+    {
         "title": "Hokkaido Burger Buns",
         "image": "images/large/hokkaido-burger-buns.jpg",
         "url": "/recipes/hokkaido-burger-buns",
+    },
+
+    {
+        "title": "Matzo Ball Soup",
+        "image": "images/large/matzo-ball-soup.jpg",
+        "url": "/recipes/matzo-ball-soup",
     },
 
     {

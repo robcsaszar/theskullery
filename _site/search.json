@@ -2290,6 +2290,22 @@
   
     {
     
+	    "title"          : "Chicken &amp; Dumpling Stew",
+      
+      "ingredients"    : "4| chicken legs, thigh and drumstick 1| leek, pale-green and white parts only 4| carrots, 1 whole, 3 chopped into rounds 4| celery stalks, 1 whole, 3 chopped into pieces 1| medium onion, chopped, divided 3| garlic cloves, smashed 4| sprigs thyme parsley stems from 0.5 bunch 1| bay leaf 2| tsp whole peppercorns kosher salt 100|g chicken fat (schmaltz) or butter, melted, divided freshly ground black pepper 190|g all-purpose flour, divided 2| tsp baking powder 0.25| tsp baking soda 125|g cup plus 2 tablespoons buttermilk 110|g cup heavy cream chopped chives, for serving ",
+      
+		  "image"	         : "/recipes/chicken-and-dumplings/chicken-and-dumplings.jpg",
+      "url"            : "/recipes/chicken-and-dumplings",
+      
+      "categories"     : "soup healthyish ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
 	    "title"          : "Hokkaido Burger Buns",
       
       "ingredients"    : "{&quot;for the tangzhong&quot;=&gt;nil} 20|g bread flour 27|g water 60|g whole milk {&quot;for the dough&quot;=&gt;nil} 120|g whole milk @ 30­°C 9|g instant yeast 320|g bread flour 7|g fine sea salt 35|g granulated sugar 1| whole egg(s) 1| egg yolk(s) 42|g unsalted butter, softened {&quot;for the egg wash&quot;=&gt;nil} 1 whole egg splash of whole milk ",
@@ -2301,6 +2317,22 @@
       
       "tags"           : "asian burger vegetarian ",
       "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Matzo Ball Soup",
+      
+      "ingredients"    : "{&quot;for the Matzo dough&quot;=&gt;nil} 6| large eggs 100|g melted schmaltz (chicken fat) *or vegetable oil, if you don&#39;t have access to chicken fat* 6| tbsp low-sodium chicken broth or water 3| tbsp chopped dill 1.5| tsp kosher salt 0.75| tsp freshly ground black pepper 180|g semolina flour *or matzo meal, if you can find it* {&quot;for the soup &amp; assembly&quot;=&gt;nil} 4| chicken legs, thigh and drumstick 1.5| tsp kosher salt, for the chicken 3|kg chicken wings 2| medium onions, peeled, halved 2| celery stalks, cut into 5cm pieces 1| medium parsnip, peeled, cut into 5cm pieces 3| medium carrots, peeled, 1 cut into 5cm pieces, 2 thinly sliced 1| bunch parsley 3| tbsp kosher salt 1| tbsp black peppercorns salt, to taste chopped dill, for serving freshly ground black pepper ",
+      
+		  "image"	         : "/recipes/matzo-ball-soup/matzo-ball-soup.jpg",
+      "url"            : "/recipes/matzo-ball-soup",
+      
+      "categories"     : "soup healthyish oven ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
