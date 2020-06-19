@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/outback-steakhouse-sauce 
 title:  "Outback Steakhouse Dip"
 image: outback-steakhouse-sauce.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: appetizer sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

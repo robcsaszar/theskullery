@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pico-de-gallo
 title:  "Pico de Gallo Salsa"
 image: pico-de-gallo.jpg
+date: 2020-05-01
 imagecredit: "flickr.com"
 categories: salad appetizer raw healthyish
 tags: vegetarian mexican

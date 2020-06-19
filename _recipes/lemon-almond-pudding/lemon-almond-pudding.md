@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/lemon-almond-pudding 
 title:  "Lemon Almond Pudding"
+date: 2020-05-01
 image: lemon-almond-pudding.jpg 
 imagecredit: "unsplash.com" 
 categories: baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

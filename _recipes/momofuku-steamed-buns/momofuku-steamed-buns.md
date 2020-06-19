@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/momofuku-steamed-buns
 title:  "Momofuku Steamed Buns"
 image: momofuku-steamed-buns.jpg
+date: 2020-05-01
 imagecredit: "unsplash.com"
 categories: oven sandwich
 tags: asian bread pork

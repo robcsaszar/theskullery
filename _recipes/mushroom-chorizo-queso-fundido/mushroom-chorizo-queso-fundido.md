@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/mushroom-chorizo-queso-fundido 
 title:  "Wild Mushroom & Chorizo Queso Fundido"
 image: mushroom-chorizo-queso-fundido.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven snack quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican pork # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pumpkin-protein-pancakes 
 title:  "Pumpkin Protein Pancakes"
 image: pumpkin-protein-pancakes.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: healthyish snack quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: fruit vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

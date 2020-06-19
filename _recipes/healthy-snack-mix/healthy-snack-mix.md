@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/healthy-snack-mix 
 title:  "Not Shitty Snack Mix"
+date: 2020-05-01
 image: healthy-snack-mix.jpg 
 imagecredit: "unsplash.com" 
 categories: snack healthyish oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

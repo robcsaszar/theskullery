@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/guinness-pot-pie 
 title:  "Guinness Pot Pie"
+date: 2020-05-01
 image: guinness-pot-pie.jpg 
 imagecredit: "unsplash.com" 
 categories: oven sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

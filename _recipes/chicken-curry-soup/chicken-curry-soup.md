@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/chicken-curry-soup 
 title:  "Chicken Curry Soup"
 image: chicken-curry-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: soup healthyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: indian poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

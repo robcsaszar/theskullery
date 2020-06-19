@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/whipped-feta-dip
 title:  "Whipped Feta Dip"
 image: whipped-feta-dip.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: appetizer sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian healthyish # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

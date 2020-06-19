@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/grilled-bread-stuffing 
 title:  "Grilled Bread Stuffing"
+date: 2020-05-01
 image: grilled-bread-stuffing.jpg 
 imagecredit: "unsplash.com" 
 categories: grill oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/kale-pesto-minestrone 
 title:  "Kale Pesto Minestrone"
+date: 2020-05-01
 image: kale-pesto-minestrone.jpg 
 imagecredit: "unsplash.com" 
 categories: soup healtyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

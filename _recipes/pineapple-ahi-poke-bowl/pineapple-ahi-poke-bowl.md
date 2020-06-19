@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pineapple-ahi-poke-bowl 
 title:  "Pineapple Ahi Poke Bowl"
 image: pineapple-ahi-poke-bowl.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: salad raw healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: asian seafood vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

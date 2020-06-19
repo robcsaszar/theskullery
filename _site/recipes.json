@@ -857,5 +857,23 @@
         "title": "Zabaglione",
         "image": "images/large/zabaglione.jpg",
         "url": "/recipes/zabaglione",
+    },
+
+    {
+        "title": "Muối Ớt Xanh Sauce",
+        "image": "images/large/muoi-ot-xanh-sauce.jpg",
+        "url": "/recipes/muoi-ot-xanh-sauce",
+    },
+
+    {
+        "title": "Nước chấm Carrots",
+        "image": "images/large/nuoc-cham-carrots.jpg",
+        "url": "/recipes/nuoc-cham-carrots",
+    },
+
+    {
+        "title": "Spicy Quick Pickled Radishes",
+        "image": "images/large/quick-pickled-radishes.jpg",
+        "url": "/recipes/quick-pickled-radishes",
     }
 ]

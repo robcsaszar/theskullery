@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/honey-pretzel-chicken 
 title:  "Honey Pretzel Chicken Fingers"
+date: 2020-05-01
 image: honey-pretzel-chicken.jpg 
 imagecredit: "unsplash.com" 
 categories: oven marinade sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

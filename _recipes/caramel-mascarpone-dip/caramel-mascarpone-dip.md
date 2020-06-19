@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/caramel-mascarpone-dip 
 title:  "Caramel Mascarpone Dip"
 image: caramel-mascarpone-dip.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: appetizer # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: nuts vegetarian christmas # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

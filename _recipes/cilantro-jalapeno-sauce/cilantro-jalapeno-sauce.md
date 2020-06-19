@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/cilantro-jalapeno-sauce 
 title:  "Cilantro Jalapeño Sauce"
 image: cilantro-jalapeno-sauce.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

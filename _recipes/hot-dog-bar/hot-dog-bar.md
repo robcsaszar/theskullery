@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/hot-dog-bar 
 title:  "Hot Dog Bar"
+date: 2020-05-01
 image: hot-dog-bar.jpg 
 imagecredit: "unsplash.com" 
 categories: grill quick sandwich # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

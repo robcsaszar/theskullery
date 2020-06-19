@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/thyme-butter-mushroom-chicken 
 title:  "Thyme Butter Mushroom Chicken"
 image: thyme-butter-mushroom-chicken.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

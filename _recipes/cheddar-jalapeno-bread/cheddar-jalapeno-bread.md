@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/cheddar-jalapeno-bread 
 title:  "Cheddar Jalapeño Bread"
 image: cheddar-jalapeno-bread.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: bread vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

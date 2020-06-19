@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/cleveland-cheesesteaks 
 title:  "Pretzel Roll Cleveland Cheesesteaks"
 image: cleveland-cheesesteaks.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: sandwich oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: beef bread # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pavlova-pineapple-curd 
 title:  "Marshmallow Pavlova & Pineapple Curd"
 image: pavlova-pineapple-curd.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: christmas fruit vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

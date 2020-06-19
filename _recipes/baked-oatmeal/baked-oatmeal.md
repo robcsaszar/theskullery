@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/baked-oatmeal 
 title:  "Baked Oatmeal"
 image: baked-oatmeal.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: snack oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian nuts fruit # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

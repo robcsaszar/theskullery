@@ -4,6 +4,7 @@ layout: recipe
 title:  "Refried Beans (Frijoles Refritos)"
 permalink: recipes/frijoles-refritos
 image: frijoles-refritos.jpg
+date: 2020-05-01
 imagecredit: "https://www.seriouseats.com/recipes/2014/04/perfect-refried-beans.html"
 categories: appetizer
 tags: mexican

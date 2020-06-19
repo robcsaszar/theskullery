@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/garlic-brown-sugar-chicken 
 title:  "Garlic Brow Sugar Chicken"
+date: 2020-05-01
 image: garlic-brown-sugar-chicken.jpg 
 imagecredit: "unsplash.com" 
 categories: oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

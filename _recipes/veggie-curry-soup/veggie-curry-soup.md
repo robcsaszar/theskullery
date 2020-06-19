@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/veggie-curry-soup 
 title:  "Veggie Curry Cream Soup"
 image: veggie-curry-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: soup healthyish quick
 tags: vegetarian indian 

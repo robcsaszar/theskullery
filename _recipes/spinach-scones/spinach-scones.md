@@ -4,6 +4,7 @@ layout: recipe # (this is the layout Jekyll uses to render the file in)
 permalink: recipes/spinach-scones # (this will be your final, pretty URL)
 title:  "Savoury Spinach Scones" # (making sure we have a good title)
 image: spinach-scones.jpg # (a nice, high-quality image I will carefully select for you)
+date: 2020-05-01
 imagecredit: "bestrecipes.com.au" # (where I'm getting the image above)
 categories: oven appetizer baking healthyish quick # (these will be selected for you, later on you can select your own)
 tags: vegetarian bread # (these will be selected for you, later on you can select your own)

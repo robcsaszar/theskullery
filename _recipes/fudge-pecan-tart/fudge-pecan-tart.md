@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/fudge-pecan-tart 
 title:  "Chocolate Fudge Pecan Tart"
 image: fudge-pecan-tart.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: thanksgiving nuts vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

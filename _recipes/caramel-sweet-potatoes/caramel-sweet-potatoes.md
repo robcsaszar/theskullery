@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/caramel-sweet-potatoes 
 title:  "Honey Caramel Sweet Potatoes"
 image: caramel-sweet-potatoes.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick oven healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian thanksgiving # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

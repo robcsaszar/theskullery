@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/mascarpone-polenta-short-ribs 
 title:  "Mascarpone Polenta Short Ribs"
 image: mascarpone-polenta-short-ribs.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: beef # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

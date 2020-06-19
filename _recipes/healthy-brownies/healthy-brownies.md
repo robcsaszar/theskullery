@@ -3,6 +3,7 @@
 layout: recipe # (this is the layout Jekyll uses to render the file in)
 permalink: recipes/healthy-brownies # (this will be your final, pretty URL)
 title:  "Healthy Brownies" # (making sure we have a good title)
+date: 2020-05-01
 image: healthy-brownies.jpg # (a nice, high-quality image I will carefully select for you)
 imagecredit: "unsplash.com" # (where I'm getting the image above)
 categories: quick oven baking healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

@@ -5,6 +5,7 @@ permalink: recipes/onion-gruyere-macaroni
 title:  "Caramelized Onion Gruyere Macaroni"
 image: onion-gruyere-macaroni.jpg 
 imagecredit: "unsplash.com" 
+date: 2020-05-01
 categories: oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: pasta vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: main # breakfast brunch dessert main side

@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/lasagna-bolognese 
 title:  "Lasagne alla Bolognese"
+date: 2020-05-01
 image: lasagna-bolognese.jpg 
 imagecredit: "unsplash.com" 
 categories: oven sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

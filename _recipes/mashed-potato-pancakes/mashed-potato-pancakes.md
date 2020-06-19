@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/mashed-potato-pancakes 
 title:  "Cheddar Mashed Potato Pancakes"
 image: mashed-potato-pancakes.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: pork # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

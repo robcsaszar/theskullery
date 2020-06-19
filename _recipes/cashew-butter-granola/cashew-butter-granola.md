@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/cashew-butter-granola 
 title:  "Cashew Butter Granola"
 image: cashew-butter-granola.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven healthyish quick snack # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian nuts # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

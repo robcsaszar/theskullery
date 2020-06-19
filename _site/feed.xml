@@ -5,8 +5,8 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jun 2020 21:14:05 +0300</pubDate>
-    <lastBuildDate>Sat, 13 Jun 2020 21:14:05 +0300</lastBuildDate>
+    <pubDate>Fri, 19 Jun 2020 13:14:01 +0300</pubDate>
+    <lastBuildDate>Fri, 19 Jun 2020 13:14:01 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -22,6 +22,8 @@
         <guid isPermaLink="true">https://theskullery.net/recipes/amaretto-bourbon-punch</guid>
         
         <category>vegetarian</category>
+        
+        <category>thanksgiving</category>
         
         
         <category>drink</category>

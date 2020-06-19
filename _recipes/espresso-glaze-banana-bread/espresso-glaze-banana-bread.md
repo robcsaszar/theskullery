@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/espresso-glaze-banana-bread 
 title:  "Espresso Glaze Banana Bread"
 image: espresso-glaze-banana-bread.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian fruit bread # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

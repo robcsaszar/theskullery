@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/green-chile-queso-dip 
 title:  "Roasted Green Chile Queso Dip"
+date: 2020-05-01
 image: green-chile-queso-dip.jpg 
 imagecredit: "unsplash.com" 
 categories: appetizer sauce quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

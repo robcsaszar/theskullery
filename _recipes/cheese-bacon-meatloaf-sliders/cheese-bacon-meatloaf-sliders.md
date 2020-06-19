@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/cheese-bacon-meatloaf-sliders 
 title:  "Bacon & Cheese Meatloaf Sliders"
 image: cheese-bacon-meatloaf-sliders.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick sandwich # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: beef pork burger # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

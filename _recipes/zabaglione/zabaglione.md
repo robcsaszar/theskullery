@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/zabaglione 
 title:  "Zabaglione"
 image: zabaglione.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: sauce drink quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian vegetarian fruit # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

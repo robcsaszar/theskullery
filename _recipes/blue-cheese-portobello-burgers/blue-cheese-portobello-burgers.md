@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/blue-cheese-portobello-burgers 
 title:  "Blue Cheese Portobello Burgers"
 image: blue-cheese-portobello-burgers.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: healthyish quick sandwich # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: burger vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

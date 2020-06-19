@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/french-onion-soup 
 title:  "French Onion Soup"
 image: french-onion-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: soup oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: french # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
