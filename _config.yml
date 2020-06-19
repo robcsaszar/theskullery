@@ -9,6 +9,7 @@ color: "#E83151"
 twitter_username: robcsaszar
 github_username: robcsaszar
 timezone: Europe/Bucharest
+host: 0.0.0.0
 
 
 # Build settings

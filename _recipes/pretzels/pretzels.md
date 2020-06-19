@@ -56,4 +56,4 @@ directions:
 - Remove from oven and serve immediately.
 
 --- 
-Who doesn't love English muffins? 🍔
+🥨
