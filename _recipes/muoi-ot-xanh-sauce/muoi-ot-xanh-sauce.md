@@ -23,7 +23,7 @@ ingredients:
 - 75|g lime juice
 - 70|g granulated white sugar
 - 20|g salt
-- 0.5| tsp MSG *optional*
+- 0.5| tsp MSG *monosodium glutamate, optional*
 - 3| lime leaves *see note*
 - 35|g sweetened condensed milk
 
