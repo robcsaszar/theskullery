@@ -2,7 +2,7 @@
 layout: recipe
 title: OMFG Test
 categories:
-  - dressing
+  - drink
 tags:
   - beef
   - burger
