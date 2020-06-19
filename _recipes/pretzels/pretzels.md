@@ -13,6 +13,10 @@ chef: robert
 time: over 120mins # under 60mins under 120mins over 120mins
 servings: 8 
 
+notes:
+- Baking baking soda turn it into a weak form of lye - sodium carbonate. It basically makes it a stronger alkali. The actual baking process is safe, but the resulting lye is an irritant and you should avoid getting in or on your skin, and definitely avoid it getting it in your eyes. Baking soda (sodium bicarbonate) has a pH of 8.4 while baked baking soda (sodium carbonate) has a pH of 11.6.
+- This is to try and mimic the results that are normally achieved with a lye bath that are typically used for making pretzels without the need to use actual lye. Lye can be somewhat dangerous and this is much more simple.
+
 ingredients:
 - 350|g warm water @ 40°C
 - 1| tbsp sugar
@@ -22,7 +26,7 @@ ingredients:
 - 4|tsp unsalted butter, melted
 - for the boiling:
 - 2.3333|l water
-- 96|g baked baking soda *see directions*
+- 96|g baked baking soda *see directions and note*
 - for topping:
 - 1| large egg yolk
 - 1| tbsp water
