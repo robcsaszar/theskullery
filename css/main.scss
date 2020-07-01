@@ -71,6 +71,7 @@
     --facebook: #4267B2;
     --twitter: #1DA1F2;
     --reddit: #FF4301;
+    --pinterest: #BD081C;
 
     --background: #EFEEEE;
     --stickynoteColor-light: #F3F1D6;
@@ -1377,6 +1378,10 @@ margin: 0 auto;
 
 .reddit:hover svg {
         fill: var(--reddit);
+    }
+
+.pinterest:hover svg {
+        fill: var(--pinterest);
     }
 
 .copy:hover svg {
