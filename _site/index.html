@@ -45,7 +45,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <script src="/js/randomhero.js" type="text/javascript"></script>
   <script src="/js/searchevents.js" type="text/javascript"></script>
   <script src="/js/signature.js" type="text/javascript"></script>
-  <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script> -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -578,23 +578,17 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   })
 </script>
 <script>
-navigator.serviceWorker.getRegistrations().then(function (registrations) {
-  if (!registrations.length) {
-    console.log('No serviceWorker registrations found.')
-    return
-  }
-  for(let registration of registrations) {
-    registration.unregister().then(function (boolean) {
-      console.log(
-        (boolean ? 'Successfully unregistered' : 'Failed to unregister'), 'ServiceWorkerRegistration\n' +
-        (registration.installing ? '  .installing.scriptURL = ' + registration.installing.scriptURL + '\n' : '') +
-        (registration.waiting ? '  .waiting.scriptURL = ' + registration.waiting.scriptURL + '\n' : '') +
-        (registration.active ? '  .active.scriptURL = ' + registration.active.scriptURL + '\n' : '') +
-        '  .scope: ' + registration.scope + '\n'
-      )
-    })
-  }
-})
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
 </script>
 <script src="/js/backtotop.js" type="text/javascript"></script>
       </div>
