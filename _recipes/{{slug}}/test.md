@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: test
+title: test TEST
 categories:
   - baking
   - drink
