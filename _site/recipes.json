@@ -788,12 +788,6 @@
     },
 
     {
-        "title": "Test Recipe",
-        "image": "images/large/",
-        "url": "/recipes/test-recipe.html",
-    },
-
-    {
         "title": "Thor's World Peace Wings",
         "image": "images/large/thors-world-peace-wings.jpg",
         "url": "/recipes/thors-world-peace-wings",
@@ -863,11 +857,5 @@
         "title": "Zabaglione",
         "image": "images/large/zabaglione.jpg",
         "url": "/recipes/zabaglione",
-    },
-
-    {
-        "title": "OMFG Test",
-        "image": "images/large/",
-        "url": "/recipes/%7B%7Bslug%7D%7D/omfg-test.html",
     }
 ]

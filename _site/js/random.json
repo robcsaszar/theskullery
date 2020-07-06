@@ -131,7 +131,6 @@ function runme() {
         "https://theskullery.net/recipes/sundried-tomato-mushroom-pasta",
         "https://theskullery.net/recipes/tacos-al-pastor",
         "https://theskullery.net/recipes/teriyaki-chicken",
-        "https://theskullery.net/recipes/test-recipe.html",
         "https://theskullery.net/recipes/thors-world-peace-wings",
         "https://theskullery.net/recipes/thyme-butter-mushroom-chicken",
         "https://theskullery.net/recipes/toasted-coconut-overnight-oats",
@@ -144,7 +143,6 @@ function runme() {
         "https://theskullery.net/recipes/whipped-ricotta-grilled-peaches",
         "https://theskullery.net/recipes/yucatan-pickled-onions",
         "https://theskullery.net/recipes/zabaglione",
-        "https://theskullery.net/recipes/%7B%7Bslug%7D%7D/omfg-test.html",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);
