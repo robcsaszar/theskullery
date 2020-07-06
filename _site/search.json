@@ -2414,6 +2414,38 @@
       "tags"           : "vegetarian ",
       "meal"           : "side ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Peanut Butter Oatmeal Chocolate Cookies",
+      
+      "ingredients"    : "0.5| cup(s) butter or margarine 1| cup(s) brown sugar 1 large egg(s) 1.5| tsp pure vanilla extract 0.5| cup(s) smooth peanut butter 1| cup(s) all purpose flour 0.5| tsp baking soda 1| pinch kosher salt 1| cup(s) old fashioned oats 0.5| cup(s) chocolate chips ",
+      
+		  "image"	         : "/recipes/peanutbutter-oatmeal-cookies/peanutbutter-oatmeal-cookies.jpg",
+      "url"            : "/recipes/peanutbutter-oatmeal-cookies",
+      
+      "categories"     : "oven baking healthyish quick original snack ",
+      
+      "tags"           : "christmas vegetarian ",
+      "meal"           : "dessert ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Spinach Mushroom Omelette",
+      
+      "ingredients"    : "2| tbsps butter or olive oil {&quot;for the egg mixture&quot;=&gt;nil} 3| large eggs pinch of garlic salt pinch of Tajín, or other chili powder-lime flavor-salt mix pinch of black pepper pinch of nutmeg *optional* 2| tbsps half and half *optional* {&quot;for the fillings&quot;=&gt;nil} 1| heaping handful of spinach *not frozen or canned* 1| cup baby bella mushrooms, thinly sliced 0.5| large red onion, diced 0.5| cup sharp cheddar, shredded 3| thin slices Gruyère *optional* 0.25| tsp paprika ",
+      
+		  "image"	         : "/recipes/spinach-mushroom-omelette/spinach-mushroom-omelette.jpg",
+      "url"            : "/recipes/spinach-mushroom-omelette",
+      
+      "categories"     : "healthyish quick original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
     } 
   
 ]

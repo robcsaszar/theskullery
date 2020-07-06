@@ -905,5 +905,17 @@
         "title": "Pickled Red Onions",
         "image": "images/large/pickled-red-onions.jpg",
         "url": "/recipes/pickled-red-onions",
+    },
+
+    {
+        "title": "Peanut Butter Oatmeal Chocolate Cookies",
+        "image": "images/large/peanutbutter-oatmeal-cookies.jpg",
+        "url": "/recipes/peanutbutter-oatmeal-cookies",
+    },
+
+    {
+        "title": "Spinach Mushroom Omelette",
+        "image": "images/large/spinach-mushroom-omelette.jpg",
+        "url": "/recipes/spinach-mushroom-omelette",
     }
 ]

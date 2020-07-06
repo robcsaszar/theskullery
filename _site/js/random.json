@@ -151,6 +151,8 @@ function runme() {
         "https://theskullery.net/recipes/quick-pickled-radishes",
         "https://theskullery.net/recipes/sourdough-english-muffins",
         "https://theskullery.net/recipes/pickled-red-onions",
+        "https://theskullery.net/recipes/peanutbutter-oatmeal-cookies",
+        "https://theskullery.net/recipes/spinach-mushroom-omelette",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);
