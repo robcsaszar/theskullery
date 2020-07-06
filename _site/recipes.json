@@ -863,5 +863,11 @@
         "title": "Zabaglione",
         "image": "images/large/zabaglione.jpg",
         "url": "/recipes/zabaglione",
+    },
+
+    {
+        "title": "OMFG Test",
+        "image": "images/large/",
+        "url": "/recipes/%7B%7Bslug%7D%7D/omfg-test.html",
     }
 ]

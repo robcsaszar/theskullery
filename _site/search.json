@@ -2305,6 +2305,23 @@
       "tags"           : "italian vegetarian fruit ",
       "meal"           : "brunch ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "OMFG Test",
+      
+      "ingredients"    : "- need this
+- and this
+- and that ",
+      
+      "url"            : "/recipes/%7B%7Bslug%7D%7D/omfg-test.html",
+      
+      "categories"     : "drink ",
+      
+      "tags"           : "beef burger christmas fruit ",
+      "meal"           : "dessert ",
+      "chef"           : ""
     } 
   
 ]

@@ -144,6 +144,7 @@ function runme() {
         "https://theskullery.net/recipes/whipped-ricotta-grilled-peaches",
         "https://theskullery.net/recipes/yucatan-pickled-onions",
         "https://theskullery.net/recipes/zabaglione",
+        "https://theskullery.net/recipes/%7B%7Bslug%7D%7D/omfg-test.html",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);
