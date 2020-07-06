@@ -6,11 +6,11 @@ title:  "Spiced Amaretto Apple Cider"
 image: spiced-amaretto-apple-cider.jpg
 date: 2020-05-01 
 imagecredit: "unsplash.com" 
-categories: # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
-tags: # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
-meal: # breakfast brunch dessert main side
+categories: drink quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+tags: vegetarian thanksgiving # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
+meal: brunch # breakfast brunch dessert main side
 chef: robert 
-time: # under 60mins under 120mins over 120mins
+time: under 60mins # under 60mins under 120mins over 120mins
 servings: 1 
 
 ingredients:
