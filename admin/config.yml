@@ -18,6 +18,14 @@ collections:
       - { label: 'Time', name: 'time', widget: 'select', multiple: false, options: ["under 60mins", "under 120mins", "over 120mins"] }
       - { label: 'Servings', name: 'servings', widget: 'number' }
       - { label: 'Notes', name: 'notes', widget: 'text' }
-      - { label: 'Ingredients', name: 'ingredients', widget: 'list', types: [ label: 'Ingredient', name: 'ingredient', widget: 'string' ] }
+      - label: 'Ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        types:
+          - label: 'Ingredient'
+            name: 'ingredient'
+            widget: 'object'
+            fields:
+              - { label: 'Ingredient', name: 'ingredient', widget: 'string' }
       - { label: 'Directions', name: 'directions', widget: 'text' }
       - { label: 'Publish Date', name: 'date', widget: 'date' }
