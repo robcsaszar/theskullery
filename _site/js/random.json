@@ -84,7 +84,6 @@ function runme() {
         "https://theskullery.net/recipes/lemon-chicken-risotto",
         "https://theskullery.net/recipes/lemon-curd-chia-parfait",
         "https://theskullery.net/recipes/lemon-ricotta-cheesecake",
-        "https://theskullery.net/recipes/lokis-world-peace-wings",
         "https://theskullery.net/recipes/maple-bbq-salmon-couscous",
         "https://theskullery.net/recipes/mascarpone-polenta-short-ribs",
         "https://theskullery.net/recipes/mashed-potato-pancakes",
@@ -131,7 +130,6 @@ function runme() {
         "https://theskullery.net/recipes/sundried-tomato-mushroom-pasta",
         "https://theskullery.net/recipes/tacos-al-pastor",
         "https://theskullery.net/recipes/teriyaki-chicken",
-        "https://theskullery.net/recipes/thors-world-peace-wings",
         "https://theskullery.net/recipes/thyme-butter-mushroom-chicken",
         "https://theskullery.net/recipes/toasted-coconut-overnight-oats",
         "https://theskullery.net/recipes/tomato-basil-pasta",
@@ -141,8 +139,9 @@ function runme() {
         "https://theskullery.net/recipes/veggie-curry-soup",
         "https://theskullery.net/recipes/whipped-feta-dip",
         "https://theskullery.net/recipes/whipped-ricotta-grilled-peaches",
-        "https://theskullery.net/recipes/yucatan-pickled-onions",
         "https://theskullery.net/recipes/zabaglione",
+        "https://theskullery.net/recipes/world-peace-bear-wings",
+        "https://theskullery.net/recipes/world-peace-dragon-wings",
         "https://theskullery.net/recipes/chicken-and-dumplings",
         "https://theskullery.net/recipes/hokkaido-burger-buns",
         "https://theskullery.net/recipes/matzo-ball-soup",
@@ -151,6 +150,7 @@ function runme() {
         "https://theskullery.net/recipes/pretzels",
         "https://theskullery.net/recipes/quick-pickled-radishes",
         "https://theskullery.net/recipes/sourdough-english-muffins",
+        "https://theskullery.net/recipes/pickled-red-onions",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);

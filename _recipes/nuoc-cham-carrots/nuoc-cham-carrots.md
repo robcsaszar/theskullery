@@ -6,7 +6,7 @@ title: "Nước chấm Carrots"
 image: nuoc-cham-carrots.jpg
 date: 2020-06-19
 imagecredit: "unsplash.com" 
-categories: appetizer healthyish pickling quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: appetizer healthyish pickling quick original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: asian vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: side # breakfast brunch dessert main side
 chef: robert 

@@ -841,7 +841,7 @@
 		  "image"	         : "/recipes/corn-celery-tacos/corn-celery-tacos.jpg",
       "url"            : "/recipes/corn-celery-tacos",
       
-      "categories"     : "grill healthyish quic ",
+      "categories"     : "grill healthyish quick ",
       
       "tags"           : "mexican vegetarian ",
       "meal"           : "brunch ",
@@ -1257,7 +1257,7 @@
 		  "image"	         : "/recipes/kale-pesto-minestrone/kale-pesto-minestrone.jpg",
       "url"            : "/recipes/kale-pesto-minestrone",
       
-      "categories"     : "soup healtyish quick ",
+      "categories"     : "soup healthyish quick ",
       
       "tags"           : "italian vegetarian pasta ",
       "meal"           : "main ",
@@ -1341,22 +1341,6 @@
       
       "tags"           : "christmas fruit ",
       "meal"           : "dessert ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
-	    "title"          : "Loki&#39;s World Peace Wings",
-      
-      "ingredients"    : "{&quot;for the body&quot;=&gt;nil} 1| tbsp chili oil 1| tbsp roasted sesame oil 2| tbsp brown sugar 0.5| tsp MSG 6| tbsp water 4| tbsp light + 2 tbsp dark soy sauce OR 6 tbsp light soy sauce 2| tbsp dry vermouth or sherry 2| tbsp rice vinegar 1| tbsp Worcestershire sauce {&quot;for the kick&quot;=&gt;nil} 1| tsp 7-spice powder crushed green peppercorns {&quot;for the final touch&quot;=&gt;nil} 2| tbsp tomato paste 2| tbsp butter 4| cloves of garlic 1 tsp fish sauce raw unsalted peanuts ",
-      
-		  "image"	         : "/recipes/lokis-world-peace-wings/lokis-world-peace-wings.jpg",
-      "url"            : "/recipes/lokis-world-peace-wings",
-      
-      "categories"     : "oven marinade sauce ",
-      
-      "tags"           : "poultry ",
-      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -2098,22 +2082,6 @@
   
     {
     
-	    "title"          : "Thor&#39;s World Peace Wings",
-      
-      "ingredients"    : "125|ml BBQ sauce 50|ml Blue Dragon Teriyaki Marinade 0.25| tsp smoked salt 0.25| tsp cayenne 1.5| tsp smoked paprika 0.5| tsp lemon pepper 1| tsp onion powder black pepper to taste 0.5| lime, juiced ",
-      
-		  "image"	         : "/recipes/thors-world-peace-wings/thors-world-peace-wings.jpg",
-      "url"            : "/recipes/thors-world-peace-wings",
-      
-      "categories"     : "oven marinade sauce ",
-      
-      "tags"           : "poultry ",
-      "meal"           : "main ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
 	    "title"          : "Thyme Butter Mushroom Chicken",
       
       "ingredients"    : "1| whole chicken 1| tsp salt 1| tsp pepper 2| tbsp unsalted butter 2| garlic cloves minced 3| tbsp all-purpose flour 1.5| cup(s) chicken stock {&quot;for the thyme butter mushrooms&quot;=&gt;nil} 16| oz sliced mushrooms 3| tbsp unsalted butter 1| tsp olive oil 2| tsp fresh thyme salt and pepper ",
@@ -2258,22 +2226,6 @@
   
     {
     
-	    "title"          : "Yucatán-Style Pickled Red Onions",
-      
-      "ingredients"    : "1| red onion(s), finely diced 15| whole black peppercorns 15| whole allspice berries 4| bay leaves 80|ml juice from 1 grapefruit *see note* 80|ml juice from 1 to 2 oranges *see note* 80|ml juice from 4 to 5 limes plus a little extra just in case *see note* salt ",
-      
-		  "image"	         : "/recipes/yucatan-pickled-onions/yucatan-pickled-onions.jpg",
-      "url"            : "/recipes/yucatan-pickled-onions",
-      
-      "categories"     : "appetizer healthyish pickling ",
-      
-      "tags"           : "mexican vegetarian ",
-      "meal"           : "side ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
 	    "title"          : "Zabaglione",
       
       "ingredients"    : "4| egg yolks 0.3333| cup sugar 0.25| cup Marsala wine *or any other good quality sweet white wine* berries or chopped peaches, for serving ",
@@ -2285,6 +2237,38 @@
       
       "tags"           : "italian vegetarian fruit ",
       "meal"           : "brunch ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "World Peace Bear Wings",
+      
+      "ingredients"    : "125|ml BBQ sauce 50|ml Blue Dragon Teriyaki Marinade 0.25| tsp smoked salt 0.25| tsp cayenne 1.5| tsp smoked paprika 0.5| tsp lemon pepper 1| tsp onion powder black pepper to taste 0.5| lime, juiced ",
+      
+		  "image"	         : "/recipes/world-peace-bear-wings/world-peace-bear-wings.jpg",
+      "url"            : "/recipes/world-peace-bear-wings",
+      
+      "categories"     : "oven marinade sauce original ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "World Peace Dragon Wings",
+      
+      "ingredients"    : "{&quot;for the body&quot;=&gt;nil} 1| tbsp chili oil 1| tbsp roasted sesame oil 2| tbsp brown sugar 0.5| tsp MSG 6| tbsp water 4| tbsp light + 2 tbsp dark soy sauce OR 6 tbsp light soy sauce 2| tbsp dry vermouth or sherry 2| tbsp rice vinegar 1| tbsp Worcestershire sauce {&quot;for the kick&quot;=&gt;nil} 1| tsp 7-spice powder crushed green peppercorns {&quot;for the final touch&quot;=&gt;nil} 2| tbsp tomato paste 2| tbsp butter 4| cloves of garlic 1 tsp fish sauce raw unsalted peanuts ",
+      
+		  "image"	         : "/recipes/world-peace-dragon-wings/world-peace-dragon-wings.jpg",
+      "url"            : "/recipes/world-peace-dragon-wings",
+      
+      "categories"     : "oven marinade sauce original ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -2361,7 +2345,7 @@
 		  "image"	         : "/recipes/nuoc-cham-carrots/nuoc-cham-carrots.jpg",
       "url"            : "/recipes/nuoc-cham-carrots",
       
-      "categories"     : "appetizer healthyish pickling quick ",
+      "categories"     : "appetizer healthyish pickling quick original ",
       
       "tags"           : "asian vegetarian ",
       "meal"           : "side ",
@@ -2393,7 +2377,7 @@
 		  "image"	         : "/recipes/quick-pickled-radishes/quick-pickled-radishes.jpg",
       "url"            : "/recipes/quick-pickled-radishes",
       
-      "categories"     : "healthyish pickling quick raw ",
+      "categories"     : "healthyish pickling quick raw original ",
       
       "tags"           : "vegetarian ",
       "meal"           : "side ",
@@ -2412,6 +2396,22 @@
       "categories"     : "baking oven sandwich ",
       
       "tags"           : "burger vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Pickled Red Onions",
+      
+      "ingredients"    : "1| red onion(s), finely diced *see note* 10| whole black peppercorns 10| whole allspice berries 5| cloves 3| bay leaves 80|ml grapefruit juice 80|ml orange juice 80|ml lime juice salt ",
+      
+		  "image"	         : "/recipes/pickled-red-onions/pickled-red-onions.jpg",
+      "url"            : "/recipes/pickled-red-onions",
+      
+      "categories"     : "appetizer healthyish pickling original ",
+      
+      "tags"           : "vegetarian ",
       "meal"           : "side ",
       "chef"           : "robert "
     } 

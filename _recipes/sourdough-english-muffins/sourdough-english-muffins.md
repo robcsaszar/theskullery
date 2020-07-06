@@ -5,7 +5,8 @@ permalink: recipes/sourdough-english-muffins
 title: "Sourdough English Muffins"
 image: sourdough-english-muffins.jpg
 date: 2020-06-19
-imagecredit: "unsplash.com" 
+imagecredit: "unsplash.com"
+credit: "https://www.kingarthurflour.com/recipes/sourdough-english-muffins-recipe"
 categories: baking oven sandwich # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: burger vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: side # breakfast brunch dessert main side
@@ -14,8 +15,8 @@ time: over 120mins # under 60mins under 120mins over 120mins
 servings: 24 
 
 notes:
-- For best sourdough flavor, refrigerate the dough for 24 hours before shaping and cooking the muffins.
-- For best shape, cook muffins for about 5 minutes on their first side; then lay a cake pan, cookie sheet, or similar flat (though not overly heavy) object atop them. Continue cooking for 7 minutes or so; then remove the pan, turn muffins over, and finish cooking without the pan on top. This helps keep muffins flat across the top (rather than domed).
+- Refrigerate the dough 24 hours before shaping and cooking the muffins for best sourdough flavour. 
+- Cook muffins on their first side for about 5 minutes for best shape; then lay a cake pan, cookie sheet, or similar flat (though not excessively heavy) object on top of them. Continue to cook for about 7 minutes; then remove the saucepan, turn the muffins over and finish cooking on top without the pan. This helps to keep the muffins flat (rather than domed) over the rim.
 
 ingredients:
 - 25|g bread flour
