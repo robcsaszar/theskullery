@@ -6,7 +6,7 @@ title:  "Healthy Banoffee Pie" # (making sure we have a good title)
 image: banoffee-pie.jpg # (a nice, high-quality image I will carefully select for you)
 date: 2020-05-01
 imagecredit: "unsplash.com" # (where I'm getting the image above)
-categories: baking oven healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: baking oven healthyish original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: fruit vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: dessert # dessert (choose one that applies)
 chef: roksana # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)

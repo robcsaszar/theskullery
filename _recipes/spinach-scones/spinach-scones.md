@@ -6,7 +6,7 @@ title:  "Savoury Spinach Scones" # (making sure we have a good title)
 image: spinach-scones.jpg # (a nice, high-quality image I will carefully select for you)
 date: 2020-05-01
 imagecredit: "bestrecipes.com.au" # (where I'm getting the image above)
-categories: oven appetizer baking healthyish quick # (these will be selected for you, later on you can select your own)
+categories: oven appetizer baking healthyish quick original # (these will be selected for you, later on you can select your own)
 tags: vegetarian bread # (these will be selected for you, later on you can select your own)
 meal: brunch # (is this lunch, dinner, or breakfast?)
 chef: razvan # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
