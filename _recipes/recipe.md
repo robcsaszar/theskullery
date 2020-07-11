@@ -19,6 +19,5 @@ directions:
 - do this
 - then this
 - and then this
-published: false
 
 ---
