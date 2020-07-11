@@ -1,0 +1,46 @@
+---
+label: Recipe
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: file
+  name: image
+  label: image
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: imagecredit
+  label: imagecredit
+- type: text
+  name: categories
+  label: categories
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: meal
+  label: meal
+- type: text
+  name: chef
+  label: chef
+- type: text
+  name: time
+  label: time
+- type: number
+  name: servings
+  label: servings
+- type: list
+  name: ingredients
+  label: ingredients
+- type: list
+  name: directions
+  label: directions
