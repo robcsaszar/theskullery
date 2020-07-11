@@ -5,6 +5,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: recipe
+  hidden: true
 - type: text
   name: permalink
   label: permalink
