@@ -46,5 +46,3 @@ fields:
 - type: list
   name: directions
   label: directions
-pages:
-- _recipes/recipe.md
