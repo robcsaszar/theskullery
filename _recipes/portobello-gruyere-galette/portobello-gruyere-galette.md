@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/portobello-gruyere-galette 
 title:  "Portobello Gruyere Galette"
 image: portobello-gruyere-galette.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: french vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

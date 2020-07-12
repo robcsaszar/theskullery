@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/baked-peaches-oatmeal 
 title:  "Baked Peaches & Cream Oatmeal"
 image: baked-peaches-oatmeal.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: fruit vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

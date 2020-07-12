@@ -1,0 +1,29 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/admin"
+webhook_url: https://discordapp.com/api/webhooks/731592483590373466/Z4TZg8-_6-6Z3aI7nOONeEsu-ZIoV1C12Aa7Tg0SdoVS1Ohu2xQUd7UvcFF_Jnh7hG-8
+sections:
+- type: jekyll-pages
+  label: Pages
+  create: all
+- type: directory
+  path: _recipes
+  label: Recipes
+  create: all
+  match: "**/*"
+upload_dir: assets/recipes
+public_path: "/assets/recipes"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=staging
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    -d _site

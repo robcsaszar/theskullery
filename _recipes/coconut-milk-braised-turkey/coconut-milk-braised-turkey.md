@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/coconut-milk-braised-turkey 
 title:  "Coconut Milk Braised Turkey"
 image: coconut-milk-braised-turkey.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: asian poultry rice # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

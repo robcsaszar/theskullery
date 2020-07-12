@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/miso-pork-walnut-dip 
 title:  "Miso-Pork-Walnut Dip"
 image: miso-pork-walnut-dip.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: appetizer quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: asian pork nuts thanksgiving # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

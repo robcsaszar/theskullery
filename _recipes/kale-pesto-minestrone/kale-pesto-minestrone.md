@@ -3,9 +3,10 @@
 layout: recipe
 permalink: recipes/kale-pesto-minestrone 
 title:  "Kale Pesto Minestrone"
+date: 2020-05-01
 image: kale-pesto-minestrone.jpg 
 imagecredit: "unsplash.com" 
-categories: soup healtyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: soup healthyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian vegetarian pasta # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: main # breakfast brunch dessert main side
 chef: robert 

@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/chicken-marsala 
 title:  "Chicken Marsala"
 image: chicken-marsala.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

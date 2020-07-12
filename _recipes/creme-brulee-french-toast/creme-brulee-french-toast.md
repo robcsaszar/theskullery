@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/creme-brulee-french-toast 
 title: "Crème Brûlée French Toast"
 image: creme-brulee-french-toast.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: christmas french vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

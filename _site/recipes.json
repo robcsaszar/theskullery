@@ -512,12 +512,6 @@
     },
 
     {
-        "title": "Loki's World Peace Wings",
-        "image": "images/large/lokis-world-peace-wings.jpg",
-        "url": "/recipes/lokis-world-peace-wings",
-    },
-
-    {
         "title": "Maple BBQ Salmon & Couscous",
         "image": "images/large/maple-bbq-salmon-couscous.jpg",
         "url": "/recipes/maple-bbq-salmon-couscous",
@@ -794,12 +788,6 @@
     },
 
     {
-        "title": "Thor's World Peace Wings",
-        "image": "images/large/thors-world-peace-wings.jpg",
-        "url": "/recipes/thors-world-peace-wings",
-    },
-
-    {
         "title": "Thyme Butter Mushroom Chicken",
         "image": "images/large/thyme-butter-mushroom-chicken.jpg",
         "url": "/recipes/thyme-butter-mushroom-chicken",
@@ -854,14 +842,86 @@
     },
 
     {
-        "title": "Yucatán-Style Pickled Red Onions",
-        "image": "images/large/yucatan-pickled-onions.jpg",
-        "url": "/recipes/yucatan-pickled-onions",
-    },
-
-    {
         "title": "Zabaglione",
         "image": "images/large/zabaglione.jpg",
         "url": "/recipes/zabaglione",
+    },
+
+    {
+        "title": "World Peace Bear Wings",
+        "image": "images/large/world-peace-bear-wings.jpg",
+        "url": "/recipes/world-peace-bear-wings",
+    },
+
+    {
+        "title": "World Peace Dragon Wings",
+        "image": "images/large/world-peace-dragon-wings.jpg",
+        "url": "/recipes/world-peace-dragon-wings",
+    },
+
+    {
+        "title": "Chicken & Dumpling Stew",
+        "image": "images/large/chicken-and-dumplings.jpg",
+        "url": "/recipes/chicken-and-dumplings",
+    },
+
+    {
+        "title": "Hokkaido Burger Buns",
+        "image": "images/large/hokkaido-burger-buns.jpg",
+        "url": "/recipes/hokkaido-burger-buns",
+    },
+
+    {
+        "title": "Matzo Ball Soup",
+        "image": "images/large/matzo-ball-soup.jpg",
+        "url": "/recipes/matzo-ball-soup",
+    },
+
+    {
+        "title": "Muối Ớt Xanh Sauce",
+        "image": "images/large/muoi-ot-xanh-sauce.jpg",
+        "url": "/recipes/muoi-ot-xanh-sauce",
+    },
+
+    {
+        "title": "Nước chấm Carrots",
+        "image": "images/large/nuoc-cham-carrots.jpg",
+        "url": "/recipes/nuoc-cham-carrots",
+    },
+
+    {
+        "title": "Pretzels",
+        "image": "images/large/pretzels.jpg",
+        "url": "/recipes/pretzels",
+    },
+
+    {
+        "title": "Spicy Quick Pickled Radishes",
+        "image": "images/large/quick-pickled-radishes.jpg",
+        "url": "/recipes/quick-pickled-radishes",
+    },
+
+    {
+        "title": "Sourdough English Muffins",
+        "image": "images/large/sourdough-english-muffins.jpg",
+        "url": "/recipes/sourdough-english-muffins",
+    },
+
+    {
+        "title": "Pickled Red Onions",
+        "image": "images/large/pickled-red-onions.jpg",
+        "url": "/recipes/pickled-red-onions",
+    },
+
+    {
+        "title": "Peanut Butter Oatmeal Chocolate Cookies",
+        "image": "images/large/peanutbutter-oatmeal-cookies.jpg",
+        "url": "/recipes/peanutbutter-oatmeal-cookies",
+    },
+
+    {
+        "title": "Spinach Mushroom Omelette",
+        "image": "images/large/spinach-mushroom-omelette.jpg",
+        "url": "/recipes/spinach-mushroom-omelette",
     }
 ]

@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pistachio-carrot-cake 
 title:  "Pistachop Carrot Cake"
 image: pistachio-carrot-cake.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick baking oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: nuts thanksgiving vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

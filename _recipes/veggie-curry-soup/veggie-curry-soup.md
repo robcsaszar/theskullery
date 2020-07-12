@@ -4,8 +4,9 @@ layout: recipe
 permalink: recipes/veggie-curry-soup 
 title:  "Veggie Curry Cream Soup"
 image: veggie-curry-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
-categories: soup healthyish quick
+categories: soup healthyish quick original
 tags: vegetarian indian 
 meal: main
 chef: razvan
@@ -41,7 +42,7 @@ ingredients:
 
 directions:
 - Melt the butter and a splash of oil *optional* in a large pot.
-- Add the onion, celery, leek and carrot and fry for 10 minutes until soft and fragrant. 
+- Add the onion, celery, leek, butternut squash, and carrot and fry for 10 minutes until soft and fragrant. 
 - Add the garlic and ginger and fry for a min
 - Add the spices.
 - Stir together.

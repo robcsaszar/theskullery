@@ -4,6 +4,7 @@ layout: recipe # (this is the layout Jekyll uses to render the file in)
 permalink: recipes/carnitas # (this will be your final, pretty URL)
 title:  "Carnitas" # (making sure we have a good title)
 image: carnitas.jpg # (a nice, high-quality image I will carefully select for you)
+date: 2020-05-01
 imagecredit: "unsplash.com" # (where I'm getting the image above)
 categories: oven marinade # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican pork # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

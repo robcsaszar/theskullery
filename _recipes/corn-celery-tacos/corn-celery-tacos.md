@@ -4,8 +4,9 @@ layout: recipe
 permalink: recipes/corn-celery-tacos 
 title:  "Corn & Celery Tacos"
 image: corn-celery-tacos.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
-categories: grill healthyish quic # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: grill healthyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: brunch # breakfast brunch dessert main side
 chef: robert 

@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/pulled-chicken-guac-sliders 
 title:  "Pulled Chicken Guacamole Sliders"
 image: pulled-chicken-guac-sliders.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

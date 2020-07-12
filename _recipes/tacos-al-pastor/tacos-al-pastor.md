@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/tacos-al-pastor 
 title: "Tacos al Pastor"
 image: tacos-al-pastor.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven grill # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican pork # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

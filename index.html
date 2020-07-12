@@ -7,6 +7,8 @@ pagination:
   trail: 
   before: 2
   after: 2 
+  sort_field: 'date'
+  sort_reverse: true
 ---
 <div class="home">
   <div class="skullery--hero">
@@ -16,16 +18,23 @@ pagination:
       <div class="header">
         <p class="logo">the<strong><i>Skullery</i></strong></p>
         <ul>
-          <li class='hero--link right'><a aria-label="categories" href='/categories'>Categories</a></li>
-          <li class='hero--link right'><a aria-label="tags" href='/tags'>Tags</a></li>
-          <li class='hero--link right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
+          <li class='right' id="about"><a aria-label="about" href='/about'>About</a></li>
+          <li class='right button-dropdown'><a aria-label="tags" class='dropdown-toggle' href='javascript:void(0)'>Tags</a>
+            <ul class='dropdown-menu'>
+              <li class='right'><a href='/categories'>Categories</a></li>
+              <li class='right'><a href='/tags'>Cuisines</a></li>
+              <li class='right'><a href='/chefs'>Chefs</a></li>
+              <li class='right'><a href='/meals'>Meals</a></li>
+          </ul>
+          </li>
+          <li class='right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div class="main--hero">
         <p class="title">the<strong><i>Skullery</i></strong></p>
         <p class="desc">
           A scullery is a historical noun for a small kitchen, much like mine.</br>
-          I hope you find inspiration from my collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
+          I hope you find inspiration from my recipe collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
           </br>
           Yours,</br>
           <div id="signature" class="signature invisible">
@@ -40,6 +49,7 @@ pagination:
         </p>
         <a aria-label="submit" href="/submit" class="cta--main">Submit recipe</a>
         <a aria-label="browse" href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
+        <pwa-install></pwa-install>
       </div>
     </div>
   </div>
@@ -69,6 +79,9 @@ pagination:
         {% for meal in post.meal %}
         <p class="recipe--meal m1 p1 absolute top-0 right-0">{{ meal }}</p>
         {% endfor %} 
+        {% if post.categories contains "original" %}
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+        {% endif %} 
       </a>
     </div>
     {% endfor %}
@@ -79,7 +92,7 @@ pagination:
     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
   </svg>
 </div>
-<div class='pagination center mx-auto mt1'>
+<div id='pagination' class='pagination center mx-auto mt1'>
 {% if paginator.total_pages > 1 %}
   {% if paginator.previous_page %}
   <span class='pagination--button previous-page'>
@@ -109,5 +122,44 @@ pagination:
     json: '{{site.baseurl}}/search.json',
     searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a aria-label="{{ post.title }}" class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
   })
+</script>
+<!-- <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script> -->
+<script>
+  jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("nav-active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("nav-active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("nav-active");
+    })
+});
 </script>
 <script src="/js/backtotop.js" type="text/javascript"></script>

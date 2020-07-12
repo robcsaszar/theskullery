@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/coffee-syrups 
 title:  "Fancy-Ass Coffee Syrups"
 image: coffee-syrups.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: dressing drink quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

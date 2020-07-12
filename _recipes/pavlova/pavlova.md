@@ -5,6 +5,7 @@ permalink: recipes/pavlova
 title:  "Pavlova"
 image: pavlova.jpg
 imagecredit: "unsplash.com"
+date: 2020-05-01
 categories: oven
 tags: fruit christmas
 meal: dessert

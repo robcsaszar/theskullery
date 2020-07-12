@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/burger-buns
 title:  "Burger Buns"
 image: burger-buns.jpg
+date: 2020-05-01
 imagecredit: "unsplash.com"
 categories: oven baking
 tags: burger bread 

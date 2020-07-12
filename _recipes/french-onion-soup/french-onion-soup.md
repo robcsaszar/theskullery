@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/french-onion-soup 
 title:  "French Onion Soup"
 image: french-onion-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: soup oven # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: french # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
@@ -20,10 +21,10 @@ notes:
 
 ingredients:
 - 90|g unsalted butter, plus more for toasts
-- 1.4|kg yellow or mixed onions, french cut *see note*
+- 3| pounds yellow or mixed onions, french cut *see note*
 - kosher salt and freshly ground black pepper
 - 120|ml dry sherry *such as Amontillado*
-- 1.8|l homemade or store-bought low-sodium chicken stock
+- 2| pounds homemade or store-bought low-sodium chicken stock
 - 2| sprigs thyme
 - 1| bay leaf
 - 5|ml Asian fish sauce *optional*

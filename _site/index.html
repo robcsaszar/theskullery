@@ -49,13 +49,18 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#E83151">
   <link rel="shortcut icon" href="/icons/favicon.ico">
   <meta name="msapplication-TileColor" content="#E83151">
   <meta name="msapplication-config" content="/icons/browserconfig.xml">
   <meta name="theme-color" content="#E83151">
-
+  <meta name="google" content="notranslate">
+  <meta name="rating" content="General">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+  <meta name="mobile-web-app-capable" content="yes">
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://theskullery.net/index.html">
@@ -71,9 +76,6 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <meta property="twitter:description" content="A scullery is a historical noun for a small kitchen, much like mine.
   I hope you find inspiration from my collection and cook something for your loved ones; or share something from your own kitchen to inspire others. ">
   <meta property="twitter:image" content="/assets/theSkullery_tile.png">
-
-  <!-- Global site verification - Google Tag Manager -->
-  <meta name="google-site-verification" content="Q8OSXL2dBLDbRpxyslhwPcgnRbPsAttWdYTJ1jVbZfk" />
 
 </head>
   <body>
@@ -94,16 +96,23 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
       <div class="header">
         <p class="logo">the<strong><i>Skullery</i></strong></p>
         <ul>
-          <li class='hero--link right'><a aria-label="categories" href='/categories'>Categories</a></li>
-          <li class='hero--link right'><a aria-label="tags" href='/tags'>Tags</a></li>
-          <li class='hero--link right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
+          <li class='right' id="about"><a aria-label="about" href='/about'>About</a></li>
+          <li class='right button-dropdown'><a aria-label="tags" class='dropdown-toggle' href='javascript:void(0)'>Tags</a>
+            <ul class='dropdown-menu'>
+              <li class='right'><a href='/categories'>Categories</a></li>
+              <li class='right'><a href='/tags'>Cuisines</a></li>
+              <li class='right'><a href='/chefs'>Chefs</a></li>
+              <li class='right'><a href='/meals'>Meals</a></li>
+          </ul>
+          </li>
+          <li class='right' id="favs"><a aria-label="favorites" href='/favorites'>Favorites</a></li>
         </ul>
       </div>
       <div class="main--hero">
         <p class="title">the<strong><i>Skullery</i></strong></p>
         <p class="desc">
           A scullery is a historical noun for a small kitchen, much like mine.</br>
-          I hope you find inspiration from my collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
+          I hope you find inspiration from my recipe collection and cook something for your loved ones; or share something from your own kitchen to inspire others. </br>
           </br>
           Yours,</br>
           <div id="signature" class="signature invisible">
@@ -118,6 +127,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
         </p>
         <a aria-label="submit" href="/submit" class="cta--main">Submit recipe</a>
         <a aria-label="browse" href="#random-page" onclick="runme()" class="cta--secondary" >Browse random</a>
+        <pwa-install></pwa-install>
       </div>
     </div>
   </div>
@@ -139,18 +149,6 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
   <div class="recipes xs-px1 xs-mt2" id="recipes">
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Amaretto Bourbon Punch" class="block relative" href="/recipes/amaretto-bourbon-punch">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/amaretto-bourbon-punch/amaretto-bourbon-punch.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Amaretto Bourbon Punch</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
       <a aria-label="Zabaglione" class="block relative" href="/recipes/another-test-recipe">
         <div class="image ratio bg-cover" 
           style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/another-test-recipe/zabaglione.jpg'
@@ -159,221 +157,275 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
          
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Vanilla Cinnamon Roll Dutch Baby" class="block relative" href="/recipes/apple-bourbon-compote-dutch-baby">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/apple-bourbon-compote-dutch-baby/apple-bourbon-compote-dutch-baby.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Vanilla Cinnamon Roll Dutch Baby</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
          
       </a>
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Apple Cider Shandy" class="block relative" href="/recipes/apple-cider-shandy">
+      <a aria-label="Leafy Green, Ham, and Gruyère Omelette" class="block relative" href="/recipes/leafy-green-ham-gruyere-omelette">
         <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/apple-cider-shandy/apple-cider-shandy.jpg'
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/leafy-green-ham-gruyere-omelette/leafy-green-ham-gruyere-omelette.jpg'
           ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Apple Cider Shandy</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Asian Sloppy Joes" class="block relative" href="/recipes/asian-sloppy-joes">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/asian-sloppy-joes/asian-sloppy-joes.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Asian Sloppy Joes</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Avocado Citrus Salad" class="block relative" href="/recipes/avocado-citrus-salad">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/avocado-citrus-salad/avocado-citrus-salad.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Avocado Citrus Salad</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Spicy Arrabiatta Baked Eggs" class="block relative" href="/recipes/baked-arrabiatta-eggs">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-arrabiatta-eggs/baked-arrabiatta-eggs.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Spicy Arrabiatta Baked Eggs</h1>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Leafy Green, Ham, and Gruyère Omelette</h1>
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">breakfast</p>
          
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
       </a>
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Baked Oatmeal" class="block relative" href="/recipes/baked-oatmeal">
+      <a aria-label="Purple Barley Kaiserschmarrn" class="block relative" href="/recipes/purple-barley-kaiserschmarrn">
         <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-oatmeal/baked-oatmeal.jpg'
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/purple-barley-kaiserschmarrn/purple-barley-kaiserschmarrn.jpg'
           ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Baked Oatmeal</h1>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Purple Barley Kaiserschmarrn</h1>
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">breakfast</p>
          
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
       </a>
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Baked Peaches & Cream Oatmeal" class="block relative" href="/recipes/baked-peaches-oatmeal">
+      <a aria-label="Tortilla Española/Kuku Sabzi Hybrid" class="block relative" href="/recipes/tortilla-espanola-kuku-sabzi-hybrid">
         <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/baked-peaches-oatmeal/baked-peaches-oatmeal.jpg'
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/tortilla-espanola-kuku-sabzi-hybrid/tortilla-espanola-kuku-sabzi-hybrid.jpg'
           ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Baked Peaches & Cream Oatmeal</h1>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Tortilla Española/Kuku Sabzi Hybrid</h1>
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">breakfast</p>
          
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Banana Bread" class="block relative" href="/recipes/banana-bread">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/banana-bread/banana-bread.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Banana Bread</h1>
         
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
          
       </a>
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Healthy Banoffee Pie" class="block relative" href="/recipes/banoffee-pie">
+      <a aria-label="Spinach Mushroom Omelette" class="block relative" href="/recipes/spinach-mushroom-omelette">
         <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/banoffee-pie/banoffee-pie.jpg'
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/spinach-mushroom-omelette/spinach-mushroom-omelette.jpg'
           ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Healthy Banoffee Pie</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Basil Pesto Butter" class="block relative" href="/recipes/basil-pesto-butter">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/basil-pesto-butter/basil-pesto-butter.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Basil Pesto Butter</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Basil Ricotta Macaroni" class="block relative" href="/recipes/basil-ricotta-macaroni">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/basil-ricotta-macaroni/basil-ricotta-macaroni.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Basil Ricotta Macaroni</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Blue Cheese Deviled Eggs" class="block relative" href="/recipes/blue-cheese-deviled-eggs">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blue-cheese-deviled-eggs/blue-cheese-deviled-eggs.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Blue Cheese Deviled Eggs</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">brunch</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Blue Cheese Portobello Burgers" class="block relative" href="/recipes/blue-cheese-portobello-burgers">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blue-cheese-portobello-burgers/blue-cheese-portobello-burgers.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Blue Cheese Portobello Burgers</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Blueberry Lavender Chia Jam" class="block relative" href="/recipes/blueberry-lavender-chia-jam">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/blueberry-lavender-chia-jam/blueberry-lavender-chia-jam.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Blueberry Lavender Chia Jam</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Bourbon Peach Upside Down Cake" class="block relative" href="/recipes/bourbon-peach-upside-down-cake">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/bourbon-peach-upside-down-cake/bourbon-peach-upside-down-cake.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Bourbon Peach Upside Down Cake</h1>
-        
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
-         
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Badass Breakfast Sandwich" class="block relative" href="/recipes/breakfast-sandwich">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/breakfast-sandwich/breakfast-sandwich.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Badass Breakfast Sandwich</h1>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Spinach Mushroom Omelette</h1>
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">breakfast</p>
          
-      </a>
-    </div>
-    
-    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Burger Buns" class="block relative" href="/recipes/burger-buns">
-        <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/burger-buns/burger-buns.jpg'
-          ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Burger Buns</h1>
         
-        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
          
       </a>
     </div>
     
     <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
-      <a aria-label="Caprese Skillet Lasagna" class="block relative" href="/recipes/caprese-skillet-lasagna">
+      <a aria-label="Peanut Butter Oatmeal Chocolate Cookies" class="block relative" href="/recipes/peanutbutter-oatmeal-cookies">
         <div class="image ratio bg-cover" 
-          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/caprese-skillet-lasagna/caprese-skillet-lasagna.jpg'
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/peanutbutter-oatmeal-cookies/peanutbutter-oatmeal-cookies.jpg'
           ></div>
-        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Caprese Skillet Lasagna</h1>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Peanut Butter Oatmeal Chocolate Cookies</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Pickled Red Onions" class="block relative" href="/recipes/pickled-red-onions">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/pickled-red-onions/pickled-red-onions.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Pickled Red Onions</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Spicy Quick Pickled Radishes" class="block relative" href="/recipes/quick-pickled-radishes">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/quick-pickled-radishes/quick-pickled-radishes.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Spicy Quick Pickled Radishes</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Sourdough English Muffins" class="block relative" href="/recipes/sourdough-english-muffins">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/sourdough-english-muffins/sourdough-english-muffins.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Sourdough English Muffins</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Nước chấm Carrots" class="block relative" href="/recipes/nuoc-cham-carrots">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/nuoc-cham-carrots/nuoc-cham-carrots.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Nước chấm Carrots</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Muối Ớt Xanh Sauce" class="block relative" href="/recipes/muoi-ot-xanh-sauce">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/muoi-ot-xanh-sauce/muoi-ot-xanh-sauce.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Muối Ớt Xanh Sauce</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Matzo Ball Soup" class="block relative" href="/recipes/matzo-ball-soup">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/matzo-ball-soup/matzo-ball-soup.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Matzo Ball Soup</h1>
         
         <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Hokkaido Burger Buns" class="block relative" href="/recipes/hokkaido-burger-buns">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/hokkaido-burger-buns/hokkaido-burger-buns.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Hokkaido Burger Buns</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Chicken & Dumpling Stew" class="block relative" href="/recipes/chicken-and-dumplings">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/chicken-and-dumplings/chicken-and-dumplings.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Chicken & Dumpling Stew</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Pretzels" class="block relative" href="/recipes/pretzels">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/pretzels/pretzels.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Pretzels</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="World Peace Dragon Wings" class="block relative" href="/recipes/world-peace-dragon-wings">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/world-peace-dragon-wings/world-peace-dragon-wings.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">World Peace Dragon Wings</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="World Peace Bear Wings" class="block relative" href="/recipes/world-peace-bear-wings">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/world-peace-bear-wings/world-peace-bear-wings.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">World Peace Bear Wings</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Whipped Ricotta Grilled Peaches" class="block relative" href="/recipes/whipped-ricotta-grilled-peaches">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/whipped-ricotta-grilled-peaches/whipped-ricotta-grilled-peaches.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Whipped Ricotta Grilled Peaches</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">dessert</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Whipped Feta Dip" class="block relative" href="/recipes/whipped-feta-dip">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/whipped-feta-dip/whipped-feta-dip.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Whipped Feta Dip</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">side</p>
+         
+         
+      </a>
+    </div>
+    
+    <div class="recipe sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2">
+      <a aria-label="Veggie Curry Cream Soup" class="block relative" href="/recipes/veggie-curry-soup">
+        <div class="image ratio bg-cover" 
+          style='background-image:url(/images/blank.jpg);' data-echo-background='/recipes/veggie-curry-soup/veggie-curry-soup.jpg'
+          ></div>
+        <h1 class="title p2 m0 absolute bold white bottom-0 left-0">Veggie Curry Cream Soup</h1>
+        
+        <p class="recipe--meal m1 p1 absolute top-0 right-0">main</p>
+         
+        
+        <span class="recipe--original m1 p1 absolute top-0 left-0"><svg width='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.566406 4.730469L20.773438 3.511719C20.277344 3.175781 19.597656 3.304688 19.265625 3.796875L10.476563 16.757813L6.4375 12.71875C6.015625 12.296875 5.328125 12.296875 4.90625 12.71875L3.371094 14.253906C2.949219 14.675781 2.949219 15.363281 3.371094 15.789063L9.582031 22C9.929688 22.347656 10.476563 22.613281 10.96875 22.613281C11.460938 22.613281 11.957031 22.304688 12.277344 21.839844L22.855469 6.234375C23.191406 5.742188 23.0625 5.066406 22.566406 4.730469Z"/></svg>original</span>
          
       </a>
     </div>
@@ -385,7 +437,7 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
   </svg>
 </div>
-<div class='pagination center mx-auto mt1'>
+<div id='pagination' class='pagination center mx-auto mt1'>
 
   
 
@@ -573,6 +625,45 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
     searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-3 xs-px1 xs-mb2 left-align"><a aria-label="" class="block relative" href="{url}"><div class="image ratio bg-cover" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url({image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1><p class="recipe--meal m1 p1 absolute top-0 right-0">{meal}</p></a></div>'
   })
 </script>
+<!-- <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script> -->
+<script>
+  jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("nav-active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("nav-active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("nav-active");
+    })
+});
+</script>
 <script src="/js/backtotop.js" type="text/javascript"></script>
       </div>
     </div>
@@ -612,21 +703,20 @@ Hello there, fellow developer! Please bear in mind that I am still learning (are
           <li><a aria-label="meals" href='/meals'>Meals</a></li>
         </ul>
       </div>
-      <div class="mx-auto center col lg-col-12 md-col-12 sm-col-12 xs-col-12 p1 footer--copyright">
+      <div class="mx-auto left col lg-col-12 md-col-12 sm-col-12 xs-col-12 p1 footer--copyright">
         <hr>
         <a aria-label="e-mail" class="squigglyURL--main" href='mailto:recipes@theskullery.net'>recipes@<span class="siteName"><em>the<strong>skullery</strong></em></span>.net</span></a><br>
         <span class="footer--love">
           made with
           <svg height=".8em" fill="#e83151" viewBox="0 0 32 32">
             <path d="M0 10c0-4 3-8 8-8 4 0 7 3 8 4 1-1 4-4 8-4 6 0 8 4 8 8 0 8-14 19-16 20-2-1-16-12-16-20" />
-          </svg>
-          by
-          <a aria-label="author" class="footer--nhg" href="https://nhg.design">Rob Csaszar</a> </p>
-          <span>>all rights reserved &copy; <span id="copyright">
+          </svg> by
+          <a aria-label="author" class="footer--nhg" href="https://nhg.design">Rob</a></br>
+          <span class="mx-auto center"> all rights reserved &copy; <span id="copyright">
               <script>
                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
               </script>
-            </span> <span><em>the<strong>Skullery</strong></em></span>
+            </span><span><em>the<strong>Skullery</strong></em></span></span>
       </div>
     </div>
   </div>

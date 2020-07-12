@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/horchata 
 title:  "Horchata"
+date: 2020-05-01
 image: horchata.jpg 
 imagecredit: "unsplash.com" 
 categories: drink # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

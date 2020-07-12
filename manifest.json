@@ -1,0 +1,22 @@
+{
+    "short_name": "theSkullery",
+    "name": "theSkullery: Your recipes, your time.",
+    "description": "A scullery of recipes.",
+    "icons": [
+      {
+        "src": "/assets/theSkullery-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/theSkullery-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#E83151"
+  }

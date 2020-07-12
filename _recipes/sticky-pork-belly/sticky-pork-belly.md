@@ -4,6 +4,7 @@ layout: recipe
 title:  "Twice-Cooked Sticky Pork Belly"
 permalink: recipes/sticky-pork-belly
 image: sticky-pork-belly.jpg
+date: 2020-05-01
 imagecredit: "https://www.amazon.co.uk/dp/1579655270"
 categories: oven marinade
 tags: asian pork

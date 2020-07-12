@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/grilled-gorgonzola-potatoes 
 title:  "Grilled Gorgonzola Potatoes"
+date: 2020-05-01
 image: grilled-gorgonzola-potatoes.jpg 
 imagecredit: "unsplash.com" 
 categories: oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

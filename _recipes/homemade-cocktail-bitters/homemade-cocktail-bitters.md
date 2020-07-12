@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/homemade-cocktail-bitters 
 title:  "Homemade Cocktail Bitters"
+date: 2020-05-01
 image: homemade-cocktail-bitters.jpg 
 imagecredit: "unsplash.com" 
 categories: drink # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

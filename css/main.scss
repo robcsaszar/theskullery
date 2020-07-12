@@ -71,6 +71,7 @@
     --facebook: #4267B2;
     --twitter: #1DA1F2;
     --reddit: #FF4301;
+    --pinterest: #E60023;
 
     --background: #EFEEEE;
     --stickynoteColor-light: #F3F1D6;
@@ -223,6 +224,25 @@ ul li input {
     vertical-align: baseline;
     border-radius: 2px;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.recipe--original {
+    color: var(--mainColor-lightest);
+    background-color: var(--mainColor);
+    opacity: 1;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    & svg {
+        fill: var(--mainColor-lightest);
+    }
 }
 
 .footer {
@@ -573,19 +593,14 @@ ul li input {
         text-decoration: none;
         padding: 0;
 
-        &:hover {
+        & ul li:hover {
             color: var(--white);
-            opacity: 0.6;
+            opacity: 0.7;
         }
 
         & a {
         text-decoration: none;
         color: var(--white);
-            &:hover {
-                color: var(--white);
-                opacity: 0.6;
-            }
-
         }
     }
 
@@ -1377,6 +1392,10 @@ margin: 0 auto;
 
 .reddit:hover svg {
         fill: var(--reddit);
+    }
+
+.pinterest:hover svg {
+        fill: var(--pinterest);
     }
 
 .copy:hover svg {
@@ -2200,3 +2219,95 @@ input[type="number"] {
     margin-left: 14%;
 }
 
+ul li ul li {
+display: inline-block;
+}
+
+ul li:hover > ul, ul li:focus-within > ul {
+    right: 0;
+    visibility: visible;
+}
+
+li .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.nav-active {
+    opacity: 0.7;
+
+    &:hover {
+    opacity: 0.7;
+    }
+}
+
+.credit--modal{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,.05);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .credit--modal:before{
+    content: '';
+    width: 100%;
+    height: .5rem;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(right,  var(--mainColor) 0%, var(--mainColor-dark) 100%);
+    background: -webkit-linear-gradient(right, var(--mainColor) 0%, var(--mainColor-dark) 100%);
+    background: linear-gradient(to left,  var(--mainColor) 0%, var(--mainColor-dark) 100%);
+    display: block;
+    position: absolute;
+  }
+  
+  .credit--title{
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .credit--sub{
+    font-size: 1rem;
+  }
+  
+  .credit--action a{
+    background: var(--mainColor);
+    color: #fff;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,.2);
+    cursor: pointer;
+    & svg {
+      fill: #fff;  
+    }
+  }
+  
+  .credit--action a:hover{
+    background: var(--mainColor-dark);
+    text-decoration: none;
+  }
+  
+  .credit--more{
+    font-size: 1rem;
+  }
+  
+  .credit--more a{
+    color: var(--mainColor);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .credit--more a:hover{
+    text-decoration: underline;
+}

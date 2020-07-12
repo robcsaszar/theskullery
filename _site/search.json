@@ -11,7 +11,7 @@
       
       "categories"     : "drink quick ",
       
-      "tags"           : "vegetarian ",
+      "tags"           : "vegetarian thanksgiving ",
       "meal"           : "brunch ",
       "chef"           : "robert "
     } ,
@@ -857,7 +857,7 @@
 		  "image"	         : "/recipes/corn-celery-tacos/corn-celery-tacos.jpg",
       "url"            : "/recipes/corn-celery-tacos",
       
-      "categories"     : "grill healthyish quic ",
+      "categories"     : "grill healthyish quick ",
       
       "tags"           : "mexican vegetarian ",
       "meal"           : "brunch ",
@@ -948,7 +948,7 @@
     
 	    "title"          : "Yucatán-Style Hot Dried-Chili Salsa",
       
-      "ingredients"    : "30g| dried chiles de árbol 30g| dried chiles pasillas 60ml| fresh juice from 4 to 5 limes 60ml| fresh juice from 1 grapefruit 60ml| fresh juice from 1 orange salt ",
+      "ingredients"    : "30|g dried chiles de árbol 30|g dried chiles pasillas 60|ml fresh juice from 4 to 5 limes 60|ml fresh juice from 1 grapefruit 60|ml fresh juice from 1 orange salt ",
       
 		  "image"	         : "/recipes/dried-chili-salsa/dried-chili-salsa.jpg",
       "url"            : "/recipes/dried-chili-salsa",
@@ -1028,7 +1028,7 @@
     
 	    "title"          : "French Onion Soup",
       
-      "ingredients"    : "90|g unsalted butter, plus more for toasts 1.4|kg yellow or mixed onions, french cut *see note* kosher salt and freshly ground black pepper 120|ml dry sherry *such as Amontillado* 1.8|l homemade or store-bought low-sodium chicken stock 2| sprigs thyme 1| bay leaf 5|ml Asian fish sauce *optional* 5|ml cider vinegar 8| bowl-size slices rustic bread, toasted until crisp 1| medium clove garlic 450|g Gruyère cheese, grated freshly minced chives, for garnish ",
+      "ingredients"    : "90|g unsalted butter, plus more for toasts 3| pounds yellow or mixed onions, french cut *see note* kosher salt and freshly ground black pepper 120|ml dry sherry *such as Amontillado* 2| pounds homemade or store-bought low-sodium chicken stock 2| sprigs thyme 1| bay leaf 5|ml Asian fish sauce *optional* 5|ml cider vinegar 8| bowl-size slices rustic bread, toasted until crisp 1| medium clove garlic 450|g Gruyère cheese, grated freshly minced chives, for garnish ",
       
 		  "image"	         : "/recipes/french-onion-soup/french-onion-soup.jpg",
       "url"            : "/recipes/french-onion-soup",
@@ -1273,7 +1273,7 @@
 		  "image"	         : "/recipes/kale-pesto-minestrone/kale-pesto-minestrone.jpg",
       "url"            : "/recipes/kale-pesto-minestrone",
       
-      "categories"     : "soup healtyish quick ",
+      "categories"     : "soup healthyish quick ",
       
       "tags"           : "italian vegetarian pasta ",
       "meal"           : "main ",
@@ -1357,22 +1357,6 @@
       
       "tags"           : "christmas fruit ",
       "meal"           : "dessert ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
-	    "title"          : "Loki&#39;s World Peace Wings",
-      
-      "ingredients"    : "{&quot;for the body&quot;=&gt;nil} 1| tbsp chili oil 1| tbsp roasted sesame oil 2| tbsp brown sugar 0.5| tsp MSG 6| tbsp water 4| tbsp light + 2 tbsp dark soy sauce OR 6 tbsp light soy sauce 2| tbsp dry vermouth or sherry 2| tbsp rice vinegar 1| tbsp Worcestershire sauce {&quot;for the kick&quot;=&gt;nil} 1| tsp 7-spice powder crushed green peppercorns {&quot;for the final touch&quot;=&gt;nil} 2| tbsp tomato paste 2| tbsp butter 4| cloves of garlic 1 tsp fish sauce raw unsalted peanuts ",
-      
-		  "image"	         : "/recipes/lokis-world-peace-wings/lokis-world-peace-wings.jpg",
-      "url"            : "/recipes/lokis-world-peace-wings",
-      
-      "categories"     : "oven marinade sauce ",
-      
-      "tags"           : "poultry ",
-      "meal"           : "main ",
       "chef"           : "robert "
     } ,
   
@@ -1993,10 +1977,10 @@
 		  "image"	         : "/recipes/spiced-amaretto-apple-cider/spiced-amaretto-apple-cider.jpg",
       "url"            : "/recipes/spiced-amaretto-apple-cider",
       
-      "categories"     : "",
+      "categories"     : "drink quick ",
       
-      "tags"           : "",
-      "meal"           : "",
+      "tags"           : "vegetarian thanksgiving ",
+      "meal"           : "brunch ",
       "chef"           : "robert "
     } ,
   
@@ -2110,22 +2094,6 @@
       "tags"           : "asian poultry ",
       "meal"           : "main ",
       "chef"           : "razvan "
-    } ,
-  
-    {
-    
-	    "title"          : "Thor&#39;s World Peace Wings",
-      
-      "ingredients"    : "125|ml BBQ sauce 50|ml Blue Dragon Teriyaki Marinade 0.25| tsp smoked salt 0.25| tsp cayenne 1.5| tsp smoked paprika 0.5| tsp lemon pepper 1| tsp onion powder black pepper to taste 0.5| lime, juiced ",
-      
-		  "image"	         : "/recipes/thors-world-peace-wings/thors-world-peace-wings.jpg",
-      "url"            : "/recipes/thors-world-peace-wings",
-      
-      "categories"     : "oven marinade sauce ",
-      
-      "tags"           : "poultry ",
-      "meal"           : "main ",
-      "chef"           : "robert "
     } ,
   
     {
@@ -2274,22 +2242,6 @@
   
     {
     
-	    "title"          : "Yucatán-Style Pickled Red Onions",
-      
-      "ingredients"    : "1| red onion(s), finely diced 15| whole black peppercorns 15| whole allspice berries 4| bay leaves 80|ml juice from 1 grapefruit *see note* 80|ml juice from 1 to 2 oranges *see note* 80|ml juice from 4 to 5 limes plus a little extra just in case *see note* salt ",
-      
-		  "image"	         : "/recipes/yucatan-pickled-onions/yucatan-pickled-onions.jpg",
-      "url"            : "/recipes/yucatan-pickled-onions",
-      
-      "categories"     : "appetizer healthyish pickling ",
-      
-      "tags"           : "mexican vegetarian ",
-      "meal"           : "side ",
-      "chef"           : "robert "
-    } ,
-  
-    {
-    
 	    "title"          : "Zabaglione",
       
       "ingredients"    : "4| egg yolks 0.3333| cup sugar 0.25| cup Marsala wine *or any other good quality sweet white wine* berries or chopped peaches, for serving ",
@@ -2302,6 +2254,214 @@
       "tags"           : "italian vegetarian fruit ",
       "meal"           : "brunch ",
       "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "World Peace Bear Wings",
+      
+      "ingredients"    : "125|ml BBQ sauce 50|ml Blue Dragon Teriyaki Marinade 0.25| tsp smoked salt 0.25| tsp cayenne 1.5| tsp smoked paprika 0.5| tsp lemon pepper 1| tsp onion powder black pepper to taste 0.5| lime, juiced ",
+      
+		  "image"	         : "/recipes/world-peace-bear-wings/world-peace-bear-wings.jpg",
+      "url"            : "/recipes/world-peace-bear-wings",
+      
+      "categories"     : "oven marinade sauce original ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "World Peace Dragon Wings",
+      
+      "ingredients"    : "{&quot;for the body&quot;=&gt;nil} 1| tbsp chili oil 1| tbsp roasted sesame oil 2| tbsp brown sugar 0.5| tsp MSG 6| tbsp water 4| tbsp light + 2 tbsp dark soy sauce OR 6 tbsp light soy sauce 2| tbsp dry vermouth or sherry 2| tbsp rice vinegar 1| tbsp Worcestershire sauce {&quot;for the kick&quot;=&gt;nil} 1| tsp 7-spice powder crushed green peppercorns {&quot;for the final touch&quot;=&gt;nil} 2| tbsp tomato paste 2| tbsp butter 4| cloves of garlic 1 tsp fish sauce raw unsalted peanuts ",
+      
+		  "image"	         : "/recipes/world-peace-dragon-wings/world-peace-dragon-wings.jpg",
+      "url"            : "/recipes/world-peace-dragon-wings",
+      
+      "categories"     : "oven marinade sauce original ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Chicken &amp; Dumpling Stew",
+      
+      "ingredients"    : "4| chicken legs, thigh and drumstick 1| leek, pale-green and white parts only 4| carrots, 1 whole, 3 chopped into rounds 4| celery stalks, 1 whole, 3 chopped into pieces 1| medium onion, chopped, divided 3| garlic cloves, smashed 4| sprigs thyme parsley stems from 0.5 bunch 1| bay leaf 2| tsp whole peppercorns kosher salt 100|g chicken fat (schmaltz) or butter, melted, divided freshly ground black pepper 190|g all-purpose flour, divided 2| tsp baking powder 0.25| tsp baking soda 125|g cup plus 2 tablespoons buttermilk 110|g cup heavy cream chopped chives, for serving ",
+      
+		  "image"	         : "/recipes/chicken-and-dumplings/chicken-and-dumplings.jpg",
+      "url"            : "/recipes/chicken-and-dumplings",
+      
+      "categories"     : "soup healthyish ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Hokkaido Burger Buns",
+      
+      "ingredients"    : "{&quot;for the tangzhong&quot;=&gt;nil} 20|g bread flour 27|g water 60|g whole milk {&quot;for the dough&quot;=&gt;nil} 120|g whole milk @ 30­°C 9|g instant yeast 320|g bread flour 7|g fine sea salt 35|g granulated sugar 1| whole egg(s) 1| egg yolk(s) 42|g unsalted butter, softened {&quot;for the egg wash&quot;=&gt;nil} 1 whole egg splash of whole milk ",
+      
+		  "image"	         : "/recipes/hokkaido-burger-buns/hokkaido-burger-buns.jpg",
+      "url"            : "/recipes/hokkaido-burger-buns",
+      
+      "categories"     : "baking oven sandwich ",
+      
+      "tags"           : "asian burger vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Matzo Ball Soup",
+      
+      "ingredients"    : "{&quot;for the Matzo dough&quot;=&gt;nil} 6| large eggs 100|g melted schmaltz (chicken fat) *or vegetable oil, if you don&#39;t have access to chicken fat* 6| tbsp low-sodium chicken broth or water 3| tbsp chopped dill 1.5| tsp kosher salt 0.75| tsp freshly ground black pepper 180|g semolina flour *or matzo meal, if you can find it* {&quot;for the soup &amp; assembly&quot;=&gt;nil} 4| chicken legs, thigh and drumstick 1.5| tsp kosher salt, for the chicken 3|kg chicken wings 2| medium onions, peeled, halved 2| celery stalks, cut into 5cm pieces 1| medium parsnip, peeled, cut into 5cm pieces 3| medium carrots, peeled, 1 cut into 5cm pieces, 2 thinly sliced 1| bunch parsley 3| tbsp kosher salt 1| tbsp black peppercorns salt, to taste chopped dill, for serving freshly ground black pepper ",
+      
+		  "image"	         : "/recipes/matzo-ball-soup/matzo-ball-soup.jpg",
+      "url"            : "/recipes/matzo-ball-soup",
+      
+      "categories"     : "soup healthyish oven ",
+      
+      "tags"           : "poultry ",
+      "meal"           : "main ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Muối Ớt Xanh Sauce",
+      
+      "ingredients"    : "20|g green Thai chili peppers, de-seeded 70|g green bell peppers, de-seeded 75|g lime juice 70|g granulated white sugar 20|g salt 0.5| tsp MSG *monosodium glutamate, optional* 3| lime leaves *see note* 35|g sweetened condensed milk ",
+      
+		  "image"	         : "/recipes/muoi-ot-xanh-sauce/muoi-ot-xanh-sauce.jpg",
+      "url"            : "/recipes/muoi-ot-xanh-sauce",
+      
+      "categories"     : "appetizer healthyish quick ",
+      
+      "tags"           : "asian vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Nước chấm Carrots",
+      
+      "ingredients"    : "0.25| cup water 5| tsp light brown sugar 4| tsp fresh lime juice 1| tbsp unseasoned rice vinegar *see note* 1| carrot, matchstick-cut 1| tbsp thinly sliced red chili *see note* ",
+      
+		  "image"	         : "/recipes/nuoc-cham-carrots/nuoc-cham-carrots.jpg",
+      "url"            : "/recipes/nuoc-cham-carrots",
+      
+      "categories"     : "appetizer healthyish pickling quick original ",
+      
+      "tags"           : "asian vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Pretzels",
+      
+      "ingredients"    : "350|g warm water @ 40°C 1| tbsp sugar 2| tsp kosher salt 7|g active dry yeast 625|g all-purpose flour 4|tsp unsalted butter, melted {&quot;for the boiling&quot;=&gt;nil} 2.3333|l water 96|g baked baking soda *see directions and note* {&quot;for topping&quot;=&gt;nil} 1| large egg yolk 1| tbsp water flaky salt ",
+      
+		  "image"	         : "/recipes/pretzels/pretzels.jpg",
+      "url"            : "/recipes/pretzels",
+      
+      "categories"     : "baking oven appetizer ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Spicy Quick Pickled Radishes",
+      
+      "ingredients"    : "1| bunch of radishes 2| tbsp red wine vinegar *apple cider vinegar also works* 2| tbsp caster sugar *I tried it with Panela sugar and it was amazing* salt peppercorns mustard seeds cloves pepper flakes ",
+      
+		  "image"	         : "/recipes/quick-pickled-radishes/quick-pickled-radishes.jpg",
+      "url"            : "/recipes/quick-pickled-radishes",
+      
+      "categories"     : "healthyish pickling quick raw original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Sourdough English Muffins",
+      
+      "ingredients"    : "25|g bread flour 454|g warm water @ 43-46°C 1| tbsp active dry yeast 227|g sourdough starter, ripe (fed) or discard *ripe will give you a more vigorous rise* 843|g all-purpose, unbleached flour 43|g nonfat dry milk 57|g butter, at room temperature 1| tbsp salt 1/4 tsp sour salt (citric acid) *optional, for enhanced sour flavor* semolina or cornmeal, for coating ",
+      
+		  "image"	         : "/recipes/sourdough-english-muffins/sourdough-english-muffins.jpg",
+      "url"            : "/recipes/sourdough-english-muffins",
+      
+      "categories"     : "baking oven sandwich ",
+      
+      "tags"           : "burger vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Pickled Red Onions",
+      
+      "ingredients"    : "1| red onion(s), finely diced *see note* 10| whole black peppercorns 10| whole allspice berries 5| cloves 3| bay leaves 80|ml grapefruit juice 80|ml orange juice 80|ml lime juice salt ",
+      
+		  "image"	         : "/recipes/pickled-red-onions/pickled-red-onions.jpg",
+      "url"            : "/recipes/pickled-red-onions",
+      
+      "categories"     : "appetizer healthyish pickling original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Peanut Butter Oatmeal Chocolate Cookies",
+      
+      "ingredients"    : "0.5| cup(s) butter or margarine 1| cup(s) brown sugar 1 large egg(s) 1.5| tsp pure vanilla extract 0.5| cup(s) smooth peanut butter 1| cup(s) all purpose flour 0.5| tsp baking soda 1| pinch kosher salt 1| cup(s) old fashioned oats 0.5| cup(s) chocolate chips ",
+      
+		  "image"	         : "/recipes/peanutbutter-oatmeal-cookies/peanutbutter-oatmeal-cookies.jpg",
+      "url"            : "/recipes/peanutbutter-oatmeal-cookies",
+      
+      "categories"     : "oven baking healthyish quick original snack ",
+      
+      "tags"           : "christmas vegetarian ",
+      "meal"           : "dessert ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Spinach Mushroom Omelette",
+      
+      "ingredients"    : "2| tbsps butter or olive oil {&quot;for the egg mixture&quot;=&gt;nil} 3| large eggs pinch of garlic salt pinch of Tajín, or other chili powder-lime flavor-salt mix pinch of black pepper pinch of nutmeg *optional* 2| tbsps half and half *optional* {&quot;for the fillings&quot;=&gt;nil} 1| heaping handful of spinach *not frozen or canned* 1| cup baby bella mushrooms, thinly sliced 0.5| large red onion, diced 0.5| cup sharp cheddar, shredded 3| thin slices Gruyère *optional* 0.25| tsp paprika ",
+      
+		  "image"	         : "/recipes/spinach-mushroom-omelette/spinach-mushroom-omelette.jpg",
+      "url"            : "/recipes/spinach-mushroom-omelette",
+      
+      "categories"     : "healthyish quick original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
     } 
   
 ]

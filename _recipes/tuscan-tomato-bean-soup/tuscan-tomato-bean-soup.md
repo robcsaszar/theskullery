@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/tuscan-tomato-bean-soup 
 title:  "Tuscan Tomato Bean Soup"
 image: tuscan-tomato-bean-soup.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: soup quick healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

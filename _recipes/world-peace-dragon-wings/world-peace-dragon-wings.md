@@ -1,11 +1,12 @@
 ---
 
 layout: recipe
-permalink: recipes/lokis-world-peace-wings 
-title:  "Loki's World Peace Wings"
-image: lokis-world-peace-wings.jpg 
+permalink: recipes/world-peace-dragon-wings
+title:  "World Peace Dragon Wings"
+image: world-peace-dragon-wings.jpg
+date: 2020-06-16 
 imagecredit: "unsplash.com" 
-categories: oven marinade sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: oven marinade sauce original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: main # breakfast brunch dessert main side
 chef: robert 

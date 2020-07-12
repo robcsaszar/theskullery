@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/sour-cherry-galette 
 title:  "Sour Cherry Galette"
 image: sour-cherry-galette.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: baking oven quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: french fruit # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

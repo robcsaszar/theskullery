@@ -3,6 +3,7 @@
 layout: recipe
 permalink: recipes/homemade-ricotta 
 title:  "Homemade Ricotta"
+date: 2020-05-01
 image: homemade-ricotta.jpg 
 imagecredit: "unsplash.com" 
 categories: healthyish quick # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup

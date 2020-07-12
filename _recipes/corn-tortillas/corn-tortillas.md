@@ -4,6 +4,7 @@ layout: recipe # (this is the layout Jekyll uses to render the file in)
 permalink: recipes/corn-tortillas # (this will be your final, pretty URL)
 title:  "Corn Tortillas" # (making sure we have a good title)
 image: corn-tortillas.jpg # (a nice, high-quality image I will carefully select for you)
+date: 2020-05-01
 imagecredit: "unsplash.com" # (where I'm getting the image above)
 categories: appetizer healthyish quick snack # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: mexican vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

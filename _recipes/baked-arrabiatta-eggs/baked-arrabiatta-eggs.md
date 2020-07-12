@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/baked-arrabiatta-eggs 
 title:  "Spicy Arrabiatta Baked Eggs"
 image: baked-arrabiatta-eggs.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: quick oven sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

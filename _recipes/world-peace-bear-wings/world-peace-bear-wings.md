@@ -1,11 +1,12 @@
 ---
 
 layout: recipe
-permalink: recipes/thors-world-peace-wings 
-title:  "Thor's World Peace Wings"
-image: thors-world-peace-wings.jpg 
+permalink: recipes/world-peace-bear-wings 
+title: "World Peace Bear Wings"
+image: world-peace-bear-wings.jpg 
+date: 2020-06-16
 imagecredit: "unsplash.com" 
-categories: oven marinade sauce # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: oven marinade sauce original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: poultry # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: main # breakfast brunch dessert main side
 chef: robert 
@@ -22,7 +23,6 @@ ingredients:
 - 1| tsp onion powder
 - black pepper to taste
 - 0.5| lime, juiced
-
 
 directions:
 - Combine all in a bowl and toss with wings as soon as they are done.

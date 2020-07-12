@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/carolina-mustard-bbq-sauce 
 title:  "Carolina Mustard BBQ Sauce"
 image: carolina-mustard-bbq-sauce.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: sauce appetizer # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

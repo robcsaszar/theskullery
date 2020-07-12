@@ -4,6 +4,7 @@ layout: recipe
 permalink: recipes/caprese-skillet-lasagna 
 title:  "Caprese Skillet Lasagna"
 image: caprese-skillet-lasagna.jpg 
+date: 2020-05-01
 imagecredit: "unsplash.com" 
 categories: oven quick healthyish # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian poultry pasta # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian

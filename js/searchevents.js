@@ -2,6 +2,7 @@ $(document).ready(function () {
   $('#search-input').keyup('input', function () {
     if ($(this).val().length > 0) {
       $('#recipes').hide();
+      $('#pagination').hide();
       $('#spinner').show();
       $('#spinner').delay(500).fadeOut(0);
       $('#results-container').hide();
@@ -11,6 +12,7 @@ $(document).ready(function () {
       $(window).scrollTop($('#search').offset().top), 4000;
     } else {
       $('#recipes').show();
+      $('#pagination').show();
       $('#search-container').hide();
     }
   });
