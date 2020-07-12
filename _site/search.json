@@ -137,7 +137,7 @@
 		  "image"	         : "/recipes/banana-bread/banana-bread.jpg",
       "url"            : "/recipes/banana-bread",
       
-      "categories"     : "baking healthyish oven quick ",
+      "categories"     : "baking healthyish oven quick original ",
       
       "tags"           : "bread fruit vegetarian ",
       "meal"           : "dessert ",
@@ -153,7 +153,7 @@
 		  "image"	         : "/recipes/banoffee-pie/banoffee-pie.jpg",
       "url"            : "/recipes/banoffee-pie",
       
-      "categories"     : "baking oven healthyish ",
+      "categories"     : "baking oven healthyish original ",
       
       "tags"           : "fruit vegetarian ",
       "meal"           : "dessert ",
@@ -585,7 +585,7 @@
 		  "image"	         : "/recipes/chickpea-bean-burgers/chickpea-bean-burgers.jpg",
       "url"            : "/recipes/chickpea-bean-burgers",
       
-      "categories"     : "healthyish ",
+      "categories"     : "healthyish original ",
       
       "tags"           : "burger vegetarian ",
       "meal"           : "main ",
@@ -665,7 +665,7 @@
 		  "image"	         : "/recipes/cinnamon-rolls/cinnamon-rolls.jpg",
       "url"            : "/recipes/cinnamon-rolls",
       
-      "categories"     : "baking oven ",
+      "categories"     : "baking oven original ",
       
       "tags"           : "vegetarian christmas ",
       "meal"           : "dessert ",
@@ -713,7 +713,7 @@
 		  "image"	         : "/recipes/coconut-chickpea-curry/coconut-chickpea-curry.jpg",
       "url"            : "/recipes/coconut-chickpea-curry",
       
-      "categories"     : "healthyish quick ",
+      "categories"     : "healthyish quick original ",
       
       "tags"           : "indian vegetarian ",
       "meal"           : "main ",
@@ -809,7 +809,7 @@
 		  "image"	         : "/recipes/coconut-turkey/coconut-turkey.jpg",
       "url"            : "/recipes/coconut-turkey",
       
-      "categories"     : "quick helthyish ",
+      "categories"     : "quick helthyish original ",
       
       "tags"           : "indian poultry ",
       "meal"           : "main ",
@@ -969,7 +969,7 @@
 		  "image"	         : "/recipes/energy-balls/energy-balls.jpg",
       "url"            : "/recipes/energy-balls",
       
-      "categories"     : "snack quick raw ",
+      "categories"     : "snack quick raw original ",
       
       "tags"           : "vegetarian nuts fruit ",
       "meal"           : "dessert ",
@@ -1145,7 +1145,7 @@
 		  "image"	         : "/recipes/healthy-brownies/healthy-brownies.jpg",
       "url"            : "/recipes/healthy-brownies",
       
-      "categories"     : "quick oven baking healthyish ",
+      "categories"     : "quick oven baking healthyish original ",
       
       "tags"           : "vegetarian ",
       "meal"           : "dessert ",
@@ -1401,7 +1401,7 @@
 		  "image"	         : "/recipes/michaels-power-bars/michaels-power-bars.jpg",
       "url"            : "/recipes/michaels-power-bars",
       
-      "categories"     : "quick snack healthyish ",
+      "categories"     : "quick snack healthyish original ",
       
       "tags"           : "nuts vegetarian ",
       "meal"           : "breakfast ",
@@ -1977,7 +1977,7 @@
 		  "image"	         : "/recipes/spinach-scones/spinach-scones.jpg",
       "url"            : "/recipes/spinach-scones",
       
-      "categories"     : "oven appetizer baking healthyish quick ",
+      "categories"     : "oven appetizer baking healthyish quick original ",
       
       "tags"           : "vegetarian bread ",
       "meal"           : "brunch ",
@@ -2073,7 +2073,7 @@
 		  "image"	         : "/recipes/teriyaki-chicken/teriyaki-chicken.jpg",
       "url"            : "/recipes/teriyaki-chicken",
       
-      "categories"     : "healthyish quick ",
+      "categories"     : "healthyish quick original ",
       
       "tags"           : "asian poultry ",
       "meal"           : "main ",
@@ -2185,7 +2185,7 @@
 		  "image"	         : "/recipes/veggie-curry-soup/veggie-curry-soup.jpg",
       "url"            : "/recipes/veggie-curry-soup",
       
-      "categories"     : "soup healthyish quick ",
+      "categories"     : "soup healthyish quick original ",
       
       "tags"           : "vegetarian indian ",
       "meal"           : "main ",
@@ -2444,6 +2444,70 @@
       "categories"     : "healthyish quick original ",
       
       "tags"           : "vegetarian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Tortilla Española/Kuku Sabzi Hybrid",
+      
+      "ingredients"    : "2| tbsps butter or olive oil {&quot;for the egg mixture&quot;=&gt;nil} 4| large eggs pinch of garlic salt pinch of Tajín, or other chili powder-lime flavor-salt mix pinch of black pepper pinch of nutmeg *optional* 2| tbsps half and half *optional* {&quot;for the fillings&quot;=&gt;nil} 0.5| bunch cilantro, finely chopped 0.5| bunch leek, finely chopped 0.5| bunch dill, finely chopped 1| tbsp dried fenugreek leaves, finely chopped 0.5| large red onion, thinly sliced 0.25| tsp paprika ",
+      
+		  "image"	         : "/recipes/tortilla-espanola-kuku-sabzi-hybrid/tortilla-espanola-kuku-sabzi-hybrid.jpg",
+      "url"            : "/recipes/tortilla-espanola-kuku-sabzi-hybrid",
+      
+      "categories"     : "healthyish quick original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Leafy Green, Ham, and Gruyère Omelette",
+      
+      "ingredients"    : "2| tbsps butter or olive oil {&quot;for the egg mixture&quot;=&gt;nil} 4| large eggs pinch of garlic salt pinch of Tajín, or other chili powder-lime flavor-salt mix pinch of black pepper pinch of nutmeg *optional* 2| tbsps half and half *optional* {&quot;for the fillings&quot;=&gt;nil} 1| heaping handful of spinach, kale or other leafy green superfood (not frozen or canned) 3| thin slices of ham, cut up into small squares 6| thin slices of Gruyère, about 8.5 cm (3.5 inches) wide ",
+      
+		  "image"	         : "/recipes/leafy-green-ham-gruyere-omelette/leafy-green-ham-gruyere-omelette.jpg",
+      "url"            : "/recipes/leafy-green-ham-gruyere-omelette",
+      
+      "categories"     : "healthyish quick original ",
+      
+      "tags"           : "pork ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Purple Barley Kaiserschmarrn",
+      
+      "ingredients"    : "1| cups whole purple barley flour 1| tbsp granulated sugar 0.25| tsp salt 1| egg 1| tbsps canola oil 1| cup milk or half-and-half 2| tbsps butter ",
+      
+		  "image"	         : "/recipes/purple-barley-kaiserschmarrn/purple-barley-kaiserschmarrn.jpg",
+      "url"            : "/recipes/purple-barley-kaiserschmarrn",
+      
+      "categories"     : "healthyish quick original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Rich Iced Tea Blend",
+      
+      "ingredients"    : "2| bags black tea *half of which can be flavored* 2| bags oolong tea *or tea blends with oolong* 800|ml water 2| tbsps sugar *optional* 2| tbsps maple syrup *optional* 2| tbsps half-and-half or soy or oat milk *optional* 0.5| single citrus fruit *optional* 0.5| cup ice *optional* ",
+      
+		  "image"	         : "/recipes/rich-iced-tea-blend/rich-iced-tea-blend.jpg",
+      "url"            : "/recipes/rich-iced-tea-blend",
+      
+      "categories"     : "drink quick original ",
+      
+      "tags"           : "asian ",
       "meal"           : "breakfast ",
       "chef"           : "jarrod "
     } 

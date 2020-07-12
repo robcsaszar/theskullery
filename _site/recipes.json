@@ -917,5 +917,29 @@
         "title": "Spinach Mushroom Omelette",
         "image": "images/large/spinach-mushroom-omelette.jpg",
         "url": "/recipes/spinach-mushroom-omelette",
+    },
+
+    {
+        "title": "Tortilla Española/Kuku Sabzi Hybrid",
+        "image": "images/large/tortilla-espanola-kuku-sabzi-hybrid.jpg",
+        "url": "/recipes/tortilla-espanola-kuku-sabzi-hybrid",
+    },
+
+    {
+        "title": "Leafy Green, Ham, and Gruyère Omelette",
+        "image": "images/large/leafy-green-ham-gruyere-omelette.jpg",
+        "url": "/recipes/leafy-green-ham-gruyere-omelette",
+    },
+
+    {
+        "title": "Purple Barley Kaiserschmarrn",
+        "image": "images/large/purple-barley-kaiserschmarrn.jpg",
+        "url": "/recipes/purple-barley-kaiserschmarrn",
+    },
+
+    {
+        "title": "Rich Iced Tea Blend",
+        "image": "images/large/rich-iced-tea-blend.jpg",
+        "url": "/recipes/rich-iced-tea-blend",
     }
 ]
