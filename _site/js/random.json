@@ -157,6 +157,7 @@ function runme() {
         "https://theskullery.net/recipes/tortilla-espanola-kuku-sabzi-hybrid",
         "https://theskullery.net/recipes/leafy-green-ham-gruyere-omelette",
         "https://theskullery.net/recipes/purple-barley-kaiserschmarrn",
+        "https://theskullery.net/recipes/rich-iced-tea-blend",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);

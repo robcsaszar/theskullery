@@ -2510,6 +2510,23 @@
       "tags"           : "vegetarian ",
       "meal"           : "breakfast ",
       "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Rich Iced Tea Blend",
+      
+      "ingredients"    : "2| bags black tea *half of which can be flavored* 2| bags oolong tea *or tea blends with oolong* 800|ml water 2| tbsps sugar *optional* 2| tbsps maple syrup *optional* 2| tbsps half-and-half or soy or oat milk *optional* 0.5| single citrus fruit *optional* 0.5| cup ice *optional* ",
+      
+		  "image"	         : "/recipes/rich-iced-tea-blend/rich-iced-tea-blend.jpg",
+      "url"            : "/recipes/rich-iced-tea-blend",
+      
+      "categories"     : "drink quick original ",
+      
+      "tags"           : "asian ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+
     } 
   
 ]

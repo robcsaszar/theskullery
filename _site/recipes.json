@@ -941,5 +941,11 @@
         "title": "Purple Barley Kaiserschmarrn",
         "image": "images/large/purple-barley-kaiserschmarrn.jpg",
         "url": "/recipes/purple-barley-kaiserschmarrn",
+    },
+
+    {
+        "title": "Rich Iced Tea Blend",
+        "image": "images/large/rich-iced-tea-blend.jpg",
+        "url": "/recipes/rich-iced-tea-blend",
     }
 ]
