@@ -47,5 +47,4 @@ fields:
   name: directions
   label: directions
 pages:
-- _recipes/another-test-recipe.md
 - _recipes/recipe.md
