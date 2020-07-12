@@ -5,8 +5,8 @@
     <description>A scullery is a historical noun for a small kitchen, much like mine.</description>
     <link>https://theskullery.net/</link>
     <atom:link href="https://theskullery.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jul 2020 21:12:55 +0300</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2020 21:12:55 +0300</lastBuildDate>
+    <pubDate>Sun, 12 Jul 2020 22:16:22 +0300</pubDate>
+    <lastBuildDate>Sun, 12 Jul 2020 22:16:22 +0300</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -23,6 +23,33 @@
         
         <category>vegetarian</category>
         
+        
+        <category>drink</category>
+        
+        <category>quick</category>
+        
+      </item>
+    
+      <item>
+        <title>Zabaglione</title>
+        <description>
+</description>
+        <link>https://theskullery.net/recipes/another-test-recipe</link>
+          <image>
+          
+          <url>/images/zabaglione.jpg</url>
+          
+          </image>
+        <guid isPermaLink="true">https://theskullery.net/recipes/another-test-recipe</guid>
+        
+        <category>italian</category>
+        
+        <category>vegetarian</category>
+        
+        <category>fruit</category>
+        
+        
+        <category>sauce</category>
         
         <category>drink</category>
         
@@ -228,32 +255,6 @@
         <category>oven</category>
         
         <category>quick</category>
-        
-      </item>
-    
-      <item>
-        <title>Healthy Banoffee Pie</title>
-        <description>&lt;!-- Below is the description, just write what you want or leave it empty 😁 --&gt;
-&lt;p&gt;I only have P-Eyes for you. 🔪&lt;/p&gt;
-</description>
-        <link>https://theskullery.net/recipes/banoffee-pie</link>
-          <image>
-          
-          <url>/images/banoffee-pie.jpg</url>
-          
-          </image>
-        <guid isPermaLink="true">https://theskullery.net/recipes/banoffee-pie</guid>
-        
-        <category>fruit</category>
-        
-        <category>vegetarian</category>
-        
-        
-        <category>baking</category>
-        
-        <category>oven</category>
-        
-        <category>healthyish</category>
         
       </item>
     

@@ -1,6 +1,7 @@
 function runme() {
     var random = [
         "https://theskullery.net/recipes/amaretto-bourbon-punch",
+        "https://theskullery.net/recipes/another-test-recipe",
         "https://theskullery.net/recipes/apple-bourbon-compote-dutch-baby",
         "https://theskullery.net/recipes/apple-cider-shandy",
         "https://theskullery.net/recipes/asian-sloppy-joes",
