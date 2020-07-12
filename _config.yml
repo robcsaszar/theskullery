@@ -15,7 +15,15 @@ host: 0.0.0.0
 # Build settings
 markdown: kramdown
 
-permalink: /:title:output_ext
+permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: "recipes"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "recipe" # overrides previous default layout
 
 collections:
   components:

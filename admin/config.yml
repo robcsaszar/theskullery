@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: CMS # Branch to update (optional; defaults to master)
+media_folder: '_recipes/'
+collections:
+  - name: 'recipes'
+    label: 'Recipes'
+    folder: '_recipes/'
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Categories', name: 'categories', widget: 'select', multiple: true, options: ["appetizer", "baking", "dressing", "drink", "grill", "healthyish", "marinade", "oven", "pickling", "quick", "raw", "salad", "sandwich", "sauce", "snack", "soup"] }
+      - { label: 'Tags', name: 'tags', widget: 'select', multiple: true, options: ["asian", "beef", "bread", "burger", "christmas", "duck", "french", "fruit", "indian", "italian", "mexican", "nuts", "pasta", "pork", "poultry", "rice", "seafood", "thanksgiving", "vegetarian"] }
+      - { label: 'Meal', name: 'meal', widget: 'select', multiple: false, options: ["breakfast", "brunch", "dessert", "main", "side"] }
+      - { label: 'Time', name: 'time', widget: 'select', multiple: false, options: ["under 60mins", "under 120mins", "over 120mins"] }
+      - { label: 'Servings', name: 'servings', widget: 'number' }
+      - { label: 'Notes', name: 'notes', widget: 'text' }
+      - label: 'Ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        types:
+          - label: 'Ingredient'
+            name: 'ingredient'
+            widget: 'object'
+            fields:
+              - { label: 'Ingredient', name: 'ingredient', widget: 'string' }
+      - { label: 'Directions', name: 'directions', widget: 'text' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }

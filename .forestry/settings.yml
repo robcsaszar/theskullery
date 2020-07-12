@@ -12,8 +12,8 @@ sections:
   label: Recipes
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/recipes
+public_path: "/assets/recipes"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
