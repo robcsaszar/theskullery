@@ -2510,6 +2510,22 @@
       "tags"           : "asian ",
       "meal"           : "breakfast ",
       "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Veggie Mini-Pizza",
+      
+      "ingredients"    : "1| ball of dough  *see notes*, or 1| pre-made 8-inch-wide crust 2| tbsps olive oil {&quot;the toppings&quot;=&gt;nil} 4| tbsps tomato and basil or other red pizza sauce pinch of salt pinch of black pepper 4| oz mozzarella cheese, shredded 2| oz grated parmesan or crumbled feta cheese 0.25| cup spinach leaves 0.25| cup baby bella mushrooms, thinly sliced 0.25| red onion, thinly sliced 0.25| bell pepper, thinly sliced and de-seeded 0.25| Roma tomato, diced 4| basil leaves 2| tbsps black olives, pitted and sliced ",
+      
+		  "image"	         : "/recipes/veggie-mini-pizza/veggie-mini-pizza.jpg",
+      "url"            : "/recipes/veggie-mini-pizza",
+      
+      "categories"     : "baking original ",
+      
+      "tags"           : "italian bread vegetarian ",
+      "meal"           : "main ",
+      "chef"           : "jarrod "
     } 
   
 ]

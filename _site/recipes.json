@@ -941,5 +941,11 @@
         "title": "Rich Iced Tea Blend",
         "image": "images/large/rich-iced-tea-blend.jpg",
         "url": "/recipes/rich-iced-tea-blend",
+    },
+
+    {
+        "title": "Veggie Mini-Pizza",
+        "image": "images/large/veggie-mini-pizza.jpg",
+        "url": "/recipes/veggie-mini-pizza",
     }
 ]
