@@ -6,7 +6,7 @@ title:  "Steak, Veggie Omelet, and Potato Dürüm" # (making sure we have a good
 image: breakfast-durum.jpg # (a nice, high-quality image I will carefully select for you)
 date: 2020-12-04
 imagecredit: "Jarrod's iPhone" # (where I'm getting the image above)
-categories: healthyish quick sandwich # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: healthyish quick sandwich original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: asian beef # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: breakfast # breakfast brunch dessert main side (choose one that applies)
 chef: jarrod # (fill this in with your first name and keep the name the same for all your recipes, since each chef has his own collection of recipes)
