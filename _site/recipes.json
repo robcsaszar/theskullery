@@ -947,5 +947,35 @@
         "title": "Veggie Mini-Pizza",
         "image": "images/large/veggie-mini-pizza.jpg",
         "url": "/recipes/veggie-mini-pizza",
+    },
+
+    {
+        "title": "Steak, Veggie Omelet, and Potato Dürüm",
+        "image": "images/large/breakfast-durum.jpg",
+        "url": "/recipes/breakfast-durum",
+    },
+
+    {
+        "title": "Green Bean Casserole",
+        "image": "images/large/green-bean-casserole.jpg",
+        "url": "/recipes/green-bean-casserole",
+    },
+
+    {
+        "title": "Korean Ground Beef Rice Bowl",
+        "image": "images/large/korean-ground-beef-rice-bowl.jpg",
+        "url": "/recipes/korean-ground-beef-rice-bowl",
+    },
+
+    {
+        "title": "Flaky Butter Pumpkin Pie Crust",
+        "image": "images/large/flaky-butter-pie-crust.jpg",
+        "url": "/recipes/flaky-butter-pie-crust",
+    },
+
+    {
+        "title": "Amaretto Sour",
+        "image": "images/large/amaretto-sour.jpg",
+        "url": "/recipes/amaretto-sour",
     }
 ]

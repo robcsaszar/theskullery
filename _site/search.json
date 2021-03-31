@@ -2526,6 +2526,86 @@
       "tags"           : "italian bread vegetarian ",
       "meal"           : "main ",
       "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Steak, Veggie Omelet, and Potato Dürüm",
+      
+      "ingredients"    : "4| tbsp butter or olive oil 1| large lavash or yufka sheet 1| tbsp water 5| thin slices sirloin or flank steak, preferably pre-cooked, seasoned with garlic salt, chili powder-lime flavor-salt mix, cumin and ground black pepper 4| tbsp hummus {&quot;for the omelet&quot;=&gt;nil} 2| large eggs 1| pinch of garlic salt 1| pinch of chili powder-lime flavor-salt mix 1| pinch of ground black pepper 1| pinch of nutmeg (optional) 2| tbsp half and half (optional) 1| handful of spinach (not frozen or canned) 0.5| cup baby bella or Crimini mushrooms, thinly sliced 0.25| cup sharp cheddar, shredded 0.25| tsp paprika {&quot;for the hash browns&quot;=&gt;nil} 1| grated potato 2| cups water 0.5| small red onion or large shallot, diced 1| pinch of garlic salt 1| pinch of chili powder-lime flavor-salt mix 1| pinch of ground black pepper ",
+      
+		  "image"	         : "/recipes/breakfast-durum/breakfast-durum.jpg",
+      "url"            : "/recipes/breakfast-durum",
+      
+      "categories"     : "healthyish quick sandwich original ",
+      
+      "tags"           : "asian beef ",
+      "meal"           : "breakfast ",
+      "chef"           : "jarrod "
+    } ,
+  
+    {
+    
+	    "title"          : "Green Bean Casserole",
+      
+      "ingredients"    : "{&quot;for the condensed mushroom soup&quot;=&gt;nil} 90|g butter 0.5|kg mushrooms *finely chopped* 1| medium-sized onion(s) *finely diced or French cut* 1| clove(s) garlic 90|g all-purpose flour 200|ml heavy cream 200|ml chicken or turkey broth *see notes* salt &amp; pepper *to taste* {&quot;for the crispy onions&quot;=&gt;nil} 400|ml Sana (a.k.a. Buttermilk) 3| medium-sized onion(s) *thinly sliced or French cut* 500|g all-purpose flour 1|tbsp sweet or smoked paprika oil *enough for deep frying* salt &amp; pepper *to taste* {&quot;for the green beans&quot;=&gt;nil} 500|g frozen green beans ",
+      
+		  "image"	         : "/recipes/green-bean-casserole/green-bean-casserole.jpg",
+      "url"            : "/recipes/green-bean-casserole",
+      
+      "categories"     : "soup sauce appetizer ",
+      
+      "tags"           : "thanksgiving vegetarian ",
+      "meal"           : "side ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Korean Ground Beef Rice Bowl",
+      
+      "ingredients"    : "500|g lean ground beef *90% lean* 3| garlic clove(s) *minced* 0.25| cup(s) packed brown sugar 0.25| cup(s) reduced-sodium soy sauce 2| tsp sesame oil *olive oil also works* 0.25| tsp ground ginger 0.25| tsp crushed red pepper flakes 0.25| tsp pepper 2| cups hot cooked white or brown rice sliced green onions and sesame seeds *for garnish* ",
+      
+		  "image"	         : "/recipes/korean-ground-beef-rice-bowl/korean-ground-beef-rice-bowl.jpg",
+      "url"            : "/recipes/korean-ground-beef-rice-bowl",
+      
+      "categories"     : "grill healthyish quick original ",
+      
+      "tags"           : "asian beef healthy easy ",
+      "meal"           : "main ",
+      "chef"           : "adam "
+    } ,
+  
+    {
+    
+	    "title"          : "Flaky Butter Pumpkin Pie Crust",
+      
+      "ingredients"    : "110|ml water 1| tsp brown sugar *see note* 4|g kosher salt 110|g unsalted butter, cold *see note* 1| tsp pumpkin pie spice 55|ml cold tap or filtered water *see note* ",
+      
+		  "image"	         : "/recipes/flaky-butter-pie-crust/flaky-butter-pie-crust.jpg",
+      "url"            : "/recipes/flaky-butter-pie-crust",
+      
+      "categories"     : "baking ovenquick original ",
+      
+      "tags"           : "christmas thanksgiving ",
+      "meal"           : "dessert ",
+      "chef"           : "robert "
+    } ,
+  
+    {
+    
+	    "title"          : "Amaretto Sour",
+      
+      "ingredients"    : "45|ml amaretto liqueur *see notes* 22.5|ml bourbon 30|ml lemon juice combined with 1|tsp 2:1 simple syrup 22.5|ml sweet&amp;sour syrup *use this instead of the lemon juice + syrup* 1| egg white from a medium-sized egg *aprox. 15ml per serving* {&quot;for garnish&quot;=&gt;nil} Maraschino cherries Angostura bitters ",
+      
+		  "image"	         : "/recipes/amaretto-sour/amaretto-sour.jpg",
+      "url"            : "/recipes/amaretto-sour",
+      
+      "categories"     : "drink quick original ",
+      
+      "tags"           : "vegetarian ",
+      "meal"           : "brunch ",
+      "chef"           : "robert "
     } 
   
 ]

@@ -158,6 +158,11 @@ function runme() {
         "https://theskullery.net/recipes/purple-barley-kaiserschmarrn",
         "https://theskullery.net/recipes/rich-iced-tea-blend",
         "https://theskullery.net/recipes/veggie-mini-pizza",
+        "https://theskullery.net/recipes/breakfast-durum",
+        "https://theskullery.net/recipes/green-bean-casserole",
+        "https://theskullery.net/recipes/korean-ground-beef-rice-bowl",
+        "https://theskullery.net/recipes/flaky-butter-pie-crust",
+        "https://theskullery.net/recipes/amaretto-sour",
 ];
 var value = random[Math.floor(Math.random() * random.length)];
 // alert("Would navigate to : " + value);
