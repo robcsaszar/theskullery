@@ -629,4 +629,18 @@ li .dropdown-menu { display: none; position: absolute; right: 0; padding: 0; mar
 
 .credit--more a:hover { text-decoration: underline; }
 
+#update-notice { display: none; }
+
+.c-notice { padding: 1rem; background: var(--yellowAccent-lighter); color: var(--yellowAccent-darkest); display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 0.8rem; }
+
+.c-notice .c-notice__body { margin-right: 0.5rem; }
+
+.c-notice .c-notice__body p { font-size: 0.8rem; margin-bottom: 0; }
+
+.c-notice .c-notice__body p:not(:last-child) { margin-bottom: 0; }
+
+.c-notice button { background: none; border: 2px solid var(--yellowAccent-dark); color: var(--yellowAccent-darkest); border-radius: 4px; padding: 0.5rem 0.75rem; white-space: nowrap; cursor: pointer; }
+
+@media only screen and (max-width: 768px) { .c-notice { flex-direction: column; align-items: flex-start; font-size: 1.75vh; } .c-notice .c-notice__body { margin-right: 0; margin-bottom: 0.5rem; } .c-notice p { font-size: 1.75vh; } }
+
 /*# sourceMappingURL=main.css.map */
