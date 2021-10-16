@@ -1,0 +1,39 @@
+type Recipe {
+    name: String!
+    description: String
+    instructions: [String!]
+    featured: Boolean!
+}
+
+type Ingredient {
+    name: String!
+    sort: Int!
+}
+
+type Unit {
+    name: String!
+    sort: Int!
+}
+
+type RecipeIngredient {
+        recipe_id: ID!
+        ingredient_id: ID!
+        unit_id: ID!
+        amount: Float
+        sort: Int!
+}
+
+type Conversion {
+    ingredient_id: ID!
+    unit_id: ID!
+    amount: Float!
+    density: Float!
+}
+
+type Query {
+    recipes: [Recipe]
+    ingredients: [Ingredient]
+    units: [Unit]
+    recipeIngredients: [RecipeIngredient]
+    conversions: [Conversion]
+}
