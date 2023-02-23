@@ -5,7 +5,7 @@ title: "Grilled Artichokes"
 image: grilled-artichokes.jpg
 date: 2023-02-23
 imagecredit: "unsplash.com"
-categories: grill marinade quick salad # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
+categories: grill marinade quick salad original # appetizer baking dressing drink grill healthyish marinade oven pickling quick raw salad sandwich sauce snack soup
 tags: italian vegetarian # asian beef bread burger christmas duck french fruit indian italian mexican nuts pasta pork poultry rice seafood thanksgiving vegetarian
 meal: side # breakfast brunch dessert main side
 chef: ross
