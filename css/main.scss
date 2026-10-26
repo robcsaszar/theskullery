@@ -1141,64 +1141,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
     border: none;
 }
 
-.file-select {
-    margin-bottom: 3rem;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.custom-file-upload {
-    border: 2px solid var(--grey-lighter);
-    color: var(--grey-darker);
-    padding: .75rem 2.5rem;
-    border-radius: 5px;
-    background: transparent;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 500;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.custom-file-upload:hover {
-    background: var(--grey-lighter);
-    border: 2px solid var(--grey-lightest);
-    color: var(--grey-dark);
-}
-
-.file-submit {
-    border: none;
-    padding: .875rem 2rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    background: var(--greenAccent);
-    border: 2px solid var(--greenAccent);
-    color: var(--white);
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-.file-submit:hover {
-    background: var(--greenAccent-dark);
-    border: 2px solid var(--greenAccent-dark);
-}
-
-.file-selected {
-    background: var(--grey-lightest);
-    padding: .875rem 2rem;
-    border-radius: 5px;
-    color: var(--grey-light);
-    min-width: 4rem;
-    vertical-align: middle;
-    display: inline-block;
-}
-
 .success {
     padding: 20px;
     background-color: var(--success-lightest);
