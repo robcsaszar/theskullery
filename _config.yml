@@ -35,7 +35,7 @@ collections:
   meal:
     output: true
 
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'CLAUDE.md', 'graft', 'vendor']
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
