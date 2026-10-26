@@ -14,6 +14,8 @@ bundle exec jekyll serve   # local dev server (host 0.0.0.0 is set in _config.ym
 bundle exec jekyll build   # output to _site/
 ```
 
+Netlify builds with `bundle exec jekyll build` (set in `netlify.toml`, which overrides the dashboard), using the Ruby pinned in `.ruby-version` and Bundler from `Gemfile.lock`. Netlify builds a deploy preview for each PR but doesn't report its status to GitHub; check with `netlify api listSiteDeploys` or the dashboard.
+
 `_site/` is gitignored but an old copy is still tracked in git — never edit it; it's build output.
 
 ## Content model
