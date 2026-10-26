@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
