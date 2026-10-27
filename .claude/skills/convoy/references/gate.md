@@ -14,16 +14,14 @@ What the orchestrator runs at Phase 3 and Phase 6b — the per-item checklist, t
 
 ## Baseline
 
-Taken at Phase 0, and again whenever `HEAD` moved since the last convoy commit. The root suite and each package's suite run one by one: the root `test` script chains them with `&&`, which stops at the first red suite and hides the rest.
+Taken at Phase 0, and again whenever `HEAD` moved since the last convoy commit. The commands come from `CLAUDE.md` § Agent gate; a gate row marked *none* is skipped. When the full-suite command chains several suites with `&&`, run each suite on its own: the chain stops at the first red suite and hides the rest.
 
 ```sh
 log=.claude/log/<map>
 { git rev-parse HEAD
-  pnpm lint 2>&1 | tail -3
-  pnpm vitest run 2>&1 | grep -E '^ *FAIL '   # one stable id per failing test or file; × lines carry timings
-  for d in packages/*/; do
-    (cd "$d" && pnpm run --if-present test 2>&1 | grep -E '^ *FAIL ' | sed "s|^|$d |")
-  done
+  <build> 2>&1 | tail -3   # build, lint, test rows of CLAUDE.md § Agent gate
+  <lint> 2>&1 | tail -3
+  <test> 2>&1 | grep -E '<failing-id pattern>'   # one stable id per failing test or file, no timings
 } > "$log/baseline.txt"
 ```
 
@@ -67,7 +65,7 @@ A file that was CRLF at HEAD stays CRLF. A single bare `\r` inside a line (a lit
 
 ## Partial-hunk staging
 
-Two items in one wave touching one shared file — `quizSession.svelte.ts`, `page-config.ts` — are split at the gate by hunk, not by file:
+Two items in one wave touching one shared file — a shared layout or a site config file — are split at the gate by hunk, not by file:
 
 ```sh
 git diff -U0 <file> | python -c "
@@ -79,7 +77,7 @@ sys.stdout.buffer.write((parts[0]+''.join(hunks)).encode())" <keyword…> > h.pa
 git apply --cached --unidiff-zero h.patch
 ```
 
-Zero-context hunks land at the wrong offset silently — one landed a reset inside a curator-only branch. After **every** `--unidiff-zero` apply, read `git diff --cached -U2 <file>` before the commit; a `+`/`-` pair of identical lines is the tell. The other item's commit repairs the placement, so the pair is acceptable only when the next commit is that item's.
+Zero-context hunks land at the wrong offset silently — one landed a reset inside a branch for a different user role. After **every** `--unidiff-zero` apply, read `git diff --cached -U2 <file>` before the commit; a `+`/`-` pair of identical lines is the tell. The other item's commit repairs the placement, so the pair is acceptable only when the next commit is that item's.
 
 ## Tombstone guard
 
@@ -93,9 +91,9 @@ The grep is a gate, not a report — a printed `1` has been committed straight p
 
 Check the check before the code:
 
-- `pnpm test <path>` runs every suite: arguments reach only the last command of the root script's `&&` chain. One file is `pnpm vitest run <path>`, or `pnpm --filter <pkg> test <path>` inside `packages/`.
+- A full-suite script that chains suites with `&&` passes a path only to its last command. One file is the single-file row of `CLAUDE.md` § Agent gate.
 - A run that collected zero tests, or a grep with empty output, has checked nothing — read the count and the exit code, not the silence.
-- A stale `.svelte-kit` or build output fails on code that is fine: `pnpm exec svelte-kit sync`, then re-run.
+- A stale build output or generated cache fails on code that is fine: clear it (the clean row of `CLAUDE.md` § Agent gate), then re-run.
 - A line-based grep cannot see a construct that spans lines; read the file at the hit.
 
 An agent cannot attribute a failure across the wave: stash is forbidden and a suite cannot run against `git show HEAD:<file>` in a temp path. "Reproduces on a clean checkout of that file" restores the test, not the source another item changed. The gate attributes by imports: the failing suite's imports against the wave's predicted sets — the item whose file it imports owns the failure, whatever its report says.
@@ -106,7 +104,7 @@ A Route box ticks only when the closing commit is on the default branch remotely
 
 ```sh
 sha=$(git log --format=%h --grep "Closes #<n>\b" -1)
-git merge-base --is-ancestor "$sha" origin/main && echo shipped || echo "committed, unpushed"
+git merge-base --is-ancestor "$sha" origin/<default branch> && echo shipped || echo "committed, unpushed"
 ```
 
 Run it per item at Phase 0 (reconciliation), Phase 6 (report) and Phase 6b (close-out). "Committed, unpushed" is a state the report names with its commit range; it is never a tick.

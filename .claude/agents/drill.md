@@ -18,8 +18,8 @@ You are one drill of two or three. Each has a different angle so the findings di
   - *Cost to reverse* — the one-way test: a migration on live data, a change to a published contract another repo installs, or a rewrite.
   - *What the codebase already does* — prior art in the code, `docs/adr/`, the Decision log.
   - *What breaks at scale* — the ceilings `docs/adr/` records, not imagined load.
-  - *What the field's best practitioner would do* — the Destination written as verbs names a field; its instruments are the evidence: the libraries `pnpm-lock.yaml` pins, `docs/adr/`, the repo's tests, a method the field's primary literature names (URL). Methods and tools only, never a voice — an option that field would run differently is the finding.
-- An experiment ticket is settled by the cheapest run — a script under `/tmp`, or `pnpm vitest run <path>`. When only a render or a person's reaction can settle it, open the report with `NEEDS PROTOTYPE: <what to build>`.
+  - *What the field's best practitioner would do* — the Destination written as verbs names a field; its instruments are the evidence: the libraries the repo's lockfile pins, `docs/adr/`, the repo's tests, a method the field's primary literature names (URL). Methods and tools only, never a voice — an option that field would run differently is the finding.
+- An experiment ticket is settled by the cheapest run — a script under `/tmp`, or the single-file row of `CLAUDE.md` § Agent gate. When only a render or a person's reaction can settle it, open the report with `NEEDS PROTOTYPE: <what to build>`.
 
 ## Method
 

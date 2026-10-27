@@ -28,7 +28,7 @@ path/from/repo/root.ext:LINE — <symbol or ≤12-word literal description of th
 ## Rules
 
 - Report only what you matched. A path you did not verify exists is a defect.
-- Exclude `node_modules`, `.svelte-kit`, `build`, `dist`, `coverage` unless the brief names one — hits there are never the answer and crowd out the 40 lines.
+- Exclude `node_modules`, `vendor`, `_site`, `.jekyll-cache`, framework caches, `build`, `dist`, `coverage` unless the brief names one — hits there are never the answer and crowd out the 40 lines.
 - Run every distinct spelling worth trying — casing, hyphen vs underscore, string literal vs identifier — before reporting.
 - An ambiguous request → report the most literal reading and name the ambiguity in one line at the top. Do not branch out on your own.
 - A request that names a thing ("lobby code", `is_hero`) lists only hits about that thing. Siblings from the same family — the other keys in the same storage module, the other columns in the same table — are one `ALSO: N sibling hits in <file>` line, not rows.

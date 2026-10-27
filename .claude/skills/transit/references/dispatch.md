@@ -74,7 +74,7 @@ Mode: HITL. A **prototype** is throwaway code that answers the ticket's Question
 3. No persistence unless persistence is the question; then a scratch store with a "prototype, wipe me" name.
 4. No tests, no error handling beyond runnable, no abstractions.
 5. Surface the full relevant state after every action or on every variant switch.
-6. Capture: commit it to a throwaway branch `prototype/<slug>`, never `main`; link the branch from the ticket; the validated decision, and any snippet that encodes it more precisely than prose (a state machine, reducer, schema, type shape), goes in the resolution comment trimmed to the decision-rich part.
+6. Capture: commit it to a throwaway branch `prototype/<slug>`, never the default branch; link the branch from the ticket; the validated decision, and any snippet that encodes it more precisely than prose (a state machine, reducer, schema, type shape), goes in the resolution comment trimmed to the decision-rich part.
 
 An experiment that needs production infrastructure a session cannot stand up is deferred: create the spike as a `meridian:slice` item whose stated outcome resolves this ticket, and leave the ticket open marked deferred.
 
@@ -94,21 +94,21 @@ Read, in this order: the ticket — What to build, Acceptance criteria, Seams, B
 
 **Implement — preferred `tdd`.** Read `.claude/skills/tdd/SKILL.md` and drive it at the ticket's Seams; do not re-negotiate seams that the route session already confirmed.
 
-Before writing, a "where is X" goes to a `scout` agent, never to the session's own grep over a tree it does not know yet. When the slice spans three or more files with no overlapping writes (`docs/agents/delegation.md`), brief a `builder` per § Implement in `.claude/skills/convoy/references/briefs.md` and gate its report yourself — diff, typecheck, the touched suites, every acceptance box — before treating the work as done. Otherwise the session implements.
+Before writing, a "where is X" goes to a `scout` agent, never to the session's own grep over a tree it does not know yet. When the slice spans three or more files with no overlapping writes (`docs/agents/delegation.md` or a delegation section of `CLAUDE.md`, when the repo has one), brief a `builder` per § Implement in `.claude/skills/convoy/references/briefs.md` and gate its report yourself — diff, typecheck, the touched suites, every acceptance box — before treating the work as done. Otherwise the session implements.
 
 **Implement — fallback.**
 
 - Red before green: a failing test at the seam, then only the code that passes it. One seam, one test, one minimal implementation per cycle — never all tests first, never all code first.
 - Tests observe behaviour through the public interface, never internals; the expected value comes from an independent source (spec, worked example, known-good literal), never recomputed the way the code computes it.
 - Refactoring belongs to review, not to the red → green cycle.
-- A declarative edit — a config row, a label, a re-export, a Bruno file — gets no new test; the PR's Acceptance evidence names the command that shows it took effect (`shown by <command>`). A pattern, wildcard, condition, order, or computed value is logic and gets its red-first test.
-- Typecheck regularly, single test files regularly — `pnpm vitest run <path>`, or `pnpm --filter <pkg> test <path>` inside `packages/`; never `pnpm test <path>`, which runs every suite — and the full suite once at the end.
+- A declarative edit — a config row, a label, a re-export, an API-collection file — gets no new test; the PR's Acceptance evidence names the command that shows it took effect (`shown by <command>`). A pattern, wildcard, condition, order, or computed value is logic and gets its red-first test.
+- Typecheck regularly, single test files regularly — the typecheck and single-file rows of `CLAUDE.md` § Agent gate, never the full-suite command with a path — and the full suite once at the end.
 
-**Review — preferred `reviewer` agent** over the branch's commits, `git log main..HEAD`, once the slice is committed: the brief's Context is the ticket's What to build and the invariants its Seams name; the Focus list is the acceptance criteria, highest-stakes first, each with the attack worth attempting; Suites are the test files the slice touched. CONFIRMED findings are fixed as their own commits; PLAUSIBLE ones get one look, then a comment on the ticket. Quote the ticket line beside every spec gap the review surfaces.
+**Review — preferred `reviewer` agent** over the branch's commits, `git log origin/HEAD..HEAD`, once the slice is committed: the brief's Context is the ticket's What to build and the invariants its Seams name; the Focus list is the acceptance criteria, highest-stakes first, each with the attack worth attempting; Suites are the test files the slice touched. CONFIRMED findings are fixed as their own commits; PLAUSIBLE ones get one look, then a comment on the ticket. Quote the ticket line beside every spec gap the review surfaces.
 
 **Review — fallback `code-review`** (`/code-review`, or `.claude/skills/code-review/SKILL.md`) when `.claude/agents/reviewer.md` is absent. Fix what it finds before the PR.
 
-**Scope.** Only what the acceptance list needs. Adjacent cleanups become a comment on the ticket for a future item, not commits. Docs the repo requires per change — flow docs, Bruno, components, header config — are in scope when the ticket's change touches them.
+**Scope.** Only what the acceptance list needs. Adjacent cleanups become a comment on the ticket for a future item, not commits. Docs the repo requires per change — the docs `CLAUDE.md` names per change — are in scope when the ticket's change touches them.
 
 Completion: every acceptance box has evidence; the repo's checks are green; review findings are fixed or noted; the branch is pushed.
 

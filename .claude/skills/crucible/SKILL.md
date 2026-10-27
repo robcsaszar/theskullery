@@ -16,8 +16,8 @@ Parallel domain recon → adversarial kill → plan → verify → SPEC → impl
 
 Parse the invocation for:
 
-- **Domains** (required) — user-facing areas to audit, e.g. `player`, `curator`
-- **Scope hint** (optional) — narrow focus within a domain, e.g. `lobby reconnect`, `role selection`
+- **Domains** (required) — user-facing areas to audit, e.g. `recipe page`, `search`
+- **Scope hint** (optional) — narrow focus within a domain, e.g. `servings scaling`, `favorites`
 
 Determine output directory: `.crucible/run-<N>/` where N is the next unused integer.
 
@@ -101,11 +101,11 @@ Completion criterion: every PLAN.md entry has a SPEC section. Validation passes.
 ## Phase 6 — Handoff
 
 1. `git switch -c fix/crucible-run-<N>` before the first commit; `.crucible/run-<N>/` goes into that first commit, so the PR's links to `PLAN.md` and `SPEC.md` resolve and the next run's prior-run check finds it
-2. Update flow docs (`docs/flows/`) for any finding that changes a user-facing behaviour
-3. Implement `SPEC.md`, one group of findings at a time: brief a `builder` — shape from `.claude/skills/convoy/references/briefs.md` § Implement, with its issue line replaced by `Implement finding <id> from .crucible/run-<N>/SPEC.md § <id>; there is no ticket — skip reading one`, the SPEC section as **The change**, its test cases as **Tests**, the other groups' files as Off-limits, the brief written under `.crucible/run-<N>/briefs/` — or, for a change of ≤30 lines across 1–2 files, implement it in-session. Gate and commit each group per `docs/agents/delegation.md` § "Verify, then commit" before briefing the next: groups share one tree, so a parallel builder's half-applied edit would sit inside another group's gate
+2. Update the docs `CLAUDE.md` names per change for any finding that changes a user-facing behaviour
+3. Implement `SPEC.md`, one group of findings at a time: brief a `builder` — shape from `.claude/skills/convoy/references/briefs.md` § Implement, with its issue line replaced by `Implement finding <id> from .crucible/run-<N>/SPEC.md § <id>; there is no ticket — skip reading one`, the SPEC section as **The change**, its test cases as **Tests**, the other groups' files as Off-limits, the brief written under `.crucible/run-<N>/briefs/` — or, for a change of ≤30 lines across 1–2 files, implement it in-session. Gate and commit each group per `CLAUDE.md` § Agent gate (verify, then commit) before briefing the next: groups share one tree, so a parallel builder's half-applied edit would sit inside another group's gate
 4. Open a PR — this is the HITL gate; no intermediate approval is requested
 
-PR body: link to `PLAN.md`, finding count by severity, link to `SPEC.md`, list of flow docs updated, and the run's counts — findings the refuter rejected or downgraded, claims the verifier corrected, domains FAILED.
+PR body: link to `PLAN.md`, finding count by severity, link to `SPEC.md`, list of docs updated, and the run's counts — findings the refuter rejected or downgraded, claims the verifier corrected, domains FAILED.
 
 ## NEVER
 

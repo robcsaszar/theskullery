@@ -22,13 +22,13 @@ Every uncommitted file has exactly one owner — user, orchestrator, wave-hub, o
 
 ## Phase 0 — Bearings
 
-Resolve the map from the argument; none or several match → list them and stop. Load the map body. Read the repo's delegation guidance if it has one (`docs/agents/delegation.md` here); without one, `references/briefs.md` carries the whole briefing standard. Confirm the branch is `main`, otherwise stop — a convoy commits on the default branch only, because the trailers below close tickets on push and a push from a feature branch would tick items whose tickets stay open. Record the baseline per [`references/gate.md`](references/gate.md) § Baseline — the lint warning count and the failing test ids of all four suites, with the commit they ran at.
+Resolve the map from the argument; none or several match → list them and stop. Load the map body. Read the repo's delegation guidance if it has one (`docs/agents/delegation.md` or a delegation section of `CLAUDE.md`); without one, `references/briefs.md` carries the whole briefing standard. Confirm the branch is the default branch, otherwise stop — a convoy commits on the default branch only, because the trailers below close tickets on push and a push from a feature branch would tick items whose tickets stay open. Record the baseline per [`references/gate.md`](references/gate.md) § Baseline — the lint warning count and the failing test ids of every suite, with the commit they ran at.
 
-Snapshot `git status --porcelain` — the user's paths. Reconcile every open route item: `git log --grep "Closes #<n>\b"`; on a hit, `git merge-base --is-ancestor <sha> origin/main` — true means the user reopened it, so it is work; false means **committed, unpushed**, so it is done.
+Snapshot `git status --porcelain` — the user's paths. Reconcile every open route item: `git log --grep "Closes #<n>\b"`; on a hit, `git merge-base --is-ancestor <sha> origin/HEAD` — true means the user reopened it, so it is work; false means **committed, unpushed**, so it is done.
 
 Open the **log**: `.claude/log/<map>/` with `briefs/`, `reports/`, and `DECISIONS.md` seeded from the map's Decision log (one numbered entry per line: chose · rejected · why · reverses). It is gitignored and holds what the map should not — the exact words each agent was given and gave back. Resuming: a brief in `briefs/` with no report in `reports/` is an agent whose result is **UNKNOWN**, not "nothing found" — its item is work until gated.
 
-Completion: one map, `main`, baseline, user paths, committed-unpushed items, and the log folder all recorded.
+Completion: one map, the default branch, baseline, user paths, committed-unpushed items, and the log folder all recorded.
 
 ## Phase 1 — Clear the frontier
 
@@ -104,7 +104,7 @@ After the audit: drive every rendered surface and attach a capture or file a `mo
 
 - **NEVER let an agent run the full suite before reporting**
   **Instead:** Brief it to run only the tests it touched, then report; the orchestrator gates.
-  **Why:** An agent that backgrounds `pnpm test` stops with "waiting for the test run" and needs a ping every time. The suite runs once, at the gate, not once per agent.
+  **Why:** An agent that backgrounds the full suite stops with "waiting for the test run" and needs a ping every time. The suite runs once, at the gate, not once per agent.
 
 - **NEVER call a map shipped before its rendered surfaces have been seen**
   **Instead:** Phase 5b — a capture on each rendered item's ticket, or a visual-check ticket for a person; the shipped line comes after.

@@ -14,7 +14,7 @@ You are a sweeper. You apply exactly the pairs the brief gives, in exactly the t
 
 - The commit hash that renamed things, for reference only.
 - The pairs: `"<old>" → "<new>"`, whole-word, case as given.
-- The tree: e.g. `docs/flows/`, `bruno/`, `UBIQUITOUS_LANGUAGE.md`.
+- The tree: e.g. `docs/`, `CONTEXT.md`, `README.md`.
 - Skips: lines the orchestrator already wrote (quoted in the brief); code blocks that quote a column or identifier; the word inside a URL or anchor; in a `.bru` file, every hit outside its `docs { }` block — the rest is a request definition the API reads.
 
 ## Method

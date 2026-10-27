@@ -20,7 +20,7 @@ One per route item or review-fix batch. Escalate to the orchestrator's own hands
 
 ```text
 Implement GitHub issue #<n> in <repo path>. Read the issue first: `gh issue view <n>`.
-Also read <spec path>, `AGENTS.md`, `DESIGN.md`, and `docs/components.md`.
+Also read <spec path>, `CLAUDE.md`, and `DESIGN.md` when it exists.
 
 ## Background (verified — trust this)
 <3–6 facts the orchestrator has already established: where the data lives, which
@@ -49,15 +49,15 @@ For a route item whose work is removal — the contract half of an expand-then-c
 ```text
 This is a DELETION task. The replacement already shipped in <commit> — read it first.
 
-Work by deletion, then follow the type errors — `pnpm typecheck` finds the orphans.
-After deleting, grep `src/` and `tests/` for <every symbol being removed> and account
+Work by deletion, then follow the errors — the typecheck or build row of `CLAUDE.md` § Agent gate finds the orphans.
+After deleting, grep the source and test trees for <every symbol being removed> and account
 for EVERY remaining hit: it either belongs to <the surviving path> or it should be gone.
 
 <Where the same symbol has a surviving consumer — name it here, explicitly, so the
 agent does not delete both. "In solo, X feeds Y which stays; only the play-screen
 consumer goes.">
 
-Update `docs/flows/*` to describe the system as it now is — do not narrate the change.
+Update the docs the repo requires per change to describe the system as it now is — do not narrate the change.
 ```
 
 ## Review (reviewer)
@@ -124,7 +124,7 @@ Different angles so the findings differ; the orchestrator judges.
 One per doc tree, beside the wave's reviewer, when a committed wave shipped a rename or a label change.
 
 ```text
-Doc sweep in <repo path>, tree: <docs/flows/ | bruno/ | UBIQUITOUS_LANGUAGE.md>.
+Doc sweep in <repo path>, tree: <one doc tree, e.g. docs/ or CONTEXT.md>.
 Commit <hash> renamed these. Apply EXACTLY these pairs, whole-word, case as given:
 - "<old>" → "<new>"
 - ...
@@ -148,7 +148,7 @@ The list comes back; the orchestrator reads the files. A scout's line is a point
 
 ## Verify (verifier)
 
-Phase 1, before taking a recommendation: every premise it rests on that has no `@<sha>`, or whose cited paths changed since that sha (`git diff --name-only <sha>..origin/main -- <paths>`). One spawn, all such premises.
+Phase 1, before taking a recommendation: every premise it rests on that has no `@<sha>`, or whose cited paths changed since that sha (`git diff --name-only <sha>..origin/<default branch> -- <paths>`). One spawn, all such premises.
 
 ```text
 Repo: <repo path>. Verify these claims:
@@ -162,4 +162,4 @@ A CORRECTED or REJECTED premise demotes the ticket to drill.
 
 For a builder that stalls without reporting — once, then gate its diff without a report:
 
-> Report your results now — don't wait on the test run, I'll run the gate myself. Give me: files changed, <the specific facts this brief asked for>, and whether `npx biome check --write` was run. Confirm nothing is staged or committed.
+> Report your results now — don't wait on the test run, I'll run the gate myself. Give me: files changed, <the specific facts this brief asked for>, and whether the repo's formatter was run on them. Confirm nothing is staged or committed.

@@ -16,7 +16,7 @@
 // Exit 1 only on unreadable input; every claim gets a verdict otherwise.
 //
 // --probe <file>: claims that also carry `want` (the true line, a list of acceptable lines, or null),
-// pinned with `sha` — e.g. verify-claims.probe.json. Prints each engine pick and the highest
+// pinned with `sha` — a JSON array of claims from this repo. Prints each engine pick and the highest
 // confidence any wrong pick reached, the evidence ACT_CONFIDENCE rests on. Needs the engine key.
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
@@ -24,10 +24,10 @@ import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const ENGINE_URL = "https://api.typesafe.ai/v1/systemone";
-// ACT_CONFIDENCE was fitted against this model; a new model needs `--probe verify-claims.probe.json` run again.
+// ACT_CONFIDENCE was fitted against this model; a new model needs `--probe <file>` run again.
 const ENGINE_MODEL = "jev-1.13.0";
-// Jev Choice confidence = (n·top − 1)/(n − 1). Over three runs of the 29 labelled claims in
-// verify-claims.probe.json, every wrong pick scored 0.88 or less and every pick at 0.9 or more was
+// Jev Choice confidence = (n·top − 1)/(n − 1). Over three runs of 29 labelled claims from
+// another codebase, every wrong pick scored 0.88 or less and every pick at 0.9 or more was
 // right; below the bar the agent reads the candidate lines itself.
 const ACT_CONFIDENCE = 0.9;
 const MAX_CANDIDATES = 250; // Jev Choice cap is 255 options; `none` takes one

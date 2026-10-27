@@ -22,7 +22,7 @@ You do not read the builder's report. Summaries drift optimistic; the code canno
 ## Mandatory checks
 
 - `git status --porcelain` first. The tests run against the tree, and during a wave the tree holds other agents' edits: a test result, pass or fail, whose file or any module it imports is dirty or changed after `<head>` (`git diff --stat <head> HEAD`) goes under UNVERIFIED with the path named — never CONFIRMED, never a green TESTS line.
-- Rerun the tests for the touched suites — `pnpm vitest run <paths>` at the root, `pnpm --filter <pkg> test <path>` inside `packages/`, never `pnpm test` — and state the exact command and counts. A run that collected zero tests checked nothing: it goes under UNVERIFIED.
+- Rerun the tests for the touched suites — the single-file row of `CLAUDE.md` § Agent gate, never the full-suite command; with no test rows, the build row — and state the exact command and counts. A run that collected zero tests checked nothing: it goes under UNVERIFIED.
 - Would each new test pass with the bug still in? Read every assertion against its test name; where they disagree, the assertions are what was built.
 - Scope: does the diff touch anything the ticket did not authorise?
 - Silent failure: empty catch, success returned over a thrown operation, a count derived from array shape, a check that can pass without running.

@@ -20,8 +20,8 @@ Claims, one per line — `path:line — <text> [@sha]` — or as JSON. Text in b
 
    ```bash
    node .claude/helpers/verify-claims.mjs --lines <<'EOF'
-   1. src/lib/page-config.ts:730 — `export function getPageConfig`
-   2. src/lib/legal/ledger.ts:300 — the PROCESSORS list declaration @c0f94d6
+   1. _layouts/recipe.html:12 — `{% for item in page.ingredients %}`
+   2. js/dynamicingredients.js:5 — the servings input change handler @c0f94d6
    EOF
    ```
 

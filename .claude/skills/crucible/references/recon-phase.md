@@ -19,9 +19,10 @@ Prior confirmed findings to skip (already known):
 [SKIP_IDS — comma-separated IDs, or "none"]
 
 Your task: exhaustively audit the [DOMAIN] flow across every layer —
-UI components (src/lib/components/, src/routes/), business logic (src/lib/, src/lib/svelte/),
-API endpoints (src/api/routes/), the WebSocket client and reconnection
-(packages/client-core/src/ws-client.ts), tests (tests/).
+[LAYERS — the repo's own layers and their paths, read from CLAUDE.md: e.g. templates
+and pages, client scripts, styles, content and data files, build config, server or API
+code if any, tests if any].
+Skip any angle below that names a layer the repo does not have.
 
 Audit angles — apply all of them:
 1. SAD PATH. What happens when things fail? Error handlers, catch blocks, timeout paths.
@@ -35,7 +36,7 @@ Audit angles — apply all of them:
 6. DEAD CODE / DEPRECATED. Exports marked @deprecated still imported? Duplicated inline patterns?
 7. COPY & TONE. "Please" softeners in validation messages? Exclamation marks in confirmations?
    Sentence case violations?
-8. DOC DRIFT. Do flow docs (docs/flows/) reflect the actual behaviour in code?
+8. DOC DRIFT. Do CLAUDE.md and the repo's docs reflect the actual behaviour in code?
 
 For each issue, return a finding in this exact JSON shape:
 {
@@ -71,9 +72,9 @@ Reject findings that fail any of these before returning them:
 Synthesize `codebase-map.md` from all agent responses before Phase 2. Include:
 
 - Per domain: its `checked` list, or **FAILED** when the agent returned no valid object twice
-- Tech stack summary (framework, WebSocket client, test runner, linter)
+- Tech stack summary (framework, build tool, client scripts, test runner, linter)
 - Key file paths per domain (routes, components, lib modules, tests)
-- Shared modules used across domains (e.g. `packages/client-core/src/ws-client.ts`, `src/lib/game-store.ts`)
-- Conventions in use (e.g. component library, header config pattern, WS client options shape)
+- Shared modules used across domains (e.g. a shared layout, include, or client script)
+- Conventions in use (e.g. component or include library, front matter shape, config pattern)
 
 This file is injected verbatim into every adversarial and verification agent. Its quality directly determines theirs.
