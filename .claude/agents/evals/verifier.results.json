@@ -1,0 +1,186 @@
+{
+ "agent_name": "verifier",
+ "run_at": "2026-10-04",
+ "note": "Single run per arm. The with-artifact runs recorded here are the fourth: earlier runs failed eval 2 (described lines REJECTED instead of CORRECTED) and eval 3 (the @sha treated as check-at), which led to the script's --lines parser, the step 2-3 decision table, a NEVER rule, and the script-written report line. Eval 3's first assertion was reworded so its rationale sits in expected_output.",
+ "evals": [
+  {
+   "id": 1,
+   "name": "ambiguous-and-moved-lines",
+   "with_artifact": {
+    "duration_ms": 8886,
+    "tokens": 721,
+    "pass_rate": 1.0,
+    "expectations": [
+     {
+      "text": "Claim 4 is UNSURE and names both line 17 and line 67",
+      "passed": true,
+      "evidence": "4 UNSURE .claude/skills/meridian/references/route.md:12 — candidates 17, 67 — text on 2 lines"
+     },
+     {
+      "text": "Claim 2 is CORRECTED to line 84",
+      "passed": true,
+      "evidence": "2 CORRECTED .claude/skills/convoy/references/gate.md:40 → .claude/skills/convoy/references/gate.md:84 — ## Tombstone guard"
+     },
+     {
+      "text": "Claim 3 is CORRECTED to line 123",
+      "passed": true,
+      "evidence": "3 CORRECTED src/lib/page-config.ts:1 → src/lib/page-config.ts:123 — export const PAGE_CONFIG: Record<string, PageConfig> = {"
+     },
+     {
+      "text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE",
+      "passed": true,
+      "evidence": "Claims 1-4 carry VERIFIED, CORRECTED, CORRECTED, UNSURE respectively, each with a single verdict word."
+     },
+     {
+      "text": "No prose, table, or explanation of what the code does beyond one line per claim and a script status line",
+      "passed": true,
+      "evidence": "Output is four one-line claims plus 'SCRIPT: ran'. The quoted code snippets and the '— text on 2 lines' note are brief annotations, not explanations of what the code does."
+     }
+    ]
+   },
+   "baseline": {
+    "duration_ms": 21184,
+    "tokens": 1485,
+    "pass_rate": 0.2,
+    "expectations": [
+     {
+      "text": "Claim 4 is UNSURE and names both line 17 and line 67",
+      "passed": false,
+      "evidence": "Claim 4 was marked '❌ REJECTED'; the output only mentions line 17 ('The section heading `## Seams` appears at line 17'). UNSURE and line 67 are absent."
+     },
+     {
+      "text": "Claim 2 is CORRECTED to line 84",
+      "passed": false,
+      "evidence": "Claim 2 was marked '❌ REJECTED' and no corrected line was given; it only says the heading 'appears later in the file, not at line 40'. Line 84 is absent."
+     },
+     {
+      "text": "Claim 3 is CORRECTED to line 123",
+      "passed": false,
+      "evidence": "Claim 3 was marked '❌ REJECTED'. The output only notes line 1 is an import statement and gives no corrected line. Line 123 is absent."
+     },
+     {
+      "text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE",
+      "passed": true,
+      "evidence": "Claim 1: 'VERIFIED'; Claim 2: 'REJECTED'; Claim 3: 'REJECTED'; Claim 4: 'REJECTED'. Each claim has exactly one verdict word from the allowed set."
+     },
+     {
+      "text": "No prose, table, or explanation of what the code does beyond one line per claim and a script status line",
+      "passed": false,
+      "evidence": "The output opens with 'I'll verify each claim:' and gives multi-line explanations for each claim, including quoted line contents. It ends with a summary paragraph, 'Claims 2–4 are off by several lines.' There is no script status line."
+     }
+    ]
+   }
+  },
+  {
+   "id": 2,
+   "name": "described-locations",
+   "with_artifact": {
+    "duration_ms": 16440,
+    "tokens": 1463,
+    "pass_rate": 1.0,
+    "expectations": [
+     {
+      "text": "The PROCESSORS claim is CORRECTED to line 386",
+      "passed": true,
+      "evidence": "3 CORRECTED src/lib/legal/ledger.ts:300 → src/lib/legal/ledger.ts:386 — export const PROCESSORS: readonly Processor[] = ["
+     },
+     {
+      "text": "The fallback claim is CORRECTED to line 738",
+      "passed": true,
+      "evidence": "1 CORRECTED src/lib/page-config.ts:700 → src/lib/page-config.ts:738 — return FALLBACK;"
+     },
+     {
+      "text": "The labels claim is VERIFIED at line 8",
+      "passed": true,
+      "evidence": "2 VERIFIED tests/labels.test.ts:8"
+     },
+     {
+      "text": "Uses the verdict words VERIFIED, CORRECTED, REJECTED, or UNSURE rather than ✓/✗ marks or a table",
+      "passed": true,
+      "evidence": "Each line uses a verdict word: \"CORRECTED\", \"VERIFIED\", \"CORRECTED\"; no ✓/✗ marks or table present."
+     }
+    ]
+   },
+   "baseline": {
+    "duration_ms": 11922,
+    "tokens": 635,
+    "pass_rate": 0.0,
+    "expectations": [
+     {
+      "text": "The PROCESSORS claim is CORRECTED to line 386",
+      "passed": false,
+      "evidence": "absent. The output is a generic readiness message and does not mention PROCESSORS or line 386."
+     },
+     {
+      "text": "The fallback claim is CORRECTED to line 738",
+      "passed": false,
+      "evidence": "absent. The output does not mention a fallback claim or line 738."
+     },
+     {
+      "text": "The labels claim is VERIFIED at line 8",
+      "passed": false,
+      "evidence": "absent. The output does not mention a labels claim or line 8."
+     },
+     {
+      "text": "Uses the verdict words VERIFIED, CORRECTED, REJECTED, or UNSURE rather than ✓/✗ marks or a table",
+      "passed": false,
+      "evidence": "absent. The output contains none of the verdict words VERIFIED, CORRECTED, REJECTED, or UNSURE. It says only: 'Ready to work on Orakl... What would you like to work on?'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "name": "sha-is-read-at",
+   "with_artifact": {
+    "duration_ms": 10644,
+    "tokens": 786,
+    "pass_rate": 1.0,
+    "expectations": [
+     {
+      "text": "Claim 1 is REJECTED, not VERIFIED",
+      "passed": true,
+      "evidence": "\"1 REJECTED .claude/skills/convoy/references/gate.md:18 — text not in file; line 18 is blank\""
+     },
+     {
+      "text": "Claim 2 is VERIFIED at package.json line 14",
+      "passed": true,
+      "evidence": "\"2 VERIFIED package.json:14\""
+     },
+     {
+      "text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE",
+      "passed": true,
+      "evidence": "Claim 1 has one verdict word (REJECTED) and claim 2 has one (VERIFIED); no claim has multiple or a verdict outside the allowed set."
+     }
+    ]
+   },
+   "baseline": {
+    "duration_ms": 30618,
+    "tokens": 619,
+    "pass_rate": 0.33,
+    "expectations": [
+     {
+      "text": "Claim 1 is REJECTED, not VERIFIED",
+      "passed": false,
+      "evidence": "The output marks Claim 1 with ✅ and says \"Both claims verified\": \".claude/skills/convoy/references/gate.md:18 — contains \"Compare the lint count to the baseline\"\". It is not marked REJECTED."
+     },
+     {
+      "text": "Claim 2 is VERIFIED at package.json line 14",
+      "passed": true,
+      "evidence": "\"`package.json:14` — contains `\"test\": \"vitest run &&`\" with a ✅, under \"Both claims verified\". This gives the line 14 location and a verified verdict."
+     },
+     {
+      "text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE",
+      "passed": false,
+      "evidence": "The output uses ✅ marks and the phrase \"Both claims verified\". It never uses any of the verdict words VERIFIED, CORRECTED, REJECTED or UNSURE for individual claims."
+     }
+    ]
+   }
+  }
+ ],
+ "summary": {
+  "with_artifact": "12/12",
+  "baseline": "2/12",
+  "delta": 0.83
+ }
+}

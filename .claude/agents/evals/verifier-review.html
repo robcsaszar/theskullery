@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Eval Review — verifier</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --line: #e5e7eb;
+    --card: #f9fafb; --accent: #2563eb; --pass: #15803d; --fail: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e6e6e6; --muted: #9ca3af; --line: #2a2f3a;
+      --card: #171a21; --accent: #60a5fa; --pass: #4ade80; --fail: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 6rem; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .eval { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 1.5rem; overflow: hidden; }
+  .eval > header { padding: .85rem 1rem; background: var(--card); border-bottom: 1px solid var(--line); }
+  .eval h2 { font-size: 1rem; margin: 0; }
+  .prompt { margin: .5rem 0 0; color: var(--muted); white-space: pre-wrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .col { background: var(--bg); padding: 1rem; min-width: 0; }
+  .col h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 .6rem; }
+  pre {
+    margin: 0; padding: .75rem; background: var(--card); border-radius: 6px;
+    overflow-x: auto; white-space: pre-wrap; word-break: break-word; font-size: 13px;
+  }
+  ul.assertions { list-style: none; padding: 0; margin: .75rem 0 0; font-size: 13px; }
+  ul.assertions li { padding: .2rem 0; }
+  .pass { color: var(--pass); } .fail { color: var(--fail); }
+  .fb { padding: 1rem; border-top: 1px solid var(--line); }
+  .fb label { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .4rem; }
+  textarea {
+    width: 100%; min-height: 72px; padding: .6rem; border-radius: 6px; resize: vertical;
+    border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; font-size: 14px;
+  }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: .85rem 1.25rem;
+    background: var(--card); border-top: 1px solid var(--line); text-align: center;
+  }
+  button {
+    padding: .6rem 1.4rem; font: inherit; font-weight: 600; color: #fff; background: var(--accent);
+    border: 0; border-radius: 6px; cursor: pointer;
+  }
+  .note { color: var(--muted); font-size: 13px; margin-left: .75rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Eval Review — verifier</h1>
+  <p class="sub">Compare each with-artifact output against its baseline, then leave feedback. Your notes drive the next iteration.</p>
+  <div id="evals"></div>
+</div>
+
+<div class="bar">
+  <button id="export">Export feedback</button>
+  <span class="note">Downloads feedback.json — save it beside the eval suite.</span>
+</div>
+
+<script>
+// Replaced at fill time with the eval array. Shape:
+// [{ id, name, prompt, with_artifact, baseline, assertions: [{text, passed}] }]
+const EVALS = [{"id": 1, "name": "ambiguous-and-moved-lines", "prompt": "Repo: the current directory. Verify these claims:\n\n1. .claude/skills/transit/SKILL.md:31 — `stated facts still hold`\n2. .claude/skills/convoy/references/gate.md:40 — `## Tombstone guard`\n3. src/lib/page-config.ts:1 — `export const PAGE_CONFIG`\n4. .claude/skills/meridian/references/route.md:12 — `## Seams`", "with_artifact": "1 VERIFIED .claude/skills/transit/SKILL.md:31\n2 CORRECTED .claude/skills/convoy/references/gate.md:40 → .claude/skills/convoy/references/gate.md:84 — ## Tombstone guard\n3 CORRECTED src/lib/page-config.ts:1 → src/lib/page-config.ts:123 — export const PAGE_CONFIG: Record<string, PageConfig> = {\n4 UNSURE .claude/skills/meridian/references/route.md:12 — candidates 17, 67 — text on 2 lines\nSCRIPT: ran", "baseline": "I'll verify each claim:\n\n**1. `.claude/skills/transit/SKILL.md:31` — `stated facts still hold`** ✅ VERIFIED\nLine 31 contains: \"The ticket's stated facts still hold on current `main`, and every fact a question will rest on is checked before the question is sent — never after the answer\"\n\n**2. `.claude/skills/convoy/references/gate.md:40` — `## Tombstone guard`** ❌ REJECTED\nLine 40 reads: \"5. Before staging, § Line endings and § Partial-hunk staging below. Scripted writes flip LF to CRLF and zero-context hunks land at the wrong offset silently; both have happened here.\"\n\nThe section heading `## Tombstone guard` is listed in the Contents (line 11) but appears later in the file, not at line 40.\n\n**3. `src/lib/page-config.ts:1` — `export const PAGE_CONFIG`** ❌ REJECTED\nLine 1 reads: \"import type { FeatureFlagName, UserPower, UserRole } from \"@orakl/shared\";\"\n\nThis is an import statement, not the constant export.\n\n**4. `.claude/skills/meridian/references/route.md:12` — `## Seams`** ❌ REJECTED\nLine 12 is blank. The section heading `## Seams` appears at line 17.\n\n**Summary:** 1 of 4 verified. Claims 2–4 are off by several lines.", "assertions": [{"text": "Claim 4 is UNSURE and names both line 17 and line 67", "passed": true}, {"text": "Claim 2 is CORRECTED to line 84", "passed": true}, {"text": "Claim 3 is CORRECTED to line 123", "passed": true}, {"text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE", "passed": true}, {"text": "No prose, table, or explanation of what the code does beyond one line per claim and a script status line", "passed": true}]}, {"id": 2, "name": "described-locations", "prompt": "Repo: the current directory. A route item lists these Known locations. Check each still holds before a builder is briefed to trust them.\n\n- src/lib/page-config.ts:700 — getPageConfig's fallback return for routes with no entry\n- tests/labels.test.ts:8 — the list of paths the label test scans\n- src/lib/legal/ledger.ts:300 — the PROCESSORS list declaration", "with_artifact": "1 CORRECTED src/lib/page-config.ts:700 → src/lib/page-config.ts:738 — return FALLBACK;\n2 VERIFIED tests/labels.test.ts:8\n3 CORRECTED src/lib/legal/ledger.ts:300 → src/lib/legal/ledger.ts:386 — export const PROCESSORS: readonly Processor[] = [\nSCRIPT: ran — engine below confidence bar on all three; manual verification completed", "baseline": "Ready to work on Orakl. I've loaded the project context and guidelines — concise communication, ASD-STE 1000 simplified English, Pyramid Principle, minimum code for the ask. I understand the tech stack (SvelteKit, TypeScript, WebSockets, Turso), the sync workflow for the public client, and the verification steps before committing (`typecheck`, `lint`, `test`).\n\nWhat would you like to work on?", "assertions": [{"text": "The PROCESSORS claim is CORRECTED to line 386", "passed": true}, {"text": "The fallback claim is CORRECTED to line 738", "passed": true}, {"text": "The labels claim is VERIFIED at line 8", "passed": true}, {"text": "Uses the verdict words VERIFIED, CORRECTED, REJECTED, or UNSURE rather than ✓/✗ marks or a table", "passed": true}]}, {"id": 3, "name": "sha-is-read-at", "prompt": "Repo: the current directory. Verify these claims:\n\n1. .claude/skills/convoy/references/gate.md:18 — `Compare the lint count to the baseline` @c0f94d6\n2. package.json:14 — `\"test\": \"vitest run &&` @c0f94d6", "with_artifact": "1 REJECTED .claude/skills/convoy/references/gate.md:18 — text not in file; line 18 is blank\n2 VERIFIED package.json:14\n\nSCRIPT: ran", "baseline": "Both claims verified:\n\n1. ✅ `.claude/skills/convoy/references/gate.md:18` — contains \"Compare the lint count to the baseline\"\n2. ✅ `package.json:14` — contains `\"test\": \"vitest run &&`", "assertions": [{"text": "Claim 1 is REJECTED, not VERIFIED", "passed": true}, {"text": "Claim 2 is VERIFIED at package.json line 14", "passed": true}, {"text": "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE", "passed": true}]}];
+
+const root = document.getElementById('evals');
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function column(title, body, assertions) {
+  const col = el('div', 'col');
+  col.appendChild(el('h3', null, title));
+  col.appendChild(el('pre', null, body || '(no output captured)'));
+  if (assertions && assertions.length) {
+    const ul = el('ul', 'assertions');
+    for (const a of assertions) {
+      const li = el('li', a.passed ? 'pass' : 'fail', (a.passed ? '✓ ' : '✗ ') + a.text);
+      ul.appendChild(li);
+    }
+    col.appendChild(ul);
+  }
+  return col;
+}
+
+EVALS.forEach((ev, i) => {
+  const card = el('div', 'eval');
+
+  const head = el('header');
+  head.appendChild(el('h2', null, `${i + 1}. ${ev.name || 'eval-' + ev.id}`));
+  head.appendChild(el('p', 'prompt', ev.prompt));
+  card.appendChild(head);
+
+  const cols = el('div', 'cols');
+  cols.appendChild(column('With artifact', ev.with_artifact, ev.assertions));
+  cols.appendChild(column('Baseline', ev.baseline, null));
+  card.appendChild(cols);
+
+  const fb = el('div', 'fb');
+  const label = el('label', null, 'Feedback');
+  label.setAttribute('for', 'fb-' + i);
+  const ta = el('textarea');
+  ta.id = 'fb-' + i;
+  ta.dataset.runId = (ev.name || 'eval-' + ev.id) + '-with_artifact';
+  ta.placeholder = 'What is wrong, missing, or surprising here? Leave blank if it looks right.';
+  fb.appendChild(label);
+  fb.appendChild(ta);
+  card.appendChild(fb);
+
+  root.appendChild(card);
+});
+
+document.getElementById('export').addEventListener('click', () => {
+  const reviews = Array.from(document.querySelectorAll('textarea')).map(t => ({
+    run_id: t.dataset.runId,
+    feedback: t.value.trim()
+  }));
+  const payload = JSON.stringify({ artifact: 'verifier', reviews, status: 'complete' }, null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'feedback.json';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>

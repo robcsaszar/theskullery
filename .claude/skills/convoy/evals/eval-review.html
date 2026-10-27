@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Eval Review — convoy</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --line: #e5e7eb;
+    --card: #f9fafb; --accent: #2563eb; --pass: #15803d; --fail: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e6e6e6; --muted: #9ca3af; --line: #2a2f3a;
+      --card: #171a21; --accent: #60a5fa; --pass: #4ade80; --fail: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 6rem; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .eval { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 1.5rem; overflow: hidden; }
+  .eval > header { padding: .85rem 1rem; background: var(--card); border-bottom: 1px solid var(--line); }
+  .eval h2 { font-size: 1rem; margin: 0; }
+  .prompt { margin: .5rem 0 0; color: var(--muted); white-space: pre-wrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .col { background: var(--bg); padding: 1rem; min-width: 0; }
+  .col h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 .6rem; }
+  pre {
+    margin: 0; padding: .75rem; background: var(--card); border-radius: 6px;
+    overflow-x: auto; white-space: pre-wrap; word-break: break-word; font-size: 13px;
+  }
+  ul.assertions { list-style: none; padding: 0; margin: .75rem 0 0; font-size: 13px; }
+  ul.assertions li { padding: .2rem 0; }
+  .pass { color: var(--pass); } .fail { color: var(--fail); }
+  .fb { padding: 1rem; border-top: 1px solid var(--line); }
+  .fb label { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .4rem; }
+  textarea {
+    width: 100%; min-height: 72px; padding: .6rem; border-radius: 6px; resize: vertical;
+    border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; font-size: 14px;
+  }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: .85rem 1.25rem;
+    background: var(--card); border-top: 1px solid var(--line); text-align: center;
+  }
+  button {
+    padding: .6rem 1.4rem; font: inherit; font-weight: 600; color: #fff; background: var(--accent);
+    border: 0; border-radius: 6px; cursor: pointer;
+  }
+  .note { color: var(--muted); font-size: 13px; margin-left: .75rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Eval Review — convoy</h1>
+  <p class="sub">Compare each with-artifact output against its baseline, then leave feedback. Your notes drive the next iteration.</p>
+  <div id="evals"></div>
+</div>
+
+<div class="bar">
+  <button id="export">Export feedback</button>
+  <span class="note">Downloads feedback.json — save it beside the eval suite.</span>
+</div>
+
+<script>
+// Replaced at fill time with the eval array. Shape:
+// [{ id, name, prompt, with_artifact, baseline, assertions: [{text, passed}] }]
+const EVALS = [
+{"id":1,"name":"plan-the-whole-route","prompt":"Plan working all ten route items of map #912 to completion this session using subagents — order, parallelism, brief contents, verification, commits, code review, UI quality, a test failure in an untouched file, an agent 'waiting for the test run'.",
+"with_artifact":"## Waves\n- Wave 1: 917, 926 (both blocked by nothing, disjoint file sets). Launch both sonnet agents in one message.\n- Gate wave 1, commit each separately (`Closes #917`, `Closes #926`).\n- Wave 2: 918, 921 (both blocked only by 917, predicted sets disjoint). Launch together.\n- Wave 3: 919 and 925 (both blocked by 918) — disjoint. Launch together.\n- Wave 4: 920, 922, 924 — need a disjointness check; verify against each item's body before launch; if 922 and 924 both touch game-history.ts rendering paths, stagger the smaller one.\n- Wave 5: 923 (blocked by 922 only). Solo, after 922 commits.\n\nBetween every wave and once more after the last: one opus review agent per Phase 4 (§Review brief) over that wave's commits + any fix commits since the last review.\n\nAfter 923 commits: Phase 5 interface audit — one opus agent over every touched surface per §Audit brief, loading the `interface` skill.\n\n## Subagent briefs (per item, sonnet, § Implement)\nEach brief is self-contained: exact files from the item's predicted set, the specific change, acceptance criteria from the issue's checklist, the verification command (`pnpm typecheck && pnpm lint && pnpm test -- <touched test files>` — never the full suite), off-limits list = every other in-flight item's predicted set + orchestrator-owned paths (`docs/flows/*`, `docs/project.md`, `src/lib/page-config.ts`, `bruno/`, `CONTEXT.md`), and commit policy: do not commit — parent owns commits.\n\n## Verifying a subagent's work (Phase 3, every item)\n1. Read the actual diff, not the self-report.\n2. Run `pnpm typecheck && pnpm lint && pnpm test` myself.\n3. Compare lint warning count to the Phase-0 baseline; any new warning in a touched file is this item's.\n4. Check every acceptance criterion against the diff.\n5. For the one high-risk criterion per item — trace it myself.\n6. Grep every consumer of anything moved/deleted.\n7. Stage exactly that item's files by explicit path (never `git add -A`), commit with `Closes #<n>` + session trailer.\n\n## Who commits, how staged\nOnly me. Staging by explicit path from the item's predicted ∪ reported set; orchestrator-owned shared files are written and staged by me at the gate.\n\n## Code review\nOne opus reviewer per wave (Phase 4), reviewing commits (not the working tree) for that wave plus fix commits since the prior review, plus a final pass after the last wave before Phase 5. CONFIRMED under 30 lines/1-2 files: I fix; larger: brief sonnet. PLAUSIBLE: one look then fog.\n\n## UI quality check\nNot per-item. Deferred to Phase 5 — a single opus interface audit across all touched surfaces after 923 lands, using the `interface` skill and the Decision-log lines from #912 as constraints. A finding that contradicts a logged decision is declined citing the log line.\n\n## Test failure in a file the subagent didn't touch\nI don't take the agent's characterization on faith. If the failing file is genuinely outside this item's predicted ∪ reported set, it is not this item's failure; hold the gate, identify the owner, re-gate once resolved.\n\n## Subagent says it's waiting for the test run\nAgents are never briefed to run the full suite. If one stalls anyway it gets one ping; a second stall means I read its diff and gate it without further report. The full suite runs exactly once per item, at my gate.\n\n## Ownership recap\n- Wave items: their agents per predicted file set.\n- docs/flows/*, docs/project.md, src/lib/page-config.ts, src/lib/legal/ledger.ts, bruno/, CONTEXT.md: mine, written at the gate.\n- Anything dirty at Phase 0: the user's — never touched.",
+"baseline":"## Dependency graph → waves\nW1: 917, 926 · W2: 918, 921 · W3: 919, 925 · W4: 920, 922, 924 · W5: 923\n\n## Per-wave mechanics\n1. Confirm clean tree on main.\n2. Launch each item's subagent (sonnet) in parallel.\n3. Wait for all agents in the wave to report.\n4. Verify each one myself.\n5. Stage + commit each item separately, one commit per issue — I own commits.\n6. Only after every item in the wave is verified and committed do I open the next wave.\n\n## Subagent brief\n1. Issue body verbatim.\n2. Exact scope boundary: do not touch files reserved for parallel siblings.\n3. File paths.\n4. Commit policy: do NOT commit.\n5. Verification command to run itself before reporting done: `pnpm typecheck && pnpm lint && pnpm test`, report exact output.\n6. If `pnpm test` fails in a file you did not touch, stop and report.\n\n## Verifying\n1. Read the actual diff.\n2. Run the gate myself.\n3. Walk every acceptance checkbox.\n4. Check the Seams contract.\n5. Check for orphans.\n6. Stage exactly that item's files, one commit per issue, referencing the issue number.\n\n## Code review\nMy own verify-then-commit step is the review gate for each item. I run the `code-review` skill (medium effort) over the cumulative diff once per wave, after all that wave's items are committed but before opening the next wave.\n\n## UI quality\nFor each UI-touching item, after typecheck/lint/test pass, I run the `interface` skill before committing. UI check happens per-item, not batched at the end.\n\n## Test failure in a file the subagent didn't touch\n1. Confirm it's pre-existing: `git stash`, rerun `pnpm test`, is it still failing on main? If yes → pre-existing, note it, do not block.\n2. If it only fails with the diff applied → real regression; send it back to the same subagent.\n\n## Subagent reports 'waiting for test run to complete'\nThis means it's mid-command, not stuck — I don't intervene or re-prompt. Let the tool call finish; not an alarm state.",
+"assertions":["no git stash","no worktree per subagent","opus review of commits while next wave runs","one interface audit at the end","briefs forbid full suite; report immediately","never hand-close; Closes trailer; no push unless asked","shared files orchestrator-owned"]},
+{"id":2,"name":"open-judgment-tickets-user-afk","prompt":"User invoked you to work the whole route of map #912 then left for hours. #913 and #916 are open meridian:decision tickets that #917–#926 depend on. What do you do next, and how do you document it?",
+"with_artifact":"Both judgment tickets have a stated recommendation with no killed alternative on the same question, and I checked their premises against current main — both still hold. Per convoy Phase 1's predicate: take the recommendation, don't drill.\n\n## 1. Resolve #913 (schema placement)\nRecommendation: base fields on QuestionBaseSchema, weakness 'widest ripple of the two options.'\nVerified premise: checked src/lib/schemas/question.schema.ts:89-92 and src/lib/question-diff.ts — source and postAnswerNote are already base-level fields, and question-flags.ts:96-97 already denormalises them. The premise still holds.\nAction: comment on #913 recording the resolution with the premise re-verified against main 2026-09-15. Then close it.\nWhy: convoy never halts on an open judgment ticket.\n\n## 2. Resolve #916 (image 'remove' semantics)\nRecommendation: C — ship A now (remove clears the media reference only), chart the reference-tracking/sweep subsystem as its own map later.\nVerified premise: grep -rn 'DeleteObjectCommand|deleteObject' src/ returns nothing — no delete path exists, still true on current main.\nAction: comment on #916 recording the resolution — 'Taking recommendation: C. Premise re-verified: no DeleteObjectCommand in repo as of 2026-09-15. Ship A inside this route; file a new map for orphan cleanup separately.' Then close it.\n\n## 3. Log both in the map's Decision log\nAppend two numbered decisions to #912, noting these were resolved by convoy standing in for the user.\n\n## 4. Proceed to Phase 0/2 of convoy proper\nPhase 0: confirm branch is main, lint baseline, git status --porcelain snapshot, reconcile via git log --grep.\nPhase 2: wave 1 = #917 and #926 (blocked by none, disjoint). Spawn sonnet agents per briefs § Implement, in one message. Continue waves 2-5 as blockers clear, gating and committing per item at Phase 3, review at Phase 4, interface audit at Phase 5, final report at Phase 6.\n\n## Why this is safe without the user\nThe user invoked convoy knowing it stands in for them on judgment tickets, and both tickets satisfy the narrow predicate (a stated recommendation, no competing option in Ruled out, premises re-verified true on current code) — so neither needs the drill. I did not drill because the ticket bodies name a single recommended option each with reasoning I could independently verify.",
+"baseline":"Both #913 and #916 have a stated recommendation already in the ticket body. Here is what I'd do:\n\n1. Resolve #913 myself, using the ticket's recommendation. The ticket states the deciding fact needed ('how diff and flag-snapshot code treat metadata') — I'd check it directly by reading src/lib/question-diff.ts and buildQuestionSnapshot. If they touch fields by name, the recommendation (base fields) holds — I adopt it as-is. Why I can decide alone: reversible, mechanical, author-recommended.\n\n2. Resolve #916 myself, adopting option C. Consistent with the map's own scope discipline; #926 already exists and answers the sizing question. Why I can decide alone: same shape — reversible, bounded, author already weighed A/B/C.\n\n3. Document both on the tickets: post a comment stating the decision and why, re-close. Add each to #912's Decision log tagged 'Via convoy, AFK'.\n\n4. Flag both for the user on return: note both decisions in the final session summary / PR description with an explicit 'assumption' line.\n\n5. Proceed down the route #917 → #926 in dependency order: #917 first, then #918 → #919 → {#920, #924, #925} → #922 → #923, with #921 and #926 run whenever their blocker is clear. Each ticket: read it, work it via transit-equivalent flow (implement, typecheck/lint/test, commit), then the next.\n\nWhy this order and not 'wait for the user': the author pre-wrote a recommendation with evidence on both tickets. Neither decision is irreversible or safety-sensitive, so proceeding is lower-cost than leaving 10 tickets blocked for hours.",
+"assertions":["resolves both tickets","names weakness or drills, per ticket","premises re-verified on main","recorded on ticket + Decision log before route work","proceeds to dependent items"]}
+];
+
+const root = document.getElementById('evals');
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function column(title, body, assertions) {
+  const col = el('div', 'col');
+  col.appendChild(el('h3', null, title));
+  col.appendChild(el('pre', null, body || '(no output captured)'));
+  if (assertions && assertions.length) {
+    const ul = el('ul', 'assertions');
+    for (const a of assertions) {
+      const li = el('li', a.passed ? 'pass' : 'fail', (a.passed ? '✓ ' : '✗ ') + a.text);
+      ul.appendChild(li);
+    }
+    col.appendChild(ul);
+  }
+  return col;
+}
+
+EVALS.forEach((ev, i) => {
+  const card = el('div', 'eval');
+
+  const head = el('header');
+  head.appendChild(el('h2', null, `${i + 1}. ${ev.name || 'eval-' + ev.id}`));
+  head.appendChild(el('p', 'prompt', ev.prompt));
+  card.appendChild(head);
+
+  const cols = el('div', 'cols');
+  cols.appendChild(column('With artifact', ev.with_artifact, ev.assertions));
+  cols.appendChild(column('Baseline', ev.baseline, null));
+  card.appendChild(cols);
+
+  const fb = el('div', 'fb');
+  const label = el('label', null, 'Feedback');
+  label.setAttribute('for', 'fb-' + i);
+  const ta = el('textarea');
+  ta.id = 'fb-' + i;
+  ta.dataset.runId = (ev.name || 'eval-' + ev.id) + '-with_artifact';
+  ta.placeholder = 'What is wrong, missing, or surprising here? Leave blank if it looks right.';
+  fb.appendChild(label);
+  fb.appendChild(ta);
+  card.appendChild(fb);
+
+  root.appendChild(card);
+});
+
+document.getElementById('export').addEventListener('click', () => {
+  const reviews = Array.from(document.querySelectorAll('textarea')).map(t => ({
+    run_id: t.dataset.runId,
+    feedback: t.value.trim()
+  }));
+  const payload = JSON.stringify({ artifact: 'convoy', reviews, status: 'complete' }, null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'feedback.json';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>

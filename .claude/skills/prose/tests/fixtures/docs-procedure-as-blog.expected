@@ -1,0 +1,4 @@
+docs-procedure.md: [NOTE/monotony] 4 window(s) of 5 consecutive sentences with near-identical mid-band lengths — vary the rhythm
+docs-procedure.md: [NOTE/uniform-paragraphs] all 10 paragraphs have 2–3 sentences — pre-computed shape
+docs-procedure.md: summary — 0 debris, 0 flags, 2 structure notes
+exit=0

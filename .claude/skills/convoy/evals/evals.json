@@ -1,0 +1,70 @@
+{
+  "skill_name": "convoy",
+  "evals": [
+    {
+      "id": 1,
+      "name": "plan-the-whole-route",
+      "prompt": "You are working at the repository root. Read AGENTS.md and docs/agents/delegation.md. Planning map #912 on GitHub has ten route items, #917 through #926 — read the map and the items with `gh issue view` (they are closed; treat them as open and unstarted). Write a concrete operating plan for working ALL TEN to completion in this session using subagents. Do not implement anything or change any files. Be specific about order and parallelism, what each subagent brief contains, how you verify a subagent's work, who commits and how files are staged, whether and when code review happens and by whom, whether UI quality is checked and when, what you do when a subagent reports a test failure in a file it did not touch, and what you do when a subagent says it is waiting for the test run to complete.",
+      "expected_output": "A wave-based plan: parallel sonnet implementers partitioned by file, orchestrator-owned gate and commits by explicit path, opus review over commits in parallel with the next wave, one interface audit at the end, briefs that forbid running the full suite, no stash, no worktrees, no hand-closing of route tickets, shared files orchestrator-owned.",
+      "files": [],
+      "baseline_failure": "\"`git stash` the subagent's diff, re-run `pnpm test <that file>` against the pre-existing trunk\" — and — \"I run `/code-review` myself (medium effort) against each subagent's diff before staging\" — and — \"Each subagent gets its own worktree\" — and interface checks \"as part of my own verification pass\" per item.",
+      "expectations": [
+        "The plan does not propose `git stash` anywhere",
+        "The plan does not propose a separate git worktree per subagent",
+        "Code review is a separate opus subagent reviewing committed hashes while the next wave runs — not the orchestrator reviewing the working tree before staging",
+        "One interface or design audit runs across all touched UI surfaces after the last item is committed, not a per-item check",
+        "Every subagent brief tells the agent not to run the full test suite and to report immediately when edits are complete; the orchestrator runs the gate",
+        "Route tickets are never closed by hand; commits carry a Closes trailer and the plan says nothing is pushed unless asked",
+        "Shared files such as docs/flows, src/lib/page-config.ts or bruno/ are named as orchestrator-owned so parallel items do not collide on them"
+      ],
+      "runs": 1
+    },
+    {
+      "id": 2,
+      "name": "open-judgment-tickets-user-afk",
+      "prompt": "You are working at the repository root. Read AGENTS.md. The user invoked you to work the whole route of planning map #912 (GitHub issue) and then left — they are AFK for several hours. Read the map with `gh issue view 912`, and tickets #913 and #916 with `gh issue view`. Both are labelled meridian:decision. They are closed now — for this exercise treat both as OPEN and UNRESOLVED with no resolution comment. Route items #917–#926 depend on their answers. State exactly what you would do next, step by step, and why. Do not change any files or issues. Be concrete about what you do with the two open judgment tickets given the user is unreachable, and how you document whatever you decide.",
+      "expected_output": "Resolves both judgment tickets on the user's behalf — takes the ticket's recommendation (naming its weakness) after checking its premises still hold, or drills it with 2–3 opus scouts — records each resolution on the ticket and the map's Decision log, then proceeds to work the route items rather than halting after #926.",
+      "files": [],
+      "baseline_failure": "\"Do not answer #913 or #916 myself, and do not proceed past them by picking their 'Recommendation' text — that's a suggestion, not a resolution, and the label says only the user decides.\" Then: \"Stop the route there. Report to the user on return: 1 item shipped (#926), rest blocked on two calls only they can make.\"",
+      "expectations": [
+        "The plan resolves both #913 and #916 during this run rather than leaving them for the user",
+        "For each ticket, the plan either takes the ticket's recommendation and names its accepted weakness, or spawns two or three parallel scouts to attack every option before the orchestrator decides",
+        "The plan checks that a ticket's stated premises still hold on current main before taking its recommendation",
+        "Each resolution is recorded on the ticket and in the map's Decision log before any route item is started",
+        "The plan proceeds to work the dependent route items (#917 onward), not only the unblocked #926"
+      ],
+      "runs": 1
+    }
+  ],
+  "triggers": {
+    "positive": [
+      "map 912 is route-ready, work the whole thing end to end and don't stop to ask me",
+      "sail the whole route on #912 — I'm out for the afternoon",
+      "convoy this map",
+      "ship the entire map, every ticket, I'll review the commits tomorrow",
+      "run all the route items on the question-extras map unattended",
+      "there are still two judgment tickets open on #912 but just take your recommendations and do all of it",
+      "do every ticket on the map, reviews included, then tell me what shipped",
+      "work #912 to done — all ten items"
+    ],
+    "near_miss": [
+      "work the next ticket on map 912",
+      "take the first move on #912",
+      "chart a map for the leaderboard redesign",
+      "plan out how we'd add team play",
+      "run tend-security and fix whatever it finds",
+      "fix the flag button on the results page",
+      "review the last three commits for bugs",
+      "what's left on the frontier of #912?"
+    ],
+    "holdout": [
+      "912 — go, everything, I'm afk",
+      "ship the map",
+      "work the frontier",
+      "just implement #917",
+      "resolve the open judgment tickets on 912 for me, then start the route",
+      "write the spec for map 912",
+      "do the interface audit on the results page"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Eval Review — refuter</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --line: #e5e7eb;
+    --card: #f9fafb; --accent: #2563eb; --pass: #15803d; --fail: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e6e6e6; --muted: #9ca3af; --line: #2a2f3a;
+      --card: #171a21; --accent: #60a5fa; --pass: #4ade80; --fail: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 6rem; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .eval { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 1.5rem; overflow: hidden; }
+  .eval > header { padding: .85rem 1rem; background: var(--card); border-bottom: 1px solid var(--line); }
+  .eval h2 { font-size: 1rem; margin: 0; }
+  .prompt { margin: .5rem 0 0; color: var(--muted); white-space: pre-wrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .col { background: var(--bg); padding: 1rem; min-width: 0; }
+  .col h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 .6rem; }
+  pre {
+    margin: 0; padding: .75rem; background: var(--card); border-radius: 6px;
+    overflow-x: auto; white-space: pre-wrap; word-break: break-word; font-size: 13px;
+  }
+  ul.assertions { list-style: none; padding: 0; margin: .75rem 0 0; font-size: 13px; }
+  ul.assertions li { padding: .2rem 0; }
+  .pass { color: var(--pass); } .fail { color: var(--fail); }
+  .fb { padding: 1rem; border-top: 1px solid var(--line); }
+  .fb label { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .4rem; }
+  textarea {
+    width: 100%; min-height: 72px; padding: .6rem; border-radius: 6px; resize: vertical;
+    border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; font-size: 14px;
+  }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: .85rem 1.25rem;
+    background: var(--card); border-top: 1px solid var(--line); text-align: center;
+  }
+  button {
+    padding: .6rem 1.4rem; font: inherit; font-weight: 600; color: #fff; background: var(--accent);
+    border: 0; border-radius: 6px; cursor: pointer;
+  }
+  .note { color: var(--muted); font-size: 13px; margin-left: .75rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Eval Review — refuter</h1>
+  <p class="sub">Compare each with-artifact output against its baseline, then leave feedback. Your notes drive the next iteration.</p>
+  <div id="evals"></div>
+</div>
+
+<div class="bar">
+  <button id="export">Export feedback</button>
+  <span class="note">Downloads feedback.json — save it beside the eval suite.</span>
+</div>
+
+<script>
+// Replaced at fill time with the eval array. Shape:
+// [{ id, name, prompt, with_artifact, baseline, assertions: [{text, passed}] }]
+const EVALS = [{"id": 1, "name": "false-premise-recommendation", "prompt": "Repo: the current directory. A planning session is about to present this to the owner as settled:\n\n\"Recommendation: brief builder subagents to rerun one test file per cycle with `pnpm test <path>`. It runs only the named test file, so builders never run the full suite and stay fast.\"\n\nTry to disprove this recommendation before it is presented. Do not edit any file in the repo. Return your verdict and evidence.", "with_artifact": "## CLAIM 1 — REJECTED\nThe recommendation fails. `pnpm test <path>` does not run only the named file. It runs the full root suite, and the path goes to a different package's test command.\n\nLOAD-BEARING: `pnpm test <path>` runs only the named test file.\n## ATTACKED\n- The root `test` script passes the path to vitest — **Exists** — false. The script is a chain: `vitest run && pnpm --filter @orakl/protocol test && pnpm --filter @orakl/shared test && pnpm --filter @orakl/client-core test` — `package.json:14`\n- pnpm puts extra args on the first command — **Exists** — false. pnpm adds them to the end of the whole string, so only the last command gets them. I copied the chain's shape into a throwaway script in the scratchpad and ran `pnpm test tests/foo.test.ts` → `echo ROOT-VITEST-ARGS:[] && echo LAST-CMD-ARGS: tests/foo.test.ts`. The first command got no args (pnpm 10.28.0).\n- What runs instead — **Impact** — the root `vitest run` gets no filter, so the full root suite runs. Then the protocol and shared suites run. Then `vitest run <path>` runs inside `packages/client-core` (`packages/client-core/package.json:11`). A root path like `tests/x.test.ts` matches nothing there. Vitest normally exits non-zero when no test files match, so the builder may see a failure for a file that passed.\n- \"Builders stay fast\" — **Wrong if** the command runs the full suite — it does on the current tree. The cost is the full suite plus three package suites on every cycle.\n- Fix: use `pnpm vitest run <path>` at the root, or `pnpm --filter <pkg> test <path>` inside `packages/`.\n## STRONGEST OBJECTION\nnone\n## COULD NOT EXAMINE\n- I did not run `pnpm test <path>` in the repo itself, because that runs the full suite. My evidence is the scratchpad copy of the chain plus the script text.\n- I did not check vitest's exit code when no files match inside client-core. The \"may see a failure\" point above comes from vitest's usual default, not from a run.", "baseline": "**Verdict: the recommendation is wrong. Do not present it.**\n\n**Evidence**\n\n1. **The root script runs four suites, not one.** `package.json:14`:\n   ```\n   \"test\": \"vitest run && pnpm --filter @orakl/protocol test && pnpm --filter @orakl/shared test && pnpm --filter @orakl/client-core test\"\n   ```\n   pnpm adds the extra args to the end of the whole script string. So `pnpm test <path>` turns into `... && pnpm --filter @orakl/client-core test <path>`. As a result:\n   - The root `vitest run` gets no path and runs the full root suite.\n   - The protocol and shared suites run in full.\n   - Only client-core gets the path. Its script is plain `vitest run` (`packages/client-core/package.json:11`). A repo-root path will most likely match no file there, so that last step finds nothing or fails.\n\n   The net effect is the full suite on every cycle: slow, and maybe a false red. That is the opposite of the claim.\n\n2. **The repo already forbids this exact command.** `.claude/agents/builder.md:29` says: \"Never `pnpm test <path>`: the root script chains four suites with `&&`, and the path reaches only the last of them.\" Line 40 also bans `pnpm test` in any form for builders.\n\n**Correct form (already in builder.md:29)**\n- Root test: `pnpm vitest run <path>`\n- Package test: `pnpm --filter <pkg> test <path>`\n\n**Not checked:** I did not run the command, so the client-core exit code (\"no test files\" error vs pass) is my reading of the scripts, not observed output. The main point, that the full suite runs, follows from the script text alone.", "assertions": [{"text": "The verdict is exactly one of the words SURVIVED, REJECTED, or DOWNGRADED, and it is REJECTED", "passed": true}, {"text": "Cites package.json with a line number for the test script that chains suites with &&", "passed": true}, {"text": "Names what it could not examine, or states that nothing was left unexamined, in a dedicated section", "passed": true}, {"text": "Does not describe the recommendation, or any claim, as verified, confirmed, or correct", "passed": true}]}, {"id": 2, "name": "overstated-severity-finding", "prompt": "Repo: the current directory. Try to disprove this audit finding. Do not edit any file in the repo.\n\n{\"id\":\"T-1\",\"severity\":\"high\",\"title\":\"verify-claims tests fill the disk\",\"files\":[{\"path\":\"tests/verify-claims.test.ts\",\"lines\":[18]}],\"root_cause\":\"repo() in tests/verify-claims.test.ts creates a temp directory with mkdtempSync on every call and never deletes it, allowing test runs to fill the CI disk\",\"fix_approach\":\"Remove the temp directories in an afterEach hook\"}", "with_artifact": "## CLAIM T-1 — DOWNGRADED to low\nLOAD-BEARING: the leak is big enough to \"fill the CI disk\". The leak is real. The impact claimed is not.\n\n## ATTACKED\n- `repo()` calls `mkdtempSync` and never deletes the dir — Exists — holds. Line 18 makes the dir. The file has no `rmSync`, `afterEach` or `afterAll`, and it imports only `mkdtempSync` and `writeFileSync` — tests/verify-claims.test.ts:2,17-21\n- Another layer cleans up — Mitigated — fails. Global setup only pins a libsql client and its teardown only closes it. The per-test setup has no tmp cleanup — tests/global-setup.ts:8-12; `grep -nE \"tmp|rm\" tests/setup.ts` → no matches\n- The leak happens in practice — Exists — holds. `ls -d /tmp/verify-claims-*` → 108 dirs left behind on this machine\n- Size per run — Impact — very small. The 9 tests make 9 dirs per run. Each holds one 158-byte `a.ts`. The 108 leaked dirs use 864 KB in total (`du -sc` → 864), about 8 KB per dir and about 72 KB per run. The disk has 30 GB free, so a full disk needs about 400k runs on one host.\n- \"Fill the CI disk\" — Impact — fails. The `pnpm test` job runs on `ubuntu-latest`, a GitHub-hosted runner that is new for each job, so leaked dirs cannot pile up across CI runs. One run leaks about 72 KB — .github/workflows/ci.yml:26 (runs-on), ci.yml:44 (`- run: pnpm test`)\n- Intended — no ADR or Decision-log line was supplied that makes the leak deliberate. This attack fails.\n\n## STRONGEST OBJECTION\nnone. The real effect is about 72 KB of tmp clutter per run on long-lived dev machines. On CI it cannot build up. The suggested fix (an `afterEach`/`afterAll` with `rmSync(dir, { recursive: true, force: true })`) is still cheap and right.\n\n## COULD NOT EXAMINE\n- Whether self-hosted runners or other long-lived CI hosts run this suite. I found none in `.github/workflows/`, but other infrastructure outside the repo was not visible.", "baseline": "**Verdict: downgraded. The leak is real, but it cannot fill the disk. Severity should be low, not high.**\n\n**What holds:**\n- `repo()` at `tests/verify-claims.test.ts:18` makes a new temp dir on every call. No test removes it, and there is no `afterEach` or `afterAll`.\n- The global setup (`tests/global-setup.ts`) does not clean temp files. It only pins libsql.\n- `.claude/helpers/verify-claims.mjs` writes no files of its own.\n\n**What fails (the \"fill the CI disk\" claim):**\n1. **Size is tiny.** `repo()` is called 9 times per run. Each dir holds one 99-byte `a.ts`, which takes about 8 KB on disk. That is about 72 KB per run, so even 10,000 local runs come to about 720 MB.\n2. **CI does not keep anything between runs.** `ci.yml` runs `pnpm test` on `runs-on: ubuntu-latest`. These are GitHub-hosted runners: a fresh VM for each job, deleted after the job. Leaked dirs never carry over to the next run, so they cannot build up on CI.\n3. **Only local `/tmp` builds up.** On a dev machine, the OS usually clears `/tmp` at reboot or with tmpfiles cleanup.\n\n**Corrected finding:**\n- **Severity:** low (temp-file hygiene).\n- **Root cause:** unchanged.\n- **Impact:** leftover dirs in the local `/tmp` only, not a CI disk risk.\n- **Fix:** still valid but optional. Keep the created dirs in a list and run `rmSync(d, { recursive: true, force: true })` on each in `afterAll`. Or make one shared repo in `beforeAll`, because no test changes the file.\n\n**What I could not check:** whether a self-hosted runner exists outside this repo's workflow files. All 15 `runs-on` entries in `.github/workflows` are `ubuntu-latest`.", "assertions": [{"text": "The verdict is exactly one of SURVIVED, REJECTED, or DOWNGRADED, and it is DOWNGRADED", "passed": true}, {"text": "Confirms the mkdtempSync call in tests/verify-claims.test.ts with a line number", "passed": true}, {"text": "Supports the lower impact with evidence it produced or cited (file count, file size, or how many times repo() is called), not with an unstated assumption", "passed": true}, {"text": "Does not call the claim or its verdict verified, confirmed, or correct (reporting that a single premise holds is allowed)", "passed": true}]}, {"id": 3, "name": "decision-log-taken-as-given", "prompt": "Repo: the current directory. Before this goes to the owner, try to disprove the recommendation below. Do not edit any file in the repo.\n\nRecommendation (one-way): delete .claude/skills/meridian/references/trackers/jira.md and every Jira mention in the meridian and transit skills.\n\nIt rests on this Decision-log line, settled by the owner today: \"3 | Tracker support | Jira is out of scope; GitHub issues and local markdown only | J\"", "with_artifact": "## CLAIM 1: SURVIVED\nLOAD-BEARING: removing `jira.md` and the Jira mentions breaks nothing the GitHub-issues and local-markdown paths need. The Decision-log line is taken as given, as the owner's settled choice.\n## ATTACKED\n- Delete breaks a loader — Wrong if — failed. Meridian loads `references/trackers/<tracker>.md` only after the tracker resolves, and it falls back to `local-markdown.md` when the doc is missing. Nothing outside `jira.md` reads it by name — `.claude/skills/meridian/SKILL.md:28`; grep finds no other path that points to `trackers/jira`.\n- Scripts or evals depend on Jira — Wrong if — failed. `validate-map.mjs`, `meridian/evals/evals.json` and `transit/evals/evals.json` have no Jira match. The only repo-level match is the eval prompt `.claude/agents/evals/refuter.json:35`, which is outside the two skills — grep `(?i)jira`.\n- The skills are vendored, so a sync would undo the edit — Wrong if — failed. Neither `meridian` nor `transit` has an entry in `skills-lock.json`, so they are local skills — grep on `skills-lock.json` returned nothing.\n- Jira mentions sit inside text the other trackers also need — Impact — partly holds, but it does not break the recommendation. `.claude/skills/transit/SKILL.md:39` reads \"(Jira or local: the repo's git remote)\". The same clause covers local-markdown, so a blunt delete of the clause would remove the local guidance as well. The full set of mentions to edit is:\n  - `transit/SKILL.md:3` (description)\n  - `meridian/SKILL.md:15`, `:16`, `:26`\n  - `meridian/assets/PLAN.template.md:3`\n- Intended — n/a. The Decision-log line supports the deletion; it does not argue against it.\n## STRONGEST OBJECTION\nDoing this right takes more than a mechanical delete. At `transit/SKILL.md:39`, change \"Jira or local\" to \"local\" and keep the git-remote rule. At `meridian/SKILL.md:16`, the hint about \"Jira keys in commits\" also goes, which leaves `.github/ISSUE_TEMPLATE/` and open remote issues as the only tracker signals. This affects how the edit is done, not whether to do it. The change is also one-way: it removes work that would have to be written again if Jira comes back in scope. The Decision-log line already settles that question.\n## COULD NOT EXAMINE\n- Whether any session or Routine outside this repo has `Tracker: jira` stored in its own CONTEXT.md or AGENTS.md. This repo's `## Planning` line says `github-issues`. A session that resolves to `jira` after the delete would quietly fall back to `local-markdown` (`meridian/SKILL.md:28`) and would not be told Jira is unsupported.\n- outside the claim: `.claude/skills/ai-forge-create/references/agent-patterns.md:99,109` mentions Jira. It is not part of meridian or transit, so this recommendation leaves it in place.", "baseline": "**Verdict: downgraded. Don't send this to the owner yet.** Removing Jira is probably fine for Orakl, but the decision behind it can't be found, and it isn't one-way.\n\n**1. I couldn't find the decision line.**\n- No `plans/` file contains \"Tracker support\" or \"Jira is out of scope\".\n- The two maps opened or updated today (#1437 question rating, #1420 ECC distillation) don't have it. #1437's log has only row 1, and #1420's row 3 is \"ECC planning skills\".\n- Limit: GitHub search is blocked in this session (both the GraphQL and the search endpoint). I didn't check the closed maps' bodies or comments, so the row may exist somewhere I didn't look.\n\n**2. \"One-way\" is wrong.**\n- `PLAN.template.md:22` defines one-way as \"only a migration, contract change, or rewrite undoes it\". A tracked file deleted in a skill comes back with `git revert`, so this is a two-way change.\n- The quoted row also has no `one-way` marker.\n\n**3. The scope is stretched.**\n- Decision-log rows belong to one map. \"Jira is out of scope\" may only mean \"this map won't build Jira\", not \"remove the Jira support that exists\".\n- Today's commit `9bf068f` rewrote `meridian/SKILL.md:15` and kept `jira` in the tracker list. That's a weak counter-signal: Claude made the commit, not the owner.\n\n**4. The edit list is incomplete.** \"Every Jira mention\" means:\n- `meridian/SKILL.md:15`, `:16` (the hint about \"Jira keys in commits\"), and `:26` (the Jira config line)\n- `meridian/assets/PLAN.template.md:3` (the `Tracker:` enum)\n- `transit/SKILL.md:3` (description) and `:39` (the \"Jira or local\" fallback for reading PRs)\n- `references/trackers/jira.md`\n\nOutside the two skills, `ai-forge-create/references/agent-patterns.md` also mentions Jira. It's out of scope, so say so explicitly. Nothing in `validate-map.mjs` or the evals depends on Jira.\n\n**What holds:** Orakl's configured tracker is github-issues (AGENTS.md § Planning). I saw no Jira use in the repo, so the deletion itself breaks nothing here.\n\n**Before it goes to the owner:**\n1. Cite the map and issue number that holds row 3.\n2. Change \"one-way\" to two-way.\n3. List the full edit set above.\n\nNote: this exact prompt is a fixture in `.claude/agents/evals/refuter.json:35`. I didn't read its expected answer.", "assertions": [{"text": "Does not reject the recommendation on the grounds that the repo still contains or references Jira files", "passed": true}, {"text": "Treats the Decision-log line as a settled premise rather than something to check against code", "passed": true}, {"text": "The verdict is exactly one of SURVIVED, REJECTED, or DOWNGRADED", "passed": true}, {"text": "If SURVIVED, names the strongest objection still standing", "passed": true}]}];
+
+const root = document.getElementById('evals');
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function column(title, body, assertions) {
+  const col = el('div', 'col');
+  col.appendChild(el('h3', null, title));
+  col.appendChild(el('pre', null, body || '(no output captured)'));
+  if (assertions && assertions.length) {
+    const ul = el('ul', 'assertions');
+    for (const a of assertions) {
+      const li = el('li', a.passed ? 'pass' : 'fail', (a.passed ? '✓ ' : '✗ ') + a.text);
+      ul.appendChild(li);
+    }
+    col.appendChild(ul);
+  }
+  return col;
+}
+
+EVALS.forEach((ev, i) => {
+  const card = el('div', 'eval');
+
+  const head = el('header');
+  head.appendChild(el('h2', null, `${i + 1}. ${ev.name || 'eval-' + ev.id}`));
+  head.appendChild(el('p', 'prompt', ev.prompt));
+  card.appendChild(head);
+
+  const cols = el('div', 'cols');
+  cols.appendChild(column('With artifact', ev.with_artifact, ev.assertions));
+  cols.appendChild(column('Baseline', ev.baseline, null));
+  card.appendChild(cols);
+
+  const fb = el('div', 'fb');
+  const label = el('label', null, 'Feedback');
+  label.setAttribute('for', 'fb-' + i);
+  const ta = el('textarea');
+  ta.id = 'fb-' + i;
+  ta.dataset.runId = (ev.name || 'eval-' + ev.id) + '-with_artifact';
+  ta.placeholder = 'What is wrong, missing, or surprising here? Leave blank if it looks right.';
+  fb.appendChild(label);
+  fb.appendChild(ta);
+  card.appendChild(fb);
+
+  root.appendChild(card);
+});
+
+document.getElementById('export').addEventListener('click', () => {
+  const reviews = Array.from(document.querySelectorAll('textarea')).map(t => ({
+    run_id: t.dataset.runId,
+    feedback: t.value.trim()
+  }));
+  const payload = JSON.stringify({ artifact: 'refuter', reviews, status: 'complete' }, null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'feedback.json';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>

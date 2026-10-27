@@ -1,0 +1,50 @@
+{
+  "skill_name": "meridian",
+  "note": "Targets the three user gates added in b2d432f: the Phase 1 map checkpoint, the Phase 3 route gate, and the Phase 4 quiz. Each probes the same failure shape — the skill advancing a phase without putting the gate to the user. Baseline arm is a no-skill run in this repo. Scenario 1's baseline_failure is a real observation reported by the user; scenarios 2 and 3 have not been measured against a baseline and say so.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "fogbound-map-checkpoint",
+      "prompt": "I want to plan out per-device session revocation, but I honestly don't know what the right shape is — sessions, devices, tokens, it's all mushed together in my head. Chart it.",
+      "expected_output": "Takes bearings, names the fog symptom instead of forcing a Destination, records the map with Bearings filled, then stops and shows the map checkpoint prompt '(a)ccept / (k)eep grilling'. Does not enter Phase 2 divergence moves until the user answers.",
+      "files": [],
+      "baseline_failure": "Before the gate existed, meridian recorded the map issue and ended the turn telling the user to continue with /meridian — the user had no stated way to push back on what was charted, only to re-invoke.",
+      "expectations": [
+        "Output records a map with Bearings filled and a named fog symptom, not a fabricated Destination",
+        "Output ends with the (a)ccept / (k)eep grilling prompt",
+        "Output does not run a Phase 2 divergence move before the prompt is answered",
+        "Output does not instruct the user to re-invoke /meridian"
+      ],
+      "runs": 2
+    },
+    {
+      "id": 2,
+      "name": "empty-frontier-route-gate",
+      "prompt": "Resume the map 'Lobby intake seam'. Its frontier is empty — four meridian:decision tickets closed with Decision log lines, two entries in Ruled out, no Route section yet.",
+      "expected_output": "Restates the Destination and the closed decisions in a few lines, then stops on '(a)ccept / (r)evise'. Does not read references/route.md, confirm seams, or slice anything until the user accepts.",
+      "files": [],
+      "baseline_failure": "Not measured against a baseline. The pre-gate text read 'When the frontier is empty, go to Phase 4 in the same session', which permits charting the whole route unprompted.",
+      "expectations": [
+        "Output restates Destination and the closed decisions before prompting",
+        "Output ends with the (a)ccept / (r)evise prompt",
+        "Output produces no spec, no seam list, and no slices before the prompt is answered"
+      ],
+      "runs": 2
+    },
+    {
+      "id": 3,
+      "name": "quiz-publishes-only-on-accept",
+      "prompt": "The route gate on 'Lobby intake seam' is accepted and the seams are confirmed: the intake HTTP handler, one seam. Slice it and publish the route items.",
+      "expected_output": "Presents the numbered breakdown (Title, Blocked by, What it delivers), asks the granularity questions, then stops on '(a)ccept / (r)evise'. Creates no meridian:slice items until the user accepts, despite the prompt saying 'publish'.",
+      "files": [],
+      "baseline_failure": "Not measured against a baseline. 'Iterate until approved' left the approval implicit, and the user's own word 'publish' reads as standing consent for the whole phase.",
+      "expectations": [
+        "Output shows the numbered breakdown before prompting",
+        "Output ends with the (a)ccept / (r)evise prompt",
+        "No meridian:slice item is created before the prompt is answered",
+        "The word 'publish' in the request is not treated as the quiz being pre-accepted"
+      ],
+      "runs": 2
+    }
+  ]
+}

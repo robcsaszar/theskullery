@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Eval Review — __ARTIFACT_NAME__</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --line: #e5e7eb;
+    --card: #f9fafb; --accent: #2563eb; --pass: #15803d; --fail: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e6e6e6; --muted: #9ca3af; --line: #2a2f3a;
+      --card: #171a21; --accent: #60a5fa; --pass: #4ade80; --fail: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 6rem; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .eval { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 1.5rem; overflow: hidden; }
+  .eval > header { padding: .85rem 1rem; background: var(--card); border-bottom: 1px solid var(--line); }
+  .eval h2 { font-size: 1rem; margin: 0; }
+  .prompt { margin: .5rem 0 0; color: var(--muted); white-space: pre-wrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .col { background: var(--bg); padding: 1rem; min-width: 0; }
+  .col h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 .6rem; }
+  pre {
+    margin: 0; padding: .75rem; background: var(--card); border-radius: 6px;
+    overflow-x: auto; white-space: pre-wrap; word-break: break-word; font-size: 13px;
+  }
+  ul.assertions { list-style: none; padding: 0; margin: .75rem 0 0; font-size: 13px; }
+  ul.assertions li { padding: .2rem 0; }
+  .pass { color: var(--pass); } .fail { color: var(--fail); }
+  .fb { padding: 1rem; border-top: 1px solid var(--line); }
+  .fb label { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .4rem; }
+  textarea {
+    width: 100%; min-height: 72px; padding: .6rem; border-radius: 6px; resize: vertical;
+    border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; font-size: 14px;
+  }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: .85rem 1.25rem;
+    background: var(--card); border-top: 1px solid var(--line); text-align: center;
+  }
+  button {
+    padding: .6rem 1.4rem; font: inherit; font-weight: 600; color: #fff; background: var(--accent);
+    border: 0; border-radius: 6px; cursor: pointer;
+  }
+  .note { color: var(--muted); font-size: 13px; margin-left: .75rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Eval Review — __ARTIFACT_NAME__</h1>
+  <p class="sub">Compare each with-artifact output against its baseline, then leave feedback. Your notes drive the next iteration.</p>
+  <div id="evals"></div>
+</div>
+
+<div class="bar">
+  <button id="export">Export feedback</button>
+  <span class="note">Downloads feedback.json — save it beside the eval suite.</span>
+</div>
+
+<script>
+// Replaced at fill time with the eval array. Shape:
+// [{ id, name, prompt, with_artifact, baseline, assertions: [{text, passed}] }]
+const EVALS = __EVAL_DATA__;
+
+const root = document.getElementById('evals');
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function column(title, body, assertions) {
+  const col = el('div', 'col');
+  col.appendChild(el('h3', null, title));
+  col.appendChild(el('pre', null, body || '(no output captured)'));
+  if (assertions && assertions.length) {
+    const ul = el('ul', 'assertions');
+    for (const a of assertions) {
+      const li = el('li', a.passed ? 'pass' : 'fail', (a.passed ? '✓ ' : '✗ ') + a.text);
+      ul.appendChild(li);
+    }
+    col.appendChild(ul);
+  }
+  return col;
+}
+
+EVALS.forEach((ev, i) => {
+  const card = el('div', 'eval');
+
+  const head = el('header');
+  head.appendChild(el('h2', null, `${i + 1}. ${ev.name || 'eval-' + ev.id}`));
+  head.appendChild(el('p', 'prompt', ev.prompt));
+  card.appendChild(head);
+
+  const cols = el('div', 'cols');
+  cols.appendChild(column('With artifact', ev.with_artifact, ev.assertions));
+  cols.appendChild(column('Baseline', ev.baseline, null));
+  card.appendChild(cols);
+
+  const fb = el('div', 'fb');
+  const label = el('label', null, 'Feedback');
+  label.setAttribute('for', 'fb-' + i);
+  const ta = el('textarea');
+  ta.id = 'fb-' + i;
+  ta.dataset.runId = (ev.name || 'eval-' + ev.id) + '-with_artifact';
+  ta.placeholder = 'What is wrong, missing, or surprising here? Leave blank if it looks right.';
+  fb.appendChild(label);
+  fb.appendChild(ta);
+  card.appendChild(fb);
+
+  root.appendChild(card);
+});
+
+document.getElementById('export').addEventListener('click', () => {
+  const reviews = Array.from(document.querySelectorAll('textarea')).map(t => ({
+    run_id: t.dataset.runId,
+    feedback: t.value.trim()
+  }));
+  const payload = JSON.stringify({ artifact: '__ARTIFACT_NAME__', reviews, status: 'complete' }, null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'feedback.json';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>

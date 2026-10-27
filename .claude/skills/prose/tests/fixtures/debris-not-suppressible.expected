@@ -1,0 +1,7 @@
+debris.md:3: [DEBRIS/chat-opener] 'Certainly!' — chat-session phrase leaked into the text
+debris.md:5: [DEBRIS/cutoff] 'As of my last training update' — model self-reference
+debris.md:7: [DEBRIS/citation-debris] 'utm_source=chatgpt.com' — machine citation debris in links or text
+debris.md:9: [DEBRIS/placeholder] '[Your Name]' — unfilled placeholder
+debris.md:11: [DEBRIS/chat-closer] 'I hope this helps' — chat-session phrase leaked into the text
+debris.md: summary — 5 debris, 0 flags, 0 structure notes
+exit=2

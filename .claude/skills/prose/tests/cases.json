@@ -1,0 +1,93 @@
+[
+  {
+    "id": "clean-blog",
+    "fixture": "clean-blog.md",
+    "channel": "blog",
+    "asserts": "Human prose stays silent. This is the false-positive guard: if a change to the rule tables makes this case fail, the change is wrong."
+  },
+  {
+    "id": "slop-blog",
+    "fixture": "slop-blog.md",
+    "channel": "blog",
+    "asserts": "Every phrase family fires: inflation, promo, parallelism, disclaimer, connective, vocab, copula, attribution, hook, summary, merism."
+  },
+  {
+    "id": "debris",
+    "fixture": "debris.md",
+    "channel": "blog",
+    "asserts": "Chat artifacts, cutoff self-reference, tracking parameters, and placeholders all report as DEBRIS and force exit 2."
+  },
+  {
+    "id": "debris-not-suppressible",
+    "fixture": "debris.md",
+    "channel": "blog",
+    "allow": ["chat-closer", "chat-opener", "cutoff", "citation-debris", "placeholder"],
+    "asserts": "--allow cannot silence DEBRIS. Output and exit code match the un-allowed run exactly."
+  },
+  {
+    "id": "docs-procedure",
+    "fixture": "docs-procedure.md",
+    "channel": "docs",
+    "asserts": "A well-formed procedure is clean under docs. Uniform paragraphs and steady sentence length are correct here and must not be reported."
+  },
+  {
+    "id": "docs-procedure-as-blog",
+    "fixture": "docs-procedure.md",
+    "channel": "blog",
+    "asserts": "The same file under blog reports the structure notes that docs suppresses. Proves CHANNEL_SUPPRESS is doing the work rather than the rules being dead."
+  },
+  {
+    "id": "creative-scene",
+    "fixture": "creative-scene.md",
+    "channel": "creative",
+    "asserts": "Dialogue with interrupting em dashes is clean under creative."
+  },
+  {
+    "id": "creative-scene-as-blog",
+    "fixture": "creative-scene.md",
+    "channel": "blog",
+    "asserts": "The same scene under blog flags the em dashes. Same proof in the other direction."
+  },
+  {
+    "id": "nominalization",
+    "fixture": "nominalization.md",
+    "channel": "docs",
+    "asserts": "Each nominalization and wordiness pattern fires once, on its own line."
+  },
+  {
+    "id": "noun-stack",
+    "fixture": "noun-stack.md",
+    "channel": "docs",
+    "asserts": "The three real stacks fire. The six ordinary sentences below them, including the verb phrases that earlier versions of the rule misread as stacks, stay silent."
+  },
+  {
+    "id": "clean-technical",
+    "fixture": "clean-technical.md",
+    "channel": "blog",
+    "asserts": "The second false-positive guard, aimed at the staging and repetition rules. Human prose that brushes every one of them — 'she answered quietly', 'deeply nested', 'the first time I have seen', 'scope creep', a real question the text goes on to answer — stays silent. If a rule change makes this case fail, the change is wrong."
+  },
+  {
+    "id": "staging",
+    "fixture": "staging.md",
+    "channel": "blog",
+    "asserts": "Every staging and assertion family fires: futurism, manufactured suspense, countdown negation, rhetorical fragment, dramatic reveal, asserted obviousness, magic adverb, unicode arrows, and grandiose stakes."
+  },
+  {
+    "id": "repetition",
+    "fixture": "repetition.md",
+    "channel": "blog",
+    "asserts": "The structural tells fire on a runbook read as a blog post: anaphora, ordinal-labelled paragraphs, a verbatim duplicated block, and menu-path arrows. The duplicated paragraph reports once, not again at sentence level."
+  },
+  {
+    "id": "repetition-as-docs",
+    "fixture": "repetition.md",
+    "channel": "docs",
+    "asserts": "The same file under docs is completely silent. Procedures enumerate steps, repeat warnings on purpose, open consecutive steps the same way, and write menu paths with arrows. Proves the new CHANNEL_SUPPRESS entries do the work rather than the rules being dead."
+  },
+  {
+    "id": "concept-labels",
+    "fixture": "concept-labels.md",
+    "channel": "blog",
+    "asserts": "The three coined labels fire as one note. The four established terms in the same file — scope creep, the sunk cost fallacy, a power vacuum, the productivity paradox — stay out of it, proving the allowlist works."
+  }
+]

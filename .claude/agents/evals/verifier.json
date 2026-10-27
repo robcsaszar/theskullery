@@ -1,0 +1,47 @@
+{
+ "agent_name": "verifier",
+ "evals": [
+  {
+   "id": 1,
+   "name": "ambiguous-and-moved-lines",
+   "prompt": "Repo: the current directory. Verify these claims:\n\n1. .claude/skills/transit/SKILL.md:31 — `stated facts still hold`\n2. .claude/skills/convoy/references/gate.md:40 — `## Tombstone guard`\n3. src/lib/page-config.ts:1 — `export const PAGE_CONFIG`\n4. .claude/skills/meridian/references/route.md:12 — `## Seams`",
+   "expected_output": "1 VERIFIED; 2 CORRECTED → 84; 3 CORRECTED → 123; 4 UNSURE naming 17 and 67.",
+   "baseline_failure": "Claim 4 reported as 'CORRECTED line: 12 → 17' — picked the nearest match and never said line 65 (now 67) matched too.",
+   "expectations": [
+    "Claim 4 is UNSURE and names both line 17 and line 67",
+    "Claim 2 is CORRECTED to line 84",
+    "Claim 3 is CORRECTED to line 123",
+    "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE",
+    "No prose, table, or explanation of what the code does beyond one line per claim and a script status line"
+   ],
+   "runs": 1
+  },
+  {
+   "id": 2,
+   "name": "described-locations",
+   "prompt": "Repo: the current directory. A route item lists these Known locations. Check each still holds before a builder is briefed to trust them.\n\n- src/lib/page-config.ts:700 — getPageConfig's fallback return for routes with no entry\n- tests/labels.test.ts:8 — the list of paths the label test scans\n- src/lib/legal/ledger.ts:300 — the PROCESSORS list declaration",
+   "expected_output": "738 CORRECTED, 8 VERIFIED, 386 CORRECTED.",
+   "baseline_failure": "Answered with a markdown table and ✓/✗ marks plus a summary paragraph instead of one verdict per claim.",
+   "expectations": [
+    "The PROCESSORS claim is CORRECTED to line 386",
+    "The fallback claim is CORRECTED to line 738",
+    "The labels claim is VERIFIED at line 8",
+    "Uses the verdict words VERIFIED, CORRECTED, REJECTED, or UNSURE rather than ✓/✗ marks or a table"
+   ],
+   "runs": 1
+  },
+  {
+   "id": 3,
+   "name": "sha-is-read-at",
+   "prompt": "Repo: the current directory. Verify these claims:\n\n1. .claude/skills/convoy/references/gate.md:18 — `Compare the lint count to the baseline` @c0f94d6\n2. package.json:14 — `\"test\": \"vitest run &&` @c0f94d6",
+   "expected_output": "1 REJECTED: @c0f94d6 marks when the claim was read, so the current tree is checked and the text is no longer there; 2 VERIFIED.",
+   "baseline_failure": "",
+   "expectations": [
+    "Claim 1 is REJECTED, not VERIFIED",
+    "Claim 2 is VERIFIED at package.json line 14",
+    "Every claim gets exactly one verdict word from VERIFIED, CORRECTED, REJECTED, UNSURE"
+   ],
+   "runs": 1
+  }
+ ]
+}

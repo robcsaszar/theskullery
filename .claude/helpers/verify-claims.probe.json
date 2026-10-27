@@ -1,0 +1,240 @@
+[
+ {
+  "id": "1",
+  "path": "src/lib/page-config.ts",
+  "line": 700,
+  "describes": "getPageConfig's fallback return for routes with no entry",
+  "want": 738,
+  "sha": "9f72152"
+ },
+ {
+  "id": "2",
+  "path": "src/lib/page-config.ts",
+  "line": 10,
+  "describes": "the getPageConfig function declaration",
+  "want": 730,
+  "sha": "9f72152"
+ },
+ {
+  "id": "3",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 300,
+  "describes": "the PROCESSORS list declaration",
+  "want": 386,
+  "sha": "9f72152"
+ },
+ {
+  "id": "4",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 10,
+  "describes": "the LEDGER rows array declaration",
+  "want": 74,
+  "sha": "9f72152"
+ },
+ {
+  "id": "5",
+  "path": "tests/labels.test.ts",
+  "line": 1,
+  "describes": "the list of paths the label test scans",
+  "want": 8,
+  "sha": "9f72152"
+ },
+ {
+  "id": "6",
+  "path": ".claude/skills/convoy/references/gate.md",
+  "line": 40,
+  "describes": "the Tombstone guard section heading",
+  "want": 84,
+  "sha": "9f72152"
+ },
+ {
+  "id": "7",
+  "path": ".claude/skills/meridian/references/route.md",
+  "line": 12,
+  "describes": "the Seams heading inside the route item body template",
+  "want": 67,
+  "sha": "9f72152"
+ },
+ {
+  "id": "8",
+  "path": "package.json",
+  "line": 1,
+  "describes": "the root test script",
+  "want": 14,
+  "sha": "9f72152"
+ },
+ {
+  "id": "9",
+  "path": "src/lib/page-config.ts",
+  "line": 700,
+  "describes": "the database migration runner",
+  "want": null,
+  "sha": "9f72152"
+ },
+ {
+  "id": "10",
+  "path": ".claude/hooks/agent-guard.sh",
+  "line": 1,
+  "describes": "the case statement that maps agent names to guard modes",
+  "want": 14,
+  "sha": "9f72152"
+ },
+ {
+  "id": "11",
+  "path": ".claude/agents/builder.md",
+  "line": 1,
+  "describes": "the NEVER rule against committing or stashing",
+  "want": 43,
+  "sha": "9f72152"
+ },
+ {
+  "id": "12",
+  "path": "vitest.config.ts",
+  "line": 1,
+  "describes": "the list of paths excluded from the test run",
+  "want": 25,
+  "sha": "9f72152"
+ },
+ {
+  "id": "13",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 300,
+  "describes": "the id of the analytics opt-out cookie row",
+  "want": 300,
+  "sha": "9f72152"
+ },
+ {
+  "id": "14",
+  "path": "tests/verify-claims.test.ts",
+  "line": 1,
+  "describes": "the payment webhook signature check",
+  "want": null,
+  "sha": "9f72152"
+ },
+ {
+  "id": "15",
+  "path": ".claude/skills/crucible/scripts/validate-findings.cjs",
+  "line": 1,
+  "describes": "the --pre-spec check on confirmed findings",
+  "want": 147,
+  "sha": "9f72152"
+ },
+ {
+  "id": "16",
+  "path": ".claude/hooks/branch-naming.sh",
+  "line": 1,
+  "describes": "the early exit when running in CI",
+  "want": 4,
+  "sha": "9f72152"
+ },
+ {
+  "id": "17",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 300,
+  "describes": "the id of the quiz image uploads row",
+  "want": 247,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h1",
+  "path": "src/lib/page-config.ts",
+  "line": 10,
+  "describes": "the PAGE_CONFIG entry for the curator history detail pages",
+  "want": 506,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h2",
+  "path": "src/lib/page-config.ts",
+  "line": 10,
+  "describes": "the PAGE_CONFIG entry for the curator history list page",
+  "want": 480,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h3",
+  "path": "src/lib/page-config.ts",
+  "line": 10,
+  "describes": "the doc comment that introduces getPageConfig",
+  "want": 72,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h4",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 300,
+  "describes": "the Stripe payment processor entry",
+  "want": null,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h5",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 300,
+  "describes": "the PROCESSORS entry for the database host",
+  "want": [
+   387,
+   388
+  ],
+  "sha": "9f72152"
+ },
+ {
+  "id": "h6",
+  "path": ".claude/skills/convoy/SKILL.md",
+  "line": 1,
+  "describes": "the heading of the phase where waves of builders are launched",
+  "want": 46,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h7",
+  "path": ".claude/skills/convoy/SKILL.md",
+  "line": 1,
+  "describes": "the heading of the phase that commits each item",
+  "want": 56,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h8",
+  "path": ".claude/hooks/agent-guard.sh",
+  "line": 1,
+  "describes": "the line that refuses pnpm lint",
+  "want": 45,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h9",
+  "path": ".claude/hooks/agent-guard.sh",
+  "line": 1,
+  "describes": "the check that blocks pushing to the main branch",
+  "want": null,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h10",
+  "path": "src/lib/legal/ledger.ts",
+  "line": 10,
+  "describes": "the uploads row's list of recipients",
+  "want": 259,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h11",
+  "path": "src/lib/page-config.ts",
+  "line": 700,
+  "describes": "where getPageConfig is called",
+  "want": null,
+  "sha": "9f72152"
+ },
+ {
+  "id": "h12",
+  "path": ".claude/skills/meridian/references/route.md",
+  "line": 1,
+  "describes": "the Seams section that explains what a seam is",
+  "want": [
+   17,
+   19
+  ],
+  "sha": "9f72152"
+ }
+]

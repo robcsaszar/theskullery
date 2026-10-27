@@ -1,0 +1,62 @@
+name: 🧭 Transit
+
+# One unattended transit per run. Copy to .github/workflows/ and commit only on an explicit yes.
+# Requires: CLAUDE_CODE_OAUTH_TOKEN secret. Optional: TRANSIT_PR_CAP repo variable (default 2).
+# PRs opened with GITHUB_TOKEN do not trigger CI; the transit's local checks are the only gate unless a PAT is used.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1-5" # transit: cadence
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.cap.outputs.go }}
+    steps:
+      - name: Enforce the open-PR cap before the model starts
+        id: cap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CAP: ${{ vars.TRANSIT_PR_CAP || 2 }}
+        run: |
+          open=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json headRefName \
+            --jq '[.[] | select(.headRefName | startswith("transit/"))] | length')
+          echo "open transit PRs: $open / cap $CAP"
+          if [ "$open" -ge "$CAP" ]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+
+  transit:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v5
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: pnpm install --frozen-lockfile
+      - uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
+          prompt: |
+            Read `.claude/skills/transit/SKILL.md` and run exactly one transit in AFK mode.
+            The workspace is the `## Planning` section of CONTEXT.md, else AGENTS.md.
+            Only tickets that pass every AFK gate are eligible; if none pass, stop without writing.
+            TRANSIT_PR_CAP is ${{ vars.TRANSIT_PR_CAP || 2 }}.
+          claude_args: |
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash,Agent,Task"

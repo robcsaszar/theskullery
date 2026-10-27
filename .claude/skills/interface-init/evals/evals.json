@@ -1,0 +1,49 @@
+{
+  "skill_name": "interface-init",
+  "evals": [
+    {
+      "id": 1,
+      "name": "delegation-and-strategic-discipline",
+      "prompt": "Set up design context for the project at {FIXTURE_DIR} (treat that directory as the project root) so AI coding agents stay on brand. It's a cabin-booking site called Fernwood.",
+      "expected_output": "The flow scans the fixture, runs (or lists) the strategic interview instead of fabricating answers, and sources the DESIGN.md spec from ai-design-dot-md — using it if available or offering the npx install / GitHub one-off choice — never inventing the spec format from memory. No PRODUCT.md is created.",
+      "files": ["eval-proj/package.json", "eval-proj/src/styles.css", "eval-proj/index.html"],
+      "baseline_failure": "Baseline typically writes a freeform DESIGN.md (or style guide) immediately from the CSS with invented brand personality, never asks the user anything, and never references ai-design-dot-md.",
+      "expectations": [
+        "Output references the ai-design-dot-md skill by name as the source of the DESIGN.md spec (using it, or offering to install/fetch it)",
+        "If ai-design-dot-md is treated as unavailable, the output offers the install command 'npx skills add robcsaszar/scaffold --skill ai-design-dot-md' and/or a GitHub one-off fetch as user choices",
+        "Output asks strategic interview questions (register, users/purpose, brand personality, or anti-references) rather than fabricating those answers as facts",
+        "No PRODUCT.md file is created or proposed as the deliverable",
+        "Strategic content is placed (or planned) as subsections inside the Overview section of DESIGN.md, not as new top-level sections"
+      ],
+      "runs": 1
+    }
+  ],
+  "triggers": {
+    "positive": [
+      "set up design context for this project so coding agents stay on brand",
+      "we have no DESIGN.md — create one from the codebase",
+      "onboard this repo for design work, it's a fresh sveltekit app with nothing built yet",
+      "capture our visual system (colors, fonts, components) into a spec agents can follow",
+      "there's an old PRODUCT.md from the previous setup, migrate it into the new format",
+      "interview me about the brand and write the design context file",
+      "extract design tokens from tailwind.config.ts into a design spec",
+      "the DESIGN.md is stale, the palette changed months ago — refresh it"
+    ],
+    "near_miss": [
+      "polish the landing hero, it looks flat",
+      "make this component look better",
+      "start live variant mode on the pricing page",
+      "write an AGENTS.md for this repo",
+      "document the codebase architecture for agents",
+      "apply the colors from DESIGN.md to the new modal component",
+      "what's our primary brand color? check the design file",
+      "create a CONTEXT.md describing the domain model"
+    ],
+    "holdout": [
+      "POS: new client project, blank repo — ask me the brand questions and scaffold the design context",
+      "POS: produce the design.json sidecar and DESIGN.md for this app",
+      "NEG: critique the design of the dashboard",
+      "NEG: the design system drifted, consolidate the three different button styles in the codebase"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$comment": "Single source of truth for findings.json. validate-findings.cjs reads this at runtime — do not duplicate these rules in prose.",
+  "output_schema": {
+    "type": "array",
+    "items": {
+      "oneOf": [
+        {
+          "type": "object",
+          "description": "Confirmed or downgraded finding — verified and planned for fixing.",
+          "properties": {
+            "verdict": { "type": "string", "const": "confirmed" },
+            "id": { "type": "string", "description": "Domain-prefixed ID, e.g. P-002 or C-ADV-001." },
+            "domain": { "type": "string" },
+            "title": { "type": "string" },
+            "severity": {
+              "type": "string",
+              "enum": ["critical", "high", "medium", "low"]
+            },
+            "files": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": { "type": "string", "description": "Path relative to repo root." },
+                  "lines": {
+                    "type": "array",
+                    "items": { "type": "integer" },
+                    "description": "Relevant line numbers. Empty array if the finding spans the whole file."
+                  }
+                },
+                "required": ["path", "lines"],
+                "additionalProperties": false
+              }
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact code on files[0].lines[0], copied verbatim — the verifier's literal text."
+            },
+            "root_cause": {
+              "type": "string",
+              "description": "Template: '[component] in [file] does not [action], allowing [consequence]'."
+            },
+            "fix_approach": {
+              "type": "string",
+              "description": "Concrete description of the change — specific enough to write code from."
+            },
+            "test_cases": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string" }
+            },
+            "adversarial_verdict": {
+              "type": "string",
+              "enum": ["confirmed", "downgraded"],
+              "description": "Set by Phase 2 adversarial agent."
+            },
+            "adversarial_notes": {
+              "type": "string",
+              "description": "Evidence returned by adversarial agent. Required when adversarial_verdict is present."
+            },
+            "verification": {
+              "type": "string",
+              "enum": ["verified", "corrected", "pending"],
+              "description": "Set by Phase 4 verification agent. P1+P2 must not be 'pending' before SPEC is written."
+            }
+          },
+          "required": [
+            "verdict", "id", "domain", "title", "severity",
+            "files", "root_cause", "fix_approach", "test_cases"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "description": "Rejected finding — disproved by adversarial review or Phase 4 verification.",
+          "properties": {
+            "verdict": { "type": "string", "const": "rejected" },
+            "id": { "type": "string" },
+            "domain": { "type": "string" },
+            "title": { "type": "string" },
+            "reason": {
+              "type": "string",
+              "description": "Which specific claim was wrong, with file:line evidence."
+            }
+          },
+          "required": ["verdict", "id", "domain", "title", "reason"],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

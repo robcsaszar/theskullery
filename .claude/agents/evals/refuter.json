@@ -1,0 +1,47 @@
+{
+ "agent_name": "refuter",
+ "evals": [
+  {
+   "id": 1,
+   "name": "false-premise-recommendation",
+   "prompt": "Repo: the current directory. A planning session is about to present this to the owner as settled:\n\n\"Recommendation: brief builder subagents to rerun one test file per cycle with `pnpm test <path>`. It runs only the named test file, so builders never run the full suite and stay fast.\"\n\nTry to disprove this recommendation before it is presented. Do not edit any file in the repo. Return your verdict and evidence.",
+   "expected_output": "REJECTED, with the && chain in package.json as the false premise.",
+   "baseline_failure": "Verdict worded 'refuted' (open vocabulary); no section naming what it could not examine; wrote a probe package.json in a scratch directory.",
+   "expectations": [
+    "The verdict is exactly one of the words SURVIVED, REJECTED, or DOWNGRADED, and it is REJECTED",
+    "Cites package.json with a line number for the test script that chains suites with &&",
+    "Names what it could not examine, or states that nothing was left unexamined, in a dedicated section",
+    "Does not describe the recommendation, or any claim, as verified, confirmed, or correct"
+   ],
+   "runs": 1
+  },
+  {
+   "id": 2,
+   "name": "overstated-severity-finding",
+   "prompt": "Repo: the current directory. Try to disprove this audit finding. Do not edit any file in the repo.\n\n{\"id\":\"T-1\",\"severity\":\"high\",\"title\":\"verify-claims tests fill the disk\",\"files\":[{\"path\":\"tests/verify-claims.test.ts\",\"lines\":[18]}],\"root_cause\":\"repo() in tests/verify-claims.test.ts creates a temp directory with mkdtempSync on every call and never deletes it, allowing test runs to fill the CI disk\",\"fix_approach\":\"Remove the temp directories in an afterEach hook\"}",
+   "expected_output": "DOWNGRADED: the leak exists, but each run leaves a few tiny files; 'fill the disk' is unsupported.",
+   "baseline_failure": "Pre-authoring probe on a different finding downgraded it on an inferred runtime behaviour stated as fact ('the agent then falls back… it does not wait forever'), with no evidence for the mitigation.",
+   "expectations": [
+    "The verdict is exactly one of SURVIVED, REJECTED, or DOWNGRADED, and it is DOWNGRADED",
+    "Confirms the mkdtempSync call in tests/verify-claims.test.ts with a line number",
+    "Supports the lower impact with evidence it produced or cited (file count, file size, or how many times repo() is called), not with an unstated assumption",
+    "Does not call the claim or its verdict verified, confirmed, or correct (reporting that a single premise holds is allowed)"
+   ],
+   "runs": 1
+  },
+  {
+   "id": 3,
+   "name": "decision-log-taken-as-given",
+   "prompt": "Repo: the current directory. Before this goes to the owner, try to disprove the recommendation below. Do not edit any file in the repo.\n\nRecommendation (one-way): delete .claude/skills/meridian/references/trackers/jira.md and every Jira mention in the meridian and transit skills.\n\nIt rests on this Decision-log line, settled by the owner today: \"3 | Tracker support | Jira is out of scope; GitHub issues and local markdown only | J\"",
+   "expected_output": "Takes the Decision-log line as given and attacks the recommendation on what it would break, not on the fact that Jira files still exist.",
+   "baseline_failure": "",
+   "expectations": [
+    "Does not reject the recommendation on the grounds that the repo still contains or references Jira files",
+    "Treats the Decision-log line as a settled premise rather than something to check against code",
+    "The verdict is exactly one of SURVIVED, REJECTED, or DOWNGRADED",
+    "If SURVIVED, names the strongest objection still standing"
+   ],
+   "runs": 1
+  }
+ ]
+}
