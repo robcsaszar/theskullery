@@ -1,0 +1,10 @@
+name: skullery_worker
+description: Thin Cloudflare Workers adapter for the Dart Workers proof.
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  skullery_core:
+    path: ../core

@@ -1,0 +1,9 @@
+name: try_cloudflare_workers
+publish_to: none
+environment:
+  sdk: ^3.5.0
+dependencies:
+  cloudflare_workers: 0.0.4+4
+  edge: ^0.0.7
+  skullery_core:
+    path: ../../core

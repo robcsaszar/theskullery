@@ -1,0 +1,28 @@
+# dart run edge build cloudflare_workers on Dart 3.13.7: errors only (warnings dropped)
+
+js_bindings-0.1.2+2/lib/bindings/compute_pressure.dart:77:48:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static Iterable<PressureSource> get supportedSources;
+                                               ^
+js_bindings-0.1.2+2/lib/bindings/performance_timeline.dart:66:40:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static Iterable<String> get supportedEntryTypes;
+                                       ^
+js_bindings-0.1.2+2/lib/bindings/notifications.dart:50:46:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static NotificationPermission get permission;
+                                             ^
+js_bindings-0.1.2+2/lib/bindings/notifications.dart:52:27:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static int get maxActions;
+                          ^
+js_bindings-0.1.2+2/lib/bindings/push_api.dart:47:40:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static Iterable<String> get supportedContentEncodings;
+                                       ^
+js_bindings-0.1.2+2/lib/bindings/media_source_2.dart:101:28:
+Error: External extension members with the keyword 'static' on JS interop and @Native types are disallowed.
+  external static bool get canConstructInDedicatedWorker;
+                           ^
+
+Error: Compilation failed.

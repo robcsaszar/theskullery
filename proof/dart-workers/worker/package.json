@@ -1,0 +1,11 @@
+{
+  "name": "skullery-dart-worker-proof",
+  "private": true,
+  "scripts": {
+    "build": "dart compile js -O4 -o build/worker.dart.js bin/worker.dart",
+    "dev": "wrangler dev --local --port 8787"
+  },
+  "devDependencies": {
+    "wrangler": "4.154.0"
+  }
+}
