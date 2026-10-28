@@ -1,0 +1,8 @@
+.dart_tool/
+build/
+node_modules/
+.wrangler/
+.dev.vars
+.env
+*.js.deps
+*.js.map

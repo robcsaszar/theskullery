@@ -1,0 +1,9 @@
+name: skullery_core
+description: Host-free recipe core for the Dart Workers proof.
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  test: ^1.25.0
