@@ -1,0 +1,47 @@
+# Recorded 2026-10-28, linux x64 container, Node v22.22.0
+$ dart --version
+Dart SDK version: 3.13.7 (stable) (Thu Oct 22 14:28:57 2026 -0700) on "linux_x64"
+$ npx wrangler --version
+4.154.0
+
+$ npm run build
+Compiled 10,739,675 input bytes (5,319,842 characters source) to 98,225 characters JavaScript in 1.19 seconds
+$ ls -l build/worker.dart.js
+98225 build/worker.dart.js
+
+$ node scripts/measure.mjs   # run 1
+Total Upload: 88.36 KiB / gzip: 29.37 KiB
+bundle: 90476 bytes, gzip -9 30003 bytes
+node eval of bundle: 15.0 ms, first fetch: 28.16 ms -> 200 {"id":"x","title":"Proof Recipe"}
+wrangler dev start -> first 200: 1996 ms (first request 427.4 ms)
+warm requests (n=20): median 7.6 ms, max 10.8 ms
+
+$ node scripts/measure.mjs   # run 2
+Total Upload: 88.36 KiB / gzip: 29.37 KiB
+bundle: 90476 bytes, gzip -9 30003 bytes
+node eval of bundle: 13.4 ms, first fetch: 27.54 ms -> 200 {"id":"x","title":"Proof Recipe"}
+wrangler dev start -> first 200: 2037 ms (first request 418.1 ms)
+warm requests (n=20): median 6.6 ms, max 9.3 ms
+
+$ node scripts/measure.mjs   # run 3
+Total Upload: 88.36 KiB / gzip: 29.37 KiB
+bundle: 90476 bytes, gzip -9 30003 bytes
+node eval of bundle: 12.9 ms, first fetch: 32.64 ms -> 200 {"id":"x","title":"Proof Recipe"}
+wrangler dev start -> first 200: 2237 ms (first request 438.7 ms)
+warm requests (n=20): median 6.9 ms, max 9.2 ms
+
+$ npx wrangler dev --local --port 8787   # in another shell
+$ curl -s http://localhost:8787/recipe/x
+{"id":"x","title":"Proof Recipe"}
+$ curl -si http://localhost:8787/recipe/x
+HTTP/1.1 200 OK
+Content-Length: 33
+Content-Type: application/json
+
+{"id":"x","title":"Proof Recipe"}
+$ curl -s -o /dev/null -w '%{http_code}\n' -X POST http://localhost:8787/recipe/x
+405
+
+$ curl -s -o /dev/null -w '%{http_code}\n' http://localhost:8787/nope
+404
+
