@@ -1,0 +1,10 @@
+nominalization.md:3: [FLAG/nominalization] 'perform an analysis' — nominalization: use the verb
+nominalization.md:6: [FLAG/nominalization] 'made a determination' — nominalization: use the verb
+nominalization.md:8: [FLAG/nominalization] 'provide an explanation of' — nominalization: use the verb
+nominalization.md:10: [FLAG/nominalization] 'take into consideration' — nominalization: use the verb
+nominalization.md:12: [FLAG/wordiness] 'in order to' — wordy: cut to a shorter form
+nominalization.md:14: [FLAG/wordiness] 'due to the fact that' — wordy: cut to a shorter form
+nominalization.md:16: [FLAG/wordiness] 'At this point in time' — wordy: cut to a shorter form
+nominalization.md:18: [FLAG/wordiness] 'has the ability to' — wordy: cut to a shorter form
+nominalization.md: summary — 0 debris, 8 flags, 0 structure notes
+exit=1

@@ -1,0 +1,69 @@
+{
+  "skill_name": "interface",
+  "evals": [
+    {
+      "id": 1,
+      "name": "never-rule-review-fix",
+      "prompt": "Review this component's CSS and fix what's wrong with the animations and interactions. Return the corrected CSS with a short note per change:\n\n.promo-card {\n  border-left: 6px solid #7c3aed;\n  transition: all 0.3s ease-in;\n}\n.promo-card:hover { width: 320px; padding: 28px; }\n.promo-card__title {\n  background: linear-gradient(90deg, #7c3aed, #ec4899);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.promo-card--enter {\n  animation: cardIn 400ms ease-in;\n}\n@keyframes cardIn {\n  from { transform: scale(0); opacity: 0; }\n  to { transform: scale(1); opacity: 1; }\n}",
+      "expected_output": "Corrected CSS that eliminates every NEVER-rule violation: no transition:all, no ease-in, no layout-property animation, no scale(0) entry, no gradient text, no >1px side-stripe border.",
+      "files": [],
+      "baseline_failure": "Baseline typically tightens the transition duration and keeps ease-in, keeps the width/padding hover animation, and praises the gradient title as a nice touch.",
+      "expectations": [
+        "The corrected CSS does not contain 'transition: all' — transitions name specific properties",
+        "No 'ease-in' timing function remains on any entry animation or transition (replaced by ease-out or a cubic-bezier)",
+        "The hover effect no longer animates width or padding — it uses transform (and/or opacity) instead",
+        "The entry keyframes no longer start from scale(0); they start from a near-1 scale (e.g. scale(0.95)) with opacity",
+        "The gradient text on the title is removed or replaced with solid color/weight-based emphasis",
+        "The >1px border-left accent stripe is removed or replaced (full border, background tint, or ≤1px)"
+      ],
+      "runs": 1
+    },
+    {
+      "id": 2,
+      "name": "anti-slop-generation",
+      "prompt": "Build a hero section (single HTML file with embedded CSS) for 'Loomline', an AI writing assistant startup's landing page. Make it look great.",
+      "expected_output": "A committed, non-generic hero: a named non-default font, a dominant palette that is not the AI-category purple reflex, no gradient text, no identical 3-column card grid, real CTA interaction states.",
+      "files": [],
+      "baseline_failure": "Baseline typically produces the AI-startup reflex: purple/violet gradient palette, gradient text on the headline, Inter/system font, three identical feature cards.",
+      "expectations": [
+        "The dominant accent/primary color is not purple or violet (no purple-family hex/oklch as the lead accent)",
+        "A specific display or body font is named that is not Inter, Roboto, Arial, Open Sans, or a bare system-ui stack",
+        "No gradient text anywhere (no background-clip: text technique)",
+        "The hero does not contain an identical 3-column card grid",
+        "The CTA button has explicit hover and focus-visible styles",
+        "No transition uses 'transition: all'"
+      ],
+      "runs": 1
+    }
+  ],
+  "triggers": {
+    "positive": [
+      "this dashboard card grid looks so generic, like every AI-generated site ever. can you make it feel designed?",
+      "review the checkout page UI in src/routes/checkout/+page.svelte — spacing feels off and the buttons don't feel clickable",
+      "what easing should I use for a dropdown that slides in? 300ms feels sluggish",
+      "our settings page is a wall of toggles and users say it's overwhelming, simplify it",
+      "add hover and press micro-interactions to the pricing cards",
+      "the typography on the blog is all over the place, sizes look random — fix the hierarchy",
+      "make the app usable on phones, the data table blows out the viewport on mobile",
+      "audit the signup form for accessibility, we got a complaint about screen reader labels"
+    ],
+    "near_miss": [
+      "set up design context for this repo so agents stay on brand",
+      "generate a DESIGN.md from our tailwind config",
+      "I want to click elements in my browser and see design variants live",
+      "extract the design tokens from src/app.css into a spec file agents can read",
+      "write a REST endpoint that returns the user's theme preference",
+      "design a database schema for quiz sessions",
+      "make a printable A2 poster for our launch party",
+      "review this PR's API error handling"
+    ],
+    "holdout": [
+      "POS: buttons feel dead when you click them, no feedback at all — make the app feel more responsive to touch",
+      "POS: this empty state is just the words 'nothing here', give it some personality",
+      "POS: the loading spinners feel janky and the page jumps when content arrives",
+      "NEG: migrate our design tokens into a DESIGN.md file",
+      "NEG: spin up live mode so I can pick elements on localhost and try variants",
+      "NEG: optimize the SQL query behind the leaderboard, it's slow"
+    ]
+  }
+}

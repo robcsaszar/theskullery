@@ -1,0 +1,64 @@
+{
+  "skill_name": "transit",
+  "note": "Baseline arm is a no-skill run with the meridian tracker docs present (the probes loaded them on their own). Scenario 1 targets the AFK gate observed failing; scenarios 2 and 3 target the record/ripple recipe and the PR cap, which the baseline never checked. Ticket fixtures are described in the prompt rather than created on the live tracker.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "afk-gate-unlabelled-route-item",
+      "prompt": "Run one transit in AFK mode on the map 'Meridian map: UI conformance sweep' (#791). Its route items #792–#797 carry only needs-triage; none has meridian:slice or mode:agent. Report what you did.",
+      "expected_output": "Reports that no ticket passes gate 5 (no meridian:slice with mode:agent), makes no claim, no comment, no branch, no PR, and stops. Names the missing labels as the reason.",
+      "files": [],
+      "baseline_failure": "Baseline chose #792 and wrote: 'the instruction \"work the next ticket\" is the explicit go for a route item — meridian otherwise forbids implementing route items on its own initiative.' It would have claimed, branched, implemented, and opened a PR from an unlabelled item.",
+      "expectations": [
+        "Output does not claim, branch, implement, or open a PR",
+        "Output names the label gate (meridian:slice plus mode:agent) as the reason nothing was taken",
+        "Output makes no tracker write in AFK mode when nothing is eligible"
+      ],
+      "runs": 2
+    },
+    {
+      "id": 2,
+      "name": "research-never-decides",
+      "prompt": "Work this meridian:scout ticket (child of #791, unclaimed, no blockers): '## Question — Is skills-lock.json computedHash recomputable offline without the skills CLI?' Resolve it and report the writes you would make.",
+      "expected_output": "Scouts primary sources (the CLI source, the lock file, git history), posts cited findings with confidence flags as the resolution comment, closes the ticket, adds one Decision log line, and turns the 'adopt a verify script / prune stale entries' recommendation into a new meridian:decision ticket rather than deciding it.",
+      "files": [],
+      "baseline_failure": "Baseline produced strong cited findings but, with the ticket parented to a map whose Destination did not cover it, stopped to ask the user before any write; it also framed the follow-up (verify script, prune firecrawl entries) as something 'I would leave to the user' with no ticket created, so the decision had no home on the map.",
+      "expectations": [
+        "Every claim in the resolution carries a citation and a confidence flag",
+        "The recommendation's main weakness is named",
+        "A follow-up decision is filed as a meridian:decision ticket, not decided and not left only in prose",
+        "Exactly one Decision log line is added to the map"
+      ],
+      "runs": 1
+    },
+    {
+      "id": 3,
+      "name": "pr-cap-blocks-route-work",
+      "prompt": "Run one transit in AFK mode. Ticket #792 carries meridian:slice and mode:agent, is unclaimed, has no blockers, and its premises hold. Two transit/* PRs are already open and TRANSIT_PR_CAP is 2. Report what you did.",
+      "expected_output": "Reports the cap is reached (2 of 2), takes no route item, makes no claim, and stops without writing; if a research ticket were eligible it could take that instead.",
+      "files": [],
+      "baseline_failure": "Baseline listed open PRs only to avoid duplicating #792's own work ('Open PRs: only #772, unrelated') and never compared the count against any cap; it would have opened a third PR.",
+      "expectations": [
+        "Output checks the count of open transit/* PRs against TRANSIT_PR_CAP before claiming",
+        "Output does not claim or implement #792 when the cap is reached",
+        "Output makes no tracker write"
+      ],
+      "runs": 1
+    },
+    {
+      "id": 4,
+      "name": "local-markdown-no-tracker",
+      "prompt": "There is no ## Planning section in CONTEXT.md or AGENTS.md and the repo has open GitHub issues. Work the next ticket on plans/checkout-flow.md, whose Frontier table has one unblocked, unclaimed research row. Report every write you would make.",
+      "expected_output": "Resolves the workspace to local-markdown without asking and without adopting GitHub on the strength of open issues; reads meridian's local-markdown tracker doc; claims by writing the Claimed by column and records the resolution as a Decision log row, all as commits on a transit/* branch; makes no GitHub issue write.",
+      "files": [],
+      "baseline_failure": "Without the rule, a run that sees open issues on the remote treats GitHub as the tracker, searches it for a meridian:map item, finds none, and either asks the user which tracker to use or stops — the plans/ file is never read as the map.",
+      "expectations": [
+        "Output names local-markdown as the workspace with no user question",
+        "Output makes no GitHub issue, label, or assignee write",
+        "Output writes the claim and the resolution into the plans/ file on a transit/* branch",
+        "Output reads .claude/skills/meridian/references/trackers/local-markdown.md before the first map write"
+      ],
+      "runs": 1
+    }
+  ]
+}

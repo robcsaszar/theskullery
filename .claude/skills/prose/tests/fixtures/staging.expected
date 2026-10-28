@@ -1,0 +1,14 @@
+staging.md:3: [FLAG/futurism] 'Imagine a world' — futurism invitation
+staging.md:6: [FLAG/hook] "Here's the kicker" — manufactured suspense
+staging.md:9: [FLAG/parallelism] 'Not a threshold problem. Not' — countdown negation
+staging.md:12: [FLAG/rhetorical-fragment] 'The result?' — self-posed question answered on the spot
+staging.md:15: [FLAG/hook] 'The real story is' — dramatic reveal
+staging.md:16: [FLAG/asserted-obvious] 'The truth is simple' — asserted rather than shown
+staging.md:16: [FLAG/asserted-obvious] 'the metrics are clear' — asserted rather than shown
+staging.md:18: [FLAG/adverb] 'quietly reshaping' — significance supplied by adverb
+staging.md:19: [FLAG/arrows] '→' — unicode arrow in prose: type -> or write the verb
+staging.md:19: [FLAG/arrows] '→' — unicode arrow in prose: type -> or write the verb
+staging.md:22: [FLAG/hook] "Here's where it gets interesting" — manufactured suspense
+staging.md:23: [FLAG/inflation] 'define the next era' — grandiose stakes
+staging.md: summary — 0 debris, 12 flags, 0 structure notes
+exit=1

@@ -18,6 +18,26 @@ Netlify builds with `bundle exec jekyll build` (set in `netlify.toml`, which ove
 
 `_site/` is gitignored but an old copy is still tracked in git — never edit it; it's build output.
 
+## Agent gate
+
+The commands the skills and agents in `.claude/` run to check a change (convoy, transit, crucible; builder, reviewer, refuter, drill). Update these rows when the stack changes; a row marked *none* is skipped.
+
+| Row | Command |
+|---|---|
+| setup | `bundle install` |
+| build | `bundle exec jekyll build` |
+| typecheck | none |
+| lint | none |
+| formatter | none |
+| test (full suite) | none |
+| test (single file) | none |
+| e2e | none |
+| clean | `bundle exec jekyll clean` |
+
+With no test rows, the build is the check: it must finish without errors or new warnings.
+
+Shared files — orchestrator-owned during a convoy wave: `CLAUDE.md`, `_config.yml`, `_layouts/recipe.html`, `_includes/head.html`, `css/main.scss`.
+
 ## Content model
 
 Recipes are the core content: the `recipes` collection in `_recipes/`, one folder per recipe containing `<slug>.md` and its photo. The front matter `permalink` must be `recipes/<slug>` matching the folder name, because the layout builds the image URL as `{{page.url}}/{{page.image}}` and relies on the collection copying the image to the same path. `_recipes/banana-bread/banana-bread.md` is a good annotated reference.

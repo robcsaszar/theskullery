@@ -1,0 +1,39 @@
+slop-blog.md:4: [FLAG/hook] "Let's dive into" — signposting
+slop-blog.md:7: [FLAG/promo] 'boast a' — promotional tone
+slop-blog.md:7: [FLAG/promo] 'state-of-the-art' — promotional tone
+slop-blog.md:8: [FLAG/disclaimer] "It's important to note" — didactic disclaimer
+slop-blog.md:8: [FLAG/promo] 'seamlessly' — promotional tone
+slop-blog.md:9: [FLAG/parallelism] 'not just a monitoring upgrade, but' — negative parallelism
+slop-blog.md:10: [FLAG/attribution] 'Experts argue' — vague attribution: name the source or cut
+slop-blog.md:10: [FLAG/vocab] 'interplay' — AI vocabulary
+slop-blog.md:11: [FLAG/inflation] 'plays a crucial role' — inflated significance
+slop-blog.md:13: [FLAG/attribution] 'Research shows that' — unnamed research: name it or cut
+slop-blog.md:13: [FLAG/vocab] 'delve' — AI vocabulary
+slop-blog.md:14: [FLAG/vocab] 'garner' — AI vocabulary
+slop-blog.md:14: [FLAG/vocab] 'intricacies' — AI vocabulary
+slop-blog.md:14: [FLAG/vocab] 'meticulous' — AI vocabulary
+slop-blog.md:15: [FLAG/vocab] 'testament to' — AI vocabulary
+slop-blog.md:16: [FLAG/copula] 'stands as' — copula avoidance: try plain 'is'
+slop-blog.md:16: [FLAG/inflation] 'stands as a reminder' — inflated significance
+slop-blog.md:16: [FLAG/vocab] 'holistic' — AI vocabulary
+slop-blog.md:16: [FLAG/vocab] 'multifaceted' — AI vocabulary
+slop-blog.md:17: [FLAG/inflation] 'cannot be overstated' — inflated significance
+slop-blog.md:19: [FLAG/hook] "Here's the thing:" — fake casualness
+slop-blog.md:19: [FLAG/merism] 'from startups to enterprises' — empty merism
+slop-blog.md:20: [FLAG/copula] 'refers to a' — definition dodge: try 'X is'
+slop-blog.md:21: [FLAG/inflation] 'underscores the importance' — inflated significance
+slop-blog.md:25: [FLAG/summary] 'Despite these challenges' — challenges-and-prospects template
+slop-blog.md:25: [FLAG/summary] 'the future of observability looks bright' — vague hopeful ending
+slop-blog.md:26: [FLAG/vocab] 'unlock the full potential' — dramatization
+slop-blog.md:27: [FLAG/promo] 'groundbreaking' — promotional tone
+slop-blog.md:27: [FLAG/vocab] 'game-changing' — dramatization
+slop-blog.md:27: [FLAG/vocab] 'revolutionize' — dramatization
+slop-blog.md:29: [FLAG/parallelism] 'not merely a tool, but' — negative parallelism
+slop-blog.md:29: [FLAG/summary] 'In conclusion' — self-summary
+slop-blog.md:30: [FLAG/summary] 'exciting times lie ahead' — vague hopeful ending
+slop-blog.md: [NOTE/monotony] 2 window(s) of 5 consecutive sentences with near-identical mid-band lengths — vary the rhythm
+slop-blog.md: [NOTE/uniform-paragraphs] all 6 paragraphs have 2–3 sentences — pre-computed shape
+slop-blog.md: [NOTE/title-case-heading] heading looks Title Cased: 'The Transformative Power Of Modern Observability'
+slop-blog.md: [NOTE/title-case-heading] heading looks Title Cased: 'Challenges And Future Prospects'
+slop-blog.md: summary — 0 debris, 33 flags, 4 structure notes
+exit=1
